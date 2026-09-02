@@ -112,15 +112,26 @@ CSV export covers the whole match set rather than the batch on screen.
 Any static host works; the repository is laid out for GitHub Pages, and
 `.github/workflows/pages.yml` publishes `index.html`, `assets/`, `lib/`,
 `data/works.json` and the standalone build on every push to the default branch.
-A manual run publishes any branch, which is how a working branch gets reviewed
-before it is merged.
 
 Two settings have to be switched on by hand once, because they are repository
 settings rather than code: the repository must be **public** (Pages on a private
 repository needs a paid plan), and **Settings → Pages → Source** must be set to
-**GitHub Actions**. Until Pages is enabled the build job still succeeds and only
-the `deploy-pages` step fails, which is the signature of that missing setting
-rather than of a broken workflow.
+**GitHub Actions**.
+
+Three failure modes look alike from the outside — the build job succeeds and
+only the deploy fails — so they are worth telling apart:
+
+| What the deploy job shows | What it means |
+|---|---|
+| Fails instantly, **no steps at all** | Pages is not enabled yet; the `github-pages` environment does not exist |
+| Reaches **`waiting`**, then fails with *"Branch … is not allowed to deploy"* | Pages is enabled and working. You are deploying from a branch the environment does not accept |
+| Runs its steps and fails inside one | A genuine problem with the deploy itself |
+
+That middle case is the one that misleads. Enabling Pages creates a
+`github-pages` environment whose deployment branch policy accepts **the default
+branch only**. A manual run from a working branch will therefore build and then
+be refused at the last step. Publishing means merging to the default branch;
+there is no branch preview.
 
 **Locally**, because ES modules and `fetch` need a real origin:
 

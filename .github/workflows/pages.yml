@@ -1,10 +1,15 @@
 name: Deploy to GitHub Pages
 
-# Deliberately not pinned to a branch name. The job guard below already limits
-# pushes to the default branch, so a filter here would be redundant — and it
-# would disable the escape hatch: a manual run (workflow_dispatch) is allowed
-# from any branch, which is how a working branch gets published for review
-# before anyone merges it.
+# Deliberately not pinned to a branch name: the job guard below already limits
+# pushes to the default branch, so a filter here would be redundant.
+#
+# A manual run (workflow_dispatch) from a working branch will BUILD but cannot
+# DEPLOY. Enabling Pages creates a `github-pages` environment whose deployment
+# branch policy accepts the default branch only, and that rule is enforced by
+# the environment, not by this file — the run fails with "Branch … is not
+# allowed to deploy to github-pages due to environment protection rules" after
+# the build job has already succeeded. So a manual run is useful for proving a
+# branch builds, and useless for previewing it. Publishing means merging.
 on:
   push:
     branches: ['**']
