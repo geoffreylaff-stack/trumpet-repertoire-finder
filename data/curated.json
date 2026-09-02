@@ -390,6 +390,122 @@
     "jim stephenson",
     "james stephenson"
    ]
+  },
+  "walton-william": {
+   "name": "William Walton",
+   "dates": "1902–1983"
+  },
+  "villa-lobos-heitor": {
+   "name": "Heitor Villa-Lobos",
+   "dates": "1887–1959"
+  },
+  "glass-philip": {
+   "name": "Philip Glass",
+   "dates": "b. 1937"
+  },
+  "lutos-awski-witold": {
+   "name": "Witold Lutosławski",
+   "dates": "1913–1994"
+  },
+  "bax-arnold": {
+   "name": "Arnold Bax",
+   "dates": "1883–1953"
+  },
+  "bernstein-leonard": {
+   "name": "Leonard Bernstein",
+   "dates": "1918–1990"
+  },
+  "penderecki-krzysztof": {
+   "name": "Krzysztof Penderecki",
+   "dates": "1933–2020"
+  },
+  "britten-benjamin": {
+   "name": "Benjamin Britten",
+   "dates": "1913–1976"
+  },
+  "messiaen-olivier": {
+   "name": "Olivier Messiaen",
+   "dates": "1908–1992"
+  },
+  "orff-carl": {
+   "name": "Carl Orff",
+   "dates": "1895–1982"
+  },
+  "barber-samuel": {
+   "name": "Samuel Barber",
+   "dates": "1910–1981"
+  },
+  "glazunov-alexander": {
+   "name": "Alexander Glazunov",
+   "dates": "1865–1936"
+  },
+  "khachaturian-aram": {
+   "name": "Aram Khachaturian",
+   "dates": "1903–1978"
+  },
+  "korngold-erich-wolfgang": {
+   "name": "Erich Wolfgang Korngold",
+   "dates": "1897–1957"
+  },
+  "ligeti-gyorgy": {
+   "name": "György Ligeti",
+   "dates": "1923–2006"
+  },
+  "delius-frederick": {
+   "name": "Frederick Delius",
+   "dates": "1862–1934"
+  },
+  "scriabin-alexander": {
+   "name": "Alexander Scriabin",
+   "dates": "1872–1915"
+  },
+  "tippett-michael": {
+   "name": "Michael Tippett",
+   "dates": "1905–1998"
+  },
+  "hanson-howard": {
+   "name": "Howard Hanson",
+   "dates": "1896–1981"
+  },
+  "part-arvo": {
+   "name": "Arvo Pärt",
+   "dates": "b. 1935"
+  },
+  "borodin-alexander": {
+   "name": "Alexander Borodin",
+   "dates": "1833–1887"
+  },
+  "chausson-ernest": {
+   "name": "Ernest Chausson",
+   "dates": "1855–1899"
+  },
+  "grofe-ferde": {
+   "name": "Ferde Grofé",
+   "dates": "1892–1972"
+  },
+  "hovhaness-alan": {
+   "name": "Alan Hovhaness",
+   "dates": "1911–2000"
+  },
+  "kodaly-zoltan": {
+   "name": "Zoltán Kodály",
+   "dates": "1882–1967"
+  },
+  "myaskovsky-nikolai": {
+   "name": "Nikolai Myaskovsky",
+   "dates": "1881–1950"
+  },
+  "piston-walter": {
+   "name": "Walter Piston",
+   "dates": "1894–1976"
+  },
+  "rodrigo-joaquin": {
+   "name": "Joaquín Rodrigo",
+   "dates": "1901–1999"
+  },
+  "arutiunian-alexander": {
+   "name": "Alexander Arutiunian",
+   "dates": "1920–2012"
   }
  },
  "works": [
