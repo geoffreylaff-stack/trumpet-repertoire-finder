@@ -1,7 +1,7 @@
 {
  "generated": "2026-09-02T01:27:47.134Z",
  "stats": {
-  "works": 11432,
+  "works": 11435,
   "composers": 2007
  },
  "composers": [
@@ -16086,7 +16086,7 @@
     "stravinsky",
     "stravinskii"
    ],
-   "n": 34,
+   "n": 37,
    "nArr": 2
   },
   {
@@ -19162,15 +19162,15 @@
    "cat": null,
    "y": 1874,
    "g": "Sacred vocal",
-   "s": "four trumpets",
+   "s": "eight trumpets",
    "counts": {
-    "trumpet": 4
+    "trumpet": 8
    },
    "req": [
     "trumpet"
    ],
-   "full": "4 trumpets, 4 horns, 3 trombones, ophicleide, timpani, woodwind, strings, chorus",
-   "note": "A further four trumpets answer from offstage in the Tuba mirum.",
+   "full": "4 trumpets, 4 offstage trumpets, 4 horns, 3 trombones, ophicleide, timpani, woodwind, strings, chorus",
+   "note": "Eight trumpet players: four in the orchestra and four more answering from offstage in the Tuba mirum. Counted together because the offstage four are additional players, not the orchestral four relocated.",
    "arr": false,
    "est": false
   },
@@ -20281,19 +20281,73 @@
   },
   {
    "c": "stravinsky-igor",
-   "t": "The Firebird",
+   "t": "The Firebird (1910 ballet)",
    "cat": "K010",
    "y": 1910,
    "g": "Ballet",
-   "s": "three trumpets",
+   "s": "six trumpets",
    "counts": {
-    "trumpet": 3
+    "trumpet": 6
    },
    "req": [
     "trumpet"
    ],
-   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 3 harps, celesta, piano, woodwind, strings",
-   "note": null,
+   "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings",
+   "note": "The complete ballet. Six trumpet players: three in the pit and three more onstage, where they call the princesses back into the palace. Stravinsky later called the orchestra \"wastefully large\".",
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stravinsky-igor",
+   "t": "The Firebird Suite (1911)",
+   "cat": null,
+   "y": 1911,
+   "g": "Orchestral",
+   "s": "six trumpets",
+   "counts": {
+    "trumpet": 6
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings",
+   "note": "The first suite keeps the ballet's orchestra unchanged — it was printed from the same plates, with only the new movement endings newly engraved. Still six trumpet players, three of them onstage.",
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stravinsky-igor",
+   "t": "The Firebird Suite (1919)",
+   "cat": null,
+   "y": 1919,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion, harp, piano, strings",
+   "note": "The reduction to a standard concert orchestra, and much the most played of the three suites. Wikipedia describes the change only as a smaller orchestra with the winds in pairs; the two trumpets come from the published scoring rather than from the article.",
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stravinsky-igor",
+   "t": "The Firebird Suite (1945)",
+   "cat": null,
+   "y": 1945,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion including snare drum, harp, piano, strings",
+   "note": "Built on the 1919 suite, with several pantomimes reorchestrated from the ballet. The only instrumentation change was the addition of a snare drum, so the trumpet section is unchanged from 1919.",
    "arr": false,
    "est": false
   },
