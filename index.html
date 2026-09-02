@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trumpet &amp; Cornet Repertoire Finder</title>
+  <meta name="description" content="Type a classical composer's name and get every published work scored for trumpet, cornet, flugelhorn or piccolo trumpet — with the exact instrumentation for each." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8E%BA%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css?v=f30376cd63" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <h1>Trumpet &amp; Cornet Repertoire Finder</h1>
+      <p class="tagline">
+        Search by composer, or by instrumentation across every composer. Either way
+        you get the exact scoring for each work.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="mode-bar">
+      <div class="mode-tabs" role="tablist" aria-label="How to search">
+        <button type="button" role="tab" id="tab-composer" aria-selected="true" aria-controls="composer-panel">
+          <span class="tab-title">Search by composer</span>
+          <span class="tab-sub">Pick a composer, then narrow by instrument</span>
+        </button>
+        <button type="button" role="tab" id="tab-instrument" aria-selected="false" aria-controls="instrument-panel">
+          <span class="tab-title">Search by instrumentation</span>
+          <span class="tab-sub">Find a scoring across every composer</span>
+        </button>
+      </div>
+      <!-- Outside both panels: a search needs clearing from either workflow. -->
+      <button type="button" class="secondary" id="clear">Clear</button>
+    </div>
+
+    <div id="composer-panel" role="tabpanel" aria-labelledby="tab-composer">
+      <form class="search" id="search-form" autocomplete="off" role="search">
+        <div class="field">
+          <label for="composer">Composer</label>
+          <div class="combo">
+            <input id="composer" name="composer" type="text" placeholder="e.g. Berlioz, Bach, Tchaikovsky, Copland…"
+                   aria-describedby="composer-help" aria-autocomplete="list"
+                   aria-expanded="false" aria-controls="suggestions" role="combobox" />
+            <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+          </div>
+          <p class="help" id="composer-help">
+            Accents optional — “dvorak” finds Dvořák. <button type="button" class="linkish" id="browse-all">Browse all composers</button>
+          </p>
+        </div>
+        <div class="actions">
+          <button type="submit" class="primary">Find works</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="filters" id="filters" aria-label="Filters">
+      <fieldset class="instruments" id="instrument-panel" role="tabpanel" aria-labelledby="tab-instrument">
+        <legend>Must include</legend>
+        <p class="scope-note" id="scope-note"></p>
+        <div class="instrument-grid" id="instrument-filters"></div>
+        <p class="help">
+          Tick the instruments a work must use, and how many of each.
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Options</legend>
+        <label class="check"><input type="checkbox" id="opt-arrangements" /> Include arrangements by other hands</label>
+        <label class="check"><input type="checkbox" id="opt-estimated" checked /> Include entries with an inferred count</label>
+        <label class="check"><input type="checkbox" id="opt-group" checked /> Group by genre</label>
+      </fieldset>
+      <fieldset>
+        <legend>Sort</legend>
+        <select id="sort">
+          <option value="default">Genre, then title</option>
+          <option value="title">Title A–Z</option>
+          <option value="year">Date composed</option>
+          <option value="size">Largest trumpet section first</option>
+        </select>
+      </fieldset>
+    </section>
+
+    <section id="summary" class="summary" hidden aria-live="polite"></section>
+    <section id="results" class="results"></section>
+
+    <section id="intro" class="intro">
+      <h2>What this does</h2>
+      <p>
+        This page holds an offline index of works scored for the trumpet family:
+        <strong>trumpet</strong>, <strong>cornet</strong>,
+        <strong>flugelhorn</strong> and <strong>piccolo trumpet</strong>. Every
+        work is listed with its exact scoring — “two trumpets, two cornets”,
+        “three trumpets”, and so on.
+      </p>
+      <p>
+        Two conventions worth knowing. <strong>Transposition is ignored</strong>:
+        a trumpet in C and a trumpet in B♭ are both simply a trumpet, so you
+        never have to guess which key a catalogue happened to name.
+        <strong>Cornet is counted separately from trumpet</strong>, because
+        composers from Berlioz to Tchaikovsky write for both at once and the
+        parts are not interchangeable.
+      </p>
+      <p>
+        There are two ways in, and you can switch between them at any time.
+        <strong>Search by composer</strong> lists everything by one composer, which
+        you can then narrow by instrument. <strong>Search by instrumentation</strong>
+        turns the same instrument choices into a search across all composers — every
+        work with a flugelhorn, or with a piccolo trumpet, or with exactly two
+        trumpets <em>and</em> two cornets. Setting an instrument to
+        <strong>none</strong> excludes it instead — two trumpets and no cornet at
+        all. Whatever is
+        selected carries over when you switch, and either search can be shared as
+        a link.
+      </p>
+      <p class="muted">
+        Nothing is installed and nothing is sent anywhere: the index ships with
+        the page and all searching happens inside your browser.
+      </p>
+      <div id="popular" class="popular"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p id="provenance"></p>
+    <p class="muted">
+      Working somewhere without wifi?
+      <a href="dist/trumpet-finder.html" download>Download a single-file offline copy</a>
+      — the whole index in one HTML file that runs straight from your desktop.
+    </p>
+    <p class="muted">
+      Instrumentation should be confirmed against a published score before hire or performance.
+    </p>
+  </footer>
+
+  <script id="build-info">window.__BUILD__="8fc429b128";window.__DATA_V__="e2e1bd7dde";</script>
+
+  <script type="module" src="assets/app.js?v=ec2ddb580a"></script>
+</body>
+</html>

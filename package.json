@@ -1,0 +1,17 @@
+{
+  "name": "trumpet-repertoire-finder",
+  "version": "1.0.0",
+  "description": "Browser app: enter a composer, get every published work scored for trumpet, cornet, flugelhorn or piccolo trumpet, with exact instrumentation.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "harvest": "node tools/harvest-imslp.mjs && node tools/harvest-wikipedia.mjs",
+    "harvest:imslp": "node tools/harvest-imslp.mjs",
+    "harvest:wikipedia": "node tools/harvest-wikipedia.mjs",
+    "build": "node tools/build.mjs",
+    "test": "node --test tools/test-instrumentation.mjs",
+    "serve": "node --run build && python3 -m http.server 8765"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

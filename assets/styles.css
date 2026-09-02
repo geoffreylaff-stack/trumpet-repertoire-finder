@@ -1,0 +1,450 @@
+/* Trumpet & Cornet Repertoire Finder — light/dark, no external assets. */
+
+:root {
+  --bg: #fbf9f5;
+  --surface: #ffffff;
+  --surface-2: #f4f1ea;
+  --ink: #1c1a17;
+  --ink-soft: #55504a;
+  --ink-faint: #857e75;
+  --line: #e2ddd3;
+  --accent: #7a4419;
+  --accent-soft: #f0e4d8;
+  --accent-ink: #ffffff;
+  --focus: #b06426;
+  --radius: 10px;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --sans: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16150f;
+    --surface: #201e18;
+    --surface-2: #2a2720;
+    --ink: #f2efe8;
+    --ink-soft: #c4bdb1;
+    --ink-faint: #928b7f;
+    --line: #38342b;
+    --accent: #e0a76a;
+    --accent-soft: #3a2f22;
+    --accent-ink: #1a1710;
+    --focus: #e0a76a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+/*
+ * The `hidden` attribute is only `display: none` in the UA stylesheet, so any
+ * author `display` rule silently beats it — and .summary, .filters and .counts
+ * all set `display: flex`. Without this, setting `hidden` left those panels on
+ * screen: the summary bar stayed visible after Clear.
+ */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--ui);
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
+
+a { color: var(--accent); }
+
+/* ── Masthead ─────────────────────────────────────────────────────────────── */
+.masthead {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  padding: 2.25rem 0 1.75rem;
+  margin-bottom: 2rem;
+}
+.masthead h1 {
+  font-family: var(--sans);
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 0 0 .4rem;
+  letter-spacing: -0.01em;
+}
+.tagline { margin: 0; color: var(--ink-soft); max-width: 44rem; }
+
+/* Shown only when the published build differs from the one on screen. */
+.update-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .85rem;
+  flex-wrap: wrap;
+  padding: .6rem 1.25rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: .9rem;
+}
+.update-bar button.secondary {
+  padding: .3rem .8rem;
+  background: transparent;
+  border-color: var(--accent-ink);
+  color: var(--accent-ink);
+}
+.update-bar button.secondary:hover { background: rgb(255 255 255 / .16); color: var(--accent-ink); }
+
+/* ── Mode tabs ────────────────────────────────────────────────────────────── */
+/* Two entry points of equal weight: neither workflow is the secondary one. */
+.mode-bar {
+  display: flex;
+  align-items: stretch;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+.mode-bar > #clear { flex: 0 0 auto; }
+.mode-tabs {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+.mode-tabs [role="tab"] {
+  font: inherit;
+  text-align: left;
+  padding: .7rem .95rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+}
+.mode-tabs [role="tab"]:hover { background: var(--surface-2); }
+.mode-tabs [role="tab"][aria-selected="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.mode-tabs .tab-title {
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.mode-tabs .tab-sub { font-size: .8rem; color: var(--ink-faint); }
+.mode-tabs [role="tab"][aria-selected="true"] .tab-title,
+.mode-tabs [role="tab"][aria-selected="true"] .tab-sub { color: var(--accent-ink); }
+
+.scope-note {
+  font-size: .82rem;
+  color: var(--ink-soft);
+  margin: 0 0 .55rem;
+}
+
+@media (max-width: 34rem) {
+  .mode-bar { flex-wrap: wrap; }
+  .mode-tabs { grid-template-columns: 1fr; }
+  .mode-bar > #clear { width: 100%; }
+}
+
+/* ── Search ───────────────────────────────────────────────────────────────── */
+.search {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.field { flex: 1 1 22rem; min-width: 0; }
+.field label {
+  display: block;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--ink-faint);
+  margin-bottom: .35rem;
+}
+.combo { position: relative; }
+
+input[type="text"], select {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: .7rem .85rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+input[type="text"]:focus-visible, select:focus-visible,
+button:focus-visible, .linkish:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button.primary {
+  font: inherit;
+  font-weight: 600;
+  padding: .72rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+button.primary:hover { filter: brightness(1.08); }
+
+.search .actions { display: flex; gap: .5rem; align-items: center; }
+
+button.secondary {
+  font: inherit;
+  font-weight: 500;
+  padding: .72rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+button.secondary:hover { background: var(--surface-2); color: var(--ink); }
+
+.help { font-size: .85rem; color: var(--ink-faint); margin: .4rem 0 0; }
+.linkish {
+  font: inherit;
+  font-size: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ── Typeahead ────────────────────────────────────────────────────────────── */
+.suggestions {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  margin: 0;
+  padding: .25rem;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 28px rgb(0 0 0 / .16);
+  max-height: 17rem;
+  overflow-y: auto;
+}
+.suggestions li {
+  padding: .5rem .65rem;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  align-items: baseline;
+}
+.suggestions li[aria-selected="true"], .suggestions li:hover {
+  background: var(--accent-soft);
+}
+.suggestions .count { color: var(--ink-faint); font-size: .8rem; white-space: nowrap; }
+
+/* ── Filters ──────────────────────────────────────────────────────────────── */
+.filters {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+.filters fieldset { border: 0; margin: 0; padding: 0; }
+.filters legend {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--ink-faint);
+  padding: 0;
+  margin-bottom: .5rem;
+}
+.chips { display: flex; gap: .4rem; flex-wrap: wrap; }
+.filters .instruments { max-width: 36rem; flex: 1 1 32rem; }
+.filters .instruments .help { margin-top: .5rem; }
+
+/* Instrument, and how many of it — one row each, both always visible. */
+.instrument-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: .35rem 1.25rem;
+}
+.instrument-row {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.instrument-row .chip {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  white-space: nowrap;   /* "piccolo trumpet" otherwise wraps and skews the row */
+}
+.instrument-row select {
+  width: auto;
+  flex: 0 0 auto;
+  font-size: .82rem;
+  padding: .25rem .4rem;
+  color: var(--ink-faint);
+}
+/* A quantity that is actually constraining the search should read as active. */
+.instrument-row .chip[aria-pressed="true"] + select { color: var(--ink); }
+
+/* "none" is an active constraint that excludes rather than requires. */
+.chip[aria-pressed="true"].exclude {
+  background: var(--surface-2);
+  border-color: var(--ink-faint);
+  border-style: dashed;
+  color: var(--ink-faint);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.more { display: flex; justify-content: center; padding: 1.5rem 0 .5rem; }
+.chip {
+  font: inherit;
+  font-size: .85rem;
+  padding: .3rem .7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.chip[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+.check {
+  display: block;
+  font-size: .88rem;
+  color: var(--ink-soft);
+  margin-bottom: .3rem;
+  cursor: pointer;
+}
+.filters select { font-size: .9rem; padding: .4rem .55rem; }
+
+/* ── Summary ──────────────────────────────────────────────────────────────── */
+.summary {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--line);
+}
+.summary h2 { font-family: var(--sans); font-size: 1.5rem; margin: 0; }
+.summary .dates { color: var(--ink-faint); font-weight: 400; font-size: 1rem; }
+.summary .tally { color: var(--ink-soft); font-size: .92rem; }
+.summary .actions { margin-left: auto; display: flex; gap: .5rem; }
+.summary .actions button {
+  font: inherit;
+  font-size: .85rem;
+  padding: .35rem .8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.summary .actions button:hover { background: var(--surface-2); }
+
+/* ── Results ──────────────────────────────────────────────────────────────── */
+.genre-heading {
+  font-family: var(--sans);
+  font-size: 1.12rem;
+  margin: 1.75rem 0 .6rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+.genre-heading:first-child { margin-top: 0; }
+
+.work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 21rem);
+  gap: .5rem 1.5rem;
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.work-title { font-family: var(--sans); font-size: 1.05rem; margin: 0; }
+.work-title a { text-decoration: none; }
+.work-title a:hover { text-decoration: underline; }
+.work-meta { font-size: .85rem; color: var(--ink-faint); margin: .15rem 0 0; }
+.work-meta .cat { font-family: var(--mono); font-size: .8rem; }
+.work-note { font-size: .85rem; color: var(--ink-soft); margin: .35rem 0 0; font-style: italic; }
+.work-full { font-size: .82rem; color: var(--ink-faint); margin: .3rem 0 0; }
+
+.scoring {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: right;
+}
+.scoring .flags { display: block; font-family: var(--ui); font-size: .72rem; font-weight: 400; color: var(--ink-faint); margin-top: .15rem; }
+
+.badge {
+  display: inline-block;
+  font-size: .66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: .1rem .4rem;
+  border-radius: 4px;
+  background: var(--surface-2);
+  color: var(--ink-faint);
+  vertical-align: middle;
+  margin-left: .4rem;
+}
+
+.empty, .error {
+  padding: 2rem 1.25rem;
+  text-align: center;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+.empty strong { color: var(--ink); }
+
+/* ── Intro / footer ───────────────────────────────────────────────────────── */
+.intro { margin-top: 1rem; }
+.intro h2 { font-family: var(--sans); font-size: 1.25rem; margin: 0 0 .5rem; }
+.intro p { color: var(--ink-soft); max-width: 46rem; }
+.muted { color: var(--ink-faint); font-size: .88rem; }
+
+.popular { margin-top: 1.25rem; display: flex; gap: .45rem; flex-wrap: wrap; align-items: center; }
+.popular .label { font-size: .8rem; color: var(--ink-faint); margin-right: .25rem; }
+
+.foot {
+  margin: 3rem auto 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: .85rem;
+  color: var(--ink-faint);
+}
+.foot p { margin: .3rem 0; }
+
+@media (max-width: 34rem) {
+  .work { grid-template-columns: 1fr; gap: .2rem; }
+  .scoring { text-align: left; }
+  .summary .actions { margin-left: 0; width: 100%; }
+}
