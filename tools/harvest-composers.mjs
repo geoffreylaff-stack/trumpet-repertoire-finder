@@ -73,15 +73,43 @@ function yearOf(raw) {
   return y >= 800 && y <= new Date().getFullYear() ? y : null;
 }
 
+const fold = (s) => String(s ?? '')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+/**
+ * Every spelling IMSLP knows the composer by, as single folded words.
+ *
+ * A transliterated name reaches this index under whichever spelling its source
+ * happened to use, and the two need not agree: IMSLP files Glazunov under
+ * "Aleksandr" while Wikipedia says "Alexander", so a lookup on the exact name
+ * finds nothing and the composer keeps no dates at all. IMSLP records the
+ * variants itself:
+ *
+ *     |Alternate Names=Alexander, Alexandre Konstantinovič, … Glazounow
+ *
+ * The field is a jumble of forename and surname variants rather than a list of
+ * whole names, so it is kept as a bag of words for the build to match against
+ * — which is enough, because a match there has to agree on the surname too.
+ */
+function alternateWords(wikitext) {
+  const raw = /\|\s*Alternate Names\s*=\s*([^|\n}]*)/i.exec(wikitext)?.[1] ?? '';
+  return [...new Set(fold(raw).split(' ').filter((w) => w.length > 1))];
+}
+
 /** Pull the person record out of a category page's wikitext. */
 function personDates(wikitext) {
-  if (!/\{\{#fte:person/i.test(wikitext)) return null;
+  // IMSLP writes the person record under two different template names, and a
+  // guard on only the first quietly rejected hundreds of pages that had the
+  // dates all along — Glazunov among them. The fields inside are the same.
+  if (!/\{\{#(?:fte:person|imslpcomposer)/i.test(wikitext)) return null;
   const born = yearOf(/\|\s*Born Year\s*=\s*([^|\n}]*)/i.exec(wikitext)?.[1]);
   const died = yearOf(/\|\s*Died Year\s*=\s*([^|\n}]*)/i.exec(wikitext)?.[1]);
   if (!born && !died) return null;
+  const alt = alternateWords(wikitext);
   // A death before a birth is a typo on the page, not a fact about a person.
-  if (born && died && died < born) return { born, died: null, suspect: true };
-  return { born, died };
+  if (born && died && died < born) return { born, died: null, suspect: true, alt };
+  return { born, died, ...(alt.length ? { alt } : {}) };
 }
 
 // ── Harvest ───────────────────────────────────────────────────────────────────

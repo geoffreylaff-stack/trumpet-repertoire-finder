@@ -18,7 +18,16 @@ import fs from 'node:fs/promises';
  * @returns {Promise<boolean>} true when the file was rewritten.
  */
 export async function writeIfChanged(file, payload) {
-  const substance = (o) => JSON.stringify({ works: o?.works ?? null, composers: o?.composers ?? null });
+  // Every payload key that carries data has to be compared. Listing only works
+  // and composers meant a file built around some other key — the composer dates
+  // are keyed on `dates` — compared equal to itself no matter what changed, so
+  // it was written once and then silently never again. The harvest kept finding
+  // new composers and the file kept throwing them away.
+  const substance = (o) => JSON.stringify({
+    works: o?.works ?? null,
+    composers: o?.composers ?? null,
+    dates: o?.dates ?? null,
+  });
 
   try {
     const previous = JSON.parse(await fs.readFile(file, 'utf8'));

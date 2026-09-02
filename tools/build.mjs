@@ -331,26 +331,63 @@ const dataDate = new Date(Math.max(...harvestDates, 0) || Date.now()).toISOStrin
  */
 const LIVING_FROM = 1900;
 
-function formatDates({ born, died } = {}) {
+function formatDates(record) {
+  // Destructuring a default only fires on undefined, never on null, so taking
+  // the years in the signature crashed the whole build the first time a lookup
+  // came back empty rather than absent.
+  const { born, died } = record ?? {};
   if (born && died) return `${born}–${died}`;
   if (born) return born >= LIVING_FROM ? `b. ${born}` : `${born}–?`;
   if (died) return `d. ${died}`;
   return null;
 }
 
+/**
+ * Find a composer's record, allowing for the name being spelled differently
+ * here than on IMSLP.
+ *
+ * A transliterated name arrives under whichever spelling its source used, and
+ * the sources disagree: IMSLP files Glazunov under "Aleksandr" while Wikipedia
+ * says "Alexander", so an exact lookup finds nothing and one of the best-known
+ * composers in the index keeps no dates at all.
+ *
+ * A match needs the surname to agree *and* the forename to be one IMSLP itself
+ * lists for that person. Both halves are required deliberately: matching on
+ * surname alone would give Johann Christian Bach his brother's dates.
+ */
+function findDates(composer) {
+  const exact = composerDates.dates?.[composer.sort];
+  if (exact) return exact;
+
+  const [surname, forename] = String(composer.sort).split(',').map((s) => fold(s));
+  if (!surname || !forename) return null;
+  const wanted = new Set(forename.split(' ').filter(Boolean));
+
+  for (const [key, record] of Object.entries(composerDates.dates ?? {})) {
+    const [theirSurname, theirForename] = String(key).split(',').map((s) => fold(s));
+    if (theirSurname !== surname) continue;
+    const known = new Set([...(theirForename ?? '').split(' '), ...(record.alt ?? [])]);
+    if ([...wanted].some((w) => known.has(w))) return record;
+  }
+  return null;
+}
+
 let dated = 0;
 let livingCount = 0;
+let viaVariant = 0;
 for (const c of composers.values()) {
   // Curated dates are hand-checked and outrank the harvest, as everywhere else.
   if (c.dates) continue;
-  const found = composerDates.dates?.[c.sort];
-  const formatted = formatDates(found);
+  const record = findDates(c);
+  const formatted = formatDates(record);
   if (!formatted) continue;
+  if (!composerDates.dates?.[c.sort]) viaVariant++;
   c.dates = formatted;
   dated++;
   if (formatted.startsWith('b. ')) livingCount++;
 }
-process.stderr.write(`  composer dates: ${dated} added from IMSLP, ${livingCount} living\n`);
+process.stderr.write(
+  `  composer dates: ${dated} added from IMSLP (${viaVariant} via a name variant), ${livingCount} living\n`);
 
 const payload = {
   generated: dataDate,
