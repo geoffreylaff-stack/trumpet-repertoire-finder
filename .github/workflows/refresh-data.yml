@@ -35,6 +35,15 @@ jobs:
         # partial run still contributes rather than failing the whole refresh.
         run: npm run harvest:wikipedia || node tools/harvest-wikipedia.mjs --resume
 
+      - name: Harvest composerjim.com
+        # A living composer's catalogue changes far more often than the
+        # public-domain sources, so this is the step most likely to find
+        # anything new. It is also the smallest — ten API calls against one
+        # site — and it must not take the refresh down with it if that site is
+        # briefly unreachable.
+        continue-on-error: true
+        run: npm run harvest:composerjim
+
       - name: Rebuild index
         run: npm run build
 

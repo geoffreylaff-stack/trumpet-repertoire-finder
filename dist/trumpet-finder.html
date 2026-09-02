@@ -585,7 +585,7 @@ button.secondary:hover { background: var(--surface-2); color: var(--ink); }
     </p>
   </footer>
 
-  <script id="build-info">window.__BUILD__="18deb39b92";window.__DATA_V__="5aa6903068";</script>
+  <script id="build-info">window.__BUILD__="2e497b586a";window.__DATA_V__="786d1a879d";</script>
 
   <script type="module">
 /**
@@ -751,9 +751,39 @@ function splitSegments(text) {
   return out.map((s) => s.trim()).filter(Boolean);
 }
 
+/**
+ * Read a part range written after the instrument: "Trumpet 1-4" means four
+ * players, not one. Band and wind-ensemble instrument lists number their parts
+ * this way as a matter of course, and without this the whole section collapses
+ * to a single "trumpet" — the range is the only statement of size those lists
+ * make.
+ *
+ * The range must sit immediately after the name, so "trumpet in B-flat 1" and
+ * a stray "3-4 minutes" elsewhere in the text cannot be mistaken for one.
+ */
+function trailingRange(segment, afterIndex) {
+  const m = /^\s*(\d+)\s*[-–—]\s*(\d+)\b/.exec(segment.slice(afterIndex));
+  if (!m) return null;
+  const [lo, hi] = [parseInt(m[1], 10), parseInt(m[2], 10)];
+  if (!(hi > lo) || hi - lo > 11) return null; // not a part range
+  // `length` lets the caller consume the range together with the name it
+  // belongs to, so the next instrument along cannot inherit its last number.
+  return { count: hi - lo + 1, length: m[0].length };
+}
+
 /** Pull a leading quantity off a segment: "2 trumpets" / "two trumpets". */
 function leadingCount(segment, matchIndex) {
   const before = segment.slice(0, matchIndex).trim();
+  // A part range that follows an instrument name belongs to that instrument,
+  // not the one after it: in "trumpet 1-3 flugelhorn" the 3 is the third
+  // trumpet, and reading it forwards invents three flugelhorns. This arises
+  // when a list runs two entries together without a comma, which is what a
+  // stripped-out line break leaves behind.
+  //
+  // The name has to be there. A range with nothing before it is an ordinary
+  // count — "3-4 trumpets" means three or four of them — and treating that as
+  // somebody else's part numbers loses the count altogether.
+  if (/[a-z]\s*\d+\s*[-–—]\s*\d+\s*(?:x\s*)?$/i.test(before)) return null;
   const digits = /(\d+)\s*(?:x\s*)?$/.exec(before);
   if (digits) return parseInt(digits[1], 10);
 
@@ -797,13 +827,50 @@ function parseInstrumentation(text) {
       })
     );
 
+    // Read every family instrument the segment names, left to right, blanking
+    // each match as it is taken so a longer name cannot be counted twice: once
+    // "piccolo trumpet" is consumed, the bare "trumpet" pattern must not find
+    // it again.
+    //
+    // This used to stop at the first match, on the assumption that a segment
+    // names one instrument. Run-on lists break that assumption — a stripped
+    // line break leaves "trumpet 1-3 flugelhorn" as a single segment, and
+    // stopping early recorded the flugelhorn and silently lost three trumpets.
     let primaryKey = null;
-    for (const [key, re] of PATTERNS) {
-      const m = re.exec(head);
-      if (!m) continue;
-      primaryKey = key;
+    let scan = head;
+    let lastEnd = -1;
+    for (;;) {
+      let found = null;
+      for (const [key, re] of PATTERNS) {
+        const m = re.exec(scan);
+        // PATTERNS is ordered most-specific-first, so on a tie the more
+        // specific name is already in hand; otherwise the earliest mention wins.
+        if (m && (!found || m.index < found.m.index)) found = { key, m };
+      }
+      if (!found) break;
+      const { key, m } = found;
 
-      const n = leadingCount(head, m.index);
+      // "2 trumpets or 2 flugelhorns" is one pair of players with a choice of
+      // instrument, not four players — so the alternative is skipped and the
+      // instrument named first is the one recorded. The count is allowed to
+      // repeat inside the gap, since the choice is usually spelled out on both
+      // sides rather than left implied.
+      const gap = lastEnd >= 0 ? scan.slice(lastEnd, m.index) : null;
+      const alternative = gap !== null && /^[\s,]*(?:or|oder|ou)\b[\s\d,]*$/i.test(gap);
+
+      // Consume the name together with any part range written after it, so the
+      // next instrument in a run-on list cannot inherit that range's last
+      // number as its own count.
+      const nameEnd = m.index + m[0].length;
+      const range = trailingRange(scan, nameEnd);
+      const consumedEnd = nameEnd + (range ? range.length : 0);
+      const before = scan.slice(0, m.index);
+      scan = before + ' '.repeat(consumedEnd - m.index) + scan.slice(consumedEnd);
+      lastEnd = consumedEnd;
+      if (alternative) continue;
+
+      primaryKey ??= key;
+      const n = leadingCount(scan, m.index) ?? (range ? range.count : null);
       if (n !== null) {
         if (explicit[key] === undefined) explicit[key] = n;
       } else {
@@ -815,12 +882,18 @@ function parseInstrumentation(text) {
           if (isPlural) ambiguous.add(key); // "trumpets" could be any number
         }
       }
-      break; // one family instrument per segment
     }
 
     // Doublings named in the aside ("3rd doubling flugelhorn").
+    //
+    // "dbl." is the ordinary abbreviation in a score, and a part list often says
+    // a player "includes" the second instrument rather than doubles on it. Both
+    // describe the same thing: one player, two instruments to own. "or" is
+    // deliberately absent — a choice between instruments is not a doubling, and
+    // treating it as one would claim a work needs a cornet when the trumpeter
+    // may simply play it on the trumpet.
     for (const aside of asides) {
-      if (!/doubl|also|alternat|switch|=|raddoppi/i.test(aside)) continue;
+      if (!/doubl|\bdbl|includ|also|alternat|switch|=|raddoppi/i.test(aside)) continue;
       const cleanAside = stripTranspositions(aside);
       for (const [key, re] of PATTERNS) {
         if (!re.test(cleanAside)) continue;
@@ -923,8 +996,8 @@ function fromCategoryName(name) {
 window.__WORKS_DATA__ = {
  "generated": "2026-09-02T01:27:47.134Z",
  "stats": {
-  "works": 11435,
-  "composers": 2007
+  "works": 11591,
+  "composers": 2008
  },
  "composers": [
   {
@@ -16870,6 +16943,15 @@ window.__WORKS_DATA__ = {
    "nArr": 0
   },
   {
+   "id": "stephenson-james-m",
+   "name": "James M. Stephenson",
+   "sort": "Stephenson, James M.",
+   "dates": null,
+   "aliases": [],
+   "n": 153,
+   "nArr": 3
+  },
+  {
    "id": "stewart-robertson-james",
    "name": "James Stewart-Robertson",
    "sort": "Stewart-Robertson, James",
@@ -21624,6 +21706,2842 @@ window.__WORKS_DATA__ = {
    "est": false
   },
   {
+   "c": "stephenson-james-m",
+   "t": "“The Charleston” from Wooden Dimes Suite",
+   "cat": null,
+   "y": 2022,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Piccolo, Flute 1-2, Oboe, Bb clarinet 1-3, Bass Clarinet, Bassoon 1-2, Soprano Sax, Alto Sax, Tenor Sax, Baritone Sax, Horn 1-2, Trumpet 1-2, Trombone 1-2, Bass trombone, Euphonium, Tuba, Timpani, 2 percussion, Harp, Contrabass",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "2/2 Tango",
+   "cat": null,
+   "y": 2010,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "A Christmas Song",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3*3*32 – 4431 – t + 3 (d.s.) celesta (opt) – hp – pno – gtr – El. Bass – str solo vocals (Available in C, Eb, or E, please indicate which key you would like), Note: Piano / celesta could be covered by one player. Guitar and El. Bass are optional.",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "A Little R&R",
+   "cat": null,
+   "y": 2013,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, flutes 1-2, oboes 1-2 (oboe 2 is optional), Bb clarinets (1 part-2 players), bass clarinet, alto sax 1-2 (doubling on soprano sax), tenor sax, baritone sax, horns 1-2, trumpets 1-2, trombones 1-2, bass trombone, euphonium, tuba, Percussion: 5 players, (6 if possible): Xylophone, glock, crotales, marimba, chimes, vibes, snare drum, bass drum, temple blocks, drum set, triangle, sleigh bells",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "A Mighty Fortress is Our God – Ein feste Burg",
+   "cat": null,
+   "y": 2015,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "A Tribute To Louis Armstrong",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet (or cornet) and orchestra, or brass band",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "American Embers",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, 2 alto saxophones, 1 tenor saxophone, 1 baritone saxophone, 2 Bb trumpets, 2 french horns, 2 trombones, 1 bass trombone, euphonium, tuba, timpani + 6 percussion (see specifics below), piano, offstage ensemble (preferred): piccolo, 2 oboes (opt), 3 Bb clarinets, bassoon, 2 alto saxophones, triangle, upright piano, percussion n",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Andante from Mozart’s Clarinet Quintet",
+   "cat": null,
+   "y": null,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano or organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Arutunian Trumpet Concerto Cadenza",
+   "cat": null,
+   "y": 2015,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "as the fireflies watched",
+   "cat": null,
+   "y": 2020,
+   "g": "Vocal chamber",
+   "s": "trumpet, flugelhorn",
+   "counts": {
+    "trumpet": 1,
+    "flugelhorn": 1
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", solo tenor voice, flute – alto saxophone – bassoon – trumpet/flugelhorn – 2 percussion – piano – cello – double bass, Percussion 1 – sus cymbal, trill, wood slab, ride cymbal, tam-tam, bowed crotales, Percussion 2 – 5-oct marimba, chime (F#), trgl., tambs. (mounted and held), cabasa, kick-drum, sus. cymb., bowed crotales, vibes,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "August in York",
+   "cat": null,
+   "y": 2008,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet and wind ensemble (or piano red.)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Auld Lang Syne",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "orchestra 2222 – 4231 – t+2 – str",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Awakenings",
+   "cat": null,
+   "y": 2012,
+   "g": "Chamber",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "two trumpets and organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Bagatelle for Piccolo Trumpet",
+   "cat": null,
+   "y": 2004,
+   "g": "Solo",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, and piano or organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Blue Night",
+   "cat": null,
+   "y": 2025,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Flute 1-2, oboe, bassoon, Bb clarinet 1-3, bass clarinet, Bb contrabass clarinet (opt). Alto saxophone 1-2, tenor saxophone, baritone saxophone B trumpet 1-3, French horn 1-2, trombone 1-2, euphonium (w/ opt. divisi), tuba timpani + percussion (3-6 players), percussion instruments needed: Glock, marimba, opt. xylophone, vibraphone (bowed), opt. crotales (bowed), suspended cymbal, triangle, bass dr",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Blumine from Symphony No. 1 by Gustav Mahler",
+   "cat": null,
+   "y": null,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Bold, Blue, and Bright",
+   "cat": null,
+   "y": 2005,
+   "g": "Chamber",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet, six ensemble trumpets, and timpani",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Burden of Destiny",
+   "cat": null,
+   "y": 2009,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Call for Trumpet",
+   "cat": null,
+   "y": 2003,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Unaccompanied Trumpet",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Celebrate and be Mary!",
+   "cat": null,
+   "y": 2019,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo unaccompanied trumpet",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Celebration Overture",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 2 flutes – piccolo, 2 oboes, 2 B clarinets, 2 bassoons, saxophones: soprano, alto, tenor, baritone, 2 horns, 2 C trumpets, 2 trombones, euphonium, tuba, timpani, percussion (one player): mallets: vibes, glockenspiel, triangle, tambourine, wood block, sand-blocks, sus. cymb, cymb a2, bass drum, snare drum, piano, organ, double bass,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Chorale in Blue",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, contrabass clarinet, saxophones: 2 altos, tenor, baritone, 3 Bb trumpets, 4 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, double bass, percussion:, perc 1 (mallets): glockenspiel (shared), xylophonZ, perc 2 (mallets): vibraphone, marimba (shared), chimes, glockenspiel (shared), percussion 3: wood block, ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "CitySpeaks",
+   "cat": null,
+   "y": 2019,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*3*3*32 – 4230 – t + 4 – habrp – strings; spoken-word artist, narrator, audio/visuals piccolo, 2 flutes, 2 oboes, english horn, 2 B clarinets, bass clarinet, 2 bassoons, 4 french horns, 2 C trumpets, 2 trombones, bass trombone, timpani, 4 percussion, harp, strings,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Code of Conduct",
+   "cat": null,
+   "y": 2022,
+   "g": "Concerto",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", solo alto/soprano saxophone (1 player) b, piccolo – 2 flutes – oboe – 2 bassoons – 2 B clarinets – bass clarinet section saxophones: soprano/alto sax, alto sax, tenor sax, baritone sax. (note: all four join the soloist for concerto grosso solo roles), 2 B trumpets – 2 french horns – 2 trombones – 2 euphoniums – tuba piano – harp, timpani + 5 percussion, percussion instrumentation:, mallets 1: cr",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Compose Yourself!",
+   "cat": null,
+   "y": 2002,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Full orchestra – *2222 – 3221 – t + 2 – hp – str – narrator, 15 player version – 1111 – 1111 – perc – hp – string quintet – narrator, Written for and",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto #1 for Trumpet",
+   "cat": null,
+   "y": 2003,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet – 1222 – 2100 – timp – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto #2 for Trumpet ‘Rextreme’",
+   "cat": null,
+   "y": 2010,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo trumpet; *3*3*32 – 4221 – t+4 – hp – pf – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto #3 for Trumpet – Concerto for Hope",
+   "cat": null,
+   "y": 2016,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet; *3*3*32 – 4231 – t+4 – hp – pno – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto Braziliano for Trombone",
+   "cat": null,
+   "y": 2010,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trombone – 1111 – 1100 – t+1 – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto for Bass Trombone",
+   "cat": null,
+   "y": 2018,
+   "g": "Concerto",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", solo bass trombone, piccolo (doubling on alto flute), 2 flutes (flute 2 doubling on alto flute), 2 oboes, 1 English horn, 2 αA/Bα clarinets (clarinet 1 doubles on Eα clarinet), bass clarinet, 2 bassoons, contrabassoon, 4 French horns in F 3 trumpets in C, 2 tenor trombones, tuba, timpani + 3 percussion, percussion instrumentation:, P I : vibraphone, triangle, glockenspiel (shared), cymbals a2, m",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto for Flute “Pandora’s Waltz”",
+   "cat": null,
+   "y": 2010,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo flute; *1211 – 1111 – t+3 – kybds. (pf + cel.) – hp – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto for Piano and Orchestra",
+   "cat": null,
+   "y": 2021,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo piano, piccolo, flute, oboe, English horn, clarinet, Bass clarinet, 2 bassoons horn 1-2, C trumpet, trombone, Bass trombone, tuba, timpani, 1 percussion, strings perc. needed: cymbals: suspended, splash, finger, china, hi-hat drums: snare, bass, kick, bongos mallets: marimba, vibes, xylophone other: wood block, wood slab, slap-sticks, triangle, tam-tam I. Alla breve (7:45') II. Adagio sentime",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto for Piano, Trumpet, and Strings",
+   "cat": null,
+   "y": 2007,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo piano, solo trumpet, and string orchestra (or piano reduction)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto for Piccolo Trumpet",
+   "cat": null,
+   "y": 2016,
+   "g": "Concerto",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and wind ensemble (or piano reduction)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto for Wind Ensemble “Games”",
+   "cat": null,
+   "y": 2022,
+   "g": "Wind ensemble",
+   "s": "three trumpets (1 doubling piccolo trumpet), flugelhorn",
+   "counts": {
+    "trumpet": 3,
+    "flugelhorn": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", piccolo – flute 1-3 – alto flute, oboe 1-2 – English horn, Eb clarinet – Bb clarinet 1-3 – bass clarinet – contrabass clarinet bassoon 1-2 – contrabassoon, saxophones: soprano – alto – tenor – baritone, french horn 1-4, Bb trumpet 1-3 (trumpet 1 includes Bb piccolo trumpet) B flugelhorn, trombone 1-3, bass trombone, euphonium 1-2, tuba (minimum 2 players), piano – harp timpani, 6 percussion:, ma",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto Grosso",
+   "cat": null,
+   "y": 2016,
+   "g": "Concerto",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo flute, solo alto saxophone, solo bass trombone, solo marimba; piccolo, flute, 2 oboes, English horn, 3 clarinets, Eb clarinet, bass clarinet, bassoon, contrabassoon, alto saxophone (1 part), tenor saxophone, baritone saxophone, 3 Bb trumpets, 4 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, percussion (4 players): Snare Drum, Ocean Drum Wood Block, Bass Drum, Triangle Cym",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto in D (Vivaldi/Bach – Arr. Stephenson)",
+   "cat": null,
+   "y": null,
+   "g": "Concerto",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, strings, and continuo",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Concerto Rhapsody “The Arch”",
+   "cat": null,
+   "y": 2017,
+   "g": "Concerto",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*32*32 – 4221 – hp – t+3 – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Cousins",
+   "cat": null,
+   "y": 2007,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet, solo saxophone, and orchestra (or piano reduction)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Crisp",
+   "cat": null,
+   "y": 2020,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Croatian Trio",
+   "cat": null,
+   "y": 2009,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "flute (or clarinet), trumpet, and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Declaration",
+   "cat": null,
+   "y": 2024,
+   "g": "Wind ensemble",
+   "s": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": ", piccolo, flutes 1-3 (2 per part), oboe 1-2, English horn, bassoon, contrabassoon, Eb clarinet, Bb clarinets 1-2 (2 per part), Bb bass clarinet, Saxophones: Bb soprano, Eb alto, Bb tenor, Eb baritone, French horns 1-4, Bb cornets 1-2 (doubling on trumpets), Bb trumpets 1-2, trombones 1-3, bass trombone, euphonium 1-2, tuba 1-2 double bass, piano, harp, timpani, 6 percussion:, Percussion 1: xyloph",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Divertimento, for piccolo trumpet and organ",
+   "cat": null,
+   "y": 1995,
+   "g": "Solo",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Dodecafecta",
+   "cat": null,
+   "y": 2010,
+   "g": "Concerto",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo Brass Quintet; Piccolo, 2 Flutes, 2 oboes (Ob. 2 doubling Eng. Horn), 3 B Clarinets, Bass Clarinet Bassoon 2 Alto Saxes, Tenor Sax, Bari. Sax, 3 Bb Trumpets, 3 Horns, 3 Trombones (2 Tenor, 1 Bass) Euphonium, Tuba, Timpani, 5 Percussion Harp, Contrabass, Percussion Instruments needed: Trgl., S.D., B.D., Xylo., Cymb. a2, Guiro, Sus Cymb., Vibes, Wood Block(s) Claves, Cabasa, Glock., Tamb., H.H.",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Duels and Dances",
+   "cat": null,
+   "y": 2011,
+   "g": "Concerto",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*2022 – 2220 – t+1 – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Duo Fantastique",
+   "cat": null,
+   "y": 2007,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "two solo trumpets and wind ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Elegy for Mundy",
+   "cat": null,
+   "y": 2013,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, and organ or piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Exhale!",
+   "cat": null,
+   "y": 2020,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo – 2 flutes – 2 oboes – english horn – bassoon, 3 Bb clarinets – bass clarinet – 2 alto saxophones – tenor saxophone – baritone saxophone 3 Bb trumpets – 4 french horns – 3 tenor trombones – bass trombone, euphonium – tuba, timpani – harp – double bass, 4 percussion:, mallets: glock., marimba, vibes, xylophone, chimes, + wood block, triangle percussion 1: sus. cymb., triangle, tambourine,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fanfare – Light From Shadows",
+   "cat": null,
+   "y": 2017,
+   "g": "Chamber",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Brass Quintet, Optional percussion includes: Triangle, Tambourine, Cymbal a2, Suspended Cymbal, Snare Drum, Bass Drum (w/ cymbal attachment), Drum Set ), ( optional instrumentation calls for Two brass quintets – each with 2 C trumpets, french horn, trombone and tuba., Notes from the composer:, This fanfare is the result of many worlds colliding, resulting in music., When I was a young trumpeter ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fanfare for an Angel",
+   "cat": null,
+   "y": 2010,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 part trumpet ensemble (other versions listed below)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fanfare for Democracy",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Brass ensemble instrumentation (available in Eb or F) : 4 C trumpets, 2 french horns, 2 trombones, bass trombone, and tuba (OPT Horn 3 provided for Tpt 4), timpani, percussion (3 players) Cymb a2., Suspended Cymb., Snare Drum, Bass Drum, and Tam Tam, Orchestra version instrumentation : 2222 – 4331 – perc – hp – strings, Concert Band instrumentation: piccolo, flute 1-2, oboe 1-2, bassoon 1-2, Bb ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fanfare for the Arts",
+   "cat": null,
+   "y": 2025,
+   "g": "Chamber",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Trumpet 1-4",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fanfare for Three Trumpets",
+   "cat": null,
+   "y": 1994,
+   "g": "Chamber",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "three trumpets unaccompanied",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fanfare to Sound the Call",
+   "cat": null,
+   "y": 2019,
+   "g": "Wind ensemble",
+   "s": "two piccolo trumpets, five trumpets, flugelhorn",
+   "counts": {
+    "piccoloTrumpet": 2,
+    "trumpet": 5,
+    "flugelhorn": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 2 piccolo trumpets, 5 C trumpets, 1 flugelhorn 4 french horns, 4 trombones, 1 bass trombone, euphonium, 3 tubas, timpani, 4 percussion: glockenspiel, chimes cymb. a2, B.D., S.D. tam-tam, sus. cymb. triangle,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Fantasie for Trumpet",
+   "cat": null,
+   "y": 2005,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Genesis",
+   "cat": null,
+   "y": 2024,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe, bassoon, B! clarinet 1-2, bass clarinet, alto saxophone 1-2, tenor saxophone, baritone saxophone, horn 1-3, B trumpet 1-3, trombone 1-2, bass trombone, euphonium, tuba double bass, piano, timpani, percussion 1-4, Percussion 1: Crotales, Glockenspiel, Marimba, Vibraphone, Cow Bell, Splash Cymbal, Tambourine, Percussion 2: Wind Chimes, Hi-Hat, Tambourine, D.S. Snare Drum,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Gilded Fanfare",
+   "cat": null,
+   "y": 2011,
+   "g": "Chamber",
+   "s": "six trumpets",
+   "counts": {
+    "trumpet": 6
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "6 trumpets, unaccompanied",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Glimmers of Hope",
+   "cat": null,
+   "y": 2005,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Go Forth",
+   "cat": null,
+   "y": 2020,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "God Rest Ye Merry, Gentlemen",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo brass quintet 2*3*32 – 3220 – t+3 – hp – str",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Good Christian Men Rejoice",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", *3222 – 4231 – t+3 – str + solo female voice, Percussion needed:, Triangle, Glock., Snare Drum Chimes, Tambourine, Sus. Cymb.",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Hanging by a Thread",
+   "cat": null,
+   "y": 2014,
+   "g": "Concerto",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", solo trumpet (Bb tpt., flugel and picc.) and solo tuba; Piccolo, Flutes 1-2, Bb Clarinets 1-3 (1st part – 2 players), Bass Clarinet, Sop. Sax., Alto Sax. 1-2, Tenor Sax, Baritone Sax Horns 1-2, Bb Trumpets 1-2 (dbl. on flugels), Trombones 1-2, Bass Trombone, Euphonium, Tuba Harp (w/ optional amplification), Timpani, Percussion, Contrabass, Percussion: Mallets: Vibraphone, Glockenspiel, Xylophone",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Haydn Trumpet Concerto Cadenza",
+   "cat": null,
+   "y": 2014,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet solo",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Heritage of Freedom Fanfare",
+   "cat": null,
+   "y": 2011,
+   "g": "Wind ensemble",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, Flutes, Oboe 3 Bb Clarinets, Bass Clarinet Bassoon 2 Alto Saxes, Tenor Sax, Bari Sax, 4 Bb Trumpets, 2 Horns, 3 Trombones (2 Tenor, 1 Bass) Euphonium, Tuba, Timpani, Contrabass (opt.), 2 Percussion (opt. 3): Sus. Cymb. Cymb. a2 Glock., S.D., B.D. Chimes (Timpani)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Heroic Marches (Telemann, arr. Stephenson)",
+   "cat": null,
+   "y": null,
+   "g": "Concerto",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and strings",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Holiday Fanfare Medley",
+   "cat": null,
+   "y": 2010,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, 2 Flutes, Oboe, Bassoon, 3 Bb Clarinets, Bass Clarinet, 2 Eb Saxes, Bb Tenor Sax, Eb Baritone Sax, 3 Bb Trumpets, 4 Horns (3-4 optional) 2 Trombones, Bass Trombone Euphonium, Tuba, Timpani, Mallet Percussion, Percussion: Cymb. a2 Glock. Chimes Triangle Sus. Cymb. Tenor Drum Crotales Vibes Tambourine Tom-Tom Sn. Drum Bass Drum Finger Cymbals",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Homage and Farewell",
+   "cat": null,
+   "y": 2010,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, 2 Flutes, Oboe, 3 Bb Clarinets, Bass Clarinet, 2 Eb Alto Saxes, Bb Tenor Sax, Eb Baritone Sax, 3 Bb Trumpets, 4 Horns, 2 Trombones, Bass Trombone Euphonium, Tuba, Timpani, Mallet Percussion, Percussion: Cymb. a2 Glock. Chimes Triangle Sus. Cymb. Tam-Tam Crotales Sn. Drum Bass Drum",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Hymn for US",
+   "cat": null,
+   "y": 2023,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", flute 1-2, oboe, bassoon, B! clarinet 1-3, bass clarinet saxophones: soprano, alto 1-2, tenor, baritone, B trumpet 1-3, French horn 1-4, trombone 1-3, euphonium, tuba timpani + minimum 6 percussion (up to 8), percussion instrumentation:, 1) glockenspiel (+ vibes, if available), 2) chimes, 3) marimba (+ xylo, if available), 4) cymbals: crash cym. + sus. cymb., 5) one player needed: triangle, wind",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Il Vecchio Castello (Mussorgsky/Arr. Stephenson)",
+   "cat": null,
+   "y": null,
+   "g": "Solo",
+   "s": "flugelhorn",
+   "counts": {
+    "flugelhorn": 1
+   },
+   "req": [
+    "flugelhorn"
+   ],
+   "full": "flugel horn and organ or piano",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "In Motion for Symphony Orchestra",
+   "cat": null,
+   "y": 2025,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", *3*222 – 2231 – t+3 – harp – strings, optional youth orchestra component:, 2222 – 2221 – percussion can join pros – strings,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "In Motion for Wind Ensemble",
+   "cat": null,
+   "y": 2026,
+   "g": "Wind ensemble",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, Eb clarinet, Bb clarinets 1-3, Bass clarinet, Alto saxophone 1-2, Tenor saxophone, Baritone saxophone, Bb trumpet 1-4, French horn 1-3, trombone 1-2, Bass trombone, euphonium 1-2, tuba (minimum 2 players), Double bass, Timpani + up to 8 percussion, Percussion instrumentation (7 players, option for 8):, Percussion 1: xylophone, rain-stick, ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "In The Bleak Midwinter",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3 options, 1) Solo brass quintet and chamber orchestra (strings, harp, and percussion), 2) Orchestra only – 1222 – 4221 – 0+3 – hp – str, 3) Brass quintet only",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "In the Moment",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, english horn, 2 bassoons, Eb clarinet, 3 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 3 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium (2), tuba, timpani, double bass, percussion (ideally 9 players):, mallets 1: xylo, bells (2 players), mallets 2: marimba, chimes, vibes (1 player), percussion 1: hi-hat, guiro, shaker, percussi",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "In the Moment Too",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 2 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, double bass, percussion (5 players): Glockenspiel, Chimes, Marimba, Cymbals (suspended a2), Bass Drum, The music:, First – to set the stage for why this piece is composed as it is, perhaps it is best to quote the wo",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "It’s About Time",
+   "cat": null,
+   "y": 2013,
+   "g": "Concerto",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "two trumpets and wind ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Just B",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 3 C trumpets + 3 or 6 ( preferred ) offstage trumpets. *NOTE: If only three offstage trumpets are available, place them centered (balcony) 4 F Horns, 2 Tenor trombones, 1 Bass trombone, Euphonium, Tuba, Timpani,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Kindred Sol",
+   "cat": null,
+   "y": 2017,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Kleiner Walzer",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe, bassoon, Bb clarinet 1-3, bass clarinet, alto saxophone 1-2. tenor saxophone, baritone saxophone, B trumpet 1-3, horn 1-2, trombone 1-2, euphonium (2 players), tuba, timpani, glockenspiel, xylophone 1-2 (one instrument), marimba 1-2 (one instrument), triangle, maracas, double bass,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "L’esprit de la Trompette",
+   "cat": null,
+   "y": 2012,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo Trumpet; Flutes 1-2, Oboes 1-2, Bb Clarinets 1-3, Bass Clarinet, Alto Sax. 1-2, Tenor Sax, Baritone Sax Horns 1-2, Trumpets 1-2, Trombones 1-2, Bass Trombone, Euphonium, Tuba Timpani, Percussion, Contrabass [optional]. Percussion: 3 PLAYERS Perc. Instruments needed: Triangle Sus. Cymb. Glockenspiel Vibes Wood Block Tambourine Splash Cymbal Snare Drum Bass Drum Cymb., Written for Brittany Hend",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "La Grande Vitesse",
+   "cat": null,
+   "y": 2009,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet, solo horn, solo trombone; *3*3*32 – 3221 – t+3 – hp – pf – str,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "La Viaggio Vita",
+   "cat": null,
+   "y": 2010,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "violin, trumpet, and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Legacies for Three",
+   "cat": null,
+   "y": 2013,
+   "g": "Chamber",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "three trumpets and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Legend of Sleepy Hollow",
+   "cat": null,
+   "y": 1996,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2222 – 4331 – t+ 3 – hp – str – narrator, Chamber orchestra instrumentation: 2222 – 2210 – t+1 – hp – str – narrator, Reduced chamber orchestra instrumentation: 1111 – 2111 – t+1 – hp – str – narrator, String orchestra instrumentation: Violin 1-3, Viola, Cello, Bass – opt. narrator,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Life Has Loveliness to Sell",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", SAT Choir: Girls (Soprano 1, 2/Alto) Boys: Unison, 2 flutes, 2 oboes, 2 bassoons, 2 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 2 Bb trumpets, 2 french horns, 2 trombones, euphonium, tuba, piano, timpani, double bass, percussion (5 players): marimba, glockenspiel, chimes, suspended cymbal, triangle, tambourine, cymb. a2, snare drum, rain stick, optional strings: violin 1&2",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Lonesome Valley Folk Suite",
+   "cat": null,
+   "y": 2022,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, contrabassoon, Eb clarinet, Bb clarinet 1-3, Bb bass clarinet, Eb alto saxophone 1-2, Bb tenor saxophone, Eb baritone saxophone, Bb bass saxophone (optional), Bb trumpet 1-3, French horn 1-4, trombone 1-2, bass trombone, baritone (Bb tenor clef), euphonium (bass clef), tuba double bass, timpani, 5 percussion:, Percussion 1: Glock., Vibes, ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Love Divine",
+   "cat": null,
+   "y": 2025,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", SATB Choir, 2 flutes, 2 oboes, 1 bassoon, 2 Bb clarinets, bass clarinet *saxophones:2 altos, tenor, baritone, 2 Bb trumpets, 4 french horns, 2 trombones, *euphonium, tuba piano, timpani, double bass, percussion, strings: violin 1&2, viola, cello, *Note: this could be performed without saxophones and baritone, i.e. standard orchestra,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Lower, Slower, Softer",
+   "cat": null,
+   "y": null,
+   "g": "Chamber",
+   "s": "flugelhorn",
+   "counts": {
+    "flugelhorn": 1
+   },
+   "req": [
+    "flugelhorn"
+   ],
+   "full": "flugelhorn and cello, ALL MONEY FROM SALES will go directly to CancerBlows. ( www.cancerblows.com )",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Luther: In Canon",
+   "cat": null,
+   "y": 2017,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 3 flutes, 2 oboes, english horn, 2 bassoons (cross-cued where needed) Eb clarinet (opt but preferred), 3 Bb clarinets, bass clarinet soprano (cross-cued where needed), alto, tenor, baritone saxophones 4 horns, 3 Bb trumpets, 2 tenor trombones, bass trombone, euphonium (2 players), tuba harp (may use piano as substitute), double bass (cross-cued where needed) timpani + percussion (6 play",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Martha Uncaged",
+   "cat": null,
+   "y": 2014,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo Trumpet + piccolo, flute, English horn, clarinet in A, alto saxophone, tenor saxophone, contrabassoon, trombone, 2 percussion, harp, piano, contrabass, I. Caged Lion, II. Denishawn – breakaway, III. Interlude: Louis Horst, IV. Interlude: Erick Hawkins, V. Finale – Gravity, NOTES:, “Caged Lion” – the 1st movement – describes how Martha Graham, as a young dancer in NY, was first inspired by wat",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Mexican Folklore Suite",
+   "cat": null,
+   "y": 2015,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, cello, and 1 percussion",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Möbius Trip",
+   "cat": null,
+   "y": 2017,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Solo Alto Saxophone with ensemble 1 (bright) : picc., 2 flutes, oboe, 2 Bb clarinets, trumpet, 2 french horns, bassoon, tbn, tuba, piano, mallets: (xylophone, glock, crotales + bongos, wind chimes), percussion: snare drum, triangle, claves, bongos, sus cymb., 3 toms, tambourine, 3 wood blocks (hi-mid-low) cowbell, flexatone, bell tree, sandblocks, cymb. a2, ensemble 2 (mellow) : 2 flutes, 2 Bb c",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Mutation",
+   "cat": null,
+   "y": 2008,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Octet",
+   "cat": null,
+   "y": 2021,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "flute, A/Bb clarinet, 2 bassoons, C trumpet, Bb trumpet, trombone, bass trombone, Co-commission spearheaded by Western Illinois University; Mike Fansler, director, and University of Texas El Paso; Brad Genevro, director., Consortium participants listed below.,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Ode On Solitude",
+   "cat": null,
+   "y": 2015,
+   "g": "Vocal chamber",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, high tenor voice, and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Old Modern Musick",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, contrabass clarinet, saxophones: 2 altos, tenor, baritone, 3 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium, tuba timpani, double bass, percussion (ideally 9 players):, mallets 1: glockenspiel, tamtam, splash cymbal (shared), sus. cymbal (shared) mallets 2&3:, player 1: marimba, sus. cymbal (shared), cymb ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Old Salt, Sonatina",
+   "cat": null,
+   "y": 2014,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Once Upon a Symphony",
+   "cat": null,
+   "y": 2021,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 options, Chamber ensemble – 1111 – 1*111 – hp – 1p – strings (*1 per part) – narrator, Full orchestra – *2222 – 3221 – t+2 – hp – str – narrator, *Notes For Chamber Ensemble Version: Trombone/tuba can be interchangeable, but it is preferred to have both. Strings can be augmented for more of a chamber orchestra approach if desired, but one per part works fine.,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "OUT of the GATES",
+   "cat": null,
+   "y": 2019,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo unaccompanied trumpet",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Overture Fantastique",
+   "cat": null,
+   "y": 2025,
+   "g": "Wind ensemble",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, Eb clarinet, 2 solo Bb clarinets, clarinet 1-3, Bass clarinet, Alto saxophone 1-2, Tenor saxophone, Baritone saxophone, Bb trumpet 1-4, French horn 1-4, trombone 1-2, Bass trombone, euphonium 1-2, tuba (minimum 2 players)Double bass, Timpani + 4 percussion, Percussion instrumentation:, Percussion 1: marimba, snare drum, xylophone, cymb. a2",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Passacaglia",
+   "cat": null,
+   "y": 2013,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet (or violin) and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Perpetual Notion",
+   "cat": null,
+   "y": 2019,
+   "g": "Concerto",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo percussion; piccolo, 2 flutes, bassoon, 3 Bb clarinets, bass clarinet, contrabass clarinet, 4 saxophones (2 alto, tenor, baritone) 3 Bb trumpets, 4 french horns, 2 tenor trombones, bass trombone, euphonium, tuba, double bass, piano, timpani, 5 percussion, percussion instruments needed:, glockenspiel, marimba, vibraphone, xylophone, wood blocks, suspended cymbal, snare drum, bass drum, tamtam,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "POLKaFUN",
+   "cat": null,
+   "y": 2022,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo – 2 flutes – 2 oboes – 2 bassoons – 3 Bb clarinets – bass clarinet – contrabass clarinet, 2 alto saxophones – tenor saxophone – baritone saxophone, 3 Bb trumpets – 4 french horns – 2 trombones – bass trombone – 2 euphoniums – tuba (min. 2 players) double bass – timpani, percussion (5 players; 7, if possible):, P1 (mallets): xylophone, vibraphone, P2 (mallets): marimba, glockenspiel, P3 (",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Queen of the Night Aria",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and wind ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Reflections",
+   "cat": null,
+   "y": 2011,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Remember Forward",
+   "cat": null,
+   "y": 2010,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Requiem Dances",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 2 flutes (fl. 2 doubles piccolo), oboe, 2 Bb clarinets, bassoon, saxophones: soprano, alto, tenor, baritone horn, 2 C trumpets, trombone euphonium, tuba, timpani, percussion (one player): mallets: glockenspiel, marimba, crotales, wood block, snare drum, triangle, slap-sticks, ratchet, 2 sus. cymbs (small, large), bass drum tambourine, splash cymbal, tenor drum, snare drum, claves, tam-tam, piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Road Home",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets, flugelhorn",
+   "counts": {
+    "flugelhorn": 1,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 2 flutes (fl. 2 doubling piccolo), 2 oboes, 2 bassoons, 2 Bb clarinets, bass clarinet saxophones: soprano, alto, tenor, baritone (1 each), 1 flugelhorn, 2 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium, tuba piano, timpani, double bass, percussion (3 players): instruments in brackets [ ] to be potentially shared amongst players, perc 1: [glockenspiel], crotales (bowed), marim",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Scram!",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "three trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": "solo trumpet; piccolo, 2 flutes, 2 oboes, 2 bassoons, Eb clarinet, 2 Bb clarinets, bass clarinet, saxophones: soprano, alto, tenor, baritone (1 each), 2 Bb cornets, 2 Bb trumpets, 3 french horns, 2 trombones, bass trombone, euphonium, tuba, piano, timpani, double bass, percussion (4 players), Chamber orchestra instrumentation: solo trumpet; 2222 – 2220 – timp + 2 percussion – strings, Original pie",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Second Thoughts",
+   "cat": null,
+   "y": 2014,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Flute 1-2, Oboe (cross-cued), Bassoon (cross-cued), Bb Clarinet 1-3, Bb Bass Clarinet, Eb Alto Sax. 1-2, Bb Tenor Sax, Eb Baritone Sax Bb Trumpet 1-3, F Horns 1-2 (cross-cued), Trombone 1-3, Baritone (cross-cued), Tuba, Timpani, Mallets (Bells), Percussion: Triangle, Sus. Cymbal, Snare Drum, Notes from the composer:, “Second Thoughts” is an exercise in three parts:, 1) Understanding that seconds a",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Serendipity",
+   "cat": null,
+   "y": 2010,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Silent Echoes",
+   "cat": null,
+   "y": 2013,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Soliloquy",
+   "cat": null,
+   "y": 2015,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "(optional) trumpet, and organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Sonata #1 for Trumpet",
+   "cat": null,
+   "y": 2001,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano, or trumpet and wind ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Sonata #2 for Trumpet",
+   "cat": null,
+   "y": 2014,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Sonata Rhapsody “The Arch”",
+   "cat": null,
+   "y": 2009,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*32*32 – 4221 – hp – t+3 – str, Orchestral version",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Song",
+   "cat": null,
+   "y": 2009,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet (or violin), and piano or organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Song of Myself",
+   "cat": null,
+   "y": 2015,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Solo soprano; piccolo, 2 flutes (doubled/alto flute), 2 oboes, english horn, Eb clarinet, 2 clarinets (doubled), bass clarinet, 2 bassoons, contrabassoon, 2 alto saxes, tenor sax, baritone sax, 2 trumpets, 4 french horns, 3 tenor trombones, bass trombone, euphonium, 2 tubas, timpani, percussion (7 players), harp, piano, cello, contrabass, percussion instructions required: Mallets: glockenspiel, ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Sound and Fury",
+   "cat": null,
+   "y": 2004,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet (or violin), and piano or organ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Sounds Awakened, Concerto for French Horn",
+   "cat": null,
+   "y": 2012,
+   "g": "Concerto",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo french horn; *2*322 – 3231 – t+3 – hp – str, View wind ensemble score, Co-commissioned by Gail Williams, Daniel Grabois (University of Wisconsin-Madison), Gregory Miller (University of Maryland School of Music), Seth Orgel (Louisiana State University), Erich Peterson with the Grand Rapids Youth Symphony, Alexander Shuhan (gift from his father, George Shuhan) and Michelle Stebleton (Florida St",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Spinning Wheel",
+   "cat": null,
+   "y": 2015,
+   "g": "Concerto",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano or trumpet and wind ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Spitfire",
+   "cat": null,
+   "y": 2014,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and string quartet",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Stalwart Hands",
+   "cat": null,
+   "y": 2013,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Star Spangled Banner",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "seven part trumpet ensemble, or orchestra",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Stars and Stripes Fanfare",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "orchestra, concert band, or trumpet ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Suite Nostalgique",
+   "cat": null,
+   "y": 2012,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Suite of Suites",
+   "cat": null,
+   "y": 2020,
+   "g": "Orchestral",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 0011 – 0110 – 1p – pf – vln, contrabass, (“L’histoire ensemble” + piano), percussion instruments needed: snare drum, tambourine, kick drum, 2 wood blocks (hi/low), triangle, glock (E), bass drum, sus. cymb. timpani (2 drums), duration: 12 minutes,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Sunburst Fanfare",
+   "cat": null,
+   "y": 2023,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon (2 players) Eb clarinet, Bb clarinets 1-3, bass clarinet, alto saxophone 1-2, tenor saxophone, baritone saxophone, Bb trumpets 1-3, French horns 1-4, trombones 1-2, bass trombone, euphonium (2 players), tuba (min. 2 players) timpani + 7 percussion, percussion instrumentation:, Mallets 1: glockenspiel, marimba (shared w/ M3) Mallets 2: xylophone",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Symphony for Brass",
+   "cat": null,
+   "y": 2014,
+   "g": "Wind ensemble",
+   "s": "piccolo trumpet, eight trumpets (3 doubling flugelhorn)",
+   "counts": {
+    "trumpet": 8,
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 8 trumpets: 1 B piccolo trumpet, 7 trumpets in C (tpt. 3 doubling on flugelhorn), 6 french horns, 3 tenor trombones, 1 bass trombone, 2 euphoniums, 3 tubas, timpani + 5 percussion, Percussion includes: Mallets: Vibes, Glockenspiel, Marimba, Xylophone, Triangle, Sus. Cymb. (3 different sizes), a2 Cymb., China Cymbal, Tam-Tam Wood Block, Conga Drum, Bongos, 4 toms, Bass Drum, Tambourine, Snare Dru",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Symphony No. 2 “Voices” for Wind Ensemble",
+   "cat": null,
+   "y": 2016,
+   "g": "Wind ensemble",
+   "s": "two trumpets, three cornets",
+   "counts": {
+    "cornet": 3,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": ", mezzo-soprano – piccolo – 3 flutes (+alto) – 2 oboes – english horn – E clarinet – 3 B clarinets – alto clarinet – bass clarinet – 2 bassoons – contrabassoon – saxes: 1 soprano, alto, tenor, baritone – 4 french horns – 3 cornets (+flugels) – 2 trumpets – 3 trombones – bass trombone – 2 euphoniums – tuba (2) double bass – piano/celesta – harp – timpani – 6 percussion: 2 mallets + 4 percussion, Ma",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Symphony No. 3",
+   "cat": null,
+   "y": 2019,
+   "g": "Orchestral",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*3*3*3*3 (opt. 3 saxophones, see NOTE) – 4331 – t + 3 – harp – strings piccolo, 2 flutes 2 oboes, english horn 2 Bb clarinets, bass clarinet 2 bassoons, contrabassoon **3 saxophones optional (soprano-alto-tenor) **NOTE: optional parts for three saxophones: soprano, alto, tenor. This is for the trio of 3rd movement only, but preferred by the composer, when possible. 4 french horns in F 3 trumpets i",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Symphony No. 4",
+   "cat": null,
+   "y": 2023,
+   "g": "Wind ensemble",
+   "s": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": ", piccolo – 3 flutes – 2 oboes – English horn – 2 bassoons – contrabassoon, E clarinet-3B clarinets-bassclarinet, 2 alto saxophones – tenor saxophone – baritone saxophone, 2 Bb cornets – 3 Bb trumpets – 4 french horns, 2 tenor trombones – Bass trombone – 2 euphoniums – 3 tubas (minimum), Timpani + 5 percussion (instrumentation below). [Note: all large mallet instruments intended to be shared] Dou",
+   "note": null,
+   "arr": false,
+   "est": true
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Symphony No. 5",
+   "cat": null,
+   "y": 2024,
+   "g": "Wind ensemble",
+   "s": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-3* (flute 3 doubles on alto flute) (note: 2 players per part is recommended), oboe 1-2, English horn, Eb clarinet, Bb clarinet 1-3* (note: 2 players per Bb clarinet part is recommended), Bass clarinet, Contrabass clarinet, bassoon 1-2, contrabassoon, soprano saxophone, alto saxophone 1-2, tenor saxophone, baritone saxophone, French horn 1-6, C trumpet 1-5 (Trumpet 1 doubles on B",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Synthesis Drop",
+   "cat": null,
+   "y": 2025,
+   "g": "Wind ensemble",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, Eb clarinet, Bb clarinets 1-3, Bass clarinet, Alto saxophone 1-2, Tenor saxophone, Baritone saxophone, Bb trumpet 1-4, French horn 1-3, trombone 1-2, Bass trombone, euphonium 1-2, tuba (minimum 2 players), Double bass, Timpani + up to 8 percussion, Percussion instrumentation (7 players, option for 8):, Percussion 1: xylophone, rain-stick, ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Taps",
+   "cat": null,
+   "y": null,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", flute 1-2, oboe 1-2, bassoon 1-2, Bb clarinet 1-3, bass clarinet, contrabass clarinet alto saxophone 1-2, tenor saxophone, baritone saxophone, Bb trumpet 1-3, horn 1-4, trombone 1-2, bass trombone, euphonium, tuba timpani, percussion 1-3, double bass, percussion needed:, Mallets 1: glockenspiel, Mallets 2: chimes, Perc.: suspended cymbal, triangle, Several years prior, I was originally",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "The Devil’s Tale",
+   "cat": null,
+   "y": 2013,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "violin, clarinet, bassoon, trumpet, trombone, bass, percussion, and narrator",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "THE PLANETS",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "two trumpets (doubling flugelhorn)",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 2 flutes (2 dbl on piccolo) – 2 oboes – 2 A/Bb clarinets – 2 bassoons (2 dbl on contrabassoon) 2 French horns – 2 C trumpets (both dbl on B flugelhorn) – trombone – bass trombone timpani + 2 percussion / harp – keyboards (celesta + optional organ), strings, SSA-SSA chorus parts (included for Neptune)Percussion instruments needed:, Perc 1: snare drum, triangle, tambourine, cymbals a2, suspended c",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "The Stars and Stripes Forever",
+   "cat": null,
+   "y": null,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet ensemble (2 piccolo trumpets, and 5 Bb trumpets)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "The Storyteller",
+   "cat": null,
+   "y": 2013,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, violin, piano, and offstage trumpet (with additional options listed below)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "The Waiting Game",
+   "cat": null,
+   "y": 2020,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", flute, oboe, Bb clarinet 1-2, bass clarinet, alto/tenor/baritone saxophone, Bb trumpet 1-2, french horn, trombone, baritone, bassoon, tuba timpani + (min.) 5 percussion, percussion instruments needed:, mallets: marimba, xylophone, glockenspiel, percussion: bass drum, snare drum, sus. cymb., hi-hat, triangle, tambourine,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Thinking",
+   "cat": null,
+   "y": 2005,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, clarinet, bassoon, violin, cello, and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "this is most certainly true",
+   "cat": null,
+   "y": 2017,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, alto flute, 2 oboes, english horn, 2 bassoons Eb clarinet (opt), 3 Bb clarinets, bass clarinet soprano sax (cross-cued), alto, tenor, bari saxophones 4 horns, 3 Bb trumpets, 2 tenor trombones, bass trombone euphonium (2 players), tuba harp, double bass timpani + percussion (6 players): Chimes (separate part included) Vibes, Marimba, Orch Bells, Crotales (bowed, + dipped in wat",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Trench Coat",
+   "cat": null,
+   "y": 2018,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 2 Bb trumpets, 3 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, double bass, percussion:, mallets: marimba, vibes, xylophone, percussion 1: snare drum, triangle, percussion 2: bongos, claves, slap-sticks, shakers, bells, snare drum (2nd drum), percussion 3: tambourine",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Trio Sonata",
+   "cat": null,
+   "y": 2001,
+   "g": "Chamber",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "violin (or flute), trumpet, and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Trumpet Sonatina #1",
+   "cat": null,
+   "y": 2018,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Twisted Shout",
+   "cat": null,
+   "y": 2021,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 2 flutes – piccolo/flute 3 – oboe – English horn – 3 Bb clarinets – bass clarinet – bassoon (cross-cued) – soprano saxophone – 2 alto saxophones – tenor saxophone – baritone saxophone 3 Bb trumpets – 4 French horns – 3 tenor trombones – bass trombone, euphonium – tuba, timpani – piano – double bass, 5 percussion:, mallets (2 players): marimba, vibes, xylophone, percussion 1: sand blocks, wood bl",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Unfrettered",
+   "cat": null,
+   "y": 2020,
+   "g": "Concerto",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "piccolo – 2 flutes – 2 Bb clarinets – bass clarinet – contrabass clarinet – 2 bassoons saxophones: 1 soprano, 2 altos, 1 tenor, 2 Bb trumpets – 2 french horns – 2 tenor trombones – euphonium – tuba, harp – contrabass, 5 percussion, perc. 1: vibes, xylophone, glockenspiel, tambourine, bowed crotales, perc. 2: marimba, finger cymbals, perc. 3: sand blocks, tambourine, cabasa, cajon, perc. 4: wood bl",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Unplugged",
+   "cat": null,
+   "y": 2014,
+   "g": "Chamber",
+   "s": "eight trumpets",
+   "counts": {
+    "trumpet": 8
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "8 Trumpets",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Variations on a Theme by Haydn",
+   "cat": null,
+   "y": 2010,
+   "g": "Solo",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano, or six part trumpet ensemble",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Vignettes",
+   "cat": null,
+   "y": 2005,
+   "g": "Chamber",
+   "s": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and percussion, or five trumpets with opt. percussion",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Voyages",
+   "cat": null,
+   "y": 2020,
+   "g": "Wind ensemble",
+   "s": "piccolo trumpet, three trumpets, four flugelhorns",
+   "counts": {
+    "trumpet": 3,
+    "flugelhorn": 4,
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", Bb piccolo trumpet, C trumpet 1-3, Bb trumpet 4 Bb flugelhorn, French horn 1-4, Trombone 1-3, Bass Trombone, Euphonium 1-2, Tuba 1-2, Piano, Timpani + 5 percussion (opt for 6th in parts), Percussion instruments needed:, Mallets 1: Xylophone, Marimba, Vibes, Slap-sticks, Crotales, Mallets 2: 5-octave Marimba, Wood Block, Crotales, Chimes, Percussion 1: Sus. Cymb., Timbales, Snare Drum (brushes/st",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Walk Slowly",
+   "cat": null,
+   "y": 1997,
+   "g": "Wind ensemble",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Soprano, trumpet, and piano (or chamber winds)",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Wassail, Wassail, All over the Tuba (or Trumpet)",
+   "cat": null,
+   "y": 2010,
+   "g": "Orchestral",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*2*322 – 3220 – t+3 – strings,",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Wildcat Run",
+   "cat": null,
+   "y": 2019,
+   "g": "Wind ensemble",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, 2 bass clarinets, contrabass clarinet, saxophones: soprano, 2 altos, tenor, baritone, 3 Bb trumpets, 4 french horns, 2 trombones, bass trombone, 2 euphoniums, 2 tubas, timpani, harp, piano, double bass, percussion:, perc 1: glockenspiel, crotales, xylophone, perc 2: vibraphone, triangle, cymb. a2, china cymbal, wind chimes, glockenspiel, perc",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "Working Together",
+   "cat": null,
+   "y": 2022,
+   "g": "Wind ensemble",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe, 2 Bb clarinet 1-2, bass clarinet, alto sax 1-2, tenor sax, baritone sax trumpet 1-2, french horn, trombone, baritone, tuba piano + SATB choir, timpani, 6 percussion:, percussion instruments needed:, mallets 1: glockenspiel, mallets 2: xylophone, marimba, percussion 1 (2 players): suspended cymbals, triangle, cymb. a2, percussion 2: snare drum, percussion 3: bass drum, N",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "World War I Medley",
+   "cat": null,
+   "y": null,
+   "g": "Orchestral",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*3222 – 4331 – t+3 – hp – strings, perc. 1 – Xylo, Cymb a2, Orch Bells, Trgl, BD, perc. 2 – Snare Drum, perc. 3 – BD/Cym attachment, Trgl, WB, Sus. Cymb., Orch Bells, Commemorating the 100th anniversary of the United States’ entry into World War I, with the following songs:, For Your Country and My Country, Good-Bye Broadway, Hello France!, I’m Going to Hide Away, I’m Always Chasing Rainbows Over ",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
+   "t": "You have reached the city limits for Symphonic Winds",
+   "cat": null,
+   "y": 2024,
+   "g": "Wind ensemble",
+   "s": "three trumpets (1 doubling piccolo trumpet)",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet"
+   ],
+   "full": ", Note: the composer suggests doubling of flutes and clarinets is acceptable., piccolo – 2 flutes – 2 oboes – English horn – 3 B! clarinets – bass clarinet – 2 bassoons – contrabassoon, saxophone 1 (soprano/alto), alto saxophone 2, tenor saxophone, baritone saxophone, 4 French horns – 3 C trumpets (trumpet 1 includes B! cornet and B! piccolo trumpet), 2 trombones – bass trombone – euphonium (2 pla",
+   "note": null,
+   "arr": false,
+   "est": false
+  },
+  {
    "c": "rachmaninoff-sergei",
    "t": "Scherzo in D minor",
    "cat": null,
@@ -22824,13 +25742,14 @@ window.__WORKS_DATA__ = {
    "cat": null,
    "y": null,
    "g": "Choral",
-   "s": "five trumpets, flugelhorn",
+   "s": "five trumpets (doubling cornet), flugelhorn",
    "counts": {
     "trumpet": 5,
     "flugelhorn": 1
    },
    "req": [
     "trumpet",
+    "cornet",
     "flugelhorn"
    ],
    "full": "Strings: violins I & II, violas, cellos, double basses, Woodwinds: piccolo, 2 flutes, 3 oboes (including English horn), 3 clarinets (including E-flat clarinet), 2 bass clarinets, 2 alto saxophones, 2 tenor saxophones, 3 bassoons (including contrabassoon), Brass: 4 horns, 5 trumpets (including cornet), 3 trombones, bass trombone, 2 tubas, Percussion: timpani, 2 snare drums, bass drum, cymbals, 2 ta",
@@ -221488,12 +224407,12 @@ window.__WORKS_DATA__ = {
    "cat": null,
    "y": null,
    "g": "Arrangement",
-   "s": "two flugelhorns",
+   "s": "two trumpets",
    "counts": {
-    "flugelhorn": 2
+    "trumpet": 2
    },
    "req": [
-    "flugelhorn"
+    "trumpet"
    ],
    "full": "horn, 2 trumpets or 2 flugelhorns, trombone, tuba, triangle and snare drum",
    "note": null,

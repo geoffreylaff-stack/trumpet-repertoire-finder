@@ -9,11 +9,11 @@ Nothing is installed. The end user opens a URL in Chrome or Edge and searches.
 
 | | |
 |---|---|
-| **Works indexed** | 11,435 |
-| **Composers** | 2,007 |
-| **Works needing a cornet** | 650 |
-| **Works needing a flugelhorn** | 784 |
-| **Sources** | 137 hand-checked · 741 from Wikipedia · 10,557 from IMSLP |
+| **Works indexed** | 11,591 |
+| **Composers** | 2,008 |
+| **Works needing a cornet** | 655 |
+| **Works needing a flugelhorn** | 792 |
+| **Sources** | 137 hand-checked · 156 from composerjim.com · 741 from Wikipedia · 10,557 from IMSLP |
 | **Family members covered** | trumpet · cornet · flugelhorn · piccolo trumpet |
 
 ---
@@ -201,19 +201,21 @@ scoring is where "2 trumpets + 2 cornets" is a fact worth looking up.
 `Instrumentation` section giving the full brass complement.
 
 So the app is built as **a pre-computed index, shipped with the page**, drawing
-on three sources in order of authority:
+on four sources in order of authority:
 
 ```
   build time (a laptop or CI, never the user's browser)
   ┌──────────────────────────────────────────────────────────┐
   │  data/curated.json          hand-checked orchestral       │  ← wins
+  │  tools/harvest-composerjim.mjs → data/composerjim.json    │
+  │      one living composer's own catalogue, via its API     │
   │  tools/harvest-wikipedia.mjs → data/wikipedia.json        │
   │      Instrumentation section, or a "scored for" sentence  │
   │  tools/harvest-imslp.mjs     → data/imslp.json            │  ← breadth
   │      pass A: category names encode exact scoring          │
   │      pass B: |Instrumentation= field, 50 pages/call       │
   │                                                           │
-  │  tools/build.mjs  merges all three → data/works.json      │
+  │  tools/build.mjs  merges all four → data/works.json       │
   └──────────────────────────────────────────────────────────┘
                               │
   run time                    ▼
@@ -263,6 +265,58 @@ seconds, because the address is shared rather than because of our pace. The
 CDN-cached paths are not throttled at all, so the harvester reads article text
 from `index.php?action=raw` and category membership from the rendered category
 page.
+
+### A living composer's own catalogue
+
+The two general sources are both weighted towards music old enough to be out of
+copyright. IMSLP has almost nothing by a composer still writing, and Wikipedia
+has articles for barely any individual work. For **James Stephenson** — a former
+orchestral trumpeter whose catalogue is largely brass and wind music, so exactly
+the repertoire this index exists for — that meant near-total absence.
+
+His own site publishes the scoring for every piece, which makes it the primary
+record rather than a substitute for one. `tools/harvest-composerjim.mjs` reads
+it and ranks it directly below the curated file: authoritative for his works,
+still overridable by hand.
+
+**Only catalogue facts are taken** — title, instrumentation, year and the page
+URL. The listings also carry the composer's own writing about each piece, its
+commission and its dedicatees; none of that is stored or shipped. The scoring is
+cut out of the text and the prose is left where it is.
+
+The site runs WordPress with WooCommerce, whose Store API returns the catalogue
+as JSON, so the harvest is ten paginated API calls rather than 1,600 page
+fetches. `robots.txt` permits it, disallowing only `wp-admin` and WooCommerce's
+own upload paths.
+
+Two notations had to be understood, and where each is handled matters:
+
+**Part ranges — "Trumpet 1-4".** Band lists number their parts instead of
+counting them, so the range *is* the section size, and without reading it a
+four-trumpet section collapses to one. This went into the shared parser: it is
+how wind scores are written everywhere, not one publisher's habit.
+
+**Orchestral shorthand — `*3*3*32 – 4231 – t+4 – hp – str`.** The second group
+is horns.trumpets.trombones.tuba, so its second digit is the trumpet section,
+and for a full-orchestra work it is often the only place that number appears.
+This stayed in the harvester, because it is house style rather than notation: a
+bare `4231` in some other catalogue means nothing of the kind, and teaching the
+shared parser to read four digits as a brass section would misread them
+everywhere else. It fills a gap and never overrules words — where a list names
+its brass in prose it says *which* instruments as well as how many, and letting
+the shorthand win turned "2 cornets, 2 trumpets" into a flat three trumpets.
+
+Reading a real catalogue also exposed a genuine bug in the shared parser. These
+lists put one player per line and lean on the line break to separate them; strip
+the markup to spaces and `trumpet 1-3` runs into `flugelhorn`, at which point
+the parser read the 3 forwards and reported **three flugelhorns and no trumpets
+at all**. Three things came out of that, all now covered by tests: the harvester
+keeps line breaks as commas, a part range is consumed together with the
+instrument it belongs to, and a segment naming several family instruments
+records all of them instead of stopping at the first. Across the 11,435 works
+already indexed those changes altered exactly one scoring — *Eventide*, which is
+"2 trumpets **or** 2 flugelhorns" and now records the instrument named first
+rather than whichever pattern happened to be tried first.
 
 ### The curated layer
 
@@ -319,11 +373,13 @@ assets/styles.css              light/dark, no external assets
 lib/instrumentation.mjs        the parser — runs in Node and the browser alike
 tools/harvest-imslp.mjs        build-time IMSLP harvester
 tools/harvest-wikipedia.mjs    build-time Wikipedia harvester
+tools/harvest-composerjim.mjs  build-time harvester for one living composer
 tools/build.mjs                merge + single-file bundle
 tools/test-instrumentation.mjs regression tests (npm test)
 data/curated.json              hand-checked works  (edit this)
 data/wikipedia.json            harvest output      (generated)
 data/imslp.json                harvest output      (generated)
+data/composerjim.json          harvest output      (generated)
 data/works.json                merged index the app loads (generated)
 dist/trumpet-finder.html       standalone offline build (generated)
 ```
@@ -337,9 +393,10 @@ exist, as a sibling of the oboe finder with those two blocks rewritten.
 ## Refreshing the data
 
 ```bash
-npm run harvest              # both sources
+npm run harvest              # all three harvested sources
 npm run harvest:imslp
 npm run harvest:wikipedia
+npm run harvest:composerjim
 npm run build
 npm test
 ```
@@ -364,7 +421,14 @@ Worth being straight about:
 - **Coverage follows the sources.** The Wikipedia sweep covers a fixed list of
   composers (see `COMPOSERS` in the harvester) — adding a name there and
   re-running is the way to extend it. Outside that list, coverage falls back to
-  IMSLP, which is public-domain-weighted and thin on recent composers.
+  IMSLP, which is public-domain-weighted and thin on recent composers. One
+  living composer has a harvester of his own; every other is only as well
+  covered as those two general sources make him.
+- **A publisher's listing is not a score.** The composerjim.com scorings are
+  read from the catalogue text as published. Where a work offers alternatives —
+  "trumpet and percussion, or five trumpets" — the index records the larger
+  version, and where a part list is ambiguous the note in `data/composerjim.json`
+  keeps the original wording so the reading can be checked.
 - **A work needs an article to be found.** Wikipedia only yields a scoring where
   the individual work has its own page with an instrumentation section or a
   "scored for…" sentence.

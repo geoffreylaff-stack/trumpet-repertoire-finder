@@ -59,6 +59,7 @@ const formKey = (composerId, title) => {
 };
 
 const curated = await readJson(p('data/curated.json'), { composers: {}, works: [] });
+const composerjim = await readJson(p('data/composerjim.json'), { works: [] });
 const wikipedia = await readJson(p('data/wikipedia.json'), { works: [] });
 const imslp = await readJson(p('data/imslp.json'), { composers: [], works: [] });
 
@@ -141,6 +142,39 @@ for (const w of curated.works ?? []) {
     url: null,
   });
   composers.get(w.c).n++;
+}
+
+// ── composerjim.com ───────────────────────────────────────────────────────────
+// Ranked directly below the curated file and above both general sources. For a
+// living composer's own catalogue his own publisher's listing is the primary
+// record: IMSLP is public-domain-weighted and has none of it, and Wikipedia has
+// articles for barely any individual work. The curated file still outranks it,
+// so a hand-checked correction survives the next harvest.
+for (const w of composerjim.works ?? []) {
+  const c = resolveComposer(w.composer);
+  const key = workKey(c.id, w.title);
+  const fk = formKey(c.id, w.title);
+  if (seen.has(key) || (fk && seen.has(fk))) continue;
+  seen.add(key);
+  if (fk) seen.add(fk);
+
+  works.push({
+    c: c.id,
+    t: w.title,
+    cat: null,
+    y: w.year ?? null,
+    g: w.genre || 'Other',
+    s: w.scoring,
+    counts: w.counts,
+    req: w.req,
+    full: w.full || null,
+    note: null,
+    arr: !!w.arrangement,
+    est: !!w.estimated,
+    src: 'composerjim',
+    url: w.url,
+  });
+  if (w.arrangement) c.nArr++; else c.n++;
 }
 
 // ── Wikipedia ─────────────────────────────────────────────────────────────────

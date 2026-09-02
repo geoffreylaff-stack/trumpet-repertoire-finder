@@ -1,0 +1,2848 @@
+{
+ "generated": "2026-09-02T13:25:00.264Z",
+ "source": "composerjim.com — James Stephenson's own catalogue",
+ "note": "Catalogue facts only: title, instrumentation, year and page URL. The programme notes on the site are the composer's own writing and are not stored.",
+ "counts": {
+  "works": 156,
+  "products": 279,
+  "requests": 10
+ },
+ "works": [
+  {
+   "composer": "James M. Stephenson",
+   "title": "“The Charleston” from Wooden Dimes Suite",
+   "year": 2022,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Piccolo, Flute 1-2, Oboe, Bb clarinet 1-3, Bass Clarinet, Bassoon 1-2, Soprano Sax, Alto Sax, Tenor Sax, Baritone Sax, Horn 1-2, Trumpet 1-2, Trombone 1-2, Bass trombone, Euphonium, Tuba, Timpani, 2 percussion, Harp, Contrabass",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/the-charleston-from-wooden-dimes-suite/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "2/2 Tango",
+   "year": 2010,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/2-2-tango/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "A Christmas Song",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3*3*32 – 4431 – t + 3 (d.s.) celesta (opt) – hp – pno – gtr – El. Bass – str solo vocals (Available in C, Eb, or E, please indicate which key you would like), Note: Piano / celesta could be covered by one player. Guitar and El. Bass are optional.",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/a-christmas-song/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "A Little R&R",
+   "year": 2013,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, flutes 1-2, oboes 1-2 (oboe 2 is optional), Bb clarinets (1 part-2 players), bass clarinet, alto sax 1-2 (doubling on soprano sax), tenor sax, baritone sax, horns 1-2, trumpets 1-2, trombones 1-2, bass trombone, euphonium, tuba, Percussion: 5 players, (6 if possible): Xylophone, glock, crotales, marimba, chimes, vibes, snare drum, bass drum, temple blocks, drum set, triangle, sleigh bells",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/a-little-rr/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "A Mighty Fortress is Our God – Ein feste Burg",
+   "year": 2015,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/a-mighty-fortress-is-our-god/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "A Tribute To Louis Armstrong",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet (or cornet) and orchestra, or brass band",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/tribute-to-louis-armstrong/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "American Embers",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, 2 alto saxophones, 1 tenor saxophone, 1 baritone saxophone, 2 Bb trumpets, 2 french horns, 2 trombones, 1 bass trombone, euphonium, tuba, timpani + 6 percussion (see specifics below), piano, offstage ensemble (preferred): piccolo, 2 oboes (opt), 3 Bb clarinets, bassoon, 2 alto saxophones, triangle, upright piano, percussion n",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/american-embers/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Andante from Mozart’s Clarinet Quintet",
+   "year": null,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano or organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/andante-from-mozarts-clarinet-quintet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Arutunian Trumpet Concerto Cadenza",
+   "year": 2015,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/arutunian-trumpet-concerto-cadenza/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "as the fireflies watched",
+   "year": 2020,
+   "genre": "Vocal chamber",
+   "scoring": "trumpet, flugelhorn",
+   "counts": {
+    "trumpet": 1,
+    "flugelhorn": 1
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", solo tenor voice, flute – alto saxophone – bassoon – trumpet/flugelhorn – 2 percussion – piano – cello – double bass, Percussion 1 – sus cymbal, trill, wood slab, ride cymbal, tam-tam, bowed crotales, Percussion 2 – 5-oct marimba, chime (F#), trgl., tambs. (mounted and held), cabasa, kick-drum, sus. cymb., bowed crotales, vibes,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/as-the-fireflies-watched/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "August in York",
+   "year": 2008,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet and wind ensemble (or piano red.)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/august-in-york/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Auld Lang Syne",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "orchestra 2222 – 4231 – t+2 – str",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/auld-lang-syne/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Awakenings",
+   "year": 2012,
+   "genre": "Chamber",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "two trumpets and organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/awakenings/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Bagatelle for Piccolo Trumpet",
+   "year": 2004,
+   "genre": "Solo",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, and piano or organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/bagatelle-for-piccolo-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Blue Night",
+   "year": 2025,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Flute 1-2, oboe, bassoon, Bb clarinet 1-3, bass clarinet, Bb contrabass clarinet (opt). Alto saxophone 1-2, tenor saxophone, baritone saxophone B trumpet 1-3, French horn 1-2, trombone 1-2, euphonium (w/ opt. divisi), tuba timpani + percussion (3-6 players), percussion instruments needed: Glock, marimba, opt. xylophone, vibraphone (bowed), opt. crotales (bowed), suspended cymbal, triangle, bass dr",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/blue-night/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Blumine from Symphony No. 1 by Gustav Mahler",
+   "year": null,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/blumine-from-symphony-no-1-by-gustav-mahler/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Bold, Blue, and Bright",
+   "year": 2005,
+   "genre": "Chamber",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet, six ensemble trumpets, and timpani",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/bold-blue-and-bright/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Burden of Destiny",
+   "year": 2009,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/burden-of-destiny/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Call for Trumpet",
+   "year": 2003,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Unaccompanied Trumpet",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/call-for-unaccompanied-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Celebrate and be Mary!",
+   "year": 2019,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo unaccompanied trumpet",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/celebrate-and-be-mary/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Celebration Overture",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 2 flutes – piccolo, 2 oboes, 2 B clarinets, 2 bassoons, saxophones: soprano, alto, tenor, baritone, 2 horns, 2 C trumpets, 2 trombones, euphonium, tuba, timpani, percussion (one player): mallets: vibes, glockenspiel, triangle, tambourine, wood block, sand-blocks, sus. cymb, cymb a2, bass drum, snare drum, piano, organ, double bass,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/celebration-overture-for-wind-ensemble/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Chorale in Blue",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, contrabass clarinet, saxophones: 2 altos, tenor, baritone, 3 Bb trumpets, 4 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, double bass, percussion:, perc 1 (mallets): glockenspiel (shared), xylophonZ, perc 2 (mallets): vibraphone, marimba (shared), chimes, glockenspiel (shared), percussion 3: wood block, ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/chorale-in-blue/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "CitySpeaks",
+   "year": 2019,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*3*3*32 – 4230 – t + 4 – habrp – strings; spoken-word artist, narrator, audio/visuals piccolo, 2 flutes, 2 oboes, english horn, 2 B clarinets, bass clarinet, 2 bassoons, 4 french horns, 2 C trumpets, 2 trombones, bass trombone, timpani, 4 percussion, harp, strings,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/cityspeaks/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Code of Conduct",
+   "year": 2022,
+   "genre": "Concerto",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", solo alto/soprano saxophone (1 player) b, piccolo – 2 flutes – oboe – 2 bassoons – 2 B clarinets – bass clarinet section saxophones: soprano/alto sax, alto sax, tenor sax, baritone sax. (note: all four join the soloist for concerto grosso solo roles), 2 B trumpets – 2 french horns – 2 trombones – 2 euphoniums – tuba piano – harp, timpani + 5 percussion, percussion instrumentation:, mallets 1: cr",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/code-of-conduct/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Compose Yourself!",
+   "year": 2002,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Full orchestra – *2222 – 3221 – t + 2 – hp – str – narrator, 15 player version – 1111 – 1111 – perc – hp – string quintet – narrator, Written for and",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/compose-yourself/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto #1 for Trumpet",
+   "year": 2003,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet – 1222 – 2100 – timp – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-1-for-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto #2 for Trumpet ‘Rextreme’",
+   "year": 2010,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo trumpet; *3*3*32 – 4221 – t+4 – hp – pf – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-2-for-trumpet-rextreme/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto #3 for Trumpet – Concerto for Hope",
+   "year": 2016,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet; *3*3*32 – 4231 – t+4 – hp – pno – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-3-for-trumpet-concerto-for-hope/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto Braziliano for Trombone",
+   "year": 2010,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trombone – 1111 – 1100 – t+1 – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/concerto-braziliano-for-trombone/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto for Bass Trombone",
+   "year": 2018,
+   "genre": "Concerto",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", solo bass trombone, piccolo (doubling on alto flute), 2 flutes (flute 2 doubling on alto flute), 2 oboes, 1 English horn, 2 αA/Bα clarinets (clarinet 1 doubles on Eα clarinet), bass clarinet, 2 bassoons, contrabassoon, 4 French horns in F 3 trumpets in C, 2 tenor trombones, tuba, timpani + 3 percussion, percussion instrumentation:, P I : vibraphone, triangle, glockenspiel (shared), cymbals a2, m",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-for-bass-trombone/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto for Flute “Pandora’s Waltz”",
+   "year": 2010,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo flute; *1211 – 1111 – t+3 – kybds. (pf + cel.) – hp – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/concerto-for-flute-pandoras-waltz/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto for Piano and Orchestra",
+   "year": 2021,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo piano, piccolo, flute, oboe, English horn, clarinet, Bass clarinet, 2 bassoons horn 1-2, C trumpet, trombone, Bass trombone, tuba, timpani, 1 percussion, strings perc. needed: cymbals: suspended, splash, finger, china, hi-hat drums: snare, bass, kick, bongos mallets: marimba, vibes, xylophone other: wood block, wood slab, slap-sticks, triangle, tam-tam I. Alla breve (7:45') II. Adagio sentime",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-for-piano-and-orchestra/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto for Piano, Trumpet, and Strings",
+   "year": 2007,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo piano, solo trumpet, and string orchestra (or piano reduction)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/concerto-for-piano-trumpet-and-strings/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto for Piccolo Trumpet",
+   "year": 2016,
+   "genre": "Concerto",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and wind ensemble (or piano reduction)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/concerto-for-piccolo-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto for Wind Ensemble “Games”",
+   "year": 2022,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets (1 doubling piccolo trumpet), flugelhorn",
+   "counts": {
+    "trumpet": 3,
+    "flugelhorn": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", piccolo – flute 1-3 – alto flute, oboe 1-2 – English horn, Eb clarinet – Bb clarinet 1-3 – bass clarinet – contrabass clarinet bassoon 1-2 – contrabassoon, saxophones: soprano – alto – tenor – baritone, french horn 1-4, Bb trumpet 1-3 (trumpet 1 includes Bb piccolo trumpet) B flugelhorn, trombone 1-3, bass trombone, euphonium 1-2, tuba (minimum 2 players), piano – harp timpani, 6 percussion:, ma",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-for-wind-ensemble-games/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto Grosso",
+   "year": 2016,
+   "genre": "Concerto",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo flute, solo alto saxophone, solo bass trombone, solo marimba; piccolo, flute, 2 oboes, English horn, 3 clarinets, Eb clarinet, bass clarinet, bassoon, contrabassoon, alto saxophone (1 part), tenor saxophone, baritone saxophone, 3 Bb trumpets, 4 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, percussion (4 players): Snare Drum, Ocean Drum Wood Block, Bass Drum, Triangle Cym",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/concerto-grosso/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto in D (Vivaldi/Bach – Arr. Stephenson)",
+   "year": null,
+   "genre": "Concerto",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, strings, and continuo",
+   "estimated": false,
+   "arrangement": true,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/concerto-in-d-vivaldi-bach-arr-stephenson/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Concerto Rhapsody “The Arch”",
+   "year": 2017,
+   "genre": "Concerto",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*32*32 – 4221 – hp – t+3 – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/concerto-rhapsody-the-arch/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Cousins",
+   "year": 2007,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet, solo saxophone, and orchestra (or piano reduction)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/cousins/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Crisp",
+   "year": 2020,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/crisp/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Croatian Trio",
+   "year": 2009,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "flute (or clarinet), trumpet, and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/croatian-trio/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Declaration",
+   "year": 2024,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": ", piccolo, flutes 1-3 (2 per part), oboe 1-2, English horn, bassoon, contrabassoon, Eb clarinet, Bb clarinets 1-2 (2 per part), Bb bass clarinet, Saxophones: Bb soprano, Eb alto, Bb tenor, Eb baritone, French horns 1-4, Bb cornets 1-2 (doubling on trumpets), Bb trumpets 1-2, trombones 1-3, bass trombone, euphonium 1-2, tuba 1-2 double bass, piano, harp, timpani, 6 percussion:, Percussion 1: xyloph",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/declaration/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Divertimento, for piccolo trumpet and organ",
+   "year": 1995,
+   "genre": "Solo",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/divertimento-for-piccolo-trumpet-and-organ/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Dodecafecta",
+   "year": 2010,
+   "genre": "Concerto",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo Brass Quintet; Piccolo, 2 Flutes, 2 oboes (Ob. 2 doubling Eng. Horn), 3 B Clarinets, Bass Clarinet Bassoon 2 Alto Saxes, Tenor Sax, Bari. Sax, 3 Bb Trumpets, 3 Horns, 3 Trombones (2 Tenor, 1 Bass) Euphonium, Tuba, Timpani, 5 Percussion Harp, Contrabass, Percussion Instruments needed: Trgl., S.D., B.D., Xylo., Cymb. a2, Guiro, Sus Cymb., Vibes, Wood Block(s) Claves, Cabasa, Glock., Tamb., H.H.",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/dodecafecta/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Duels and Dances",
+   "year": 2011,
+   "genre": "Concerto",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*2022 – 2220 – t+1 – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/duels-and-dances/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Duo Fantastique",
+   "year": 2007,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "two solo trumpets and wind ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/duo-fantastique/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Elegy for Mundy",
+   "year": 2013,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, and organ or piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/elegy-for-mundy/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Exhale!",
+   "year": 2020,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo – 2 flutes – 2 oboes – english horn – bassoon, 3 Bb clarinets – bass clarinet – 2 alto saxophones – tenor saxophone – baritone saxophone 3 Bb trumpets – 4 french horns – 3 tenor trombones – bass trombone, euphonium – tuba, timpani – harp – double bass, 4 percussion:, mallets: glock., marimba, vibes, xylophone, chimes, + wood block, triangle percussion 1: sus. cymb., triangle, tambourine,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/exhale/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fanfare – Light From Shadows",
+   "year": 2017,
+   "genre": "Chamber",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Brass Quintet, Optional percussion includes: Triangle, Tambourine, Cymbal a2, Suspended Cymbal, Snare Drum, Bass Drum (w/ cymbal attachment), Drum Set ), ( optional instrumentation calls for Two brass quintets – each with 2 C trumpets, french horn, trombone and tuba., Notes from the composer:, This fanfare is the result of many worlds colliding, resulting in music., When I was a young trumpeter ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/fanfare-light-from-shadows/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fanfare for an Angel",
+   "year": 2010,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 part trumpet ensemble (other versions listed below)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/fanfare-for-an-angel/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fanfare for Democracy",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Brass ensemble instrumentation (available in Eb or F) : 4 C trumpets, 2 french horns, 2 trombones, bass trombone, and tuba (OPT Horn 3 provided for Tpt 4), timpani, percussion (3 players) Cymb a2., Suspended Cymb., Snare Drum, Bass Drum, and Tam Tam, Orchestra version instrumentation : 2222 – 4331 – perc – hp – strings, Concert Band instrumentation: piccolo, flute 1-2, oboe 1-2, bassoon 1-2, Bb ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/fanfare-for-democracy/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fanfare for the Arts",
+   "year": 2025,
+   "genre": "Chamber",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Trumpet 1-4",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/fanfare-for-the-arts/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fanfare for Three Trumpets",
+   "year": 1994,
+   "genre": "Chamber",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "three trumpets unaccompanied",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/fanfare-for-three-trumpets/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fanfare to Sound the Call",
+   "year": 2019,
+   "genre": "Wind ensemble",
+   "scoring": "two piccolo trumpets, five trumpets, flugelhorn",
+   "counts": {
+    "piccoloTrumpet": 2,
+    "trumpet": 5,
+    "flugelhorn": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 2 piccolo trumpets, 5 C trumpets, 1 flugelhorn 4 french horns, 4 trombones, 1 bass trombone, euphonium, 3 tubas, timpani, 4 percussion: glockenspiel, chimes cymb. a2, B.D., S.D. tam-tam, sus. cymb. triangle,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/fanfare-to-sound-the-call/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Fantasie for Trumpet",
+   "year": 2005,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/fantasie-for-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Genesis",
+   "year": 2024,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe, bassoon, B! clarinet 1-2, bass clarinet, alto saxophone 1-2, tenor saxophone, baritone saxophone, horn 1-3, B trumpet 1-3, trombone 1-2, bass trombone, euphonium, tuba double bass, piano, timpani, percussion 1-4, Percussion 1: Crotales, Glockenspiel, Marimba, Vibraphone, Cow Bell, Splash Cymbal, Tambourine, Percussion 2: Wind Chimes, Hi-Hat, Tambourine, D.S. Snare Drum,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/genesis/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Gilded Fanfare",
+   "year": 2011,
+   "genre": "Chamber",
+   "scoring": "six trumpets",
+   "counts": {
+    "trumpet": 6
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "6 trumpets, unaccompanied",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/gilded-fanfare/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Glimmers of Hope",
+   "year": 2005,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/glimmers-of-hope/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Go Forth",
+   "year": 2020,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/go-forth/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "God Rest Ye Merry, Gentlemen",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo brass quintet 2*3*32 – 3220 – t+3 – hp – str",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/god-rest-ye-merry-gentlemen/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Good Christian Men Rejoice",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", *3222 – 4231 – t+3 – str + solo female voice, Percussion needed:, Triangle, Glock., Snare Drum Chimes, Tambourine, Sus. Cymb.",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/good-christian-men-rejoice/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Hanging by a Thread",
+   "year": 2014,
+   "genre": "Concerto",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", solo trumpet (Bb tpt., flugel and picc.) and solo tuba; Piccolo, Flutes 1-2, Bb Clarinets 1-3 (1st part – 2 players), Bass Clarinet, Sop. Sax., Alto Sax. 1-2, Tenor Sax, Baritone Sax Horns 1-2, Bb Trumpets 1-2 (dbl. on flugels), Trombones 1-2, Bass Trombone, Euphonium, Tuba Harp (w/ optional amplification), Timpani, Percussion, Contrabass, Percussion: Mallets: Vibraphone, Glockenspiel, Xylophone",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/hanging-by-a-thread/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Haydn Trumpet Concerto Cadenza",
+   "year": 2014,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet solo",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/haydn-trumpet-concerto-cadenza/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Heritage of Freedom Fanfare",
+   "year": 2011,
+   "genre": "Wind ensemble",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, Flutes, Oboe 3 Bb Clarinets, Bass Clarinet Bassoon 2 Alto Saxes, Tenor Sax, Bari Sax, 4 Bb Trumpets, 2 Horns, 3 Trombones (2 Tenor, 1 Bass) Euphonium, Tuba, Timpani, Contrabass (opt.), 2 Percussion (opt. 3): Sus. Cymb. Cymb. a2 Glock., S.D., B.D. Chimes (Timpani)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/heritage-of-freedom-fanfare/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Heroic Marches (Telemann, arr. Stephenson)",
+   "year": null,
+   "genre": "Concerto",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and strings",
+   "estimated": false,
+   "arrangement": true,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/heroic-marches-telemann-arr-stephenson/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Holiday Fanfare Medley",
+   "year": 2010,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, 2 Flutes, Oboe, Bassoon, 3 Bb Clarinets, Bass Clarinet, 2 Eb Saxes, Bb Tenor Sax, Eb Baritone Sax, 3 Bb Trumpets, 4 Horns (3-4 optional) 2 Trombones, Bass Trombone Euphonium, Tuba, Timpani, Mallet Percussion, Percussion: Cymb. a2 Glock. Chimes Triangle Sus. Cymb. Tenor Drum Crotales Vibes Tambourine Tom-Tom Sn. Drum Bass Drum Finger Cymbals",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/holiday-fanfare-medley/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Homage and Farewell",
+   "year": 2010,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Piccolo, 2 Flutes, Oboe, 3 Bb Clarinets, Bass Clarinet, 2 Eb Alto Saxes, Bb Tenor Sax, Eb Baritone Sax, 3 Bb Trumpets, 4 Horns, 2 Trombones, Bass Trombone Euphonium, Tuba, Timpani, Mallet Percussion, Percussion: Cymb. a2 Glock. Chimes Triangle Sus. Cymb. Tam-Tam Crotales Sn. Drum Bass Drum",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/homage-and-farewell/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Hymn for US",
+   "year": 2023,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", flute 1-2, oboe, bassoon, B! clarinet 1-3, bass clarinet saxophones: soprano, alto 1-2, tenor, baritone, B trumpet 1-3, French horn 1-4, trombone 1-3, euphonium, tuba timpani + minimum 6 percussion (up to 8), percussion instrumentation:, 1) glockenspiel (+ vibes, if available), 2) chimes, 3) marimba (+ xylo, if available), 4) cymbals: crash cym. + sus. cymb., 5) one player needed: triangle, wind",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/hymn-for-us/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Il Vecchio Castello (Mussorgsky/Arr. Stephenson)",
+   "year": null,
+   "genre": "Solo",
+   "scoring": "flugelhorn",
+   "counts": {
+    "flugelhorn": 1
+   },
+   "req": [
+    "flugelhorn"
+   ],
+   "full": "flugel horn and organ or piano",
+   "estimated": false,
+   "arrangement": true,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/il-vecchio-castello-mussorgsky-arr-stephenson/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "In Motion for Symphony Orchestra",
+   "year": 2025,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", *3*222 – 2231 – t+3 – harp – strings, optional youth orchestra component:, 2222 – 2221 – percussion can join pros – strings,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/in-motion-for-symphony-orchestra/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "In Motion for Wind Ensemble",
+   "year": 2026,
+   "genre": "Wind ensemble",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, Eb clarinet, Bb clarinets 1-3, Bass clarinet, Alto saxophone 1-2, Tenor saxophone, Baritone saxophone, Bb trumpet 1-4, French horn 1-3, trombone 1-2, Bass trombone, euphonium 1-2, tuba (minimum 2 players), Double bass, Timpani + up to 8 percussion, Percussion instrumentation (7 players, option for 8):, Percussion 1: xylophone, rain-stick, ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/in-motion-for-wind-ensemble/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "In The Bleak Midwinter",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3 options, 1) Solo brass quintet and chamber orchestra (strings, harp, and percussion), 2) Orchestra only – 1222 – 4221 – 0+3 – hp – str, 3) Brass quintet only",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/in-the-bleak-midwinter/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "In the Moment",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, english horn, 2 bassoons, Eb clarinet, 3 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 3 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium (2), tuba, timpani, double bass, percussion (ideally 9 players):, mallets 1: xylo, bells (2 players), mallets 2: marimba, chimes, vibes (1 player), percussion 1: hi-hat, guiro, shaker, percussi",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/in-the-moment/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "In the Moment Too",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 2 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, double bass, percussion (5 players): Glockenspiel, Chimes, Marimba, Cymbals (suspended a2), Bass Drum, The music:, First – to set the stage for why this piece is composed as it is, perhaps it is best to quote the wo",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/in-the-moment-too/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "It’s About Time",
+   "year": 2013,
+   "genre": "Concerto",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "two trumpets and wind ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/its-about-time/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Just B",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 3 C trumpets + 3 or 6 ( preferred ) offstage trumpets. *NOTE: If only three offstage trumpets are available, place them centered (balcony) 4 F Horns, 2 Tenor trombones, 1 Bass trombone, Euphonium, Tuba, Timpani,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/just-b/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Kindred Sol",
+   "year": 2017,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/kindred-sol/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Kleiner Walzer",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe, bassoon, Bb clarinet 1-3, bass clarinet, alto saxophone 1-2. tenor saxophone, baritone saxophone, B trumpet 1-3, horn 1-2, trombone 1-2, euphonium (2 players), tuba, timpani, glockenspiel, xylophone 1-2 (one instrument), marimba 1-2 (one instrument), triangle, maracas, double bass,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/kleiner-walzer/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "L’esprit de la Trompette",
+   "year": 2012,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo Trumpet; Flutes 1-2, Oboes 1-2, Bb Clarinets 1-3, Bass Clarinet, Alto Sax. 1-2, Tenor Sax, Baritone Sax Horns 1-2, Trumpets 1-2, Trombones 1-2, Bass Trombone, Euphonium, Tuba Timpani, Percussion, Contrabass [optional]. Percussion: 3 PLAYERS Perc. Instruments needed: Triangle Sus. Cymb. Glockenspiel Vibes Wood Block Tambourine Splash Cymbal Snare Drum Bass Drum Cymb., Written for Brittany Hend",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/lesprit-de-la-trompette/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "La Grande Vitesse",
+   "year": 2009,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo trumpet, solo horn, solo trombone; *3*3*32 – 3221 – t+3 – hp – pf – str,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/la-grande-vitesse-for-trumpet-horn-and-trombone/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "La Viaggio Vita",
+   "year": 2010,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "violin, trumpet, and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/la-viaggio-vita/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Legacies for Three",
+   "year": 2013,
+   "genre": "Chamber",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "three trumpets and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/legacies-for-three/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Legend of Sleepy Hollow",
+   "year": 1996,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2222 – 4331 – t+ 3 – hp – str – narrator, Chamber orchestra instrumentation: 2222 – 2210 – t+1 – hp – str – narrator, Reduced chamber orchestra instrumentation: 1111 – 2111 – t+1 – hp – str – narrator, String orchestra instrumentation: Violin 1-3, Viola, Cello, Bass – opt. narrator,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/legend-of-sleepy-hollow/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Life Has Loveliness to Sell",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", SAT Choir: Girls (Soprano 1, 2/Alto) Boys: Unison, 2 flutes, 2 oboes, 2 bassoons, 2 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 2 Bb trumpets, 2 french horns, 2 trombones, euphonium, tuba, piano, timpani, double bass, percussion (5 players): marimba, glockenspiel, chimes, suspended cymbal, triangle, tambourine, cymb. a2, snare drum, rain stick, optional strings: violin 1&2",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/life-has-loveliness-to-sell/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Lonesome Valley Folk Suite",
+   "year": 2022,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, contrabassoon, Eb clarinet, Bb clarinet 1-3, Bb bass clarinet, Eb alto saxophone 1-2, Bb tenor saxophone, Eb baritone saxophone, Bb bass saxophone (optional), Bb trumpet 1-3, French horn 1-4, trombone 1-2, bass trombone, baritone (Bb tenor clef), euphonium (bass clef), tuba double bass, timpani, 5 percussion:, Percussion 1: Glock., Vibes, ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/lonesome-valley-folk-suite/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Love Divine",
+   "year": 2025,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", SATB Choir, 2 flutes, 2 oboes, 1 bassoon, 2 Bb clarinets, bass clarinet *saxophones:2 altos, tenor, baritone, 2 Bb trumpets, 4 french horns, 2 trombones, *euphonium, tuba piano, timpani, double bass, percussion, strings: violin 1&2, viola, cello, *Note: this could be performed without saxophones and baritone, i.e. standard orchestra,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/love-divine/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Lower, Slower, Softer",
+   "year": null,
+   "genre": "Chamber",
+   "scoring": "flugelhorn",
+   "counts": {
+    "flugelhorn": 1
+   },
+   "req": [
+    "flugelhorn"
+   ],
+   "full": "flugelhorn and cello, ALL MONEY FROM SALES will go directly to CancerBlows. ( www.cancerblows.com )",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/lower-slower-softer/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Luther: In Canon",
+   "year": 2017,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 3 flutes, 2 oboes, english horn, 2 bassoons (cross-cued where needed) Eb clarinet (opt but preferred), 3 Bb clarinets, bass clarinet soprano (cross-cued where needed), alto, tenor, baritone saxophones 4 horns, 3 Bb trumpets, 2 tenor trombones, bass trombone, euphonium (2 players), tuba harp (may use piano as substitute), double bass (cross-cued where needed) timpani + percussion (6 play",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/luther-in-canon/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Martha Uncaged",
+   "year": 2014,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo Trumpet + piccolo, flute, English horn, clarinet in A, alto saxophone, tenor saxophone, contrabassoon, trombone, 2 percussion, harp, piano, contrabass, I. Caged Lion, II. Denishawn – breakaway, III. Interlude: Louis Horst, IV. Interlude: Erick Hawkins, V. Finale – Gravity, NOTES:, “Caged Lion” – the 1st movement – describes how Martha Graham, as a young dancer in NY, was first inspired by wat",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/martha-uncaged/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Mexican Folklore Suite",
+   "year": 2015,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, cello, and 1 percussion",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/mexican-folklore-suite/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Möbius Trip",
+   "year": 2017,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Solo Alto Saxophone with ensemble 1 (bright) : picc., 2 flutes, oboe, 2 Bb clarinets, trumpet, 2 french horns, bassoon, tbn, tuba, piano, mallets: (xylophone, glock, crotales + bongos, wind chimes), percussion: snare drum, triangle, claves, bongos, sus cymb., 3 toms, tambourine, 3 wood blocks (hi-mid-low) cowbell, flexatone, bell tree, sandblocks, cymb. a2, ensemble 2 (mellow) : 2 flutes, 2 Bb c",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/mobius-trip/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Mutation",
+   "year": 2008,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/mutation/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Octet",
+   "year": 2021,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "flute, A/Bb clarinet, 2 bassoons, C trumpet, Bb trumpet, trombone, bass trombone, Co-commission spearheaded by Western Illinois University; Mike Fansler, director, and University of Texas El Paso; Brad Genevro, director., Consortium participants listed below.,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/octet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Ode On Solitude",
+   "year": 2015,
+   "genre": "Vocal chamber",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, high tenor voice, and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/ode-on-solitude/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Old Modern Musick",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, contrabass clarinet, saxophones: 2 altos, tenor, baritone, 3 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium, tuba timpani, double bass, percussion (ideally 9 players):, mallets 1: glockenspiel, tamtam, splash cymbal (shared), sus. cymbal (shared) mallets 2&3:, player 1: marimba, sus. cymbal (shared), cymb ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/old-modern-musick/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Old Salt, Sonatina",
+   "year": 2014,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/old-salt-sonatina-for-trumpet-and-piano/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Once Upon a Symphony",
+   "year": 2021,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 options, Chamber ensemble – 1111 – 1*111 – hp – 1p – strings (*1 per part) – narrator, Full orchestra – *2222 – 3221 – t+2 – hp – str – narrator, *Notes For Chamber Ensemble Version: Trombone/tuba can be interchangeable, but it is preferred to have both. Strings can be augmented for more of a chamber orchestra approach if desired, but one per part works fine.,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/once-upon-a-symphony/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "OUT of the GATES",
+   "year": 2019,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo unaccompanied trumpet",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/out-of-the-gates/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Overture Fantastique",
+   "year": 2025,
+   "genre": "Wind ensemble",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, Eb clarinet, 2 solo Bb clarinets, clarinet 1-3, Bass clarinet, Alto saxophone 1-2, Tenor saxophone, Baritone saxophone, Bb trumpet 1-4, French horn 1-4, trombone 1-2, Bass trombone, euphonium 1-2, tuba (minimum 2 players)Double bass, Timpani + 4 percussion, Percussion instrumentation:, Percussion 1: marimba, snare drum, xylophone, cymb. a2",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/overture-fantastique/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Passacaglia",
+   "year": 2013,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet (or violin) and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/passacaglia/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Perpetual Notion",
+   "year": 2019,
+   "genre": "Concerto",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Solo percussion; piccolo, 2 flutes, bassoon, 3 Bb clarinets, bass clarinet, contrabass clarinet, 4 saxophones (2 alto, tenor, baritone) 3 Bb trumpets, 4 french horns, 2 tenor trombones, bass trombone, euphonium, tuba, double bass, piano, timpani, 5 percussion, percussion instruments needed:, glockenspiel, marimba, vibraphone, xylophone, wood blocks, suspended cymbal, snare drum, bass drum, tamtam,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/perpetual-notion/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "POLKaFUN",
+   "year": 2022,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo – 2 flutes – 2 oboes – 2 bassoons – 3 Bb clarinets – bass clarinet – contrabass clarinet, 2 alto saxophones – tenor saxophone – baritone saxophone, 3 Bb trumpets – 4 french horns – 2 trombones – bass trombone – 2 euphoniums – tuba (min. 2 players) double bass – timpani, percussion (5 players; 7, if possible):, P1 (mallets): xylophone, vibraphone, P2 (mallets): marimba, glockenspiel, P3 (",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/polkafun/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Queen of the Night Aria",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet and wind ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/queen-of-the-night-aria/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Reflections",
+   "year": 2011,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/reflections/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Remember Forward",
+   "year": 2010,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/remember-forward/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Requiem Dances",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 2 flutes (fl. 2 doubles piccolo), oboe, 2 Bb clarinets, bassoon, saxophones: soprano, alto, tenor, baritone horn, 2 C trumpets, trombone euphonium, tuba, timpani, percussion (one player): mallets: glockenspiel, marimba, crotales, wood block, snare drum, triangle, slap-sticks, ratchet, 2 sus. cymbs (small, large), bass drum tambourine, splash cymbal, tenor drum, snare drum, claves, tam-tam, piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/requiem-dances/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Road Home",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets, flugelhorn",
+   "counts": {
+    "flugelhorn": 1,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 2 flutes (fl. 2 doubling piccolo), 2 oboes, 2 bassoons, 2 Bb clarinets, bass clarinet saxophones: soprano, alto, tenor, baritone (1 each), 1 flugelhorn, 2 Bb trumpets, 2 french horns, 2 trombones, bass trombone, euphonium, tuba piano, timpani, double bass, percussion (3 players): instruments in brackets [ ] to be potentially shared amongst players, perc 1: [glockenspiel], crotales (bowed), marim",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/road-home/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Scram!",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": "solo trumpet; piccolo, 2 flutes, 2 oboes, 2 bassoons, Eb clarinet, 2 Bb clarinets, bass clarinet, saxophones: soprano, alto, tenor, baritone (1 each), 2 Bb cornets, 2 Bb trumpets, 3 french horns, 2 trombones, bass trombone, euphonium, tuba, piano, timpani, double bass, percussion (4 players), Chamber orchestra instrumentation: solo trumpet; 2222 – 2220 – timp + 2 percussion – strings, Original pie",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/scram/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Second Thoughts",
+   "year": 2014,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Flute 1-2, Oboe (cross-cued), Bassoon (cross-cued), Bb Clarinet 1-3, Bb Bass Clarinet, Eb Alto Sax. 1-2, Bb Tenor Sax, Eb Baritone Sax Bb Trumpet 1-3, F Horns 1-2 (cross-cued), Trombone 1-3, Baritone (cross-cued), Tuba, Timpani, Mallets (Bells), Percussion: Triangle, Sus. Cymbal, Snare Drum, Notes from the composer:, “Second Thoughts” is an exercise in three parts:, 1) Understanding that seconds a",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/second-thoughts/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Serendipity",
+   "year": 2010,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/serendipity/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Silent Echoes",
+   "year": 2013,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/silent-echoes/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Soliloquy",
+   "year": 2015,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "(optional) trumpet, and organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/soliloquy/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Sonata #1 for Trumpet",
+   "year": 2001,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano, or trumpet and wind ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/sonata-1-for-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Sonata #2 for Trumpet",
+   "year": 2014,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/sonata-2-for-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Sonata Rhapsody “The Arch”",
+   "year": 2009,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*32*32 – 4221 – hp – t+3 – str, Orchestral version",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/sonata-rhapsody-the-arch/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Song",
+   "year": 2009,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet (or violin), and piano or organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/song/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Song of Myself",
+   "year": 2015,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", Solo soprano; piccolo, 2 flutes (doubled/alto flute), 2 oboes, english horn, Eb clarinet, 2 clarinets (doubled), bass clarinet, 2 bassoons, contrabassoon, 2 alto saxes, tenor sax, baritone sax, 2 trumpets, 4 french horns, 3 tenor trombones, bass trombone, euphonium, 2 tubas, timpani, percussion (7 players), harp, piano, cello, contrabass, percussion instructions required: Mallets: glockenspiel, ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/song-of-myself/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Sound and Fury",
+   "year": 2004,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet (or violin), and piano or organ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/sound-and-fury/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Sounds Awakened, Concerto for French Horn",
+   "year": 2012,
+   "genre": "Concerto",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "solo french horn; *2*322 – 3231 – t+3 – hp – str, View wind ensemble score, Co-commissioned by Gail Williams, Daniel Grabois (University of Wisconsin-Madison), Gregory Miller (University of Maryland School of Music), Seth Orgel (Louisiana State University), Erich Peterson with the Grand Rapids Youth Symphony, Alexander Shuhan (gift from his father, George Shuhan) and Michelle Stebleton (Florida St",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/sounds-awakened-concerto-for-french-horn/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Spinning Wheel",
+   "year": 2015,
+   "genre": "Concerto",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano or trumpet and wind ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/spinning-wheel/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Spitfire",
+   "year": 2014,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and string quartet",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/spitfire/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Stalwart Hands",
+   "year": 2013,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/stalwart-hands/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Star Spangled Banner",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "seven part trumpet ensemble, or orchestra",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/star-spangled-banner/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Stars and Stripes Fanfare",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "orchestra, concert band, or trumpet ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/stars-and-stripes-fanfare/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Suite Nostalgique",
+   "year": 2012,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/suite-nostalgique/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Suite of Suites",
+   "year": 2020,
+   "genre": "Orchestral",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 0011 – 0110 – 1p – pf – vln, contrabass, (“L’histoire ensemble” + piano), percussion instruments needed: snare drum, tambourine, kick drum, 2 wood blocks (hi/low), triangle, glock (E), bass drum, sus. cymb. timpani (2 drums), duration: 12 minutes,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/suite-of-suites/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Sunburst Fanfare",
+   "year": 2023,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon (2 players) Eb clarinet, Bb clarinets 1-3, bass clarinet, alto saxophone 1-2, tenor saxophone, baritone saxophone, Bb trumpets 1-3, French horns 1-4, trombones 1-2, bass trombone, euphonium (2 players), tuba (min. 2 players) timpani + 7 percussion, percussion instrumentation:, Mallets 1: glockenspiel, marimba (shared w/ M3) Mallets 2: xylophone",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/sunburst-fanfare/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Symphony for Brass",
+   "year": 2014,
+   "genre": "Wind ensemble",
+   "scoring": "piccolo trumpet, eight trumpets (3 doubling flugelhorn)",
+   "counts": {
+    "trumpet": 8,
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 8 trumpets: 1 B piccolo trumpet, 7 trumpets in C (tpt. 3 doubling on flugelhorn), 6 french horns, 3 tenor trombones, 1 bass trombone, 2 euphoniums, 3 tubas, timpani + 5 percussion, Percussion includes: Mallets: Vibes, Glockenspiel, Marimba, Xylophone, Triangle, Sus. Cymb. (3 different sizes), a2 Cymb., China Cymbal, Tam-Tam Wood Block, Conga Drum, Bongos, 4 toms, Bass Drum, Tambourine, Snare Dru",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/symphony-for-brass/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Symphony No. 2 “Voices” for Wind Ensemble",
+   "year": 2016,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets, three cornets",
+   "counts": {
+    "cornet": 3,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": ", mezzo-soprano – piccolo – 3 flutes (+alto) – 2 oboes – english horn – E clarinet – 3 B clarinets – alto clarinet – bass clarinet – 2 bassoons – contrabassoon – saxes: 1 soprano, alto, tenor, baritone – 4 french horns – 3 cornets (+flugels) – 2 trumpets – 3 trombones – bass trombone – 2 euphoniums – tuba (2) double bass – piano/celesta – harp – timpani – 6 percussion: 2 mallets + 4 percussion, Ma",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/symphony-no-2-voices-for-wind-ensemble/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Symphony No. 3",
+   "year": 2019,
+   "genre": "Orchestral",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*3*3*3*3 (opt. 3 saxophones, see NOTE) – 4331 – t + 3 – harp – strings piccolo, 2 flutes 2 oboes, english horn 2 Bb clarinets, bass clarinet 2 bassoons, contrabassoon **3 saxophones optional (soprano-alto-tenor) **NOTE: optional parts for three saxophones: soprano, alto, tenor. This is for the trio of 3rd movement only, but preferred by the composer, when possible. 4 french horns in F 3 trumpets i",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/symphony-no-3/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Symphony No. 4",
+   "year": 2023,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "full": ", piccolo – 3 flutes – 2 oboes – English horn – 2 bassoons – contrabassoon, E clarinet-3B clarinets-bassclarinet, 2 alto saxophones – tenor saxophone – baritone saxophone, 2 Bb cornets – 3 Bb trumpets – 4 french horns, 2 tenor trombones – Bass trombone – 2 euphoniums – 3 tubas (minimum), Timpani + 5 percussion (instrumentation below). [Note: all large mallet instruments intended to be shared] Dou",
+   "estimated": true,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/symphony-no-4/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Symphony No. 5",
+   "year": 2024,
+   "genre": "Wind ensemble",
+   "scoring": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-3* (flute 3 doubles on alto flute) (note: 2 players per part is recommended), oboe 1-2, English horn, Eb clarinet, Bb clarinet 1-3* (note: 2 players per Bb clarinet part is recommended), Bass clarinet, Contrabass clarinet, bassoon 1-2, contrabassoon, soprano saxophone, alto saxophone 1-2, tenor saxophone, baritone saxophone, French horn 1-6, C trumpet 1-5 (Trumpet 1 doubles on B",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/symphony-no-5/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Synthesis Drop",
+   "year": 2025,
+   "genre": "Wind ensemble",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe 1-2, English horn, bassoon 1-2, Eb clarinet, Bb clarinets 1-3, Bass clarinet, Alto saxophone 1-2, Tenor saxophone, Baritone saxophone, Bb trumpet 1-4, French horn 1-3, trombone 1-2, Bass trombone, euphonium 1-2, tuba (minimum 2 players), Double bass, Timpani + up to 8 percussion, Percussion instrumentation (7 players, option for 8):, Percussion 1: xylophone, rain-stick, ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/synthesis-drop/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Taps",
+   "year": null,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", flute 1-2, oboe 1-2, bassoon 1-2, Bb clarinet 1-3, bass clarinet, contrabass clarinet alto saxophone 1-2, tenor saxophone, baritone saxophone, Bb trumpet 1-3, horn 1-4, trombone 1-2, bass trombone, euphonium, tuba timpani, percussion 1-3, double bass, percussion needed:, Mallets 1: glockenspiel, Mallets 2: chimes, Perc.: suspended cymbal, triangle, Several years prior, I was originally",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/taps/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "The Devil’s Tale",
+   "year": 2013,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "violin, clarinet, bassoon, trumpet, trombone, bass, percussion, and narrator",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/the-devils-tale/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "THE PLANETS",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "two trumpets (doubling flugelhorn)",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", 2 flutes (2 dbl on piccolo) – 2 oboes – 2 A/Bb clarinets – 2 bassoons (2 dbl on contrabassoon) 2 French horns – 2 C trumpets (both dbl on B flugelhorn) – trombone – bass trombone timpani + 2 percussion / harp – keyboards (celesta + optional organ), strings, SSA-SSA chorus parts (included for Neptune)Percussion instruments needed:, Perc 1: snare drum, triangle, tambourine, cymbals a2, suspended c",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/the-planets/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "The Stars and Stripes Forever",
+   "year": null,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet ensemble (2 piccolo trumpets, and 5 Bb trumpets)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/the-stars-and-stripes-forever/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "The Storyteller",
+   "year": 2013,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, violin, piano, and offstage trumpet (with additional options listed below)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/the-storyteller/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "The Waiting Game",
+   "year": 2020,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", flute, oboe, Bb clarinet 1-2, bass clarinet, alto/tenor/baritone saxophone, Bb trumpet 1-2, french horn, trombone, baritone, bassoon, tuba timpani + (min.) 5 percussion, percussion instruments needed:, mallets: marimba, xylophone, glockenspiel, percussion: bass drum, snare drum, sus. cymb., hi-hat, triangle, tambourine,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/the-waiting-game/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Thinking",
+   "year": 2005,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, clarinet, bassoon, violin, cello, and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/thinking/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "this is most certainly true",
+   "year": 2017,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, alto flute, 2 oboes, english horn, 2 bassoons Eb clarinet (opt), 3 Bb clarinets, bass clarinet soprano sax (cross-cued), alto, tenor, bari saxophones 4 horns, 3 Bb trumpets, 2 tenor trombones, bass trombone euphonium (2 players), tuba harp, double bass timpani + percussion (6 players): Chimes (separate part included) Vibes, Marimba, Orch Bells, Crotales (bowed, + dipped in wat",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/this-is-most-certainly-true/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Trench Coat",
+   "year": 2018,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, bass clarinet, saxophones: 2 altos, tenor, baritone, 2 Bb trumpets, 3 french horns, 2 trombones, bass trombone, euphonium, tuba, timpani, double bass, percussion:, mallets: marimba, vibes, xylophone, percussion 1: snare drum, triangle, percussion 2: bongos, claves, slap-sticks, shakers, bells, snare drum (2nd drum), percussion 3: tambourine",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/trench-coat/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Trio Sonata",
+   "year": 2001,
+   "genre": "Chamber",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "violin (or flute), trumpet, and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/trio-sonata/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Trumpet Sonatina #1",
+   "year": 2018,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/trumpet-sonatina-1/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Twisted Shout",
+   "year": 2021,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", 2 flutes – piccolo/flute 3 – oboe – English horn – 3 Bb clarinets – bass clarinet – bassoon (cross-cued) – soprano saxophone – 2 alto saxophones – tenor saxophone – baritone saxophone 3 Bb trumpets – 4 French horns – 3 tenor trombones – bass trombone, euphonium – tuba, timpani – piano – double bass, 5 percussion:, mallets (2 players): marimba, vibes, xylophone, percussion 1: sand blocks, wood bl",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/twisted-shout/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Unfrettered",
+   "year": 2020,
+   "genre": "Concerto",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "piccolo – 2 flutes – 2 Bb clarinets – bass clarinet – contrabass clarinet – 2 bassoons saxophones: 1 soprano, 2 altos, 1 tenor, 2 Bb trumpets – 2 french horns – 2 tenor trombones – euphonium – tuba, harp – contrabass, 5 percussion, perc. 1: vibes, xylophone, glockenspiel, tambourine, bowed crotales, perc. 2: marimba, finger cymbals, perc. 3: sand blocks, tambourine, cabasa, cajon, perc. 4: wood bl",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/unfrettered/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Unplugged",
+   "year": 2014,
+   "genre": "Chamber",
+   "scoring": "eight trumpets",
+   "counts": {
+    "trumpet": 8
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "8 Trumpets",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/unplugged/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Variations on a Theme by Haydn",
+   "year": 2010,
+   "genre": "Solo",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and piano, or six part trumpet ensemble",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/variations-on-a-theme-by-haydn/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Vignettes",
+   "year": 2005,
+   "genre": "Chamber",
+   "scoring": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet and percussion, or five trumpets with opt. percussion",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/vignettes/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Voyages",
+   "year": 2020,
+   "genre": "Wind ensemble",
+   "scoring": "piccolo trumpet, three trumpets, four flugelhorns",
+   "counts": {
+    "trumpet": 3,
+    "flugelhorn": 4,
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": ", Bb piccolo trumpet, C trumpet 1-3, Bb trumpet 4 Bb flugelhorn, French horn 1-4, Trombone 1-3, Bass Trombone, Euphonium 1-2, Tuba 1-2, Piano, Timpani + 5 percussion (opt for 6th in parts), Percussion instruments needed:, Mallets 1: Xylophone, Marimba, Vibes, Slap-sticks, Crotales, Mallets 2: 5-octave Marimba, Wood Block, Crotales, Chimes, Percussion 1: Sus. Cymb., Timbales, Snare Drum (brushes/st",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/voyages/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Walk Slowly",
+   "year": 1997,
+   "genre": "Wind ensemble",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "Soprano, trumpet, and piano (or chamber winds)",
+   "estimated": false,
+   "arrangement": false,
+   "how": "short-description",
+   "url": "https://composerjim.com/product/walk-slowly/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Wassail, Wassail, All over the Tuba (or Trumpet)",
+   "year": 2010,
+   "genre": "Orchestral",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*2*322 – 3220 – t+3 – strings,",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/wassail-wassail-all-over-the-tuba-or-trumpet/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Wildcat Run",
+   "year": 2019,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 Bb clarinets, 2 bass clarinets, contrabass clarinet, saxophones: soprano, 2 altos, tenor, baritone, 3 Bb trumpets, 4 french horns, 2 trombones, bass trombone, 2 euphoniums, 2 tubas, timpani, harp, piano, double bass, percussion:, perc 1: glockenspiel, crotales, xylophone, perc 2: vibraphone, triangle, cymb. a2, china cymbal, wind chimes, glockenspiel, perc",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/wildcat-run/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "Working Together",
+   "year": 2022,
+   "genre": "Wind ensemble",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": ", piccolo, flute 1-2, oboe, 2 Bb clarinet 1-2, bass clarinet, alto sax 1-2, tenor sax, baritone sax trumpet 1-2, french horn, trombone, baritone, tuba piano + SATB choir, timpani, 6 percussion:, percussion instruments needed:, mallets 1: glockenspiel, mallets 2: xylophone, marimba, percussion 1 (2 players): suspended cymbals, triangle, cymb. a2, percussion 2: snare drum, percussion 3: bass drum, N",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/working-together/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "World War I Medley",
+   "year": null,
+   "genre": "Orchestral",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "*3222 – 4331 – t+3 – hp – strings, perc. 1 – Xylo, Cymb a2, Orch Bells, Trgl, BD, perc. 2 – Snare Drum, perc. 3 – BD/Cym attachment, Trgl, WB, Sus. Cymb., Orch Bells, Commemorating the 100th anniversary of the United States’ entry into World War I, with the following songs:, For Your Country and My Country, Good-Bye Broadway, Hello France!, I’m Going to Hide Away, I’m Always Chasing Rainbows Over ",
+   "estimated": false,
+   "arrangement": false,
+   "how": "orchestral-shorthand",
+   "url": "https://composerjim.com/product/world-war-i-medley/"
+  },
+  {
+   "composer": "James M. Stephenson",
+   "title": "You have reached the city limits for Symphonic Winds",
+   "year": 2024,
+   "genre": "Wind ensemble",
+   "scoring": "three trumpets (1 doubling piccolo trumpet)",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet"
+   ],
+   "full": ", Note: the composer suggests doubling of flutes and clarinets is acceptable., piccolo – 2 flutes – 2 oboes – English horn – 3 B! clarinets – bass clarinet – 2 bassoons – contrabassoon, saxophone 1 (soprano/alto), alto saxophone 2, tenor saxophone, baritone saxophone, 4 French horns – 3 C trumpets (trumpet 1 includes B! cornet and B! piccolo trumpet), 2 trombones – bass trombone – euphonium (2 pla",
+   "estimated": false,
+   "arrangement": false,
+   "how": "instrumentation-line",
+   "url": "https://composerjim.com/product/you-have-reached-the-city-limits-for-symphonic-winds/"
+  }
+ ]
+}
