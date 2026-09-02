@@ -1,0 +1,94 @@
+name: Refresh repertoire data
+
+# The shipped index is a snapshot of two upstream catalogues, so re-harvest
+# monthly to stop it rotting. The result is pushed to its own branch and left
+# for review rather than published straight to the live site: a bad upstream
+# edit should be something someone looks at, not something visitors discover.
+on:
+  schedule:
+    - cron: '0 4 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Note the size of the current index
+        id: before
+        run: |
+          echo "works=$(node -p "require('./data/works.json').stats.works")" >> "$GITHUB_OUTPUT"
+
+      - name: Harvest IMSLP
+        run: npm run harvest:imslp
+
+      - name: Harvest Wikipedia
+        # Wikipedia throttles; the harvester waits out 429s and can resume, so a
+        # partial run still contributes rather than failing the whole refresh.
+        run: npm run harvest:wikipedia || node tools/harvest-wikipedia.mjs --resume
+
+      - name: Rebuild index
+        run: npm run build
+
+      - name: Verify the parser still agrees with the data
+        run: npm test
+
+      - name: Refuse a collapsed index
+        # This runs unattended once a month. A renamed upstream category can gut
+        # the harvest while every step still reports success, so a sharp drop
+        # fails the run instead of being pushed for someone to notice later.
+        env:
+          BEFORE: ${{ steps.before.outputs.works }}
+        run: |
+          AFTER=$(node -p "require('./data/works.json').stats.works")
+          echo "Works indexed: $BEFORE -> $AFTER" >> "$GITHUB_STEP_SUMMARY"
+          AFTER="$AFTER" node -e "
+            const before = Number(process.env.BEFORE), after = Number(process.env.AFTER);
+            if (after < before * 0.8) {
+              console.error(\`Refusing this refresh: the index fell from \${before} to \${after} works.\`);
+              console.error('That usually means an upstream category was renamed, not that the repertoire shrank.');
+              process.exit(1);
+            }
+          "
+
+      - name: Is there anything to publish?
+        id: diff
+        run: |
+          # The build stamps a version into index.html as well as writing the
+          # data, so every file it touches has to travel together. Committing
+          # only data/ would leave the page advertising a build id that no longer
+          # matches data/version.json, and every visitor would then be told
+          # forever that a newer version exists.
+          echo "changed=$(git diff --quiet -- data dist index.html assets lib && echo no || echo yes)" >> "$GITHUB_OUTPUT"
+
+      - name: Push the refresh to a branch for review
+        if: steps.diff.outputs.changed == 'yes'
+        env:
+          BRANCH: chore/refresh-repertoire-data
+          DEFAULT: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data dist index.html assets lib
+          git commit -m "Refresh repertoire snapshot" -m "Automated monthly re-harvest of IMSLP and Wikipedia instrumentation data. Review data/works.json for unexpected losses before merging."
+          # A machine-generated branch, rewritten each month.
+          git push --force origin "HEAD:$BRANCH"
+          {
+            echo ""
+            echo "Refreshed data pushed to \`$BRANCH\`."
+            echo ""
+            echo "[Open a pull request](https://github.com/${GITHUB_REPOSITORY}/compare/${DEFAULT}...${BRANCH}?expand=1)"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Nothing changed
+        if: steps.diff.outputs.changed != 'yes'
+        run: echo "Upstream data is unchanged; nothing to publish." >> "$GITHUB_STEP_SUMMARY"
