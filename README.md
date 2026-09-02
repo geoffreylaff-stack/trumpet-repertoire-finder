@@ -14,7 +14,7 @@ Nothing is installed. The end user opens a URL in Chrome or Edge and searches.
 | **Works needing a cornet** | 655 |
 | **Works needing a flugelhorn** | 792 |
 | **Sources** | 137 hand-checked · 156 from composerjim.com · 741 from Wikipedia · 10,557 from IMSLP |
-| **Composer dates** | 1,385 of 2,008 · 253 living |
+| **Composer dates** | 1,591 of 2,008 · 267 living |
 | **Family members covered** | trumpet · cornet · flugelhorn · piccolo trumpet |
 
 ---
@@ -354,16 +354,26 @@ write to, a bare birth year would claim a 470-year-old is still working.
 
 | | |
 |---|---|
-| `1841–1904` | both years known — 943 composers |
-| `b. 1948` | living — 253 |
-| `d. 1904` | birth unrecorded — 164 |
-| `1556–?` | death unrecorded — 25 |
-| *(nothing)* | neither known — 623 |
+| `1841–1904` | both years known — 1,082 composers |
+| `b. 1948` | living — 267 |
+| `d. 1904` | birth unrecorded — 213 |
+| `1556–?` | death unrecorded — 29 |
+| *(nothing)* | neither known — 417 |
 
-The 623 without dates are Renaissance and Baroque figures whose IMSLP pages
-predate the structured record, plus *Anonymous* and the folk-song collections.
-None of them is a missed living composer: not one has a work in this index
-dated after 1950.
+The 417 without dates are *Anonymous*, the folk-song collections, and
+Renaissance and Baroque figures whose pages carry no person record at all. None
+is a missed living composer: not one has a work in this index dated after 1950.
+
+**Two faults kept a further two hundred composers blank, and both are worth
+recording.** IMSLP writes the person record under two different template names,
+`{{#fte:person` and `{{#imslpcomposer:`, and a guard on only the first silently
+rejected every page using the second — Glazunov's among them. And a
+transliterated name reaches this index under whichever spelling its source
+used: IMSLP files Glazunov under *Aleksandr* while Wikipedia says *Alexander*,
+so an exact lookup found nothing. IMSLP lists the variants itself, so a match
+now needs the surname to agree **and** the forename to be one IMSLP knows for
+that person. Both halves are required deliberately — matching on surname alone
+would hand Johann Christian Bach his brother's dates.
 
 Twenty-nine composers have no IMSLP page at all — Walton, Villa-Lobos, Glass
 and other names that reached the index through Wikipedia. Their dates are typed

@@ -1,31 +1,94 @@
 {
- "generated": "2026-09-02T15:13:50.850Z",
+ "generated": "2026-09-02T16:09:05.208Z",
  "source": "IMSLP / Petrucci Music Library (imslp.org) — person records on composer category pages",
  "counts": {
   "looked_up": 1970,
-  "found": 1331,
-  "noRecord": 639,
+  "found": 1544,
+  "noRecord": 426,
   "missingPage": 0,
-  "with_birth_year": 1167,
-  "no_death_year": 275,
+  "with_birth_year": 1331,
+  "no_death_year": 293,
   "apiCalls": 40
  },
  "dates": {
+  "Albéniz, Isaac": {
+   "born": 1860,
+   "died": 1909,
+   "alt": [
+    "isaac",
+    "manuel",
+    "francisco",
+    "albeniz",
+    "pascual"
+   ]
+  },
+  "Aichinger, Gregor": {
+   "born": null,
+   "died": 1628
+  },
+  "Allegri, Gregorio": {
+   "born": 1582,
+   "died": 1652
+  },
+  "Abel, Carl Friedrich": {
+   "born": 1723,
+   "died": 1787,
+   "alt": [
+    "karl",
+    "friedrich",
+    "abel",
+    "charles",
+    "frederick"
+   ]
+  },
   "Alard, Jean Delphin": {
    "born": 1815,
-   "died": 1888
+   "died": 1888,
+   "alt": [
+    "jean",
+    "alard",
+    "delphin",
+    "delfin",
+    "delfino",
+    "alart"
+   ]
+  },
+  "Albrici, Vincenzo": {
+   "born": 1631,
+   "died": 1696,
+   "alt": [
+    "vincenzo",
+    "alberici"
+   ]
   },
   "Abt, Franz": {
    "born": 1819,
-   "died": 1885
+   "died": 1885,
+   "alt": [
+    "franz",
+    "wilhelm",
+    "abt"
+   ]
   },
   "Adam, Adolphe": {
    "born": 1803,
-   "died": 1856
+   "died": 1856,
+   "alt": [
+    "adolphe",
+    "charles",
+    "adam"
+   ]
   },
   "Albinoni, Tomaso": {
    "born": 1671,
-   "died": 1751
+   "died": 1751,
+   "alt": [
+    "tomaso",
+    "giovanni",
+    "albinoni",
+    "zuane",
+    "tommaso"
+   ]
   },
   "Albrechtsberger, Johann Georg": {
    "born": 1736,
@@ -33,7 +96,15 @@
   },
   "Alary, Georges": {
    "born": 1850,
-   "died": 1928
+   "died": 1928,
+   "alt": [
+    "jean",
+    "baptiste",
+    "marie",
+    "louis",
+    "georges",
+    "alary"
+   ]
   },
   "Alejandre Prada, Manuel": {
    "born": 1977,
@@ -41,7 +112,15 @@
   },
   "Alcock Sr., John": {
    "born": 1715,
-   "died": 1806
+   "died": 1806,
+   "alt": [
+    "john",
+    "allcock",
+    "piper",
+    "pseudonym",
+    "dr",
+    "alcock"
+   ]
   },
   "Alburger, Mark": {
    "born": 1957,
@@ -57,7 +136,16 @@
   },
   "Adriaenssen, Emanuel": {
    "born": null,
-   "died": 1604
+   "died": 1604,
+   "alt": [
+    "emmanuel",
+    "adriaensen",
+    "emanuel",
+    "hadrianius",
+    "adriaenssen",
+    "hadrianus",
+    "adriansen"
+   ]
   },
   "Altenburg, Johann Ernst": {
    "born": 1734,
@@ -65,23 +153,47 @@
   },
   "Alberti, Johann Friedrich": {
    "born": 1642,
-   "died": 1710
+   "died": 1710,
+   "alt": [
+    "giovanni",
+    "alberti"
+   ]
   },
   "Abreu, Zequinha": {
    "born": 1880,
-   "died": 1935
+   "died": 1935,
+   "alt": [
+    "jose",
+    "gomes",
+    "de",
+    "abreu"
+   ]
   },
   "Ahlert, Fred": {
    "born": 1892,
-   "died": 1953
+   "died": 1953,
+   "alt": [
+    "fred",
+    "ahlert"
+   ]
   },
   "Albert, Heinrich": {
    "born": 1604,
-   "died": 1651
+   "died": 1651,
+   "alt": [
+    "heinrich",
+    "alberti"
+   ]
   },
   "Akeroyde, Samuel": {
    "born": null,
-   "died": 1706
+   "died": 1706,
+   "alt": [
+    "ackeroyd",
+    "akeroyd",
+    "ackeroyde",
+    "ackroyd"
+   ]
   },
   "Alexandra, Liana": {
    "born": 1947,
@@ -105,7 +217,16 @@
   },
   "Agostini, Pietro Simone": {
    "born": null,
-   "died": 1680
+   "died": 1680,
+   "alt": [
+    "pier",
+    "simone",
+    "agostini",
+    "piersimone",
+    "simenone",
+    "agustini",
+    "augustini"
+   ]
   },
   "Alkauskas, Giedrius": {
    "born": 1978,
@@ -113,7 +234,17 @@
   },
   "Aleksandrov, Aleksandr": {
    "born": 1883,
-   "died": 1946
+   "died": 1946,
+   "alt": [
+    "aleksandr",
+    "vasil",
+    "evic",
+    "aleksandrov",
+    "evich",
+    "alexander",
+    "vasilyevich",
+    "alexandrov"
+   ]
   },
   "Alman, Samuel": {
    "born": 1877,
@@ -121,11 +252,19 @@
   },
   "Abellán, Antonio": {
    "born": 2004,
-   "died": null
+   "died": null,
+   "alt": [
+    "antov",
+    "avilyev"
+   ]
   },
   "Allen, Robert William Otto": {
    "born": 1852,
-   "died": 1888
+   "died": 1888,
+   "alt": [
+    "robert",
+    "allen"
+   ]
   },
   "Aagaard, Thorvald": {
    "born": 1877,
@@ -133,39 +272,159 @@
   },
   "Allan, Archibald": {
    "born": 1794,
-   "died": 1831
+   "died": 1831,
+   "alt": [
+    "airchie",
+    "allan"
+   ]
   },
   "Arne, Thomas Augustine": {
    "born": 1710,
-   "died": 1778
+   "died": 1778,
+   "alt": [
+    "dr",
+    "thomas",
+    "arne"
+   ]
   },
   "Bach, Carl Philipp Emanuel": {
    "born": 1714,
-   "died": 1788
+   "died": 1788,
+   "alt": [
+    "karl",
+    "carl",
+    "philipp",
+    "emmanuel",
+    "bach",
+    "charles",
+    "philippe"
+   ]
+  },
+  "Ariosti, Attilio": {
+   "born": 1666,
+   "died": 1729,
+   "alt": [
+    "attilio",
+    "malachia",
+    "ariosti",
+    "clementi",
+    "frate",
+    "ottavio"
+   ]
+  },
+  "Arbeau, Thoinot": {
+   "born": 1520,
+   "died": 1595,
+   "alt": [
+    "jehan",
+    "tabourot"
+   ]
   },
   "Ascher, Joseph": {
    "born": 1829,
-   "died": 1869
+   "died": 1869,
+   "alt": [
+    "josef",
+    "ascher"
+   ]
+  },
+  "Arban, Jean-Baptiste": {
+   "born": 1825,
+   "died": 1889,
+   "alt": [
+    "joseph",
+    "jean",
+    "baptiste",
+    "laurent",
+    "arban",
+    "baptist"
+   ]
   },
   "Amberg, Johan": {
    "born": 1846,
-   "died": 1928
+   "died": 1928,
+   "alt": [
+    "johan",
+    "lauritz",
+    "walbom",
+    "amberg"
+   ]
+  },
+  "Auber, Daniel François Esprit": {
+   "born": 1782,
+   "died": 1871,
+   "alt": [
+    "francois",
+    "auber",
+    "fils"
+   ]
+  },
+  "Audran, Edmond": {
+   "born": 1840,
+   "died": 1901
   },
   "Babell, William": {
    "born": 1688,
-   "died": 1723
+   "died": 1723,
+   "alt": [
+    "william",
+    "babel"
+   ]
+  },
+  "Arresti, Floriano": {
+   "born": 1667,
+   "died": 1717,
+   "alt": [
+    "floriano",
+    "maria",
+    "arresti",
+    "aresti"
+   ]
+  },
+  "Antegnati, Costanzo": {
+   "born": 1549,
+   "died": 1624,
+   "alt": [
+    "costant",
+    "antegnati",
+    "constanzo",
+    "ategnati"
+   ]
   },
   "Amani, Nikolay": {
    "born": 1872,
-   "died": 1904
+   "died": 1904,
+   "alt": [
+    "nikolaj",
+    "nikolaevic",
+    "amani",
+    "nikolai",
+    "nikolaevich",
+    "nikolay",
+    "nikolayevich",
+    "nikolajewitsch",
+    "nicolas",
+    "nicholas"
+   ]
   },
   "Attrup, Karl": {
    "born": 1848,
-   "died": 1892
+   "died": 1892,
+   "alt": [
+    "carl",
+    "august",
+    "attrupp"
+   ]
   },
   "Antheil, George": {
    "born": 1900,
-   "died": 1959
+   "died": 1959,
+   "alt": [
+    "george",
+    "johann",
+    "carl",
+    "antheil"
+   ]
   },
   "Angerer, Edmund": {
    "born": 1740,
@@ -181,11 +440,35 @@
   },
   "Bach, Heinrich": {
    "born": 1615,
-   "died": 1692
+   "died": 1692,
+   "alt": [
+    "johann",
+    "heinrich",
+    "bach",
+    "heinrihs",
+    "bahs",
+    "genrikh",
+    "bakh"
+   ]
   },
   "Asafyev, Boris": {
    "born": 1884,
-   "died": 1949
+   "died": 1949,
+   "alt": [
+    "boris",
+    "vladimirovic",
+    "asaf",
+    "ev",
+    "vladimirovich",
+    "yev",
+    "wladimirowitsch",
+    "assafjew",
+    "vladimirovitch",
+    "assafiev",
+    "igor",
+    "glebov",
+    "glebow"
+   ]
   },
   "Bach, Johann Bernhard": {
    "born": 1676,
@@ -193,15 +476,39 @@
   },
   "Arcadelt, Jacob": {
    "born": 1507,
-   "died": 1568
+   "died": 1568,
+   "alt": [
+    "jacobus",
+    "archadelt",
+    "jacques",
+    "arcadelt",
+    "jakob",
+    "arkadelt",
+    "jachet",
+    "gombert",
+    "arcadet",
+    "archadet",
+    "harcadelt"
+   ]
   },
   "Aston, Hugh": {
    "born": null,
-   "died": 1558
+   "died": 1558,
+   "alt": [
+    "hugh",
+    "ashton",
+    "hugo",
+    "asseton",
+    "haston"
+   ]
   },
   "Babou, Thomas": {
    "born": 1656,
-   "died": null
+   "died": null,
+   "alt": [
+    "monsieur",
+    "babou"
+   ]
   },
   "Anerio, Giovanni Francesco": {
    "born": 1567,
@@ -209,7 +516,11 @@
   },
   "Armsdorf, Andreas": {
    "born": 1670,
-   "died": 1699
+   "died": 1699,
+   "alt": [
+    "armsdorff",
+    "armstorff"
+   ]
   },
   "Arakelian, Grigor": {
    "born": 1963,
@@ -225,7 +536,13 @@
   },
   "Atkins, Ivor": {
    "born": 1869,
-   "died": 1953
+   "died": 1953,
+   "alt": [
+    "sir",
+    "ivor",
+    "algernon",
+    "atkins"
+   ]
   },
   "Audinot, Nicolas-Médard": {
    "born": 1732,
@@ -241,11 +558,22 @@
   },
   "Anzalone, Giacinto": {
    "born": 1606,
-   "died": 1656
+   "died": 1656,
+   "alt": [
+    "giacinto",
+    "ansalone",
+    "anzelonus",
+    "jacinte",
+    "anzalone"
+   ]
   },
   "Bach, Johann": {
    "born": 1604,
-   "died": 1673
+   "died": 1673,
+   "alt": [
+    "johannes",
+    "bach"
+   ]
   },
   "Argentesi, Dario": {
    "born": 1985,
@@ -261,19 +589,40 @@
   },
   "Artôt, Jean-Désiré": {
    "born": 1803,
-   "died": 1887
+   "died": 1887,
+   "alt": [
+    "jean",
+    "desire",
+    "montagney",
+    "artot"
+   ]
   },
   "Andersen, Sophus": {
    "born": 1859,
-   "died": 1923
+   "died": 1923,
+   "alt": [
+    "sophus",
+    "emil",
+    "andersen"
+   ]
   },
   "Augusto, Pedro Manuel": {
    "born": 1971,
-   "died": null
+   "died": null,
+   "alt": [
+    "pedro",
+    "augusto"
+   ]
   },
   "Andersen, Fritz": {
    "born": 1829,
-   "died": 1910
+   "died": 1910,
+   "alt": [
+    "johannes",
+    "fritz",
+    "emanuel",
+    "andersen"
+   ]
   },
   "Auriaux, Raphaël": {
    "born": 1852,
@@ -285,11 +634,52 @@
   },
   "Anderson, James": {
    "born": null,
-   "died": 1820
+   "died": 1820,
+   "alt": [
+    "james",
+    "anderson",
+    "of",
+    "inverness"
+   ]
   },
   "Bach, Johann Sebastian": {
    "born": 1685,
-   "died": 1750
+   "died": 1750,
+   "alt": [
+    "jean",
+    "sebastien",
+    "bach",
+    "fr",
+    "jan",
+    "sebastian",
+    "john",
+    "en",
+    "juan",
+    "es",
+    "spa",
+    "giovanni",
+    "sebastiano",
+    "it",
+    "ita",
+    "gr",
+    "ru",
+    "ar",
+    "chi",
+    "zho",
+    "ko",
+    "kor",
+    "heb"
+   ]
+  },
+  "Bartók, Béla": {
+   "born": 1881,
+   "died": 1945,
+   "alt": [
+    "bela",
+    "viktor",
+    "janos",
+    "bartok"
+   ]
   },
   "Bach, Wilhelm Friedemann": {
    "born": 1710,
@@ -301,19 +691,66 @@
   },
   "Bach, Johann Christoph Friedrich": {
    "born": 1732,
-   "died": 1795
+   "died": 1795,
+   "alt": [
+    "jean",
+    "christophe",
+    "frederic",
+    "bach"
+   ]
   },
   "Bach, Johann Christian": {
    "born": 1735,
-   "died": 1782
+   "died": 1782,
+   "alt": [
+    "john",
+    "christian",
+    "bach",
+    "jean",
+    "chretien",
+    "giovanni",
+    "christiano",
+    "back"
+   ]
+  },
+  "Banchieri, Adriano": {
+   "born": 1568,
+   "died": 1634,
+   "alt": [
+    "adriano",
+    "tomaso",
+    "banchieri",
+    "bianchieri",
+    "da",
+    "bologna",
+    "bankieri",
+    "camillo",
+    "scaligeri",
+    "scaliggeri",
+    "dalla",
+    "fratta"
+   ]
   },
   "Banister, John": {
    "born": 1630,
-   "died": 1679
+   "died": 1679,
+   "alt": [
+    "john",
+    "bannister"
+   ]
   },
   "Bantock, Granville": {
    "born": 1868,
-   "died": 1946
+   "died": 1946,
+   "alt": [
+    "granville",
+    "ransome",
+    "bantock",
+    "sir",
+    "pencerdd",
+    "yr",
+    "hebrid"
+   ]
   },
   "Barnekow, Christian": {
    "born": 1837,
@@ -325,7 +762,12 @@
   },
   "Balbastre, Claude-Bénigne": {
    "born": 1724,
-   "died": 1799
+   "died": 1799,
+   "alt": [
+    "claude",
+    "balbastre",
+    "balbatre"
+   ]
   },
   "Bakalian, Craig": {
    "born": 1961,
@@ -349,7 +791,15 @@
   },
   "Barnard, Charlotte Alington": {
    "born": 1830,
-   "died": 1869
+   "died": 1869,
+   "alt": [
+    "claribel",
+    "pseudonym",
+    "charlotte",
+    "alington",
+    "pye",
+    "barnard"
+   ]
   },
   "Banister 'The Younger', John": {
    "born": 1662,
@@ -361,11 +811,32 @@
   },
   "Bach, Johann Nicolaus": {
    "born": 1669,
-   "died": 1753
+   "died": 1753,
+   "alt": [
+    "johann",
+    "nikolaus",
+    "bach"
+   ]
   },
   "Bach, Wilhelm Friedrich Ernst": {
    "born": 1759,
-   "died": 1845
+   "died": 1845,
+   "alt": [
+    "william",
+    "bach",
+    "small",
+    "after",
+    "his",
+    "time",
+    "in",
+    "england",
+    "this",
+    "was",
+    "nickname",
+    "among",
+    "family",
+    "members"
+   ]
   },
   "Bastos, Martiniano Ribeiro": {
    "born": 1825,
@@ -377,7 +848,15 @@
   },
   "Baptista, Francisco Xavier": {
    "born": null,
-   "died": 1797
+   "died": 1797,
+   "alt": [
+    "bachixa",
+    "francisco",
+    "xavier",
+    "baxixa",
+    "battista",
+    "francesco"
+   ]
   },
   "Barat, Joseph Edouard": {
    "born": 1882,
@@ -397,7 +876,11 @@
   },
   "Bagley, Ezra Mahon": {
    "born": 1853,
-   "died": 1886
+   "died": 1886,
+   "alt": [
+    "ezra",
+    "bagley"
+   ]
   },
   "Balle, Carl Christian Nicolaj": {
    "born": 1806,
@@ -409,7 +892,13 @@
   },
   "Backus, Zeke": {
    "born": null,
-   "died": 1855
+   "died": 1855,
+   "alt": [
+    "ezekiel",
+    "backus",
+    "zeek",
+    "bacus"
+   ]
   },
   "Baillie, Robert": {
    "born": 1853,
@@ -425,11 +914,48 @@
   },
   "Beethoven, Ludwig van": {
    "born": 1770,
-   "died": 1827
+   "died": 1827,
+   "alt": [
+    "louis",
+    "van",
+    "beethoven"
+   ]
+  },
+  "Becker, Dietrich": {
+   "born": null,
+   "died": 1679,
+   "alt": [
+    "dietrich",
+    "bekker",
+    "diederich",
+    "becker",
+    "diedrich",
+    "dieterich",
+    "baekker",
+    "bakker"
+   ]
   },
   "Berg, Alban": {
    "born": 1885,
-   "died": 1935
+   "died": 1935,
+   "alt": [
+    "alban",
+    "maria",
+    "johannes",
+    "berg",
+    "russ",
+    "grk",
+    "jp",
+    "ko",
+    "kor",
+    "chi",
+    "zho",
+    "ar"
+   ]
+  },
+  "Bennett, John": {
+   "born": null,
+   "died": 1784
   },
   "Berga, Victor": {
    "born": 1984,
@@ -437,19 +963,89 @@
   },
   "Biber, Heinrich Ignaz Franz von": {
    "born": null,
-   "died": 1704
+   "died": 1704,
+   "alt": [
+    "heinrich",
+    "ignaz",
+    "franz",
+    "biber",
+    "johann",
+    "von",
+    "hainrich",
+    "bibern"
+   ]
+  },
+  "Bellini, Vincenzo": {
+   "born": 1801,
+   "died": 1835,
+   "alt": [
+    "vincenzo",
+    "salvatore",
+    "carmelo",
+    "francesco",
+    "bellini",
+    "vincentius"
+   ]
   },
   "Berlioz, Hector": {
    "born": 1803,
-   "died": 1869
+   "died": 1869,
+   "alt": [
+    "louis",
+    "hector",
+    "berlioz"
+   ]
+  },
+  "Bertoldo, Sperindio": {
+   "born": null,
+   "died": 1570,
+   "alt": [
+    "sperandio",
+    "bertoldo",
+    "sper",
+    "in",
+    "dio",
+    "sperindio",
+    "bertholdo",
+    "bartoldo",
+    "spirindio"
+   ]
+  },
+  "Beckwith, John": {
+   "born": 1759,
+   "died": 1809,
+   "alt": [
+    "john",
+    "christmas",
+    "beckwith"
+   ]
+  },
+  "Besozzi, Alessandro": {
+   "born": 1702,
+   "died": 1793,
+   "alt": [
+    "bezozzi",
+    "bessozzi"
+   ]
+  },
+  "Bechgaard, Julius": {
+   "born": 1843,
+   "died": 1917
   },
   "Beischer-Matyó, Tamás": {
    "born": 1972,
-   "died": null
+   "died": null,
+   "alt": [
+    "tamas",
+    "matyo"
+   ]
   },
   "Battmann, Jacques-Louis": {
    "born": 1818,
-   "died": 1886
+   "died": 1886,
+   "alt": [
+    "battman"
+   ]
   },
   "Bellman, Carl Michael": {
    "born": 1740,
@@ -461,11 +1057,20 @@
   },
   "Bedoya, Harold": {
    "born": 1988,
-   "died": null
+   "died": null,
+   "alt": [
+    "bedoya",
+    "agudelo",
+    "harold"
+   ]
   },
   "Bial, Rudolf": {
    "born": 1834,
-   "died": 1881
+   "died": 1881,
+   "alt": [
+    "rudolph",
+    "bial"
+   ]
   },
   "Bedetti, Tiziano": {
    "born": 1976,
@@ -473,7 +1078,15 @@
   },
   "Bentayoux, Frédéric": {
    "born": 1840,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "ben",
+    "tayoux",
+    "mononym",
+    "louis",
+    "andre",
+    "frederic"
+   ]
   },
   "Besset, Julian Raoul": {
    "born": 1939,
@@ -489,11 +1102,22 @@
   },
   "Bertouch, Georg von": {
    "born": 1668,
-   "died": 1743
+   "died": 1743,
+   "alt": [
+    "georgius",
+    "bertuch",
+    "georg",
+    "bertouch"
+   ]
   },
   "Berlin, Johan Daniel": {
    "born": 1714,
-   "died": 1787
+   "died": 1787,
+   "alt": [
+    "johann",
+    "daniel",
+    "berlin"
+   ]
   },
   "Berkahn, Samuel James": {
    "born": 1999,
@@ -509,7 +1133,12 @@
   },
   "Bertrand, Anthoine de": {
    "born": null,
-   "died": 1581
+   "died": 1581,
+   "alt": [
+    "antoine",
+    "de",
+    "bertrand"
+   ]
   },
   "Bernardez, Pedro": {
    "born": 1987,
@@ -537,23 +1166,119 @@
   },
   "Bizet, Georges": {
    "born": 1838,
-   "died": 1875
+   "died": 1875,
+   "alt": [
+    "alexandre",
+    "cesar",
+    "leopold",
+    "bizet"
+   ]
+  },
+  "Bortniansky, Dmytro": {
+   "born": 1751,
+   "died": 1825,
+   "alt": [
+    "dmytro",
+    "stepanovych",
+    "bortnians",
+    "kyi",
+    "dmitrij",
+    "stepanovic",
+    "bortnjanskij",
+    "dmitrii",
+    "stepanovich",
+    "bortnianskii",
+    "dmitry",
+    "bortniansky",
+    "dmitri",
+    "stepanowitsch",
+    "bortnjanski"
+   ]
   },
   "Bottazzo, Luigi": {
    "born": 1845,
-   "died": 1924
+   "died": 1924,
+   "alt": [
+    "louis",
+    "bottazzo"
+   ]
+  },
+  "Boismortier, Joseph Bodin de": {
+   "born": 1689,
+   "died": 1755
+  },
+  "Bononcini, Giovanni Maria": {
+   "born": null,
+   "died": 1678
+  },
+  "Bohlmann, Georg Carl": {
+   "born": 1838,
+   "died": 1920,
+   "alt": [
+    "georg",
+    "karl",
+    "bohlmann"
+   ]
+  },
+  "Boccherini, Luigi": {
+   "born": 1743,
+   "died": 1805,
+   "alt": [
+    "ridolfo",
+    "luigi",
+    "boccherini",
+    "bouqueriny"
+   ]
+  },
+  "Bishop, Henry Rowley": {
+   "born": 1786,
+   "died": 1855,
+   "alt": [
+    "henry",
+    "bishop",
+    "sir",
+    "rowley"
+   ]
   },
   "Boulanger, Lili": {
    "born": 1893,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "marie",
+    "juliette",
+    "olga",
+    "boulanger"
+   ]
   },
   "Bononcini, Giovanni": {
    "born": 1670,
-   "died": 1747
+   "died": 1747,
+   "alt": [
+    "giovanni",
+    "battista",
+    "bononcini",
+    "buononcini",
+    "john"
+   ]
+  },
+  "Bonini, Severo": {
+   "born": 1582,
+   "died": 1663,
+   "alt": [
+    "jacopo",
+    "bonini",
+    "luca"
+   ]
   },
   "Bishop, John": {
    "born": 1665,
-   "died": 1737
+   "died": 1737,
+   "alt": [
+    "john",
+    "bishop",
+    "of",
+    "winchester"
+   ]
   },
   "Bloch, Ernest": {
    "born": 1880,
@@ -561,7 +1286,14 @@
   },
   "Bochsa, Nicholas Charles": {
    "born": 1789,
-   "died": 1856
+   "died": 1856,
+   "alt": [
+    "robert",
+    "nicolas",
+    "charles",
+    "bochsa",
+    "fils"
+   ]
   },
   "Blow, John": {
    "born": 1649,
@@ -573,15 +1305,47 @@
   },
   "Birckenstock, Johann Adam": {
    "born": 1687,
-   "died": 1733
+   "died": 1733,
+   "alt": [
+    "birkenstock",
+    "birkenstok"
+   ]
   },
   "Bordes, Charles": {
    "born": 1863,
-   "died": 1909
+   "died": 1909,
+   "alt": [
+    "charles",
+    "marie",
+    "anne",
+    "bordes"
+   ]
   },
   "Bon, Anna": {
    "born": 1738,
-   "died": null
+   "died": null,
+   "alt": [
+    "anna",
+    "bon",
+    "di",
+    "venezia",
+    "lucia",
+    "also",
+    "possible",
+    "forms",
+    "boni",
+    "bonno",
+    "bono",
+    "bonn",
+    "le",
+    "buon",
+    "bunon",
+    "after",
+    "marriage",
+    "maybe",
+    "as",
+    "mongeri"
+   ]
   },
   "Bitensky, Laurence Scott": {
    "born": 1966,
@@ -589,11 +1353,22 @@
   },
   "Bliss, Arthur": {
    "born": 1891,
-   "died": 1975
+   "died": 1975,
+   "alt": [
+    "sir",
+    "arthur",
+    "edward",
+    "drummond",
+    "bliss"
+   ]
   },
   "Borchgrevinck, Melchior": {
    "born": null,
-   "died": 1632
+   "died": 1632,
+   "alt": [
+    "melchior",
+    "borchgreving"
+   ]
   },
   "Bitzan, Wendelin": {
    "born": 1982,
@@ -609,7 +1384,15 @@
   },
   "Blitheman, John": {
    "born": null,
-   "died": 1591
+   "died": 1591,
+   "alt": [
+    "william",
+    "blitheman",
+    "incorrect",
+    "blytheman",
+    "blythman",
+    "blithman"
+   ]
   },
   "Blied, Jakob": {
    "born": 1844,
@@ -625,11 +1408,20 @@
   },
   "Blazhevich, Vladislav": {
    "born": 1881,
-   "died": 1942
+   "died": 1942,
+   "alt": [
+    "vladislav",
+    "mikhailovich",
+    "blazhevich"
+   ]
   },
   "Bologna, Monari di": {
    "born": 1662,
-   "died": 1697
+   "died": 1697,
+   "alt": [
+    "bartolomeo",
+    "monari"
+   ]
   },
   "Blewitt, Jonathan": {
    "born": 1782,
@@ -649,7 +1441,11 @@
   },
   "Blankenburg, Hermann Ludwig": {
    "born": 1876,
-   "died": 1956
+   "died": 1956,
+   "alt": [
+    "hermann",
+    "louis"
+   ]
   },
   "Bohuszewicz, Edward Balthazar": {
    "born": 1775,
@@ -665,11 +1461,75 @@
   },
   "Boisen, Lars Nannestad": {
    "born": 1803,
-   "died": 1875
+   "died": 1875,
+   "alt": [
+    "boisen"
+   ]
   },
   "Brahms, Johannes": {
    "born": 1833,
    "died": 1897
+  },
+  "Bruckner, Anton": {
+   "born": 1824,
+   "died": 1896,
+   "alt": [
+    "joseph",
+    "anton",
+    "bruckner",
+    "josef"
+   ]
+  },
+  "Boyvin, Jacques": {
+   "born": null,
+   "died": 1706
+  },
+  "Bull, Ole": {
+   "born": 1810,
+   "died": 1880,
+   "alt": [
+    "ole",
+    "bornemann",
+    "bull"
+   ]
+  },
+  "Bruna, Pablo": {
+   "born": null,
+   "died": 1679
+  },
+  "Braga, Gaetano": {
+   "born": 1829,
+   "died": 1907
+  },
+  "Bull, John": {
+   "born": null,
+   "died": 1628,
+   "alt": [
+    "doctor",
+    "bull",
+    "dr",
+    "john",
+    "jan",
+    "bul",
+    "boul",
+    "bol",
+    "jean",
+    "bouville",
+    "bonville",
+    "johan",
+    "johann"
+   ]
+  },
+  "Burgmüller, Friedrich": {
+   "born": 1806,
+   "died": 1874,
+   "alt": [
+    "johann",
+    "friedrich",
+    "franz",
+    "burgmuller",
+    "frederic"
+   ]
   },
   "Buongiorno Nardelli, Marco": {
    "born": 1964,
@@ -689,7 +1549,11 @@
   },
   "Brade, William": {
    "born": 1560,
-   "died": 1630
+   "died": 1630,
+   "alt": [
+    "wilhelm",
+    "brade"
+   ]
   },
   "Bramieri, Claudio": {
    "born": 1530,
@@ -701,7 +1565,13 @@
   },
   "Bousquet, Narcisse": {
    "born": 1820,
-   "died": 1869
+   "died": 1869,
+   "alt": [
+    "narcisse",
+    "joseph",
+    "bousquet",
+    "bosquet"
+   ]
   },
   "Buechel, Robert": {
    "born": 1864,
@@ -725,15 +1595,25 @@
   },
   "Brooks, Ellis": {
    "born": 1848,
-   "died": 1920
+   "died": 1920,
+   "alt": [
+    "ellis",
+    "brooks"
+   ]
   },
   "Bowman, Albert S.": {
    "born": 1844,
-   "died": 1935
+   "died": 1935,
+   "alt": [
+    "bowman"
+   ]
   },
   "Boyer, Thornton Barnes": {
    "born": 1858,
-   "died": 1936
+   "died": 1936,
+   "alt": [
+    "boyer"
+   ]
   },
   "Bray, Charles E.": {
    "born": 1844,
@@ -741,11 +1621,21 @@
   },
   "Buhl, David": {
    "born": 1781,
-   "died": 1860
+   "died": 1860,
+   "alt": [
+    "joseph",
+    "david",
+    "buhl"
+   ]
   },
   "Brandt, Karl Wilhelm": {
    "born": 1869,
-   "died": 1923
+   "died": 1923,
+   "alt": [
+    "willy",
+    "brandt",
+    "vassily"
+   ]
   },
   "Buckley, Frederick": {
    "born": 1833,
@@ -773,39 +1663,189 @@
   },
   "Bredsdorff, M.T.": {
    "born": 1830,
-   "died": 1910
+   "died": 1910,
+   "alt": [
+    "morten",
+    "thomsen",
+    "bredsdorff"
+   ]
+  },
+  "Byrd, William": {
+   "born": null,
+   "died": 1623,
+   "alt": [
+    "bird",
+    "byrde",
+    "birde"
+   ]
+  },
+  "Buxtehude, Dietrich": {
+   "born": null,
+   "died": 1707,
+   "alt": [
+    "dieterich",
+    "buxtehude",
+    "diderik",
+    "diderich"
+   ]
+  },
+  "Cabezón, Antonio de": {
+   "born": 1510,
+   "died": 1566
+  },
+  "Böhm, Georg": {
+   "born": 1661,
+   "died": 1733,
+   "alt": [
+    "georg",
+    "boehm"
+   ]
   },
   "Bériot, Charles-Auguste de": {
    "born": 1802,
-   "died": 1870
+   "died": 1870,
+   "alt": [
+    "charles",
+    "de",
+    "beriot"
+   ]
+  },
+  "Carulli, Ferdinando": {
+   "born": 1770,
+   "died": 1841,
+   "alt": [
+    "ferdinando",
+    "maria",
+    "meinrado",
+    "francesco",
+    "pascale",
+    "rosario",
+    "carulli",
+    "fernando"
+   ]
+  },
+  "Carey, Henry": {
+   "born": 1687,
+   "died": 1743,
+   "alt": [
+    "harry",
+    "carey",
+    "benjamin",
+    "bounce",
+    "sir",
+    "humphrey",
+    "single",
+    "signor",
+    "carini"
+   ]
   },
   "Caccini, Giulio": {
    "born": 1551,
-   "died": 1618
+   "died": 1618,
+   "alt": [
+    "giulio",
+    "romolo",
+    "caccini",
+    "romano"
+   ]
+  },
+  "Campion, Thomas": {
+   "born": 1567,
+   "died": 1620,
+   "alt": [
+    "thomas",
+    "campian",
+    "campianus"
+   ]
+  },
+  "Campioni, Carlo Antonio": {
+   "born": 1720,
+   "died": 1788,
+   "alt": [
+    "carl",
+    "antonio",
+    "campione",
+    "campion",
+    "charles",
+    "antoine",
+    "campioni"
+   ]
   },
   "Caplet, André": {
    "born": 1878,
-   "died": 1925
+   "died": 1925,
+   "alt": [
+    "andre",
+    "leon",
+    "caplet"
+   ]
+  },
+  "Böhme, Oskar": {
+   "born": 1870,
+   "died": 1938
   },
   "Cabanilles, Juan": {
    "born": 1644,
-   "died": 1712
+   "died": 1712,
+   "alt": [
+    "cavanilles",
+    "cabanillas",
+    "cavanillas",
+    "juan",
+    "bautista",
+    "jose",
+    "cabanilles",
+    "josep",
+    "joan"
+   ]
+  },
+  "Campra, André": {
+   "born": 1660,
+   "died": 1744
   },
   "Caix d'Hervelois, Louis de": {
    "born": null,
-   "died": 1759
+   "died": 1759,
+   "alt": [
+    "caix",
+    "hervelois"
+   ]
   },
   "Busnois, Antoine": {
    "born": null,
-   "died": 1492
+   "died": 1492,
+   "alt": [
+    "antoine",
+    "anthoine",
+    "de",
+    "busne",
+    "busnes",
+    "busnois",
+    "busnoys",
+    "bunoys",
+    "dubusne"
+   ]
   },
   "Busch, Carl": {
    "born": 1862,
-   "died": 1943
+   "died": 1943,
+   "alt": [
+    "carl",
+    "reinholdt",
+    "busch"
+   ]
   },
   "Cannabich, Christian": {
    "born": 1731,
-   "died": 1798
+   "died": 1798,
+   "alt": [
+    "johann",
+    "christian",
+    "innocenz",
+    "bonaventura",
+    "cannabich",
+    "canabich"
+   ]
   },
   "Caroubel, Pierre-Francisque": {
    "born": 1556,
@@ -813,19 +1853,42 @@
   },
   "Büsser, Henri": {
    "born": 1872,
-   "died": 1973
+   "died": 1973,
+   "alt": [
+    "henri",
+    "paul",
+    "buesser",
+    "busser"
+   ]
   },
   "Buttstett, Johann Heinrich": {
    "born": 1666,
-   "died": 1727
+   "died": 1727,
+   "alt": [
+    "buttstadt",
+    "buttstedt",
+    "butstaett"
+   ]
   },
   "Capricornus, Samuel": {
    "born": 1628,
-   "died": 1665
+   "died": 1665,
+   "alt": [
+    "samuel",
+    "friedrich",
+    "capriconus",
+    "bockshorn",
+    "kaprikornus"
+   ]
   },
   "Bustijn, Pieter": {
    "born": 1648,
-   "died": 1729
+   "died": 1729,
+   "alt": [
+    "pierre",
+    "bustyn",
+    "pieter"
+   ]
   },
   "Carbajo, Víctor": {
    "born": 1970,
@@ -837,7 +1900,18 @@
   },
   "Buus, Jacques": {
    "born": null,
-   "died": 1565
+   "died": 1565,
+   "alt": [
+    "giacques",
+    "jacob",
+    "jachet",
+    "de",
+    "buis",
+    "buus",
+    "guant",
+    "iaches",
+    "flamengo"
+   ]
   },
   "Cabezón, Hernando de": {
    "born": 1541,
@@ -845,7 +1919,10 @@
   },
   "Carter, Thomas": {
    "born": null,
-   "died": 1804
+   "died": 1804,
+   "alt": [
+    "carter"
+   ]
   },
   "Campion, François": {
    "born": 1685,
@@ -861,19 +1938,38 @@
   },
   "Bøgh, Erik": {
    "born": 1822,
-   "died": 1899
+   "died": 1899,
+   "alt": [
+    "erik",
+    "nicolai",
+    "gh"
+   ]
   },
   "Cameron, David": {
    "born": 1937,
-   "died": null
+   "died": null,
+   "alt": [
+    "charles",
+    "david",
+    "cameron"
+   ]
   },
   "Carlier, E.": {
    "born": null,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "madame",
+    "carlier"
+   ]
   },
   "Calegari, Francesco Antonio": {
    "born": null,
-   "died": 1742
+   "died": 1742,
+   "alt": [
+    "callegari",
+    "caligari",
+    "francisco"
+   ]
   },
   "Caldini, Fulvio": {
    "born": 1959,
@@ -885,11 +1981,18 @@
   },
   "Cam, Ebrems Abraham": {
    "born": 1793,
-   "died": null
+   "died": null,
+   "alt": [
+    "cam"
+   ]
   },
   "Carnaud, Félix": {
    "born": 1815,
-   "died": 1890
+   "died": 1890,
+   "alt": [
+    "carnaud",
+    "jeune"
+   ]
   },
   "Carl, M.": {
    "born": 1847,
@@ -917,19 +2020,71 @@
   },
   "Cherubini, Luigi": {
    "born": 1760,
-   "died": 1842
+   "died": 1842,
+   "alt": [
+    "maria",
+    "luigi",
+    "carlo",
+    "zenobio",
+    "salvatore",
+    "cherubini",
+    "marie",
+    "louis",
+    "charles",
+    "zenobi",
+    "salvador",
+    "ludovico"
+   ]
   },
   "Casella, Alfredo": {
    "born": 1883,
    "died": 1947
   },
+  "Cavalli, Francesco": {
+   "born": 1602,
+   "died": 1676,
+   "alt": [
+    "pietro",
+    "francesco",
+    "caletti",
+    "bruni",
+    "pier",
+    "caletto",
+    "cavalli"
+   ]
+  },
   "Cavaccio, Giovanni": {
    "born": null,
-   "died": 1626
+   "died": 1626,
+   "alt": [
+    "giovanni",
+    "cavacchio",
+    "cavaggio",
+    "cavazzio",
+    "johannes",
+    "cavacius",
+    "joannes",
+    "cavatius"
+   ]
+  },
+  "Cazzati, Maurizio": {
+   "born": 1616,
+   "died": 1678,
+   "alt": [
+    "mauritio",
+    "cazzati"
+   ]
   },
   "Chapuis, Auguste": {
    "born": 1858,
-   "died": 1933
+   "died": 1933,
+   "alt": [
+    "auguste",
+    "paul",
+    "jean",
+    "baptiste",
+    "chapuis"
+   ]
   },
   "Choron, Alexandre-Étienne": {
    "born": 1771,
@@ -937,15 +2092,54 @@
   },
   "Chédeville, Nicolas": {
    "born": 1705,
-   "died": 1782
+   "died": 1782,
+   "alt": [
+    "chefdeville",
+    "chedeville",
+    "le",
+    "cadet",
+    "jeune"
+   ]
   },
   "Chassaigne, Francis": {
    "born": 1847,
-   "died": 1922
+   "died": 1922,
+   "alt": [
+    "francisque"
+   ]
+  },
+  "Chopin, Frédéric": {
+   "born": 1810,
+   "died": 1849,
+   "alt": [
+    "frederic",
+    "francois",
+    "chopin",
+    "fryderyk",
+    "franciszek",
+    "szopen",
+    "federic",
+    "cho",
+    "zho",
+    "ko",
+    "kor",
+    "tha",
+    "ar",
+    "rus",
+    "heb",
+    "kat",
+    "geo",
+    "ja"
+   ]
   },
   "Clark, Scotson": {
    "born": 1840,
-   "died": 1883
+   "died": 1883,
+   "alt": [
+    "frederick",
+    "scotson",
+    "clark"
+   ]
   },
   "Chase, Alex": {
    "born": 1994,
@@ -953,11 +2147,20 @@
   },
   "Casey, John Oscar": {
    "born": 1858,
-   "died": 1919
+   "died": 1919,
+   "alt": [
+    "casey"
+   ]
   },
   "Chelleri, Fortunato": {
    "born": 1690,
-   "died": 1757
+   "died": 1757,
+   "alt": [
+    "kelleri",
+    "keller",
+    "cheler",
+    "kellery"
+   ]
   },
   "Chaumont, Lambert": {
    "born": null,
@@ -981,11 +2184,23 @@
   },
   "Chédeville, Esprit Philippe": {
    "born": 1696,
-   "died": 1762
+   "died": 1762,
+   "alt": [
+    "chefdeville",
+    "chedeville",
+    "aine"
+   ]
   },
   "Cecilio, Handel": {
    "born": 1963,
-   "died": null
+   "died": null,
+   "alt": [
+    "handel",
+    "cecilio",
+    "pinto",
+    "da",
+    "silva"
+   ]
   },
   "Cerasi, Pierre Rolf": {
    "born": 1966,
@@ -1001,7 +2216,11 @@
   },
   "Charlier, Théo": {
    "born": 1868,
-   "died": 1944
+   "died": 1944,
+   "alt": [
+    "theophile",
+    "charlier"
+   ]
   },
   "Ceruti, Roque": {
    "born": 1683,
@@ -1013,7 +2232,13 @@
   },
   "Caussinus, Victor": {
    "born": 1806,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "joseph",
+    "louis",
+    "victor",
+    "caussinus"
+   ]
   },
   "Castellacci, Luigi": {
    "born": 1797,
@@ -1021,7 +2246,14 @@
   },
   "Chatterjee, Bankimchandra": {
    "born": 1838,
-   "died": 1894
+   "died": 1894,
+   "alt": [
+    "bankimchandra",
+    "chattopadhyay",
+    "bankim",
+    "chandra",
+    "chatterjee"
+   ]
   },
   "Chanat, Edmond": {
    "born": null,
@@ -1033,7 +2265,15 @@
   },
   "Champion dit Mithou, Thomas": {
    "born": null,
-   "died": 1580
+   "died": 1580,
+   "alt": [
+    "thomas",
+    "champion",
+    "mithou",
+    "mytou",
+    "mitou",
+    "mythou"
+   ]
   },
   "Chavanne, Antoine": {
    "born": 1876,
@@ -1043,17 +2283,123 @@
    "born": 1910,
    "died": 1995
   },
+  "Corelli, Arcangelo": {
+   "born": 1653,
+   "died": 1713,
+   "alt": [
+    "archangelo",
+    "corelli",
+    "gallario",
+    "riccoleno"
+   ]
+  },
+  "Couperin, Louis": {
+   "born": null,
+   "died": 1661
+  },
+  "Couperin, François": {
+   "born": 1668,
+   "died": 1733,
+   "alt": [
+    "couperin",
+    "le",
+    "grand",
+    "ar",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor",
+    "heb",
+    "ru",
+    "grk"
+   ]
+  },
+  "Clérambault, Louis-Nicolas": {
+   "born": 1676,
+   "died": 1749,
+   "alt": [
+    "nicolas",
+    "clerambault",
+    "louis",
+    "clairembault"
+   ]
+  },
+  "Clarke, Jeremiah": {
+   "born": null,
+   "died": 1707,
+   "alt": [
+    "jeremiah",
+    "clark",
+    "clerk",
+    "jeremie",
+    "clarke",
+    "mr"
+   ]
+  },
+  "Cornelius, Peter": {
+   "born": 1824,
+   "died": 1874,
+   "alt": [
+    "carl",
+    "august",
+    "peter",
+    "cornelius",
+    "karl"
+   ]
+  },
+  "Croce, Giovanni": {
+   "born": null,
+   "died": 1609,
+   "alt": [
+    "ioanne",
+    "cruce",
+    "clodiensis",
+    "il",
+    "chiozotto"
+   ]
+  },
   "Crusell, Bernhard Henrik": {
    "born": 1775,
    "died": 1838
   },
+  "Costantini, Alessandro": {
+   "born": null,
+   "died": 1657
+  },
+  "Corrette, Michel": {
+   "born": 1707,
+   "died": 1795,
+   "alt": [
+    "corette"
+   ]
+  },
   "Clemens non Papa, Jacobus": {
    "born": null,
-   "died": 1555
+   "died": 1555,
+   "alt": [
+    "jacques",
+    "clement",
+    "jacob",
+    "clemens",
+    "non",
+    "papa"
+   ]
   },
   "Conseil, Jean": {
    "born": null,
-   "died": 1534
+   "died": 1534,
+   "alt": [
+    "johannes",
+    "consilium",
+    "gian",
+    "de",
+    "consilio",
+    "jean",
+    "du",
+    "conseil",
+    "consilion"
+   ]
   },
   "Cowell, Henry": {
    "born": 1897,
@@ -1061,11 +2407,25 @@
   },
   "Croft, William": {
    "born": null,
-   "died": 1727
+   "died": 1727,
+   "alt": [
+    "crofts",
+    "crofft"
+   ]
   },
   "Courteville, Raphael": {
    "born": null,
-   "died": 1772
+   "died": 1772,
+   "alt": [
+    "cortevil",
+    "courtaville",
+    "courtivill",
+    "courtiville",
+    "cortevel",
+    "courtivelle",
+    "ralph",
+    "ralphe"
+   ]
   },
   "Corteccia, Francesco": {
    "born": 1502,
@@ -1073,15 +2433,30 @@
   },
   "Crouch, Frederick William Nicholls": {
    "born": 1808,
-   "died": null
+   "died": null,
+   "alt": [
+    "frederick",
+    "nicholls"
+   ]
   },
   "Cristo, Pedro de": {
    "born": null,
-   "died": 1618
+   "died": 1618,
+   "alt": [
+    "petrus"
+   ]
   },
   "Coperario, John": {
    "born": null,
-   "died": 1626
+   "died": 1626,
+   "alt": [
+    "john",
+    "coprario",
+    "giovanni",
+    "coperario",
+    "cooper",
+    "cowper"
+   ]
   },
   "Corner, David Gregor": {
    "born": null,
@@ -1097,11 +2472,22 @@
   },
   "Clodomir, Pierre François": {
    "born": 1815,
-   "died": 1884
+   "died": 1884,
+   "alt": [
+    "pierre",
+    "clodimir",
+    "francois",
+    "mathieu",
+    "borrit"
+   ]
   },
   "Cohan, George Michael": {
    "born": 1878,
-   "died": 1942
+   "died": 1942,
+   "alt": [
+    "george",
+    "cohan"
+   ]
   },
   "Clokey, Joseph Waddell": {
    "born": 1890,
@@ -1125,7 +2511,10 @@
   },
   "Cox, John Summers": {
    "born": 1834,
-   "died": 1902
+   "died": 1902,
+   "alt": [
+    "cox"
+   ]
   },
   "Corini, Lucia": {
    "born": 1960,
@@ -1137,11 +2526,20 @@
   },
   "Conor, Léon": {
    "born": 1833,
-   "died": 1911
+   "died": 1911,
+   "alt": [
+    "leon",
+    "edme",
+    "conor"
+   ]
   },
   "Collmann fils, Auguste": {
    "born": null,
-   "died": 1913
+   "died": 1913,
+   "alt": [
+    "auguste",
+    "collmann"
+   ]
   },
   "Coes, George H.": {
    "born": 1828,
@@ -1157,15 +2555,79 @@
   },
   "Debussy, Claude": {
    "born": 1862,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "achille",
+    "claude",
+    "debussy",
+    "fr",
+    "rus",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor",
+    "tha",
+    "mal",
+    "ar",
+    "grk",
+    "bel",
+    "heb",
+    "geo",
+    "kat",
+    "arm",
+    "hye"
+   ]
   },
   "Davidson, Robert": {
    "born": 1965,
    "died": null
   },
+  "Daquin, Louis-Claude": {
+   "born": 1694,
+   "died": 1772,
+   "alt": [
+    "louis",
+    "claude",
+    "aquin",
+    "acquin"
+   ]
+  },
+  "Dandrieu, Jean-François": {
+   "born": 1682,
+   "died": 1738,
+   "alt": [
+    "jean",
+    "francois",
+    "andrieu"
+   ]
+  },
   "Delibes, Léo": {
    "born": 1836,
-   "died": 1891
+   "died": 1891,
+   "alt": [
+    "clement",
+    "philibert",
+    "leo",
+    "delibes"
+   ]
+  },
+  "Diabelli, Anton": {
+   "born": 1781,
+   "died": 1858,
+   "alt": [
+    "antonio",
+    "diabelli"
+   ]
+  },
+  "Danzi, Franz": {
+   "born": 1763,
+   "died": 1826,
+   "alt": [
+    "franz",
+    "ignaz",
+    "danzi"
+   ]
   },
   "Derecskei, András": {
    "born": 1982,
@@ -1173,7 +2635,14 @@
   },
   "Demersseman, Jules": {
    "born": 1833,
-   "died": 1866
+   "died": 1866,
+   "alt": [
+    "jules",
+    "auguste",
+    "edouard",
+    "demersseman",
+    "demerssemann"
+   ]
   },
   "Deigendesch, Karl": {
    "born": 1839,
@@ -1181,7 +2650,13 @@
   },
   "Delmas, Marc": {
    "born": 1885,
-   "died": 1931
+   "died": 1931,
+   "alt": [
+    "marc",
+    "jean",
+    "baptiste",
+    "delmas"
+   ]
   },
   "Dett, Robert Nathaniel": {
    "born": 1882,
@@ -1189,7 +2664,12 @@
   },
   "Di Capua, Eduardo": {
    "born": 1865,
-   "died": 1917
+   "died": 1917,
+   "alt": [
+    "eduardo",
+    "di",
+    "capua"
+   ]
   },
   "Dachs, Michael": {
    "born": 1876,
@@ -1197,7 +2677,23 @@
   },
   "Dargomyzhsky, Aleksandr": {
    "born": 1813,
-   "died": 1869
+   "died": 1869,
+   "alt": [
+    "aleksandr",
+    "sergeevic",
+    "dargomyzskij",
+    "sergeevich",
+    "dargomyzhskii",
+    "alexander",
+    "sergeyevich",
+    "dargomyzhsky",
+    "sergejewitsch",
+    "dargomyschski",
+    "alexandre",
+    "sergueievitch",
+    "dargomyjski",
+    "dargomijsky"
+   ]
   },
   "Delage, Maurice": {
    "born": 1879,
@@ -1205,15 +2701,35 @@
   },
   "Dering, Richard": {
    "born": null,
-   "died": 1630
+   "died": 1630,
+   "alt": [
+    "richard",
+    "dearing",
+    "deering",
+    "riccardo",
+    "diringo"
+   ]
   },
   "Crüger, Johann": {
    "born": 1598,
-   "died": 1662
+   "died": 1662,
+   "alt": [
+    "johannes",
+    "jan",
+    "cruger",
+    "kruger",
+    "krueger",
+    "crueger",
+    "krygar"
+   ]
   },
   "Darcieux, Francisque": {
    "born": 1880,
-   "died": 1951
+   "died": 1951,
+   "alt": [
+    "francois",
+    "darcieux"
+   ]
   },
   "Cummings, William Hayman": {
    "born": 1831,
@@ -1221,7 +2737,10 @@
   },
   "Dandrieu, Pierre": {
    "born": null,
-   "died": 1733
+   "died": 1733,
+   "alt": [
+    "andrieu"
+   ]
   },
   "De Bleser, Werner J.E.": {
    "born": 1959,
@@ -1247,6 +2766,17 @@
    "born": null,
    "died": 1922
   },
+  "D'Anglebert, Jean-Henri": {
+   "born": 1629,
+   "died": 1691,
+   "alt": [
+    "jean",
+    "baptiste",
+    "henri",
+    "anglebert",
+    "henry"
+   ]
+  },
   "Deutsch, Leslie Joseph": {
    "born": 1955,
    "died": null
@@ -1261,11 +2791,22 @@
   },
   "Dannström, Isidor": {
    "born": 1812,
-   "died": 1897
+   "died": 1897,
+   "alt": [
+    "johan",
+    "isidor",
+    "dannstrom",
+    "isidore"
+   ]
   },
   "Dampierre, Marc-Antoine de": {
    "born": 1676,
-   "died": 1756
+   "died": 1756,
+   "alt": [
+    "marquis",
+    "de",
+    "dampierre"
+   ]
   },
   "Dagnelies, Dieudonné": {
    "born": 1825,
@@ -1277,7 +2818,12 @@
   },
   "Dauverné, François Georges Auguste": {
    "born": 1799,
-   "died": 1874
+   "died": 1874,
+   "alt": [
+    "auguste",
+    "dauverne",
+    "francois"
+   ]
   },
   "Dedekam, Sofie": {
    "born": 1820,
@@ -1289,7 +2835,10 @@
   },
   "Cruzelaeguí, Francisco Martín": {
    "born": 1742,
-   "died": 1803
+   "died": 1803,
+   "alt": [
+    "crucelagui"
+   ]
   },
   "D'Amico, Giuseppe": {
    "born": 1972,
@@ -1297,31 +2846,105 @@
   },
   "Dukas, Paul": {
    "born": 1865,
-   "died": 1935
+   "died": 1935,
+   "alt": [
+    "paul",
+    "abraham",
+    "dukas"
+   ]
   },
   "Dubois, Théodore": {
    "born": 1837,
-   "died": 1924
+   "died": 1924,
+   "alt": [
+    "francois",
+    "clement",
+    "theodore",
+    "dubois"
+   ]
   },
   "Dittersdorf, Carl Ditters von": {
    "born": 1739,
-   "died": 1799
+   "died": 1799,
+   "alt": [
+    "carl",
+    "ditters",
+    "karl",
+    "august",
+    "von",
+    "dittersdorf"
+   ]
   },
   "Eilenberg, Richard": {
    "born": 1848,
    "died": 1927
   },
+  "Durante, Francesco": {
+   "born": 1684,
+   "died": 1755
+  },
+  "Eccard, Johannes": {
+   "born": 1553,
+   "died": 1611,
+   "alt": [
+    "johann",
+    "eccard"
+   ]
+  },
+  "Duvernoy, Victor Alphonse": {
+   "born": 1842,
+   "died": 1907,
+   "alt": [
+    "victor",
+    "alphonse",
+    "duvernois",
+    "duvernoy"
+   ]
+  },
   "Dvořák, Antonín": {
    "born": 1841,
-   "died": 1904
+   "died": 1904,
+   "alt": [
+    "antonin",
+    "leopold",
+    "dvorak",
+    "anton"
+   ]
   },
   "Dieupart, Charles": {
    "born": 1676,
-   "died": 1751
+   "died": 1751,
+   "alt": [
+    "francois",
+    "dieupart",
+    "francis"
+   ]
   },
   "Du Puy, Edouard": {
    "born": null,
-   "died": 1822
+   "died": 1822,
+   "alt": [
+    "jean",
+    "baptiste",
+    "edouard",
+    "louis",
+    "camille",
+    "du",
+    "puy",
+    "dupuy",
+    "dupuij",
+    "dupuuis"
+   ]
+  },
+  "Dufay, Guillaume": {
+   "born": 1397,
+   "died": 1474,
+   "alt": [
+    "guillaume",
+    "du",
+    "fayt",
+    "fay"
+   ]
   },
   "Edmund, William": {
    "born": 1706,
@@ -1329,15 +2952,37 @@
   },
   "Eichner, Ernst": {
    "born": 1740,
-   "died": 1777
+   "died": 1777,
+   "alt": [
+    "ernst",
+    "dieterich",
+    "adolph",
+    "eichner",
+    "dietrich",
+    "ernesto",
+    "erneste"
+   ]
   },
   "Diebold, Johann": {
    "born": 1842,
-   "died": 1929
+   "died": 1929,
+   "alt": [
+    "johannes",
+    "diebold"
+   ]
   },
   "Du Mont, Henry": {
    "born": null,
-   "died": 1684
+   "died": 1684,
+   "alt": [
+    "henri",
+    "du",
+    "mont",
+    "de",
+    "thier",
+    "henry",
+    "dumont"
+   ]
   },
   "Dressler, William": {
    "born": 1826,
@@ -1345,11 +2990,23 @@
   },
   "Du Caurroy, Eustache": {
    "born": 1549,
-   "died": 1609
+   "died": 1609,
+   "alt": [
+    "francois",
+    "eustache",
+    "du",
+    "carroy"
+   ]
   },
   "East, Michael": {
    "born": null,
-   "died": 1648
+   "died": 1648,
+   "alt": [
+    "michael",
+    "easte",
+    "est",
+    "este"
+   ]
   },
   "Drew, William": {
    "born": null,
@@ -1409,7 +3066,13 @@
   },
   "Déjazet, Ernest": {
    "born": 1806,
-   "died": 1847
+   "died": 1847,
+   "alt": [
+    "jean",
+    "clair",
+    "ernest",
+    "dejazet"
+   ]
   },
   "Easton, John B.": {
    "born": null,
@@ -1417,7 +3080,13 @@
   },
   "Dow, Daniel": {
    "born": 1732,
-   "died": 1783
+   "died": 1783,
+   "alt": [
+    "donald",
+    "dow",
+    "domhnull",
+    "donal"
+   ]
   },
   "Durant, J. H.": {
    "born": null,
@@ -1433,7 +3102,15 @@
   },
   "Drehmer, Earl Richard": {
    "born": 1953,
-   "died": null
+   "died": null,
+   "alt": [
+    "rick",
+    "drehmer",
+    "pseudotonal",
+    "earl",
+    "richard",
+    "sr"
+   ]
   },
   "Effenberg, Rainer": {
    "born": 1956,
@@ -1445,39 +3122,152 @@
   },
   "Enescu, George": {
    "born": 1881,
-   "died": 1955
+   "died": 1955,
+   "alt": [
+    "georges",
+    "enesco",
+    "enescu",
+    "george"
+   ]
   },
   "Fauré, Gabriel": {
    "born": 1845,
-   "died": 1924
+   "died": 1924,
+   "alt": [
+    "gabriel",
+    "urbain",
+    "faure"
+   ]
+  },
+  "Elgar, Edward": {
+   "born": 1857,
+   "died": 1934,
+   "alt": [
+    "edward",
+    "william",
+    "elgar",
+    "sir"
+   ]
+  },
+  "Emmanuel, Maurice": {
+   "born": 1862,
+   "died": 1938,
+   "alt": [
+    "marie",
+    "francois",
+    "maurice",
+    "emmanuel"
+   ]
+  },
+  "Ewald, Victor": {
+   "born": 1860,
+   "died": 1935,
+   "alt": [
+    "viktor",
+    "vladimirovic",
+    "eval",
+    "vladimirovich",
+    "evald"
+   ]
   },
   "Faure, Jean-Baptiste": {
    "born": 1830,
-   "died": 1914
+   "died": 1914,
+   "alt": [
+    "jean",
+    "faure"
+   ]
+  },
+  "Falconieri, Andrea": {
+   "born": null,
+   "died": 1656,
+   "alt": [
+    "andrea",
+    "falconiero"
+   ]
   },
   "Falla, Manuel de": {
    "born": 1876,
-   "died": 1946
+   "died": 1946,
+   "alt": [
+    "manuel",
+    "de",
+    "falla",
+    "matheu",
+    "maria",
+    "los",
+    "dolores"
+   ]
+  },
+  "Erlebach, Philipp Heinrich": {
+   "born": null,
+   "died": 1714
   },
   "Fasch, Karl Friedrich Christian": {
    "born": 1736,
-   "died": 1800
+   "died": 1800,
+   "alt": [
+    "carl",
+    "friedrich",
+    "christian",
+    "fasch",
+    "charles"
+   ]
+  },
+  "Fasch, Johann Friedrich": {
+   "born": 1688,
+   "died": 1758
   },
   "Eler, André-Frédéric": {
    "born": null,
-   "died": 1821
+   "died": 1821,
+   "alt": [
+    "andreas",
+    "friedrich",
+    "heller",
+    "eller"
+   ]
+  },
+  "Erba, Dionigi": {
+   "born": 1692,
+   "died": 1730
   },
   "Eisel, Johann Philipp": {
    "born": 1698,
-   "died": 1763
+   "died": 1763,
+   "alt": [
+    "eysel"
+   ]
   },
   "Eyck, Jacob van": {
    "born": null,
-   "died": 1657
+   "died": 1657,
+   "alt": [
+    "jan",
+    "jacob",
+    "van",
+    "eyck",
+    "joncker",
+    "jean",
+    "jacques",
+    "johann",
+    "jakob",
+    "eijck",
+    "eyk"
+   ]
   },
   "Emmett, Daniel Decatur": {
    "born": 1815,
-   "died": 1904
+   "died": 1904,
+   "alt": [
+    "jerry",
+    "blossom",
+    "dixie",
+    "jr",
+    "pseudonyms",
+    "dan",
+    "emmett"
+   ]
   },
   "Ellingsen, Sivert": {
    "born": 1992,
@@ -1489,7 +3279,18 @@
   },
   "Faber, Heinrich": {
    "born": null,
-   "died": 1552
+   "died": 1552,
+   "alt": [
+    "hainrich",
+    "faber",
+    "lichtenfels",
+    "henrici",
+    "fabri",
+    "heinrico",
+    "fabro",
+    "henricum",
+    "fabrum"
+   ]
   },
   "Esperança, Pedro da": {
    "born": null,
@@ -1501,7 +3302,13 @@
   },
   "Elías, José": {
    "born": 1678,
-   "died": 1755
+   "died": 1755,
+   "alt": [
+    "joseph",
+    "elias",
+    "josep",
+    "elies"
+   ]
   },
   "Erythräus, Gotthard": {
    "born": 1560,
@@ -1513,7 +3320,20 @@
   },
   "Ernest Louis, Landgrave of Hesse-Darmstadt": {
    "born": 1667,
-   "died": 1739
+   "died": 1739,
+   "alt": [
+    "ernesto",
+    "lodovico",
+    "assia",
+    "langravio",
+    "di",
+    "darmstadt",
+    "ernst",
+    "ludwig",
+    "landgraf",
+    "von",
+    "hessen"
+   ]
   },
   "Erich, Daniel": {
    "born": 1649,
@@ -1525,7 +3345,14 @@
   },
   "Falcão, Antônio de Pádua": {
    "born": 1848,
-   "died": 1927
+   "died": 1927,
+   "alt": [
+    "antonio",
+    "de",
+    "padua",
+    "alves",
+    "falcao"
+   ]
   },
   "Fasshauer, Tobias": {
    "born": 1966,
@@ -1537,11 +3364,26 @@
   },
   "Ettling, Émile": {
    "born": 1817,
-   "died": 1881
+   "died": 1881,
+   "alt": [
+    "emile",
+    "ettling",
+    "charles",
+    "de",
+    "sivry",
+    "pseudonym"
+   ]
   },
   "Farinel, Jean-Baptiste": {
    "born": 1655,
-   "died": null
+   "died": null,
+   "alt": [
+    "jean",
+    "baptiste",
+    "farinelli",
+    "giovanni",
+    "battista"
+   ]
   },
   "Ezell, David": {
    "born": 1946,
@@ -1549,15 +3391,28 @@
   },
   "Fabbrini, Giuseppe": {
    "born": null,
-   "died": 1708
+   "died": 1708,
+   "alt": [
+    "giuseppe",
+    "fabbioni"
+   ]
   },
   "Estrada, Minor Roberto": {
    "born": 1984,
-   "died": null
+   "died": null,
+   "alt": [
+    "minor",
+    "estrada"
+   ]
   },
   "Faitelli, Vigilius Blasius": {
    "born": 1710,
-   "died": 1768
+   "died": 1768,
+   "alt": [
+    "vigilio",
+    "blasio",
+    "faitello"
+   ]
   },
   "Eisenbrey, Keith": {
    "born": 1959,
@@ -1569,7 +3424,13 @@
   },
   "Farn, Kat": {
    "born": 2004,
-   "died": null
+   "died": null,
+   "alt": [
+    "kathal",
+    "farn",
+    "katia",
+    "kat"
+   ]
   },
   "Emerson, Walter": {
    "born": 1856,
@@ -1589,31 +3450,132 @@
   },
   "Etler, Alvin": {
    "born": 1913,
-   "died": 1973
+   "died": 1973,
+   "alt": [
+    "alvin",
+    "derald",
+    "etler"
+   ]
   },
   "Foote, Arthur": {
    "born": 1853,
-   "died": 1937
+   "died": 1937,
+   "alt": [
+    "arthur",
+    "william",
+    "foote",
+    "carl",
+    "erich",
+    "ferdinand",
+    "meyer"
+   ]
+  },
+  "Fischer, Johann Caspar Ferdinand": {
+   "born": 1656,
+   "died": 1746,
+   "alt": [
+    "johann",
+    "kaspar",
+    "ferdinand",
+    "fischer",
+    "jean",
+    "gaspard",
+    "gaspar",
+    "giovanni",
+    "gasparo",
+    "ioannis",
+    "caspar"
+   ]
   },
   "Fillmore, Henry": {
    "born": 1881,
-   "died": 1956
+   "died": 1956,
+   "alt": [
+    "james",
+    "henry",
+    "fillmore",
+    "harold",
+    "bennett",
+    "john",
+    "clements",
+    "ray",
+    "hall",
+    "harry",
+    "hartley",
+    "al",
+    "hayes",
+    "gus",
+    "beans",
+    "will",
+    "huff",
+    "henrietta",
+    "moore"
+   ]
   },
   "Fibich, Zdeněk": {
    "born": 1850,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "zdenek",
+    "antonin",
+    "vaclav",
+    "fibich",
+    "zdenko"
+   ]
   },
   "Fogg, Eric": {
    "born": 1903,
-   "died": 1939
+   "died": 1939,
+   "alt": [
+    "charles",
+    "william",
+    "eric",
+    "fogg"
+   ]
+  },
+  "Ferrini, Giovanni Battista": {
+   "born": 1601,
+   "died": 1674,
+   "alt": [
+    "giovanni",
+    "battista",
+    "ferini"
+   ]
   },
   "Fischer, Michael Gotthard": {
    "born": 1773,
-   "died": 1829
+   "died": 1829,
+   "alt": [
+    "michael",
+    "gottard",
+    "fischer",
+    "gotthardt"
+   ]
+  },
+  "Fiocco, Joseph-Hector": {
+   "born": 1703,
+   "died": 1741,
+   "alt": [
+    "jozef",
+    "hector",
+    "fiocco",
+    "gioseffo",
+    "hectore"
+   ]
   },
   "Filtz, Johann Anton": {
    "born": 1733,
-   "died": 1760
+   "died": 1760,
+   "alt": [
+    "fils",
+    "filz",
+    "fieltz",
+    "jan",
+    "antonin",
+    "antonio",
+    "anton",
+    "filtz"
+   ]
   },
   "Fine, Elaine": {
    "born": 1959,
@@ -1629,11 +3591,21 @@
   },
   "Festa, Costanzo": {
    "born": null,
-   "died": 1545
+   "died": 1545,
+   "alt": [
+    "constanzo",
+    "festa",
+    "constantio",
+    "constantius"
+   ]
   },
   "Filago, Carlo": {
    "born": 1598,
-   "died": 1644
+   "died": 1644,
+   "alt": [
+    "carlo",
+    "fillago"
+   ]
   },
   "Fonteneau, Fabien": {
    "born": 1970,
@@ -1645,7 +3617,18 @@
   },
   "Flecha, Mateo": {
    "born": 1481,
-   "died": 1553
+   "died": 1553,
+   "alt": [
+    "mateu",
+    "fletxa",
+    "catalan",
+    "mateo",
+    "flecha",
+    "el",
+    "viejo",
+    "the",
+    "elder"
+   ]
   },
   "Folk Songs, American": {
    "born": null,
@@ -1665,7 +3648,11 @@
   },
   "Filippi, Gaspare": {
    "born": null,
-   "died": 1655
+   "died": 1655,
+   "alt": [
+    "gasparo",
+    "filippi"
+   ]
   },
   "Folk Songs, Canadian": {
    "born": null,
@@ -1673,11 +3660,17 @@
   },
   "Foreit, Anton": {
    "born": 1792,
-   "died": 1877
+   "died": 1877,
+   "alt": [
+    "foreith"
+   ]
   },
   "Forestier, Joseph": {
    "born": 1815,
-   "died": 1882
+   "died": 1882,
+   "alt": [
+    "forestier"
+   ]
   },
   "Forghieri, Giuliano": {
    "born": 1961,
@@ -1697,51 +3690,199 @@
   },
   "Fishar, James": {
    "born": null,
-   "died": 1790
+   "died": 1790,
+   "alt": [
+    "fisher"
+   ]
   },
   "Fenger, Theodor": {
    "born": 1816,
-   "died": 1889
+   "died": 1889,
+   "alt": [
+    "rasmus",
+    "theodor",
+    "fenger"
+   ]
+  },
+  "Franck, César": {
+   "born": 1822,
+   "died": 1890,
+   "alt": [
+    "cesar",
+    "auguste",
+    "jean",
+    "guillaume",
+    "hubert",
+    "franck",
+    "frank"
+   ]
   },
   "Gade, Niels": {
    "born": 1817,
-   "died": 1890
+   "died": 1890,
+   "alt": [
+    "niels",
+    "wilhelm",
+    "gade"
+   ]
+  },
+  "Frescobaldi, Girolamo": {
+   "born": 1583,
+   "died": 1643,
+   "alt": [
+    "girolamo",
+    "alessandro",
+    "frescobaldi",
+    "gerolamo",
+    "guillaume",
+    "girolimo",
+    "geronimo",
+    "alissandro",
+    "hieronimus"
+   ]
+  },
+  "Foster, Stephen": {
+   "born": 1826,
+   "died": 1864,
+   "alt": [
+    "stephen",
+    "collins",
+    "foster"
+   ]
   },
   "Galuppi, Baldassare": {
    "born": 1706,
-   "died": 1785
+   "died": 1785,
+   "alt": [
+    "il",
+    "buranello"
+   ]
+  },
+  "Gabrieli, Andrea": {
+   "born": null,
+   "died": 1585,
+   "alt": [
+    "andrea",
+    "gabrielli",
+    "andreas",
+    "gabrielis"
+   ]
   },
   "Gabrieli, Giovanni": {
    "born": null,
-   "died": 1612
+   "died": 1612,
+   "alt": [
+    "giovanni",
+    "gabrielli",
+    "johannes",
+    "gabrieli",
+    "gabriel",
+    "ioannes",
+    "gabrielius"
+   ]
+  },
+  "Gasparini, Francesco": {
+   "born": 1661,
+   "died": 1727
+  },
+  "Gagliano, Marco da": {
+   "born": 1582,
+   "died": 1643
   },
   "Fuchs, Georg Friedrich": {
    "born": 1752,
-   "died": 1821
+   "died": 1821,
+   "alt": [
+    "georges",
+    "fuchs",
+    "george"
+   ]
+  },
+  "Froberger, Johann Jacob": {
+   "born": 1616,
+   "died": 1667,
+   "alt": [
+    "johann",
+    "jakob",
+    "froberger",
+    "giacomo",
+    "frobergue"
+   ]
   },
   "Fuchs-Schönbach, Ernst": {
    "born": 1894,
    "died": 1975
   },
+  "Gallo, Domenico": {
+   "born": 1730,
+   "died": null,
+   "alt": [
+    "domenico",
+    "gallo",
+    "veneto"
+   ]
+  },
   "Förster, Emanuel Aloys": {
    "born": 1748,
-   "died": 1823
+   "died": 1823,
+   "alt": [
+    "emanuel",
+    "joseph",
+    "anton",
+    "ignaz",
+    "alois",
+    "forster",
+    "antonius",
+    "ignatius",
+    "emmanuel",
+    "emanuele",
+    "aloisio",
+    "foerster"
+   ]
   },
   "Fučík, Julius": {
    "born": 1872,
-   "died": 1916
+   "died": 1916,
+   "alt": [
+    "julius",
+    "arnost",
+    "vilem",
+    "fucik"
+   ]
   },
   "Franck, Melchior": {
    "born": null,
-   "died": 1639
+   "died": 1639,
+   "alt": [
+    "melchior",
+    "francke",
+    "frank",
+    "francus",
+    "zittanus",
+    "silesius"
+   ]
   },
   "Franz, Oscar": {
    "born": 1843,
-   "died": 1886
+   "died": 1886,
+   "alt": [
+    "oskar",
+    "franz"
+   ]
   },
   "Friml, Rudolf": {
    "born": 1879,
-   "died": 1972
+   "died": 1972,
+   "alt": [
+    "rudolph",
+    "friml",
+    "charles",
+    "rudolf",
+    "roderick",
+    "freeman",
+    "antonin",
+    "frymel"
+   ]
   },
   "Gabunia, Nodar": {
    "born": 1933,
@@ -1749,7 +3890,13 @@
   },
   "Führer, Robert": {
    "born": 1807,
-   "died": 1861
+   "died": 1861,
+   "alt": [
+    "robert",
+    "jan",
+    "nepomuk",
+    "fuhrer"
+   ]
   },
   "Fuenllana, Miguel de": {
    "born": 1525,
@@ -1773,11 +3920,24 @@
   },
   "Fraser, Simon": {
    "born": 1773,
-   "died": 1852
+   "died": 1852,
+   "alt": [
+    "captain",
+    "simon",
+    "fraser",
+    "of",
+    "knockie"
+   ]
   },
   "Gardano, Antonio": {
    "born": 1509,
-   "died": 1569
+   "died": 1569,
+   "alt": [
+    "antoine",
+    "gardano",
+    "antonio",
+    "gardane"
+   ]
   },
   "Gardner, Herbert Straus": {
    "born": 1934,
@@ -1785,11 +3945,21 @@
   },
   "Fry, James": {
    "born": 1949,
-   "died": null
+   "died": null,
+   "alt": [
+    "james",
+    "fry"
+   ]
   },
   "Franquin, Merri": {
    "born": 1848,
-   "died": 1934
+   "died": 1934,
+   "alt": [
+    "merri",
+    "jean",
+    "baptiste",
+    "franquin"
+   ]
   },
   "Frey, Hugo": {
    "born": 1873,
@@ -1809,7 +3979,10 @@
   },
   "Garzaroli, Giuseppe": {
    "born": 1676,
-   "died": 1730
+   "died": 1730,
+   "alt": [
+    "garzaroli"
+   ]
   },
   "Fønss-Jørgensen, Kaj": {
    "born": 1884,
@@ -1821,7 +3994,11 @@
   },
   "Gershwin, George": {
    "born": 1898,
-   "died": 1937
+   "died": 1937,
+   "alt": [
+    "jacob",
+    "gershvin"
+   ]
   },
   "Gigout, Eugène": {
    "born": 1844,
@@ -1829,47 +4006,228 @@
   },
   "Glière, Reinhold": {
    "born": 1875,
-   "died": 1956
+   "died": 1956,
+   "alt": [
+    "rejngol",
+    "moricevic",
+    "glier",
+    "reingold",
+    "moritsevich",
+    "reyngol",
+    "reinhold",
+    "moritzewitsch",
+    "gliere",
+    "moritsevitch"
+   ]
+  },
+  "Giuliani, Mauro": {
+   "born": 1781,
+   "died": 1829,
+   "alt": [
+    "mauro",
+    "giuseppe",
+    "sergio",
+    "pantaleo",
+    "giuliani",
+    "guiliani"
+   ]
+  },
+  "Gibbons, Orlando": {
+   "born": null,
+   "died": 1625
+  },
+  "Giannotti, Alessandro": {
+   "born": 1968,
+   "died": null
   },
   "Gaubert, Philippe": {
    "born": 1879,
-   "died": 1941
+   "died": 1941,
+   "alt": [
+    "phillipe",
+    "gaubert"
+   ]
+  },
+  "Gastoldi, Giovanni Giacomo": {
+   "born": null,
+   "died": 1609,
+   "alt": [
+    "giacomo",
+    "gastoldi",
+    "da",
+    "caravaggio",
+    "giovanni",
+    "castoldi",
+    "giangiacommo",
+    "gasltoldi",
+    "jean",
+    "jacques",
+    "johann",
+    "jacobi"
+   ]
+  },
+  "Geisler, Paul Thomas": {
+   "born": 1988,
+   "died": null
+  },
+  "Gluck, Christoph Willibald": {
+   "born": 1714,
+   "died": 1787,
+   "alt": [
+    "christoph",
+    "willibald",
+    "ritter",
+    "von",
+    "gluck"
+   ]
+  },
+  "Georges, Alexandre": {
+   "born": 1850,
+   "died": 1938,
+   "alt": [
+    "alexandre",
+    "georges"
+   ]
+  },
+  "Geminiani, Francesco": {
+   "born": 1687,
+   "died": 1762,
+   "alt": [
+    "francesco",
+    "xaverio",
+    "geminiani",
+    "saverio"
+   ]
+  },
+  "Giovannelli, Ruggiero": {
+   "born": null,
+   "died": 1625,
+   "alt": [
+    "ruggiero",
+    "giovanelli"
+   ]
   },
   "Gillet, Ernest": {
    "born": 1856,
-   "died": 1940
+   "died": 1940,
+   "alt": [
+    "ernest",
+    "vital",
+    "louis",
+    "gillet"
+   ]
   },
   "Gesius, Bartholomäus": {
    "born": null,
-   "died": 1613
+   "died": 1613,
+   "alt": [
+    "bartholomaeo",
+    "barthel",
+    "gose",
+    "goss",
+    "gese",
+    "go"
+   ]
   },
   "Glück, Friedrich": {
    "born": 1793,
-   "died": 1840
+   "died": 1840,
+   "alt": [
+    "johann",
+    "ludwig",
+    "friedrich",
+    "gluck"
+   ]
+  },
+  "Glazunov, Aleksandr": {
+   "born": 1865,
+   "died": 1936,
+   "alt": [
+    "alexander",
+    "alexandre",
+    "konstantinovic",
+    "konstantinovich",
+    "konstantinowitsch",
+    "glasunow",
+    "glazounov",
+    "glazounow",
+    "glazounoff"
+   ]
   },
   "Glinka, Mikhail": {
    "born": 1804,
-   "died": 1857
+   "died": 1857,
+   "alt": [
+    "mihail",
+    "ivanovic",
+    "glinka",
+    "michail",
+    "iwanowitsch",
+    "mikhail",
+    "ivanovich"
+   ]
+  },
+  "Gedike, Aleksandr": {
+   "born": 1877,
+   "died": 1957,
+   "alt": [
+    "aleksandr",
+    "fedorovic",
+    "gedike",
+    "fedorovich",
+    "alexander",
+    "fyodorovich",
+    "goedicke"
+   ]
   },
   "Gibbons, Christopher": {
    "born": 1615,
-   "died": 1676
+   "died": 1676,
+   "alt": [
+    "kristofer",
+    "gibbons",
+    "le",
+    "jeune"
+   ]
   },
   "Geoffroy, Jean-Nicolas": {
    "born": 1633,
-   "died": 1694
+   "died": 1694,
+   "alt": [
+    "jean",
+    "nicolas",
+    "geoffrey"
+   ]
   },
   "Gheyn, Matthias van den": {
    "born": 1721,
-   "died": 1785
+   "died": 1785,
+   "alt": [
+    "matthias",
+    "vanden",
+    "gheyn"
+   ]
   },
   "Gero, Jhan": {
    "born": 1518,
-   "died": 1583
+   "died": 1583,
+   "alt": [
+    "ihan",
+    "gero",
+    "jehan",
+    "jan",
+    "jhan",
+    "ghero",
+    "giero"
+   ]
   },
   "Geng, Shiqi": {
    "born": 1995,
-   "died": null
+   "died": null,
+   "alt": [
+    "shiqi",
+    "geng"
+   ]
   },
   "Gauntlett, Henry John": {
    "born": 1805,
@@ -1877,7 +4235,10 @@
   },
   "Gippenbusch, Jacob": {
    "born": 1612,
-   "died": 1664
+   "died": 1664,
+   "alt": [
+    "jakob"
+   ]
   },
   "Gast, Friedrich Moritz": {
    "born": 1821,
@@ -1913,7 +4274,10 @@
   },
   "Gobert, Antoine François": {
    "born": 1767,
-   "died": 1843
+   "died": 1843,
+   "alt": [
+    "gobert"
+   ]
   },
   "Gautreau, Marcel": {
    "born": 1957,
@@ -1945,23 +4309,86 @@
   },
   "Grieg, Edvard": {
    "born": 1843,
-   "died": 1907
+   "died": 1907,
+   "alt": [
+    "edvard",
+    "hagerup",
+    "grieg"
+   ]
+  },
+  "Granados, Enrique": {
+   "born": 1867,
+   "died": 1916,
+   "alt": [
+    "enrique",
+    "costanzo",
+    "granados",
+    "campina",
+    "enric"
+   ]
+  },
+  "Gounod, Charles": {
+   "born": 1818,
+   "died": 1893,
+   "alt": [
+    "charles",
+    "francois",
+    "gounod"
+   ]
   },
   "Hahn, Reynaldo": {
    "born": 1874,
-   "died": 1947
+   "died": 1947,
+   "alt": [
+    "reynaldo",
+    "hahn",
+    "echenagucia"
+   ]
+  },
+  "Graupner, Christoph": {
+   "born": 1683,
+   "died": 1760,
+   "alt": [
+    "johann",
+    "christoph",
+    "graupner"
+   ]
   },
   "Graun, Karl Heinrich": {
    "born": 1704,
-   "died": 1759
+   "died": 1759,
+   "alt": [
+    "capellmeister",
+    "graun",
+    "carl",
+    "heinrich",
+    "carlo",
+    "enrico"
+   ]
   },
   "Greene, Maurice": {
    "born": 1696,
-   "died": 1755
+   "died": 1755,
+   "alt": [
+    "maurice",
+    "green"
+   ]
   },
   "Grayson, Martin": {
    "born": 1953,
    "died": null
+  },
+  "Guami, Gioseffo": {
+   "born": 1542,
+   "died": 1611,
+   "alt": [
+    "gioseffo",
+    "guammi",
+    "giuseppe",
+    "guami",
+    "da",
+    "lucca"
+   ]
   },
   "Gédalge, André": {
    "born": 1856,
@@ -1969,11 +4396,21 @@
   },
   "Gossec, François Joseph": {
    "born": 1734,
-   "died": 1829
+   "died": 1829,
+   "alt": [
+    "francois",
+    "joseph",
+    "gosse"
+   ]
   },
   "Guilmant, Alexandre": {
    "born": 1837,
-   "died": 1911
+   "died": 1911,
+   "alt": [
+    "felix",
+    "alexandre",
+    "guilmant"
+   ]
   },
   "Goodwin, William": {
    "born": null,
@@ -1981,19 +4418,44 @@
   },
   "Guerrero, Francisco": {
    "born": 1522,
-   "died": 1599
+   "died": 1599,
+   "alt": [
+    "querrero"
+   ]
   },
   "Gorczycki, Grzegorz Gerwazy": {
    "born": null,
-   "died": 1734
+   "died": 1734,
+   "alt": [
+    "gregorius",
+    "gervasius",
+    "gorczyczki",
+    "grzegorz",
+    "gabrjel",
+    "gorczycki",
+    "gerwazy",
+    "gorczyca"
+   ]
   },
   "Graener, Paul": {
    "born": 1872,
-   "died": 1944
+   "died": 1944,
+   "alt": [
+    "paul",
+    "hermann",
+    "franz",
+    "graener"
+   ]
   },
   "Guignard, Justin": {
    "born": 1994,
-   "died": null
+   "died": null,
+   "alt": [
+    "joseph",
+    "justin",
+    "alexandre",
+    "guignard"
+   ]
   },
   "Gumbert, Ferdinand": {
    "born": 1818,
@@ -2009,11 +4471,26 @@
   },
   "Grefinger, Wolfgang": {
    "born": 1470,
-   "died": 1515
+   "died": 1515,
+   "alt": [
+    "wolff",
+    "grefinger",
+    "johann",
+    "wolfgang",
+    "grafinger"
+   ]
   },
   "Gumpelzhaimer, Adam": {
    "born": 1559,
-   "died": 1625
+   "died": 1625,
+   "alt": [
+    "gumpeltzhaimer",
+    "gumpeltzheimer",
+    "gumpelzheimer",
+    "adamus",
+    "gumpelzhaimerus",
+    "etc"
+   ]
   },
   "Grillo, Giovanni Battista": {
    "born": null,
@@ -2021,11 +4498,19 @@
   },
   "Gossner, Samuel Arthur": {
    "born": 1995,
-   "died": null
+   "died": null,
+   "alt": [
+    "samulis",
+    "augustus"
+   ]
   },
   "Gow, Niel": {
    "born": 1727,
-   "died": 1807
+   "died": 1807,
+   "alt": [
+    "neil",
+    "neal"
+   ]
   },
   "Gow, Nathaniel": {
    "born": 1764,
@@ -2033,7 +4518,12 @@
   },
   "Grönland, Peter": {
    "born": 1761,
-   "died": 1825
+   "died": 1825,
+   "alt": [
+    "peter",
+    "gr",
+    "nland"
+   ]
   },
   "Graziani, Maximilien": {
    "born": null,
@@ -2041,7 +4531,10 @@
   },
   "Gérardy, Dieudonné": {
    "born": null,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "gerardy"
+   ]
   },
   "Gérin, Louis": {
    "born": 1834,
@@ -2053,7 +4546,11 @@
   },
   "Göpfert, Carl Andreas": {
    "born": 1768,
-   "died": 1818
+   "died": 1818,
+   "alt": [
+    "goepfert",
+    "gopfert"
+   ]
   },
   "Gow, John": {
    "born": 1764,
@@ -2061,11 +4558,22 @@
   },
   "Hada, Robert Thomas": {
    "born": 1997,
-   "died": null
+   "died": null,
+   "alt": [
+    "bob",
+    "hada",
+    "schoolspianist246"
+   ]
   },
   "Hagen, Sophus": {
    "born": 1842,
-   "died": 1929
+   "died": 1929,
+   "alt": [
+    "sophus",
+    "albert",
+    "emil",
+    "hagen"
+   ]
   },
   "Greenberg, David": {
    "born": 1946,
@@ -2073,43 +4581,228 @@
   },
   "Green, Anthony": {
    "born": 1946,
-   "died": 2024
+   "died": 2024,
+   "alt": [
+    "anthony",
+    "green"
+   ]
+  },
+  "Haydn, Joseph": {
+   "born": 1732,
+   "died": 1809,
+   "alt": [
+    "franz",
+    "joseph",
+    "haydn",
+    "josef",
+    "rus",
+    "bg",
+    "bull",
+    "ar",
+    "heb",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor",
+    "geo",
+    "kat"
+   ]
   },
   "Handel, George Frideric": {
    "born": 1685,
-   "died": 1759
+   "died": 1759,
+   "alt": [
+    "georg",
+    "friederich",
+    "handel",
+    "friedrich",
+    "haendel",
+    "george",
+    "frideric",
+    "hendel",
+    "georges",
+    "frederic",
+    "fr",
+    "frederick",
+    "grk",
+    "rus",
+    "ar",
+    "chi",
+    "zho",
+    "ko",
+    "kor",
+    "tha"
+   ]
+  },
+  "Hall, Robert Browne": {
+   "born": 1858,
+   "died": 1907
   },
   "Hartmann, Emil": {
    "born": 1836,
-   "died": 1898
+   "died": 1898,
+   "alt": [
+    "wilhelm",
+    "emilius",
+    "zinn",
+    "hartmann"
+   ]
   },
   "Hartmann, Johan Peter Emilius": {
    "born": 1805,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "johann",
+    "peter",
+    "emilius",
+    "hartmann"
+   ]
+  },
+  "Hallman, Joseph": {
+   "born": 1979,
+   "died": null,
+   "alt": [
+    "joseph",
+    "alberto",
+    "hallman"
+   ]
+  },
+  "Hammerschmidt, Andreas": {
+   "born": null,
+   "died": 1675,
+   "alt": [
+    "andreas",
+    "hammerschmid",
+    "hammerschmied"
+   ]
   },
   "Heise, Peter": {
    "born": 1830,
-   "died": 1879
+   "died": 1879,
+   "alt": [
+    "peter",
+    "arnold",
+    "heise"
+   ]
+  },
+  "Hasse, Johann Adolph": {
+   "born": 1699,
+   "died": 1783,
+   "alt": [
+    "johann",
+    "adolf",
+    "hasse",
+    "jan",
+    "giovanni",
+    "adolfo",
+    "il",
+    "sassone"
+   ]
+  },
+  "Hansen, Thorvald": {
+   "born": 1847,
+   "died": 1915,
+   "alt": [
+    "frederik",
+    "thorvald",
+    "hansen"
+   ]
   },
   "Herman, Alphonse": {
    "born": 1836,
-   "died": 1906
+   "died": 1906,
+   "alt": [
+    "alphonse",
+    "charles",
+    "francois",
+    "romeo",
+    "herman"
+   ]
+  },
+  "Hall, Henry": {
+   "born": null,
+   "died": 1707
+  },
+  "Haydn, Michael": {
+   "born": 1737,
+   "died": 1806,
+   "alt": [
+    "johann",
+    "michael",
+    "haydn",
+    "giovanni"
+   ]
+  },
+  "Halévy, Fromental": {
+   "born": 1799,
+   "died": 1862,
+   "alt": [
+    "elias",
+    "levy",
+    "jacques",
+    "francois",
+    "fromental",
+    "elie",
+    "halevy",
+    "fromentin"
+   ]
   },
   "Harty, Hamilton": {
    "born": 1879,
-   "died": 1941
+   "died": 1941,
+   "alt": [
+    "herbert",
+    "hamilton",
+    "harty",
+    "sir"
+   ]
   },
   "Hensel, Fanny": {
    "born": 1805,
-   "died": 1847
+   "died": 1847,
+   "alt": [
+    "fanny",
+    "cacilie",
+    "mendelssohn",
+    "bartholdy",
+    "hensel"
+   ]
   },
   "Handl, Jacob": {
    "born": 1550,
-   "died": 1591
+   "died": 1591,
+   "alt": [
+    "jacobus",
+    "gallus",
+    "jacob",
+    "hahnel",
+    "jakob",
+    "petelin",
+    "handelius",
+    "carniolus",
+    "hanel",
+    "jakobus",
+    "iacobo",
+    "handl",
+    "haendl",
+    "haendel",
+    "handel",
+    "jacobis",
+    "carniolanus",
+    "iacobus"
+   ]
   },
   "Hartmann, Johann Ernst": {
    "born": 1726,
-   "died": 1793
+   "died": 1793,
+   "alt": [
+    "johann",
+    "ernst",
+    "joseph",
+    "hartmann",
+    "hartman"
+   ]
   },
   "Harrington, Jeffrey Michael": {
    "born": 1955,
@@ -2129,11 +4822,17 @@
   },
   "Hainlein, Paul": {
    "born": 1626,
-   "died": 1686
+   "died": 1686,
+   "alt": [
+    "heinlein"
+   ]
   },
   "Hanff, Johann Nicolaus": {
    "born": 1663,
-   "died": 1711
+   "died": 1711,
+   "alt": [
+    "nikolaus"
+   ]
   },
   "Haighway, Richard J": {
    "born": 1985,
@@ -2141,7 +4840,12 @@
   },
   "Henkel, Michael": {
    "born": 1780,
-   "died": 1851
+   "died": 1851,
+   "alt": [
+    "johann",
+    "michael",
+    "henkel"
+   ]
   },
   "Hamilton, Gregory": {
    "born": 1959,
@@ -2149,7 +4853,12 @@
   },
   "Hamal, Jean-Noël": {
    "born": 1709,
-   "died": 1778
+   "died": 1778,
+   "alt": [
+    "giovanni",
+    "natale",
+    "hamal"
+   ]
   },
   "Heiberg, Johanne Luise": {
    "born": 1812,
@@ -2201,15 +4910,37 @@
   },
   "Harrington, Calvin S.": {
    "born": 1826,
-   "died": 1886
+   "died": 1886,
+   "alt": [
+    "harrington"
+   ]
   },
   "Hansen, Carl August": {
    "born": 1810,
-   "died": 1874
+   "died": 1874,
+   "alt": [
+    "hansen"
+   ]
   },
   "Honegger, Arthur": {
    "born": 1892,
-   "died": 1955
+   "died": 1955,
+   "alt": [
+    "oscar",
+    "arthur",
+    "honegger"
+   ]
+  },
+  "Holst, Gustav": {
+   "born": 1874,
+   "died": 1934,
+   "alt": [
+    "gustavus",
+    "theodore",
+    "von",
+    "holst",
+    "gustav"
+   ]
   },
   "Hoffmann, Norbert Rudolf": {
    "born": 1948,
@@ -2217,7 +4948,11 @@
   },
   "Hook, James": {
    "born": 1746,
-   "died": 1827
+   "died": 1827,
+   "alt": [
+    "mr",
+    "hook"
+   ]
   },
   "Hewitt, James": {
    "born": 1770,
@@ -2229,7 +4964,19 @@
   },
   "Holbrooke, Joseph": {
    "born": 1878,
-   "died": 1958
+   "died": 1958,
+   "alt": [
+    "joseph",
+    "holbrook",
+    "josef",
+    "holbrooke",
+    "jean",
+    "hanze"
+   ]
+  },
+  "Huffman, Jason Michael": {
+   "born": 1978,
+   "died": null
   },
   "Hine, William": {
    "born": 1687,
@@ -2241,19 +4988,43 @@
   },
   "Hofmann, Richard": {
    "born": 1844,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "richard",
+    "hofman",
+    "hoffman"
+   ]
   },
   "Hill, Mildred": {
    "born": 1859,
-   "died": 1916
+   "died": 1916,
+   "alt": [
+    "mildred",
+    "junius",
+    "welch",
+    "hill",
+    "johann",
+    "tonsor"
+   ]
   },
   "Holmès, Augusta Mary Anne": {
    "born": 1847,
-   "died": 1903
+   "died": 1903,
+   "alt": [
+    "hermann",
+    "zenta",
+    "holmes",
+    "pseudonym"
+   ]
   },
   "Howe, Elias": {
    "born": 1820,
-   "died": 1895
+   "died": 1895,
+   "alt": [
+    "gumbo",
+    "chaff",
+    "pseud"
+   ]
   },
   "Holborne, Anthony": {
    "born": 1545,
@@ -2261,11 +5032,24 @@
   },
   "Hingeston, John": {
    "born": null,
-   "died": 1683
+   "died": 1683,
+   "alt": [
+    "john",
+    "hingston",
+    "hinkston",
+    "hinxon"
+   ]
   },
   "Hertel, Johann Wilhelm": {
    "born": 1727,
-   "died": 1789
+   "died": 1789,
+   "alt": [
+    "giovanni",
+    "guolielmo",
+    "hertel",
+    "johannes",
+    "wilhelm"
+   ]
   },
   "Hopkins Jr., John Henry": {
    "born": 1820,
@@ -2281,7 +5065,10 @@
   },
   "Hoch, Theodore": {
    "born": 1842,
-   "died": 1906
+   "died": 1906,
+   "alt": [
+    "theodor"
+   ]
   },
   "Hotteterre, Jean": {
    "born": null,
@@ -2289,7 +5076,19 @@
   },
   "Hessen-Kassel, Moritz von": {
    "born": 1572,
-   "died": 1632
+   "died": 1632,
+   "alt": [
+    "landgraf",
+    "moritz",
+    "hessen",
+    "kassel",
+    "maurice",
+    "landgrave",
+    "of",
+    "hesse",
+    "mortiz",
+    "von"
+   ]
   },
   "Hugl, Franz Anton": {
    "born": 1706,
@@ -2313,7 +5112,15 @@
   },
   "Herschel, William": {
    "born": 1738,
-   "died": 1822
+   "died": 1822,
+   "alt": [
+    "friedrich",
+    "wilhelm",
+    "herschel",
+    "frederick",
+    "william",
+    "sir"
+   ]
   },
   "Huber, Heinrich": {
    "born": 1879,
@@ -2321,11 +5128,21 @@
   },
   "Horneman, Emil": {
    "born": 1809,
-   "died": 1870
+   "died": 1870,
+   "alt": [
+    "johan",
+    "ole",
+    "emil",
+    "hornemann"
+   ]
   },
   "Horzevski, Ivan": {
    "born": 1727,
-   "died": 1800
+   "died": 1800,
+   "alt": [
+    "iwan",
+    "horzhevsky"
+   ]
   },
   "Hoek, Arie van": {
    "born": 1948,
@@ -2365,19 +5182,44 @@
   },
   "Hoffmann, Caspar Christian": {
    "born": 1839,
-   "died": 1893
+   "died": 1893,
+   "alt": [
+    "chr",
+    "hoffmann"
+   ]
   },
   "Janáček, Leoš": {
    "born": 1854,
-   "died": 1928
+   "died": 1928,
+   "alt": [
+    "leo",
+    "eugen",
+    "janacek"
+   ]
   },
   "Hummel, Johann Nepomuk": {
    "born": 1778,
-   "died": 1837
+   "died": 1837,
+   "alt": [
+    "jan",
+    "nepomuk",
+    "hummel",
+    "johann",
+    "johannes",
+    "jean",
+    "nepomucene"
+   ]
   },
   "Jongen, Joseph": {
    "born": 1873,
-   "died": 1953
+   "died": 1953,
+   "alt": [
+    "marie",
+    "alphonse",
+    "nicolas",
+    "joseph",
+    "jongen"
+   ]
   },
   "Joplin, Scott": {
    "born": 1868,
@@ -2385,19 +5227,83 @@
   },
   "Indy, Vincent d'": {
    "born": 1851,
-   "died": 1931
+   "died": 1931,
+   "alt": [
+    "paul",
+    "marie",
+    "theodore",
+    "vincent",
+    "indy"
+   ]
   },
   "Humperdinck, Engelbert": {
    "born": 1854,
-   "died": 1921
+   "died": 1921,
+   "alt": [
+    "engelbert",
+    "humperdink",
+    "hengelberg",
+    "humperdinck"
+   ]
   },
   "Hüe, Georges": {
    "born": 1858,
-   "died": 1948
+   "died": 1948,
+   "alt": [
+    "georges",
+    "adolphe",
+    "hue"
+   ]
+  },
+  "Hurlebusch, Conrad Friedrich": {
+   "born": 1691,
+   "died": 1765,
+   "alt": [
+    "conrad",
+    "friedrich",
+    "hurlebusch",
+    "corrado",
+    "federigo"
+   ]
+  },
+  "Ingegneri, Marc Antonio": {
+   "born": null,
+   "died": 1592,
+   "alt": [
+    "marc",
+    "antonio",
+    "ingegneri",
+    "marco",
+    "ingegnieri",
+    "ingignieri",
+    "ingignero",
+    "inzegneri",
+    "marcus",
+    "antonius",
+    "ingignerius"
+   ]
+  },
+  "Ives, Charles": {
+   "born": 1874,
+   "died": 1954,
+   "alt": [
+    "charles",
+    "edward",
+    "ives"
+   ]
   },
   "Jacquet de La Guerre, Elisabeth": {
    "born": null,
-   "died": 1729
+   "died": 1729,
+   "alt": [
+    "elisabeth",
+    "jacquet",
+    "claude",
+    "de",
+    "la",
+    "guerre",
+    "elizabeth"
+   ]
   },
   "Högn, August": {
    "born": 1878,
@@ -2405,15 +5311,33 @@
   },
   "Isaac, Heinrich": {
    "born": null,
-   "died": 1517
+   "died": 1517,
+   "alt": [
+    "henricus",
+    "isaac",
+    "ysaak",
+    "ysac",
+    "yzac",
+    "arrigo",
+    "ugo",
+    "tedesco"
+   ]
   },
   "Jonas, Emile": {
    "born": 1827,
-   "died": 1905
+   "died": 1905,
+   "alt": [
+    "emile"
+   ]
   },
   "Jeanjean, Paul": {
    "born": 1874,
-   "died": 1929
+   "died": 1929,
+   "alt": [
+    "paul",
+    "prudent",
+    "jeanjean"
+   ]
   },
   "Ibert, Jacques": {
    "born": 1890,
@@ -2425,7 +5349,13 @@
   },
   "Ives, Simon": {
    "born": 1600,
-   "died": 1662
+   "died": 1662,
+   "alt": [
+    "simon",
+    "ive",
+    "ivy",
+    "yves"
+   ]
   },
   "Jimenez, Juan Carlos": {
    "born": 1976,
@@ -2433,11 +5363,61 @@
   },
   "Jullien, Louis Antoine": {
    "born": 1812,
-   "died": 1860
+   "died": 1860,
+   "alt": [
+    "louis",
+    "george",
+    "maurice",
+    "adolphe",
+    "roch",
+    "albert",
+    "abel",
+    "antonio",
+    "alexandre",
+    "noe",
+    "jean",
+    "lucien",
+    "daniel",
+    "eugene",
+    "joseph",
+    "le",
+    "brun",
+    "bareme",
+    "thomas",
+    "pierre",
+    "arbon",
+    "maurel",
+    "barthelemi",
+    "artus",
+    "alphonse",
+    "bertrand",
+    "dieudonne",
+    "emanuel",
+    "josue",
+    "vincent",
+    "luc",
+    "michel",
+    "jules",
+    "de",
+    "la",
+    "plane",
+    "bazin",
+    "julio",
+    "cesar",
+    "jullien",
+    "antoine",
+    "julien"
+   ]
   },
   "Höger, Anton": {
    "born": 1956,
-   "died": null
+   "died": null,
+   "alt": [
+    "anton",
+    "franz",
+    "hoger",
+    "hoeger"
+   ]
   },
   "Höffner, Anton": {
    "born": 1670,
@@ -2461,16 +5441,31 @@
   },
   "Jerusalem, Ignacio": {
    "born": 1707,
-   "died": 1769
+   "died": 1769,
+   "alt": [
+    "ignacio",
+    "de",
+    "jerusalem",
+    "ignazio",
+    "gerusalemme",
+    "hierusalem",
+    "hyerusalem",
+    "stella"
+   ]
   },
   "Jones, Richard": {
    "born": 1790,
    "died": null,
-   "suspect": true
+   "suspect": true,
+   "alt": []
   },
   "Itazu, Shoryu": {
    "born": 1973,
-   "died": null
+   "died": null,
+   "alt": [
+    "itazu",
+    "shoryu"
+   ]
   },
   "Infantas, Fernando de las": {
    "born": 1534,
@@ -2502,19 +5497,42 @@
   },
   "Johnson, James Spencer": {
    "born": 1883,
-   "died": null
+   "died": null,
+   "alt": [
+    "spencer",
+    "johnson"
+   ]
   },
   "Ivanschiz, Amandus": {
    "born": 1727,
-   "died": 1758
+   "died": 1758,
+   "alt": [
+    "amando",
+    "ivancic",
+    "matthias",
+    "leopold",
+    "ivanschiz"
+   ]
   },
   "Jordan, Dora": {
    "born": 1761,
-   "died": 1816
+   "died": 1816,
+   "alt": [
+    "dorothea",
+    "jordan",
+    "bland",
+    "francis",
+    "phillips"
+   ]
   },
   "Jenkins, George": {
    "born": null,
-   "died": 1798
+   "died": 1798,
+   "alt": [
+    "george",
+    "jenkins",
+    "senior"
+   ]
   },
   "Jolivet, André": {
    "born": 1905,
@@ -2522,43 +5540,154 @@
   },
   "Hæffner, J.C.F.": {
    "born": 1759,
-   "died": 1833
+   "died": 1833,
+   "alt": [
+    "johann",
+    "christian",
+    "friederich",
+    "ffner"
+   ]
   },
   "Kellner, Johann Peter": {
    "born": 1705,
-   "died": 1772
+   "died": 1772,
+   "alt": [
+    "johann",
+    "peter",
+    "kelner"
+   ]
   },
   "Kirnberger, Johann Philipp": {
    "born": null,
-   "died": 1783
+   "died": 1783,
+   "alt": [
+    "johann",
+    "philipp",
+    "kernberg"
+   ]
   },
   "Kaun, Hugo": {
    "born": 1863,
-   "died": 1932
+   "died": 1932,
+   "alt": [
+    "hugo",
+    "wilhelm",
+    "ludwig",
+    "kaun",
+    "ferdinand",
+    "bold"
+   ]
   },
   "Karg-Elert, Sigfrid": {
    "born": 1877,
-   "died": 1933
+   "died": 1933,
+   "alt": [
+    "sigfrid",
+    "theodor",
+    "karg",
+    "teo",
+    "von",
+    "oberndorff",
+    "baptiste",
+    "dr",
+    "ottmar",
+    "bergk"
+   ]
+  },
+  "Kiel, Friedrich": {
+   "born": 1821,
+   "died": 1885
   },
   "Kalliwoda, Johann Wenzel": {
    "born": 1801,
-   "died": 1866
+   "died": 1866,
+   "alt": [
+    "jan",
+    "krtitel",
+    "vaclav",
+    "kalivoda",
+    "johannes",
+    "wenzeslaus",
+    "kalliwoda"
+   ]
   },
   "Kerckhoven, Abraham van den": {
    "born": null,
-   "died": 1701
+   "died": 1701,
+   "alt": [
+    "abraham",
+    "van",
+    "den",
+    "kerckhoven",
+    "kerckoven",
+    "antoon",
+    "kerchoven",
+    "kirckhoven",
+    "kirckoven"
+   ]
   },
   "Kling, Henri": {
    "born": 1842,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "henri",
+    "adrien",
+    "louis",
+    "kling",
+    "henry"
+   ]
   },
   "King, Robert": {
    "born": null,
    "died": 1726
   },
+  "Järnefelt, Armas": {
+   "born": 1869,
+   "died": 1958,
+   "alt": [
+    "edvard",
+    "armas",
+    "jarnefelt"
+   ]
+  },
+  "Keiser, Reinhard": {
+   "born": null,
+   "died": 1739,
+   "alt": [
+    "rinardo",
+    "cesare",
+    "reinharad",
+    "keiser"
+   ]
+  },
+  "Kirchhoff, Gottfried": {
+   "born": 1685,
+   "died": 1746
+  },
   "Kerll, Johann Caspar": {
    "born": 1627,
-   "died": 1693
+   "died": 1693,
+   "alt": [
+    "johann",
+    "caspar",
+    "von",
+    "kerll",
+    "kerl",
+    "kerle",
+    "kherl",
+    "kherll",
+    "kaspar",
+    "han",
+    "giovanni",
+    "gasparo",
+    "gaspard",
+    "de",
+    "cherll",
+    "cherle",
+    "cherli",
+    "gherl",
+    "gherli"
+   ]
   },
   "Kirbye, George": {
    "born": 1565,
@@ -2566,11 +5695,21 @@
   },
   "Kindermann, Johann Erasmus": {
    "born": 1616,
-   "died": 1655
+   "died": 1655,
+   "alt": [
+    "johannes",
+    "erasmus",
+    "kindermann"
+   ]
   },
   "Kirkpatrick, William J.": {
    "born": 1838,
-   "died": 1921
+   "died": 1921,
+   "alt": [
+    "william",
+    "james",
+    "kirkpatrick"
+   ]
   },
   "Kanazawa, Yasunori": {
    "born": 1964,
@@ -2578,15 +5717,30 @@
   },
   "Keller, Gottfried": {
    "born": null,
-   "died": 1704
+   "died": 1704,
+   "alt": [
+    "gottfried",
+    "keller",
+    "johann",
+    "godfrey"
+   ]
   },
   "Kelly, Michael": {
    "born": 1762,
-   "died": 1826
+   "died": 1826,
+   "alt": [
+    "kelly",
+    "ochelli"
+   ]
   },
   "Klier, João Bartolomeu": {
    "born": null,
-   "died": 1855
+   "died": 1855,
+   "alt": [
+    "joao",
+    "bartholomeo",
+    "klier"
+   ]
   },
   "Kirsch, Alexander": {
    "born": 1971,
@@ -2598,7 +5752,12 @@
   },
   "Knight, Joseph Philip": {
    "born": 1812,
-   "died": 1887
+   "died": 1887,
+   "alt": [
+    "philip",
+    "mortimer",
+    "pseudonym"
+   ]
   },
   "Keighley, Thomas": {
    "born": 1869,
@@ -2610,7 +5769,11 @@
   },
   "Kersner, Federico": {
    "born": 1983,
-   "died": null
+   "died": null,
+   "alt": [
+    "federico",
+    "kersner"
+   ]
   },
   "Kiuttu, Jack W.": {
    "born": 2003,
@@ -2634,7 +5797,10 @@
   },
   "Kammertöns, Christoph": {
    "born": 1966,
-   "died": null
+   "died": null,
+   "alt": [
+    "kammertoens"
+   ]
   },
   "Jähnigen, C. F.": {
    "born": 1813,
@@ -2642,7 +5808,12 @@
   },
   "Knox, James C.": {
    "born": 1849,
-   "died": null
+   "died": null,
+   "alt": [
+    "james",
+    "carter",
+    "knox"
+   ]
   },
   "Knight, Abel F.": {
    "born": null,
@@ -2658,7 +5829,10 @@
   },
   "Kennan, Kent": {
    "born": 1913,
-   "died": 2003
+   "died": 2003,
+   "alt": [
+    "altnames"
+   ]
   },
   "Kelley, Daniel E.": {
    "born": 1843,
@@ -2672,13 +5846,40 @@
    "born": 1490,
    "died": 1552
   },
+  "Lalande, Michel Richard de": {
+   "born": 1657,
+   "died": 1726,
+   "alt": [
+    "michel",
+    "richard",
+    "de",
+    "la",
+    "lande",
+    "delalande"
+   ]
+  },
   "Kuhnau, Johann": {
    "born": 1660,
-   "died": 1722
+   "died": 1722,
+   "alt": [
+    "johannes",
+    "kuhnau",
+    "johann",
+    "kuhn",
+    "cuno"
+   ]
   },
   "Kreutzer, Conradin": {
    "born": 1780,
-   "died": 1849
+   "died": 1849,
+   "alt": [
+    "conrad",
+    "kreutzer",
+    "conradin",
+    "kreuzer",
+    "konradin",
+    "konrad"
+   ]
   },
   "Kowalewski, Jakub": {
    "born": 1977,
@@ -2686,23 +5887,93 @@
   },
   "Lachner, Franz Paul": {
    "born": 1803,
-   "died": 1890
+   "died": 1890,
+   "alt": [
+    "francois",
+    "lachner"
+   ]
+  },
+  "Köhler, Ernesto": {
+   "born": 1849,
+   "died": 1907,
+   "alt": [
+    "ernesto",
+    "koehler",
+    "ernest",
+    "keller"
+   ]
+  },
+  "Krebs, Johann Ludwig": {
+   "born": 1713,
+   "died": 1780
   },
   "Kummer, Friedrich August": {
    "born": 1797,
-   "died": 1879
+   "died": 1879,
+   "alt": [
+    "frederic",
+    "auguste",
+    "kummer"
+   ]
   },
   "Lachner, Ignaz": {
    "born": 1807,
-   "died": 1895
+   "died": 1895,
+   "alt": [
+    "ignatz",
+    "ignace",
+    "jgnaz"
+   ]
   },
   "Küffner, Joseph": {
    "born": 1776,
-   "died": 1856
+   "died": 1856,
+   "alt": [
+    "josef",
+    "kuffner",
+    "kueffner",
+    "franz"
+   ]
   },
   "Kozeluch, Leopold": {
    "born": 1747,
-   "died": 1818
+   "died": 1818,
+   "alt": [
+    "leopold",
+    "antonin",
+    "tomas",
+    "kozeluh",
+    "anton",
+    "kozeluch",
+    "kotzeluch"
+   ]
+  },
+  "Krommer, Franz": {
+   "born": 1759,
+   "died": 1831,
+   "alt": [
+    "franz",
+    "vincenz",
+    "krommer",
+    "francesco",
+    "frantisek",
+    "vincenc",
+    "kramar",
+    "francois"
+   ]
+  },
+  "Kuhlau, Friedrich": {
+   "born": 1786,
+   "died": 1832,
+   "alt": [
+    "daniel",
+    "friedrich",
+    "rudolph",
+    "kulhau",
+    "rudolf",
+    "kuhlau",
+    "frederik"
+   ]
   },
   "Kursch, Richard": {
    "born": 1879,
@@ -2710,15 +5981,36 @@
   },
   "Kölling, Carl": {
    "born": 1831,
-   "died": 1914
+   "died": 1914,
+   "alt": [
+    "chas",
+    "kolling",
+    "karl",
+    "koelling"
+   ]
   },
   "Kéler, Béla": {
    "born": 1820,
-   "died": 1882
+   "died": 1882,
+   "alt": [
+    "albert",
+    "paul",
+    "von",
+    "keler",
+    "albrecht",
+    "pal",
+    "bela",
+    "vojtech"
+   ]
   },
   "Kuula, Toivo": {
    "born": 1883,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "toivo",
+    "timoteus",
+    "kuula"
+   ]
   },
   "Knuth, Jürgen": {
    "born": 1952,
@@ -2726,19 +6018,43 @@
   },
   "Köhler, Ernst": {
    "born": 1799,
-   "died": 1847
+   "died": 1847,
+   "alt": [
+    "ernest",
+    "koehler",
+    "ernst",
+    "kohler",
+    "der",
+    "altere"
+   ]
   },
   "Krieger, Johann": {
    "born": 1651,
-   "died": 1735
+   "died": 1735,
+   "alt": [
+    "kriegher",
+    "kruger",
+    "cruger",
+    "kreiger",
+    "giovanni"
+   ]
   },
   "Kreisler, Fritz": {
    "born": 1875,
-   "died": 1962
+   "died": 1962,
+   "alt": [
+    "friedrich",
+    "kreisler"
+   ]
   },
   "Kusser, Johann Sigismund": {
    "born": 1660,
-   "died": 1727
+   "died": 1727,
+   "alt": [
+    "jean",
+    "sigismond",
+    "cousser"
+   ]
   },
   "Kosleck, Julius": {
    "born": 1825,
@@ -2750,7 +6066,16 @@
   },
   "Komzák II, Karel": {
    "born": 1850,
-   "died": 1905
+   "died": 1905,
+   "alt": [
+    "carl",
+    "komzak",
+    "jr",
+    "karel",
+    "sohn",
+    "karl",
+    "ii"
+   ]
   },
   "Lanes, Mathieu": {
    "born": 1660,
@@ -2766,7 +6091,14 @@
   },
   "La Barre, Michel de": {
    "born": null,
-   "died": 1745
+   "died": 1745,
+   "alt": [
+    "michel",
+    "de",
+    "la",
+    "barre",
+    "labarre"
+   ]
   },
   "Lagard, Adrien": {
    "born": null,
@@ -2778,19 +6110,46 @@
   },
   "Kromolicki, Joseph": {
    "born": 1882,
-   "died": 1961
+   "died": 1961,
+   "alt": [
+    "josef",
+    "joseph",
+    "kromolicki"
+   ]
   },
   "Laag, Henrich": {
    "born": 1713,
-   "died": 1797
+   "died": 1797,
+   "alt": [
+    "heinrich",
+    "laag"
+   ]
   },
   "Lagoanère, Chevalier de": {
    "born": 1792,
-   "died": 1840
+   "died": 1840,
+   "alt": [
+    "michel",
+    "ange",
+    "nicolas",
+    "raimon",
+    "lagoanere",
+    "birth",
+    "name",
+    "raymond",
+    "de"
+   ]
   },
   "Koenig, Hermann": {
    "born": 1820,
-   "died": 1908
+   "died": 1908,
+   "alt": [
+    "herman",
+    "koenig",
+    "louis",
+    "hermann",
+    "konig"
+   ]
   },
   "Krøyer, Hans Ernst": {
    "born": 1798,
@@ -2806,15 +6165,61 @@
   },
   "Kristjansen, K. M.": {
    "born": 1851,
-   "died": 1905
+   "died": 1905,
+   "alt": [
+    "marinus",
+    "kristjansen"
+   ]
   },
   "Leoncavallo, Ruggiero": {
    "born": 1857,
-   "died": 1919
+   "died": 1919,
+   "alt": [
+    "ruggero",
+    "leoncavallo",
+    "giacomo",
+    "maria",
+    "giuseppe",
+    "emmanuele",
+    "raffaele",
+    "domenico",
+    "vincenzo",
+    "francesco",
+    "donato"
+   ]
   },
   "Lemmens, Jacques-Nicolas": {
    "born": 1823,
-   "died": 1881
+   "died": 1881,
+   "alt": [
+    "jaak",
+    "nikolaas",
+    "lemmens",
+    "nicolas",
+    "jacques",
+    "jacob"
+   ]
+  },
+  "Lehár, Franz": {
+   "born": 1870,
+   "died": 1948,
+   "alt": [
+    "franz",
+    "christian",
+    "lehar",
+    "ferenc",
+    "francesco",
+    "ferencz"
+   ]
+  },
+  "Levitzki, Mischa": {
+   "born": 1898,
+   "died": 1941,
+   "alt": [
+    "misha",
+    "levitsky",
+    "levitski"
+   ]
   },
   "Lange-Müller, Peter Erasmus": {
    "born": 1850,
@@ -2822,43 +6227,128 @@
   },
   "Lecocq, Charles": {
    "born": 1832,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "charles",
+    "alexandre",
+    "lecocq"
+   ]
+  },
+  "Lavallée, Calixa": {
+   "born": 1842,
+   "died": 1891,
+   "alt": [
+    "calixte",
+    "lavallee",
+    "galixa"
+   ]
+  },
+  "Lewalter, Rainer": {
+   "born": 1965,
+   "died": null
   },
   "Lassus, Orlande de": {
    "born": null,
-   "died": 1594
+   "died": 1594,
+   "alt": [
+    "orland",
+    "de",
+    "lassus",
+    "orlando",
+    "di",
+    "lasso",
+    "roland",
+    "orlandus",
+    "delattre"
+   ]
+  },
+  "Lebègue, Nicolas": {
+   "born": null,
+   "died": 1702,
+   "alt": [
+    "nicolas",
+    "antoine",
+    "lebegue",
+    "le",
+    "begue"
+   ]
+  },
+  "Legrenzi, Giovanni": {
+   "born": 1626,
+   "died": 1690
   },
   "Lassus, Ferdinand de": {
    "born": null,
-   "died": 1609
+   "died": 1609,
+   "alt": [
+    "ferdinand",
+    "de",
+    "lassus",
+    "ferdinando",
+    "di",
+    "lasso"
+   ]
   },
   "Lecail, Clovis": {
    "born": 1859,
-   "died": 1932
+   "died": 1932,
+   "alt": [
+    "lecail"
+   ]
   },
   "Le Jeune, Claude": {
    "born": null,
-   "died": 1600
+   "died": 1600,
+   "alt": [
+    "claudin",
+    "claude",
+    "lejeune",
+    "le",
+    "jeune"
+   ]
   },
   "Lewandowski, Louis": {
    "born": 1821,
-   "died": 1894
+   "died": 1894,
+   "alt": [
+    "lazarus",
+    "eliezer"
+   ]
   },
   "Lessmann, Otto": {
    "born": 1844,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "le",
+    "mann"
+   ]
   },
   "Lawes, William": {
    "born": 1602,
-   "died": 1645
+   "died": 1645,
+   "alt": [
+    "laws"
+   ]
   },
   "Lapis, Santo": {
    "born": 1699,
-   "died": 1765
+   "died": 1765,
+   "alt": [
+    "sante",
+    "lapis",
+    "lapi",
+    "lappi"
+   ]
   },
   "Le Roy, Felix": {
    "born": 1871,
-   "died": 1926
+   "died": 1926,
+   "alt": [
+    "joe",
+    "slater",
+    "john",
+    "joseph"
+   ]
   },
   "Leontovych, Mykola": {
    "born": 1877,
@@ -2866,7 +6356,12 @@
   },
   "Le Roy, Adrien": {
    "born": null,
-   "died": 1598
+   "died": 1598,
+   "alt": [
+    "adrian",
+    "le",
+    "roy"
+   ]
   },
   "Lhéritier, Jean": {
    "born": 1480,
@@ -2886,7 +6381,14 @@
   },
   "Lefèvre, Jean-Xavier": {
    "born": 1763,
-   "died": 1829
+   "died": 1829,
+   "alt": [
+    "xavier",
+    "lefevre",
+    "lefebvre",
+    "le",
+    "fevre"
+   ]
   },
   "Li, Cheng-Shiun": {
    "born": 1978,
@@ -2906,7 +6408,12 @@
   },
   "Levy, Jules": {
    "born": 1838,
-   "died": 1903
+   "died": 1903,
+   "alt": [
+    "jules",
+    "levy",
+    "cornettist"
+   ]
   },
   "Liberati, Alessandro": {
    "born": null,
@@ -2918,11 +6425,32 @@
   },
   "Levy, Luiz": {
    "born": 1861,
-   "died": 1935
+   "died": 1935,
+   "alt": [
+    "luis",
+    "levy",
+    "louis",
+    "ziul",
+    "vel",
+    "henri",
+    "yvu",
+    "leliz",
+    "nhonho",
+    "paranagua",
+    "ludovic",
+    "evu",
+    "lelis"
+   ]
   },
   "Lembcke, Gustav": {
    "born": 1844,
-   "died": 1899
+   "died": 1899,
+   "alt": [
+    "gustav",
+    "adolph",
+    "peter",
+    "lembcke"
+   ]
   },
   "Lindemann, Wilhelm": {
    "born": 1882,
@@ -2934,7 +6462,10 @@
   },
   "Laybourn, William Baxter": {
    "born": 1835,
-   "died": 1886
+   "died": 1886,
+   "alt": [
+    "laybourne"
+   ]
   },
   "Lanzky, Axel Waldemar": {
    "born": 1825,
@@ -2946,23 +6477,130 @@
   },
   "Liszt, Franz": {
    "born": 1811,
-   "died": 1886
+   "died": 1886,
+   "alt": [
+    "ferenc",
+    "liszt",
+    "ferencz",
+    "franz",
+    "ritter",
+    "von",
+    "franciszek"
+   ]
+  },
+  "Lully, Jean-Baptiste": {
+   "born": 1632,
+   "died": 1687,
+   "alt": [
+    "giovanni",
+    "battista",
+    "di",
+    "lulli",
+    "grk",
+    "ar",
+    "heb",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor",
+    "geo",
+    "kat"
+   ]
+  },
+  "Machaut, Guillaume de": {
+   "born": null,
+   "died": 1377,
+   "alt": [
+    "guillaume",
+    "de",
+    "machault"
+   ]
   },
   "Lotti, Antonio": {
    "born": null,
    "died": 1740
   },
+  "Lübeck, Vincent": {
+   "born": 1654,
+   "died": 1740
+  },
+  "Luzzaschi, Luzzasco": {
+   "born": null,
+   "died": 1607,
+   "alt": [
+    "luzasco",
+    "luzaschi",
+    "zascho",
+    "luzzaschi"
+   ]
+  },
   "Luigini, Alexandre": {
    "born": 1850,
-   "died": 1906
+   "died": 1906,
+   "alt": [
+    "alexandre",
+    "clement",
+    "leon",
+    "joseph",
+    "luigini",
+    "alexander",
+    "fils"
+   ]
+  },
+  "MacDowell, Edward": {
+   "born": 1860,
+   "died": 1908,
+   "alt": [
+    "edward",
+    "alexander",
+    "macdowell",
+    "edgar",
+    "thorn"
+   ]
   },
   "Loeffler, Charles Martin": {
    "born": 1861,
-   "died": 1935
+   "died": 1935,
+   "alt": [
+    "charles",
+    "martin",
+    "tornov",
+    "loeffler",
+    "karl"
+   ]
   },
   "Loeillet, John": {
    "born": 1680,
-   "died": 1730
+   "died": 1730,
+   "alt": [
+    "jean",
+    "baptiste",
+    "illet",
+    "loeillet",
+    "of",
+    "london",
+    "de",
+    "londres",
+    "baptist",
+    "lully",
+    "loeilly",
+    "john",
+    "oeillet"
+   ]
+  },
+  "Lully, Jean-Baptiste de": {
+   "born": 1665,
+   "died": 1743,
+   "alt": [
+    "baptiste",
+    "lully",
+    "fils",
+    "monsieur",
+    "de",
+    "jean",
+    "lulli"
+   ]
   },
   "Loret, Clément": {
    "born": 1833,
@@ -2974,7 +6612,13 @@
   },
   "Lupo, Thomas": {
    "born": 1571,
-   "died": 1627
+   "died": 1627,
+   "alt": [
+    "thomas",
+    "lupo",
+    "the",
+    "elder"
+   ]
   },
   "Llamazares, Pablo Fernando": {
    "born": 1975,
@@ -2982,7 +6626,10 @@
   },
   "Lutkin, Peter Christian": {
    "born": 1858,
-   "died": 1931
+   "died": 1931,
+   "alt": [
+    "lutkin"
+   ]
   },
   "Logier, Johann Bernhard": {
    "born": 1777,
@@ -2994,7 +6641,17 @@
   },
   "Macque, Giovanni de": {
    "born": null,
-   "died": 1614
+   "died": 1614,
+   "alt": [
+    "jean",
+    "de",
+    "macque",
+    "da",
+    "maque",
+    "gioan",
+    "di",
+    "juan"
+   ]
   },
   "Lundberg, Staffan": {
    "born": 1952,
@@ -3014,11 +6671,18 @@
   },
   "Løvenskiold, Herman Severin": {
    "born": 1815,
-   "died": 1870
+   "died": 1870,
+   "alt": [
+    "lovenskjold"
+   ]
   },
   "Lohr, Hermann Frederic": {
    "born": 1871,
-   "died": 1943
+   "died": 1943,
+   "alt": [
+    "hermann",
+    "lohr"
+   ]
   },
   "Lundgren, Noach J.": {
    "born": 1994,
@@ -3026,11 +6690,26 @@
   },
   "Literes, Antonio": {
    "born": 1673,
-   "died": 1747
+   "died": 1747,
+   "alt": [
+    "antonio",
+    "de",
+    "literes",
+    "antoni",
+    "lliteres",
+    "carrio"
+   ]
   },
   "Löwe, Johann Jacob": {
    "born": 1629,
-   "died": 1703
+   "died": 1703,
+   "alt": [
+    "johann",
+    "jacob",
+    "lowe",
+    "von",
+    "eisenach"
+   ]
   },
   "Logroscino, Nicola Bonifacio": {
    "born": 1698,
@@ -3054,11 +6733,21 @@
   },
   "Loeillet, Jacques": {
    "born": 1685,
-   "died": 1748
+   "died": 1748,
+   "alt": [
+    "jacob",
+    "jean",
+    "baptiste",
+    "loeillet"
+   ]
   },
   "Longinotti, Paolo": {
    "born": 1913,
-   "died": 1963
+   "died": 1963,
+   "alt": [
+    "paul",
+    "longinotti"
+   ]
   },
   "Lope, Santiago": {
    "born": 1871,
@@ -3066,7 +6755,11 @@
   },
   "Madsen-Stensgaard, Niels Kristian": {
    "born": 1850,
-   "died": 1927
+   "died": 1927,
+   "alt": [
+    "madsen",
+    "stensgaard"
+   ]
   },
   "Lwoff, Alexis": {
    "born": 1799,
@@ -3080,13 +6773,97 @@
    "born": 1834,
    "died": 1920
   },
+  "Mahler, Gustav": {
+   "born": 1860,
+   "died": 1911
+  },
+  "Massenet, Jules": {
+   "born": 1842,
+   "died": 1912,
+   "alt": [
+    "jules",
+    "emile",
+    "frederic",
+    "massenet"
+   ]
+  },
+  "Marais, Marin": {
+   "born": 1656,
+   "died": 1728
+  },
+  "Mattheson, Johann": {
+   "born": 1681,
+   "died": 1764,
+   "alt": [
+    "johannes",
+    "mattheson",
+    "joannes",
+    "matheson"
+   ]
+  },
   "Maylath, Henry": {
    "born": 1827,
-   "died": 1883
+   "died": 1883,
+   "alt": [
+    "heinrich",
+    "maylath"
+   ]
+  },
+  "Marcello, Benedetto": {
+   "born": null,
+   "died": 1739,
+   "alt": [
+    "benedetto",
+    "giacomo",
+    "marcello",
+    "marchello"
+   ]
+  },
+  "Mascagni, Pietro": {
+   "born": 1863,
+   "died": 1945
+  },
+  "Marini, Biagio": {
+   "born": 1594,
+   "died": 1663
+  },
+  "Malling, Otto": {
+   "born": 1848,
+   "died": 1915,
+   "alt": [
+    "otto",
+    "valdemar",
+    "malling",
+    "waldemar"
+   ]
+  },
+  "Martini, Giovanni Battista": {
+   "born": 1706,
+   "died": 1784,
+   "alt": [
+    "giambattista",
+    "martini",
+    "padre"
+   ]
   },
   "Marenzio, Luca": {
    "born": null,
-   "died": 1599
+   "died": 1599,
+   "alt": [
+    "luca",
+    "marentio",
+    "marenzo"
+   ]
+  },
+  "Matthison-Hansen, Gottfred": {
+   "born": 1832,
+   "died": 1909,
+   "alt": [
+    "johan",
+    "gottfred",
+    "matthison",
+    "hansen"
+   ]
   },
   "Marchant, Arthur William": {
    "born": 1850,
@@ -3094,15 +6871,29 @@
   },
   "Maschera, Florentio": {
    "born": null,
-   "died": 1584
+   "died": 1584,
+   "alt": [
+    "fiorenzo"
+   ]
   },
   "Martinů, Bohuslav": {
    "born": 1890,
-   "died": 1959
+   "died": 1959,
+   "alt": [
+    "bohuslav",
+    "jan",
+    "martinu",
+    "boguslave"
+   ]
   },
   "Manfredini, Francesco Onofrio": {
    "born": 1684,
-   "died": 1762
+   "died": 1762,
+   "alt": [
+    "francesco",
+    "maria",
+    "manfredini"
+   ]
   },
   "Manookian, Jeff": {
    "born": 1953,
@@ -3114,7 +6905,13 @@
   },
   "Maurer, Ludwig Wilhelm": {
    "born": 1789,
-   "died": 1878
+   "died": 1878,
+   "alt": [
+    "louis",
+    "wilhelm",
+    "maurer",
+    "guillaume"
+   ]
   },
   "Makris, Andreas": {
    "born": 1930,
@@ -3122,11 +6919,21 @@
   },
   "Malvezzi, Cristofano": {
    "born": 1547,
-   "died": 1599
+   "died": 1599,
+   "alt": [
+    "cristoforo",
+    "malvezzi",
+    "cristofanno"
+   ]
   },
   "Malling, Jörgen": {
    "born": 1836,
-   "died": 1905
+   "died": 1905,
+   "alt": [
+    "rgen",
+    "henrik",
+    "malling"
+   ]
   },
   "Marschner, Adolf Eduard": {
    "born": 1819,
@@ -3142,7 +6949,12 @@
   },
   "Matthison-Hansen, Hans": {
    "born": 1807,
-   "died": 1890
+   "died": 1890,
+   "alt": [
+    "hans",
+    "matthison",
+    "hansen"
+   ]
   },
   "Manfredini, Vincenzo": {
    "born": 1737,
@@ -3150,11 +6962,22 @@
   },
   "Mansurov, Eldar": {
    "born": 1952,
-   "died": null
+   "died": null,
+   "alt": [
+    "mansurov",
+    "eldar",
+    "bahram",
+    "oglu"
+   ]
   },
   "Marie, Ernest": {
    "born": 1820,
-   "died": 1882
+   "died": 1882,
+   "alt": [
+    "louis",
+    "ernest",
+    "marie"
+   ]
   },
   "Masotti, Celestina": {
    "born": 1956,
@@ -3166,39 +6989,127 @@
   },
   "Malmgren, Jens-Ole": {
    "born": 1946,
-   "died": null
+   "died": null,
+   "alt": [
+    "ole",
+    "malmgren"
+   ]
   },
   "Maury, Hippolyte": {
    "born": 1834,
-   "died": 1881
+   "died": 1881,
+   "alt": [
+    "jacques",
+    "hippolyte",
+    "maury",
+    "henri"
+   ]
   },
   "Malézieux, Georges": {
    "born": 1848,
-   "died": 1915
+   "died": 1915,
+   "alt": [
+    "joachim",
+    "georges",
+    "leon",
+    "malezieux",
+    "gena"
+   ]
   },
   "Malmqvist, Carl Julius": {
    "born": 1819,
-   "died": 1859
+   "died": 1859,
+   "alt": [
+    "malmquist"
+   ]
   },
   "Mendelssohn, Felix": {
    "born": 1809,
-   "died": 1847
+   "died": 1847,
+   "alt": [
+    "jakob",
+    "ludwig",
+    "felix",
+    "mendelssohn",
+    "bartholdy"
+   ]
+  },
+  "Merulo, Claudio": {
+   "born": 1533,
+   "died": 1604,
+   "alt": [
+    "claudio",
+    "merlotti",
+    "merula",
+    "merulus",
+    "da",
+    "correggio"
+   ]
+  },
+  "Monteverdi, Claudio": {
+   "born": 1567,
+   "died": 1643,
+   "alt": [
+    "claudio",
+    "giovanni",
+    "antonio",
+    "monteverdi",
+    "monteverde",
+    "monte",
+    "verde"
+   ]
+  },
+  "Meyerbeer, Giacomo": {
+   "born": 1791,
+   "died": 1864,
+   "alt": [
+    "jacob",
+    "liebmann",
+    "beer",
+    "jakob",
+    "meyer",
+    "meyerbeer",
+    "jacques"
+   ]
+  },
+  "Merula, Tarquinio": {
+   "born": 1595,
+   "died": 1665
   },
   "Merkel, Gustav Adolf": {
    "born": 1827,
-   "died": 1885
+   "died": 1885,
+   "alt": [
+    "gustav",
+    "merkel"
+   ]
   },
   "Melartin, Erkki": {
    "born": 1875,
-   "died": 1937
+   "died": 1937,
+   "alt": [
+    "erik",
+    "gustaf",
+    "melartin"
+   ]
   },
   "Mayone, Ascanio": {
    "born": null,
-   "died": 1627
+   "died": 1627,
+   "alt": [
+    "ascanio",
+    "maione",
+    "majone"
+   ]
   },
   "Mayr, Rupert Ignaz": {
    "born": 1646,
-   "died": 1712
+   "died": 1712,
+   "alt": [
+    "rupert",
+    "ignatius",
+    "mayr"
+   ]
   },
   "Melani, Alessandro": {
    "born": 1639,
@@ -3206,7 +7117,15 @@
   },
   "Milhaud, Darius": {
    "born": 1892,
-   "died": 1974
+   "died": 1974,
+   "alt": [
+    "dariusu",
+    "miyo",
+    "darius",
+    "milo",
+    "darii",
+    "miio"
+   ]
   },
   "Molter, Johann Melchior": {
    "born": 1696,
@@ -3242,15 +7161,35 @@
   },
   "Messaus, Guillielmus": {
    "born": 1589,
-   "died": 1640
+   "died": 1640,
+   "alt": [
+    "messaulx",
+    "missau"
+   ]
   },
   "Mohr, Jean Baptiste Victor": {
    "born": 1823,
-   "died": 1891
+   "died": 1891,
+   "alt": [
+    "jean",
+    "mohr",
+    "victor"
+   ]
   },
   "Milano, Francesco da": {
    "born": 1497,
-   "died": 1543
+   "died": 1543,
+   "alt": [
+    "francesco",
+    "canova",
+    "da",
+    "milano",
+    "il",
+    "divino",
+    "parigi",
+    "milanese",
+    "monzino"
+   ]
   },
   "Miyara, Federico": {
    "born": 1958,
@@ -3286,7 +7225,11 @@
   },
   "Mendes, Manoel": {
    "born": null,
-   "died": 1605
+   "died": 1605,
+   "alt": [
+    "manuel",
+    "mendes"
+   ]
   },
   "Miaille, Guy": {
    "born": 1930,
@@ -3310,23 +7253,102 @@
   },
   "Mimart, Auguste": {
    "born": 1828,
-   "died": 1868
+   "died": 1868,
+   "alt": [
+    "paul",
+    "auguste",
+    "mimard",
+    "mimart"
+   ]
   },
   "Miller of Edinburgh, James": {
    "born": null,
-   "died": 1790
+   "died": 1790,
+   "alt": [
+    "mr",
+    "miller",
+    "of",
+    "the",
+    "teind",
+    "office",
+    "edinburgh"
+   ]
   },
   "Mozart, Wolfgang Amadeus": {
    "born": 1756,
-   "died": 1791
+   "died": 1791,
+   "alt": [
+    "altnames"
+   ]
+  },
+  "Morley, Thomas": {
+   "born": null,
+   "died": 1602
   },
   "Muffat, Georg": {
    "born": 1653,
    "died": 1704
   },
+  "Monti, Vittorio": {
+   "born": 1868,
+   "died": 1922
+  },
   "Méhul, Etienne Nicolas": {
    "born": 1763,
-   "died": 1817
+   "died": 1817,
+   "alt": [
+    "etienne",
+    "henri",
+    "mehul"
+   ]
+  },
+  "Muffat, Gottlieb": {
+   "born": null,
+   "died": 1770,
+   "alt": [
+    "theophil",
+    "muffat"
+   ]
+  },
+  "Morales, Cristóbal de": {
+   "born": null,
+   "died": 1553,
+   "alt": [
+    "cristobal",
+    "morales",
+    "christobal",
+    "de",
+    "cristoforo"
+   ]
+  },
+  "Nanino, Giovanni Maria": {
+   "born": null,
+   "died": 1607,
+   "alt": [
+    "giovanni",
+    "maria",
+    "nanini",
+    "da",
+    "vallerano"
+   ]
+  },
+  "Mozart, Leopold": {
+   "born": 1719,
+   "died": 1787,
+   "alt": [
+    "johann",
+    "georg",
+    "leopold",
+    "mozart"
+   ]
+  },
+  "Mouret, Jean-Joseph": {
+   "born": 1682,
+   "died": 1738
+  },
+  "Moore, Robert": {
+   "born": 1961,
+   "died": null
   },
   "Neff, Lyle K.": {
    "born": 1959,
@@ -3334,11 +7356,24 @@
   },
   "Naumann, Johann Gottlieb": {
    "born": 1741,
-   "died": 1801
+   "died": 1801,
+   "alt": [
+    "nauman",
+    "johann",
+    "amadeus",
+    "giovanni",
+    "amadeo"
+   ]
   },
   "Métra, Olivier": {
    "born": 1830,
-   "died": 1889
+   "died": 1889,
+   "alt": [
+    "jules",
+    "louis",
+    "olivier",
+    "metra"
+   ]
   },
   "Moore, Thomas": {
    "born": 1779,
@@ -3350,19 +7385,45 @@
   },
   "Murray, James Ramsey": {
    "born": 1841,
-   "died": 1905
+   "died": 1905,
+   "alt": [
+    "james",
+    "murray"
+   ]
   },
   "Mussorgsky, Modest": {
    "born": 1839,
-   "died": 1881
+   "died": 1881,
+   "alt": [
+    "modest",
+    "petrovic",
+    "musorgskij",
+    "petrovich",
+    "musorgskii",
+    "musorgsky",
+    "modeste",
+    "moussorgski",
+    "petrowitsch",
+    "mussorgskij",
+    "moussorgsky"
+   ]
   },
   "Naudot, Jacques-Christophe": {
    "born": null,
-   "died": 1762
+   "died": 1762,
+   "alt": [
+    "jean",
+    "jacques",
+    "naudot",
+    "erroneously"
+   ]
   },
   "Métru, Nicolas": {
    "born": 1610,
-   "died": 1668
+   "died": 1668,
+   "alt": [
+    "metru"
+   ]
   },
   "Nehls, Ulrich": {
    "born": 1959,
@@ -3370,7 +7431,13 @@
   },
   "Muret, Marc-Antoine de": {
    "born": 1526,
-   "died": 1585
+   "died": 1585,
+   "alt": [
+    "muretus",
+    "marc",
+    "antoni",
+    "muret"
+   ]
   },
   "Monza, Carlo": {
    "born": null,
@@ -3382,11 +7449,19 @@
   },
   "Moorehead, John": {
    "born": 1760,
-   "died": 1804
+   "died": 1804,
+   "alt": [
+    "moorhead",
+    "morehead"
+   ]
   },
   "Musard, Alfred": {
    "born": 1819,
-   "died": 1881
+   "died": 1881,
+   "alt": [
+    "musard",
+    "fils"
+   ]
   },
   "Nelson-King, Peter Roddy": {
    "born": 1988,
@@ -3394,7 +7469,11 @@
   },
   "Nelson, Sydney": {
    "born": 1800,
-   "died": 1862
+   "died": 1862,
+   "alt": [
+    "sidney",
+    "nelson"
+   ]
   },
   "Mourey, Colette": {
    "born": 1954,
@@ -3410,11 +7489,18 @@
   },
   "Natali, Pompeo": {
    "born": 1608,
-   "died": 1688
+   "died": 1688,
+   "alt": [
+    "pompeo",
+    "natale"
+   ]
   },
   "Møller, Carl Christian": {
    "born": 1823,
-   "died": 1893
+   "died": 1893,
+   "alt": [
+    "ller"
+   ]
   },
   "Møller, Albert": {
    "born": 1864,
@@ -3422,7 +7508,10 @@
   },
   "Müller, Johann Heinrich": {
    "born": 1780,
-   "died": 1826
+   "died": 1826,
+   "alt": [
+    "altnames"
+   ]
   },
   "Mortensen, Carl": {
    "born": 1832,
@@ -3438,35 +7527,98 @@
   },
   "Offenbach, Jacques": {
    "born": 1819,
-   "died": 1880
+   "died": 1880,
+   "alt": [
+    "jacob",
+    "offenbach",
+    "jakob",
+    "eberst",
+    "jacques",
+    "levy"
+   ]
   },
   "Olsen, Ole": {
    "born": 1850,
    "died": 1927
   },
+  "Nägeli, Hans Georg": {
+   "born": 1773,
+   "died": 1836,
+   "alt": [
+    "jean",
+    "george",
+    "naigueli"
+   ]
+  },
   "Nepomuceno, Alberto": {
    "born": 1864,
-   "died": 1920
+   "died": 1920,
+   "alt": [
+    "alberto",
+    "beriot",
+    "nepomuceno",
+    "joao",
+    "valdez",
+    "pseudonym"
+   ]
   },
   "Nielsen, Ludolf": {
    "born": 1876,
-   "died": 1939
+   "died": 1939,
+   "alt": [
+    "karl",
+    "henrik",
+    "ludolf"
+   ]
   },
   "Nielsen, Carl": {
    "born": 1865,
-   "died": 1931
+   "died": 1931,
+   "alt": [
+    "carl",
+    "august",
+    "nielsen"
+   ]
   },
   "Nápravník, Eduard": {
    "born": 1839,
-   "died": 1916
+   "died": 1916,
+   "alt": [
+    "eduard",
+    "francevic",
+    "napravnik",
+    "frantsevich"
+   ]
   },
   "Neukomm, Sigismund": {
    "born": 1778,
-   "died": 1858
+   "died": 1858,
+   "alt": [
+    "sigismund",
+    "ritter",
+    "von",
+    "neukomm",
+    "sigismond",
+    "sigmund",
+    "chevalier"
+   ]
   },
   "Ockeghem, Johannes": {
    "born": null,
-   "died": 1497
+   "died": 1497,
+   "alt": [
+    "jean",
+    "de",
+    "ockeghem",
+    "okeghem",
+    "johannes",
+    "ockenheim",
+    "okchem",
+    "ogkeguam",
+    "jehan",
+    "hocquegam",
+    "okenheim"
+   ]
   },
   "Orefice, Giacomo": {
    "born": 1865,
@@ -3474,7 +7626,13 @@
   },
   "Oakeley, Herbert Stanley": {
    "born": 1830,
-   "died": 1903
+   "died": 1903,
+   "alt": [
+    "sir",
+    "herbert",
+    "stanley",
+    "oakeley"
+   ]
   },
   "Oley, Johann Christoph": {
    "born": null,
@@ -3482,7 +7640,11 @@
   },
   "Neumann, Edmund": {
    "born": 1819,
-   "died": 1873
+   "died": 1873,
+   "alt": [
+    "neumann",
+    "fils"
+   ]
   },
   "Okeover, John": {
    "born": 1590,
@@ -3490,7 +7652,16 @@
   },
   "Nola, Giovanni Domenico da": {
    "born": null,
-   "died": 1592
+   "died": 1592,
+   "alt": [
+    "gian",
+    "domenico",
+    "del",
+    "giovane",
+    "da",
+    "nola",
+    "giovanni"
+   ]
   },
   "Oliveira, Jailton de": {
    "born": 1968,
@@ -3510,7 +7681,15 @@
   },
   "Niedt, Friedrich Erhardt": {
    "born": 1674,
-   "died": 1708
+   "died": 1708,
+   "alt": [
+    "friedrich",
+    "erhard",
+    "niedt",
+    "friederich",
+    "erhardt",
+    "nied"
+   ]
   },
   "Ocio, Giovanni": {
    "born": 1874,
@@ -3538,11 +7717,23 @@
   },
   "Noordt, Sybrandus van": {
    "born": 1659,
-   "died": 1705
+   "died": 1705,
+   "alt": [
+    "sybrand",
+    "van",
+    "noordt",
+    "sibrando",
+    "sybrandt"
+   ]
   },
   "Nemetz, Andreas": {
    "born": 1799,
-   "died": 1846
+   "died": 1846,
+   "alt": [
+    "ondrej",
+    "nemec",
+    "nemitz"
+   ]
   },
   "Nemeth, Anthony J.": {
    "born": 2005,
@@ -3554,15 +7745,32 @@
   },
   "Ngo, Ethan": {
    "born": 2008,
-   "died": null
+   "died": null,
+   "alt": [
+    "ethan",
+    "gabriel",
+    "ngo"
+   ]
   },
   "Nieto Campos, Omar": {
    "born": 1985,
-   "died": null
+   "died": null,
+   "alt": [
+    "omar",
+    "nieto"
+   ]
   },
   "Nutzhorn, Heinrich von": {
    "born": 1833,
-   "died": 1925
+   "died": 1925,
+   "alt": [
+    "bendix",
+    "conrad",
+    "heinrich",
+    "andersen",
+    "von",
+    "nutzhorn"
+   ]
   },
   "Nielsen, Anton": {
    "born": 1827,
@@ -3570,7 +7778,13 @@
   },
   "Nielsen, Henriette": {
    "born": 1815,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "birgitte",
+    "dorothea",
+    "henriette",
+    "nielsen"
+   ]
   },
   "Nielsen, Lars": {
    "born": 1843,
@@ -3582,35 +7796,113 @@
   },
   "Pachelbel, Johann": {
    "born": 1653,
-   "died": 1706
+   "died": 1706,
+   "alt": [
+    "johann",
+    "bachelbel"
+   ]
   },
   "Paganini, Niccolò": {
    "born": 1782,
-   "died": 1840
+   "died": 1840,
+   "alt": [
+    "nicolo",
+    "nikolo",
+    "paganini"
+   ]
+  },
+  "Paxton, Stephen": {
+   "born": null,
+   "died": 1787
   },
   "Pergolesi, Giovanni Battista": {
    "born": 1710,
-   "died": 1736
+   "died": 1736,
+   "alt": [
+    "jean",
+    "baptiste",
+    "pergolese",
+    "giambattista",
+    "pergolesi"
+   ]
   },
   "Pasquini, Bernardo": {
    "born": 1637,
-   "died": 1710
+   "died": 1710,
+   "alt": [
+    "bernard",
+    "pasquini",
+    "bernardus"
+   ]
   },
   "Ostijn, Willy": {
    "born": 1913,
-   "died": 1993
+   "died": 1993,
+   "alt": [
+    "willy",
+    "ostyn",
+    "william",
+    "ostijn",
+    "maria",
+    "joseph"
+   ]
   },
   "Pepusch, John Christopher": {
    "born": 1667,
-   "died": 1752
+   "died": 1752,
+   "alt": [
+    "johann",
+    "christoph",
+    "pepusch",
+    "christian"
+   ]
   },
   "Parry, Charles Hubert Hastings": {
    "born": 1848,
-   "died": 1918
+   "died": 1918,
+   "alt": [
+    "sir",
+    "hubert",
+    "parry"
+   ]
+  },
+  "Padovano, Annibale": {
+   "born": 1527,
+   "died": 1575,
+   "alt": [
+    "padovano",
+    "annibale",
+    "padoano",
+    "hannibal",
+    "patavinus",
+    "paduano"
+   ]
+  },
+  "Pera, Girolamo": {
+   "born": null,
+   "died": 1771
   },
   "Palestrina, Giovanni Pierluigi da": {
    "born": null,
-   "died": 1594
+   "died": 1594,
+   "alt": [
+    "pierluigi",
+    "da",
+    "palestrina",
+    "joannes",
+    "petraloysius",
+    "praenestinus",
+    "giovanni",
+    "pietro",
+    "aloysio",
+    "prenestino",
+    "johannes",
+    "petrus",
+    "aloysius",
+    "pr",
+    "nestinus",
+    "giannetto"
+   ]
   },
   "Penna, Lorenzo": {
    "born": 1613,
@@ -3618,7 +7910,18 @@
   },
   "Othmayr, Caspar": {
    "born": 1515,
-   "died": 1553
+   "died": 1553,
+   "alt": [
+    "gasparus",
+    "othmarus",
+    "gasparem",
+    "othmayer",
+    "gaspar",
+    "kasper",
+    "othmaier",
+    "otmaier",
+    "othmar"
+   ]
   },
   "Parlow, Albert": {
    "born": 1824,
@@ -3626,19 +7929,45 @@
   },
   "Paminger, Leonhard": {
    "born": 1495,
-   "died": 1567
+   "died": 1567,
+   "alt": [
+    "leonard",
+    "leohnard",
+    "paminger",
+    "panninger",
+    "bamminger",
+    "paming",
+    "panniger"
+   ]
   },
   "Perkins, Theodore Edson": {
    "born": 1831,
-   "died": 1912
+   "died": 1912,
+   "alt": [
+    "theodore",
+    "edison",
+    "perkins",
+    "erroneously"
+   ]
   },
   "Paix, Jakob": {
    "born": 1556,
-   "died": null
+   "died": null,
+   "alt": [
+    "jacob",
+    "jacobus"
+   ]
   },
   "Oswald, James": {
    "born": null,
-   "died": 1769
+   "died": 1769,
+   "alt": [
+    "david",
+    "rizzio",
+    "dottel",
+    "figlio",
+    "pseudonyms"
+   ]
   },
   "Pacheco, John Manuel": {
    "born": 1982,
@@ -3654,7 +7983,11 @@
   },
   "Papen, Petrus": {
    "born": 1662,
-   "died": 1717
+   "died": 1717,
+   "alt": [
+    "petrus",
+    "paepen"
+   ]
   },
   "Otto, Valerius": {
    "born": 1579,
@@ -3662,11 +7995,28 @@
   },
   "Pachelbel, Charles Theodore": {
    "born": 1690,
-   "died": 1750
+   "died": 1750,
+   "alt": [
+    "carl",
+    "theodor",
+    "karl",
+    "carlus",
+    "theodorus"
+   ]
   },
   "Paisible, James": {
    "born": null,
-   "died": 1721
+   "died": 1721,
+   "alt": [
+    "jacques",
+    "peasable",
+    "pesable",
+    "paisable"
+   ]
+  },
+  "Patterson, Robert G.": {
+   "born": 1957,
+   "died": null
   },
   "Perol-Schneider, Pierre": {
    "born": 1965,
@@ -3674,7 +8024,10 @@
   },
   "Pacius, Fredrik": {
    "born": 1809,
-   "died": 1891
+   "died": 1891,
+   "alt": [
+    "friedrich"
+   ]
   },
   "Paulin, Frédéric-Hubert": {
    "born": 1678,
@@ -3686,11 +8039,21 @@
   },
   "Pennequin, Jules": {
    "born": 1864,
-   "died": 1914
+   "died": 1914,
+   "alt": [
+    "jules",
+    "charles",
+    "pennequin"
+   ]
   },
   "Patusset, Alfred": {
    "born": 1853,
-   "died": 1924
+   "died": 1924,
+   "alt": [
+    "armand",
+    "alfred",
+    "patusset"
+   ]
   },
   "Pedrosa, Juan Antonio": {
    "born": 1955,
@@ -3702,15 +8065,32 @@
   },
   "Pardini, James Christopher": {
    "born": 1973,
-   "died": null
+   "died": null,
+   "alt": [
+    "chris",
+    "pardini",
+    "james",
+    "christopher"
+   ]
   },
   "Parratt, Walter": {
    "born": 1841,
-   "died": 1924
+   "died": 1924,
+   "alt": [
+    "sir",
+    "walter",
+    "parratt",
+    "kcvo"
+   ]
   },
   "Patavino, Francesco": {
    "born": null,
-   "died": 1556
+   "died": 1556,
+   "alt": [
+    "francesco",
+    "santa",
+    "croce"
+   ]
   },
   "Parès, Gabriel": {
    "born": 1860,
@@ -3740,17 +8120,49 @@
    "born": 1864,
    "died": 1903
   },
+  "Ponchielli, Amilcare": {
+   "born": 1834,
+   "died": 1886
+  },
   "Pierné, Gabriel": {
    "born": 1863,
-   "died": 1937
+   "died": 1937,
+   "alt": [
+    "henri",
+    "constant",
+    "gabriel",
+    "pierne"
+   ]
   },
   "Philips, Peter": {
    "born": null,
-   "died": 1628
+   "died": 1628,
+   "alt": [
+    "peter",
+    "phillips",
+    "peeter",
+    "philips",
+    "pietro",
+    "philippi",
+    "petro",
+    "filippi",
+    "pierre",
+    "philippe"
+   ]
   },
   "Peterson-Berger, Wilhelm": {
    "born": 1867,
-   "died": 1942
+   "died": 1942,
+   "alt": [
+    "olof",
+    "wilhelm",
+    "peterson",
+    "berger"
+   ]
+  },
+  "Peters-Rey, Gregor": {
+   "born": 1966,
+   "died": null
   },
   "Plante, Cyril": {
    "born": 1975,
@@ -3758,7 +8170,21 @@
   },
   "Popp, Wilhelm": {
    "born": 1828,
-   "died": 1902
+   "died": 1902,
+   "alt": [
+    "wilhelm",
+    "albrecht",
+    "otto",
+    "popp",
+    "guillaume",
+    "henry",
+    "alberti",
+    "albert"
+   ]
+  },
+  "Pilkington, Francis": {
+   "born": null,
+   "died": 1638
   },
   "Petrie, Robert": {
    "born": 1767,
@@ -3766,11 +8192,30 @@
   },
   "Petrucci, Ottaviano": {
    "born": 1466,
-   "died": 1539
+   "died": 1539,
+   "alt": [
+    "ottaviano",
+    "dei",
+    "petrucci",
+    "octavianum",
+    "petrutium",
+    "octaviani",
+    "octauianus",
+    "petrutius"
+   ]
   },
   "Pleyel, Ignaz": {
    "born": 1757,
-   "died": 1831
+   "died": 1831,
+   "alt": [
+    "ignaz",
+    "josef",
+    "pleyel",
+    "ignace",
+    "joseph",
+    "pleyl",
+    "franz"
+   ]
   },
   "Pinel, Germain": {
    "born": null,
@@ -3778,19 +8223,35 @@
   },
   "Porta, Ercole": {
    "born": 1585,
-   "died": 1630
+   "died": 1630,
+   "alt": [
+    "hercole"
+   ]
   },
   "Pierpont, James": {
    "born": 1822,
-   "died": 1893
+   "died": 1893,
+   "alt": [
+    "james",
+    "lord",
+    "pierpont"
+   ]
   },
   "Picchi, Giovanni": {
    "born": null,
-   "died": 1643
+   "died": 1643,
+   "alt": [
+    "giovanni",
+    "pichi"
+   ]
   },
   "Pipelare, Matthaeus": {
    "born": 1450,
-   "died": 1515
+   "died": 1515,
+   "alt": [
+    "mathaeus",
+    "pipelare"
+   ]
   },
   "Peters, Rob": {
    "born": 1969,
@@ -3814,7 +8275,10 @@
   },
   "Plag, Johannes": {
    "born": 1863,
-   "died": 1921
+   "died": 1921,
+   "alt": [
+    "johann"
+   ]
   },
   "Philidor l'ainé, André Danican": {
    "born": null,
@@ -3822,7 +8286,11 @@
   },
   "Pomé, Edmond": {
    "born": 1832,
-   "died": 1894
+   "died": 1894,
+   "alt": [
+    "raymond",
+    "pome"
+   ]
   },
   "Pinoy, Peter": {
    "born": 1961,
@@ -3838,7 +8306,15 @@
   },
   "Peyer, Johann Baptist": {
    "born": null,
-   "died": 1733
+   "died": 1733,
+   "alt": [
+    "bayer",
+    "giovanni",
+    "battista",
+    "beyer",
+    "payer",
+    "peyr"
+   ]
   },
   "Pohlenz, Christian August": {
    "born": 1790,
@@ -3846,7 +8322,11 @@
   },
   "Pettee, William": {
    "born": 1839,
-   "died": 1891
+   "died": 1891,
+   "alt": [
+    "william",
+    "pettee"
+   ]
   },
   "Pers, Pieter Dirckszoon": {
    "born": 1614,
@@ -3858,31 +8338,98 @@
   },
   "Rachmaninoff, Sergei": {
    "born": 1873,
-   "died": 1943
+   "died": 1943,
+   "alt": [
+    "sergej",
+    "vasil",
+    "evic",
+    "rahmaninov",
+    "sergei",
+    "evich",
+    "rakhmaninov",
+    "sergey",
+    "vasilyevich",
+    "wassiljewitsch",
+    "rachmaninow",
+    "serge",
+    "rachmaninov"
+   ]
   },
   "Ravel, Maurice": {
    "born": 1875,
-   "died": 1937
+   "died": 1937,
+   "alt": [
+    "joseph",
+    "maurice",
+    "ravel",
+    "fr",
+    "jp",
+    "ko",
+    "kor",
+    "chi",
+    "zho",
+    "ar",
+    "heb",
+    "ru"
+   ]
   },
   "Purcell, Henry": {
    "born": 1659,
-   "died": 1695
+   "died": 1695,
+   "alt": [
+    "henri",
+    "purcell",
+    "henricus",
+    "perselas"
+   ]
   },
   "Reger, Max": {
    "born": 1873,
-   "died": 1916
+   "died": 1916,
+   "alt": [
+    "johann",
+    "baptist",
+    "joseph",
+    "maximilian",
+    "reger"
+   ]
   },
   "Praetorius, Michael": {
    "born": 1571,
-   "died": 1621
+   "died": 1621,
+   "alt": [
+    "michael",
+    "schultz",
+    "schultze",
+    "schultheis",
+    "schultheiss"
+   ]
   },
   "Rameau, Jean-Philippe": {
    "born": 1683,
-   "died": 1764
+   "died": 1764,
+   "alt": [
+    "johann",
+    "philipp",
+    "rameau",
+    "dt",
+    "grk",
+    "ru",
+    "ar"
+   ]
   },
   "Puccini, Giacomo": {
    "born": 1858,
-   "died": 1924
+   "died": 1924,
+   "alt": [
+    "giacomo",
+    "antonio",
+    "domenico",
+    "michele",
+    "secondo",
+    "maria",
+    "puccini"
+   ]
   },
   "Reissiger, Friedrich August": {
    "born": 1809,
@@ -3890,31 +8437,108 @@
   },
   "Rathgeber, Valentin": {
    "born": 1682,
-   "died": 1750
+   "died": 1750,
+   "alt": [
+    "johann",
+    "valentin",
+    "rathgeber",
+    "hans"
+   ]
   },
   "Quantz, Johann Joachim": {
    "born": 1697,
    "died": 1773
   },
+  "Reichardt, Johann Friedrich": {
+   "born": 1752,
+   "died": 1814,
+   "alt": [
+    "johann",
+    "friederich",
+    "reichhardt",
+    "giovanni",
+    "federico",
+    "reichardt"
+   ]
+  },
+  "Rampollini, Matteo": {
+   "born": 1497,
+   "died": null,
+   "alt": [
+    "mattio",
+    "rampollini",
+    "mattia",
+    "matteo",
+    "rampollino"
+   ]
+  },
   "Quagliati, Paolo": {
    "born": null,
-   "died": 1628
+   "died": 1628,
+   "alt": [
+    "qualeatus",
+    "quagliottus"
+   ]
+  },
+  "Psimikakis-Chalkokondylis, Nikolaos-Laonikos": {
+   "born": 1989,
+   "died": null,
+   "alt": [
+    "nicolaos",
+    "laonicos",
+    "psimicakis",
+    "chalcocondylis"
+   ]
   },
   "Rathaus, Karol": {
    "born": 1895,
-   "died": 1954
+   "died": 1954,
+   "alt": [
+    "altnames"
+   ]
   },
   "Ramsöe, Wilhelm": {
    "born": 1837,
-   "died": 1895
+   "died": 1895,
+   "alt": [
+    "emilio",
+    "wilhelm",
+    "ramsoe",
+    "rams"
+   ]
   },
   "Prendiville, Harry": {
    "born": 1848,
-   "died": 1910
+   "died": 1910,
+   "alt": [
+    "henri",
+    "jean",
+    "prendiville",
+    "paul",
+    "deville",
+    "de",
+    "ville",
+    "lange",
+    "gus",
+    "hatton",
+    "carl",
+    "henry"
+   ]
   },
   "Poulenc, Francis": {
    "born": 1899,
-   "died": 1963
+   "died": 1963,
+   "alt": [
+    "francois",
+    "poulenc",
+    "francis",
+    "poulene",
+    "fransis",
+    "pulenk",
+    "pulenkas",
+    "jean",
+    "marcel"
+   ]
   },
   "Renzi, Remigio": {
    "born": 1857,
@@ -3922,23 +8546,60 @@
   },
   "Recke-Madsen, Caroline": {
    "born": 1833,
-   "died": 1901
+   "died": 1901,
+   "alt": [
+    "caroline",
+    "margrethe",
+    "georgine",
+    "recke",
+    "born",
+    "lumbye"
+   ]
   },
   "Regnart, Jacob": {
    "born": null,
-   "died": 1599
+   "died": 1599,
+   "alt": [
+    "jakob",
+    "jacobus",
+    "jacques",
+    "jacomo",
+    "jocobo",
+    "giacomo",
+    "regnard"
+   ]
   },
   "Praetorius, Jacob": {
    "born": 1586,
-   "died": 1651
+   "died": 1651,
+   "alt": [
+    "jakob",
+    "praetorius",
+    "jacobus",
+    "schultz",
+    "jacob",
+    "the",
+    "younger",
+    "der",
+    "jungere"
+   ]
   },
   "Praetorius, Hieronymus": {
    "born": 1560,
-   "died": 1629
+   "died": 1629,
+   "alt": [
+    "hieronymus",
+    "schultz",
+    "schultze"
+   ]
   },
   "Raselius, Andreas": {
    "born": null,
-   "died": 1602
+   "died": 1602,
+   "alt": [
+    "andreas",
+    "rasel"
+   ]
   },
   "Pozzo, Vincenzo dal": {
    "born": 1585,
@@ -3946,7 +8607,12 @@
   },
   "Ravenscroft, John": {
    "born": null,
-   "died": 1697
+   "died": 1697,
+   "alt": [
+    "giovanni",
+    "ravenscroft",
+    "rederi"
+   ]
   },
   "Rauch, Andreas": {
    "born": 1592,
@@ -3954,19 +8620,44 @@
   },
   "Redner, Lewis H.": {
    "born": 1831,
-   "died": 1908
+   "died": 1908,
+   "alt": [
+    "lewis",
+    "henry",
+    "redner"
+   ]
   },
   "Quadflieg, Jakob": {
    "born": 1854,
-   "died": 1915
+   "died": 1915,
+   "alt": [
+    "jacob",
+    "gerhard",
+    "jakob",
+    "quadflieg"
+   ]
   },
   "Radolt, Wenzel Ludwig von": {
    "born": 1667,
-   "died": 1716
+   "died": 1716,
+   "alt": [
+    "wenzel",
+    "ludwig",
+    "freiherr",
+    "von",
+    "radolt",
+    "baron"
+   ]
   },
   "Quiroz, Manuel José de": {
    "born": null,
-   "died": 1765
+   "died": 1765,
+   "alt": [
+    "manuel",
+    "joseph",
+    "de",
+    "quiros"
+   ]
   },
   "Pérez, Sergio Aarón": {
    "born": 1992,
@@ -3982,7 +8673,11 @@
   },
   "Rathbun, Frederick George": {
    "born": 1862,
-   "died": 1903
+   "died": 1903,
+   "alt": [
+    "fred",
+    "rathbun"
+   ]
   },
   "Rasmussen, Poul Edvard": {
    "born": 1776,
@@ -3990,63 +8685,204 @@
   },
   "Pushee, Abraham": {
    "born": 1791,
-   "died": 1868
+   "died": 1868,
+   "alt": [
+    "abram",
+    "pushie"
+   ]
   },
   "Preußen, Anna Amalie von": {
    "born": 1723,
-   "died": 1787
+   "died": 1787,
+   "alt": [
+    "anna",
+    "amalia",
+    "of",
+    "prussia"
+   ]
   },
   "Ramsøe, E. W.": {
    "born": 1837,
-   "died": 1895
+   "died": 1895,
+   "alt": [
+    "emilio",
+    "wilhelm",
+    "rams"
+   ]
   },
   "Respighi, Ottorino": {
    "born": 1879,
    "died": 1936
   },
+  "Roberday, François": {
+   "born": null,
+   "died": 1680
+  },
   "Rheinberger, Josef Gabriel": {
    "born": 1839,
-   "died": 1901
+   "died": 1901,
+   "alt": [
+    "joseph",
+    "gabriel",
+    "rheinberger",
+    "josef"
+   ]
   },
   "Roman, Johan Helmich": {
    "born": 1694,
-   "died": 1758
+   "died": 1758,
+   "alt": [
+    "johann",
+    "helmich",
+    "roman",
+    "giovanni",
+    "elmico"
+   ]
   },
   "Ropartz, Guy": {
    "born": 1864,
-   "died": 1955
+   "died": 1955,
+   "alt": [
+    "joseph",
+    "guy",
+    "marie",
+    "ropartz"
+   ]
+  },
+  "Rosier, Carl": {
+   "born": 1640,
+   "died": null,
+   "alt": [
+    "noel",
+    "charles",
+    "rosier",
+    "de",
+    "rosiers",
+    "carel"
+   ]
   },
   "Rinck, Christian Heinrich": {
    "born": 1770,
-   "died": 1846
+   "died": 1846,
+   "alt": [
+    "johann",
+    "christian",
+    "heinrich",
+    "rinck"
+   ]
+  },
+  "Rossi, Michelangelo": {
+   "born": null,
+   "died": 1656,
+   "alt": [
+    "michael",
+    "angelo",
+    "rossi",
+    "michel",
+    "ange",
+    "michelangelo",
+    "del",
+    "violino"
+   ]
+  },
+  "Rossi, Salamone": {
+   "born": 1570,
+   "died": null,
+   "alt": [
+    "salomone",
+    "rossi",
+    "salamon",
+    "de",
+    "shlomo"
+   ]
   },
   "Rosey, George": {
    "born": 1864,
-   "died": 1936
+   "died": 1936,
+   "alt": [
+    "george",
+    "rosenberg"
+   ]
   },
   "Reutter, Georg": {
    "born": 1708,
-   "died": 1772
+   "died": 1772,
+   "alt": [
+    "johann",
+    "adam",
+    "karl",
+    "georg",
+    "reutter",
+    "carl",
+    "johannes",
+    "adamus",
+    "josephus",
+    "carolus",
+    "georgius",
+    "von",
+    "ii"
+   ]
   },
   "Rosas, Juventino": {
    "born": 1868,
-   "died": 1894
+   "died": 1894,
+   "alt": [
+    "jose",
+    "juventino",
+    "policarpo",
+    "rosas",
+    "cadenas"
+   ]
   },
   "Reznicek, Emil von": {
    "born": 1860,
-   "died": 1945
+   "died": 1945,
+   "alt": [
+    "emil",
+    "nikolaus",
+    "nicola",
+    "joseph",
+    "freiherr",
+    "von",
+    "reznicek"
+   ]
   },
   "Richter, Franz Xaver": {
    "born": 1709,
-   "died": 1789
+   "died": 1789,
+   "alt": [
+    "frantisek",
+    "xaver",
+    "richter",
+    "xaverio"
+   ]
   },
   "Revueltas, Silvestre": {
    "born": 1899,
-   "died": 1940
+   "died": 1940,
+   "alt": [
+    "jose",
+    "silvestre",
+    "revueltas",
+    "sanchez",
+    "sylvestre"
+   ]
   },
   "Rimsky-Korsakov, Nikolay": {
    "born": 1844,
-   "died": 1908
+   "died": 1908,
+   "alt": [
+    "nikolaj",
+    "andreevic",
+    "rimskij",
+    "korsakov",
+    "nikolai",
+    "andreevich",
+    "rimskii",
+    "nikolay",
+    "andreyevich",
+    "rimsky"
+   ]
   },
   "Resch, Johann": {
    "born": 1830,
@@ -4054,15 +8890,36 @@
   },
   "Rore, Cipriano de": {
    "born": null,
-   "died": 1565
+   "died": 1565,
+   "alt": [
+    "cypriano",
+    "de",
+    "rore",
+    "cipriano",
+    "da",
+    "cyprian"
+   ]
   },
   "Rhau, Georg": {
    "born": 1488,
-   "died": 1548
+   "died": 1548,
+   "alt": [
+    "georg",
+    "rhaw",
+    "georgio",
+    "rhauo",
+    "georgij"
+   ]
   },
   "Rodríguez Peris, Martín José": {
    "born": 1949,
-   "died": null
+   "died": null,
+   "alt": [
+    "martin",
+    "rodriguez",
+    "peris",
+    "martinrodriguezperis"
+   ]
   },
   "Rondeau, Michel": {
    "born": 1948,
@@ -4074,7 +8931,12 @@
   },
   "Rogers, Walter": {
    "born": 1865,
-   "died": 1939
+   "died": 1939,
+   "alt": [
+    "walter",
+    "bowman",
+    "rogers"
+   ]
   },
   "Rolock, Reiny": {
    "born": 1997,
@@ -4086,11 +8948,51 @@
   },
   "Rimmer, William": {
    "born": 1862,
-   "died": 1936
+   "died": 1936,
+   "alt": [
+    "sydney",
+    "dacre",
+    "damare",
+    "le",
+    "duc",
+    "heather",
+    "dene",
+    "hiram",
+    "eden",
+    "oliver",
+    "hertzer",
+    "kenneth",
+    "henschall",
+    "carl",
+    "hessler",
+    "holloway",
+    "michael",
+    "laurent",
+    "morton",
+    "raymond",
+    "wilton",
+    "roche",
+    "adrian",
+    "rolfe",
+    "royle",
+    "karl",
+    "somers",
+    "eric",
+    "walton",
+    "zadoc",
+    "crafulla",
+    "eugene",
+    "verner"
+   ]
   },
   "Roger, Estienne": {
    "born": null,
-   "died": 1722
+   "died": 1722,
+   "alt": [
+    "etienne",
+    "roger",
+    "stefaan"
+   ]
   },
   "Rollinson, Thomas H.": {
    "born": 1844,
@@ -4098,7 +9000,11 @@
   },
   "Riegger, Wallingford Constantine": {
    "born": 1885,
-   "died": 1961
+   "died": 1961,
+   "alt": [
+    "wallingford",
+    "riegger"
+   ]
   },
   "Rodríguez Solana, Manuel": {
    "born": 1985,
@@ -4126,15 +9032,32 @@
   },
   "Roberts, Luckey": {
    "born": 1887,
-   "died": 1968
+   "died": 1968,
+   "alt": [
+    "ne",
+    "charles",
+    "luckyth",
+    "roberts"
+   ]
   },
   "Rogers, Chris": {
    "born": 1954,
-   "died": null
+   "died": null,
+   "alt": [
+    "leonard",
+    "christopher",
+    "gordon",
+    "rogers"
+   ]
   },
   "Robles, Daniel Alomia": {
    "born": 1871,
-   "died": 1942
+   "died": 1942,
+   "alt": [
+    "daniel",
+    "alomia",
+    "robles"
+   ]
   },
   "Rogert, Ditlev Ludvig": {
    "born": 1742,
@@ -4154,27 +9077,157 @@
   },
   "Saint-Saëns, Camille": {
    "born": 1835,
-   "died": 1921
+   "died": 1921,
+   "alt": [
+    "charles",
+    "camille",
+    "saint",
+    "saens",
+    "ar",
+    "ru",
+    "grk",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor",
+    "tha",
+    "arm",
+    "hye",
+    "heb"
+   ]
   },
   "Rubinstein, Anton": {
    "born": 1829,
-   "died": 1894
+   "died": 1894,
+   "alt": [
+    "anton",
+    "grigorevic",
+    "rubinstejn",
+    "grigor",
+    "evich",
+    "rubinshtein",
+    "grigoryevich",
+    "rubinshteyn"
+   ]
   },
   "Scarlatti, Domenico": {
    "born": 1685,
-   "died": 1757
+   "died": 1757,
+   "alt": [
+    "giuseppe",
+    "domenico",
+    "scarlatti",
+    "domingo",
+    "escarlatti",
+    "dominico"
+   ]
+  },
+  "Roussel, Albert": {
+   "born": 1869,
+   "died": 1937,
+   "alt": [
+    "albert",
+    "charles",
+    "paul",
+    "marie",
+    "roussel"
+   ]
   },
   "Saint-Martin, Léonce de": {
    "born": 1886,
-   "died": 1954
+   "died": 1954,
+   "alt": [
+    "leonce",
+    "de",
+    "st",
+    "martin"
+   ]
   },
   "Scarlatti, Alessandro": {
    "born": 1660,
-   "died": 1725
+   "died": 1725,
+   "alt": [
+    "pietro",
+    "alessandro",
+    "gaspare",
+    "scarlatti"
+   ]
+  },
+  "Sardelli, Federico Maria": {
+   "born": 1963,
+   "died": null
+  },
+  "Sammartini, Giovanni Battista": {
+   "born": null,
+   "died": 1775,
+   "alt": [
+    "giovanni",
+    "battista",
+    "san",
+    "martini",
+    "martino",
+    "st",
+    "giambattista",
+    "sammartini",
+    "bapta"
+   ]
+  },
+  "Royer, Joseph-Nicolas-Pancrace": {
+   "born": 1703,
+   "died": 1755,
+   "alt": [
+    "pancrace",
+    "royer",
+    "jean",
+    "nicolas"
+   ]
+  },
+  "Santamaría, Tomás": {
+   "born": null,
+   "died": 1570,
+   "alt": [
+    "tomas",
+    "de",
+    "santa",
+    "maria",
+    "thomas",
+    "sancta"
+   ]
+  },
+  "Rovetta, Giovanni": {
+   "born": null,
+   "died": 1668
+  },
+  "Sabadini, Bernardo": {
+   "born": null,
+   "died": 1718,
+   "alt": [
+    "bernardo",
+    "sabbadini",
+    "sabatini"
+   ]
   },
   "Satie, Erik": {
    "born": 1866,
-   "died": 1925
+   "died": 1925,
+   "alt": [
+    "erik",
+    "alfred",
+    "leslie",
+    "satie",
+    "eric",
+    "ar",
+    "ru",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor",
+    "heb",
+    "arm",
+    "hye"
+   ]
   },
   "Saboohi, Ehsan": {
    "born": 1981,
@@ -4206,7 +9259,13 @@
   },
   "Rossini, Gioachino": {
    "born": 1792,
-   "died": 1868
+   "died": 1868,
+   "alt": [
+    "gioacchino",
+    "antonio",
+    "rossini",
+    "gioachino"
+   ]
   },
   "Russell, Henry": {
    "born": null,
@@ -4218,7 +9277,20 @@
   },
   "Sammartini, Giuseppe": {
    "born": 1695,
-   "died": 1750
+   "died": 1750,
+   "alt": [
+    "giuseppe",
+    "baldassare",
+    "san",
+    "martini",
+    "martino",
+    "gioseffo",
+    "sammartini",
+    "francesco",
+    "gaspare",
+    "melchiorre",
+    "gioseffe"
+   ]
   },
   "Rzewski, Frederic": {
    "born": 1938,
@@ -4226,7 +9298,17 @@
   },
   "Rouget de Lisle, Claude-Joseph": {
    "born": 1760,
-   "died": 1836
+   "died": 1836,
+   "alt": [
+    "claude",
+    "joseph",
+    "rouget",
+    "de",
+    "isle",
+    "lille",
+    "rouge",
+    "delisle"
+   ]
   },
   "Saral, Ali Riza": {
    "born": 1960,
@@ -4238,7 +9320,14 @@
   },
   "Sanz, Gaspar": {
    "born": 1640,
-   "died": 1710
+   "died": 1710,
+   "alt": [
+    "gaspar",
+    "francisco",
+    "bartolome",
+    "sanz",
+    "celma"
+   ]
   },
   "Salvatore, Giovanni": {
    "born": 1611,
@@ -4246,7 +9335,12 @@
   },
   "Sarro, Domenico Natale": {
    "born": 1679,
-   "died": 1744
+   "died": 1744,
+   "alt": [
+    "domenico",
+    "sarri",
+    "sarra"
+   ]
   },
   "Sago, Yasunori": {
    "born": 1963,
@@ -4262,7 +9356,13 @@
   },
   "Ryba, Jakub Jan": {
    "born": 1765,
-   "died": 1815
+   "died": 1815,
+   "alt": [
+    "jakub",
+    "simon",
+    "jan",
+    "ryba"
+   ]
   },
   "Saul, Dave": {
    "born": 1937,
@@ -4270,11 +9370,22 @@
   },
   "Sandoni, Pietro Giuseppe": {
    "born": 1685,
-   "died": 1748
+   "died": 1748,
+   "alt": [
+    "pier",
+    "giuseppe",
+    "sandoni"
+   ]
   },
   "Sanne, Viggo": {
    "born": 1840,
-   "died": 1896
+   "died": 1896,
+   "alt": [
+    "viggo",
+    "agathon",
+    "hagbarth",
+    "sanne"
+   ]
   },
   "Sanz, Andrés": {
    "born": 1991,
@@ -4286,19 +9397,62 @@
   },
   "Sandí Calderón, Daniel": {
    "born": 1986,
-   "died": null
+   "died": null,
+   "alt": [
+    "daniel",
+    "sandi",
+    "calderon"
+   ]
   },
   "Schoenberg, Arnold": {
    "born": 1874,
-   "died": 1951
+   "died": 1951,
+   "alt": [
+    "arnold",
+    "franz",
+    "walter",
+    "schoenberg",
+    "schonberg",
+    "rus",
+    "ar",
+    "chi",
+    "zho",
+    "jp",
+    "ko",
+    "kor"
+   ]
   },
   "Schubert, Franz": {
    "born": 1797,
-   "died": 1828
+   "died": 1828,
+   "alt": [
+    "franz",
+    "peter",
+    "schubert"
+   ]
   },
   "Schumann, Robert": {
    "born": 1810,
-   "died": 1856
+   "died": 1856,
+   "alt": [
+    "robert",
+    "alexander",
+    "schumann",
+    "ekert",
+    "pseudonym",
+    "florestan",
+    "und",
+    "eusebius"
+   ]
+  },
+  "Scherer, Sebastian Anton": {
+   "born": 1631,
+   "died": 1712,
+   "alt": [
+    "sebastiano",
+    "antonio",
+    "scherer"
+   ]
   },
   "Scheidt, Samuel": {
    "born": 1587,
@@ -4306,31 +9460,81 @@
   },
   "Scheidemann, Heinrich": {
    "born": null,
-   "died": 1663
+   "died": 1663,
+   "alt": [
+    "henricus",
+    "scheidemann",
+    "henrich",
+    "hinrich"
+   ]
   },
   "Schwindl, Friedrich": {
    "born": 1737,
-   "died": 1786
+   "died": 1786,
+   "alt": [
+    "carl",
+    "friedrich",
+    "schwindel"
+   ]
   },
   "Schmitt, Florent": {
    "born": 1870,
    "died": 1958
   },
+  "Schickhardt, Johann Christian": {
+   "born": null,
+   "died": 1762,
+   "alt": [
+    "schickhard",
+    "jean",
+    "chretien",
+    "chrestien"
+   ]
+  },
   "Schmelzer, Johann Heinrich": {
    "born": null,
-   "died": 1680
+   "died": 1680,
+   "alt": [
+    "johann",
+    "heinrich",
+    "schmeltzer",
+    "schmelzer",
+    "von",
+    "ehrenruef"
+   ]
+  },
+  "Scheel, Christian": {
+   "born": 1981,
+   "died": null
   },
   "Schubert, Camille": {
    "born": 1810,
-   "died": 1889
+   "died": 1889,
+   "alt": [
+    "camille",
+    "prilipp",
+    "real",
+    "name"
+   ]
   },
   "Schein, Johann Hermann": {
    "born": 1586,
-   "died": 1630
+   "died": 1630,
+   "alt": [
+    "johann",
+    "hermannus",
+    "schein"
+   ]
   },
   "Schütz, Heinrich": {
    "born": 1585,
-   "died": 1672
+   "died": 1672,
+   "alt": [
+    "schuetz",
+    "schutz",
+    "henricus",
+    "sagittarius"
+   ]
   },
   "Schmidt, Heinrich": {
    "born": 1861,
@@ -4342,7 +9546,24 @@
   },
   "Scriabin, Aleksandr": {
    "born": 1872,
-   "died": 1915
+   "died": 1915,
+   "alt": [
+    "aleksandr",
+    "nikolajevic",
+    "skrjabin",
+    "nikolaevich",
+    "skriabin",
+    "alexander",
+    "nikolayevich",
+    "skryabin",
+    "alexandre",
+    "nikolaievitch",
+    "scriabine",
+    "alekszandr",
+    "nyikolajevics",
+    "szkrjabin",
+    "nikolajewitsch"
+   ]
   },
   "Schnurrenberger, Peter": {
    "born": 1957,
@@ -4354,7 +9575,10 @@
   },
   "Schwencke, Johann Friedrich": {
    "born": 1792,
-   "died": 1852
+   "died": 1852,
+   "alt": [
+    "schwenke"
+   ]
   },
   "Schauerte, Uli": {
    "born": 1955,
@@ -4362,11 +9586,24 @@
   },
   "Schultze, Johann Christoph": {
    "born": 1733,
-   "died": 1813
+   "died": 1813,
+   "alt": [
+    "schultz"
+   ]
   },
   "Schetky, Johann Georg Christoph": {
    "born": 1737,
-   "died": 1824
+   "died": 1824,
+   "alt": [
+    "johann",
+    "georg",
+    "christoph",
+    "von",
+    "teschky",
+    "schettky",
+    "schedtky",
+    "schetky"
+   ]
   },
   "Scott, Clement": {
    "born": 1841,
@@ -4378,11 +9615,26 @@
   },
   "Scronx, Gerardus": {
    "born": null,
-   "died": 1621
+   "died": 1621,
+   "alt": [
+    "frater",
+    "gerardus",
+    "scronx",
+    "gherardus",
+    "gerard"
+   ]
   },
   "Scotto, Girolamo": {
    "born": null,
-   "died": 1572
+   "died": 1572,
+   "alt": [
+    "hieronymus",
+    "scotus",
+    "hieronymum",
+    "scotum",
+    "gerolamo",
+    "scotto"
+   ]
   },
   "Schale, Christian Friedrich": {
    "born": 1713,
@@ -4394,7 +9646,11 @@
   },
   "Schluty, Jean Joseph": {
    "born": 1829,
-   "died": 1920
+   "died": 1920,
+   "alt": [
+    "joseph",
+    "schluty"
+   ]
   },
   "Scheidemann, David": {
    "born": 1570,
@@ -4406,7 +9662,12 @@
   },
   "Schiltz, Jean-Baptiste": {
    "born": 1807,
-   "died": 1868
+   "died": 1868,
+   "alt": [
+    "johann",
+    "baptist",
+    "schiltz"
+   ]
   },
   "Schmidt, Steven": {
    "born": 1964,
@@ -4414,7 +9675,12 @@
   },
   "Schacht, Albert M.": {
    "born": null,
-   "died": 1885
+   "died": 1885,
+   "alt": [
+    "schacht",
+    "albert",
+    "martin"
+   ]
   },
   "Schiøtt, Valdemar": {
    "born": 1826,
@@ -4434,19 +9700,71 @@
   },
   "Searby, Michael": {
    "born": 1960,
-   "died": null
+   "died": null,
+   "alt": [
+    "mike",
+    "searby"
+   ]
   },
   "Sousa, John Philip": {
    "born": 1854,
    "died": 1932
   },
+  "Silcher, Friedrich": {
+   "born": 1789,
+   "died": 1860,
+   "alt": [
+    "philipp",
+    "friedrich",
+    "silcher"
+   ]
+  },
+  "Smith, John Stafford": {
+   "born": 1750,
+   "died": 1836,
+   "alt": [
+    "john",
+    "stafford",
+    "brown"
+   ]
+  },
   "Sperger, Johann Matthias": {
    "born": 1750,
-   "died": 1812
+   "died": 1812,
+   "alt": [
+    "johannes",
+    "matthias",
+    "sperger"
+   ]
+  },
+  "Sor, Fernando": {
+   "born": 1778,
+   "died": 1839,
+   "alt": [
+    "joseph",
+    "fernando",
+    "macari",
+    "sor",
+    "ferdinando",
+    "sors",
+    "ferunando",
+    "soru",
+    "ferran",
+    "muntades"
+   ]
   },
   "Seixas, Carlos": {
    "born": 1704,
-   "died": 1742
+   "died": 1742,
+   "alt": [
+    "jose",
+    "antonio",
+    "carlos",
+    "de",
+    "seixas",
+    "giuseppe",
+    "carlo"
+   ]
   },
   "Shelley, Harry Rowe": {
    "born": 1858,
@@ -4458,11 +9776,27 @@
   },
   "Senfl, Ludwig": {
    "born": null,
-   "died": 1543
+   "died": 1543,
+   "alt": [
+    "ludovicus",
+    "senfel",
+    "ludouicus",
+    "senffel",
+    "senffl",
+    "sennfl"
+   ]
   },
   "Simon, Anton": {
    "born": null,
-   "died": 1916
+   "died": 1916,
+   "alt": [
+    "joseph",
+    "antoine",
+    "jules",
+    "simon",
+    "anton",
+    "yulievich"
+   ]
   },
   "Silva, Francisco Manuel da": {
    "born": 1795,
@@ -4474,7 +9808,12 @@
   },
   "Sorge, Georg Andreas": {
    "born": 1703,
-   "died": 1778
+   "died": 1778,
+   "alt": [
+    "georgio",
+    "andrea",
+    "sorgio"
+   ]
   },
   "Speaks, Oley": {
    "born": 1874,
@@ -4482,7 +9821,12 @@
   },
   "Smith, Wilson": {
    "born": 1855,
-   "died": 1929
+   "died": 1929,
+   "alt": [
+    "wilson",
+    "smith",
+    "george"
+   ]
   },
   "Speil, Rudolph": {
    "born": 1850,
@@ -4494,7 +9838,17 @@
   },
   "Seger, Josef Ferdinand Norbert": {
    "born": 1716,
-   "died": 1782
+   "died": 1782,
+   "alt": [
+    "joseph",
+    "czegert",
+    "secrt",
+    "seeger",
+    "seegr",
+    "segert",
+    "sekert",
+    "zekert"
+   ]
   },
   "Soares, Artur Penha": {
    "born": 1984,
@@ -4510,15 +9864,35 @@
   },
   "Shuebruk, Richard": {
    "born": 1854,
-   "died": null
+   "died": null,
+   "alt": [
+    "schuebruk"
+   ]
   },
   "Soriano, Francesco": {
    "born": null,
-   "died": 1621
+   "died": 1621,
+   "alt": [
+    "franciscus",
+    "surianus",
+    "suriano",
+    "suriani",
+    "francisco"
+   ]
   },
   "Shostakovich, Dmitry": {
    "born": 1906,
-   "died": 1975
+   "died": 1975,
+   "alt": [
+    "dmitrij",
+    "dmitrievic",
+    "sostakovic",
+    "dmitri",
+    "dmitrievich",
+    "shostakovich",
+    "dmitry",
+    "dmitriyevich"
+   ]
   },
   "Spada, Luca": {
    "born": 1988,
@@ -4538,7 +9912,13 @@
   },
   "Senée, Henri": {
    "born": 1853,
-   "died": null
+   "died": null,
+   "alt": [
+    "henri",
+    "victor",
+    "albert",
+    "senee"
+   ]
   },
   "Serradourada, José Iriá Xavier": {
    "born": 1832,
@@ -4550,7 +9930,19 @@
   },
   "Speer, Daniel": {
    "born": 1636,
-   "died": 1707
+   "died": 1707,
+   "alt": [
+    "georg",
+    "daniel",
+    "speer",
+    "asne",
+    "de",
+    "rilpe",
+    "anagram",
+    "pseudonym",
+    "dacianischer",
+    "simplicissimus"
+   ]
   },
   "Selby, William": {
    "born": 1738,
@@ -4558,7 +9950,12 @@
   },
   "Skalkottas, Nikos": {
    "born": 1904,
-   "died": 1949
+   "died": 1949,
+   "alt": [
+    "el",
+    "nicos",
+    "scalcotas"
+   ]
   },
   "Silvers, Louis": {
    "born": 1889,
@@ -4570,7 +9967,14 @@
   },
   "Seipp, J. H.": {
    "born": 1773,
-   "died": 1841
+   "died": 1841,
+   "alt": [
+    "john",
+    "henry",
+    "seipp",
+    "johann",
+    "heinrich"
+   ]
   },
   "Simonsen, H. C.": {
    "born": 1812,
@@ -4578,7 +9982,12 @@
   },
   "Sherwin, William Fisk": {
    "born": 1826,
-   "died": 1888
+   "died": 1888,
+   "alt": [
+    "william",
+    "fiske",
+    "sherwin"
+   ]
   },
   "Seraphinoff, Richard": {
    "born": 1957,
@@ -4590,7 +9999,14 @@
   },
   "Sherwood, Will": {
    "born": 1953,
-   "died": null
+   "died": null,
+   "alt": [
+    "william",
+    "henry",
+    "sherwood",
+    "chm",
+    "aago"
+   ]
   },
   "Silva, Wenyo de Oliveira Aragão da": {
    "born": 1990,
@@ -4602,23 +10018,71 @@
   },
   "Strauss, Richard": {
    "born": 1864,
-   "died": 1949
+   "died": 1949,
+   "alt": [
+    "altnames"
+   ]
   },
   "Sweelinck, Jan Pieterszoon": {
    "born": 1562,
-   "died": 1621
+   "died": 1621,
+   "alt": [
+    "jan",
+    "pieterszoon",
+    "swelinck",
+    "sweeling",
+    "zwelinck",
+    "sweelingh",
+    "jehan",
+    "pieterson",
+    "swellinck",
+    "peterson",
+    "swelling"
+   ]
   },
   "Strauss Jr., Johann": {
    "born": 1825,
-   "died": 1899
+   "died": 1899,
+   "alt": [
+    "johann",
+    "strauss",
+    "sohn",
+    "baptist",
+    "strau",
+    "straus",
+    "the",
+    "younger",
+    "ii"
+   ]
   },
   "Stanley, John": {
    "born": 1712,
-   "died": 1786
+   "died": 1786,
+   "alt": [
+    "charles",
+    "john",
+    "stanley"
+   ]
   },
   "Stamitz, Carl Philipp": {
    "born": null,
-   "died": 1801
+   "died": 1801,
+   "alt": [
+    "karl",
+    "stamitz",
+    "karel",
+    "stamic",
+    "charles"
+   ]
+  },
+  "Svendsen, Johan": {
+   "born": 1840,
+   "died": 1911,
+   "alt": [
+    "johan",
+    "severin",
+    "svendsen"
+   ]
   },
   "St. George Tucker, Tui": {
    "born": 1924,
@@ -4630,47 +10094,143 @@
   },
   "Suppé, Franz von": {
    "born": 1819,
-   "died": 1895
+   "died": 1895,
+   "alt": [
+    "francesco",
+    "ezechiele",
+    "ermenegildo",
+    "cavaliere",
+    "suppe",
+    "demelli"
+   ]
   },
   "Spindler, Fritz": {
    "born": 1817,
    "died": 1905
   },
+  "Stamitz, Anton": {
+   "born": 1750,
+   "died": 1809,
+   "alt": [
+    "anton",
+    "thadaus",
+    "johann",
+    "nepomuk",
+    "stamitz",
+    "jan",
+    "antonin",
+    "stamic"
+   ]
+  },
   "Strauss Sr., Johann": {
    "born": 1804,
-   "died": 1849
+   "died": 1849,
+   "alt": [
+    "johann",
+    "strauss",
+    "vater",
+    "baptist",
+    "strau",
+    "the",
+    "elder"
+   ]
   },
   "Stravinsky, Igor": {
    "born": 1882,
-   "died": 1971
+   "died": 1971,
+   "alt": [
+    "igor",
+    "fjodorovic",
+    "stravinskij",
+    "fedorovich",
+    "stravinskii",
+    "fyodorovich",
+    "stravinsky",
+    "strawinsky"
+   ]
+  },
+  "Stella, Simone": {
+   "born": 1981,
+   "died": null
   },
   "Sullivan, Arthur": {
    "born": 1842,
-   "died": 1900
+   "died": 1900,
+   "alt": [
+    "arthur",
+    "seymour",
+    "sullivan",
+    "sir"
+   ]
   },
   "Stradella, Alessandro": {
    "born": 1643,
-   "died": 1682
+   "died": 1682,
+   "alt": [
+    "antonio",
+    "alessandro",
+    "boncompagno",
+    "stradella"
+   ]
   },
   "Stainer, John": {
    "born": 1840,
-   "died": 1901
+   "died": 1901,
+   "alt": [
+    "sir",
+    "john",
+    "stainer"
+   ]
   },
   "Stamitz, Johann": {
    "born": 1717,
-   "died": 1757
+   "died": 1757,
+   "alt": [
+    "jan",
+    "vaclav",
+    "antonin",
+    "stamic",
+    "johann",
+    "wenzel",
+    "anton",
+    "stamitz",
+    "stainmiz",
+    "stamits",
+    "steinmetz",
+    "staimiz",
+    "stamicas"
+   ]
   },
   "Speyer, Wilhelm": {
    "born": 1790,
-   "died": 1878
+   "died": 1878,
+   "alt": [
+    "guillaume",
+    "speier",
+    "wilhelm"
+   ]
   },
   "Straus, Oscar": {
    "born": 1870,
-   "died": 1954
+   "died": 1954,
+   "alt": [
+    "oscar",
+    "nathan",
+    "strauss",
+    "birth",
+    "name"
+   ]
   },
   "Stöhr, Richard": {
    "born": 1874,
-   "died": 1967
+   "died": 1967,
+   "alt": [
+    "stoehr",
+    "richard",
+    "stern",
+    "franz",
+    "stohr"
+   ]
   },
   "Sydeman, William Jay": {
    "born": 1928,
@@ -4678,11 +10238,21 @@
   },
   "St. Clair, Richard": {
    "born": 1946,
-   "died": null
+   "died": null,
+   "alt": [
+    "richard",
+    "saint",
+    "clair"
+   ]
   },
   "Steigleder, Johann Ulrich": {
    "born": 1593,
-   "died": 1635
+   "died": 1635,
+   "alt": [
+    "hans",
+    "ulrich",
+    "steigleder"
+   ]
   },
   "Spiegler, Matthias": {
    "born": 1595,
@@ -4698,7 +10268,13 @@
   },
   "Stuntz, Joseph Hartmann": {
    "born": 1793,
-   "died": 1859
+   "died": 1859,
+   "alt": [
+    "joseph",
+    "stuntz",
+    "hartmann",
+    "stunz"
+   ]
   },
   "Stockmarr, Sophus Frederik": {
    "born": 1853,
@@ -4710,7 +10286,10 @@
   },
   "Stegmann, Carl David": {
    "born": 1751,
-   "died": 1826
+   "died": 1826,
+   "alt": [
+    "steegmann"
+   ]
   },
   "Sturla, Luca": {
    "born": 1990,
@@ -4718,7 +10297,12 @@
   },
   "Stenov, Michael": {
    "born": 1962,
-   "died": null
+   "died": null,
+   "alt": [
+    "michael",
+    "steinhuber",
+    "novacek"
+   ]
   },
   "Stankovych, Tatiana": {
    "born": 1975,
@@ -4734,11 +10318,22 @@
   },
   "Sweeney, Joel Walker": {
    "born": 1810,
-   "died": 1860
+   "died": 1860,
+   "alt": [
+    "joel",
+    "sweeney",
+    "joe"
+   ]
   },
   "Steenwick, Gisbert": {
    "born": 1642,
-   "died": 1679
+   "died": 1679,
+   "alt": [
+    "gisbert",
+    "van",
+    "steenwick",
+    "gijsbert"
+   ]
   },
   "Steenberg, Julius": {
    "born": 1830,
@@ -4746,19 +10341,42 @@
   },
   "Stewart-Robertson, James": {
    "born": 1823,
-   "died": 1896
+   "died": 1896,
+   "alt": [
+    "james",
+    "stewart",
+    "robertson"
+   ]
   },
   "Staub, Joseph": {
    "born": 1859,
-   "died": 1942
+   "died": 1942,
+   "alt": [
+    "augustin",
+    "staub"
+   ]
   },
   "Telemann, Georg Philipp": {
    "born": 1681,
-   "died": 1767
+   "died": 1767,
+   "alt": [
+    "signore",
+    "melante",
+    "giorgio",
+    "melande"
+   ]
+  },
+  "Tartini, Giuseppe": {
+   "born": 1692,
+   "died": 1770
   },
   "Titelouze, Jean": {
    "born": null,
-   "died": 1633
+   "died": 1633,
+   "alt": [
+    "jehan",
+    "titelouze"
+   ]
   },
   "Thieriot, Ferdinand": {
    "born": 1838,
@@ -4770,11 +10388,47 @@
   },
   "Tcherepnin, Nikolay": {
    "born": 1873,
-   "died": 1945
+   "died": 1945,
+   "alt": [
+    "nikolaj",
+    "nikolaevic",
+    "cerepnin",
+    "nikolai",
+    "nikolaevich",
+    "cherepnin",
+    "nikolay",
+    "nikolayevich",
+    "nicolas",
+    "tcherepnine",
+    "tscherepnine"
+   ]
+  },
+  "Trovato, Angelo Maria": {
+   "born": 1977,
+   "died": null
   },
   "Thomé, Francis": {
    "born": 1850,
-   "died": 1909
+   "died": 1909,
+   "alt": [
+    "francois",
+    "luc",
+    "joseph",
+    "thome"
+   ]
+  },
+  "Tallis, Thomas": {
+   "born": null,
+   "died": 1585
+  },
+  "Trabaci, Giovanni Maria": {
+   "born": null,
+   "died": 1647,
+   "alt": [
+    "giovanni",
+    "maria",
+    "trabacci"
+   ]
   },
   "Uccellini, Marco": {
    "born": null,
@@ -4786,7 +10440,12 @@
   },
   "Tabakov, Mikhail": {
    "born": 1877,
-   "died": 1956
+   "died": 1956,
+   "alt": [
+    "mikhail",
+    "innokentyevich",
+    "tabakov"
+   ]
   },
   "Tanaka, Nobuyoshi": {
    "born": 1969,
@@ -4795,6 +10454,25 @@
   "Tamura, Masahiro": {
    "born": 1986,
    "died": null
+  },
+  "Tchaikovsky, Pyotr": {
+   "born": 1840,
+   "died": 1893,
+   "alt": [
+    "petr",
+    "il",
+    "ic",
+    "cajkovskij",
+    "ich",
+    "chaikovskii",
+    "pyotr",
+    "ilyich",
+    "tchaikovsky",
+    "chaykovsky",
+    "pjotr",
+    "iljitsch",
+    "tschaikowski"
+   ]
   },
   "Tavares, Luciano": {
    "born": 1975,
@@ -4814,19 +10492,45 @@
   },
   "Teilman, Christian": {
    "born": 1845,
-   "died": 1909
+   "died": 1909,
+   "alt": [
+    "rgen",
+    "christian",
+    "fasting",
+    "teilman"
+   ]
   },
   "Tagore, Rabindranath": {
    "born": 1861,
-   "died": 1941
+   "died": 1941,
+   "alt": [
+    "rabindranath",
+    "tagore",
+    "ravindranatha",
+    "thakura",
+    "gurudev"
+   ]
   },
   "Tegnér, Alice": {
    "born": 1864,
-   "died": 1943
+   "died": 1943,
+   "alt": [
+    "alice",
+    "charlotta",
+    "sandstrom"
+   ]
   },
   "Ter Linden, Frederick": {
    "born": null,
-   "died": 1891
+   "died": 1891,
+   "alt": [
+    "johann",
+    "gottlieb",
+    "friedrich",
+    "ter",
+    "linden",
+    "fred"
+   ]
   },
   "Tsutsumi, Shingo": {
    "born": 1997,
@@ -4838,11 +10542,23 @@
   },
   "Triebensee, Joseph": {
    "born": 1772,
-   "died": 1846
+   "died": 1846,
+   "alt": [
+    "josef",
+    "triebensee",
+    "trubensee"
+   ]
   },
   "Timmer, Joseph Ferdinand": {
    "born": 1708,
-   "died": 1771
+   "died": 1771,
+   "alt": [
+    "joseph",
+    "timmer",
+    "der",
+    "jungere",
+    "timer"
+   ]
   },
   "Teichmann, Roger": {
    "born": 1963,
@@ -4850,7 +10566,11 @@
   },
   "Türner, Franz": {
    "born": 1831,
-   "died": 1909
+   "died": 1909,
+   "alt": [
+    "franz",
+    "turner"
+   ]
   },
   "Sánchez Urena, Carlos": {
    "born": 1986,
@@ -4858,15 +10578,28 @@
   },
   "Trien, Adolphe Philippe": {
    "born": 1817,
-   "died": 1880
+   "died": 1880,
+   "alt": [
+    "trien"
+   ]
   },
   "Thibault, Charles": {
    "born": 1792,
-   "died": null
+   "died": null,
+   "alt": [
+    "alexis",
+    "charles",
+    "maximilien",
+    "thibault"
+   ]
   },
   "Thomas, Douglas Edward": {
    "born": 1970,
-   "died": null
+   "died": null,
+   "alt": [
+    "doug",
+    "thomas"
+   ]
   },
   "Tomasi, Henri": {
    "born": 1901,
@@ -4874,7 +10607,11 @@
   },
   "Toporowski, Marek": {
    "born": 1964,
-   "died": null
+   "died": null,
+   "alt": [
+    "marek",
+    "toporowski"
+   ]
   },
   "Thomsen, Magnus": {
    "born": 1562,
@@ -4888,21 +10625,96 @@
    "born": 1950,
    "died": null
   },
+  "Verdi, Giuseppe": {
+   "born": 1813,
+   "died": 1901,
+   "alt": [
+    "giuseppe",
+    "fortunino",
+    "francesco",
+    "verdi"
+   ]
+  },
+  "Vierne, Louis": {
+   "born": 1870,
+   "died": 1937,
+   "alt": [
+    "louis",
+    "victor",
+    "jules",
+    "vierne"
+   ]
+  },
   "Vanhal, Johann Baptist": {
    "born": 1739,
-   "died": 1813
+   "died": 1813,
+   "alt": [
+    "johann",
+    "baptist",
+    "wanhal",
+    "jan",
+    "krtitel",
+    "vanhal",
+    "wannhall",
+    "wanhall"
+   ]
   },
   "Victoria, Tomás Luis de": {
    "born": null,
-   "died": 1611
+   "died": 1611,
+   "alt": [
+    "ludovico",
+    "da",
+    "vittoria",
+    "tommaso"
+   ]
+  },
+  "Vinci, Leonardo": {
+   "born": null,
+   "died": 1730
+  },
+  "Vaughan Williams, Ralph": {
+   "born": 1872,
+   "died": 1958
+  },
+  "Vecchi, Orazio": {
+   "born": 1550,
+   "died": 1605,
+   "alt": [
+    "horatio",
+    "tiberio",
+    "vecchi"
+   ]
   },
   "Vidal, Paul": {
    "born": 1863,
-   "died": 1931
+   "died": 1931,
+   "alt": [
+    "paul",
+    "antoine",
+    "antonin",
+    "vidal"
+   ]
   },
   "Valentine, Robert": {
    "born": 1674,
-   "died": 1747
+   "died": 1747,
+   "alt": [
+    "robert",
+    "follentine",
+    "roberto",
+    "valentini",
+    "valentino"
+   ]
+  },
+  "Vetter, Nicolaus": {
+   "born": 1666,
+   "died": 1734,
+   "alt": [
+    "andreas",
+    "nicolaus",
+    "vetter"
+   ]
   },
   "Vierling, Johann Gottfried": {
    "born": 1750,
@@ -4910,7 +10722,10 @@
   },
   "Underner, Charles L.": {
    "born": null,
-   "died": 1870
+   "died": 1870,
+   "alt": [
+    "chas"
+   ]
   },
   "Verhelst, Steven": {
    "born": 1981,
@@ -4938,11 +10753,25 @@
   },
   "Vejvanovský, Pavel Josef": {
    "born": null,
-   "died": 1693
+   "died": 1693,
+   "alt": [
+    "paul",
+    "joseph",
+    "weiwanowski",
+    "wegwanowskij"
+   ]
   },
   "Verdonck, Cornelis": {
    "born": 1563,
-   "died": 1625
+   "died": 1625,
+   "alt": [
+    "cornelius",
+    "verdonck",
+    "verdonch",
+    "verdonk",
+    "verdoncq",
+    "cornelio"
+   ]
   },
   "Van Hoorick, Geert": {
    "born": 1968,
@@ -4966,7 +10795,15 @@
   },
   "Varèse, Edgard": {
    "born": 1883,
-   "died": 1965
+   "died": 1965,
+   "alt": [
+    "edgard",
+    "victor",
+    "achille",
+    "charles",
+    "varese",
+    "edgar"
+   ]
   },
   "Visser, Dick": {
    "born": 1926,
@@ -4990,7 +10827,12 @@
   },
   "VanderCook, Hale A.": {
    "born": 1864,
-   "died": 1949
+   "died": 1949,
+   "alt": [
+    "hale",
+    "ascher",
+    "vandercook"
+   ]
   },
   "Vieira, Afonso Lopes": {
    "born": 1878,
@@ -5008,17 +10850,127 @@
    "born": 1847,
    "died": 1903
   },
+  "Webern, Anton": {
+   "born": 1883,
+   "died": 1945,
+   "alt": [
+    "anton",
+    "friedrich",
+    "wilhelm",
+    "von",
+    "webern",
+    "chi",
+    "zho",
+    "ko",
+    "kor",
+    "jp",
+    "ru",
+    "grk",
+    "heb"
+   ]
+  },
   "Weber, Carl Maria von": {
    "born": 1786,
-   "died": 1826
+   "died": 1826,
+   "alt": [
+    "carl",
+    "maria",
+    "friedrich",
+    "ernst",
+    "von",
+    "weber",
+    "karl"
+   ]
+  },
+  "Vivaldi, Antonio": {
+   "born": 1678,
+   "died": 1741,
+   "alt": [
+    "antonio",
+    "lucio",
+    "vivaldi",
+    "chi",
+    "zho",
+    "ko",
+    "kor",
+    "grk",
+    "jp",
+    "ar"
+   ]
+  },
+  "Walther, Johann Gottfried": {
+   "born": 1684,
+   "died": 1748
   },
   "Volkmann, Robert": {
    "born": 1815,
-   "died": 1883
+   "died": 1883,
+   "alt": [
+    "friedrich",
+    "robert",
+    "volkmann"
+   ]
+  },
+  "Waldteufel, Emile": {
+   "born": 1837,
+   "died": 1915,
+   "alt": [
+    "emil",
+    "waldteufel",
+    "charles",
+    "emile",
+    "levy"
+   ]
+  },
+  "Weelkes, Thomas": {
+   "born": null,
+   "died": 1623
+  },
+  "Weldon, John": {
+   "born": 1676,
+   "died": 1736
+  },
+  "Wagner, Richard": {
+   "born": 1813,
+   "died": 1883,
+   "alt": [
+    "wilhelm",
+    "richard",
+    "wagner"
+   ]
+  },
+  "Vitali, Giovanni Battista": {
+   "born": 1632,
+   "died": 1692,
+   "alt": [
+    "jean",
+    "battista",
+    "vitali"
+   ]
+  },
+  "Weckmann, Matthias": {
+   "born": null,
+   "died": 1674,
+   "alt": [
+    "matthias",
+    "weckman",
+    "hans",
+    "wegkmann",
+    "weykmann"
+   ]
   },
   "Wailly, Paul de": {
    "born": 1854,
-   "died": 1933
+   "died": 1933,
+   "alt": [
+    "louis",
+    "auguste",
+    "paul",
+    "warnier",
+    "de",
+    "wailly",
+    "dewailly"
+   ]
   },
   "Wallace, William Vincent": {
    "born": 1812,
@@ -5026,15 +10978,39 @@
   },
   "Vollweiler, Charles": {
    "born": 1813,
-   "died": 1848
+   "died": 1848,
+   "alt": [
+    "karl",
+    "carl"
+   ]
   },
   "Vogel, Charles": {
    "born": 1808,
-   "died": 1892
+   "died": 1892,
+   "alt": [
+    "charles",
+    "louis",
+    "adolphe",
+    "vogel"
+   ]
   },
   "Walter, Johann": {
    "born": 1496,
-   "died": 1570
+   "died": 1570,
+   "alt": [
+    "hans",
+    "johannes",
+    "walterus",
+    "walther",
+    "aus",
+    "kahla",
+    "johann",
+    "blankenmuller",
+    "blanckenmuller",
+    "name",
+    "at",
+    "birth"
+   ]
   },
   "Volckmar, Tobias": {
    "born": 1678,
@@ -5046,7 +11022,12 @@
   },
   "Wagner, Josef Franz": {
    "born": 1856,
-   "died": 1908
+   "died": 1908,
+   "alt": [
+    "wagners",
+    "joseph",
+    "wagner"
+   ]
   },
   "Walker, William": {
    "born": 1809,
@@ -5054,11 +11035,29 @@
   },
   "Wannenmacher, Johannes": {
    "born": null,
-   "died": 1551
+   "died": 1551,
+   "alt": [
+    "johann",
+    "wannemacher",
+    "johannes",
+    "vannius"
+   ]
   },
   "Vurm, Vasily": {
    "born": 1826,
-   "died": 1904
+   "died": 1904,
+   "alt": [
+    "vasilij",
+    "vasil",
+    "evic",
+    "vurm",
+    "vasilii",
+    "evich",
+    "vasily",
+    "vasilyevich",
+    "wilhelm",
+    "wurm"
+   ]
   },
   "Volante, Ilio": {
    "born": 1964,
@@ -5066,27 +11065,59 @@
   },
   "Weichlein, Romanus": {
    "born": 1652,
-   "died": 1706
+   "died": 1706,
+   "alt": [
+    "andreas",
+    "franz",
+    "weichlein"
+   ]
   },
   "Weigl, Joseph": {
    "born": 1766,
-   "died": 1846
+   "died": 1846,
+   "alt": [
+    "josef",
+    "weigel",
+    "weygl"
+   ]
   },
   "Weber, Kristof J.": {
    "born": 1959,
-   "died": null
+   "died": null,
+   "alt": [
+    "weber",
+    "kristof",
+    "janos"
+   ]
   },
   "Von Bayreuth, Wilhelmine": {
    "born": 1709,
-   "died": 1758
+   "died": 1758,
+   "alt": [
+    "princess",
+    "wilhelmine",
+    "of",
+    "prussia"
+   ]
   },
   "Weingarten, G.": {
    "born": null,
-   "died": 1897
+   "died": 1897,
+   "alt": [
+    "gustav",
+    "weingarten",
+    "gustave",
+    "gustavus",
+    "weingarden"
+   ]
   },
   "Wagner, Karl Jacob": {
    "born": 1772,
-   "died": 1822
+   "died": 1822,
+   "alt": [
+    "carl",
+    "charles"
+   ]
   },
   "Weber, Bernhard Anselm": {
    "born": 1764,
@@ -5102,7 +11133,12 @@
   },
   "Weatherly, Frederic Edward": {
    "born": 1848,
-   "died": 1929
+   "died": 1929,
+   "alt": [
+    "frederick",
+    "edward",
+    "weatherly"
+   ]
   },
   "Wecker, Georg Caspar": {
    "born": 1632,
@@ -5126,7 +11162,10 @@
   },
   "Weidt, Albert John": {
    "born": 1866,
-   "died": 1945
+   "died": 1945,
+   "alt": [
+    "weidt"
+   ]
   },
   "Wallace, Dorian": {
    "born": 1985,
@@ -5140,17 +11179,98 @@
    "born": 1995,
    "died": null
   },
+  "Witt, Christian Friedrich": {
+   "born": null,
+   "died": 1717,
+   "alt": [
+    "christian",
+    "friedrich",
+    "witte"
+   ]
+  },
   "Wranitzky, Anton": {
    "born": 1761,
-   "died": 1820
+   "died": 1820,
+   "alt": [
+    "antonin",
+    "vranicky",
+    "antoine",
+    "wranizky"
+   ]
+  },
+  "Willaert, Adrian": {
+   "born": null,
+   "died": 1562,
+   "alt": [
+    "adriano",
+    "willaert",
+    "adrianus",
+    "willart",
+    "adrian",
+    "vuigliart"
+   ]
   },
   "Zamecnik, John Stepan": {
    "born": 1872,
-   "died": 1953
+   "died": 1953,
+   "alt": [
+    "lionel",
+    "baxter",
+    "leon",
+    "berger",
+    "arturo",
+    "de",
+    "castro",
+    "robert",
+    "creighton",
+    "decastro",
+    "paul",
+    "dupont",
+    "jane",
+    "hathaway",
+    "kathryn",
+    "hawthorne",
+    "roberta",
+    "hudson",
+    "ted",
+    "josh",
+    "ioane",
+    "kawelo",
+    "dorothy",
+    "lee",
+    "edgar",
+    "lowell",
+    "frederick",
+    "van",
+    "norman",
+    "jules",
+    "raynard",
+    "reynard",
+    "gene",
+    "scott",
+    "hal",
+    "vinton",
+    "grant",
+    "wellesley"
+   ]
+  },
+  "Zachow, Friedrich Wilhelm": {
+   "born": 1663,
+   "died": 1712,
+   "alt": [
+    "friedrich",
+    "wilhelm",
+    "zachau"
+   ]
   },
   "Winding, August": {
    "born": 1835,
-   "died": 1899
+   "died": 1899,
+   "alt": [
+    "august",
+    "henrik",
+    "winding"
+   ]
   },
   "Wood, Charles": {
    "born": 1866,
@@ -5162,7 +11282,16 @@
   },
   "Wolfrum, Philipp": {
    "born": 1854,
-   "died": 1919
+   "died": 1919,
+   "alt": [
+    "philipp",
+    "julius",
+    "wolfrum"
+   ]
+  },
+  "Wesley, Samuel Sebastian": {
+   "born": 1810,
+   "died": 1876
   },
   "Xu, Xavier Shuang": {
    "born": 1988,
@@ -5174,19 +11303,51 @@
   },
   "Wickenhausser, Richard": {
    "born": 1867,
-   "died": 1936
+   "died": 1936,
+   "alt": [
+    "wickenhauser",
+    "richard",
+    "ernst",
+    "wickenhau",
+    "er"
+   ]
   },
   "Weyse, Christoph Ernst Friedrich": {
    "born": 1774,
-   "died": 1842
+   "died": 1842,
+   "alt": [
+    "weisse"
+   ]
   },
   "Winner, Septimus": {
    "born": 1827,
-   "died": 1902
+   "died": 1902,
+   "alt": [
+    "alice",
+    "hawthorne",
+    "percy",
+    "guyer",
+    "mark",
+    "mason",
+    "apsley",
+    "street",
+    "paul",
+    "stenton",
+    "warren",
+    "lanner",
+    "leon",
+    "dore"
+   ]
   },
   "Wöss, Josef Venantius": {
    "born": 1863,
-   "died": 1943
+   "died": 1943,
+   "alt": [
+    "josef",
+    "venantius",
+    "von",
+    "woss"
+   ]
   },
   "WesenAuer, Peter": {
    "born": 1966,
@@ -5198,11 +11359,25 @@
   },
   "Yachshenko, Taras": {
    "born": 1964,
-   "died": 2017
+   "died": 2017,
+   "alt": [
+    "taras",
+    "shchenko",
+    "yashchenko",
+    "jashchenko",
+    "abazopulo",
+    "yachshenko"
+   ]
   },
   "Zani, Andrea": {
    "born": 1696,
-   "died": 1757
+   "died": 1757,
+   "alt": [
+    "andrea",
+    "teodoro",
+    "zani",
+    "zanni"
+   ]
   },
   "Wolfrum, Karl": {
    "born": 1856,
@@ -5218,7 +11393,11 @@
   },
   "Young, William": {
    "born": null,
-   "died": 1662
+   "died": 1662,
+   "alt": [
+    "william",
+    "joungh"
+   ]
   },
   "Yaskawa, Toru": {
    "born": 1960,
@@ -5226,7 +11405,15 @@
   },
   "Xuárez, Alonso": {
    "born": 1640,
-   "died": 1696
+   "died": 1696,
+   "alt": [
+    "suarez",
+    "juarez",
+    "juares",
+    "alonso",
+    "de",
+    "xuarez"
+   ]
   },
   "Zane, Francesco": {
    "born": 1973,
@@ -5234,7 +11421,10 @@
   },
   "Wolff, Christian Michael": {
    "born": 1707,
-   "died": 1789
+   "died": 1789,
+   "alt": [
+    "wolf"
+   ]
   },
   "Witthauer, Johann Georg": {
    "born": 1750,
@@ -5242,7 +11432,13 @@
   },
   "Willan, Healey": {
    "born": 1880,
-   "died": 1968
+   "died": 1968,
+   "alt": [
+    "healy",
+    "willan",
+    "james",
+    "healey"
+   ]
   },
   "Wittig, Ludwig": {
    "born": null,
@@ -5254,7 +11450,12 @@
   },
   "Zanata, Domenico": {
    "born": null,
-   "died": 1748
+   "died": 1748,
+   "alt": [
+    "domenico",
+    "zanatta",
+    "zannatta"
+   ]
   },
   "Wendling, Pete": {
    "born": 1888,
@@ -5262,7 +11463,11 @@
   },
   "Zacconi, Lodovico": {
    "born": 1555,
-   "died": 1627
+   "died": 1627,
+   "alt": [
+    "ludovico",
+    "zacconi"
+   ]
   },
   "Williams, Ernest S.": {
    "born": 1881,
@@ -5270,7 +11475,13 @@
   },
   "Wiggert, Paul": {
    "born": 1878,
-   "died": 1919
+   "died": 1919,
+   "alt": [
+    "bruno",
+    "paul",
+    "robert",
+    "wiggert"
+   ]
   },
   "Whiddon, W. H.": {
    "born": null,
@@ -5278,15 +11489,46 @@
   },
   "Wilmet, André": {
    "born": 1891,
-   "died": 1969
+   "died": 1969,
+   "alt": [
+    "andre",
+    "wilmet"
+   ]
   },
   "Whipple, William": {
    "born": null,
-   "died": 1850
+   "died": 1850,
+   "alt": [
+    "william",
+    "whipple"
+   ]
+  },
+  "Zipoli, Domenico": {
+   "born": 1688,
+   "died": 1726,
+   "alt": [
+    "domingo",
+    "zipoli",
+    "domenique"
+   ]
   },
   "Zelenka, Jan Dismas": {
    "born": 1679,
-   "died": 1745
+   "died": 1745,
+   "alt": [
+    "jan",
+    "lukas",
+    "ignatius",
+    "dismas",
+    "zelenka",
+    "johann",
+    "giovanni",
+    "disma"
+   ]
+  },
+  "Zintl, Frank": {
+   "born": 1957,
+   "died": null
   },
   "Zikoff, Friedrich": {
    "born": 1824,
@@ -5314,7 +11556,25 @@
   },
   "Zhang, Shuwen": {
    "born": 1991,
-   "died": null
+   "died": null,
+   "alt": [
+    "schuwenn",
+    "zhang",
+    "chi",
+    "zho",
+    "ar",
+    "heb",
+    "tha",
+    "ko",
+    "kor",
+    "jp",
+    "hi",
+    "hin",
+    "ben",
+    "pun",
+    "rus",
+    "gr"
+   ]
   },
   "Čechtický, Bohuslav": {
    "born": null,
@@ -5322,15 +11582,30 @@
   },
   "Zoilo, Annibale": {
    "born": null,
-   "died": 1592
+   "died": 1592,
+   "alt": [
+    "annibal"
+   ]
   },
   "Ziani, Marc'Antonio": {
    "born": null,
-   "died": 1715
+   "died": 1715,
+   "alt": [
+    "marc",
+    "antonio",
+    "ziani"
+   ]
   },
   "Zinnen, Jean-Antoine": {
    "born": 1827,
-   "died": 1898
+   "died": 1898,
+   "alt": [
+    "jean",
+    "antoine",
+    "zinnen",
+    "johann",
+    "anton"
+   ]
   },
   "Zimmermann, Bernd Alois": {
    "born": 1918,
