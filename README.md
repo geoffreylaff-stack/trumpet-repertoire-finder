@@ -14,6 +14,7 @@ Nothing is installed. The end user opens a URL in Chrome or Edge and searches.
 | **Works needing a cornet** | 655 |
 | **Works needing a flugelhorn** | 792 |
 | **Sources** | 137 hand-checked · 156 from composerjim.com · 741 from Wikipedia · 10,557 from IMSLP |
+| **Composer dates** | 1,385 of 2,008 · 253 living |
 | **Family members covered** | trumpet · cornet · flugelhorn · piccolo trumpet |
 
 ---
@@ -318,6 +319,57 @@ already indexed those changes altered exactly one scoring — *Eventide*, which 
 "2 trumpets **or** 2 flugelhorns" and now records the instrument named first
 rather than whichever pattern happened to be tried first.
 
+### Who is still alive
+
+A name on its own answers less than it looks like it does. Whether a composer
+is someone you could commission from or someone three centuries dead is usually
+the first thing worth knowing, and the index knew it for 52 of its 2,008
+composers — all of them typed in by hand.
+
+IMSLP keeps a structured person record on each composer's category page, and
+`tools/harvest-composers.mjs` reads it in forty API calls:
+
+```
+{{#fte:person
+|Born Year=1948|Born Month=|Born Day=
+|Died Year=|Died Month=|Died Day=
+```
+
+That is a better source than a general one for these particular people. Most of
+this index came from IMSLP, so its own page titles identify each composer
+exactly and there is no name matching to get wrong — and its long tail of
+obscure arrangers exists nowhere else in a form a lookup could find.
+
+**The empty death year is the whole problem.** It can mean the composer is
+alive, or only that nobody recorded the death, and the difference decides
+whether the entry reads "(b. 1948)". The data settles it: of the composers with
+a birth year and no death year, twenty-five were born before 1900 and every
+other one in 1920 or later, with **nobody at all in between**. A gap that wide
+means the boundary needs no judgement.
+
+So a birth from 1900 onwards with no death recorded is treated as living, and
+anything earlier as a death nobody wrote down — shown as `1556–?` rather than
+`b. 1556`, because next to a list where `(b. 1969)` means a composer you could
+write to, a bare birth year would claim a 470-year-old is still working.
+
+| | |
+|---|---|
+| `1841–1904` | both years known — 943 composers |
+| `b. 1948` | living — 253 |
+| `d. 1904` | birth unrecorded — 164 |
+| `1556–?` | death unrecorded — 25 |
+| *(nothing)* | neither known — 623 |
+
+The 623 without dates are Renaissance and Baroque figures whose IMSLP pages
+predate the structured record, plus *Anonymous* and the folk-song collections.
+None of them is a missed living composer: not one has a work in this index
+dated after 1950.
+
+Twenty-nine composers have no IMSLP page at all — Walton, Villa-Lobos, Glass
+and other names that reached the index through Wikipedia. Their dates are typed
+into the curated file, where a hand-checked date outranks the harvest as
+everywhere else.
+
 ### The curated layer
 
 `data/curated.json` supplies what IMSLP cannot: hand-checked works concentrated
@@ -374,12 +426,14 @@ lib/instrumentation.mjs        the parser — runs in Node and the browser alike
 tools/harvest-imslp.mjs        build-time IMSLP harvester
 tools/harvest-wikipedia.mjs    build-time Wikipedia harvester
 tools/harvest-composerjim.mjs  build-time harvester for one living composer
+tools/harvest-composers.mjs    build-time harvester for composer dates
 tools/build.mjs                merge + single-file bundle
 tools/test-instrumentation.mjs regression tests (npm test)
 data/curated.json              hand-checked works  (edit this)
 data/wikipedia.json            harvest output      (generated)
 data/imslp.json                harvest output      (generated)
 data/composerjim.json          harvest output      (generated)
+data/composer-dates.json       harvest output      (generated)
 data/works.json                merged index the app loads (generated)
 dist/trumpet-finder.html       standalone offline build (generated)
 ```
@@ -397,6 +451,7 @@ npm run harvest              # all three harvested sources
 npm run harvest:imslp
 npm run harvest:wikipedia
 npm run harvest:composerjim
+npm run harvest:composers
 npm run build
 npm test
 ```
