@@ -197,6 +197,7 @@ function rangesToCounts(s) {
 }
 
 const ABBREVIATIONS = [
+  [/(?<=[,\s])(\d+)\s*p(?=[,\s]|$)/g, '$1 percussion'],
   [/\bt\s*\+\s*(\d+)/gi, 'timpani, $1 percussion'],
   [/(?<=[,(]\s)t(?=\s*[,)]|$)/gi, 'timpani'],
   [/\btimp\b\.?/gi, 'timpani'], [/\bperc\b\.?/gi, 'percussion'],
@@ -210,6 +211,47 @@ const ABBREVIATIONS = [
   [/\bsus\b\.\s*cymb\b\.?/gi, 'suspended cymbal'], [/\btrgl\b\.?/gi, 'triangle'],
   [/\bd\.s\.\b/gi, ''],
 ];
+
+/**
+ * Several pages publish the same piece in two or three scorings — a full
+ * orchestra and a chamber reduction, or a numbered list of options — and
+ * running them together produces one entry that names three trombones twice
+ * and reads as nonsense. The display keeps the first scoring and says the
+ * others exist.
+ *
+ * Counting still sees the whole entry, so a work whose trumpets are only
+ * spelled out in the second version stays in the index rather than dropping
+ * out of it.
+ *
+ * The marker must follow a separator: "full orchestra" opening an entry is its
+ * scoring, while the same words after a comma begin the alternative.
+ */
+const OTHER_VERSION = new RegExp(
+  '[,;.]\\s*(?:'
+  + '[2-9]\\s*\\)'
+  + '|(?:reduced\\s+)?(?:\\d+\\s+)?(?:chamber|string|brass|wind|full|concert)\\s+'
+  + '(?:orchestra|ensemble|band|quintet)\\s+instrumentation'
+  + '|\\d+\\s+player\\s+version'
+  + '|full\\s+orchestra\\b'
+  + '|original\\s+(?:piece|version)\\b'
+  + '|also\\s+(?:available|published)\\b'
+  + ')', 'i');
+
+/** "2 options," and "3 options, 1)" are scaffolding, not instruments. */
+const VERSION_PREAMBLE = /^\s*\d+\s+options?\s*[,:]?\s*(?:1\s*\)\s*)?/i;
+
+function keepFirstVersion(s) {
+  const stripped = s.replace(VERSION_PREAMBLE, '').replace(/^[,\s]+/, '');
+  // A marker at the very start is this entry's own heading — "Full orchestra,
+  // 2 flutes, …" — not the beginning of an alternative. Step past it and look
+  // for the next one, rather than abandoning the cut as an earlier version did.
+  const scan = new RegExp(OTHER_VERSION.source, 'gi');
+  for (let m = scan.exec(stripped); m; m = scan.exec(stripped)) {
+    const first = stripped.slice(0, m.index).replace(/[,\s.]+$/, '');
+    if (first) return `${first} (also published in other scorings)`;
+  }
+  return stripped;
+}
 
 /**
  * The whole tidy-up. The order matters, and each step depends on the one before:
@@ -228,12 +270,13 @@ const ABBREVIATIONS = [
  * brass-ensemble scoring with a generic orchestra.
  */
 function readableScoring(raw) {
-  let s = expandDigitGroups(raw)
+  let s = expandDigitGroups(keepFirstVersion(raw))
     .replace(/\s*[–—]\s*/g, ', ')   // this catalogue separates with dashes too
     .replace(/\s*;\s*/g, ', ')
     // Keys are outside this index's scope everywhere else, so they go here too.
     .replace(/\b(?:in\s+)?[A-Ga-g](?:[-\s]?(?:flat|sharp)\b|[b♭#♯])(?![a-z])\s*/g, '')
     .replace(/\b[A-G]\s+(?=(?:piccolo\s+)?(?:trumpet|cornet|flugel|clarinet|horn))/g, '');
+  s = s.replace(/\([^)]{24,}\)/g, (aside) => (/\b(?:please|indicate|would|could|should|covered by|prefer)\b/i.test(aside) ? '' : aside));
   s = rangesToCounts(s);
   for (const [re, word] of ABBREVIATIONS) s = s.replace(re, word);
   s = s
@@ -310,6 +353,8 @@ const PROSE_STARTS = new RegExp(
   + '|about\\s+(?:the|this)\\s+\\w+'
   + '|(?:co-)?commissioned\\b|premiered\\b|dedicated\\b|written\\s+for\\b|composed\\s+for\\b'
   + '|(?:includes|contains|uses)?\\s*the\\s+following\\b'
+  + '|\\*?notes?\\s+for\\b'
+  + '|\\(?\\s*note\\s*:'
   + '|view\\s+(?:orchestral\\s+)?score\\b'
   + '|duration\\s*:'
   + '|(?:this|the)\\s+(?:piece|work|fanfare|concerto|movement|suite|symphony)\\b'
@@ -318,8 +363,27 @@ const PROSE_STARTS = new RegExp(
   + ')', 'i');
 
 function cutAtProse(s) {
-  const m = PROSE_STARTS.exec(s);
-  return m ? s.slice(0, m.index).trim() : s;
+  // Search a copy with the parentheticals masked out. A band list carries
+  // asides like "(note: 2 players per part is recommended)" in the middle of
+  // its woodwinds, and cutting there threw away the entire brass section
+  // beneath.
+  const masked = s.replace(/\([^)]*\)/g, (a) => ' '.repeat(a.length));
+  const m = PROSE_STARTS.exec(masked);
+  if (!m) return s;
+  const cut = s.slice(0, m.index).trim();
+
+  // A tidier entry is never worth a lost work. Every marker here is a guess
+  // about where prose begins, and a wrong guess in the middle of a long band
+  // list takes the brass with it — which is how tightening the display text
+  // quietly dropped works out of the index twice.
+  //
+  // The test is whether the text still *parses* to a section, not merely
+  // whether it still mentions one: an entry can name a trumpet in prose the
+  // parser cannot count, and on one work the untidy version mentioned the
+  // family while yielding nothing, so preferring it lost the work anyway.
+  if (parseInstrumentation(cut).total > 0) return cut;
+  if (parseInstrumentation(s).total > 0) return s;
+  return cut;
 }
 
 /**

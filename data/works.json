@@ -15951,8 +15951,12 @@
    "id": "stephenson-james-m",
    "name": "James M. Stephenson",
    "sort": "Stephenson, James M.",
-   "dates": null,
-   "aliases": [],
+   "dates": "b. 1969",
+   "aliases": [
+    "stephenson",
+    "jim stephenson",
+    "james stephenson"
+   ],
    "n": 153,
    "nArr": 3
   },
@@ -20712,6 +20716,24 @@
   },
   {
    "c": "stephenson-james-m",
+   "t": "Fanfare – Light From Shadows",
+   "cat": null,
+   "y": null,
+   "g": "Chamber",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 trumpets, horn, trombone, tuba, optional percussion",
+   "note": "For brass quintet, with optional percussion. The composer also offers a version for two brass quintets, which doubles the section to four trumpets. Hand-entered because the catalogue states the scoring inside an unclosed aside that no reading of the text parses correctly.",
+   "arr": false,
+   "est": false
+  },
+  {
+   "c": "stephenson-james-m",
    "t": "“The Charleston” from Wooden Dimes Suite",
    "cat": null,
    "y": 2022,
@@ -20759,7 +20781,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes, 3 oboes, 3 clarinets, 2 bassoons, 4 horns, 4 trumpets, 3 trombones, tuba, timpani, 3 percussion (d.s.) celesta (optional), harp, piano, guitar, El. Bass, strings solo vocals (Available in C, or E, please indicate which key you would like), Note: Piano / celesta could be covered by one player. Guitar and El. Bass are optional",
+   "full": "3 flutes, 3 oboes, 3 clarinets, 2 bassoons, 4 horns, 4 trumpets, 3 trombones, tuba, timpani, 3 percussion (d.s.) celesta (optional), harp, piano, guitar, El. Bass, strings solo vocals",
    "note": null,
    "arr": false,
    "est": false
@@ -20831,7 +20853,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 clarinets, bass clarinet, 2 alto saxophones, 1 tenor saxophone, 1 baritone saxophone, 2 trumpets, 2 french horns, 2 trombones, 1 bass trombone, euphonium, tuba, timpani + 6 percussion (see specifics below), piano, offstage ensemble (preferred): piccolo, 2 oboes (optional), 3 clarinets, bassoon, 2 alto saxophones, triangle, upright piano, percussion needed:, Mallets (2 players): marimba, orch. bells, chimes, xylophone, crotales, + snare drum, (Vibes in percussion 2), percussion 1: sand blocks, triangle, snare drum (not shared w/ mallets), percussion 2: tamtam (bowed and rolled), small block of wood, played with quarters, cymb. a2, vibes",
+   "full": "piccolo, 2 flutes, 2 oboes, 2 bassoons, 3 clarinets, bass clarinet, 2 alto saxophones, 1 tenor saxophone, 1 baritone saxophone, 2 trumpets, 2 french horns, 2 trombones, 1 bass trombone, euphonium, tuba, timpani + 6 percussion (see specifics below), piano, offstage ensemble (preferred): piccolo, 2 oboes (optional), 3 clarinets, bassoon, 2 alto saxophones, triangle, upright piano, percussion needed:, Mallets (2 players): marimba, orch. bells, chimes, xylophone, crotales, + snare drum, (Vibes in percussion (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -21157,7 +21179,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "full orchestra, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 3 horns, 2 trumpets, 2 trombones, tuba, timpani, 2 percussion, harp, strings, narrator, 15 player version, flute, oboe, clarinet, bassoon, horn, trumpet, trombone, tuba, percussion, harp, string quintet, narrator",
+   "full": "full orchestra, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 3 horns, 2 trumpets, 2 trombones, tuba, timpani, 2 percussion, harp, strings, narrator (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -21583,24 +21605,6 @@
   },
   {
    "c": "stephenson-james-m",
-   "t": "Fanfare – Light From Shadows",
-   "cat": null,
-   "y": 2017,
-   "g": "Chamber",
-   "s": "two trumpets",
-   "counts": {
-    "trumpet": 2
-   },
-   "req": [
-    "trumpet"
-   ],
-   "full": "brass Quintet, Optional percussion includes: Triangle, Tambourine, Cymbal a2, Suspended Cymbal, Snare Drum, Bass Drum (w/ cymbal attachment), Drum Set ), ( optional instrumentation calls for Two brass quintets, each with 2 trumpets, french horn, trombone and tuba",
-   "note": null,
-   "arr": false,
-   "est": false
-  },
-  {
-   "c": "stephenson-james-m",
    "t": "Fanfare for an Angel",
    "cat": null,
    "y": 2010,
@@ -21630,7 +21634,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "brass ensemble instrumentation (available or F) : 4 trumpets, 2 french horns, 2 trombones, bass trombone, and tuba (optional Horn 3 provided for trumpets 4), timpani, percussion (3 players) Cymb a2., Suspended Cymb., Snare Drum, Bass Drum, and Tam Tam, Orchestra version instrumentation : 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, percussion, harp, strings, Concert Band instrumentation: piccolo, 2 flutes, 2 oboes, 2 bassoons, 2 clarinets, bass clarinet, 2 alto saxophones, tenor saxophones, bari saxophones, timpani, percussion (3 players)",
+   "full": "brass ensemble instrumentation (available or F) : 4 trumpets, 2 french horns, 2 trombones, bass trombone, and tuba (optional Horn 3 provided for trumpets 4), timpani, percussion (3 players) Cymb a2., Suspended Cymb., Snare Drum, Bass Drum, and Tam Tam, Orchestra version instrumentation : 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, percussion, harp, strings (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -21868,7 +21872,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, Flutes, Oboe 3 Clarinets, Bass Clarinet Bassoon 2 Alto saxophones, Tenor saxophones, Bari saxophones, 4 Trumpets, 2 Horns, 3 Trombones (2 Tenor, 1 Bass) Euphonium, Tuba, Timpani, Contrabass (optional), 2 Percussion (optional 3): suspended cymbal Cymb. a2 Glock., S.D., B.D. Chimes (Timpani)",
+   "full": "piccolo, Flutes, Oboe 3 Clarinets, Bass Clarinet Bassoon 2 Alto saxophones, Tenor saxophones, Bari saxophones, 4 Trumpets, 2 Horns, 3 Trombones (2 Tenor, 1 Bass) Euphonium, Tuba, Timpani, Contrabass (optional), 2 Percussion (optional (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -21940,7 +21944,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, oboe, bassoon, 3 B! clarinets, bass clarinet saxophones: soprano, 2 altos, tenor, baritone, 3 trumpets, 4 French horns, 3 trombones, euphonium, tuba timpani + minimum 6 percussion (up to 8), percussion instrumentation:, 1) glockenspiel (+ vibes, if available), 2) chimes, 3) marimba (+ xylo, if available), 4) cymbals: crash cym. + suspended cymbal, 5) one player needed: triangle, wind chimes, snare drum 6) bass drum",
+   "full": "2 flutes, oboe, bassoon, 3 B! clarinets, bass clarinet saxophones: soprano, 2 altos, tenor, baritone, 3 trumpets, 4 French horns, 3 trombones, euphonium, tuba timpani + minimum 6 percussion (up to 8), percussion instrumentation:, 1) glockenspiel (+ vibes, if available) (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -22012,7 +22016,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 options, 1) Solo brass quintet and chamber orchestra (strings, harp, and percussion), 2) Orchestra only, flute, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 2 trombones, tuba, 0+3, harp, strings, 3) Brass quintet only",
+   "full": "solo brass quintet and chamber orchestra (strings, harp, and percussion) (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -22210,7 +22214,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, 3 percussion, harp, strings, narrator, Chamber orchestra instrumentation: 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, trombone, timpani, 1 percussion, harp, strings, narrator, Reduced chamber orchestra instrumentation: flute, oboe, clarinet, bassoon, 2 horns, trumpet, trombone, tuba, timpani, 1 percussion, harp, strings, narrator, 3 String orchestra instrumentation: Violins, Viola, Cello, Bass, optional narrator",
+   "full": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, 3 percussion, harp, strings, narrator (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -22464,7 +22468,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 options, Chamber ensemble, flute, oboe, clarinet, bassoon, horn, trumpet, trombone, tuba, harp, 1p, strings (*1 per part), narrator, Full orchestra, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 3 horns, 2 trumpets, 2 trombones, tuba, timpani, 2 percussion, harp, strings, narrator, *Notes For Chamber Ensemble Version: Trombone/tuba can be interchangeable, but it is preferred to have both. Strings can be augmented for more of a chamber orchestra approach if desired, but one per part works fine",
+   "full": "chamber ensemble, flute, oboe, clarinet, bassoon, horn, trumpet, trombone, tuba, harp, 1 percussion, strings (*1 per part), narrator (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -22666,7 +22670,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "solo trumpet, piccolo, 2 flutes, 2 oboes, 2 bassoons, clarinet, 2 clarinets, bass clarinet, saxophones: soprano, alto, tenor, baritone (1 each), 2 cornets, 2 trumpets, 3 french horns, 2 trombones, bass trombone, euphonium, tuba, piano, timpani, double bass, percussion (4 players), Chamber orchestra instrumentation: solo trumpet, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 2 trombones, timpani + 2 percussion, strings, Original piece",
+   "full": "solo trumpet, piccolo, 2 flutes, 2 oboes, 2 bassoons, clarinet, 2 clarinets, bass clarinet, saxophones: soprano, alto, tenor, baritone (1 each), 2 cornets, 2 trumpets, 3 french horns, 2 trombones, bass trombone, euphonium, tuba, piano, timpani, double bass, percussion (4 players) (also published in other scorings)",
    "note": null,
    "arr": false,
    "est": false
@@ -22990,7 +22994,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "clarinet, bassoon, trumpet, trombone, 1p, piano, vln, contrabass, (“L’histoire ensemble” + piano), percussion instruments needed: snare drum, tambourine, kick drum, 2 wood blocks (hi/low), triangle, glock (E), bass drum, suspended cymbal timpani (2 drums)",
+   "full": "clarinet, bassoon, trumpet, trombone, 1 percussion, piano, vln, contrabass, (“L’histoire ensemble” + piano), percussion instruments needed: snare drum, tambourine, kick drum, 2 wood blocks (hi/low), triangle, glock (E), bass drum, suspended cymbal timpani (2 drums)",
    "note": null,
    "arr": false,
    "est": false
@@ -23359,7 +23363,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 clarinets, bass clarinet, contrabass clarinet, 2 bassoons saxophones: 1 soprano, 2 altos, 1 tenor, 2 trumpets, 2 french horns, 2 tenor trombones, euphonium, tuba, harp, contrabass, 5 percussion, percussion 1: vibes, xylophone, glockenspiel, tambourine, bowed crotales, percussion 2: marimba, finger cymbals, percussion 3: sand blocks, tambourine, cabasa, cajon, percussion 4: wood block, suspended cymbal (sticks, coin, mallets), china cymbal percussion 5: bass drum, triangle, tam-tam, ** optional male vocalist, ** PERFORMANCE NOTE: The vocal part written into the solo guitar part from rehearsal P to U in the third movement should be sung by an amplified male vocalist",
+   "full": "piccolo, 2 flutes, 2 clarinets, bass clarinet, contrabass clarinet, 2 bassoons saxophones: 1 soprano, 2 altos, 1 tenor, 2 trumpets, 2 french horns, 2 tenor trombones, euphonium, tuba, harp, contrabass, 5 percussion, percussion 1: vibes, xylophone, glockenspiel, tambourine, bowed crotales, percussion 2: marimba, finger cymbals, percussion 3: sand blocks, tambourine, cabasa, cajon, percussion 4: wood block, suspended cymbal (sticks, coin, mallets), china cymbal percussion 5: bass drum, triangle, tam-tam, ** optional male vocalist, ** PERFORMANCE",
    "note": null,
    "arr": false,
    "est": false
