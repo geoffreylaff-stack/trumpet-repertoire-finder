@@ -115,6 +115,15 @@ for (const w of curated.works ?? []) {
   }
   seen.add(workKey(w.c, w.title));
   for (const k of [catKey(w.c, w.cat), formKey(w.c, w.title)]) if (k) seen.add(k);
+  // A work split across two curated rows — one per version — no longer answers
+  // to the plain title a harvester files it under, so the harvested copy would
+  // survive alongside both. "also" lists the titles those rows stand in for.
+  // Petrushka is the first case; The Firebird's three versions are the next.
+  for (const alt of w.also ?? []) {
+    seen.add(workKey(w.c, alt));
+    const fk = formKey(w.c, alt);
+    if (fk) seen.add(fk);
+  }
   works.push({
     c: w.c,
     t: w.title,

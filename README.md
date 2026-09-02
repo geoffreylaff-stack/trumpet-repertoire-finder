@@ -9,11 +9,11 @@ Nothing is installed. The end user opens a URL in Chrome or Edge and searches.
 
 | | |
 |---|---|
-| **Works indexed** | 11,431 |
+| **Works indexed** | 11,432 |
 | **Composers** | 2,007 |
-| **Works needing a cornet** | 650 |
+| **Works needing a cornet** | 651 |
 | **Works needing a flugelhorn** | 784 |
-| **Sources** | 133 hand-checked · 741 from Wikipedia · 10,557 from IMSLP |
+| **Sources** | 134 hand-checked · 741 from Wikipedia · 10,557 from IMSLP |
 | **Family members covered** | trumpet · cornet · flugelhorn · piccolo trumpet |
 
 ---
@@ -376,9 +376,16 @@ Worth being straight about:
 - **Cornet parts are often played on trumpet.** The index records what the score
   asks for, not what an orchestra does on the night. Stravinsky writes *cornet à
   pistons* in *L'Histoire du soldat*; it is nearly always played on a trumpet.
-- **Editions differ.** Stravinsky's *Petrushka* has two cornets in 1911 and none
-  in 1947; the curated entries say which. Confirm against a published score
-  before hiring players.
+- **Editions differ, sometimes by a whole player.** Stravinsky's *Petrushka* is
+  four trumpet-family players in 1911 (two trumpets, the first doubling piccolo
+  trumpet, plus two cornets) and three in the 1947 revision (three trumpets, no
+  cornets). Where a revision changes the section, the versions are separate
+  rows rather than one row with a caveat — a work that answers *cornet* in one
+  version and not the other cannot be one entry without lying about one of
+  them. The curated row carries an `also` list naming the plain title those
+  rows stand in for, so a harvested copy filed under *Petrushka* does not
+  survive alongside the two. Confirm against a published score before hiring
+  players.
 
 Corrections belong in `data/curated.json` — they will survive the next harvest,
 which is exactly why that file is separate.
