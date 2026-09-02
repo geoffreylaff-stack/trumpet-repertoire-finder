@@ -1,235 +1,1687 @@
 {
-  "_comment": "Hand-curated exact trumpet-family scorings, concentrated on orchestral repertoire where IMSLP's Instrumentation field only says 'orchestra'. The 'trumpets' string is parsed by lib/instrumentation.mjs into structured counts, so it should be written naturally. Counts are players, not parts: a concerto counts the soloist and the orchestra's own section together. Transposition is never recorded — a trumpet in D and a trumpet in B-flat are both a trumpet. Cornet is kept separate from trumpet. Bass trumpet is out of scope and is mentioned only in 'full' or 'note'. 'full' summarises the surrounding brass for context. Entries here override harvested records for the same work.",
-
-  "composers": {
-    "bach-johann-sebastian": { "name": "Johann Sebastian Bach", "dates": "1685–1750", "aliases": ["bach", "js bach", "j.s. bach"] },
-    "handel-george-frideric": { "name": "George Frideric Handel", "dates": "1685–1759", "aliases": ["handel", "haendel", "händel"] },
-    "purcell-henry": { "name": "Henry Purcell", "dates": "1659–1695", "aliases": ["purcell"] },
-    "vivaldi-antonio": { "name": "Antonio Vivaldi", "dates": "1678–1741", "aliases": ["vivaldi"] },
-    "telemann-georg-philipp": { "name": "Georg Philipp Telemann", "dates": "1681–1767", "aliases": ["telemann"] },
-    "torelli-giuseppe": { "name": "Giuseppe Torelli", "dates": "1658–1709", "aliases": ["torelli"] },
-    "haydn-joseph": { "name": "Joseph Haydn", "dates": "1732–1809", "aliases": ["haydn", "franz joseph haydn"] },
-    "mozart-wolfgang-amadeus": { "name": "Wolfgang Amadeus Mozart", "dates": "1756–1791", "aliases": ["mozart", "wa mozart"] },
-    "mozart-leopold": { "name": "Leopold Mozart", "dates": "1719–1787", "aliases": ["leopold mozart"] },
-    "neruda-johann-baptist": { "name": "Johann Baptist Georg Neruda", "dates": "1708–1780", "aliases": ["neruda"] },
-    "beethoven-ludwig-van": { "name": "Ludwig van Beethoven", "dates": "1770–1827", "aliases": ["beethoven"] },
-    "hummel-johann-nepomuk": { "name": "Johann Nepomuk Hummel", "dates": "1778–1837", "aliases": ["hummel"] },
-    "schubert-franz": { "name": "Franz Schubert", "dates": "1797–1828", "aliases": ["schubert"] },
-    "berlioz-hector": { "name": "Hector Berlioz", "dates": "1803–1869", "aliases": ["berlioz"] },
-    "mendelssohn-felix": { "name": "Felix Mendelssohn", "dates": "1809–1847", "aliases": ["mendelssohn", "mendelssohn-bartholdy"] },
-    "schumann-robert": { "name": "Robert Schumann", "dates": "1810–1856", "aliases": ["schumann"] },
-    "wagner-richard": { "name": "Richard Wagner", "dates": "1813–1883", "aliases": ["wagner"] },
-    "verdi-giuseppe": { "name": "Giuseppe Verdi", "dates": "1813–1901", "aliases": ["verdi"] },
-    "franck-cesar": { "name": "César Franck", "dates": "1822–1890", "aliases": ["franck", "cesar franck"] },
-    "smetana-bedrich": { "name": "Bedřich Smetana", "dates": "1824–1884", "aliases": ["smetana"] },
-    "brahms-johannes": { "name": "Johannes Brahms", "dates": "1833–1897", "aliases": ["brahms"] },
-    "saint-saens-camille": { "name": "Camille Saint-Saëns", "dates": "1835–1921", "aliases": ["saint-saens", "saint saens"] },
-    "bruckner-anton": { "name": "Anton Bruckner", "dates": "1824–1896", "aliases": ["bruckner"] },
-    "tchaikovsky-pyotr-ilyich": { "name": "Pyotr Ilyich Tchaikovsky", "dates": "1840–1893", "aliases": ["tchaikovsky", "tschaikowsky", "chaikovsky"] },
-    "dvorak-antonin": { "name": "Antonín Dvořák", "dates": "1841–1904", "aliases": ["dvorak", "dvořák"] },
-    "rimsky-korsakov-nikolai": { "name": "Nikolai Rimsky-Korsakov", "dates": "1844–1908", "aliases": ["rimsky-korsakov", "rimsky korsakov"] },
-    "elgar-edward": { "name": "Edward Elgar", "dates": "1857–1934", "aliases": ["elgar"] },
-    "mahler-gustav": { "name": "Gustav Mahler", "dates": "1860–1911", "aliases": ["mahler"] },
-    "debussy-claude": { "name": "Claude Debussy", "dates": "1862–1918", "aliases": ["debussy"] },
-    "strauss-richard": { "name": "Richard Strauss", "dates": "1864–1949", "aliases": ["strauss", "r strauss", "richard strauss"] },
-    "sibelius-jean": { "name": "Jean Sibelius", "dates": "1865–1957", "aliases": ["sibelius"] },
-    "nielsen-carl": { "name": "Carl Nielsen", "dates": "1865–1931", "aliases": ["nielsen"] },
-    "janacek-leos": { "name": "Leoš Janáček", "dates": "1854–1928", "aliases": ["janacek", "janáček"] },
-    "vaughan-williams-ralph": { "name": "Ralph Vaughan Williams", "dates": "1872–1958", "aliases": ["vaughan williams", "vaughan-williams"] },
-    "rachmaninoff-sergei": { "name": "Sergei Rachmaninoff", "dates": "1873–1943", "aliases": ["rachmaninoff", "rachmaninov", "rakhmaninov"] },
-    "holst-gustav": { "name": "Gustav Holst", "dates": "1874–1934", "aliases": ["holst"] },
-    "ives-charles": { "name": "Charles Ives", "dates": "1874–1954", "aliases": ["ives"] },
-    "ravel-maurice": { "name": "Maurice Ravel", "dates": "1875–1937", "aliases": ["ravel"] },
-    "respighi-ottorino": { "name": "Ottorino Respighi", "dates": "1879–1936", "aliases": ["respighi"] },
-    "bartok-bela": { "name": "Béla Bartók", "dates": "1881–1945", "aliases": ["bartok", "bartók"] },
-    "stravinsky-igor": { "name": "Igor Stravinsky", "dates": "1882–1971", "aliases": ["stravinsky", "stravinskii"] },
-    "hindemith-paul": { "name": "Paul Hindemith", "dates": "1895–1963", "aliases": ["hindemith"] },
-    "enescu-george": { "name": "George Enescu", "dates": "1881–1955", "aliases": ["enescu", "enesco"] },
-    "honegger-arthur": { "name": "Arthur Honegger", "dates": "1892–1955", "aliases": ["honegger"] },
-    "poulenc-francis": { "name": "Francis Poulenc", "dates": "1899–1963", "aliases": ["poulenc"] },
-    "prokofiev-sergei": { "name": "Sergei Prokofiev", "dates": "1891–1953", "aliases": ["prokofiev", "prokofieff"] },
-    "shostakovich-dmitri": { "name": "Dmitri Shostakovich", "dates": "1906–1975", "aliases": ["shostakovich", "schostakowitsch"] },
-    "copland-aaron": { "name": "Aaron Copland", "dates": "1900–1990", "aliases": ["copland"] },
-    "kennan-kent": { "name": "Kent Kennan", "dates": "1913–2003", "aliases": ["kennan"] },
-    "arnold-malcolm": { "name": "Malcolm Arnold", "dates": "1921–2006", "aliases": ["arnold"] },
-    "sousa-john-philip": { "name": "John Philip Sousa", "dates": "1854–1932", "aliases": ["sousa"] }
+ "_comment": "Hand-curated exact trumpet-family scorings, concentrated on orchestral repertoire where IMSLP's Instrumentation field only says 'orchestra'. The 'trumpets' string is parsed by lib/instrumentation.mjs into structured counts, so it should be written naturally. Counts are players, not parts: a concerto counts the soloist and the orchestra's own section together. Transposition is never recorded — a trumpet in D and a trumpet in B-flat are both a trumpet. Cornet is kept separate from trumpet. Bass trumpet is out of scope and is mentioned only in 'full' or 'note'. 'full' summarises the surrounding brass for context. Entries here override harvested records for the same work.",
+ "composers": {
+  "bach-johann-sebastian": {
+   "name": "Johann Sebastian Bach",
+   "dates": "1685–1750",
+   "aliases": [
+    "bach",
+    "js bach",
+    "j.s. bach"
+   ]
   },
-
-  "works": [
-    { "c": "bach-johann-sebastian", "title": "Brandenburg Concerto No. 2 in F major", "cat": "BWV 1047", "year": 1721, "genre": "Concerto", "trumpets": "trumpet", "full": "trumpet, recorder, oboe, violin, strings, continuo", "note": "Written for the high clarino trumpet in F; almost always played today on a piccolo trumpet." },
-    { "c": "bach-johann-sebastian", "title": "Mass in B minor", "cat": "BWV 232", "year": 1749, "genre": "Sacred vocal", "trumpets": "3 trumpets", "full": "3 trumpets, timpani, corno da caccia, 2 flutes, 3 oboes, 2 bassoons, strings, continuo" },
-    { "c": "bach-johann-sebastian", "title": "Magnificat in D major", "cat": "BWV 243", "year": 1733, "genre": "Sacred vocal", "trumpets": "3 trumpets", "full": "3 trumpets, timpani, 2 flutes, 2 oboes, strings, continuo" },
-    { "c": "bach-johann-sebastian", "title": "Christmas Oratorio", "cat": "BWV 248", "year": 1734, "genre": "Sacred vocal", "trumpets": "3 trumpets", "full": "3 trumpets, timpani, 2 horns, flutes, oboes, strings, continuo" },
-    { "c": "bach-johann-sebastian", "title": "Orchestral Suite No. 3 in D major", "cat": "BWV 1068", "year": 1731, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, timpani, 2 oboes, strings, continuo" },
-    { "c": "bach-johann-sebastian", "title": "Orchestral Suite No. 4 in D major", "cat": "BWV 1069", "year": 1725, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, timpani, 3 oboes, bassoon, strings, continuo" },
-    { "c": "bach-johann-sebastian", "title": "Jauchzet Gott in allen Landen", "cat": "BWV 51", "year": 1730, "genre": "Sacred vocal", "trumpets": "trumpet", "full": "trumpet, soprano, strings, continuo", "note": "A famously exposed obbligato part for the soprano's partner." },
-    { "c": "bach-johann-sebastian", "title": "Herz und Mund und Tat und Leben", "cat": "BWV 147", "year": 1723, "genre": "Sacred vocal", "trumpets": "trumpet", "full": "trumpet, 2 oboes, oboe d'amore, strings, continuo" },
-
-    { "c": "handel-george-frideric", "title": "Messiah", "cat": "HWV 56", "year": 1741, "genre": "Sacred vocal", "trumpets": "2 trumpets", "full": "2 trumpets, timpani, 2 oboes, 2 bassoons, strings, continuo", "note": "\"The trumpet shall sound\" is scored for the first trumpet alone." },
-    { "c": "handel-george-frideric", "title": "Music for the Royal Fireworks", "cat": "HWV 351", "year": 1749, "genre": "Wind ensemble", "trumpets": "9 trumpets", "full": "9 trumpets, 9 horns, 24 oboes, 12 bassoons, 3 pairs of timpani, side drums", "note": "The open-air original, in three choirs of three trumpets. Concert performances usually reduce this to three." },
-    { "c": "handel-george-frideric", "title": "Water Music, Suite No. 2 in D major", "cat": "HWV 349", "year": 1717, "genre": "Orchestral", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, 2 oboes, bassoon, strings" },
-    { "c": "handel-george-frideric", "title": "Zadok the Priest", "cat": "HWV 258", "year": 1727, "genre": "Sacred vocal", "trumpets": "3 trumpets", "full": "3 trumpets, timpani, 2 oboes, 2 bassoons, strings, continuo" },
-
-    { "c": "purcell-henry", "title": "Sonata for Trumpet and Strings in D major", "cat": "Z. 850", "year": 1694, "genre": "Chamber", "trumpets": "trumpet", "full": "trumpet, strings, continuo" },
-    { "c": "purcell-henry", "title": "Come, Ye Sons of Art", "cat": "Z. 323", "year": 1694, "genre": "Vocal chamber", "trumpets": "2 trumpets", "full": "2 trumpets, timpani, 2 oboes, strings, continuo" },
-
-    { "c": "vivaldi-antonio", "title": "Concerto for Two Trumpets in C major", "cat": "RV 537", "year": 1720, "genre": "Concerto", "trumpets": "2 trumpets", "full": "2 trumpets, strings, continuo" },
-    { "c": "telemann-georg-philipp", "title": "Trumpet Concerto in D major", "cat": "TWV 51:D7", "year": 1720, "genre": "Concerto", "trumpets": "trumpet", "full": "trumpet, strings, continuo" },
-    { "c": "torelli-giuseppe", "title": "Sinfonia in D major for Trumpet and Strings", "cat": "G. 8", "year": 1690, "genre": "Concerto", "trumpets": "trumpet", "full": "trumpet, strings, continuo" },
-
-    { "c": "haydn-joseph", "title": "Trumpet Concerto in E-flat major", "cat": "Hob. VIIe:1", "year": 1796, "genre": "Concerto", "trumpets": "3 trumpets", "full": "solo trumpet, 2 flutes, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani, strings", "note": "Written for Anton Weidinger's keyed trumpet. The count is the solo part plus the two in the orchestra." },
-    { "c": "haydn-joseph", "title": "Symphony No. 94 in G major (Surprise)", "cat": "Hob. I:94", "year": 1791, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 bassoons, strings" },
-    { "c": "haydn-joseph", "title": "Symphony No. 100 in G major (Military)", "cat": "Hob. I:100", "year": 1794, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, percussion, 2 flutes, 2 oboes, 2 bassoons, strings" },
-    { "c": "haydn-joseph", "title": "Symphony No. 104 in D major (London)", "cat": "Hob. I:104", "year": 1795, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "haydn-joseph", "title": "The Creation", "cat": "Hob. XXI:2", "year": 1798, "genre": "Sacred vocal", "trumpets": "3 trumpets", "full": "3 trumpets, 3 trombones, 2 horns, timpani, flutes, oboes, clarinets, bassoons, contrabassoon, strings" },
-
-    { "c": "mozart-wolfgang-amadeus", "title": "Symphony No. 41 in C major (Jupiter)", "cat": "K. 551", "year": 1788, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, flute, 2 oboes, 2 bassoons, strings" },
-    { "c": "mozart-wolfgang-amadeus", "title": "Symphony No. 39 in E-flat major", "cat": "K. 543", "year": 1788, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, flute, 2 clarinets, 2 bassoons, strings" },
-    { "c": "mozart-wolfgang-amadeus", "title": "Symphony No. 35 in D major (Haffner)", "cat": "K. 385", "year": 1782, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "mozart-wolfgang-amadeus", "title": "Symphony No. 38 in D major (Prague)", "cat": "K. 504", "year": 1786, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 bassoons, strings" },
-    { "c": "mozart-wolfgang-amadeus", "title": "Requiem in D minor", "cat": "K. 626", "year": 1791, "genre": "Sacred vocal", "trumpets": "2 trumpets", "full": "2 trumpets, 3 trombones, 2 basset horns, 2 bassoons, timpani, strings, organ", "note": "The Tuba mirum opens with a solo tenor trombone, not a trumpet." },
-    { "c": "mozart-leopold", "title": "Trumpet Concerto in D major", "cat": null, "year": 1762, "genre": "Concerto", "trumpets": "trumpet", "full": "solo trumpet, 2 horns, strings" },
-    { "c": "neruda-johann-baptist", "title": "Trumpet Concerto in E-flat major", "cat": null, "year": 1760, "genre": "Concerto", "trumpets": "trumpet", "full": "solo trumpet, strings, continuo", "note": "Written for the corno da caccia; now a staple of the piccolo trumpet repertoire." },
-
-    { "c": "beethoven-ludwig-van", "title": "Symphony No. 3 in E-flat major (Eroica)", "cat": "Op. 55", "year": 1804, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 3 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "beethoven-ludwig-van", "title": "Symphony No. 5 in C minor", "cat": "Op. 67", "year": 1808, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, 3 trombones, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, strings" },
-    { "c": "beethoven-ludwig-van", "title": "Symphony No. 6 in F major (Pastoral)", "cat": "Op. 68", "year": 1808, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, 2 trombones, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "beethoven-ludwig-van", "title": "Symphony No. 7 in A major", "cat": "Op. 92", "year": 1812, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "beethoven-ludwig-van", "title": "Symphony No. 9 in D minor (Choral)", "cat": "Op. 125", "year": 1824, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, timpani, percussion, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, strings, chorus" },
-    { "c": "beethoven-ludwig-van", "title": "Leonore Overture No. 3", "cat": "Op. 72b", "year": 1806, "genre": "Overture", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings", "note": "One trumpet plays the offstage fanfare twice from behind the stage." },
-    { "c": "beethoven-ludwig-van", "title": "Egmont Overture", "cat": "Op. 84", "year": 1810, "genre": "Overture", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "hummel-johann-nepomuk", "title": "Trumpet Concerto in E major", "cat": "S. 49", "year": 1803, "genre": "Concerto", "trumpets": "3 trumpets", "full": "solo trumpet, 2 flutes, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani, strings", "note": "Also written for Weidinger's keyed trumpet, and usually played today in E-flat." },
-
-    { "c": "schubert-franz", "title": "Symphony No. 8 in B minor (Unfinished)", "cat": "D. 759", "year": 1822, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "schubert-franz", "title": "Symphony No. 9 in C major (Great)", "cat": "D. 944", "year": 1826, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-
-    { "c": "berlioz-hector", "title": "Symphonie fantastique", "cat": "Op. 14", "year": 1830, "genre": "Symphony", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, 2 tubas, timpani, percussion, 2 flutes, 2 oboes, english horn, 2 clarinets, 4 bassoons, 2 harps, strings", "note": "Berlioz writes for trumpets and cornets at once, and gives the cornets their own obbligato in the ball scene." },
-    { "c": "berlioz-hector", "title": "Le Carnaval romain", "cat": "Op. 9", "year": 1844, "genre": "Overture", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, ophicleide, timpani, percussion, woodwind, strings" },
-    { "c": "berlioz-hector", "title": "Harold en Italie", "cat": "Op. 16", "year": 1834, "genre": "Symphony", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, solo viola, strings" },
-
-    { "c": "mendelssohn-felix", "title": "Symphony No. 4 in A major (Italian)", "cat": "Op. 90", "year": 1833, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "mendelssohn-felix", "title": "Symphony No. 3 in A minor (Scottish)", "cat": "Op. 56", "year": 1842, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "mendelssohn-felix", "title": "A Midsummer Night's Dream: Overture", "cat": "Op. 21", "year": 1826, "genre": "Overture", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, ophicleide, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-
-    { "c": "schumann-robert", "title": "Symphony No. 1 in B-flat major (Spring)", "cat": "Op. 38", "year": 1841, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, timpani, triangle, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "schumann-robert", "title": "Symphony No. 3 in E-flat major (Rhenish)", "cat": "Op. 97", "year": 1850, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "schumann-robert", "title": "Symphony No. 4 in D minor", "cat": "Op. 120", "year": 1851, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-
-    { "c": "wagner-richard", "title": "Die Walküre: Ride of the Valkyries", "cat": "WWV 86B", "year": 1856, "genre": "Opera", "trumpets": "3 trumpets", "full": "3 trumpets, bass trumpet, 8 horns, 4 Wagner tubas, 4 trombones, contrabass trombone, tuba, timpani, woodwind, strings", "note": "The score also calls for a bass trumpet, which falls outside this index." },
-    { "c": "wagner-richard", "title": "Tannhäuser: Overture", "cat": "WWV 70", "year": 1845, "genre": "Overture", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "wagner-richard", "title": "Die Meistersinger von Nürnberg: Prelude", "cat": "WWV 96", "year": 1867, "genre": "Overture", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings" },
-    { "c": "wagner-richard", "title": "Tristan und Isolde: Prelude and Liebestod", "cat": "WWV 90", "year": 1859, "genre": "Opera", "trumpets": "3 trumpets", "full": "3 trumpets, bass trumpet, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings", "note": "The opera also uses a bass trumpet, which falls outside this index." },
-    { "c": "wagner-richard", "title": "Siegfried Idyll", "cat": "WWV 103", "year": 1870, "genre": "Orchestral", "trumpets": "trumpet", "full": "trumpet, 2 horns, flute, oboe, 2 clarinets, bassoon, strings", "note": "Written for a chamber group of thirteen players." },
-
-    { "c": "verdi-giuseppe", "title": "Messa da Requiem", "cat": null, "year": 1874, "genre": "Sacred vocal", "trumpets": "8 trumpets", "full": "4 trumpets, 4 offstage trumpets, 4 horns, 3 trombones, ophicleide, timpani, woodwind, strings, chorus", "note": "Eight trumpet players: four in the orchestra and four more answering from offstage in the Tuba mirum. Counted together because the offstage four are additional players, not the orchestral four relocated." },
-
-    { "c": "franck-cesar", "title": "Symphony in D minor", "cat": "FWV 48", "year": 1888, "genre": "Symphony", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings", "note": "A French score of its period: cornets carry much of what a German symphony would give the trumpets." },
-    { "c": "saint-saens-camille", "title": "Symphony No. 3 in C minor (Organ)", "cat": "Op. 78", "year": 1886, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, organ, piano four hands, woodwind, strings" },
-    { "c": "saint-saens-camille", "title": "Septet in E-flat major", "cat": "Op. 65", "year": 1880, "genre": "Chamber", "trumpets": "trumpet", "full": "trumpet, 2 violins, viola, cello, double bass, piano" },
-
-    { "c": "smetana-bedrich", "title": "Má vlast: Vltava", "cat": "JB 1:112/2", "year": 1874, "genre": "Tone poem", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings" },
-
-    { "c": "brahms-johannes", "title": "Symphony No. 1 in C minor", "cat": "Op. 68", "year": 1876, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, contrabassoon, timpani, woodwind, strings" },
-    { "c": "brahms-johannes", "title": "Symphony No. 2 in D major", "cat": "Op. 73", "year": 1877, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "brahms-johannes", "title": "Symphony No. 3 in F major", "cat": "Op. 90", "year": 1883, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, contrabassoon, timpani, woodwind, strings" },
-    { "c": "brahms-johannes", "title": "Symphony No. 4 in E minor", "cat": "Op. 98", "year": 1885, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, contrabassoon, timpani, triangle, woodwind, strings" },
-    { "c": "brahms-johannes", "title": "Academic Festival Overture", "cat": "Op. 80", "year": 1880, "genre": "Overture", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings" },
-
-    { "c": "bruckner-anton", "title": "Symphony No. 4 in E-flat major (Romantic)", "cat": "WAB 104", "year": 1874, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "bruckner-anton", "title": "Symphony No. 7 in E major", "cat": "WAB 107", "year": 1883, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 4 Wagner tubas, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "bruckner-anton", "title": "Symphony No. 8 in C minor", "cat": "WAB 108", "year": 1890, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 8 horns doubling Wagner tubas, 3 trombones, tuba, timpani, 3 harps, woodwind, strings" },
-    { "c": "bruckner-anton", "title": "Symphony No. 9 in D minor", "cat": "WAB 109", "year": 1896, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 8 horns doubling Wagner tubas, 3 trombones, tuba, timpani, woodwind, strings" },
-
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "Symphony No. 4 in F minor", "cat": "Op. 36", "year": 1878, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "Symphony No. 5 in E minor", "cat": "Op. 64", "year": 1888, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "Symphony No. 6 in B minor (Pathétique)", "cat": "Op. 74", "year": 1893, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "1812 Overture", "cat": "Op. 49", "year": 1880, "genre": "Overture", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, cannon, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "Capriccio Italien", "cat": "Op. 45", "year": 1880, "genre": "Orchestral", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings", "note": "Opens with a cavalry fanfare for the cornets." },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "Swan Lake", "cat": "Op. 20", "year": 1876, "genre": "Ballet", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "The Sleeping Beauty", "cat": "Op. 66", "year": 1889, "genre": "Ballet", "trumpets": "2 trumpets, 2 cornets", "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "The Nutcracker", "cat": "Op. 71", "year": 1892, "genre": "Ballet", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, celesta, 2 harps, woodwind, strings" },
-    { "c": "tchaikovsky-pyotr-ilyich", "title": "Romeo and Juliet, Fantasy Overture", "cat": "TH 42", "year": 1880, "genre": "Overture", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings" },
-
-    { "c": "dvorak-antonin", "title": "Symphony No. 9 in E minor (From the New World)", "cat": "Op. 95", "year": 1893, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, 2 flutes, 2 oboes, english horn, 2 clarinets, 2 bassoons, strings" },
-    { "c": "dvorak-antonin", "title": "Symphony No. 8 in G major", "cat": "Op. 88", "year": 1889, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings", "note": "The fourth movement opens with a trumpet fanfare in thirds." },
-    { "c": "dvorak-antonin", "title": "Symphony No. 7 in D minor", "cat": "Op. 70", "year": 1885, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, timpani, woodwind, strings" },
-    { "c": "dvorak-antonin", "title": "Carnival Overture", "cat": "Op. 92", "year": 1891, "genre": "Overture", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings" },
-    { "c": "dvorak-antonin", "title": "Cello Concerto in B minor", "cat": "Op. 104", "year": 1895, "genre": "Concerto", "trumpets": "2 trumpets", "full": "2 trumpets, 3 horns, 3 trombones, tuba, timpani, triangle, woodwind, strings" },
-
-    { "c": "rimsky-korsakov-nikolai", "title": "Scheherazade", "cat": "Op. 35", "year": 1888, "genre": "Tone poem", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings" },
-
-    { "c": "elgar-edward", "title": "Variations on an Original Theme (Enigma)", "cat": "Op. 36", "year": 1899, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, organ, woodwind, strings" },
-
-    { "c": "mahler-gustav", "title": "Symphony No. 5 in C-sharp minor", "cat": null, "year": 1902, "genre": "Symphony", "trumpets": "4 trumpets", "full": "4 trumpets, 6 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings", "note": "Opens with an unaccompanied solo trumpet fanfare." },
-
-    { "c": "debussy-claude", "title": "La Mer", "cat": "L. 109", "year": 1905, "genre": "Tone poem", "trumpets": "3 trumpets, 2 cornets", "full": "3 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings" },
-    { "c": "debussy-claude", "title": "Nocturnes", "cat": "L. 91", "year": 1899, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings, women's chorus" },
-
-    { "c": "strauss-richard", "title": "Also sprach Zarathustra", "cat": "Op. 30", "year": 1896, "genre": "Tone poem", "trumpets": "4 trumpets", "full": "4 trumpets, 6 horns, 3 trombones, 2 tubas, timpani, organ, 2 harps, woodwind, strings", "note": "The opening sunrise is announced by the trumpets in unison." },
-    { "c": "strauss-richard", "title": "Ein Heldenleben", "cat": "Op. 40", "year": 1898, "genre": "Tone poem", "trumpets": "5 trumpets", "full": "5 trumpets, 8 horns, 3 trombones, tenor tuba, tuba, timpani, percussion, 2 harps, woodwind, strings" },
-    { "c": "strauss-richard", "title": "Don Juan", "cat": "Op. 20", "year": 1888, "genre": "Tone poem", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings" },
-    { "c": "strauss-richard", "title": "Till Eulenspiegels lustige Streiche", "cat": "Op. 28", "year": 1895, "genre": "Tone poem", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings", "note": "The score adds three more trumpets and four more horns ad libitum." },
-
-    { "c": "sibelius-jean", "title": "Symphony No. 2 in D major", "cat": "Op. 43", "year": 1902, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings" },
-    { "c": "sibelius-jean", "title": "Symphony No. 5 in E-flat major", "cat": "Op. 82", "year": 1919, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, timpani, woodwind, strings" },
-    { "c": "nielsen-carl", "title": "Symphony No. 4 (The Inextinguishable)", "cat": "Op. 29", "year": 1916, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, 2 sets of timpani, woodwind, strings" },
-
-    { "c": "janacek-leos", "title": "Sinfonietta", "cat": "JW 6/18", "year": 1926, "genre": "Orchestral", "trumpets": "12 trumpets", "full": "12 trumpets, 2 bass trumpets, 2 tenor tubas, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings", "note": "A banda of nine trumpets and two bass trumpets plays the opening and closing fanfares alongside the orchestra's three. The bass trumpets fall outside this index." },
-
-    { "c": "vaughan-williams-ralph", "title": "Symphony No. 9 in E minor", "cat": null, "year": 1957, "genre": "Symphony", "trumpets": "3 trumpets, flugelhorn", "full": "3 trumpets, flugelhorn, 3 saxophones, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings", "note": "The flugelhorn has a substantial solo role and is not a trumpet doubling." },
-    { "c": "vaughan-williams-ralph", "title": "English Folk Song Suite", "cat": null, "year": 1923, "genre": "Wind ensemble", "trumpets": "2 cornets, 2 trumpets", "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion" },
-
-    { "c": "rachmaninoff-sergei", "title": "Piano Concerto No. 2 in C minor", "cat": "Op. 18", "year": 1901, "genre": "Concerto", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings" },
-    { "c": "rachmaninoff-sergei", "title": "Piano Concerto No. 3 in D minor", "cat": "Op. 30", "year": 1909, "genre": "Concerto", "trumpets": "2 trumpets", "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings" },
-    { "c": "rachmaninoff-sergei", "title": "Symphony No. 2 in E minor", "cat": "Op. 27", "year": 1907, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings" },
-    { "c": "rachmaninoff-sergei", "title": "Symphonic Dances", "cat": "Op. 45", "year": 1940, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, alto saxophone, woodwind, strings" },
-
-    { "c": "holst-gustav", "title": "The Planets", "cat": "Op. 32", "year": 1916, "genre": "Orchestral", "trumpets": "4 trumpets", "full": "4 trumpets, 6 horns, 3 trombones, tenor tuba, tuba, timpani, percussion, 2 harps, organ, woodwind, strings, women's chorus" },
-    { "c": "holst-gustav", "title": "First Suite in E-flat major for Military Band", "cat": "Op. 28 No. 1", "year": 1909, "genre": "Wind ensemble", "trumpets": "2 cornets, 2 trumpets", "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion", "note": "The cornets carry the melodic line and the trumpets the fanfares — the distinction is written into the scoring." },
-    { "c": "holst-gustav", "title": "Second Suite in F major for Military Band", "cat": "Op. 28 No. 2", "year": 1911, "genre": "Wind ensemble", "trumpets": "2 cornets, 2 trumpets", "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion" },
-
-    { "c": "ives-charles", "title": "The Unanswered Question", "cat": null, "year": 1908, "genre": "Chamber", "trumpets": "trumpet", "full": "trumpet, 4 flutes, strings", "note": "The trumpet poses the question seven times against a static string background." },
-
-    { "c": "ravel-maurice", "title": "Boléro", "cat": "M. 81", "year": 1928, "genre": "Orchestral", "trumpets": "4 trumpets", "full": "4 trumpets, 4 horns, 3 trombones, tuba, saxophones, celesta, harp, timpani, percussion, woodwind, strings", "note": "One part is written for the trumpet in D; keys are not distinguished here." },
-    { "c": "ravel-maurice", "title": "Daphnis et Chloé", "cat": "M. 57", "year": 1912, "genre": "Ballet", "trumpets": "4 trumpets", "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, celesta, woodwind, strings, chorus" },
-    { "c": "ravel-maurice", "title": "Piano Concerto in G major", "cat": "M. 83", "year": 1931, "genre": "Concerto", "trumpets": "trumpet", "full": "trumpet, horn, trombone, timpani, percussion, harp, woodwind, strings" },
-    { "c": "ravel-maurice", "title": "Pictures at an Exhibition (Mussorgsky, orch. Ravel)", "cat": "M. 61", "year": 1922, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, euphonium, alto saxophone, timpani, percussion, 2 harps, celesta, woodwind, strings", "note": "The opening Promenade is a solo trumpet." },
-
-    { "c": "respighi-ottorino", "title": "Pini di Roma", "cat": "P. 141", "year": 1924, "genre": "Tone poem", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, organ, woodwind, strings", "note": "Six buccine — normally covered by flugelhorns or extra trumpets and trombones — sound offstage in the finale." },
-    { "c": "respighi-ottorino", "title": "Fontane di Roma", "cat": "P. 106", "year": 1916, "genre": "Tone poem", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, celesta, organ, woodwind, strings" },
-
-    { "c": "bartok-bela", "title": "Concerto for Orchestra", "cat": "Sz. 116", "year": 1943, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings" },
-
-    { "c": "stravinsky-igor", "title": "The Rite of Spring", "cat": "K015", "year": 1913, "genre": "Ballet", "trumpets": "piccolo trumpet, 4 trumpets", "full": "piccolo trumpet, 4 trumpets, bass trumpet, 8 horns, 3 trombones, 2 tubas, timpani, percussion, woodwind, strings", "note": "The piccolo trumpet in D is a separate player. The bass trumpet falls outside this index." },
-    { "c": "stravinsky-igor", "title": "Petrushka (1911 version)", "cat": "K012", "year": 1911, "genre": "Ballet", "trumpets": "2 trumpets (1st doubling piccolo trumpet), 2 cornets", "full": "4 flutes, 4 oboes, 4 clarinets, 4 bassoons, 4 horns, 2 trumpets (1st doubling piccolo trumpet), 2 cornets, 3 trombones, tuba, timpani, percussion, 2 harps, celesta, piano, strings", "also": ["Petrushka"], "note": "The original quadruple-wind score. Four trumpet-family players: two trumpets, of which the first doubles piccolo trumpet in D, and two cornets on their own parts." },
-    { "c": "stravinsky-igor", "title": "Petrushka (1947 version)", "cat": "K012", "year": 1947, "genre": "Ballet", "trumpets": "3 trumpets", "full": "3 flutes, 2 oboes, cor anglais, 3 clarinets, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, percussion, harp, celesta, piano, strings", "note": "Revised in 1946 and published in 1947 for a smaller orchestra. Both the cornets and the piccolo trumpet doubling are gone; their material passes to three trumpets, so the section falls from four players to three." },
-    { "c": "stravinsky-igor", "title": "The Firebird (1910 ballet)", "cat": "K010", "year": 1910, "genre": "Ballet", "trumpets": "6 trumpets", "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings", "also": ["The Firebird"], "note": "The complete ballet. Six trumpet players: three in the pit and three more onstage, where they call the princesses back into the palace. Stravinsky later called the orchestra \"wastefully large\"." },
-    { "c": "stravinsky-igor", "title": "The Firebird Suite (1911)", "cat": null, "year": 1911, "genre": "Orchestral", "trumpets": "6 trumpets", "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings", "note": "The first suite keeps the ballet's orchestra unchanged — it was printed from the same plates, with only the new movement endings newly engraved. Still six trumpet players, three of them onstage." },
-    { "c": "stravinsky-igor", "title": "The Firebird Suite (1919)", "cat": null, "year": 1919, "genre": "Orchestral", "trumpets": "2 trumpets", "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion, harp, piano, strings", "note": "The reduction to a standard concert orchestra, and much the most played of the three suites. Wikipedia describes the change only as a smaller orchestra with the winds in pairs; the two trumpets come from the published scoring rather than from the article." },
-    { "c": "stravinsky-igor", "title": "The Firebird Suite (1945)", "cat": null, "year": 1945, "genre": "Orchestral", "trumpets": "2 trumpets", "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion including snare drum, harp, piano, strings", "note": "Built on the 1919 suite, with several pantomimes reorchestrated from the ballet. The only instrumentation change was the addition of a snare drum, so the trumpet section is unchanged from 1919." },
-    { "c": "stravinsky-igor", "title": "Symphony of Psalms", "cat": "K048", "year": 1930, "genre": "Sacred vocal", "trumpets": "piccolo trumpet, 4 trumpets", "full": "piccolo trumpet, 4 trumpets, 4 horns, 3 trombones, tuba, timpani, harp, 2 pianos, woodwind, cellos, basses, chorus", "note": "Scored without violins or violas." },
-    { "c": "stravinsky-igor", "title": "L'Histoire du soldat", "cat": "K025", "year": 1918, "genre": "Chamber", "trumpets": "cornet", "full": "cornet, trombone, clarinet, bassoon, violin, double bass, percussion", "note": "Stravinsky writes cornet à pistons; the part is usually played on trumpet today." },
-
-    { "c": "prokofiev-sergei", "title": "Symphony No. 1 in D major (Classical)", "cat": "Op. 25", "year": 1917, "genre": "Symphony", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings" },
-    { "c": "prokofiev-sergei", "title": "Lieutenant Kijé Suite", "cat": "Op. 60", "year": 1934, "genre": "Orchestral", "trumpets": "cornet, 2 trumpets", "full": "cornet, 2 trumpets, 4 horns, 3 trombones, tuba, tenor saxophone, timpani, percussion, harp, piano, celesta, woodwind, strings", "note": "The solo cornet carries the Kijé theme from the opening bar." },
-    { "c": "prokofiev-sergei", "title": "Peter and the Wolf", "cat": "Op. 67", "year": 1936, "genre": "Orchestral", "trumpets": "trumpet", "full": "trumpet, 3 horns, trombone, timpani, percussion, flute, oboe, clarinet, bassoon, strings" },
-
-    { "c": "shostakovich-dmitri", "title": "Piano Concerto No. 1", "cat": "Op. 35", "year": 1933, "genre": "Concerto", "trumpets": "trumpet", "full": "solo piano, solo trumpet, strings", "note": "A double concerto in all but name — the trumpet is a full partner to the piano." },
-    { "c": "shostakovich-dmitri", "title": "Symphony No. 5 in D minor", "cat": "Op. 47", "year": 1937, "genre": "Symphony", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, celesta, piano, woodwind, strings" },
-    { "c": "shostakovich-dmitri", "title": "Festive Overture", "cat": "Op. 96", "year": 1954, "genre": "Overture", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings", "note": "An optional banda adds four horns, three trumpets and three trombones." },
-
-    { "c": "copland-aaron", "title": "Fanfare for the Common Man", "cat": null, "year": 1942, "genre": "Orchestral", "trumpets": "3 trumpets", "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, bass drum, tam-tam" },
-    { "c": "copland-aaron", "title": "Quiet City", "cat": null, "year": 1940, "genre": "Chamber", "trumpets": "trumpet", "full": "solo trumpet, solo english horn, strings" },
-    { "c": "copland-aaron", "title": "Appalachian Spring (orchestral suite)", "cat": null, "year": 1945, "genre": "Orchestral", "trumpets": "2 trumpets", "full": "2 trumpets, 2 horns, 2 trombones, timpani, percussion, harp, piano, woodwind, strings", "note": "The original 1944 chamber version, for thirteen instruments, has no brass at all." },
-
-    { "c": "hindemith-paul", "title": "Sonata for Trumpet and Piano", "cat": null, "year": 1939, "genre": "Solo", "trumpets": "trumpet", "full": "trumpet, piano" },
-    { "c": "enescu-george", "title": "Légende", "cat": null, "year": 1906, "genre": "Solo", "trumpets": "trumpet", "full": "trumpet, piano", "note": "Written as a Paris Conservatoire examination piece." },
-    { "c": "honegger-arthur", "title": "Intrada", "cat": "H. 193", "year": 1947, "genre": "Solo", "trumpets": "trumpet", "full": "trumpet, piano" },
-    { "c": "kennan-kent", "title": "Sonata for Trumpet and Piano", "cat": null, "year": 1956, "genre": "Solo", "trumpets": "trumpet", "full": "trumpet, piano" },
-    { "c": "poulenc-francis", "title": "Sonata for Horn, Trumpet and Trombone", "cat": "FP 33", "year": 1922, "genre": "Chamber", "trumpets": "trumpet", "full": "horn, trumpet, trombone" },
-    { "c": "arnold-malcolm", "title": "Brass Quintet", "cat": "Op. 73", "year": 1961, "genre": "Chamber", "trumpets": "2 trumpets", "full": "2 trumpets, horn, trombone, tuba" },
-
-    { "c": "sousa-john-philip", "title": "The Stars and Stripes Forever", "cat": null, "year": 1896, "genre": "Wind ensemble", "trumpets": "2 cornets, 2 trumpets", "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion" },
-    { "c": "sousa-john-philip", "title": "The Washington Post", "cat": null, "year": 1889, "genre": "Wind ensemble", "trumpets": "2 cornets, 2 trumpets", "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion" }
-  ]
+  "handel-george-frideric": {
+   "name": "George Frideric Handel",
+   "dates": "1685–1759",
+   "aliases": [
+    "handel",
+    "haendel",
+    "händel"
+   ]
+  },
+  "purcell-henry": {
+   "name": "Henry Purcell",
+   "dates": "1659–1695",
+   "aliases": [
+    "purcell"
+   ]
+  },
+  "vivaldi-antonio": {
+   "name": "Antonio Vivaldi",
+   "dates": "1678–1741",
+   "aliases": [
+    "vivaldi"
+   ]
+  },
+  "telemann-georg-philipp": {
+   "name": "Georg Philipp Telemann",
+   "dates": "1681–1767",
+   "aliases": [
+    "telemann"
+   ]
+  },
+  "torelli-giuseppe": {
+   "name": "Giuseppe Torelli",
+   "dates": "1658–1709",
+   "aliases": [
+    "torelli"
+   ]
+  },
+  "haydn-joseph": {
+   "name": "Joseph Haydn",
+   "dates": "1732–1809",
+   "aliases": [
+    "haydn",
+    "franz joseph haydn"
+   ]
+  },
+  "mozart-wolfgang-amadeus": {
+   "name": "Wolfgang Amadeus Mozart",
+   "dates": "1756–1791",
+   "aliases": [
+    "mozart",
+    "wa mozart"
+   ]
+  },
+  "mozart-leopold": {
+   "name": "Leopold Mozart",
+   "dates": "1719–1787",
+   "aliases": [
+    "leopold mozart"
+   ]
+  },
+  "neruda-johann-baptist": {
+   "name": "Johann Baptist Georg Neruda",
+   "dates": "1708–1780",
+   "aliases": [
+    "neruda"
+   ]
+  },
+  "beethoven-ludwig-van": {
+   "name": "Ludwig van Beethoven",
+   "dates": "1770–1827",
+   "aliases": [
+    "beethoven"
+   ]
+  },
+  "hummel-johann-nepomuk": {
+   "name": "Johann Nepomuk Hummel",
+   "dates": "1778–1837",
+   "aliases": [
+    "hummel"
+   ]
+  },
+  "schubert-franz": {
+   "name": "Franz Schubert",
+   "dates": "1797–1828",
+   "aliases": [
+    "schubert"
+   ]
+  },
+  "berlioz-hector": {
+   "name": "Hector Berlioz",
+   "dates": "1803–1869",
+   "aliases": [
+    "berlioz"
+   ]
+  },
+  "mendelssohn-felix": {
+   "name": "Felix Mendelssohn",
+   "dates": "1809–1847",
+   "aliases": [
+    "mendelssohn",
+    "mendelssohn-bartholdy"
+   ]
+  },
+  "schumann-robert": {
+   "name": "Robert Schumann",
+   "dates": "1810–1856",
+   "aliases": [
+    "schumann"
+   ]
+  },
+  "wagner-richard": {
+   "name": "Richard Wagner",
+   "dates": "1813–1883",
+   "aliases": [
+    "wagner"
+   ]
+  },
+  "verdi-giuseppe": {
+   "name": "Giuseppe Verdi",
+   "dates": "1813–1901",
+   "aliases": [
+    "verdi"
+   ]
+  },
+  "franck-cesar": {
+   "name": "César Franck",
+   "dates": "1822–1890",
+   "aliases": [
+    "franck",
+    "cesar franck"
+   ]
+  },
+  "smetana-bedrich": {
+   "name": "Bedřich Smetana",
+   "dates": "1824–1884",
+   "aliases": [
+    "smetana"
+   ]
+  },
+  "brahms-johannes": {
+   "name": "Johannes Brahms",
+   "dates": "1833–1897",
+   "aliases": [
+    "brahms"
+   ]
+  },
+  "saint-saens-camille": {
+   "name": "Camille Saint-Saëns",
+   "dates": "1835–1921",
+   "aliases": [
+    "saint-saens",
+    "saint saens"
+   ]
+  },
+  "bruckner-anton": {
+   "name": "Anton Bruckner",
+   "dates": "1824–1896",
+   "aliases": [
+    "bruckner"
+   ]
+  },
+  "tchaikovsky-pyotr-ilyich": {
+   "name": "Pyotr Ilyich Tchaikovsky",
+   "dates": "1840–1893",
+   "aliases": [
+    "tchaikovsky",
+    "tschaikowsky",
+    "chaikovsky"
+   ]
+  },
+  "dvorak-antonin": {
+   "name": "Antonín Dvořák",
+   "dates": "1841–1904",
+   "aliases": [
+    "dvorak",
+    "dvořák"
+   ]
+  },
+  "rimsky-korsakov-nikolai": {
+   "name": "Nikolai Rimsky-Korsakov",
+   "dates": "1844–1908",
+   "aliases": [
+    "rimsky-korsakov",
+    "rimsky korsakov"
+   ]
+  },
+  "elgar-edward": {
+   "name": "Edward Elgar",
+   "dates": "1857–1934",
+   "aliases": [
+    "elgar"
+   ]
+  },
+  "mahler-gustav": {
+   "name": "Gustav Mahler",
+   "dates": "1860–1911",
+   "aliases": [
+    "mahler"
+   ]
+  },
+  "debussy-claude": {
+   "name": "Claude Debussy",
+   "dates": "1862–1918",
+   "aliases": [
+    "debussy"
+   ]
+  },
+  "strauss-richard": {
+   "name": "Richard Strauss",
+   "dates": "1864–1949",
+   "aliases": [
+    "strauss",
+    "r strauss",
+    "richard strauss"
+   ]
+  },
+  "sibelius-jean": {
+   "name": "Jean Sibelius",
+   "dates": "1865–1957",
+   "aliases": [
+    "sibelius"
+   ]
+  },
+  "nielsen-carl": {
+   "name": "Carl Nielsen",
+   "dates": "1865–1931",
+   "aliases": [
+    "nielsen"
+   ]
+  },
+  "janacek-leos": {
+   "name": "Leoš Janáček",
+   "dates": "1854–1928",
+   "aliases": [
+    "janacek",
+    "janáček"
+   ]
+  },
+  "vaughan-williams-ralph": {
+   "name": "Ralph Vaughan Williams",
+   "dates": "1872–1958",
+   "aliases": [
+    "vaughan williams",
+    "vaughan-williams"
+   ]
+  },
+  "rachmaninoff-sergei": {
+   "name": "Sergei Rachmaninoff",
+   "dates": "1873–1943",
+   "aliases": [
+    "rachmaninoff",
+    "rachmaninov",
+    "rakhmaninov"
+   ]
+  },
+  "holst-gustav": {
+   "name": "Gustav Holst",
+   "dates": "1874–1934",
+   "aliases": [
+    "holst"
+   ]
+  },
+  "ives-charles": {
+   "name": "Charles Ives",
+   "dates": "1874–1954",
+   "aliases": [
+    "ives"
+   ]
+  },
+  "ravel-maurice": {
+   "name": "Maurice Ravel",
+   "dates": "1875–1937",
+   "aliases": [
+    "ravel"
+   ]
+  },
+  "respighi-ottorino": {
+   "name": "Ottorino Respighi",
+   "dates": "1879–1936",
+   "aliases": [
+    "respighi"
+   ]
+  },
+  "bartok-bela": {
+   "name": "Béla Bartók",
+   "dates": "1881–1945",
+   "aliases": [
+    "bartok",
+    "bartók"
+   ]
+  },
+  "stravinsky-igor": {
+   "name": "Igor Stravinsky",
+   "dates": "1882–1971",
+   "aliases": [
+    "stravinsky",
+    "stravinskii"
+   ]
+  },
+  "hindemith-paul": {
+   "name": "Paul Hindemith",
+   "dates": "1895–1963",
+   "aliases": [
+    "hindemith"
+   ]
+  },
+  "enescu-george": {
+   "name": "George Enescu",
+   "dates": "1881–1955",
+   "aliases": [
+    "enescu",
+    "enesco"
+   ]
+  },
+  "honegger-arthur": {
+   "name": "Arthur Honegger",
+   "dates": "1892–1955",
+   "aliases": [
+    "honegger"
+   ]
+  },
+  "poulenc-francis": {
+   "name": "Francis Poulenc",
+   "dates": "1899–1963",
+   "aliases": [
+    "poulenc"
+   ]
+  },
+  "prokofiev-sergei": {
+   "name": "Sergei Prokofiev",
+   "dates": "1891–1953",
+   "aliases": [
+    "prokofiev",
+    "prokofieff"
+   ]
+  },
+  "shostakovich-dmitri": {
+   "name": "Dmitri Shostakovich",
+   "dates": "1906–1975",
+   "aliases": [
+    "shostakovich",
+    "schostakowitsch"
+   ]
+  },
+  "copland-aaron": {
+   "name": "Aaron Copland",
+   "dates": "1900–1990",
+   "aliases": [
+    "copland"
+   ]
+  },
+  "kennan-kent": {
+   "name": "Kent Kennan",
+   "dates": "1913–2003",
+   "aliases": [
+    "kennan"
+   ]
+  },
+  "arnold-malcolm": {
+   "name": "Malcolm Arnold",
+   "dates": "1921–2006",
+   "aliases": [
+    "arnold"
+   ]
+  },
+  "sousa-john-philip": {
+   "name": "John Philip Sousa",
+   "dates": "1854–1932",
+   "aliases": [
+    "sousa"
+   ]
+  },
+  "stephenson-james-m": {
+   "name": "James M. Stephenson",
+   "dates": "b. 1969",
+   "aliases": [
+    "stephenson",
+    "jim stephenson",
+    "james stephenson"
+   ]
+  }
+ },
+ "works": [
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Brandenburg Concerto No. 2 in F major",
+   "cat": "BWV 1047",
+   "year": 1721,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "trumpet, recorder, oboe, violin, strings, continuo",
+   "note": "Written for the high clarino trumpet in F; almost always played today on a piccolo trumpet."
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Mass in B minor",
+   "cat": "BWV 232",
+   "year": 1749,
+   "genre": "Sacred vocal",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, timpani, corno da caccia, 2 flutes, 3 oboes, 2 bassoons, strings, continuo"
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Magnificat in D major",
+   "cat": "BWV 243",
+   "year": 1733,
+   "genre": "Sacred vocal",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, timpani, 2 flutes, 2 oboes, strings, continuo"
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Christmas Oratorio",
+   "cat": "BWV 248",
+   "year": 1734,
+   "genre": "Sacred vocal",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, timpani, 2 horns, flutes, oboes, strings, continuo"
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Orchestral Suite No. 3 in D major",
+   "cat": "BWV 1068",
+   "year": 1731,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, timpani, 2 oboes, strings, continuo"
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Orchestral Suite No. 4 in D major",
+   "cat": "BWV 1069",
+   "year": 1725,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, timpani, 3 oboes, bassoon, strings, continuo"
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Jauchzet Gott in allen Landen",
+   "cat": "BWV 51",
+   "year": 1730,
+   "genre": "Sacred vocal",
+   "trumpets": "trumpet",
+   "full": "trumpet, soprano, strings, continuo",
+   "note": "A famously exposed obbligato part for the soprano's partner."
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "title": "Herz und Mund und Tat und Leben",
+   "cat": "BWV 147",
+   "year": 1723,
+   "genre": "Sacred vocal",
+   "trumpets": "trumpet",
+   "full": "trumpet, 2 oboes, oboe d'amore, strings, continuo"
+  },
+  {
+   "c": "handel-george-frideric",
+   "title": "Messiah",
+   "cat": "HWV 56",
+   "year": 1741,
+   "genre": "Sacred vocal",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, timpani, 2 oboes, 2 bassoons, strings, continuo",
+   "note": "\"The trumpet shall sound\" is scored for the first trumpet alone."
+  },
+  {
+   "c": "handel-george-frideric",
+   "title": "Music for the Royal Fireworks",
+   "cat": "HWV 351",
+   "year": 1749,
+   "genre": "Wind ensemble",
+   "trumpets": "9 trumpets",
+   "full": "9 trumpets, 9 horns, 24 oboes, 12 bassoons, 3 pairs of timpani, side drums",
+   "note": "The open-air original, in three choirs of three trumpets. Concert performances usually reduce this to three."
+  },
+  {
+   "c": "handel-george-frideric",
+   "title": "Water Music, Suite No. 2 in D major",
+   "cat": "HWV 349",
+   "year": 1717,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 2 oboes, bassoon, strings"
+  },
+  {
+   "c": "handel-george-frideric",
+   "title": "Zadok the Priest",
+   "cat": "HWV 258",
+   "year": 1727,
+   "genre": "Sacred vocal",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, timpani, 2 oboes, 2 bassoons, strings, continuo"
+  },
+  {
+   "c": "purcell-henry",
+   "title": "Sonata for Trumpet and Strings in D major",
+   "cat": "Z. 850",
+   "year": 1694,
+   "genre": "Chamber",
+   "trumpets": "trumpet",
+   "full": "trumpet, strings, continuo"
+  },
+  {
+   "c": "purcell-henry",
+   "title": "Come, Ye Sons of Art",
+   "cat": "Z. 323",
+   "year": 1694,
+   "genre": "Vocal chamber",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, timpani, 2 oboes, strings, continuo"
+  },
+  {
+   "c": "vivaldi-antonio",
+   "title": "Concerto for Two Trumpets in C major",
+   "cat": "RV 537",
+   "year": 1720,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, strings, continuo"
+  },
+  {
+   "c": "telemann-georg-philipp",
+   "title": "Trumpet Concerto in D major",
+   "cat": "TWV 51:D7",
+   "year": 1720,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "trumpet, strings, continuo"
+  },
+  {
+   "c": "torelli-giuseppe",
+   "title": "Sinfonia in D major for Trumpet and Strings",
+   "cat": "G. 8",
+   "year": 1690,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "trumpet, strings, continuo"
+  },
+  {
+   "c": "haydn-joseph",
+   "title": "Trumpet Concerto in E-flat major",
+   "cat": "Hob. VIIe:1",
+   "year": 1796,
+   "genre": "Concerto",
+   "trumpets": "3 trumpets",
+   "full": "solo trumpet, 2 flutes, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani, strings",
+   "note": "Written for Anton Weidinger's keyed trumpet. The count is the solo part plus the two in the orchestra."
+  },
+  {
+   "c": "haydn-joseph",
+   "title": "Symphony No. 94 in G major (Surprise)",
+   "cat": "Hob. I:94",
+   "year": 1791,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 bassoons, strings"
+  },
+  {
+   "c": "haydn-joseph",
+   "title": "Symphony No. 100 in G major (Military)",
+   "cat": "Hob. I:100",
+   "year": 1794,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, percussion, 2 flutes, 2 oboes, 2 bassoons, strings"
+  },
+  {
+   "c": "haydn-joseph",
+   "title": "Symphony No. 104 in D major (London)",
+   "cat": "Hob. I:104",
+   "year": 1795,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "haydn-joseph",
+   "title": "The Creation",
+   "cat": "Hob. XXI:2",
+   "year": 1798,
+   "genre": "Sacred vocal",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 3 trombones, 2 horns, timpani, flutes, oboes, clarinets, bassoons, contrabassoon, strings"
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
+   "title": "Symphony No. 41 in C major (Jupiter)",
+   "cat": "K. 551",
+   "year": 1788,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, flute, 2 oboes, 2 bassoons, strings"
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
+   "title": "Symphony No. 39 in E-flat major",
+   "cat": "K. 543",
+   "year": 1788,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, flute, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
+   "title": "Symphony No. 35 in D major (Haffner)",
+   "cat": "K. 385",
+   "year": 1782,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
+   "title": "Symphony No. 38 in D major (Prague)",
+   "cat": "K. 504",
+   "year": 1786,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 bassoons, strings"
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
+   "title": "Requiem in D minor",
+   "cat": "K. 626",
+   "year": 1791,
+   "genre": "Sacred vocal",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 3 trombones, 2 basset horns, 2 bassoons, timpani, strings, organ",
+   "note": "The Tuba mirum opens with a solo tenor trombone, not a trumpet."
+  },
+  {
+   "c": "mozart-leopold",
+   "title": "Trumpet Concerto in D major",
+   "cat": null,
+   "year": 1762,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "solo trumpet, 2 horns, strings"
+  },
+  {
+   "c": "neruda-johann-baptist",
+   "title": "Trumpet Concerto in E-flat major",
+   "cat": null,
+   "year": 1760,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "solo trumpet, strings, continuo",
+   "note": "Written for the corno da caccia; now a staple of the piccolo trumpet repertoire."
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Symphony No. 3 in E-flat major (Eroica)",
+   "cat": "Op. 55",
+   "year": 1804,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 3 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Symphony No. 5 in C minor",
+   "cat": "Op. 67",
+   "year": 1808,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 3 trombones, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, strings"
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Symphony No. 6 in F major (Pastoral)",
+   "cat": "Op. 68",
+   "year": 1808,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 2 trombones, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Symphony No. 7 in A major",
+   "cat": "Op. 92",
+   "year": 1812,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Symphony No. 9 in D minor (Choral)",
+   "cat": "Op. 125",
+   "year": 1824,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, percussion, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, strings, chorus"
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Leonore Overture No. 3",
+   "cat": "Op. 72b",
+   "year": 1806,
+   "genre": "Overture",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings",
+   "note": "One trumpet plays the offstage fanfare twice from behind the stage."
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "title": "Egmont Overture",
+   "cat": "Op. 84",
+   "year": 1810,
+   "genre": "Overture",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "hummel-johann-nepomuk",
+   "title": "Trumpet Concerto in E major",
+   "cat": "S. 49",
+   "year": 1803,
+   "genre": "Concerto",
+   "trumpets": "3 trumpets",
+   "full": "solo trumpet, 2 flutes, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani, strings",
+   "note": "Also written for Weidinger's keyed trumpet, and usually played today in E-flat."
+  },
+  {
+   "c": "schubert-franz",
+   "title": "Symphony No. 8 in B minor (Unfinished)",
+   "cat": "D. 759",
+   "year": 1822,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "schubert-franz",
+   "title": "Symphony No. 9 in C major (Great)",
+   "cat": "D. 944",
+   "year": 1826,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "berlioz-hector",
+   "title": "Symphonie fantastique",
+   "cat": "Op. 14",
+   "year": 1830,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, 2 tubas, timpani, percussion, 2 flutes, 2 oboes, english horn, 2 clarinets, 4 bassoons, 2 harps, strings",
+   "note": "Berlioz writes for trumpets and cornets at once, and gives the cornets their own obbligato in the ball scene."
+  },
+  {
+   "c": "berlioz-hector",
+   "title": "Le Carnaval romain",
+   "cat": "Op. 9",
+   "year": 1844,
+   "genre": "Overture",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, ophicleide, timpani, percussion, woodwind, strings"
+  },
+  {
+   "c": "berlioz-hector",
+   "title": "Harold en Italie",
+   "cat": "Op. 16",
+   "year": 1834,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, solo viola, strings"
+  },
+  {
+   "c": "mendelssohn-felix",
+   "title": "Symphony No. 4 in A major (Italian)",
+   "cat": "Op. 90",
+   "year": 1833,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "mendelssohn-felix",
+   "title": "Symphony No. 3 in A minor (Scottish)",
+   "cat": "Op. 56",
+   "year": 1842,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "mendelssohn-felix",
+   "title": "A Midsummer Night's Dream: Overture",
+   "cat": "Op. 21",
+   "year": 1826,
+   "genre": "Overture",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, ophicleide, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "schumann-robert",
+   "title": "Symphony No. 1 in B-flat major (Spring)",
+   "cat": "Op. 38",
+   "year": 1841,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, triangle, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "schumann-robert",
+   "title": "Symphony No. 3 in E-flat major (Rhenish)",
+   "cat": "Op. 97",
+   "year": 1850,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "schumann-robert",
+   "title": "Symphony No. 4 in D minor",
+   "cat": "Op. 120",
+   "year": 1851,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "wagner-richard",
+   "title": "Die Walküre: Ride of the Valkyries",
+   "cat": "WWV 86B",
+   "year": 1856,
+   "genre": "Opera",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, bass trumpet, 8 horns, 4 Wagner tubas, 4 trombones, contrabass trombone, tuba, timpani, woodwind, strings",
+   "note": "The score also calls for a bass trumpet, which falls outside this index."
+  },
+  {
+   "c": "wagner-richard",
+   "title": "Tannhäuser: Overture",
+   "cat": "WWV 70",
+   "year": 1845,
+   "genre": "Overture",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "wagner-richard",
+   "title": "Die Meistersinger von Nürnberg: Prelude",
+   "cat": "WWV 96",
+   "year": 1867,
+   "genre": "Overture",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings"
+  },
+  {
+   "c": "wagner-richard",
+   "title": "Tristan und Isolde: Prelude and Liebestod",
+   "cat": "WWV 90",
+   "year": 1859,
+   "genre": "Opera",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, bass trumpet, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings",
+   "note": "The opera also uses a bass trumpet, which falls outside this index."
+  },
+  {
+   "c": "wagner-richard",
+   "title": "Siegfried Idyll",
+   "cat": "WWV 103",
+   "year": 1870,
+   "genre": "Orchestral",
+   "trumpets": "trumpet",
+   "full": "trumpet, 2 horns, flute, oboe, 2 clarinets, bassoon, strings",
+   "note": "Written for a chamber group of thirteen players."
+  },
+  {
+   "c": "verdi-giuseppe",
+   "title": "Messa da Requiem",
+   "cat": null,
+   "year": 1874,
+   "genre": "Sacred vocal",
+   "trumpets": "8 trumpets",
+   "full": "4 trumpets, 4 offstage trumpets, 4 horns, 3 trombones, ophicleide, timpani, woodwind, strings, chorus",
+   "note": "Eight trumpet players: four in the orchestra and four more answering from offstage in the Tuba mirum. Counted together because the offstage four are additional players, not the orchestral four relocated."
+  },
+  {
+   "c": "franck-cesar",
+   "title": "Symphony in D minor",
+   "cat": "FWV 48",
+   "year": 1888,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings",
+   "note": "A French score of its period: cornets carry much of what a German symphony would give the trumpets."
+  },
+  {
+   "c": "saint-saens-camille",
+   "title": "Symphony No. 3 in C minor (Organ)",
+   "cat": "Op. 78",
+   "year": 1886,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, organ, piano four hands, woodwind, strings"
+  },
+  {
+   "c": "saint-saens-camille",
+   "title": "Septet in E-flat major",
+   "cat": "Op. 65",
+   "year": 1880,
+   "genre": "Chamber",
+   "trumpets": "trumpet",
+   "full": "trumpet, 2 violins, viola, cello, double bass, piano"
+  },
+  {
+   "c": "smetana-bedrich",
+   "title": "Má vlast: Vltava",
+   "cat": "JB 1:112/2",
+   "year": 1874,
+   "genre": "Tone poem",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings"
+  },
+  {
+   "c": "brahms-johannes",
+   "title": "Symphony No. 1 in C minor",
+   "cat": "Op. 68",
+   "year": 1876,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, contrabassoon, timpani, woodwind, strings"
+  },
+  {
+   "c": "brahms-johannes",
+   "title": "Symphony No. 2 in D major",
+   "cat": "Op. 73",
+   "year": 1877,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "brahms-johannes",
+   "title": "Symphony No. 3 in F major",
+   "cat": "Op. 90",
+   "year": 1883,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, contrabassoon, timpani, woodwind, strings"
+  },
+  {
+   "c": "brahms-johannes",
+   "title": "Symphony No. 4 in E minor",
+   "cat": "Op. 98",
+   "year": 1885,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, contrabassoon, timpani, triangle, woodwind, strings"
+  },
+  {
+   "c": "brahms-johannes",
+   "title": "Academic Festival Overture",
+   "cat": "Op. 80",
+   "year": 1880,
+   "genre": "Overture",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings"
+  },
+  {
+   "c": "bruckner-anton",
+   "title": "Symphony No. 4 in E-flat major (Romantic)",
+   "cat": "WAB 104",
+   "year": 1874,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "bruckner-anton",
+   "title": "Symphony No. 7 in E major",
+   "cat": "WAB 107",
+   "year": 1883,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 4 Wagner tubas, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "bruckner-anton",
+   "title": "Symphony No. 8 in C minor",
+   "cat": "WAB 108",
+   "year": 1890,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 8 horns doubling Wagner tubas, 3 trombones, tuba, timpani, 3 harps, woodwind, strings"
+  },
+  {
+   "c": "bruckner-anton",
+   "title": "Symphony No. 9 in D minor",
+   "cat": "WAB 109",
+   "year": 1896,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 8 horns doubling Wagner tubas, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "Symphony No. 4 in F minor",
+   "cat": "Op. 36",
+   "year": 1878,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "Symphony No. 5 in E minor",
+   "cat": "Op. 64",
+   "year": 1888,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "Symphony No. 6 in B minor (Pathétique)",
+   "cat": "Op. 74",
+   "year": 1893,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "1812 Overture",
+   "cat": "Op. 49",
+   "year": 1880,
+   "genre": "Overture",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, cannon, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "Capriccio Italien",
+   "cat": "Op. 45",
+   "year": 1880,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings",
+   "note": "Opens with a cavalry fanfare for the cornets."
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "Swan Lake",
+   "cat": "Op. 20",
+   "year": 1876,
+   "genre": "Ballet",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "The Sleeping Beauty",
+   "cat": "Op. 66",
+   "year": 1889,
+   "genre": "Ballet",
+   "trumpets": "2 trumpets, 2 cornets",
+   "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "The Nutcracker",
+   "cat": "Op. 71",
+   "year": 1892,
+   "genre": "Ballet",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, celesta, 2 harps, woodwind, strings"
+  },
+  {
+   "c": "tchaikovsky-pyotr-ilyich",
+   "title": "Romeo and Juliet, Fantasy Overture",
+   "cat": "TH 42",
+   "year": 1880,
+   "genre": "Overture",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings"
+  },
+  {
+   "c": "dvorak-antonin",
+   "title": "Symphony No. 9 in E minor (From the New World)",
+   "cat": "Op. 95",
+   "year": 1893,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, 2 flutes, 2 oboes, english horn, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "dvorak-antonin",
+   "title": "Symphony No. 8 in G major",
+   "cat": "Op. 88",
+   "year": 1889,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings",
+   "note": "The fourth movement opens with a trumpet fanfare in thirds."
+  },
+  {
+   "c": "dvorak-antonin",
+   "title": "Symphony No. 7 in D minor",
+   "cat": "Op. 70",
+   "year": 1885,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, woodwind, strings"
+  },
+  {
+   "c": "dvorak-antonin",
+   "title": "Carnival Overture",
+   "cat": "Op. 92",
+   "year": 1891,
+   "genre": "Overture",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings"
+  },
+  {
+   "c": "dvorak-antonin",
+   "title": "Cello Concerto in B minor",
+   "cat": "Op. 104",
+   "year": 1895,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 3 horns, 3 trombones, tuba, timpani, triangle, woodwind, strings"
+  },
+  {
+   "c": "rimsky-korsakov-nikolai",
+   "title": "Scheherazade",
+   "cat": "Op. 35",
+   "year": 1888,
+   "genre": "Tone poem",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings"
+  },
+  {
+   "c": "elgar-edward",
+   "title": "Variations on an Original Theme (Enigma)",
+   "cat": "Op. 36",
+   "year": 1899,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, organ, woodwind, strings"
+  },
+  {
+   "c": "mahler-gustav",
+   "title": "Symphony No. 5 in C-sharp minor",
+   "cat": null,
+   "year": 1902,
+   "genre": "Symphony",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 6 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings",
+   "note": "Opens with an unaccompanied solo trumpet fanfare."
+  },
+  {
+   "c": "debussy-claude",
+   "title": "La Mer",
+   "cat": "L. 109",
+   "year": 1905,
+   "genre": "Tone poem",
+   "trumpets": "3 trumpets, 2 cornets",
+   "full": "3 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings"
+  },
+  {
+   "c": "debussy-claude",
+   "title": "Nocturnes",
+   "cat": "L. 91",
+   "year": 1899,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings, women's chorus"
+  },
+  {
+   "c": "strauss-richard",
+   "title": "Also sprach Zarathustra",
+   "cat": "Op. 30",
+   "year": 1896,
+   "genre": "Tone poem",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 6 horns, 3 trombones, 2 tubas, timpani, organ, 2 harps, woodwind, strings",
+   "note": "The opening sunrise is announced by the trumpets in unison."
+  },
+  {
+   "c": "strauss-richard",
+   "title": "Ein Heldenleben",
+   "cat": "Op. 40",
+   "year": 1898,
+   "genre": "Tone poem",
+   "trumpets": "5 trumpets",
+   "full": "5 trumpets, 8 horns, 3 trombones, tenor tuba, tuba, timpani, percussion, 2 harps, woodwind, strings"
+  },
+  {
+   "c": "strauss-richard",
+   "title": "Don Juan",
+   "cat": "Op. 20",
+   "year": 1888,
+   "genre": "Tone poem",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings"
+  },
+  {
+   "c": "strauss-richard",
+   "title": "Till Eulenspiegels lustige Streiche",
+   "cat": "Op. 28",
+   "year": 1895,
+   "genre": "Tone poem",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings",
+   "note": "The score adds three more trumpets and four more horns ad libitum."
+  },
+  {
+   "c": "sibelius-jean",
+   "title": "Symphony No. 2 in D major",
+   "cat": "Op. 43",
+   "year": 1902,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings"
+  },
+  {
+   "c": "sibelius-jean",
+   "title": "Symphony No. 5 in E-flat major",
+   "cat": "Op. 82",
+   "year": 1919,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, timpani, woodwind, strings"
+  },
+  {
+   "c": "nielsen-carl",
+   "title": "Symphony No. 4 (The Inextinguishable)",
+   "cat": "Op. 29",
+   "year": 1916,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, 2 sets of timpani, woodwind, strings"
+  },
+  {
+   "c": "janacek-leos",
+   "title": "Sinfonietta",
+   "cat": "JW 6/18",
+   "year": 1926,
+   "genre": "Orchestral",
+   "trumpets": "12 trumpets",
+   "full": "12 trumpets, 2 bass trumpets, 2 tenor tubas, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings",
+   "note": "A banda of nine trumpets and two bass trumpets plays the opening and closing fanfares alongside the orchestra's three. The bass trumpets fall outside this index."
+  },
+  {
+   "c": "vaughan-williams-ralph",
+   "title": "Symphony No. 9 in E minor",
+   "cat": null,
+   "year": 1957,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets, flugelhorn",
+   "full": "3 trumpets, flugelhorn, 3 saxophones, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings",
+   "note": "The flugelhorn has a substantial solo role and is not a trumpet doubling."
+  },
+  {
+   "c": "vaughan-williams-ralph",
+   "title": "English Folk Song Suite",
+   "cat": null,
+   "year": 1923,
+   "genre": "Wind ensemble",
+   "trumpets": "2 cornets, 2 trumpets",
+   "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion"
+  },
+  {
+   "c": "rachmaninoff-sergei",
+   "title": "Piano Concerto No. 2 in C minor",
+   "cat": "Op. 18",
+   "year": 1901,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings"
+  },
+  {
+   "c": "rachmaninoff-sergei",
+   "title": "Piano Concerto No. 3 in D minor",
+   "cat": "Op. 30",
+   "year": 1909,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings"
+  },
+  {
+   "c": "rachmaninoff-sergei",
+   "title": "Symphony No. 2 in E minor",
+   "cat": "Op. 27",
+   "year": 1907,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings"
+  },
+  {
+   "c": "rachmaninoff-sergei",
+   "title": "Symphonic Dances",
+   "cat": "Op. 45",
+   "year": 1940,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, alto saxophone, woodwind, strings"
+  },
+  {
+   "c": "holst-gustav",
+   "title": "The Planets",
+   "cat": "Op. 32",
+   "year": 1916,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 6 horns, 3 trombones, tenor tuba, tuba, timpani, percussion, 2 harps, organ, woodwind, strings, women's chorus"
+  },
+  {
+   "c": "holst-gustav",
+   "title": "First Suite in E-flat major for Military Band",
+   "cat": "Op. 28 No. 1",
+   "year": 1909,
+   "genre": "Wind ensemble",
+   "trumpets": "2 cornets, 2 trumpets",
+   "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion",
+   "note": "The cornets carry the melodic line and the trumpets the fanfares — the distinction is written into the scoring."
+  },
+  {
+   "c": "holst-gustav",
+   "title": "Second Suite in F major for Military Band",
+   "cat": "Op. 28 No. 2",
+   "year": 1911,
+   "genre": "Wind ensemble",
+   "trumpets": "2 cornets, 2 trumpets",
+   "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion"
+  },
+  {
+   "c": "ives-charles",
+   "title": "The Unanswered Question",
+   "cat": null,
+   "year": 1908,
+   "genre": "Chamber",
+   "trumpets": "trumpet",
+   "full": "trumpet, 4 flutes, strings",
+   "note": "The trumpet poses the question seven times against a static string background."
+  },
+  {
+   "c": "ravel-maurice",
+   "title": "Boléro",
+   "cat": "M. 81",
+   "year": 1928,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, tuba, saxophones, celesta, harp, timpani, percussion, woodwind, strings",
+   "note": "One part is written for the trumpet in D; keys are not distinguished here."
+  },
+  {
+   "c": "ravel-maurice",
+   "title": "Daphnis et Chloé",
+   "cat": "M. 57",
+   "year": 1912,
+   "genre": "Ballet",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, celesta, woodwind, strings, chorus"
+  },
+  {
+   "c": "ravel-maurice",
+   "title": "Piano Concerto in G major",
+   "cat": "M. 83",
+   "year": 1931,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "trumpet, horn, trombone, timpani, percussion, harp, woodwind, strings"
+  },
+  {
+   "c": "ravel-maurice",
+   "title": "Pictures at an Exhibition (Mussorgsky, orch. Ravel)",
+   "cat": "M. 61",
+   "year": 1922,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, euphonium, alto saxophone, timpani, percussion, 2 harps, celesta, woodwind, strings",
+   "note": "The opening Promenade is a solo trumpet."
+  },
+  {
+   "c": "respighi-ottorino",
+   "title": "Pini di Roma",
+   "cat": "P. 141",
+   "year": 1924,
+   "genre": "Tone poem",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, organ, woodwind, strings",
+   "note": "Six buccine — normally covered by flugelhorns or extra trumpets and trombones — sound offstage in the finale."
+  },
+  {
+   "c": "respighi-ottorino",
+   "title": "Fontane di Roma",
+   "cat": "P. 106",
+   "year": 1916,
+   "genre": "Tone poem",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, celesta, organ, woodwind, strings"
+  },
+  {
+   "c": "bartok-bela",
+   "title": "Concerto for Orchestra",
+   "cat": "Sz. 116",
+   "year": 1943,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings"
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "The Rite of Spring",
+   "cat": "K015",
+   "year": 1913,
+   "genre": "Ballet",
+   "trumpets": "piccolo trumpet, 4 trumpets",
+   "full": "piccolo trumpet, 4 trumpets, bass trumpet, 8 horns, 3 trombones, 2 tubas, timpani, percussion, woodwind, strings",
+   "note": "The piccolo trumpet in D is a separate player. The bass trumpet falls outside this index."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "Petrushka (1911 version)",
+   "cat": "K012",
+   "year": 1911,
+   "genre": "Ballet",
+   "trumpets": "2 trumpets (1st doubling piccolo trumpet), 2 cornets",
+   "full": "4 flutes, 4 oboes, 4 clarinets, 4 bassoons, 4 horns, 2 trumpets (1st doubling piccolo trumpet), 2 cornets, 3 trombones, tuba, timpani, percussion, 2 harps, celesta, piano, strings",
+   "also": [
+    "Petrushka"
+   ],
+   "note": "The original quadruple-wind score. Four trumpet-family players: two trumpets, of which the first doubles piccolo trumpet in D, and two cornets on their own parts."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "Petrushka (1947 version)",
+   "cat": "K012",
+   "year": 1947,
+   "genre": "Ballet",
+   "trumpets": "3 trumpets",
+   "full": "3 flutes, 2 oboes, cor anglais, 3 clarinets, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, percussion, harp, celesta, piano, strings",
+   "note": "Revised in 1946 and published in 1947 for a smaller orchestra. Both the cornets and the piccolo trumpet doubling are gone; their material passes to three trumpets, so the section falls from four players to three."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "The Firebird (1910 ballet)",
+   "cat": "K010",
+   "year": 1910,
+   "genre": "Ballet",
+   "trumpets": "6 trumpets",
+   "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings",
+   "also": [
+    "The Firebird"
+   ],
+   "note": "The complete ballet. Six trumpet players: three in the pit and three more onstage, where they call the princesses back into the palace. Stravinsky later called the orchestra \"wastefully large\"."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "The Firebird Suite (1911)",
+   "cat": null,
+   "year": 1911,
+   "genre": "Orchestral",
+   "trumpets": "6 trumpets",
+   "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings",
+   "note": "The first suite keeps the ballet's orchestra unchanged — it was printed from the same plates, with only the new movement endings newly engraved. Still six trumpet players, three of them onstage."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "The Firebird Suite (1919)",
+   "cat": null,
+   "year": 1919,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion, harp, piano, strings",
+   "note": "The reduction to a standard concert orchestra, and much the most played of the three suites. Wikipedia describes the change only as a smaller orchestra with the winds in pairs; the two trumpets come from the published scoring rather than from the article."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "The Firebird Suite (1945)",
+   "cat": null,
+   "year": 1945,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion including snare drum, harp, piano, strings",
+   "note": "Built on the 1919 suite, with several pantomimes reorchestrated from the ballet. The only instrumentation change was the addition of a snare drum, so the trumpet section is unchanged from 1919."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "Symphony of Psalms",
+   "cat": "K048",
+   "year": 1930,
+   "genre": "Sacred vocal",
+   "trumpets": "piccolo trumpet, 4 trumpets",
+   "full": "piccolo trumpet, 4 trumpets, 4 horns, 3 trombones, tuba, timpani, harp, 2 pianos, woodwind, cellos, basses, chorus",
+   "note": "Scored without violins or violas."
+  },
+  {
+   "c": "stravinsky-igor",
+   "title": "L'Histoire du soldat",
+   "cat": "K025",
+   "year": 1918,
+   "genre": "Chamber",
+   "trumpets": "cornet",
+   "full": "cornet, trombone, clarinet, bassoon, violin, double bass, percussion",
+   "note": "Stravinsky writes cornet à pistons; the part is usually played on trumpet today."
+  },
+  {
+   "c": "prokofiev-sergei",
+   "title": "Symphony No. 1 in D major (Classical)",
+   "cat": "Op. 25",
+   "year": 1917,
+   "genre": "Symphony",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "prokofiev-sergei",
+   "title": "Lieutenant Kijé Suite",
+   "cat": "Op. 60",
+   "year": 1934,
+   "genre": "Orchestral",
+   "trumpets": "cornet, 2 trumpets",
+   "full": "cornet, 2 trumpets, 4 horns, 3 trombones, tuba, tenor saxophone, timpani, percussion, harp, piano, celesta, woodwind, strings",
+   "note": "The solo cornet carries the Kijé theme from the opening bar."
+  },
+  {
+   "c": "prokofiev-sergei",
+   "title": "Peter and the Wolf",
+   "cat": "Op. 67",
+   "year": 1936,
+   "genre": "Orchestral",
+   "trumpets": "trumpet",
+   "full": "trumpet, 3 horns, trombone, timpani, percussion, flute, oboe, clarinet, bassoon, strings"
+  },
+  {
+   "c": "shostakovich-dmitri",
+   "title": "Piano Concerto No. 1",
+   "cat": "Op. 35",
+   "year": 1933,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "solo piano, solo trumpet, strings",
+   "note": "A double concerto in all but name — the trumpet is a full partner to the piano."
+  },
+  {
+   "c": "shostakovich-dmitri",
+   "title": "Symphony No. 5 in D minor",
+   "cat": "Op. 47",
+   "year": 1937,
+   "genre": "Symphony",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, celesta, piano, woodwind, strings"
+  },
+  {
+   "c": "shostakovich-dmitri",
+   "title": "Festive Overture",
+   "cat": "Op. 96",
+   "year": 1954,
+   "genre": "Overture",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, woodwind, strings",
+   "note": "An optional banda adds four horns, three trumpets and three trombones."
+  },
+  {
+   "c": "copland-aaron",
+   "title": "Fanfare for the Common Man",
+   "cat": null,
+   "year": 1942,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, bass drum, tam-tam"
+  },
+  {
+   "c": "copland-aaron",
+   "title": "Quiet City",
+   "cat": null,
+   "year": 1940,
+   "genre": "Chamber",
+   "trumpets": "trumpet",
+   "full": "solo trumpet, solo english horn, strings"
+  },
+  {
+   "c": "copland-aaron",
+   "title": "Appalachian Spring (orchestral suite)",
+   "cat": null,
+   "year": 1945,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 2 trombones, timpani, percussion, harp, piano, woodwind, strings",
+   "note": "The original 1944 chamber version, for thirteen instruments, has no brass at all."
+  },
+  {
+   "c": "hindemith-paul",
+   "title": "Sonata for Trumpet and Piano",
+   "cat": null,
+   "year": 1939,
+   "genre": "Solo",
+   "trumpets": "trumpet",
+   "full": "trumpet, piano"
+  },
+  {
+   "c": "enescu-george",
+   "title": "Légende",
+   "cat": null,
+   "year": 1906,
+   "genre": "Solo",
+   "trumpets": "trumpet",
+   "full": "trumpet, piano",
+   "note": "Written as a Paris Conservatoire examination piece."
+  },
+  {
+   "c": "honegger-arthur",
+   "title": "Intrada",
+   "cat": "H. 193",
+   "year": 1947,
+   "genre": "Solo",
+   "trumpets": "trumpet",
+   "full": "trumpet, piano"
+  },
+  {
+   "c": "kennan-kent",
+   "title": "Sonata for Trumpet and Piano",
+   "cat": null,
+   "year": 1956,
+   "genre": "Solo",
+   "trumpets": "trumpet",
+   "full": "trumpet, piano"
+  },
+  {
+   "c": "poulenc-francis",
+   "title": "Sonata for Horn, Trumpet and Trombone",
+   "cat": "FP 33",
+   "year": 1922,
+   "genre": "Chamber",
+   "trumpets": "trumpet",
+   "full": "horn, trumpet, trombone"
+  },
+  {
+   "c": "arnold-malcolm",
+   "title": "Brass Quintet",
+   "cat": "Op. 73",
+   "year": 1961,
+   "genre": "Chamber",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, horn, trombone, tuba"
+  },
+  {
+   "c": "sousa-john-philip",
+   "title": "The Stars and Stripes Forever",
+   "cat": null,
+   "year": 1896,
+   "genre": "Wind ensemble",
+   "trumpets": "2 cornets, 2 trumpets",
+   "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion"
+  },
+  {
+   "c": "sousa-john-philip",
+   "title": "The Washington Post",
+   "cat": null,
+   "year": 1889,
+   "genre": "Wind ensemble",
+   "trumpets": "2 cornets, 2 trumpets",
+   "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion"
+  },
+  {
+   "c": "stephenson-james-m",
+   "title": "Fanfare – Light From Shadows",
+   "cat": null,
+   "year": null,
+   "genre": "Chamber",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, horn, trombone, tuba, optional percussion",
+   "note": "For brass quintet, with optional percussion. The composer also offers a version for two brass quintets, which doubles the section to four trumpets. Hand-entered because the catalogue states the scoring inside an unclosed aside that no reading of the text parses correctly."
+  }
+ ]
 }
