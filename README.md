@@ -9,11 +9,11 @@ Nothing is installed. The end user opens a URL in Chrome or Edge and searches.
 
 | | |
 |---|---|
-| **Works indexed** | 11,432 |
+| **Works indexed** | 11,435 |
 | **Composers** | 2,007 |
-| **Works needing a cornet** | 651 |
+| **Works needing a cornet** | 650 |
 | **Works needing a flugelhorn** | 784 |
-| **Sources** | 134 hand-checked · 741 from Wikipedia · 10,557 from IMSLP |
+| **Sources** | 137 hand-checked · 741 from Wikipedia · 10,557 from IMSLP |
 | **Family members covered** | trumpet · cornet · flugelhorn · piccolo trumpet |
 
 ---
@@ -376,16 +376,35 @@ Worth being straight about:
 - **Cornet parts are often played on trumpet.** The index records what the score
   asks for, not what an orchestra does on the night. Stravinsky writes *cornet à
   pistons* in *L'Histoire du soldat*; it is nearly always played on a trumpet.
-- **Editions differ, sometimes by a whole player.** Stravinsky's *Petrushka* is
-  four trumpet-family players in 1911 (two trumpets, the first doubling piccolo
-  trumpet, plus two cornets) and three in the 1947 revision (three trumpets, no
-  cornets). Where a revision changes the section, the versions are separate
-  rows rather than one row with a caveat — a work that answers *cornet* in one
-  version and not the other cannot be one entry without lying about one of
-  them. The curated row carries an `also` list naming the plain title those
-  rows stand in for, so a harvested copy filed under *Petrushka* does not
-  survive alongside the two. Confirm against a published score before hiring
-  players.
+- **Editions differ, sometimes by a whole section.** Where a revision changes
+  the trumpet section, the versions are separate rows rather than one row with
+  a caveat — a work that answers *cornet* in one version and not the other
+  cannot be a single entry without lying about one of them:
+
+  | | Trumpet-family scoring | Players |
+  |---|---|---|
+  | *Petrushka*, 1911 | 2 trumpets (1st doubling piccolo trumpet), 2 cornets | 4 |
+  | *Petrushka*, 1947 | 3 trumpets | 3 |
+  | *The Firebird*, 1910 ballet | 3 trumpets + 3 onstage | 6 |
+  | *The Firebird* Suite, 1911 | 3 trumpets + 3 onstage | 6 |
+  | *The Firebird* Suite, 1919 | 2 trumpets | 2 |
+  | *The Firebird* Suite, 1945 | 2 trumpets | 2 |
+
+  The 1910 row carries an `also` list naming the plain title it stands in for,
+  so a harvested copy filed under *The Firebird* does not survive alongside the
+  four. Confirm against a published score before hiring players.
+
+- **Offstage players are counted; optional and ambiguous ones are not.** A count
+  is players, so an onstage or offstage band that the score requires is part of
+  the total: *The Firebird*'s three onstage trumpets bring it to six, Verdi's
+  four offstage trumpets bring the *Requiem* to eight, and Janáček's fanfare
+  band brings the *Sinfonietta* to twelve. Two things stay out. An **optional**
+  band is not required of anyone, so Shostakovich's *Festive Overture* is three.
+  And where the instrument itself is unsettled the count cannot include it —
+  Respighi's six buccine in *Pini di Roma* are covered by flugelhorns, trumpets
+  or trombones depending on the performance, so the row says three and the note
+  says the rest. A player who merely walks offstage is not an extra player:
+  Beethoven's *Leonore* No. 3 is two, one of whom steps out to play the fanfare.
 
 Corrections belong in `data/curated.json` — they will survive the next harvest,
 which is exactly why that file is separate.
