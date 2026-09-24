@@ -16,7 +16,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { writeIfChanged } from './stable-json.mjs';
-import { parseInstrumentation, formatScoring, requiredInstruments } from '../lib/instrumentation.mjs';
+import { parseInstrumentation, formatScoring, requiredInstruments, firstFamilyMentionIndex } from '../lib/instrumentation.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const p = (...s) => path.join(ROOT, ...s);
@@ -227,32 +227,48 @@ function genreFromTitle(title, fallback) {
 //
 // Rather than enumerate every way an editor phrases that lead-in (a losing
 // battle — new articles keep finding new ones), find where the list itself
-// begins: the first specific instrument name (flute, oboe, horn...) is
-// essentially never mentioned in prose that isn't naming the scoring, so
-// it is trusted as soon as it turns up. A generic word (strings, brass,
-// soprano, chorus) is not — "a brass septet that originated in 1870" and
-// "when the soprano does not sing" both mention one in passing — so a
-// generic-only hit is used only once an explicit announcement ("...the
-// following instruments:", "consists of") corroborates it, and otherwise
-// stands as the best available cut.
+// begins: a specific instrument name — a trumpet-family member, per
+// firstFamilyMentionIndex, or any other real instrument (flute, oboe,
+// violin...) — is essentially never mentioned in prose that isn't naming
+// the scoring, so it is trusted as soon as it turns up. A generic word
+// (strings, brass, soprano, chorus) is not — "a brass septet that
+// originated in 1870" and "when the soprano does not sing" both mention one
+// in passing — so a generic-only hit is used only once an explicit
+// announcement ("...the following instruments:", "consists of")
+// corroborates it, and otherwise stands as the best available cut.
 const CAPTION_CUTOFF = 300;
 function stripLeadingCaptions(text) {
   // A photo caption leaks through as "thumb|360px|caption text," — real
   // instrumentation prose never contains a literal "|" — sometimes with its
-  // own bare year alongside ("...Dresden, 1928,"). Drop both from anywhere
-  // in the lead, not just a prefix run: a genuine heading word can sit in
-  // front of the caption and would otherwise block a prefix-only scan.
-  const kept = text.slice(0, CAPTION_CUTOFF).split(/,\s*/)
-    .filter((seg) => seg && !/\|/.test(seg) && !/^(?:1[5-9]|20)\d{2}$/.test(seg));
-  return kept.join(', ') + text.slice(CAPTION_CUTOFF);
+  // own bare year alongside ("...Dresden, 1928,"). Matched and dropped
+  // segment by segment (never a hard slice) so a delimiter straddling the
+  // cutoff is never silently swallowed, gluing the words on either side of
+  // it together. A segment that itself names a family instrument — a
+  // caption can run straight into body text with no space between them,
+  // "...historical cor anglaisThe work is scored for..." — is left alone
+  // rather than risk deleting real scoring content.
+  return text.replace(/[^,]*,\s*/g, (seg, offset) => {
+    if (offset >= CAPTION_CUTOFF) return seg;
+    const body = seg.replace(/,\s*$/, '');
+    if (!/\|/.test(body) && !/^(?:1[5-9]|20)\d{2}$/.test(body)) return seg;
+    if (firstFamilyMentionIndex(body) !== -1) return seg;
+    return '';
+  });
 }
 
 const WORD_PREFIX = String.raw`(?:\d{1,3}|an?|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|single|double|triple|quadruple|pairs?(?:\s+of)?|solo|mixed|male|female)`;
-const STRONG_WORD = String.raw`(?:piccolo|flutes?|oboes?|clarinets?|bassoons?|horns?|trumpets?|cornets?|trombones?|tubas?|timpani|harps?|violins?|violas?|cellos?|double\s+basses?|saxophones?|celesta|organ)`;
+// Instrument names outside the indexed family: like a family name, these are
+// essentially never mentioned in prose that isn't naming the scoring (nobody
+// casually drops "clarinet" or "timpani" into a paragraph about a piece's
+// history), so they are trusted the same way a family mention is.
+const OTHER_INSTRUMENT = String.raw`(?:piccolo|flutes?|oboes?|clarinets?|bassoons?|horns?|trumpets?|cornets?|trombones?|tubas?|timpani|harps?|violins?|violas?|cellos?|double\s+basses?|saxophones?|celesta|organ|pianos?)`;
+const OTHER_RE = new RegExp(`\\b(?:${WORD_PREFIX}\\s+){0,2}${OTHER_INSTRUMENT}\\b`, 'gi');
+// Generic category/voice words: real section headers ("Brass:", "Soprano
+// solo,") but also common in ordinary descriptive prose, so a hit here alone
+// is not trusted — see the wide-window corroboration below.
 const WEAK_WORD = String.raw`(?:woodwinds?|brass|strings?|percussion|soprano|altos?|contralto|mezzo-soprano|tenors?|baritones?|bass|chorus(?:es)?|choirs?|voices?|soloists?|narrator|SATB\w*|SSAA?)`;
-const STRONG_RE = new RegExp(`\\b(?:${WORD_PREFIX}\\s+){0,2}${STRONG_WORD}\\b`, 'gi');
 const WEAK_RE = new RegExp(`\\b(?:${WORD_PREFIX}\\s+){0,2}${WEAK_WORD}\\b`, 'gi');
-const ANY_LIST_START = new RegExp(`^(?:${WORD_PREFIX}\\s+){0,2}(?:${STRONG_WORD}|${WEAK_WORD})\\b`, 'i');
+const ANY_LIST_START = new RegExp(`^(?:${WORD_PREFIX}\\s+){0,2}(?:${OTHER_INSTRUMENT}|${WEAK_WORD})\\b`, 'i'); // family checked separately, via the library
 
 // The explicit "here comes the list" markers consulted only to corroborate
 // a generic-word hit, over a wider window — the preamble before them can
@@ -275,6 +291,11 @@ function skipLabelClause(after) {
   return after.slice(m[0].length);
 }
 
+/** A candidate cut point passes if it lands on a family mention or a generic one. */
+function passesListStart(after) {
+  return firstFamilyMentionIndex(after) === 0 || ANY_LIST_START.test(after);
+}
+
 function introMarkerCut(text) {
   let best = null;
   for (const re of INTRO_MARKERS) {
@@ -285,11 +306,11 @@ function introMarkerCut(text) {
       const endIdx = m.index + m[0].length;
       if (!best || endIdx < best.endIdx) {
         const after = text.slice(endIdx).replace(/^,\s*/, '');
-        if (ANY_LIST_START.test(after)) {
+        if (passesListStart(after)) {
           best = { endIdx, after };
         } else {
           const skipped = skipLabelClause(after);
-          if (skipped && ANY_LIST_START.test(skipped)) best = { endIdx, after: skipped };
+          if (skipped && passesListStart(skipped)) best = { endIdx, after: skipped };
         }
       }
       if (re.lastIndex <= m.index) re.lastIndex++; // zero-width safety
@@ -300,13 +321,32 @@ function introMarkerCut(text) {
 
 const ANCHOR_WINDOW = 260;
 
+// firstFamilyMentionIndex (and the OTHER_INSTRUMENT match below) point at
+// the instrument name itself ("2 cornets"'s "cornets"), not any count in
+// front of it — cutting there would drop a stated, exact count and leave
+// the parser to guess at a bare plural instead. Back up over it when present.
+const COUNT_PREFIX_BEFORE = new RegExp(`(?:${WORD_PREFIX}\\s+){1,2}$`, 'i');
+function backUpOverCount(text, idx) {
+  const before = text.slice(Math.max(0, idx - 40), idx);
+  const m = COUNT_PREFIX_BEFORE.exec(before);
+  return m ? idx - m[0].length : idx;
+}
+
 /** Returns the text with its lead-in dropped, and whether that succeeded. */
 function stripIntroClause(text) {
-  STRONG_RE.lastIndex = 0;
+  const familyIdx = firstFamilyMentionIndex(text);
+  OTHER_RE.lastIndex = 0;
+  const other = OTHER_RE.exec(text);
+  // Whichever kind of specific instrument name shows up first — the indexed
+  // family or any other real instrument — both are trusted the same way, so
+  // take the earlier of the two.
+  const rawStrongIdx = [familyIdx, other ? other.index : -1]
+    .filter((i) => i >= 0)
+    .sort((a, b) => a - b)[0] ?? -1;
+  const strongIdx0 = rawStrongIdx >= 0 ? backUpOverCount(text, rawStrongIdx) : -1;
+  const strongIdx = strongIdx0 >= 0 && strongIdx0 <= ANCHOR_WINDOW ? strongIdx0 : Infinity;
   WEAK_RE.lastIndex = 0;
-  const strong = STRONG_RE.exec(text);
   const weak = WEAK_RE.exec(text);
-  const strongIdx = strong && strong.index <= ANCHOR_WINDOW ? strong.index : Infinity;
   const weakIdx = weak && weak.index <= ANCHOR_WINDOW ? weak.index : Infinity;
 
   if (strongIdx === Infinity && weakIdx === Infinity) return { text, ok: false };
