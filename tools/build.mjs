@@ -220,6 +220,105 @@ function genreFromTitle(title, fallback) {
   return fallback;
 }
 
+// Wikipedia's prose leads into the instrument list with a throat-clearing
+// sentence — "The symphony is scored for...", "The work calls for the
+// following:" — that has no business in a field meant to show only the
+// instrumentation. Drop everything before the list actually starts.
+//
+// Rather than enumerate every way an editor phrases that lead-in (a losing
+// battle — new articles keep finding new ones), find where the list itself
+// begins: the first specific instrument name (flute, oboe, horn...) is
+// essentially never mentioned in prose that isn't naming the scoring, so
+// it is trusted as soon as it turns up. A generic word (strings, brass,
+// soprano, chorus) is not — "a brass septet that originated in 1870" and
+// "when the soprano does not sing" both mention one in passing — so a
+// generic-only hit is used only once an explicit announcement ("...the
+// following instruments:", "consists of") corroborates it, and otherwise
+// stands as the best available cut.
+const CAPTION_CUTOFF = 300;
+function stripLeadingCaptions(text) {
+  // A photo caption leaks through as "thumb|360px|caption text," — real
+  // instrumentation prose never contains a literal "|" — sometimes with its
+  // own bare year alongside ("...Dresden, 1928,"). Drop both from anywhere
+  // in the lead, not just a prefix run: a genuine heading word can sit in
+  // front of the caption and would otherwise block a prefix-only scan.
+  const kept = text.slice(0, CAPTION_CUTOFF).split(/,\s*/)
+    .filter((seg) => seg && !/\|/.test(seg) && !/^(?:1[5-9]|20)\d{2}$/.test(seg));
+  return kept.join(', ') + text.slice(CAPTION_CUTOFF);
+}
+
+const WORD_PREFIX = String.raw`(?:\d{1,3}|an?|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|single|double|triple|quadruple|pairs?(?:\s+of)?|solo|mixed|male|female)`;
+const STRONG_WORD = String.raw`(?:piccolo|flutes?|oboes?|clarinets?|bassoons?|horns?|trumpets?|cornets?|trombones?|tubas?|timpani|harps?|violins?|violas?|cellos?|double\s+basses?|saxophones?|celesta|organ)`;
+const WEAK_WORD = String.raw`(?:woodwinds?|brass|strings?|percussion|soprano|altos?|contralto|mezzo-soprano|tenors?|baritones?|bass|chorus(?:es)?|choirs?|voices?|soloists?|narrator|SATB\w*|SSAA?)`;
+const STRONG_RE = new RegExp(`\\b(?:${WORD_PREFIX}\\s+){0,2}${STRONG_WORD}\\b`, 'gi');
+const WEAK_RE = new RegExp(`\\b(?:${WORD_PREFIX}\\s+){0,2}${WEAK_WORD}\\b`, 'gi');
+const ANY_LIST_START = new RegExp(`^(?:${WORD_PREFIX}\\s+){0,2}(?:${STRONG_WORD}|${WEAK_WORD})\\b`, 'i');
+
+// The explicit "here comes the list" markers consulted only to corroborate
+// a generic-word hit, over a wider window — the preamble before them can
+// run long ("Bernstein scored Mass for a large orchestra and choir, and
+// also included onstage groups... The instrumentation is as follows:,").
+const INTRO_MARKERS = [
+  /:\s*,?\s*/g,
+  /\bthe following\s+(?:instruments?|instrumentation|forces)?\s*,?:?\s*/gi,
+  /\bconsists? of\b\s*/gi,
+  /\bcomprises?\b\s*/gi,
+];
+const INTRO_WINDOW = 700;
+
+// A subgroup label can separate the marker from the real list ("...is as
+// follows:, Pit orchestra, Percussion (at least..."). Skip at most one such
+// clause — capitalized, short, no verb — before giving up on a marker.
+function skipLabelClause(after) {
+  const m = /^([A-Z][^,]{0,29}),\s*/.exec(after);
+  if (!m || /\b(?:is|are|was|were|has|have|does|do)\b/i.test(m[1])) return null;
+  return after.slice(m[0].length);
+}
+
+function introMarkerCut(text) {
+  let best = null;
+  for (const re of INTRO_MARKERS) {
+    re.lastIndex = 0;
+    let m;
+    while ((m = re.exec(text))) {
+      if (m.index > INTRO_WINDOW) break;
+      const endIdx = m.index + m[0].length;
+      if (!best || endIdx < best.endIdx) {
+        const after = text.slice(endIdx).replace(/^,\s*/, '');
+        if (ANY_LIST_START.test(after)) {
+          best = { endIdx, after };
+        } else {
+          const skipped = skipLabelClause(after);
+          if (skipped && ANY_LIST_START.test(skipped)) best = { endIdx, after: skipped };
+        }
+      }
+      if (re.lastIndex <= m.index) re.lastIndex++; // zero-width safety
+    }
+  }
+  return best;
+}
+
+const ANCHOR_WINDOW = 260;
+
+/** Returns the text with its lead-in dropped, and whether that succeeded. */
+function stripIntroClause(text) {
+  STRONG_RE.lastIndex = 0;
+  WEAK_RE.lastIndex = 0;
+  const strong = STRONG_RE.exec(text);
+  const weak = WEAK_RE.exec(text);
+  const strongIdx = strong && strong.index <= ANCHOR_WINDOW ? strong.index : Infinity;
+  const weakIdx = weak && weak.index <= ANCHOR_WINDOW ? weak.index : Infinity;
+
+  if (strongIdx === Infinity && weakIdx === Infinity) return { text, ok: false };
+  if (Math.min(strongIdx, weakIdx) === 0) return { text, ok: true }; // no lead-in to strip
+
+  if (strongIdx < Infinity) return { text: text.slice(strongIdx), ok: true };
+
+  const marker = introMarkerCut(text);
+  if (marker) return { text: marker.after, ok: true };
+  return { text: text.slice(weakIdx), ok: true }; // uncorroborated, but the best on offer
+}
+
 for (const w of wikipedia.works ?? []) {
   if (!w.composer || !w.scoring) continue;
   const c = resolveComposer(w.composer);
@@ -253,7 +352,12 @@ for (const w of wikipedia.works ?? []) {
       .replace(/^[,\s]+|[,\s]+$/g, '')
       .trim();
   };
-  const sourceText = w.text ? tidy(w.text) : null;
+  // "ok" is false when the captured snippet never reaches a recognisable
+  // instrument, voice or section name at all (a handful of articles, mostly
+  // where the harvested text is discussing the piece rather than scoring
+  // it) — there `full` is dropped rather than shipping unrelated prose.
+  const cleaned = w.text ? stripIntroClause(stripLeadingCaptions(tidy(w.text))) : null;
+  const sourceText = cleaned?.ok ? cleaned.text : null;
   const reparsed = sourceText ? parseInstrumentation(sourceText) : null;
   const usable = reparsed?.total > 0;
 
@@ -266,7 +370,7 @@ for (const w of wikipedia.works ?? []) {
     s: usable ? formatScoring(reparsed) : w.scoring,
     counts: usable ? reparsed.counts : w.counts,
     req: usable ? requiredInstruments(reparsed) : w.req,
-    full: sourceText ? sourceText.slice(0, 400) : (w.full || null),
+    full: sourceText ? sourceText.slice(0, 400) : null,
     note: null,
     arr: false,
     est: usable ? reparsed.uncertain.length > 0 : !!w.estimated,
