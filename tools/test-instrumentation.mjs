@@ -157,6 +157,17 @@ test('other languages map onto the same instruments', () => {
   assert.equal(scoring('2 Kornetts'), 'two cornets');
 });
 
+test('German plurals name the same instruments as their singulars', () => {
+  // These were not merely miscounted: the whole section vanished, because no
+  // pattern matched the plural and the segment then named nothing in scope.
+  assert.equal(scoring('2 Kornette, 3 Trompeten'), 'three trumpets, two cornets');
+  assert.equal(scoring('2 Flügelhörner, 2 Trompeten'), 'two trumpets, two flugelhorns');
+  assert.equal(scoring('2 Flugelhoerner'), 'two flugelhorns');
+  assert.equal(scoring('2 Piccolotrompeten, 3 Trompeten'),
+    'two piccolo trumpets, three trumpets');
+  assert.equal(parseInstrumentation('4 Trompeten, Flügelhorn').total, 5);
+});
+
 test('"trumpeter" is not an instrument', () => {
   assert.equal(mentionsFamily('a trumpeter and a drummer'), false);
 });
@@ -190,6 +201,47 @@ test('a doubling written in words gets an ordinal', () => {
 
 test('a doubling of a key, not an instrument, is not a doubling', () => {
   assert.equal(scoring('2 trumpets (both doubling in C)'), 'two trumpets');
+});
+
+test('names every chair that doubles, not just the first', () => {
+  assert.equal(scoring('4 trumpets (3rd and 4th doubling flugelhorn)'),
+    'four trumpets (3rd and 4th doubling flugelhorn)');
+  assert.equal(scoring('5 trumpets (2nd, 3rd and 4th doubling cornet)'),
+    'five trumpets (2nd, 3rd and 4th doubling cornet)');
+});
+
+test('ordinals after the cue name the instrument, not the chairs', () => {
+  // "3rd and 4th doubling 2nd and 3rd flugelhorn" is four ordinals, but only
+  // the two before the cue are players.
+  const p = parseInstrumentation('4 trumpets (3rd and 4th doubling 2nd and 3rd flugelhorn)');
+  assert.equal(p.doublings[0].player, '3rd and 4th');
+});
+
+test('reads every doubling in one aside, not just the first', () => {
+  // Two instruments taken by two different chairs.
+  const two = parseInstrumentation('3 trumpets (second doubling flugelhorn, 3rd doubling cornet)');
+  assert.equal(formatScoring(two),
+    'three trumpets (2nd doubling flugelhorn, 3rd doubling cornet)');
+  // Reading only the first left the cornet out, so nobody could find the work.
+  assert.deepEqual(requiredInstruments(two), ['trumpet', 'cornet', 'flugelhorn']);
+  assert.equal(two.counts.trumpet, 3); // and still three players
+
+  // Two instruments, one player, named in the order the text gives them.
+  const both = parseInstrumentation('trumpet (doubling cornet and flugelhorn)');
+  assert.deepEqual(requiredInstruments(both), ['trumpet', 'cornet', 'flugelhorn']);
+  assert.equal(formatScoring(both), 'trumpet (doubling cornet, doubling flugelhorn)');
+});
+
+test('a chair written as a bare digit still reads as a chair', () => {
+  assert.equal(scoring('2 trumpets (Trumpet 2 doubles flugelhorn)'),
+    'two trumpets (2nd doubling flugelhorn)');
+});
+
+test('a choice of instrument is still not a doubling', () => {
+  // Reading the whole aside must not turn "or" into two required instruments.
+  const p = parseInstrumentation('2 trumpets or 2 flugelhorns');
+  assert.equal(p.counts.trumpet, 2);
+  assert.deepEqual(requiredInstruments(p), ['trumpet']);
 });
 
 test('instruments are listed in score order regardless of input order', () => {

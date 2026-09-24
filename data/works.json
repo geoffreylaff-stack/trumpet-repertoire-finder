@@ -35136,7 +35136,7 @@
    "cat": null,
    "y": null,
    "g": "Symphony",
-   "s": "five trumpets (2 doubling piccolo trumpet)",
+   "s": "five trumpets (doubling piccolo trumpet)",
    "counts": {
     "trumpet": 5
    },
@@ -35965,7 +35965,7 @@
    "cat": null,
    "y": null,
    "g": "Opera",
-   "s": "four trumpets (1st doubling piccolo trumpet)",
+   "s": "four trumpets (1st and 2nd doubling piccolo trumpet)",
    "counts": {
     "trumpet": 4
    },
