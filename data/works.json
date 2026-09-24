@@ -1,8 +1,8 @@
 {
  "generated": "2026-09-02T01:27:47.134Z",
  "stats": {
-  "works": 11591,
-  "composers": 2008
+  "works": 11637,
+  "composers": 2004
  },
  "composers": [
   {
@@ -999,7 +999,7 @@
     "j.s. bach"
    ],
    "n": 11,
-   "nArr": 362
+   "nArr": 366
   },
   {
    "id": "bach-wilhelm-friedemann",
@@ -1526,7 +1526,7 @@
     "beethoven"
    ],
    "n": 20,
-   "nArr": 15
+   "nArr": 19
   },
   {
    "id": "behrens-johan-diederich",
@@ -1726,7 +1726,7 @@
     "berlioz"
    ],
    "n": 9,
-   "nArr": 0
+   "nArr": 2
   },
   {
    "id": "bernabei-ercole",
@@ -1987,7 +1987,7 @@
    "dates": "1838–1875",
    "aliases": [],
    "n": 2,
-   "nArr": 3
+   "nArr": 4
   },
   {
    "id": "bjerre-klaus",
@@ -2493,7 +2493,7 @@
     "brahms"
    ],
    "n": 17,
-   "nArr": 5
+   "nArr": 8
   },
   {
    "id": "bramieri-claudio",
@@ -4968,7 +4968,7 @@
     "dvořák"
    ],
    "n": 16,
-   "nArr": 2
+   "nArr": 3
   },
   {
    "id": "dybicz-jan-sara",
@@ -5150,7 +5150,7 @@
     "elgar"
    ],
    "n": 17,
-   "nArr": 2
+   "nArr": 3
   },
   {
    "id": "elias-jose",
@@ -6677,7 +6677,7 @@
    "dates": "1898–1937",
    "aliases": [],
    "n": 4,
-   "nArr": 1
+   "nArr": 2
   },
   {
    "id": "gerson-l",
@@ -6869,21 +6869,14 @@
    "nArr": 0
   },
   {
-   "id": "glazunov-aleksandr",
-   "name": "Aleksandr Glazunov",
-   "sort": "Glazunov, Aleksandr",
-   "dates": "1865–1936",
-   "aliases": [],
-   "n": 2,
-   "nArr": 0
-  },
-  {
    "id": "glazunov-alexander",
    "name": "Alexander Glazunov",
    "sort": "Glazunov, Alexander",
    "dates": "1865–1936",
-   "aliases": [],
-   "n": 5,
+   "aliases": [
+    "Aleksandr Glazunov"
+   ],
+   "n": 7,
    "nArr": 0
   },
   {
@@ -7109,7 +7102,7 @@
    "dates": null,
    "aliases": [],
    "n": 5,
-   "nArr": 0
+   "nArr": 1
   },
   {
    "id": "granados-enrique",
@@ -7208,7 +7201,7 @@
    "dates": "1843–1907",
    "aliases": [],
    "n": 4,
-   "nArr": 4
+   "nArr": 5
   },
   {
    "id": "grillo-giovanni-battista",
@@ -7491,7 +7484,7 @@
     "händel"
    ],
    "n": 8,
-   "nArr": 194
+   "nArr": 199
   },
   {
    "id": "handl-jacob",
@@ -8182,7 +8175,7 @@
     "holst"
    ],
    "n": 11,
-   "nArr": 3
+   "nArr": 6
   },
   {
    "id": "holzbauer-ignaz",
@@ -10625,7 +10618,7 @@
     "mahler"
    ],
    "n": 14,
-   "nArr": 1
+   "nArr": 5
   },
   {
    "id": "makris-andreas",
@@ -11222,7 +11215,7 @@
     "mendelssohn-bartholdy"
    ],
    "n": 13,
-   "nArr": 0
+   "nArr": 1
   },
   {
    "id": "mendes-manoel",
@@ -11758,7 +11751,7 @@
     "wa mozart"
    ],
    "n": 46,
-   "nArr": 37
+   "nArr": 40
   },
   {
    "id": "mudge-richard",
@@ -11848,7 +11841,7 @@
    "dates": "1839–1881",
    "aliases": [],
    "n": 4,
-   "nArr": 1
+   "nArr": 2
   },
   {
    "id": "muth-rasmussen-paul-diderich",
@@ -14036,18 +14029,10 @@
    "dates": "1844–1908",
    "aliases": [
     "rimsky-korsakov",
-    "rimsky korsakov"
+    "rimsky korsakov",
+    "Nikolay Rimsky-Korsakov"
    ],
    "n": 9,
-   "nArr": 0
-  },
-  {
-   "id": "rimsky-korsakov-nikolay",
-   "name": "Nikolay Rimsky-Korsakov",
-   "sort": "Rimsky-Korsakov, Nikolay",
-   "dates": "1844–1908",
-   "aliases": [],
-   "n": 0,
    "nArr": 3
   },
   {
@@ -14537,7 +14522,7 @@
     "saint saens"
    ],
    "n": 10,
-   "nArr": 3
+   "nArr": 4
   },
   {
    "id": "salamon-sean-michael",
@@ -15162,7 +15147,7 @@
     "schumann"
    ],
    "n": 11,
-   "nArr": 3
+   "nArr": 4
   },
   {
    "id": "schurmann-burkhart-m",
@@ -15228,22 +15213,15 @@
    "nArr": 2
   },
   {
-   "id": "scriabin-aleksandr",
-   "name": "Aleksandr Scriabin",
-   "sort": "Scriabin, Aleksandr",
-   "dates": "1872–1915",
-   "aliases": [],
-   "n": 0,
-   "nArr": 1
-  },
-  {
    "id": "scriabin-alexander",
    "name": "Alexander Scriabin",
    "sort": "Scriabin, Alexander",
    "dates": "1872–1915",
-   "aliases": [],
+   "aliases": [
+    "Aleksandr Scriabin"
+   ],
    "n": 4,
-   "nArr": 0
+   "nArr": 1
   },
   {
    "id": "scronx-gerardus",
@@ -15423,18 +15401,10 @@
    "dates": "1906–1975",
    "aliases": [
     "shostakovich",
-    "schostakowitsch"
+    "schostakowitsch",
+    "Dmitry Shostakovich"
    ],
    "n": 29,
-   "nArr": 0
-  },
-  {
-   "id": "shostakovich-dmitry",
-   "name": "Dmitry Shostakovich",
-   "sort": "Shostakovich, Dmitry",
-   "dates": "1906–1975",
-   "aliases": [],
-   "n": 0,
    "nArr": 1
   },
   {
@@ -15675,7 +15645,7 @@
     "sousa"
    ],
    "n": 9,
-   "nArr": 4
+   "nArr": 7
   },
   {
    "id": "sousa-jose-alexandrino-de",
@@ -16956,7 +16926,7 @@
     "verdi"
    ],
    "n": 19,
-   "nArr": 3
+   "nArr": 8
   },
   {
    "id": "verdier-robert",
@@ -54565,6 +54535,26 @@
   },
   {
    "c": "bach-johann-sebastian",
+   "t": "Herz und Mund und Tat und Leben",
+   "cat": "BWV 147",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets, two flugelhorns",
+   "counts": {
+    "flugelhorn": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": "2 horns, 2 flugelhorns, 2 trumpets, 4 trombones, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "bach-johann-sebastian",
    "t": "Herzlich tut mich verlangen",
    "cat": "BWV 727",
    "y": null,
@@ -55955,6 +55945,24 @@
   },
   {
    "c": "bach-johann-sebastian",
+   "t": "Magnificat in D major",
+   "cat": "BWV 243",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 trumpets, trombone",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "bach-johann-sebastian",
    "t": "Magnificat in E-flat major",
    "cat": "BWV 243a",
    "y": null,
@@ -56759,6 +56767,24 @@
     "trumpet"
    ],
    "full": "trumpet, organ",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "t": "Orchestral Suite No.3 in D major",
+   "cat": "BWV 1068",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 4 trumpets, 4 trombones, tuba",
    "note": null,
    "arr": true,
    "est": false
@@ -58113,6 +58139,24 @@
     "trumpet"
    ],
    "full": "trumpet, organ",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "bach-johann-sebastian",
+   "t": "Weihnachtsoratorium",
+   "cat": "BWV 248",
+   "y": null,
+   "g": "Arrangement",
+   "s": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "5 trumpets, 3 trombones",
    "note": null,
    "arr": true,
    "est": false
@@ -63783,6 +63827,42 @@
   },
   {
    "c": "beethoven-ludwig-van",
+   "t": "Egmont",
+   "cat": "Op.84",
+   "y": null,
+   "g": "Arrangement",
+   "s": "six trumpets",
+   "counts": {
+    "trumpet": 6
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3 horns, 6 trumpets, 4 trombones, euphonium and 2 tubas",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "t": "Fidelio",
+   "cat": "Op.72",
+   "y": null,
+   "g": "Arrangement",
+   "s": "six trumpets",
+   "counts": {
+    "trumpet": 6
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3 horns, 6 trumpets, 4 trombones, euphonium, 2 tubas",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "beethoven-ludwig-van",
    "t": "Für Elise",
    "cat": "WoO 59",
    "y": null,
@@ -63885,6 +63965,44 @@
     "trumpet"
    ],
    "full": "horn, trumpet, euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "t": "Symphony No.5",
+   "cat": "Op.67",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, 2 trumpets, trombone, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "t": "Symphony No.9",
+   "cat": "Op.125",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets, two flugelhorns",
+   "counts": {
+    "flugelhorn": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": "2 horns, 2 flugelhorns, 2 trumpets, 4 trombones, tuba",
    "note": null,
    "arr": true,
    "est": false
@@ -64715,6 +64833,42 @@
    "full": "high voice (tenor or soprano), 4 horns, 2 cornets",
    "note": null,
    "arr": false,
+   "est": false
+  },
+  {
+   "c": "berlioz-hector",
+   "t": "Roméo et Juliette",
+   "cat": "H 79",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 trumpets, horn, 3 trombones, euphonium, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "berlioz-hector",
+   "t": "Symphonie fantastique",
+   "cat": "H 48",
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "flute, oboe, clarinet, bassoon, horn, trumpet, trombone, timpani, percussion, harp, 2 violins, viola, cello, double bass",
+   "note": null,
+   "arr": true,
    "est": false
   },
   {
@@ -65651,6 +65805,24 @@
    "full": "trumpet, piano",
    "note": null,
    "arr": false,
+   "est": false
+  },
+  {
+   "c": "bizet-georges",
+   "t": "Carmen",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, trombone",
+   "note": null,
+   "arr": true,
    "est": false
   },
   {
@@ -68579,6 +68751,24 @@
   },
   {
    "c": "brahms-johannes",
+   "t": "Academic Festival Overture",
+   "cat": "Op.80",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 horns, 4 trumpets, 3 trombones and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "brahms-johannes",
    "t": "Ein deutsches Requiem",
    "cat": "Op.45",
    "y": null,
@@ -68591,6 +68781,44 @@
     "trumpet"
    ],
    "full": "2 trumpets, 3 trombones, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "brahms-johannes",
+   "t": "Tragic Overture",
+   "cat": "Op.81",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 horns, 4 trumpets, 3 trombones and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "brahms-johannes",
+   "t": "Variations on a Theme by Haydn",
+   "cat": "Op.56",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets, two flugelhorns",
+   "counts": {
+    "flugelhorn": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "flugelhorn"
+   ],
+   "full": "2 horns, 2 flugelhorns, 2 trumpets, 4 trombones, tuba",
    "note": null,
    "arr": true,
    "est": false
@@ -84262,6 +84490,24 @@
    "est": false
   },
   {
+   "c": "dvorak-antonin",
+   "t": "Mass in D major",
+   "cat": "Op.86",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 trumpets, saxhorn, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
    "c": "dybicz-jan-sara",
    "t": "Kippendavie",
    "cat": null,
@@ -85051,6 +85297,24 @@
     "flugelhorn"
    ],
    "full": "flute, 2 clarinets, trumpet, 2 flugelhorns, saxhorn, euphonium, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "elgar-edward",
+   "t": "Variations on an Original Theme 'Enigma'",
+   "cat": "Op.36",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 trumpets, 3 trombones",
    "note": null,
    "arr": true,
    "est": false
@@ -98188,6 +98452,24 @@
    "est": false
   },
   {
+   "c": "gershwin-george",
+   "t": "Porgy and Bess",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, orchestra",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
    "c": "gerson-l",
    "t": "Méthode compléte de cornet à 3 pistons suivie de duos",
    "cat": null,
@@ -99092,7 +99374,7 @@
    "est": false
   },
   {
-   "c": "glazunov-aleksandr",
+   "c": "glazunov-alexander",
    "t": "Albumblatt",
    "cat": null,
    "y": null,
@@ -99110,7 +99392,7 @@
    "est": false
   },
   {
-   "c": "glazunov-aleksandr",
+   "c": "glazunov-alexander",
    "t": "In modo religioso",
    "cat": "Op.38",
    "y": null,
@@ -99958,6 +100240,24 @@
    "est": false
   },
   {
+   "c": "grainger-percy",
+   "t": "Lincolnshire Posy",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, 2 trumpets, euphonium and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
    "c": "granados-enrique",
    "t": "Playera",
    "cat": null,
@@ -100423,6 +100723,24 @@
     "trumpet"
    ],
    "full": "horn, trumpet, euphonium, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "grieg-edvard",
+   "t": "Peer Gynt",
+   "cat": "Op.23",
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, trumpet, euphonium",
    "note": null,
    "arr": true,
    "est": false
@@ -103767,6 +104085,24 @@
   },
   {
    "c": "handel-george-frideric",
+   "t": "Messiah",
+   "cat": "HWV 56",
+   "y": null,
+   "g": "Arrangement",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "3 trumpets, 3 trombones",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "handel-george-frideric",
    "t": "Mi palpita il cor",
    "cat": "HWV 132a",
    "y": null,
@@ -103815,6 +104151,24 @@
     "trumpet"
    ],
    "full": "oboe, trumpet, organ",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "handel-george-frideric",
+   "t": "Music for the Royal Fireworks",
+   "cat": "HWV 351",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 4 trumpets, 4 trombones, tuba",
    "note": null,
    "arr": true,
    "est": false
@@ -104869,6 +105223,24 @@
   },
   {
    "c": "handel-george-frideric",
+   "t": "Suite in D minor",
+   "cat": "HWV 437",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 trumpets",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "handel-george-frideric",
    "t": "Suite in E major",
    "cat": "HWV 430",
    "y": null,
@@ -105223,6 +105595,42 @@
     "trumpet"
    ],
    "full": "2 trumpets, 2 trombones",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "handel-george-frideric",
+   "t": "Water Music Suite No.2",
+   "cat": "HWV 349",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 4 trumpets, 4 trombones, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "handel-george-frideric",
+   "t": "Zadok the Priest",
+   "cat": "HWV 258",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 trumpets, 2 trombones, timpani, organ",
    "note": null,
    "arr": true,
    "est": false
@@ -110871,6 +111279,24 @@
   },
   {
    "c": "holst-gustav",
+   "t": "First Suite for Military Band",
+   "cat": "Op.28 No.1",
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "holst-gustav",
    "t": "I vow to thee, my country",
    "cat": "H.148",
    "y": null,
@@ -110907,6 +111333,24 @@
   },
   {
    "c": "holst-gustav",
+   "t": "Second Suite for Military Band",
+   "cat": "Op.28 No.2",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 4 trumpets, 2 trombones and 2 tubas or tuba and euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "holst-gustav",
    "t": "Terzetto",
    "cat": null,
    "y": null,
@@ -110919,6 +111363,24 @@
     "trumpet"
    ],
    "full": "horn, trumpet, euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "holst-gustav",
+   "t": "The Planets",
+   "cat": "Op.32",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 4 trumpets, 2 trombones, 2 tubas, piano",
    "note": null,
    "arr": true,
    "est": false
@@ -123056,6 +123518,78 @@
    "est": false
   },
   {
+   "c": "mahler-gustav",
+   "t": "Symphony No.2, GMW 30",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, organ",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mahler-gustav",
+   "t": "Symphony No.3, GMW 31",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 horns, 4 trumpets, 3 trombones , tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mahler-gustav",
+   "t": "Symphony No.5, GMW 44",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 horns, 4 trumpets, 3 trombones and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mahler-gustav",
+   "t": "Symphony No.9, GMW 50",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 horns, 4 trumpets, 3 trombones and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
    "c": "makris-andreas",
    "t": "Fanfare Alexander",
    "cat": null,
@@ -126047,6 +126581,24 @@
    "full": "horn, 2 trumpets, trombone",
    "note": null,
    "arr": false,
+   "est": false
+  },
+  {
+   "c": "mendelssohn-felix",
+   "t": "Symphony No.5",
+   "cat": "Op.107",
+   "y": null,
+   "g": "Arrangement",
+   "s": "piccolo trumpet",
+   "counts": {
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet"
+   ],
+   "full": "piccolo trumpet, piano",
+   "note": null,
+   "arr": true,
    "est": false
   },
   {
@@ -140759,6 +141311,24 @@
   },
   {
    "c": "mozart-wolfgang-amadeus",
+   "t": "Don Giovanni",
+   "cat": "K.527",
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 trumpets and piano",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
    "t": "Ein musikalischer Spaß",
    "cat": "K.522",
    "y": null,
@@ -140849,6 +141419,24 @@
   },
   {
    "c": "mozart-wolfgang-amadeus",
+   "t": "La clemenza di Tito",
+   "cat": "K.621",
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, trumpet, double bass",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
    "t": "Le nozze di Figaro",
    "cat": "K.492",
    "y": null,
@@ -140933,6 +141521,24 @@
     "trumpet"
    ],
    "full": "flute, oboe, clarinet, bassoon, horn and trumpet",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mozart-wolfgang-amadeus",
+   "t": "Requiem in D minor",
+   "cat": "K.626",
+   "y": null,
+   "g": "Arrangement",
+   "s": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "5 trumpets, 4 trombones",
    "note": null,
    "arr": true,
    "est": false
@@ -141259,6 +141865,24 @@
     "trumpet"
    ],
    "full": "horn, trumpet, euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "mussorgsky-modest",
+   "t": "Pictures at an Exhibition",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 4 trumpets, 4 trombones, tuba",
    "note": null,
    "arr": true,
    "est": false
@@ -166042,7 +166666,7 @@
    "est": false
   },
   {
-   "c": "rimsky-korsakov-nikolay",
+   "c": "rimsky-korsakov-nikolai",
    "t": "Mlada (opera-ballet)",
    "cat": null,
    "y": null,
@@ -166060,7 +166684,7 @@
    "est": false
   },
   {
-   "c": "rimsky-korsakov-nikolay",
+   "c": "rimsky-korsakov-nikolai",
    "t": "Scheherazade",
    "cat": "Op.35",
    "y": null,
@@ -166078,7 +166702,7 @@
    "est": false
   },
   {
-   "c": "rimsky-korsakov-nikolay",
+   "c": "rimsky-korsakov-nikolai",
    "t": "The Snow Maiden (suite)",
    "cat": null,
    "y": null,
@@ -204227,6 +204851,24 @@
   },
   {
    "c": "saint-saens-camille",
+   "t": "Danse macabre",
+   "cat": "Op.40",
+   "y": null,
+   "g": "Arrangement",
+   "s": "cornet",
+   "counts": {
+    "cornet": 1
+   },
+   "req": [
+    "cornet"
+   ],
+   "full": "cornet, piano",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "saint-saens-camille",
    "t": "Le carnaval des animaux",
    "cat": null,
    "y": null,
@@ -207880,6 +208522,24 @@
    "est": false
   },
   {
+   "c": "schumann-robert",
+   "t": "Symphony No.1",
+   "cat": "Op.38",
+   "y": null,
+   "g": "Arrangement",
+   "s": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "4 trumpets, 4 trombones",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
    "c": "schurmann-burkhart-m",
    "t": "Maximilian von Welsch",
    "cat": null,
@@ -208278,7 +208938,7 @@
    "est": false
   },
   {
-   "c": "scriabin-aleksandr",
+   "c": "scriabin-alexander",
    "t": "24 Preludes",
    "cat": "Op.11",
    "y": null,
@@ -209286,7 +209946,7 @@
    "est": false
   },
   {
-   "c": "shostakovich-dmitry",
+   "c": "shostakovich-dmitri",
    "t": "3 Fantastic Dances",
    "cat": "Op.5",
    "y": null,
@@ -210331,6 +210991,24 @@
   },
   {
    "c": "sousa-john-philip",
+   "t": "Liberty Bell",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, 2 trumpets, trombone, and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "sousa-john-philip",
    "t": "The Beau Ideal March",
    "cat": null,
    "y": null,
@@ -210367,6 +211045,24 @@
   },
   {
    "c": "sousa-john-philip",
+   "t": "The Stars and Stripes Forever",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, 2 trumpets, trombone, tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "sousa-john-philip",
    "t": "The Thunderer",
    "cat": null,
    "y": null,
@@ -210379,6 +211075,24 @@
     "trumpet"
    ],
    "full": "2 horns, 4 trumpets, 2 trombones, 2 tubas",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "sousa-john-philip",
+   "t": "The Washington Post",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "cornet",
+   "counts": {
+    "cornet": 1
+   },
+   "req": [
+    "cornet"
+   ],
+   "full": "cornet, piano",
    "note": null,
    "arr": true,
    "est": false
@@ -220349,6 +221063,24 @@
   },
   {
    "c": "verdi-giuseppe",
+   "t": "Aïda",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 horns, 3 trumpets, 2 trombones, euphonium and tuba",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "verdi-giuseppe",
    "t": "Giovanna d'Arco",
    "cat": null,
    "y": null,
@@ -220385,7 +221117,79 @@
   },
   {
    "c": "verdi-giuseppe",
+   "t": "Il trovatore",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "two cornets",
+   "counts": {
+    "cornet": 2
+   },
+   "req": [
+    "cornet"
+   ],
+   "full": "2 cornets, 2 trombones, piano",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "verdi-giuseppe",
+   "t": "La forza del destino",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "trumpet, organ",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "verdi-giuseppe",
+   "t": "La traviata",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, trumpet, euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "verdi-giuseppe",
    "t": "Les vêpres siciliennes",
+   "cat": null,
+   "y": null,
+   "g": "Arrangement",
+   "s": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "horn, trumpet, euphonium",
+   "note": null,
+   "arr": true,
+   "est": false
+  },
+  {
+   "c": "verdi-giuseppe",
+   "t": "Luisa Miller",
    "cat": null,
    "y": null,
    "g": "Arrangement",

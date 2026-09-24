@@ -1,5 +1,12 @@
 {
  "_comment": "Hand-curated exact trumpet-family scorings, concentrated on orchestral repertoire where IMSLP's Instrumentation field only says 'orchestra'. The 'trumpets' string is parsed by lib/instrumentation.mjs into structured counts, so it should be written naturally. Counts are players, not parts: a concerto counts the soloist and the orchestra's own section together. Transposition is never recorded — a trumpet in D and a trumpet in B-flat are both a trumpet. Cornet is kept separate from trumpet. Bass trumpet is out of scope and is mentioned only in 'full' or 'note'. 'full' summarises the surrounding brass for context. Entries here override harvested records for the same work.",
+ "sameComposer": {
+  "_comment": "Spellings that name one person. Composer identity is matched on the display name, and the sources romanise Russian forenames differently — IMSLP files Glazunov under 'Aleksandr', Wikipedia under 'Alexander' — so each pair here became two composers with the works split between them. The key is the spelling to fold away, the value the one to keep: in every case the spelling that already held the works, which is also the id any existing link points at. Only add a pair after checking it really is one person; near-identical names that are NOT the same are common in this index (Johann Christian and Johann Sebastian Bach, the three Loeillets, Clara and Camillo Schumann).",
+  "Aleksandr Glazunov": "Alexander Glazunov",
+  "Nikolay Rimsky-Korsakov": "Nikolai Rimsky-Korsakov",
+  "Aleksandr Scriabin": "Alexander Scriabin",
+  "Dmitry Shostakovich": "Dmitri Shostakovich"
+ },
  "composers": {
   "bach-johann-sebastian": {
    "name": "Johann Sebastian Bach",
