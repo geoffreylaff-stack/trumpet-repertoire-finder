@@ -295,6 +295,9 @@ test('collapses a plain divided string section to "strings"', () => {
   assert.equal(
     normalizeStringSection('timpani and the normal string section of first and second violins, violas, cellos and double basses'),
     'timpani and the normal string section');
+  assert.equal(
+    normalizeStringSection('two horns, and a string section containing first and second violins, violas, cellos and double basses'),
+    'two horns, and a string section');
 });
 
 test('a "Strings" label absorbs the enumeration that follows it', () => {
