@@ -585,7 +585,7 @@ button.secondary:hover { background: var(--surface-2); color: var(--ink); }
     </p>
   </footer>
 
-  <script id="build-info">window.__BUILD__="acf613a84b";window.__DATA_V__="f0f7a4f01f";</script>
+  <script id="build-info">window.__BUILD__="62a0062d59";window.__DATA_V__="f0f7a4f01f";</script>
 
   <script type="module">
 /**
@@ -649,6 +649,28 @@ function stripTranspositions(segment) {
 }
 
 /**
+ * A leading count or trailing part-range/number written against an
+ * out-of-scope name, wrapped around it so both are erased along with the
+ * name itself. A number left behind is free to drift onto whichever real
+ * instrument sits next in a comma-less run-on list — "bass trumpet 4
+ * cornet 1-2" would otherwise leave a stray "4" for "cornet" to misread as
+ * its own count instead of the "1-2" that is actually its. Independent of,
+ * and for the same reason as, the leading/trailing consumption the main
+ * matching loop does for in-scope instruments below.
+ *
+ * The negative lookbehind on the leading side guards the opposite mistake —
+ * reading a bare digit as this name's own count when it is actually the
+ * tail of an unrelated, real instrument's range sitting right before it:
+ * "trumpet 1-3 bass trumpet" must not let "bass trumpet" swallow trumpet's
+ * own "3".
+ */
+const OUT_OF_SCOPE_LEADING = String.raw`\b(?<![-–—]\s*)(?:\d+|a|an|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|double|triple|quadruple)\s+`;
+const OUT_OF_SCOPE_TRAILING = String.raw`\s*\d+\s*(?:[-–—]\s*\d+)?`;
+function withAdjacentNumbers(source) {
+  return new RegExp(`(?:${OUT_OF_SCOPE_LEADING})?(?:${source})(?:${OUT_OF_SCOPE_TRAILING})?`, 'gi');
+}
+
+/**
  * Names that contain an in-scope instrument's name but are not that instrument.
  * These are erased from the text before anything else looks at it — skipping
  * them in the matching loop is not enough, because "bass trumpet" still holds
@@ -656,16 +678,16 @@ function stripTranspositions(segment) {
  */
 const OUT_OF_SCOPE = [
   // Bass trumpet is deliberately outside this app's scope.
-  /\bbass[\s-]*(?:trumpets?|trompete[ns]?)\b/gi,
-  /\btromb[ae]\s+bass[ao]\b/gi,
-  /\bbasstrompete[ns]?\b/gi,
+  withAdjacentNumbers(String.raw`\bbass[\s-]*(?:trumpets?|trompete[ns]?)\b`),
+  withAdjacentNumbers(String.raw`\btromb[ae]\s+bass[ao]\b`),
+  withAdjacentNumbers(String.raw`\bbasstrompete[ns]?\b`),
   // The trumpet marine is a bowed monochord — a trumpet in name only.
-  /\b(?:trumpet|tromba|trompette)\s+marin[ae]?\b/gi,
+  withAdjacentNumbers(String.raw`\b(?:trumpet|tromba|trompette)\s+marin[ae]?\b`),
   // The cornett / cornetto (Zink) is a Renaissance wooden horn, unrelated to
   // the valved cornet.
-  /\b(?:cornett[ioe]?s?|zinken?)\b/gi,
+  withAdjacentNumbers(String.raw`\b(?:cornett[ioe]?s?|zinken?)\b`),
   // "Trumpet 8'" on an organ is a rank of pipes, not a player.
-  /\btrumpet\s+stops?\b/gi,
+  withAdjacentNumbers(String.raw`\btrumpet\s+stops?\b`),
 ];
 
 /** Blank out every out-of-scope name so no pattern can see inside one. */
@@ -928,15 +950,28 @@ function splitSegments(text) {
  *
  * The range must sit immediately after the name, so "trumpet in B-flat 1" and
  * a stray "3-4 minutes" elsewhere in the text cannot be mistaken for one.
+ *
+ * A bare trailing number with no range ("Trumpet 1") is deliberately not
+ * read as a count either — see the same comment — but it still needs
+ * consuming, `count: null` and all: left alone, that "1" sits in the scan
+ * for whatever comes next in a run-on list to misread as its own leading
+ * count, turning "trumpet in B-flat 1 cornet 1-2" into one cornet instead
+ * of two.
  */
 function trailingRange(segment, afterIndex) {
-  const m = /^\s*(\d+)\s*[-–—]\s*(\d+)\b/.exec(segment.slice(afterIndex));
-  if (!m) return null;
-  const [lo, hi] = [parseInt(m[1], 10), parseInt(m[2], 10)];
-  if (!(hi > lo) || hi - lo > 11) return null; // not a part range
-  // `length` lets the caller consume the range together with the name it
-  // belongs to, so the next instrument along cannot inherit its last number.
-  return { count: hi - lo + 1, length: m[0].length };
+  const after = segment.slice(afterIndex);
+  const range = /^\s*(\d+)\s*[-–—]\s*(\d+)\b/.exec(after);
+  if (range) {
+    const [lo, hi] = [parseInt(range[1], 10), parseInt(range[2], 10)];
+    if (hi > lo && hi - lo <= 11) {
+      // `length` lets the caller consume the range together with the name it
+      // belongs to, so the next instrument along cannot inherit its last number.
+      return { count: hi - lo + 1, length: range[0].length };
+    }
+  }
+  const bare = /^\s*\d+\b(?!\s*[-–—])/.exec(after);
+  if (bare) return { count: null, length: bare[0].length };
+  return null;
 }
 
 /** Pull a leading quantity off a segment: "2 trumpets" / "two trumpets". */
@@ -961,6 +996,27 @@ function leadingCount(segment, matchIndex) {
     if (n) return n;
   }
   return null; // unknown — decided by plurality below
+}
+
+/**
+ * Where a leading count starts, mirroring what leadingCount reads — the
+ * position right before the digits or number-word, not just its value.
+ *
+ * The run-on consuming loop needs this to blank the count along with the
+ * name once it is read: name-matching alone erases "trumpets" from "3
+ * trumpets cornet" but leaves the "3" sitting in the scan, free to be read
+ * again as "cornet"'s own leading count — three trumpets, three cornets,
+ * when the source states a count for only one of them.
+ */
+function leadingCountStart(segment, matchIndex) {
+  const before = segment.slice(0, matchIndex).trimEnd();
+  if (/[a-z]\s*\d+\s*[-–—]\s*\d+\s*(?:x\s*)?$/i.test(before)) return null;
+  const digits = /(\d+)\s*(?:x\s*)?$/.exec(before);
+  if (digits) return digits.index;
+
+  const word = /([a-z]+)\s*$/i.exec(before);
+  if (word && NUMBER_WORDS[word[1].toLowerCase()]) return word.index;
+  return null;
 }
 
 /**
@@ -1026,19 +1082,26 @@ function parseInstrumentation(text) {
       const gap = lastEnd >= 0 ? scan.slice(lastEnd, m.index) : null;
       const alternative = gap !== null && /^[\s,]*(?:or|oder|ou)\b[\s\d,]*$/i.test(gap);
 
-      // Consume the name together with any part range written after it, so the
-      // next instrument in a run-on list cannot inherit that range's last
-      // number as its own count.
+      // Read the count before consuming anything, then consume the name
+      // together with both its leading count and any trailing range, so the
+      // next instrument in a run-on list cannot inherit either: neither the
+      // range's last number ("trumpet 1-3 flugelhorn" — the 3 is the third
+      // trumpet) nor a count already claimed here with nothing of its own to
+      // replace it ("3 trumpets cornet" is three trumpets and one cornet,
+      // not three — left unconsumed, that "3" is still sitting there for
+      // "cornet" to read as its own).
       const nameEnd = m.index + m[0].length;
       const range = trailingRange(scan, nameEnd);
       const consumedEnd = nameEnd + (range ? range.length : 0);
-      const before = scan.slice(0, m.index);
-      scan = before + ' '.repeat(consumedEnd - m.index) + scan.slice(consumedEnd);
+      const leadStart = leadingCountStart(scan, m.index);
+      const n = leadingCount(scan, m.index) ?? (range ? range.count : null);
+      const consumedStart = leadStart ?? m.index;
+      const before = scan.slice(0, consumedStart);
+      scan = before + ' '.repeat(consumedEnd - consumedStart) + scan.slice(consumedEnd);
       lastEnd = consumedEnd;
       if (alternative) continue;
 
       primaryKey ??= key;
-      const n = leadingCount(scan, m.index) ?? (range ? range.count : null);
       if (n !== null) {
         if (explicit[key] === undefined) explicit[key] = n;
       } else {

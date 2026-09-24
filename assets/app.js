@@ -1,4 +1,4 @@
-import { FAMILY, FAMILY_KEYS } from '../lib/instrumentation.mjs?v=5eaba007ad';
+import { FAMILY, FAMILY_KEYS } from '../lib/instrumentation.mjs?v=68d4c964cb';
 
 /**
  * All searching happens against an index that ships with the page, so the app
