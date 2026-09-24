@@ -23521,7 +23521,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets (B♭), 2 bassoons, horn (F), trumpet (B♭), 2 timpani, violins I, violins II, violas, cellos and double basses",
+   "full": "2 flutes, 2 oboes, 2 clarinets (B♭), 2 bassoons, horn (F), trumpet (B♭), 2 timpani, strings",
    "note": null,
    "arr": false,
    "est": false
@@ -23539,7 +23539,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 3 flutes, 3 oboes, cor anglais, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 6 horns, 3 trumpets, 3 trombones, tuba, percussion (timpani, 4 tubular bells, glockenspiel, triangle, tambourine, snare drum, cymbals, bass drum, and tamtam), pianino (upright piano), celesta, harp, organ (ad lib), and the standard strings of I & II violins, violas, cellos, and double basses",
+   "full": "piccolo, 3 flutes, 3 oboes, cor anglais, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 6 horns, 3 trumpets, 3 trombones, tuba, percussion (timpani, 4 tubular bells, glockenspiel, triangle, tambourine, snare drum, cymbals, bass drum, and tamtam), pianino (upright piano), celesta, harp, organ (ad lib), and the standard strings",
    "note": null,
    "arr": false,
    "est": false
@@ -23575,7 +23575,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piano and orchestra:, Woodwinds, 2 flutes, piccolo, 2 oboes, cor anglais, 2 clarinets in B, 2 bassoons, Brass, 4 horns in F, 2 trumpets in C, 3 trombones, tuba, Percussion, timpani, snare drum, triangle, cymbals, bass drum, glockenspiel, Strings, 1st violins, 2nd violins, violas, cellos, double basses, concert harp",
+   "full": "piano and orchestra:, Woodwinds, 2 flutes, piccolo, 2 oboes, cor anglais, 2 clarinets in B, 2 bassoons, Brass, 4 horns in F, 2 trumpets in C, 3 trombones, tuba, Percussion, timpani, snare drum, triangle, cymbals, bass drum, glockenspiel, Strings, concert harp",
    "note": null,
    "arr": false,
    "est": false
@@ -23683,7 +23683,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes, 2 oboes, 2 clarinets, 3 bassoons, Brass, 4 French horns, 2 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, piano, Strings, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "3 flutes, 2 oboes, 2 clarinets, 3 bassoons, Brass, 4 French horns, 2 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, piano, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24079,7 +24079,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, 3 clarinets in B and A (3rd doubling bass clarinet), 2 bassoons, contrabassoon, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, bass drum, piano, harp, violins I & II, violas, cellos, and double basses, The three movements are as follows:, Stravinsky, who rarely acknowledged extramusical inspirations for his music, referred to the composition as his 'war symphony'",
+   "full": "piccolo, 2 flutes, 2 oboes, 3 clarinets in B and A (3rd doubling bass clarinet), 2 bassoons, contrabassoon, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, bass drum, piano, harp, strings, The three movements are as follows:, Stravinsky, who rarely acknowledged extramusical inspirations for his music, referred to the composition as his 'war symphony'",
    "note": null,
    "arr": false,
    "est": false
@@ -24097,7 +24097,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, Flute, Oboe, English horn, E clarinet, Clarinet, Bass clarinet, Bassoon, Contrabassoon, Brass, 2 Horns, Trumpet, Trombone, Tuba, Percussion, Xylophone, Snare drum, Strings, Harp, 1st Violins, 2nd Violins, Violas, Cellos, Double Basses",
+   "full": "Piccolo, Flute, Oboe, English horn, E clarinet, Clarinet, Bass clarinet, Bassoon, Contrabassoon, Brass, 2 Horns, Trumpet, Trombone, Tuba, Percussion, Xylophone, Snare drum, Strings, Harp",
    "note": null,
    "arr": false,
    "est": false
@@ -24115,7 +24115,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 3 Oboes, 3 Clarinets, 2 Bassoons, Contrabassoon, Brass, 4 French horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Triangle, Cymbals, Strings, 1st Violins, 2nd Violins, Violas, Cellos, Double basses",
+   "full": "Piccolo, 2 Flutes, 3 Oboes, 3 Clarinets, 2 Bassoons, Contrabassoon, Brass, 4 French horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Triangle, Cymbals, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24151,7 +24151,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, English horn, 3 clarinets (B and A), 2 bassoons, contrabassoon, Brass, 4 horns, 2 trumpets (B♭), 3 trombones, tuba, Percussion, timpani, snare drum, cymbals, Strings, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "piccolo, 2 flutes, 2 oboes, English horn, 3 clarinets (B and A), 2 bassoons, contrabassoon, Brass, 4 horns, 2 trumpets (B♭), 3 trombones, tuba, Percussion, timpani, snare drum, cymbals, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24205,7 +24205,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets in A, 2 Bassoons, Brass, 4 French horns, 2 Trumpets, 3 Trombones, Tuba, Percussion, 4 Timpani, Triangle, Castanets, Woodblock, Whip, Tom-Tom (soprano), Snare Drum, Cymbals, Bass Drum, Tam-Tam, Glockenspiel, Xylophone, Vibraphone, Keyboards, Celesta, Strings, 1st Violins, 2nd Violins, Violas, Cellos, Double Basses, Notwithstanding the large percussion section",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets in A, 2 Bassoons, Brass, 4 French horns, 2 Trumpets, 3 Trombones, Tuba, Percussion, 4 Timpani, Triangle, Castanets, Woodblock, Whip, Tom-Tom (soprano), Snare Drum, Cymbals, Bass Drum, Tam-Tam, Glockenspiel, Xylophone, Vibraphone, Keyboards, Celesta, Strings, Notwithstanding the large percussion section",
    "note": null,
    "arr": false,
    "est": false
@@ -24223,7 +24223,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (2nd doubling piccolo), 2 oboes, 1 clarinet, 1 bassoon, Brass, 4 French horns, 2 trumpets, 1 trombone, Percussion, timpani, triangle, tambourine, snare drum, cymbals, glockenspiel, xylophone, Keyboards, celesta, Strings, harp, 1st violins, 2nd violins, violas, cellos, double basses, Shostakovich later adjusted the orchestration for the version of Tahiti Trot in The Golden Age and added a ",
+   "full": "2 flutes (2nd doubling piccolo), 2 oboes, 1 clarinet, 1 bassoon, Brass, 4 French horns, 2 trumpets, 1 trombone, Percussion, timpani, triangle, tambourine, snare drum, cymbals, glockenspiel, xylophone, Keyboards, celesta, Strings, harp, Shostakovich later adjusted the orchestration for the version of Tahiti Trot in The Golden Age and added a",
    "note": null,
    "arr": false,
    "est": false
@@ -24243,7 +24243,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "piccolo, 2 flutes (2nd doubling piccolo), 2 oboes, cor anglais, 2 B♭ clarinets, E♭ clarinet (doubling bass clarinet), 2 bassoons, double bassoon, Brass: 6 French horns, 3 trumpets, 3 trombones, 1 baritone or euphonium, 1 tuba, Percussion: timpani, bass drum, cymbals, snare drum, triangle, tambourine, tam-tam, glockenspiel, xylophone, Strings: violins, violas, cellos, double basses, Additional inst",
+   "full": "piccolo, 2 flutes (2nd doubling piccolo), 2 oboes, cor anglais, 2 B♭ clarinets, E♭ clarinet (doubling bass clarinet), 2 bassoons, double bassoon, Brass: 6 French horns, 3 trumpets, 3 trombones, 1 baritone or euphonium, 1 tuba, Percussion: timpani, bass drum, cymbals, snare drum, triangle, tambourine, tam-tam, glockenspiel, xylophone, Strings, Additional inst",
    "note": null,
    "arr": false,
    "est": false
@@ -24354,7 +24354,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo (doubling 3rd flute), 2 flutes (with 2nd doubling 2nd piccolo), 2 oboes, 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, alto trumpet, 3 trombones, tuba, Percussion:, timpani, bass drum, snare drum, tam-tam, cymbals, triangle, glockenspiel, Keyboard, piano, Strings:, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "piccolo (doubling 3rd flute), 2 flutes (with 2nd doubling 2nd piccolo), 2 oboes, 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, alto trumpet, 3 trombones, tuba, Percussion:, timpani, bass drum, snare drum, tam-tam, cymbals, triangle, glockenspiel, Keyboard, piano, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24462,7 +24462,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "4 flutes (3rd and 4th doubling piccolos), 2 oboes, cor anglais, 2 B clarinets, E clarinet, bass clarinet, 3 bassoons (3rd doubling contrabassoon), Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, tambourine, 2 pairs of crash cymbals, suspended cymbals, snare drum, triangle, xylophone, tam-tam, Strings, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "4 flutes (3rd and 4th doubling piccolos), 2 oboes, cor anglais, 2 B clarinets, E clarinet, bass clarinet, 3 bassoons (3rd doubling contrabassoon), Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, tambourine, 2 pairs of crash cymbals, suspended cymbals, snare drum, triangle, xylophone, tam-tam, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24480,7 +24480,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets in B and A, 2 Bassoons, Brass:, 4 Horns, 2 Trumpets, 3 Trombones, Tuba, Percussion:, Timpani, Snare drum, Bass drum, Cymbals, Triangle, Tambourine, Strings:, 1st Violins, 2nd Violins, Violas, Cellos, Double basses",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets in B and A, 2 Bassoons, Brass:, 4 Horns, 2 Trumpets, 3 Trombones, Tuba, Percussion:, Timpani, Snare drum, Bass drum, Cymbals, Triangle, Tambourine, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24534,7 +24534,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes (3rd doubling piccolo), 3 oboes, 3 clarinets (B♭ and A), 3 bassoons (3rd doubling contrabassoon), Brass, 4 horns, 3 trumpets (B♭), 3 trombones, tuba, Percussion, timpani, bass drum, triangle, snare drum, cymbals, tam-tam, Strings, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "3 flutes (3rd doubling piccolo), 3 oboes, 3 clarinets (B♭ and A), 3 bassoons (3rd doubling contrabassoon), Brass, 4 horns, 3 trumpets (B♭), 3 trombones, tuba, Percussion, timpani, bass drum, triangle, snare drum, cymbals, tam-tam, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24660,7 +24660,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Chorus, Orchestra, Piccolo, 2 Flutes, 2 Oboes, Cor Anglais, 2 Clarinets, Bass Clarinet, 2 Bassoons, Contrabassoon, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Timpani, Harp, Strings (1st and 2nd Violins, Violas, Cellos, Double basses), Percussion (Triangle, Wooden Drum, Tambourine, Snare Drum, Bass Drum, Cymbals, Tam-tam, Glockenspiel, Xylophone)",
+   "full": "Chorus, Orchestra, Piccolo, 2 Flutes, 2 Oboes, Cor Anglais, 2 Clarinets, Bass Clarinet, 2 Bassoons, Contrabassoon, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Timpani, Harp, Strings, Percussion (Triangle, Wooden Drum, Tambourine, Snare Drum, Bass Drum, Cymbals, Tam-tam, Glockenspiel, Xylophone)",
    "note": null,
    "arr": false,
    "est": false
@@ -24719,7 +24719,7 @@
     "cornet",
     "flugelhorn"
    ],
-   "full": "Strings: violins I & II, violas, cellos, double basses, Woodwinds: piccolo, 2 flutes, 3 oboes (including English horn), 3 clarinets (including E-flat clarinet), 2 bass clarinets, 2 alto saxophones, 2 tenor saxophones, 3 bassoons (including contrabassoon), Brass: 4 horns, 5 trumpets (including cornet), 3 trombones, bass trombone, 2 tubas, Percussion: timpani, 2 snare drums, bass drum, cymbals, 2 ta",
+   "full": "Strings, Woodwinds: piccolo, 2 flutes, 3 oboes (including English horn), 3 clarinets (including E-flat clarinet), 2 bass clarinets, 2 alto saxophones, 2 tenor saxophones, 3 bassoons (including contrabassoon), Brass: 4 horns, 5 trumpets (including cornet), 3 trombones, bass trombone, 2 tubas, Percussion: timpani, 2 snare drums, bass drum, cymbals, 2 ta",
    "note": null,
    "arr": false,
    "est": false
@@ -24755,7 +24755,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, English Horn, 2 Clarinets, Bass Clarinet, 2 Bassoons, Contrabassoon, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Timpani, Percussion (Triangle, Tambourine, Castanets, Snare Drum, Cymbals, Bass Drum), Harp, Piano, Strings (1st and 2nd Violins, Violas, Cellos, Double Basses), Chorus",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, English Horn, 2 Clarinets, Bass Clarinet, 2 Bassoons, Contrabassoon, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Timpani, Percussion (Triangle, Tambourine, Castanets, Snare Drum, Cymbals, Bass Drum), Harp, Piano, Strings, Chorus",
    "note": null,
    "arr": false,
    "est": false
@@ -24881,7 +24881,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "violins I & II, violas, cellos, double basses, Woodwinds: piccolo, 2 flutes, 2 oboes, english horn, 3 clarinets, E-flat clarinet, bass clarinet, alto saxophone, tenor saxophone, 4 bassoons, contrabassoon, Brass: 5 horns, 5 trumpets, 3 trombones, 2 tubas, Percussion: timpani, bass drum, snare drum, triangle, tambourine, cymbals, tam-tam, bells, church bells, glockenspiel, xylophone, wood block, whi",
+   "full": "strings, Woodwinds: piccolo, 2 flutes, 2 oboes, english horn, 3 clarinets, E-flat clarinet, bass clarinet, alto saxophone, tenor saxophone, 4 bassoons, contrabassoon, Brass: 5 horns, 5 trumpets, 3 trombones, 2 tubas, Percussion: timpani, bass drum, snare drum, triangle, tambourine, cymbals, tam-tam, bells, church bells, glockenspiel, xylophone, wood block, whi",
    "note": null,
    "arr": false,
    "est": false
@@ -24973,7 +24973,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, Cor anglais, 2 Clarinets, Bass clarinet, 2 Bassoons, Contrabassoon, Brass, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Bass drum, Cymbals, Snare drum, Castanets, Triangle, Tambourine, Keyboards, Piano, Strings, Violins (1st and 2nd), Violas, Cellos, Double basses",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, Cor anglais, 2 Clarinets, Bass clarinet, 2 Bassoons, Contrabassoon, Brass, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Bass drum, Cymbals, Snare drum, Castanets, Triangle, Tambourine, Keyboards, Piano, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -24991,7 +24991,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, Cor anglais, 2 Clarinets, Bass clarinet, 2 Bassoons, Contrabassoon, Brass, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Bass drum, Snare drum, Cymbals, Tambourine, Tam-tam, Castanets, Bell, Strings, 2 Harps, Violins (1st and 2nd), Violas, Cellos, Double basses",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, Cor anglais, 2 Clarinets, Bass clarinet, 2 Bassoons, Contrabassoon, Brass, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Bass drum, Snare drum, Cymbals, Tambourine, Tam-tam, Castanets, Bell, Strings, 2 Harps",
    "note": null,
    "arr": false,
    "est": false
@@ -25009,7 +25009,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwinds, piccolo, 2 flutes, 2 oboes, English horn, 2 clarinets in B and A, bass clarinet, 2 bassoons, contrabassoon, Brass, 4 horns in F, 2 trumpets in C, 3 trombones, tuba, Percussion, timpani, bass drum, snare drum, cymbals, suspended cymbal, Strings, violins (1st and 2nd), violas, cellos, double basses",
+   "full": "Woodwinds, piccolo, 2 flutes, 2 oboes, English horn, 2 clarinets in B and A, bass clarinet, 2 bassoons, contrabassoon, Brass, 4 horns in F, 2 trumpets in C, 3 trombones, tuba, Percussion, timpani, bass drum, snare drum, cymbals, suspended cymbal, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -25027,7 +25027,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, Cor anglais, E clarinet, 2 Clarinets, Bass clarinet, 2 Bassoons, Contrabassoon, Brass, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Bass drum, Snare drum, Cymbals, Triangle, Tambourine, Tam-tam, Wood block, Keyboards, Piano, Strings, Harp, Violins (1st and 2nd), Violas, Cellos, Double basses",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, Cor anglais, E clarinet, 2 Clarinets, Bass clarinet, 2 Bassoons, Contrabassoon, Brass, 4 Horns, 3 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Bass drum, Snare drum, Cymbals, Triangle, Tambourine, Tam-tam, Wood block, Keyboards, Piano, Strings, Harp",
    "note": null,
    "arr": false,
    "est": false
@@ -25045,7 +25045,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, English horn, E clarinet, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, cymbals (crash and suspended), snare drum, triangle, tamtam, tambourine, wood block, Keyboard, piano, celesta, Strings, harp, violins (1st and 2nd), violas, cellos, double basses",
+   "full": "piccolo, 2 flutes, 2 oboes, English horn, E clarinet, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, cymbals (crash and suspended), snare drum, triangle, tamtam, tambourine, wood block, Keyboard, piano, celesta, Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -25063,7 +25063,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets, bass clarinet, 2 bassoons, Brass, 4 horn, 3 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, snare drum, cymbals, tambourine, triangle, wood blocks, xylophone, glockenspiel, Keyboards, piano, Strings, harp, violins (1st and 2nd), violas, cellos, double basses",
+   "full": "piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets, bass clarinet, 2 bassoons, Brass, 4 horn, 3 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, snare drum, cymbals, tambourine, triangle, wood blocks, xylophone, glockenspiel, Keyboards, piano, Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -25081,7 +25081,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes (one doubling oboe d'amore), cor anglais, 2 B, A clarinets, 2 bassoons, contrabassoon, Brass, 4 E, F horns, 2 E trumpets, 3 trombones, tuba, Percussion, timpani, Keyboards, celesta, piano, Strings, harp, 1st violins, 2nd violins, violas, cellos, double basses, \"Blicke mir nicht ...\", \"Ich atmet' einen linden ...\", \"Ich bin der Welt ...\", \"Um Mitternacht\", \"Liebst du um Schönheit\"",
+   "full": "2 flutes, 2 oboes (one doubling oboe d'amore), cor anglais, 2 B, A clarinets, 2 bassoons, contrabassoon, Brass, 4 E, F horns, 2 E trumpets, 3 trombones, tuba, Percussion, timpani, Keyboards, celesta, piano, Strings, harp, \"Blicke mir nicht ...\", \"Ich atmet' einen linden ...\", \"Ich bin der Welt ...\", \"Um Mitternacht\", \"Liebst du um Schönheit\"",
    "note": null,
    "arr": false,
    "est": false
@@ -25279,7 +25279,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 4 flutes, 4 oboes (4th doubling cor anglais), E clarinet, 3 B and A clarinets, bass clarinet, 4 bassoons (4th doubling contrabassoon), Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, 4 timpani, bass drum, snare drum, cymbals, triangle, tam-tam, 3 deep bells in F, A, and B, glockenspiel, Strings, 2 harps, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "piccolo, 4 flutes, 4 oboes (4th doubling cor anglais), E clarinet, 3 B and A clarinets, bass clarinet, 4 bassoons (4th doubling contrabassoon), Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, 4 timpani, bass drum, snare drum, cymbals, triangle, tam-tam, 3 deep bells in F, A, and B, glockenspiel, Strings, 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -25729,7 +25729,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwind: 2 flutes (1 doubling piccolo), 2 oboes (2 with English horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), Brass: 2 horns, 1 trumpet, 1 bass trombone, Percussion: timpani and 3 players playing cymbals, tambourine, triangle, bass drum, snare drum, glockenspiel, Keyboard: piano, Strings: harp, violins, violas, cellos, double basses",
+   "full": "Woodwind: 2 flutes (1 doubling piccolo), 2 oboes (2 with English horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), Brass: 2 horns, 1 trumpet, 1 bass trombone, Percussion: timpani and 3 players playing cymbals, tambourine, triangle, bass drum, snare drum, glockenspiel, Keyboard: piano, Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -25963,7 +25963,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piano solo, 3 flutes, 2 oboes, cor anglais (English horn), 2 (soprano) clarinets in B, 3 bassoons, bass clarinet in B, 4 (French) (valve) horns in F, 3 trumpets in F, 2 harps, strings (1st & 2nd violins, violas, cellos, double basses)",
+   "full": "piano solo, 3 flutes, 2 oboes, cor anglais (English horn), 2 (soprano) clarinets in B, 3 bassoons, bass clarinet in B, 4 (French) (valve) horns in F, 3 trumpets in F, 2 harps, strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26053,7 +26053,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 2 trumpets, 2 trombones, and tuba, timpani, cymbals, and triangle, violins (I and II), violas, cellos, and double basses, The Ballet Scene, on the other hand, is one of the most luxuriously scored orchestral works in Sibelius's oeuvre. To the forces listed above for the Overture, it subtracts timpani from the percussion section but adds cast",
+   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 2 trumpets, 2 trombones, and tuba, timpani, cymbals, and triangle, strings, The Ballet Scene, on the other hand, is one of the most luxuriously scored orchestral works in Sibelius's oeuvre. To the forces listed above for the Overture, it subtracts timpani from the percussion section but adds cast",
    "note": null,
    "arr": false,
    "est": false
@@ -26089,7 +26089,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 3 trumpets, 3 trombones, and tuba, Timpani, bass drum, and cymbals, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 3 trumpets, 3 trombones, and tuba, Timpani, bass drum, and cymbals, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26107,7 +26107,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, Timpani and triangle, Violins (I and II), violas, cellos, double basses, and harp, The original version of the piece called for much larger orchestral forces, including 2 trumpets, cymbals, bass drum, tambourine, and castanets",
+   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, Timpani and triangle, Strings, and harp, The original version of the piece called for much larger orchestral forces, including 2 trumpets, cymbals, bass drum, tambourine, and castanets",
    "note": null,
    "arr": false,
    "est": false
@@ -26125,7 +26125,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets (in A and B ), bass clarinet (in B ), and 2 bassoons, Brass: 4 horns (in D, E, and F), 3–4 trumpets (in D, E, and F), 3 trombones, and tuba, Percussion: timpani, triangle, and cymbals, Strings: violins, violas, cellos, and double basses, Sibelius did not publish Kullervo in his lifetime, and for many decades the score existed only in the autogra",
+   "full": "piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets (in A and B ), bass clarinet (in B ), and 2 bassoons, Brass: 4 horns (in D, E, and F), 3–4 trumpets (in D, E, and F), 3 trombones, and tuba, Percussion: timpani, triangle, and cymbals, Strings, Sibelius did not publish Kullervo in his lifetime, and for many decades the score existed only in the autogra",
    "note": null,
    "arr": false,
    "est": false
@@ -26143,7 +26143,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (one doubling piccolo), 1 oboe, 1 clarinet, 1 bass clarinet, and 1 bassoon, 2 horns, 3 trumpets, and 1 trombone, Timpani, glockenspiel, bass drum, and cymbals, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes (one doubling piccolo), 1 oboe, 1 clarinet, 1 bass clarinet, and 1 bassoon, 2 horns, 3 trumpets, and 1 trombone, Timpani, glockenspiel, bass drum, and cymbals, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26197,7 +26197,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 1 oboe, 2 clarinets, and 1 bass clarinet, 2 trumpets and 2 trombones, Timpani, bass drum, snare drum, cymbals, tambourine, and triangle, Violins (I and II), violas, cellos, and double basses, The piece is notable by Sibelius's standards in that it omits both horns and bassoons. Although the piece is titled as a march, this is \"something of a misnomer, as it is not particularly march-like",
+   "full": "2 flutes, 1 oboe, 2 clarinets, and 1 bass clarinet, 2 trumpets and 2 trombones, Timpani, bass drum, snare drum, cymbals, tambourine, and triangle, Strings, The piece is notable by Sibelius's standards in that it omits both horns and bassoons. Although the piece is titled as a march, this is \"something of a misnomer, as it is not particularly march-like",
    "note": null,
    "arr": false,
    "est": false
@@ -26235,7 +26235,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (one doubling piccolo), 2 oboes, 2 clarinets (in A; one doubling bass clarinet (in A)), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), and 3 trombones, Timpani, Bass drum, cymbals, tambourine, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes (one doubling piccolo), 2 oboes, 2 clarinets (in A; one doubling bass clarinet (in A)), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), and 3 trombones, Timpani, Bass drum, cymbals, tambourine, and triangle, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26271,7 +26271,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes and 2 clarinets, 2 horns, 1 trumpet, and 1 trombone, Violins, violas, cellos, and double basses, The original version of the piece called for much larger orchestral forces, including 2 oboes, 2 bassoons, timpani, and five additional brass players (2 horns, 1 trumpet, and 2 trombones)",
+   "full": "2 flutes and 2 clarinets, 2 horns, 1 trumpet, and 1 trombone, Strings, The original version of the piece called for much larger orchestral forces, including 2 oboes, 2 bassoons, timpani, and five additional brass players (2 horns, 1 trumpet, and 2 trombones)",
    "note": null,
    "arr": false,
    "est": false
@@ -26289,7 +26289,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 1 cor anglais, 2 clarinets (in A), 1 bass clarinet (in B ), 2 bassoons, and 1 contrabassoon, 4 horns (in F), 3 trumpets (in B ), 3 trombones, and 1 tuba, Timpani, bass drum, snare drum, and cymbals, Violins (I and II), violas, cellos, and double basses, The original version of the piece called for 1 piccolo in addition to the orchestra forces above",
+   "full": "2 flutes, 2 oboes, 1 cor anglais, 2 clarinets (in A), 1 bass clarinet (in B ), 2 bassoons, and 1 contrabassoon, 4 horns (in F), 3 trumpets (in B ), 3 trombones, and 1 tuba, Timpani, bass drum, snare drum, and cymbals, Strings, The original version of the piece called for 1 piccolo in addition to the orchestra forces above",
    "note": null,
    "arr": false,
    "est": false
@@ -26307,7 +26307,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 4 trumpets, 2 trombones, and 1 tuba, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 4 trumpets, 2 trombones, and 1 tuba, Timpani, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26325,7 +26325,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (one doubling piccolo), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in F), and 3 trombones, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes (one doubling piccolo), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in F), and 3 trombones, Timpani, bass drum, cymbals, and triangle, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26343,7 +26343,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses, Scena (No. 2) expands the percussion section to include bass drum, snare drum, cymbals, and triangle, while Festivo (No. 3) adds castanets; in addition, Scena calls for each flutist to double piccolo",
+   "full": "2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Strings, Scena (No. 2) expands the percussion section to include bass drum, snare drum, cymbals, and triangle, while Festivo (No. 3) adds castanets; in addition, Scena calls for each flutist to double piccolo",
    "note": null,
    "arr": false,
    "est": false
@@ -26361,7 +26361,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (each doubling piccolo), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), and 3 trombones, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses, The Swan of Tuonela is scored as follows:, Soloist: cor anglais, 1 oboe, 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F) and 3 trombones, Timpani and bass drum, V",
+   "full": "2 flutes (each doubling piccolo), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), and 3 trombones, Timpani, bass drum, cymbals, and triangle, Strings, The Swan of Tuonela is scored as follows:, Soloist: cor anglais, 1 oboe, 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F) and 3 trombones, Timpani and bass drum, V",
    "note": null,
    "arr": false,
    "est": false
@@ -26433,7 +26433,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes and 1 piccolo, 2 oboes, 2 clarinets, 2 bassoons, 4 horns (of which 2 ad lib), 2 trumpets, 2 trombones, 1 bass trombone or tuba, timpani, 2 percussionists (for a snare drum, tenor drum, bass drum, woodblock, triangle, suspended cymbal, tambourine), 1 harp or piano, 1 celesta or piano, violins, violas, cellos, double basses",
+   "full": "2 flutes and 1 piccolo, 2 oboes, 2 clarinets, 2 bassoons, 4 horns (of which 2 ad lib), 2 trumpets, 2 trombones, 1 bass trombone or tuba, timpani, 2 percussionists (for a snare drum, tenor drum, bass drum, woodblock, triangle, suspended cymbal, tambourine), 1 harp or piano, 1 celesta or piano, strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26847,7 +26847,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piano solo plus the following instruments, Woodwinds, 3 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass, 4 horns in F, 2 trumpets in D, 3 trombones, Percussion, timpani, glockenspiel, tambourine, Strings, violins I, violins II, violas, cellos, double basses",
+   "full": "piano solo plus the following instruments, Woodwinds, 3 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass, 4 horns in F, 2 trumpets in D, 3 trombones, Percussion, timpani, glockenspiel, tambourine, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -26883,7 +26883,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Violins I, Violins II, Violas, Cellos, Double Basses, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (B-flat and A), 2 Bassoons, Brass: 4 Horns (all F), 2 Trumpets (F and E), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Cymbals, Bass Drum, Other: Harp, On/Offstage: Wind Band (off), Some numbers were also arranged for voices with piano or for piano duet (4 hands) by Tchaikovsky",
+   "full": "Strings, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (B-flat and A), 2 Bassoons, Brass: 4 Horns (all F), 2 Trumpets (F and E), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Cymbals, Bass Drum, Other: Harp, On/Offstage: Wind Band (off), Some numbers were also arranged for voices with piano or for piano duet (4 hands) by Tchaikovsky",
    "note": null,
    "arr": false,
    "est": false
@@ -26903,7 +26903,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "Violins I, Violins II, Violas, Cellos, Double Basses, Woodwinds: 3 Flutes (3rd doubling Piccolo), 2 Oboes, Cor Anglais, 2 Clarinets (B-flat, C, A), 2 Bassoons, Brass: 4 Horns (F), 2 Cornets (B-flat), 2 Trumpets (B-flat), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Military Drum, Cymbals, Bass Drum, Tam-tam, Other: Harp, On/Offstage: 4 Horns (off)",
+   "full": "Strings, Woodwinds: 3 Flutes (3rd doubling Piccolo), 2 Oboes, Cor Anglais, 2 Clarinets (B-flat, C, A), 2 Bassoons, Brass: 4 Horns (F), 2 Cornets (B-flat), 2 Trumpets (B-flat), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Military Drum, Cymbals, Bass Drum, Tam-tam, Other: Harp, On/Offstage: 4 Horns (off)",
    "note": null,
    "arr": false,
    "est": false
@@ -26921,7 +26921,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (A, B-flat), 2 Bassoons, Brass: 4 Horns (F), 2 Trumpets (F), 3 Trombones, Strings: Violins I, Violins II, Violas, Cellos, Double Basses, Harp, Percussion: Timpani",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (A, B-flat), 2 Bassoons, Brass: 4 Horns (F), 2 Trumpets (F), 3 Trombones, Strings, Harp, Percussion: Timpani",
    "note": null,
    "arr": false,
    "est": false
@@ -26939,7 +26939,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "violins I, violins II, violas, cellos, and double basses, Woodwinds: 3 flutes (3rd doubling piccolo), 2 oboes, Cor Anglais, 2 clarinets (B-flat & A), 2 bassoons, Brass: 4 horns (all in F), 2 trumpets (B-flat, A), 3 trombones, tuba, Percussion: timpani, Other: 2 harps",
+   "full": "strings, Woodwinds: 3 flutes (3rd doubling piccolo), 2 oboes, Cor Anglais, 2 clarinets (B-flat & A), 2 bassoons, Brass: 4 horns (all in F), 2 trumpets (B-flat, A), 3 trombones, tuba, Percussion: timpani, Other: 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -26959,7 +26959,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "violins I and II, violas, cellos, double Basses, harp, Woodwinds: piccolo, 3 flutes, 2 oboes, cor anglais, 2 clarinets (B-flat, A, C), 2 bassoons, Brass: 4 horns (F, D, E-flat, E), 2 cornets (B-flat, A), 2 trumpets (E-flat, F, E, D, A), 3 trombones, tuba, Percussion: timpani, triangle, tambourine, side drum, bass drum, tam-tam, bell, Other: organ",
+   "full": "strings, harp, Woodwinds: piccolo, 3 flutes, 2 oboes, cor anglais, 2 clarinets (B-flat, A, C), 2 bassoons, Brass: 4 horns (F, D, E-flat, E), 2 cornets (B-flat, A), 2 trumpets (E-flat, F, E, D, A), 3 trombones, tuba, Percussion: timpani, triangle, tambourine, side drum, bass drum, tam-tam, bell, Other: organ",
    "note": null,
    "arr": false,
    "est": false
@@ -26977,7 +26977,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Strings: Violin I, Violin II, Violas, Cellos, and Double Basses, Woodwinds: Piccolo, 3 Flutes, 2 Oboes, Cor Anglais, 2 Clarinets (B-flat and A), 2 Bassoons, Brass: 4 Horns, 2 Trumpets, 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Side Drum, Cymbals, Bass Drum, Other: Harp, Source: Tchaikovsky Research",
+   "full": "Strings, Woodwinds: Piccolo, 3 Flutes, 2 Oboes, Cor Anglais, 2 Clarinets (B-flat and A), 2 Bassoons, Brass: 4 Horns, 2 Trumpets, 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Side Drum, Cymbals, Bass Drum, Other: Harp, Source: Tchaikovsky Research",
    "note": null,
    "arr": false,
    "est": false
@@ -26995,7 +26995,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Violins I, Violins II, Violas, Cellos, and Double Basses, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (in B-flat, and A), 2 bassoons, Brass: 4 Horns (in F), 2 Trumpets (in D, F, and C), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Cymbals, Bass Drum, Other: Harp",
+   "full": "Strings, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (in B-flat, and A), 2 bassoons, Brass: 4 Horns (in F), 2 Trumpets (in D, F, and C), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Cymbals, Bass Drum, Other: Harp",
    "note": null,
    "arr": false,
    "est": false
@@ -27013,7 +27013,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "violins I & II, violas, cellos, double basses, Woodwinds: three flutes (3rd doubling piccolo), two oboes (first doubling cor anglais), two clarinets (B-flat, A), bass clarinet (B-flat), two bassoons, Brass: four horns (F), two trumpets (B-flat, A), three trombones, tuba, Percussion: timpani, snare drum, bass drum, Other: harp, piano",
+   "full": "strings, Woodwinds: three flutes (3rd doubling piccolo), two oboes (first doubling cor anglais), two clarinets (B-flat, A), bass clarinet (B-flat), two bassoons, Brass: four horns (F), two trumpets (B-flat, A), three trombones, tuba, Percussion: timpani, snare drum, bass drum, Other: harp, piano",
    "note": null,
    "arr": false,
    "est": false
@@ -27031,7 +27031,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Strings: violins, violas, cellos, and double basses, Woodwinds: piccolo, 2 flutes, 2 oboes, 2 clarinets (B-flat), 2 bassoons, Brass: 4 horns (all F), 2 trumpets (B-flat), 2 trombones, tuba, Percussion: timpani, triangle, cymbals, bass drum, Other: harp, piano, Source",
+   "full": "Strings, Woodwinds: piccolo, 2 flutes, 2 oboes, 2 clarinets (B-flat), 2 bassoons, Brass: 4 horns (all F), 2 trumpets (B-flat), 2 trombones, tuba, Percussion: timpani, triangle, cymbals, bass drum, Other: harp, piano, Source",
    "note": null,
    "arr": false,
    "est": false
@@ -27049,7 +27049,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Violins I, Violins II, Violas, Cellos, Double Basses, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (B-flat and A), 2 Bassoons, Brass: 4 Horns (all F), 2 Trumpets (F and E), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Cymbals, Bass Drum, Other: Harp, On/Offstage: Wind Band (off)",
+   "full": "Strings, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (B-flat and A), 2 Bassoons, Brass: 4 Horns (all F), 2 Trumpets (F and E), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Tambourine, Cymbals, Bass Drum, Other: Harp, On/Offstage: Wind Band (off)",
    "note": null,
    "arr": false,
    "est": false
@@ -27067,7 +27067,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Strings: Violins I, Violins II, Violas, Cellos, and Double Basses, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, Cor Anglais, 2 Clarinets (B-flat & A), 2 Bassoons, Brass: 4 Horns (all in F), 2 Trumpets (B-flat), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Cymbals, Bass Drum, Other: Harp, Source: Voyevoda (opera) Tchaikovsky Research",
+   "full": "Strings, Woodwinds: Piccolo, 2 Flutes, 2 Oboes, Cor Anglais, 2 Clarinets (B-flat & A), 2 Bassoons, Brass: 4 Horns (all in F), 2 Trumpets (B-flat), 3 Trombones, Tuba, Percussion: Timpani, Triangle, Cymbals, Bass Drum, Other: Harp, Source: Voyevoda (opera) Tchaikovsky Research",
    "note": null,
    "arr": false,
    "est": false
@@ -27085,7 +27085,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "1 piccolo, 3 flutes, 2 oboes, 2 clarinets (B and A), 2 bassoons, Brass, 4 horns in F, 2 trumpets (D and F), Percussion, timpani, triangle, glockenspiel, Strings, violins I, violins II, violas, cellos, double basses",
+   "full": "1 piccolo, 3 flutes, 2 oboes, 2 clarinets (B and A), 2 bassoons, Brass, 4 horns in F, 2 trumpets (D and F), Percussion, timpani, triangle, glockenspiel, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -27103,7 +27103,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 3 flutes, 2 oboes, 1 English horn, 2 clarinets (C and A), 2 bassoons, Brass, 4 horns in F, 2 trumpets (C and E), 3 trombones, 1 tuba, Percussion, timpani, triangle, glockenspiel, cymbals, bass drum, Miscellaneous, 4 accordions (ad libitum), Strings, harp, violins, violas, cellos, double basses",
+   "full": "piccolo, 3 flutes, 2 oboes, 1 English horn, 2 clarinets (C and A), 2 bassoons, Brass, 4 horns in F, 2 trumpets (C and E), 3 trombones, 1 tuba, Percussion, timpani, triangle, glockenspiel, cymbals, bass drum, Miscellaneous, 4 accordions (ad libitum), Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -27265,7 +27265,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo (Op.46 only), 2 flutes (2nd doubles piccolo in op.72), 2 oboes, 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, 3 trombones, Percussion:, timpani, cymbals, bass drum, triangle, glockenspiel (last movement of op.72 only), Strings:, violins I and II, violas, violoncellos, double basses",
+   "full": "piccolo (Op.46 only), 2 flutes (2nd doubles piccolo in op.72), 2 oboes, 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, 3 trombones, Percussion:, timpani, cymbals, bass drum, triangle, glockenspiel (last movement of op.72 only), Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -27589,7 +27589,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, 4 horns (2 in E, 2 in B ), 2 trumpets, timpani, triangle, and the normal string section of first and second violins, violas, cellos and double basses, The piece usually takes about 18 minutes to perform",
+   "full": "piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, 4 horns (2 in E, 2 in B ), 2 trumpets, timpani, triangle, and the normal string section, The piece usually takes about 18 minutes to perform",
    "note": null,
    "arr": false,
    "est": false
@@ -27725,7 +27725,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwind, piccolo, 2 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass, 4 horns in F, 2 trumpets in A, 3 trombones, tuba, Percussion, timpani, cymbals, bass drum, tam-tam, Strings, harp, violins I, violins II, violas, violoncellos, double basses",
+   "full": "Woodwind, piccolo, 2 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass, 4 horns in F, 2 trumpets in A, 3 trombones, tuba, Percussion, timpani, cymbals, bass drum, tam-tam, Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -28087,7 +28087,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwinds: 2 Flutes (2nd doubling Piccolo), Oboe, 2 Clarinets, 2 Bassoons, Brass: 2 Horns, 2 Trumpets, Keyboard: Celesta, Strings: Harp, 1st and 2nd Violins, Violas, Cellos, Double Basses",
+   "full": "Woodwinds: 2 Flutes (2nd doubling Piccolo), Oboe, 2 Clarinets, 2 Bassoons, Brass: 2 Horns, 2 Trumpets, Keyboard: Celesta, Strings, Harp",
    "note": null,
    "arr": false,
    "est": false
@@ -28839,7 +28839,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "Woodwinds, 2 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass, 2 horns in E, 2 cornets in E, 2 trumpets in E, Percussion, timpani, suspended cymbal, Strings, harp, violins, violas, cellos, basses",
+   "full": "Woodwinds, 2 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass, 2 horns in E, 2 cornets in E, 2 trumpets in E, Percussion, timpani, suspended cymbal, Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -28967,7 +28967,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "1 piccolo, 2 flutes (doubling piccolos), 2 oboes, 2 clarinets, 2 bassoons, 1 contrabassoon (ad libitum), Brass, 4 horns (2 being natural horns), 2 trumpets, 2 trombones, 1 tubas, Percussion, 4 sets of timpani, bass drum, cymbals, tam-tam, Strings, 2 harps, Violins I, Violins II, Violas, Violoncellos, Double basses",
+   "full": "1 piccolo, 2 flutes (doubling piccolos), 2 oboes, 2 clarinets, 2 bassoons, 1 contrabassoon (ad libitum), Brass, 4 horns (2 being natural horns), 2 trumpets, 2 trombones, 1 tubas, Percussion, 4 sets of timpani, bass drum, cymbals, tam-tam, Strings, 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -29220,7 +29220,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "1 piccolo, 2 flutes, 2 oboes, 1 cor anglais, 1 clarinet in E, 2 clarinets in B, 1 alto saxophone in E, 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass: 4 horns in F, 3 trumpets in B (one doubling trumpet in D), 3 trombones, 1 tuba, Keyboards: 1 piano (doubling celesta), Strings: violins I, violins II, violas, cellos, double basses, harp, Percussion (four players dividing the following): 1 pair",
+   "full": "1 piccolo, 2 flutes, 2 oboes, 1 cor anglais, 1 clarinet in E, 2 clarinets in B, 1 alto saxophone in E, 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass: 4 horns in F, 3 trumpets in B (one doubling trumpet in D), 3 trombones, 1 tuba, Keyboards: 1 piano (doubling celesta), Strings, harp, Percussion (four players dividing the following): 1 pair",
    "note": null,
    "arr": false,
    "est": false
@@ -29382,7 +29382,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "horns in F, 4 trumpets in C, 3 trombones, bass tuba and a four-section string orchestra of violins, violas, cellos and double basses",
+   "full": "horns in F, 4 trumpets in C, 3 trombones, bass tuba and a four-section string orchestra of strings",
    "note": null,
    "arr": false,
    "est": false
@@ -29546,7 +29546,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "two flutes, piccolo, two oboes, cor anglais, two clarinets, two bassoons, four horns, two trumpets, trombone, tuba, percussion (timpani, side drums with and without snares, tambourine, triangle, bass drum, cymbals, and xylophone) and strings (the usual two sections of violins, violas, cellos and double basses—Poulenc stipulates eight each of first and second violins, and four each of violas, cello",
+   "full": "two flutes, piccolo, two oboes, cor anglais, two clarinets, two bassoons, four horns, two trumpets, trombone, tuba, percussion (timpani, side drums with and without snares, tambourine, triangle, bass drum, cymbals, and xylophone) and strings (the usual two sections of strings—Poulenc stipulates eight each of first and second violins, and four each of violas, cello",
    "note": null,
    "arr": false,
    "est": false
@@ -29636,7 +29636,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (one doubling piccolo), 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 3 trumpets, 2 tenor trombones, 1 bass trombone, and tuba, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes (one doubling piccolo), 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 3 trumpets, 2 tenor trombones, 1 bass trombone, and tuba, Timpani, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -29654,7 +29654,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (one doubling piccolo), 2 oboes (one doubling cor anglais), 2 clarinets, and 2 bassoons, 4 horns, 2 trumpets, and 2 trombones, Timpani, bass drum, snare drum, cymbals, tambourine, triangle, raganella, glockenspiel, and xylophone, Violins (I and II), violas, cellos, and double basses",
+   "full": "2 flutes (one doubling piccolo), 2 oboes (one doubling cor anglais), 2 clarinets, and 2 bassoons, 4 horns, 2 trumpets, and 2 trombones, Timpani, bass drum, snare drum, cymbals, tambourine, triangle, raganella, glockenspiel, and xylophone, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -29672,7 +29672,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 3 trumpets, 2 tenor trombones, 1 bass trombone, and tuba, Timpani, suspended cymbal, and glockenspiel, Violins (I and II), violas, cellos, and double basses",
+   "full": "3 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 3 trumpets, 2 tenor trombones, 1 bass trombone, and tuba, Timpani, suspended cymbal, and glockenspiel, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -29780,7 +29780,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwinds, 2 flutes (1st doubling piccolo), 2 oboes, 2 clarinets in A (later in B ), 2 bassoons, Brass, 4 horns in F, 2 trumpets in F, 3 trombones (2 tenor, 1 bass), tuba, Percussion, timpani, glockenspiel, xylophone, triangle, cymbals, snare drum, bass drum, Strings, violins I, violins II, violas, cellos, double basses",
+   "full": "Woodwinds, 2 flutes (1st doubling piccolo), 2 oboes, 2 clarinets in A (later in B ), 2 bassoons, Brass, 4 horns in F, 2 trumpets in F, 3 trombones (2 tenor, 1 bass), tuba, Percussion, timpani, glockenspiel, xylophone, triangle, cymbals, snare drum, bass drum, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -29798,7 +29798,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "solo piano, 2 flutes, 2 oboes, 2 clarinets (in A and B ), 2 bassoons, 4 horns in E and E, 2 trumpets in C and B, 3 trombones, timpani and strings (violins, violas, cellos and double basses). An earlier version called for only two horns and a tuba instead of a third trombone",
+   "full": "solo piano, 2 flutes, 2 oboes, 2 clarinets (in A and B ), 2 bassoons, 4 horns in E and E, 2 trumpets in C and B, 3 trombones, timpani and strings. An earlier version called for only two horns and a tuba instead of a third trombone",
    "note": null,
    "arr": false,
    "est": false
@@ -29870,7 +29870,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "4 flutes (2–4 doubling piccolos), 2 oboes, cor anglais, 3 clarinets (3rd doubling bass clarinet), 3 bassoons (3rd doubling contrabassoon), 4 horns, 4 trumpets, 3 trombones, tuba, timpani, glockenspiel, triangle, snare drum, cymbals, tam-tam, chimes, 2 harps, celesta, organ, and strings (1st & 2nd violins, violas, cellos, and double basses)",
+   "full": "4 flutes (2–4 doubling piccolos), 2 oboes, cor anglais, 3 clarinets (3rd doubling bass clarinet), 3 bassoons (3rd doubling contrabassoon), 4 horns, 4 trumpets, 3 trombones, tuba, timpani, glockenspiel, triangle, snare drum, cymbals, tam-tam, chimes, 2 harps, celesta, organ, and strings",
    "note": null,
    "arr": false,
    "est": false
@@ -30250,7 +30250,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes (one doubling cor anglais), 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, bass tuba, timpani, harp, 1st and 2nd violins, violas, violoncellos, and double basses, on-stage, 3 piccolos, 6 horns, tam tam, wind machine",
+   "full": "piccolo, 2 flutes, 2 oboes (one doubling cor anglais), 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, bass tuba, timpani, harp, strings, on-stage, 3 piccolos, 6 horns, tam tam, wind machine",
    "note": null,
    "arr": false,
    "est": false
@@ -30268,7 +30268,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes (3rd doubles piccolo), 3 oboes, English horn, 3 clarinets in B-flat, A and C, 2 bass clarinets in B-flat and A, 3 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, triangle, cymbals, tambourine, harp, 1st and 2nd violins, violas, violoncellos, and double basses, on-stage, 3 flutes, piccolo, 3 oboes, 3 clarinets in B-flat, A and C, 3 bassoons, 4 horns, 12 trumpets, 4 trombones, ti",
+   "full": "3 flutes (3rd doubles piccolo), 3 oboes, English horn, 3 clarinets in B-flat, A and C, 2 bass clarinets in B-flat and A, 3 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, triangle, cymbals, tambourine, harp, strings, on-stage, 3 flutes, piccolo, 3 oboes, 3 clarinets in B-flat, A and C, 3 bassoons, 4 horns, 12 trumpets, 4 trombones, ti",
    "note": null,
    "arr": false,
    "est": false
@@ -30286,7 +30286,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, bass drum, cymbals, triangle, glockenspiel, harp, 1st and 2nd violins, violas, violoncellos, and double basses, on-stage, more trumpets and horns, stierhorn, lute, military drums, organ (Act I)",
+   "full": "piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, bass drum, cymbals, triangle, glockenspiel, harp, strings, on-stage, more trumpets and horns, stierhorn, lute, military drums, organ (Act I)",
    "note": null,
    "arr": false,
    "est": false
@@ -30322,7 +30322,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes (one doubles piccolo), 2 oboes, 2 clarinets, bass clarinet, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, bass tuba, timpani, bass drum, cymbals, triangle, tambourine, castanets, harp, 1st and 2nd violins, violas, violoncellos, and double basses, off-stage, cor anglais, 4 oboes, 6 clarinets, 4 bassoons, 12 horns, 12 trumpets, 4 trombones, snare drum, cymbals, tambourine",
+   "full": "3 flutes (one doubles piccolo), 2 oboes, 2 clarinets, bass clarinet, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, bass tuba, timpani, bass drum, cymbals, triangle, tambourine, castanets, harp, strings, off-stage, cor anglais, 4 oboes, 6 clarinets, 4 bassoons, 12 horns, 12 trumpets, 4 trombones, snare drum, cymbals, tambourine",
    "note": null,
    "arr": false,
    "est": false
@@ -30808,7 +30808,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "SATB choir, piccolo (second male chorus only), 2 flutes, 2 oboes, 2 clarinets in A, B and C, 2 bassoons, contrabassoon (overture only), 4 horns in various keys, 2 trumpets in C, D and E, 3 trombones (alto, tenor and bass), timpani, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "SATB choir, piccolo (second male chorus only), 2 flutes, 2 oboes, 2 clarinets in A, B and C, 2 bassoons, contrabassoon (overture only), 4 horns in various keys, 2 trumpets in C, D and E, 3 trombones (alto, tenor and bass), timpani, strings",
    "note": null,
    "arr": false,
    "est": false
@@ -32870,7 +32870,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwinds: piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, Brass: 4 French horns, 2 trumpets, 3 trombones, cimbasso, Percussion: timpani, triangle, tambourine, cymbals, 2 anvils, bass drum, Strings: harp, violins (I and II), violas, cellos, double basses, Onstage: French horn, snare drum, bells, organ, 2 harps",
+   "full": "Woodwinds: piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, Brass: 4 French horns, 2 trumpets, 3 trombones, cimbasso, Percussion: timpani, triangle, tambourine, cymbals, 2 anvils, bass drum, Strings, harp, Onstage: French horn, snare drum, bells, organ, 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -32890,7 +32890,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "Woodwinds: piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, Brass: 4 horns, 2 cornets, 2 trumpets, 3 trombones, tuba, Percussion: timpani, bass drum, cymbals, tambourine, triangle, snare drum, tam-tam, Strings: violins I & II, violas, cellos, double basses",
+   "full": "Woodwinds: piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, Brass: 4 horns, 2 cornets, 2 trumpets, 3 trombones, tuba, Percussion: timpani, bass drum, cymbals, tambourine, triangle, snare drum, tam-tam, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -32910,7 +32910,7 @@
     "trumpet",
     "cornet"
    ],
-   "full": "violins I & II, violas, cellos, double basses, Woodwinds: 3 flutes (3rd doubling piccolo), 2 oboes (2nd doubling english horn), 3 clarinets, 2 bassoons, Brass: 4 horns, 2 trumpets, 3 trombones, 1 tuba, Percussion: timpani, bass drum, snare drum, tambourine, cymbals, Other: piano, harp, On/Offstage instruments: 1 trumpet, bells, tam-tam, Rimsky-Korsakov orchestration, Strings: violins I & II, viola",
+   "full": "strings, Woodwinds: 3 flutes (3rd doubling piccolo), 2 oboes (2nd doubling english horn), 3 clarinets, 2 bassoons, Brass: 4 horns, 2 trumpets, 3 trombones, 1 tuba, Percussion: timpani, bass drum, snare drum, tambourine, cymbals, Other: piano, harp, On/Offstage instruments: 1 trumpet, bells, tam-tam, Rimsky-Korsakov orchestration, Strings: violins I & II, viola",
    "note": null,
    "arr": false,
    "est": false
@@ -32928,7 +32928,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "violins I, violins II, violas, cellos, double basses, Woodwinds: 3 flutes (3rd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons, Brass: 4 horns, 2 trumpets, 3 trombones, 1 tuba, Percussion: timpani, bass drum, snare drum, triangle, tambourine, cymbals, tam-tam, bells, Other: piano, harp, On/Offstage: 3 trumpets, wind band, Shostakovich Orchestration:, Strings: violin",
+   "full": "strings, Woodwinds: 3 flutes (3rd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons, Brass: 4 horns, 2 trumpets, 3 trombones, 1 tuba, Percussion: timpani, bass drum, snare drum, triangle, tambourine, cymbals, tam-tam, bells, Other: piano, harp, On/Offstage: 3 trumpets, wind band, Shostakovich Orchestration:, Strings: violin",
    "note": null,
    "arr": false,
    "est": false
@@ -32982,7 +32982,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes (one doubling on cor anglais), 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, 3 trombones, tuba, Percussion:, 3 timpani, triangle, tambourine, bass drum, cymbals (in the finale only), Strings, harp, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "piccolo, 2 flutes, 2 oboes (one doubling on cor anglais), 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, 3 trombones, tuba, Percussion:, 3 timpani, triangle, tambourine, bass drum, cymbals (in the finale only), Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -33036,7 +33036,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwinds, 3 flutes (1 taking piccolo), 2 oboes, 2 clarinets, 2 bassoons, Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, timpani, percussion, Strings, violins, violas, violoncellos, double basses",
+   "full": "Woodwinds, 3 flutes (1 taking piccolo), 2 oboes, 2 clarinets, 2 bassoons, Brass, 4 horns, 3 trumpets, 3 trombones, tuba, Percussion, timpani, percussion, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -33108,7 +33108,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "3 flutes, piccolo, 3 oboes, English horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, Brass, 8 horns, 5 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, cymbals, triangle, glockenspiel, bells, tam-tam, Keyboards, celesta, organ (or harmonium), Strings, 2 harps, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "3 flutes, piccolo, 3 oboes, English horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, Brass, 8 horns, 5 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, cymbals, triangle, glockenspiel, bells, tam-tam, Keyboards, celesta, organ (or harmonium), Strings, 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -34480,7 +34480,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "1 flute (doubling piccolo), 1 oboe, 2 clarinets, 1 bassoon, Brass, 2 French horns, 2 trumpets, 1 trombone, Percussion, timpani, bass drum, snare drum, tam-tam, triangle, tambourine, glockenspiel, xylophone, piano, Strings, 1st violins, 2nd violins, violas, cellos, double basses, According to Malcolm MacDonald, the proportion of the orchestra, added piano and percussion notwithstanding, is \"almost ",
+   "full": "1 flute (doubling piccolo), 1 oboe, 2 clarinets, 1 bassoon, Brass, 2 French horns, 2 trumpets, 1 trombone, Percussion, timpani, bass drum, snare drum, tam-tam, triangle, tambourine, glockenspiel, xylophone, piano, Strings, According to Malcolm MacDonald, the proportion of the orchestra, added piano and percussion notwithstanding, is \"almost",
    "note": null,
    "arr": false,
    "est": false
@@ -34552,7 +34552,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets in B flat, bass clarinet in A, 2 bassoons, contrabassoon, 4 horns in F, trumpet in F, 2 tenor trombones, timpani, percussion (bass drum, side drum, cymbals, triangle, tam-tam), harp, celesta, strings: violins I and II, violas, violoncellos, double basses",
+   "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets in B flat, bass clarinet in A, 2 bassoons, contrabassoon, 4 horns in F, trumpet in F, 2 tenor trombones, timpani, percussion (bass drum, side drum, cymbals, triangle, tam-tam), harp, celesta, strings",
    "note": null,
    "arr": false,
    "est": false
@@ -35007,7 +35007,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 Flutes, 2 Oboes, 2 Clarinets, 2 Bassoons, Brass, 6 Horns (2 being tenor horns, which are ad libitum in Porter's completion), 2 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Strings, Violins I, Violins II, Violas, Violoncellos, Double basses",
+   "full": "2 Flutes, 2 Oboes, 2 Clarinets, 2 Bassoons, Brass, 6 Horns (2 being tenor horns, which are ad libitum in Porter's completion), 2 Trumpets, 3 Trombones, Tuba, Percussion, Timpani, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -35189,7 +35189,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "1 piccolo, 2 flutes, 2 oboes, 1 English horn, 2 clarinets in B, 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass, 4 horns in F, 3 trumpets in C, 3 trombones, 1 tuba, Percussion, timpani, triangle, wood block, snare drum, cymbals, bass drum, Strings, 2 harps, violins I, violins II, violas, cellos, double basses",
+   "full": "1 piccolo, 2 flutes, 2 oboes, 1 English horn, 2 clarinets in B, 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass, 4 horns in F, 3 trumpets in C, 3 trombones, 1 tuba, Percussion, timpani, triangle, wood block, snare drum, cymbals, bass drum, Strings, 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -35243,7 +35243,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Woodwinds, piccolo, 2 flutes, 3 oboes, 3 clarinets in B, 2 bassoons, contrabassoon, Brass, 6 horns in F, 4 trumpets in B, 2 trombones, bass trombone, tuba, Percussion, tambourine, tubular bells, cowbell, maracas, triangle, wood block, cymbal, snare drum, tenor drum, bass drum, Mixed chorus, Keyboards, piano, Strings, 2 harps, violins I, violins II, violas, cellos, double basses",
+   "full": "Woodwinds, piccolo, 2 flutes, 3 oboes, 3 clarinets in B, 2 bassoons, contrabassoon, Brass, 6 horns in F, 4 trumpets in B, 2 trombones, bass trombone, tuba, Percussion, tambourine, tubular bells, cowbell, maracas, triangle, wood block, cymbal, snare drum, tenor drum, bass drum, Mixed chorus, Keyboards, piano, Strings, 2 harps",
    "note": null,
    "arr": false,
    "est": false
@@ -35387,7 +35387,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "piccolo, 2 flutes, 2 oboes, English horn, 2 B clarinets, E clarinet, 2 bassoons, 4 horns 3 trumpets, 3 trombones, tuba, timpani, rattle, tom-tom, wood block, glockenspiel, piano, celesta, harp, violins, violas, cellos, basses, organ, and chorus, At 30 minutes long, it has three movements:",
+   "full": "piccolo, 2 flutes, 2 oboes, English horn, 2 B clarinets, E clarinet, 2 bassoons, 4 horns 3 trumpets, 3 trombones, tuba, timpani, rattle, tom-tom, wood block, glockenspiel, piano, celesta, harp, strings, organ, and chorus, At 30 minutes long, it has three movements:",
    "note": null,
    "arr": false,
    "est": false
@@ -35513,7 +35513,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "Soprano, SSAA (sopranos and altos ), 1 flute, 1 oboe / cor anglais, 2 clarinets (II also bass clarinet), 1 bassoon, Two horns, one trumpet, one trombone, Percussion, 1 harp, piano, Violins, violas, cellos, double basses",
+   "full": "Soprano, SSAA (sopranos and altos ), 1 flute, 1 oboe / cor anglais, 2 clarinets (II also bass clarinet), 1 bassoon, Two horns, one trumpet, one trombone, Percussion, 1 harp, piano, Strings",
    "note": null,
    "arr": false,
    "est": false
@@ -35603,7 +35603,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "flute, 2 oboes, English horn, 3 clarinets, 2nd doubling on piccolo clarinet in E, 2 bassoons, contrabassoon, Brass, 4 horns in F, 3 trumpets in C, 3 trombones, tuba, Percussion, timpani, drum, cymbals, xylophone, Keyboards, piano, Strings, harp, violins I and II, violas, cellos, double basses",
+   "full": "flute, 2 oboes, English horn, 3 clarinets, 2nd doubling on piccolo clarinet in E, 2 bassoons, contrabassoon, Brass, 4 horns in F, 3 trumpets in C, 3 trombones, tuba, Percussion, timpani, drum, cymbals, xylophone, Keyboards, piano, Strings, harp",
    "note": null,
    "arr": false,
    "est": false
@@ -36837,7 +36837,7 @@
    "req": [
     "trumpet"
    ],
-   "full": "2 flutes, piccolo, 2 oboes, cor anglais, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, bass drum, snare drum, violins I and II, violas, cellos, double basses",
+   "full": "2 flutes, piccolo, 2 oboes, cor anglais, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, bass drum, snare drum, strings",
    "note": null,
    "arr": false,
    "est": false

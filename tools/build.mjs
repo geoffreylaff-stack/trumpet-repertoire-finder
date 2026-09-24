@@ -16,7 +16,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { writeIfChanged } from './stable-json.mjs';
-import { parseInstrumentation, formatScoring, requiredInstruments, firstFamilyMentionIndex } from '../lib/instrumentation.mjs';
+import {
+  parseInstrumentation, formatScoring, requiredInstruments, firstFamilyMentionIndex,
+  normalizeStringSection,
+} from '../lib/instrumentation.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const p = (...s) => path.join(ROOT, ...s);
@@ -468,7 +471,10 @@ for (const [id, c] of composers) if (!c.n && !c.nArr) composers.delete(id);
 // `src` and `url` drive the merge and the build-time checks below, but they
 // name the upstream catalogues, so they are dropped from the shipped index
 // rather than left for anyone reading the JSON or the network tab.
-const shipped = works.map(({ src, url, ...rest }) => rest);
+const shipped = works.map(({ src, url, ...rest }) => ({
+  ...rest,
+  full: normalizeStringSection(rest.full),
+}));
 
 // Dated from when the data was harvested, not when the build ran: a rebuild
 // that changes nothing must produce an identical index, or every CI run would
