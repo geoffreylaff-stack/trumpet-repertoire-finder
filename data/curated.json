@@ -522,6 +522,14 @@
    "aliases": [
     "john coolidge adams"
    ]
+  },
+  "miller-alexander-lamont": {
+   "name": "Alexander Lamont Miller",
+   "dates": "b. 1968",
+   "aliases": [
+    "alexander miller",
+    "alex miller"
+   ]
   }
  },
  "works": [
@@ -2036,6 +2044,16 @@
    "trumpets": "2 trumpets",
    "full": "2 trumpets, 4 horns, 2 trombones, almglocken, bass drum, snare drum, piano, honky-tonk piano, bass guitar, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
    "note": "Piano concerto; the title borrows a line from Brecht and Weill."
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "H2O",
+   "cat": null,
+   "year": 2020,
+   "genre": "Wind ensemble",
+   "trumpets": "trumpet",
+   "full": "trumpet, 4 horns, trombone, percussion, 2 flutes, 2 oboes, 2 bassoons, 2 bass clarinets",
+   "note": "For wind ensemble, in three movements (Ice Music, Water Music, Steam Music). No B-flat clarinets — the clarinet choir is bass clarinets only. The Wind Repertory Project notes its own percussion listing as incomplete ('percussion detail desired'). Hand-entered because IMSLP has no record for this living composer, and the composer's five other works for winds have no instrumentation catalogued anywhere yet."
   }
  ]
 }
