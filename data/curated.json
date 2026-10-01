@@ -515,6 +515,13 @@
   "arutiunian-alexander": {
    "name": "Alexander Arutiunian",
    "dates": "1920–2012"
+  },
+  "adams-john": {
+   "name": "John Adams",
+   "dates": "b. 1947",
+   "aliases": [
+    "john coolidge adams"
+   ]
   }
  },
  "works": [
@@ -1807,6 +1814,228 @@
    "trumpets": "2 trumpets",
    "full": "2 trumpets, horn, trombone, tuba, optional percussion",
    "note": "For brass quintet, with optional percussion. The composer also offers a version for two brass quintets, which doubles the section to four trumpets. Hand-entered because the catalogue states the scoring inside an unclosed aside that no reading of the text parses correctly."
+  },
+  {
+   "c": "adams-john",
+   "title": "Harmonium",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, piano, celesta, harp, 4 flutes, 3 oboes, 3 clarinets, 3 bassoons, strings, chorus",
+   "note": "A three-movement choral symphony setting poems by John Donne and Emily Dickinson; the chorus calls for a minimum of 90 singers. Hand-entered because IMSLP has no record for this living composer."
+  },
+  {
+   "c": "adams-john",
+   "title": "Harmonielehre",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, 2 tubas, timpani, percussion, piano, celesta, 2 harps, woodwind, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "Short Ride in a Fast Machine",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 piccolos, 2 flutes, 2 oboes, english horn, clarinets, 3 bassoons, contrabassoon, strings",
+   "note": "Also exists in a concert band transcription by Odom, catalogued separately by the Wind Repertory Project."
+  },
+  {
+   "c": "adams-john",
+   "title": "Chamber Symphony",
+   "cat": null,
+   "year": null,
+   "genre": "Chamber",
+   "trumpets": "trumpet",
+   "full": "trumpet, horn, trombone, flute, oboe, clarinets, bassoon, synthesizer, percussion, strings",
+   "note": "A 15-player chamber ensemble, one player per part — the brass and strings here are single players, not sections."
+  },
+  {
+   "c": "adams-john",
+   "title": "Violin Concerto",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "trumpet",
+   "full": "trumpet, 2 horns, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, percussion, synthesizers, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "My Father Knew Charles Ives",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, piano, celesta, harp, woodwind, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "The Dharma at Big Sur",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 2 trombones, contrabass trombone, tuba, percussion, piano, samplers, 2 harps, bass clarinets, strings",
+   "note": "Solo part for 6-string electric violin; the harps are tuned in just intonation."
+  },
+  {
+   "c": "adams-john",
+   "title": "A Flowering Tree",
+   "cat": null,
+   "year": null,
+   "genre": "Opera",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, timpani, percussion, harp, celesta, piccolo, 2 flutes, 2 oboes, 2 recorders, 2 clarinets, bass clarinet, 2 bassoons, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "The Gospel According to the Other Mary",
+   "cat": null,
+   "year": null,
+   "genre": "Opera",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, percussion, cimbalom, bass guitar, piano, harp, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings, chorus",
+   "note": "Subtitled a 'Passion oratorio'; billed as an opera in some stagings."
+  },
+  {
+   "c": "adams-john",
+   "title": "On the Transmigration of Souls",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, 2 tubas, timpani, percussion, piano, celesta, quarter-tone piano, 2 harps, piccolo, 3 flutes, 3 oboes, 2 clarinets, bass clarinet, contrabass clarinet, 2 bassoons, contrabassoon, strings, chorus, prerecorded tape",
+   "note": "Written to commemorate the September 11 attacks, for the New York Philharmonic; the live performers play alongside a prerecorded tape of voices and city sounds."
+  },
+  {
+   "c": "adams-john",
+   "title": "Absolute Jest",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, timpani, percussion, harp, piano, celesta, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
+   "note": "The soloist is an amplified string quartet rather than a single instrument; built from fragments of late Beethoven."
+  },
+  {
+   "c": "adams-john",
+   "title": "Scheherazade.2",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, percussion, cimbalom, celesta, 2 harps, 2 flutes, 2 oboes, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
+   "note": "Subtitled 'Dramatic Symphony for Violin and Orchestra'."
+  },
+  {
+   "c": "adams-john",
+   "title": "Grand Pianola Music",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 2 horns, 2 trombones, tuba, percussion, 2 pianos, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, voices",
+   "note": "No strings in the scoring — winds, brass, percussion, two amplified pianos, and three amplified women's voices."
+  },
+  {
+   "c": "adams-john",
+   "title": "The Chairman Dances",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, tuba, timpani, percussion, piano, harp, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings",
+   "note": "An 'outtake' from Act III of Nixon in China, written as a standalone orchestral foxtrot."
+  },
+  {
+   "c": "adams-john",
+   "title": "Naïve and Sentimental Music",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 4 horns, 3 trombones, 2 tubas, percussion, piano, celesta, keyboard sampler, 2 harps, guitar, woodwind, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "Guide to Strange Places",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, piano, celesta, woodwind, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "Fearful Symmetries",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 2 horns, 3 trombones, timpani, piano, keyboard samplers, 2 flutes, 2 oboes, 2 clarinets, bass clarinet, bassoon, soprano saxophone, 2 alto saxophones, baritone saxophone, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "Century Rolls",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 3 horns, 2 trombones, timpani, percussion, harp, celesta, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, strings",
+   "note": "Piano concerto; the title refers to the mechanical rhythms of player-piano rolls."
+  },
+  {
+   "c": "adams-john",
+   "title": "Lollapalooza",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 2 tenor trombones, bass trombone, tuba, timpani, percussion, piano, piccolo, 2 flutes, 2 oboes, english horn, clarinets, 3 bassoons, contrabassoon, strings"
+  },
+  {
+   "c": "adams-john",
+   "title": "City Noir",
+   "cat": null,
+   "year": null,
+   "genre": "Orchestral",
+   "trumpets": "4 trumpets",
+   "full": "4 trumpets, 6 horns, 3 trombones, tuba, timpani, percussion, jazz drum set, piano, celesta, 2 harps, piccolo, 3 flutes, 3 oboes, english horn, clarinets, bass clarinet, alto saxophone, 2 bassoons, contrabassoon, strings",
+   "note": "Written for the Los Angeles Philharmonic's 2009 season opener under Gustavo Dudamel; the premiere featured a prominent trumpet solo."
+  },
+  {
+   "c": "adams-john",
+   "title": "After the Fall",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, percussion, 2 harps, celesta, 3 flutes, 2 oboes, 2 clarinets, bass clarinet, 2 bassoons, strings",
+   "note": "Piano concerto."
+  },
+  {
+   "c": "adams-john",
+   "title": "Saxophone Concerto",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 3 horns, harp, piano, celesta, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, strings",
+   "note": "Solo part for alto saxophone; no trombones, tuba, or percussion in the orchestra."
+  },
+  {
+   "c": "adams-john",
+   "title": "Must the Devil Have All the Good Tunes?",
+   "cat": null,
+   "year": null,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, almglocken, bass drum, snare drum, piano, honky-tonk piano, bass guitar, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
+   "note": "Piano concerto; the title borrows a line from Brecht and Weill."
   }
  ]
 }
