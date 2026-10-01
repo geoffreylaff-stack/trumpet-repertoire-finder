@@ -1,14 +1,14 @@
 {
- "generated": "2026-09-02T01:27:47.134Z",
+ "generated": "2026-10-01T05:00:15.253Z",
  "source": "English Wikipedia (en.wikipedia.org)",
  "license": "Text from Wikipedia, CC BY-SA 4.0.",
  "counts": {
-  "articles": 3378,
+  "articles": 3383,
   "withSection": 884,
-  "withFamily": 801,
-  "skipped": 2494,
-  "works": 801,
-  "apiCalls": 3811
+  "withFamily": 802,
+  "skipped": 2499,
+  "works": 802,
+  "apiCalls": 3817
  },
  "works": [
   {
@@ -1377,13 +1377,14 @@
   {
    "page": "Alexander Nevsky (Prokofiev)",
    "subcat": "Category:Cantatas by Sergei Prokofiev",
-   "scoring": "five trumpets, flugelhorn",
+   "scoring": "five trumpets (doubling cornet), flugelhorn",
    "counts": {
     "trumpet": 5,
     "flugelhorn": 1
    },
    "req": [
     "trumpet",
+    "cornet",
     "flugelhorn"
    ],
    "text": "Strings: violins I & II, violas, cellos, double basses, Woodwinds: piccolo, 2 flutes, 3 oboes (including English horn), 3 clarinets (including E-flat clarinet), 2 bass clarinets, 2 alto saxophones, 2 tenor saxophones, 3 bassoons (including contrabassoon), Brass: 4 horns, 5 trumpets (including cornet), 3 trombones, bass trombone, 2 tubas, Percussion: timpani, 2 snare drums, bass drum, cymbals, 2 tambourines, wood block, rattle, triangle, xylophone, tubular bells, tamtam, gong, Other: 2 harps, piano, Banda: 2 horns, tierhorn, 2 trumpets, tenor flügelhorn",
@@ -2522,8 +2523,8 @@
    "req": [
     "trumpet"
    ],
-   "text": "Daphnis et Chloé is scored for a large orchestra consisting of:, Woodwinds, 1 piccolo (plus an additional piccolo onstage), 2 flutes, 1 alto flute in G, 2 oboes, 1 English horn, 1 E clarinet (plus an additional E clarinet onstage), 2 clarinets in B-flat and A, 1 bass clarinet in B-flat, 3 bassoons, 1 contrabassoon, Brass:, 4 horns (plus an additional horn offstage), 4 trumpets in C (plus an additional trumpet offstage), 3 trombones, 1 tuba, Percussion:, timpani, snare drum, 1 pair of castanets, 5 crotales in B, E, F, C, and C-sharp, 1 pair of crash cymbals, 2 suspended cymbals, wind machine, bass drum, field drum, tambourine, tam-tam, triangle, celesta, glockenspiel, xylophone, Strings:, 2 harps, 16-18 1st violins, 14-16 2nd violins, 12 violas, 12 cellos, 8 double basses, Voices:, Wordless SATB choir (offstage), (For the chorus: about 80 singers: 25 sopranos, 25 altos, 15 tenors, 15 basses)",
-   "full": "Daphnis et Chloé is scored for a large orchestra consisting of:, Woodwinds, 1 piccolo (plus an additional piccolo onstage), 2 flutes, 1 alto flute in G, 2 oboes, 1 English horn, 1 E clarinet (plus an additional E clarinet onstage), 2 clarinets in B-flat and A, 1 bass clarinet in B-flat, 3 bassoons, 1 contrabassoon, Brass:, 4 horns (plus an additional horn offstage), 4 trumpets in C (plus an add…",
+   "text": "Daphnis et Chloé is scored for large orchestra:, Woodwinds, 1 piccolo (plus an additional piccolo onstage), 2 flutes, 1 alto flute in G, 2 oboes, 1 English horn, 1 E clarinet (plus an additional E clarinet onstage), 2 clarinets in B-flat and A, 1 bass clarinet in B-flat, 3 bassoons, 1 contrabassoon, Brass:, 4 horns (plus an additional horn offstage), 4 trumpets in C (plus an additional trumpet offstage), 3 trombones, 1 tuba, Percussion:, timpani, snare drum, 1 pair of castanets, 5 crotales in B, E, F, C, and C-sharp, 1 pair of crash cymbals, 2 suspended cymbals, wind machine, bass drum, field drum, tambourine, tam-tam, triangle, celesta, glockenspiel, xylophone, Strings:, 2 harps, 16-18 1st violins, 14-16 2nd violins, 12 violas, 12 cellos, 8 double basses, Voices:, Wordless SATB choir (offstage), (For the chorus: about 80 singers: 25 sopranos, 25 altos, 15 tenors, 15 basses)",
+   "full": "Daphnis et Chloé is scored for large orchestra:, Woodwinds, 1 piccolo (plus an additional piccolo onstage), 2 flutes, 1 alto flute in G, 2 oboes, 1 English horn, 1 E clarinet (plus an additional E clarinet onstage), 2 clarinets in B-flat and A, 1 bass clarinet in B-flat, 3 bassoons, 1 contrabassoon, Brass:, 4 horns (plus an additional horn offstage), 4 trumpets in C (plus an additional trumpet …",
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Daphnis_et_Chlo%C3%A9",
@@ -5759,6 +5760,24 @@
    "genre": "Concerto"
   },
   {
+   "page": "The Wand of Youth",
+   "subcat": "Category:Incidental music by Edward Elgar",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes (one doubling piccolo, 2 oboes, 2 clarinets in B & A, 2 bassoons, 4 horns in F, 2 trumpets in B , C & A, 3 trombones, tuba, timpani (3), 2 percussionists (with bass drum & cymbals, triangle & snare drum), harp and string section",
+   "full": "scored for 2 flutes (one doubling piccolo, 2 oboes, 2 clarinets in B & A, 2 bassoons, 4 horns in F, 2 trumpets in B , C & A, 3 trombones, tuba, timpani (3), 2 percussionists (with bass drum & cymbals, triangle & snare drum), harp and string section",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/The_Wand_of_Youth",
+   "composer": "Edward Elgar",
+   "genre": "Incidental music"
+  },
+  {
    "page": "In the South (Alassio)",
    "subcat": "Category:Overtures by Edward Elgar",
    "scoring": "three trumpets",
@@ -6086,7 +6105,7 @@
    "req": [
     "trumpet"
    ],
-   "text": "The symphony is scored for large orchestra comprising 3 flutes (1 doubling piccolo), 2 oboes, cor anglais, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, triangle, cymbals, bass drum, piano (two and four hands), organ, and strings, Saint-Saëns' use of keyboard instruments – piano (scored for both two and four hands at various places) and the organ – are unusual additions to the orchestration for a late-Romantic symphony. Following Saint-Saëns' own explanation provided in the program notes he wrote for the London premiere, the decision to include both organ and piano keyboard in the instrumentation stemmed principally from his desire to innovate upon the traditional symphonic scoring practice. Mendelssohn had included the organ in his second symphony, \"Lobgesang\", but that work is a symphonic cantata, while Vincent d'Indy's Symphonie sur un chant montagnard français, which includes piano concertante, was only begun after the premiere of the Organ symphony. This instrumentation \"had not previously factored in an established symphony\", Saint-Saëns had appeared as the organ soloist in Bach's A minor Prelude and Fugue at a Philharmonic Society concert programmed on July 2, 1879 (where he also performed his second piano concerto), and it is possible that the presence of this instrument in the concert hall propelled to include the organ. The instrument he had played at that concert was removed in 1882, replaced by a new organ made by Bryceson Brothers & Ellis, a fact of which Saint-Saëns was unaware. This new instrument had a different configuration and it has been suggested that the opening organ chords of the Maestoso finale would have been \"disappointingly ineffective\" as a result",
+   "text": "The symphony is scored for large orchestra comprising 3 flutes (1 doubling piccolo), 2 oboes, cor anglais, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, triangle, cymbals, bass drum, piano (two and four hands), organ, and strings, Saint-Saëns' use of keyboard instruments – piano (scored for both two and four hands at various places) and the organ – are unusual additions to the orchestration for a late-Romantic symphony. Following Saint-Saëns' own explanation provided in the program notes he wrote for the London premiere, the decision to include both organ and piano keyboard in the instrumentation stemmed principally from his desire to innovate upon the traditional symphonic scoring practice. Mendelssohn had included the organ in his second symphony, \"Lobgesang\", but that work is a symphonic cantata, while Vincent d'Indy's Symphonie sur un chant montagnard français, which includes piano concertante, was only begun after the premiere of the Organ symphony. This instrumentation \"had not previously factored in an established symphony\", Saint-Saëns had appeared as the organ soloist in Bach's A minor Prelude and Fugue at a Philharmonic Society concert programmed on July 2, 1879 (where he also performed his second piano concerto), and it is possible that the presence of this instrument in the concert hall propelled him to include the organ. The instrument he had played at that concert was removed in 1882, replaced by a new organ made by Bryceson Brothers & Ellis, a fact of which Saint-Saëns was unaware. This new instrument had a different configuration and it has been suggested that the opening organ chords of the Maestoso finale would have been \"disappointingly ineffective\" as a result",
    "full": "The symphony is scored for large orchestra comprising 3 flutes (1 doubling piccolo), 2 oboes, cor anglais, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, triangle, cymbals, bass drum, piano (two and four hands), organ, and strings, Saint-Saëns' use of keyboard instruments – piano (scored for both two and four hands at various places) and …",
    "estimated": false,
    "how": "section",
@@ -6285,8 +6304,8 @@
     "piccoloTrumpet",
     "trumpet"
    ],
-   "text": "Bernstein scored Mass for a large orchestra and choir, and also included onstage groups (street musicians). Bernstein divided the orchestra into two parts: the strings, keyboards, and some percussion are in the pit; while the woodwinds, brass, guitars, synthesizers, and other percussion are onstage. The instrumentation is as follows:, ===Pit orchestra===, Percussion (at least 4–5 players), 5 timpani, 5 bongos, 3 congas, 2 snare drums, tenor drum, bass drum, 4 tuned drums, cymbals, 3 suspended cymbals, sizzle cymbal, splash cymbal, triangle, 2 cowbells, chimes, 2 tam-tams, anvil, 5 temple blocks, 2 wood blocks, tambourine, guiro, whip, rachet, castanets, claves, 2 xylophones, glockenspiel, marimba, vibraphone, Keyboards, celesta, piano, 2 Allen organs (small and large), Strings, 1 harp, first violins, second violins, violas, cellos, double basses, ===Onstage groups===, Stage orchestra:, Woodwinds, 2 Western concert flute flutes (both doubling on piccolos), 2 oboes (2nd doubling on English horn), 3 clarinets in B (1st doubling on soprano saxophone, 2nd doubling on alto saxophone and E-flat clarinet clarinet in E , 3rd doubling on tenor saxophone and bass clarinet in B ), 2 bassoons (2nd doubling on contrabassoon), Brass, 4 horns in F, 4 trumpets (1st doubling on piccolo trumpet), 3 trombones, 1 tuba, Percussion (2 players), bongos, 2 drum sets, finger cymbals, temple blocks, 2 tambourines, glockenspiel, Keyboards, 2 synthesizers (one for blues band, the other for rock band), Voice, high baritone solo (Celebrant), boy soprano solo, SSAATTBB choir (at least 60 singers, in robes), boys' choir (SSAA) (at least 20 singers, doubling on kazoos), Strings, acoustic guitar, 2 electric guitars (2nd doubling on banjo), 2 bass guitars (one for the stage orchestra, the other for the rock band), Bernstein included a note that the musicians in the stage orchestra are to be robed and also act as cast members. Bernstein also went so far as to include a footnote that the bassist and the keyboardist of the blues band and the keyboardist, bassist and drummer of the rock band are to be recruited as percussionists for the stage orchestra for the second movement, Street musicians:, Percussion: 3 steel drums, claves, bottles, a tambourine, gourds, and tin cans, Voice: at least 45 singers (20–30 soloists are used from this group), In his instructions, Bernstein indicated that the percussion should be played by members of the street musicians",
-   "full": "Bernstein scored Mass for a large orchestra and choir, and also included onstage groups (street musicians). Bernstein divided the orchestra into two parts: the strings, keyboards, and some percussion are in the pit; while the woodwinds, brass, guitars, synthesizers, and other percussion are onstage. The instrumentation is as follows:, ===Pit orchestra===, Percussion (at least 4–5 players), 5 ti…",
+   "text": "Bernstein scored Mass for a large orchestra and choir, and also included onstage groups (street musicians). Bernstein divided the orchestra into two parts: the strings, keyboards, and some percussion are in the pit; while the woodwinds, brass, guitars, synthesizers, and other percussion are onstage. A small chamber instrumentation also exists. The large instrumentation is as follows:, ===Pit orchestra===, Percussion (at least 4–5 players), 5 timpani, 5 bongos, 3 congas, 2 snare drums, tenor drum, bass drum, 4 tuned drums, cymbals, 3 suspended cymbals, sizzle cymbal, splash cymbal, triangle, 2 cowbells, chimes, 2 tam-tams, anvil, 5 temple blocks, 2 wood blocks, tambourine, guiro, whip, rachet, castanets, claves, 2 xylophones, glockenspiel, marimba, vibraphone, Keyboards, celesta, piano, 2 Allen organs (small and large), Strings, 1 harp, first violins, second violins, violas, cellos, double basses, ===Onstage groups===, Stage orchestra:, Woodwinds, 2 Western concert flute flutes (both doubling on piccolos), 2 oboes (2nd doubling on English horn), 3 clarinets in B (1st doubling on soprano saxophone, 2nd doubling on alto saxophone and E-flat clarinet clarinet in E , 3rd doubling on tenor saxophone and bass clarinet in B ), 2 bassoons (2nd doubling on contrabassoon), Brass, 4 horns in F, 4 trumpets (1st doubling on piccolo trumpet), 3 trombones, 1 tuba, Percussion (2 players), bongos, 2 drum sets, finger cymbals, temple blocks, 2 tambourines, glockenspiel, Keyboards, 2 synthesizers (one for blues band, the other for rock band), Voice, high baritone solo (Celebrant), boy soprano solo, SSAATTBB choir (at least 60 singers, in robes), boys' choir (SSAA) (at least 20 singers, doubling on kazoos), Strings, acoustic guitar, 2 electric guitars (2nd doubling on banjo), 2 bass guitars (one for the stage orchestra, the other for the rock band), Bernstein included a note that the musicians in the stage orchestra are to be robed and also act as cast members. Bernstein also went so far as to include a footnote that the bassist and the keyboardist of the blues band and the keyboardist, bassist and drummer of the rock band are to be recruited as percussionists for the stage orchestra for the second movement, Street musicians:, Percussion: 3 steel drums, claves, bottles, a tambourine, gourds, and tin cans, Voice: at least 45 singers (20–30 soloists are used from this group), In his instructions, Bernstein indicated that the percussion should be played by members of the street musicians",
+   "full": "Bernstein scored Mass for a large orchestra and choir, and also included onstage groups (street musicians). Bernstein divided the orchestra into two parts: the strings, keyboards, and some percussion are in the pit; while the woodwinds, brass, guitars, synthesizers, and other percussion are onstage. A small chamber instrumentation also exists. The large instrumentation is as follows:, ===Pit or…",
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Mass_(Bernstein)",
@@ -6321,7 +6340,7 @@
    "req": [
     "trumpet"
    ],
-   "text": "The score calls for an orchestra consisting of the following instruments:, Woodwinds: 1 piccolo, 2 flutes, 2 oboes, 1 cor anglais, 1 clarinet in E , 2 clarinets in B , 1 alto saxophone in E , 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass: 4 horns in F, 3 trumpets in B (one doubling trumpet in D), 3 trombones, 1 tuba, Keyboards: 1 piano (doubling celesta), Strings: violins I, violins II, violas, cellos, double basses, harp, Percussion (four players dividing the following): 1 pair bongos, 1 tambourine, 1 pair timbales, 1 tom-tom, 2 snares (large and small), 1 conga drum, 1 tenor drum, 1 bass drum, 4 pitched drums (approximately an interval of a third apart), 1 trap set (cymbals, snare drum, tom-toms, bass drum), 1 triangle, 1 suspended cymbal, 1 pair cymbals, 1 finger cymbals, 3 cowbells (1 large), 1 tam-tam, 1 vibraphone, 1 glockenspiel, 1 chime (F ), 1 woodblock, 1 güiro, 2 maracas (large and small), 1 xylophone, 1 police whistle",
+   "text": "The score calls for an orchestra consisting of the following instruments:, Woodwinds: 1 piccolo, 2 flutes, 2 oboes, 1 cor anglais, 1 clarinet in E , 2 clarinets in B , 1 alto saxophone in E , 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass: 4 horns in F, 3 trumpets in B (one doubling trumpet in D), 3 trombones, 1 tuba, Keyboards: 1 piano (doubling celesta), Strings: violins I, violins II, violas, cellos, double basses, harp, Percussion: 1 pair bongos, 1 tambourine, 1 pair timbales, 1 tom-tom, 2 snares (large and small), 1 conga drum, 1 tenor drum, 1 bass drum, 4 pitched drums (approximately an interval of a third apart), 1 trap set (cymbals, snare drum, tom-toms, bass drum), 1 triangle, 1 suspended cymbal, 1 pair of crash cymbals, 1 pair of finger cymbals, 3 cowbells (1 large), 1 tam-tam, 1 vibraphone, 1 glockenspiel, 1 chime (F ), 1 woodblock, 1 güiro, 2 maracas (large and small), 1 xylophone, and 1 police whistle; plus a set of timpani (4 drums)",
    "full": "The score calls for an orchestra consisting of the following instruments:, Woodwinds: 1 piccolo, 2 flutes, 2 oboes, 1 cor anglais, 1 clarinet in E , 2 clarinets in B , 1 alto saxophone in E , 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass: 4 horns in F, 3 trumpets in B (one doubling trumpet in D), 3 trombones, 1 tuba, Keyboards: 1 piano (doubling celesta), Strings: violins I, violins II, v…",
    "estimated": false,
    "how": "section",
@@ -7351,8 +7370,8 @@
    "req": [
     "trumpet"
    ],
-   "text": "The 1887 version is scored for three flutes, a piccolo in the climax of the Adagio, three oboes, three clarinets, three bassoons, three trumpets, three trombones, four Wagner tubas, one contrabass tuba, timpani, cymbals, triangle, three harps, and strings. The third part of each woodwind only appear in the Finale, while the third bassoon also doubles as contrabassoon in the Finale. Horns 5 to 8 also only appear in the Finale. The 1890 version deletes the piccolo part, and extends the triple woodwinds and calls for eight horns on all four movements. Horns 5 to 8 replace the Wagner tubas in most of the first and third movements, doubling as Wagner tubas at some points of the symphony. This is the only symphony where Bruckner employs the harp. This was, in total, the largest orchestra Bruckner ever used (since the Ninth Symphony, which uses an otherwise identical orchestra, does not require harps and percussion other than timpani)",
-   "full": "The 1887 version is scored for three flutes, a piccolo in the climax of the Adagio, three oboes, three clarinets, three bassoons, three trumpets, three trombones, four Wagner tubas, one contrabass tuba, timpani, cymbals, triangle, three harps, and strings. The third part of each woodwind only appear in the Finale, while the third bassoon also doubles as contrabassoon in the Finale. Horns 5 to 8…",
+   "text": "The 1887 version is scored for three flutes, a piccolo, three oboes, three clarinets, three bassoons, eight horns, three trumpets, three trombones, four Wagner tubas, one contrabass tuba, timpani, cymbals, triangle, three harps, and strings. The third part of each woodwind only appear in the Finale, while the third bassoon also doubles as contrabassoon in the Finale. Horns 5 to 8 also only appear in the Finale. The 1890 version deletes the piccolo part, and extends the triple woodwinds and calls for eight horns on all four movements. Horns 5 to 8 replace the Wagner tubas in most of the first and third movements, doubling as Wagner tubas at some points of the symphony. This is the only symphony where Bruckner employs the harp. This was, in total, the largest orchestra Bruckner ever used (since the Ninth Symphony, which uses an otherwise identical orchestra, does not require harps and percussion other than timpani)",
+   "full": "The 1887 version is scored for three flutes, a piccolo, three oboes, three clarinets, three bassoons, eight horns, three trumpets, three trombones, four Wagner tubas, one contrabass tuba, timpani, cymbals, triangle, three harps, and strings. The third part of each woodwind only appear in the Finale, while the third bassoon also doubles as contrabassoon in the Finale. Horns 5 to 8 also only appe…",
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Bruckner)",
@@ -7981,8 +8000,8 @@
    "req": [
     "trumpet"
    ],
-   "text": "The work is scored for an orchestra consisting of two flutes, two oboes, two clarinets in B flat and A, two bassoons, two horns in C and A, two horns in E, F and D, two trumpets in D, timpani, and strings",
-   "full": "The work is scored for an orchestra consisting of two flutes, two oboes, two clarinets in B flat and A, two bassoons, two horns in C and A, two horns in E, F and D, two trumpets in D, timpani, and strings",
+   "text": "The work is scored for an orchestra consisting of two flutes, two oboes, two clarinets in B flat and A, two bassoons, four horns (two in C and A, two in E, F and D), two trumpets in D, timpani, and strings",
+   "full": "The work is scored for an orchestra consisting of two flutes, two oboes, two clarinets in B flat and A, two bassoons, four horns (two in C and A, two in E, F and D), two trumpets in D, timpani, and strings",
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Mendelssohn)",
@@ -11581,10 +11600,10 @@
    "req": [
     "trumpet"
    ],
-   "text": "The symphony is scored for 3 flutes (all doubling piccolos), 2 oboes, 2 clarinets in A, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, percussion (1 player): bass drum, cymbals and strings",
-   "full": "The symphony is scored for 3 flutes (all doubling piccolos), 2 oboes, 2 clarinets in A, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, percussion (1 player): bass drum, cymbals and strings",
+   "text": "scored for 3 flutes (all doubling piccolos), 2 oboes, 2 clarinets in A, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, percussion (1 player): bass drum, cymbals and strings, The symphony is in four movements, marked as follows:, Tippett himself said that the symphony was exuberant rather than refined: \"... it's got drive and it's highly wrought\"",
+   "full": "scored for 3 flutes (all doubling piccolos), 2 oboes, 2 clarinets in A, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, percussion (1 player): bass drum, cymbals and strings, The symphony is in four movements, marked as follows:, Tippett himself said that the symphony was exuberant rather than refined: \"... it's got drive and it's highly wrought\"",
    "estimated": false,
-   "how": "section",
+   "how": "prose",
    "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Tippett)",
    "composer": "Michael Tippett",
    "genre": "Symphony"
@@ -11599,8 +11618,8 @@
    "req": [
     "trumpet"
    ],
-   "text": "The symphony is scored for 2 Flutes, (both doubling Piccolo), 2 Oboes, 2 Clarinets in A, 2 Bassoons, 4 Horns, 2 Trumpets, 3 Trombones, Tuba, Timpani, Percussion (1 Player): Side drum, Bass drum, Cymbals, Harp, Piano (doubling Celeste) and Strings",
-   "full": "The symphony is scored for 2 Flutes, (both doubling Piccolo), 2 Oboes, 2 Clarinets in A, 2 Bassoons, 4 Horns, 2 Trumpets, 3 Trombones, Tuba, Timpani, Percussion (1 Player): Side drum, Bass drum, Cymbals, Harp, Piano (doubling Celeste) and Strings",
+   "text": "The symphony is scored for 2 flutes, (both doubling piccolo), 2 oboes, 2 clarinets in A, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, percussion (timpani, side drum, bass drum, and cymbals), harp, piano (doubling celeste) and strings",
+   "full": "The symphony is scored for 2 flutes, (both doubling piccolo), 2 oboes, 2 clarinets in A, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, percussion (timpani, side drum, bass drum, and cymbals), harp, piano (doubling celeste) and strings",
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Tippett)",
@@ -12229,8 +12248,8 @@
    "req": [
     "trumpet"
    ],
-   "text": "Wozzeck is scored for voices, choirs (men's, women's, and children's), and large orchestra, including onstage musicians four times: a military band (act 1, scene 3), a chamber orchestra (act 2, scene 3), a tavern band (act 2, scene 4), and an out-of-tune, upright tavern piano (act 3, scene 3), ====Roles====, {| class=\"wikitable\", Role, Voice type, Premiere cast, 14 December 1925 Conductor: Erich Kleiber, Wozzeck, baritone, Leo Schützendorf, Marie, his common-law wife, soprano, Sigrid Johanson, Marie's son, treble, Ruth Iris Witting, Captain, buffo tenor, Waldemar Henke, Doctor, buffo bass, Martin Abendroth, Drum Major, heldentenor, Fritz Soot, Andres, Wozzeck's friend, lyric tenor, Gerhard Witting, Margret, Marie's neighbor, contralto, Jessika Koettrik, First Apprentice, deep bass, Ernst Osterkamp, Second Apprentice, high baritone, Alfred Borchardt, Madman, high tenor, Marcel Noé, A Soldier, baritone, Leonhard Kern, Soldiers, apprentices, women, children, ====Instrumentation====, thumb|right|Townsfolk carousing with on-stage tavern musicians (Badisches Staatstheater Karlsruhe, early 1960s; photo Gerd Weiss)The orchestra is very large. It is scored for:, 4 flutes (all double 4 piccolos), 4 oboes (4th doubles English horn), 4 clarinets in B (1st doubles clarinet in A, 3rd and 4th double 2 clarinets in E ), bass clarinet, 3 bassoons, contrabassoon, 4 French horns in F, 4 trumpets in F, 4 trombones (1 alto, 2 tenor, 1 bass), bass tuba, 4 timpani drums, 2 bass drums (1 with rute), cymbals (1 suspended, 1 attached to bass drum, and 1 pair of crash), snare drum, 2 tam-tams (1 small), triangle, xylophone, celesta, harp, and a standard string section. (Usually 14-16 1st violins, 14-16 2nd violins, 10-12 violas, 10-12 cellos, and 8-10 double basses), Military band: piccolo, 2 flutes, 2 oboes, 2 clarinets in E , 2 bassoons, 2 French horns in F, 2 trumpets in F, 3 trombones, bass tuba, bass drum, one pair of crash cymbals, snare drum, and triangle. Berg marks when these musicians may be taken from the pit in a footnote near the end of act 1, scene 2, Chamber orchestra: flute (doubles piccolo), oboe, English horn, 2 clarinets (1 in E and 1 in A), bass clarinet, bassoon, contrabassoon, 2 French horns, 2 violins, viola, cello, and double bass, Tavern band: clarinet in C, bombardon in F (or muted bass tuba as a substitute), out-of-tune upright \"tavern\" piano, accordion, guitar, and 2 fiddles",
-   "full": "Wozzeck is scored for voices, choirs (men's, women's, and children's), and large orchestra, including onstage musicians four times: a military band (act 1, scene 3), a chamber orchestra (act 2, scene 3), a tavern band (act 2, scene 4), and an out-of-tune, upright tavern piano (act 3, scene 3), ====Roles====, {| class=\"wikitable\", Role, Voice type, Premiere cast, 14 December 1925 Conductor: Eric…",
+   "text": "thumb|upright=1.5|Townsfolk carouse with on-stage tavern musicians (Badisches Staatstheater Karlsruhe, early 1960s; photos Gerd Weiss)Wozzeck is scored for voices, choirs (men's, women's, and children's), and large orchestra sometimes sorted into distinct ensembles: military band (act 1, scene 3), chamber orchestra (act 2, scene 3), and tavern band (act 2, scene 4). The latter's out-of-tune, upright piano returns in act 3, scene 3. All but the chamber orchestra perform onstage, ====Roles====, {| class=\"wikitable\", Role, Voice type, Premiere cast, 14 December 1925 Conductor: Erich Kleiber, Wozzeck, baritone, Marie, his common-law wife, soprano, Sigrid Johanson, Marie's son, treble, Ruth Iris Witting, Captain, buffo tenor, Waldemar Henke, Doctor, buffo bass, Martin Abendroth, Drum Major, heldentenor, Fritz Soot, Andres, Wozzeck's friend, lyric tenor, Gerhard Witting, Margret, Marie's neighbor, contralto, Jessika Koettrik, First Apprentice, deep bass, Ernst Osterkamp, Second Apprentice, high baritone, Alfred Borchardt, Madman, high tenor, Marcel Noé, A Soldier, baritone, Leonhard Kern, Soldiers, apprentices, women, children, ====Instrumentation====, Pit orchestra: 4 flutes (all double piccolos), 4 oboes (4th doubles English horn), 4 B clarinets (1st doubles A, 3rd–4th double E ), bass clarinet, 3 bassoons, contrabassoon, 4 F horns, 4 F trumpets, 4 trombones (alto, 2 tenor, bass), tuba, 4 timpani drums, 2 bass drums (1 with rute), suspended cymbals, bass-drum cymbal, crash cymbals, snare drum, 2 tam-tams (1 small), triangle, xylophone, celesta, harp, string section (14–16 first violins, 14–16 second violins, 10–12 violas, 10–12 cellos, and 8–10 double basses), Military band: piccolo, 2 flutes, 2 oboes, 2 E clarinets, 2 bassoons, 2 F horns, 2 F trumpets, 3 trombones, tuba, bass drum, crash cymbals, snare drum, triangle, Chamber orchestra: flute (doubles piccolo), oboe, English horn, 2 clarinets (E , A), bass clarinet, bassoon, contrabassoon, 2 F horns, 2 violins, viola, cello, double bass, Tavern band: C clarinet, F bombardon (or muted tuba), out-of-tune upright \"tavern\" piano, accordion, guitar, 2 fiddles",
+   "full": "thumb|upright=1.5|Townsfolk carouse with on-stage tavern musicians (Badisches Staatstheater Karlsruhe, early 1960s; photos Gerd Weiss)Wozzeck is scored for voices, choirs (men's, women's, and children's), and large orchestra sometimes sorted into distinct ensembles: military band (act 1, scene 3), chamber orchestra (act 2, scene 3), and tavern band (act 2, scene 4). The latter's out-of-tune, up…",
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Wozzeck",
@@ -12375,7 +12394,7 @@
    "req": [
     "trumpet"
    ],
-   "text": "The work is scored for four soloists (piano solo, horn solo, xylorimba solo and glockenspiel solo) and orchestra, The string section consists of only 6 violins, 3 violas, 3 cellos, and 1 double bass with fifth-string lower extension, The woodwind requires 1 piccolo, 2 flutes, 1 alto flute, 2 oboes, 1 cor anglais, 1 E-flat clarinet, 2 B-flat clarinets, 1 bass clarinet, 2 bassoons, and 1 contrabassoon. Messiaen remarks: \"all of the woodwind parts are difficult.\", In addition to the sixth movement's horn solo, the brass section also consists of 2 horns, 2 trumpets in c, 1 trumpet in d, 2 trombones, and 1 bass trombone, The unusually large percussion section, divided for 5 percussionists, consists of Messiaen's own invented instrument the geophone, 1 wind machine, 1 thunder sheet, 1 gong, 1 set of tuned gongs, 1 set of tubular bells, 1 pair of maracas, 1 whip, 1 bass drum, 1 triangle, 1 wood block, 1 set of wooden wind chimes, 1 set of crotales, 1 reco reco, and 1 tumba, among other percussion instruments",
+   "text": "The work is scored for four soloists (piano solo, horn solo, xylorimba solo and glockenspiel solo) and orchestra, The string section consists of only 6 violins, 3 violas, 3 cellos, and 1 double bass with fifth-string lower extension, The woodwind requires 1 piccolo, 2 flutes, 1 alto flute, 2 oboes, 1 cor anglais, 1 E-flat clarinet, 2 B-flat clarinets, 1 bass clarinet, 2 bassoons, and 1 contrabassoon, In addition to the sixth movement's horn solo, the brass section also consists of 2 horns, 2 trumpets in c, 1 trumpet in d, 2 trombones, and 1 bass trombone, The unusually large percussion section, divided for 5 percussionists, consists of Messiaen's own invented instrument the geophone, 1 wind machine, 1 thunder sheet, 1 gong, 1 set of tuned gongs, 1 set of tubular bells, 1 pair of maracas, 1 whip, 1 bass drum, 1 triangle, 1 wood block, 1 set of wooden wind chimes, 1 set of crotales, 1 reco reco, and 1 tumba, among other percussion instruments",
    "full": "The work is scored for four soloists (piano solo, horn solo, xylorimba solo and glockenspiel solo) and orchestra, The string section consists of only 6 violins, 3 violas, 3 cellos, and 1 double bass with fifth-string lower extension, The woodwind requires 1 piccolo, 2 flutes, 1 alto flute, 2 oboes, 1 cor anglais, 1 E-flat clarinet, 2 B-flat clarinets, 1 bass clarinet, 2 bassoons, and 1 contraba…",
    "estimated": false,
    "how": "section",
@@ -12678,7 +12697,7 @@
   {
    "page": "Universe Symphony (Ives)",
    "subcat": "Category:Symphonies by Charles Ives",
-   "scoring": "five trumpets (2 doubling piccolo trumpet)",
+   "scoring": "five trumpets (doubling piccolo trumpet)",
    "counts": {
     "trumpet": 5
    },
@@ -13028,7 +13047,7 @@
    "req": [
     "trumpet"
    ],
-   "text": "The symphony was orchestrated for solo baritone, two flutes (one flute doubling on piccolo), two oboes, two clarinets and one bass clarinet, two bassoons, four horns, three trumpets, two trombones and one bass trombone, one tuba, four percussionists, two harps, one pianist doubling on piano and celesta, and string orchestra, The piece is approximately 35 minutes long and consists of 8 movements. Movement 1 is titled \"Lyceum Address, Part 1,\" and is to be sung by the baritone; Movement 2 is titled \"Lyceum Address, Part 2,\" and is to be spoken by the baritone; and Movement 3 is untitled and left out of the libretto. Movement 4 is titled \"Autobiography Part 1,\" and Movement 5 is titled \"Autobiography Part 2.\" They are both to be spoken and sung and were likely inspired by Lincoln's Autobiographical Sketch from 1864. Movement 6 is titled \"Slavery,\" Movement 7 is titled \"The End of War,\" and Movement 8 is titled \"Farewell Address.\" All 3 of those movements are to be both spoken and sung by the baritone",
+   "text": "The symphony was orchestrated for solo baritone, two flutes (one flute doubling on piccolo), two oboes, two clarinets and one bass clarinet, two bassoons, four horns, three trumpets, two trombones and one bass trombone, one tuba, four percussionists, two harps, one pianist doubling on piano and celesta, and string orchestra, The piece is approximately 35 minutes long and consists of 8 movements. Movement 1 is titled \"Lyceum Address, Part 1,\" and is to be sung by the baritone; Movement 2 is titled \"Lyceum Address, Part 2,\" and is to be spoken by the baritone; and Movement 3 is titled \"Interlude\" and left out of the libretto. Movement 4 is titled \"Autobiography Part 1,\" and Movement 5 is titled \"Autobiography Part 2.\" They are both to be spoken and sung and were likely inspired by Lincoln's Autobiographical Sketch from 1864. Movement 6 is titled \"Slavery,\" Movement 7 is titled \"The End of War,\" and Movement 8 is titled \"Farewell Address.\" All 3 of those movements are to be both spoken and sung by the baritone",
    "full": "The symphony was orchestrated for solo baritone, two flutes (one flute doubling on piccolo), two oboes, two clarinets and one bass clarinet, two bassoons, four horns, three trumpets, two trombones and one bass trombone, one tuba, four percussionists, two harps, one pianist doubling on piano and celesta, and string orchestra, The piece is approximately 35 minutes long and consists of 8 movements…",
    "estimated": false,
    "how": "section",
@@ -13507,7 +13526,7 @@
   {
    "page": "Le Grand Macabre",
    "subcat": "Category:Operas by György Ligeti",
-   "scoring": "four trumpets (1st doubling piccolo trumpet)",
+   "scoring": "four trumpets (1st and 2nd doubling piccolo trumpet)",
    "counts": {
     "trumpet": 4
    },
@@ -14152,8 +14171,8 @@
    "req": [
     "trumpet"
    ],
-   "text": "scored for SATB, The string orchestra is augmented by timpani, 2 trumpets, mandolino, 4 theorbos, 5 \"viole all'inglese\" (viols), 1 viola d'amore, 2 recorders, 2 chalumeaux (soprano), \"Clareni\" (clarinet), 2 oboes, organ",
-   "full": "scored for SATB, The string orchestra is augmented by timpani, 2 trumpets, mandolino, 4 theorbos, 5 \"viole all'inglese\" (viols), 1 viola d'amore, 2 recorders, 2 chalumeaux (soprano), \"Clareni\" (clarinet), 2 oboes, organ",
+   "text": "scored for SATB, The string orchestra is augmented by timpani, 2 trumpets, mandolino, 4 theorbos, 5 \"viole all'inglese\" (viols), 1 viola d'amore, 2 recorders, 2 chalumeaux (soprano), \"Clarini\" (trumpets), 2 oboes, organ",
+   "full": "scored for SATB, The string orchestra is augmented by timpani, 2 trumpets, mandolino, 4 theorbos, 5 \"viole all'inglese\" (viols), 1 viola d'amore, 2 recorders, 2 chalumeaux (soprano), \"Clarini\" (trumpets), 2 oboes, organ",
    "estimated": false,
    "how": "prose",
    "url": "https://en.wikipedia.org/wiki/Juditha_triumphans",

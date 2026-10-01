@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-02T14:36:36.308Z",
+ "generated": "2026-10-01T05:01:27.685Z",
  "source": "composerjim.com — James Stephenson's own catalogue",
  "note": "Catalogue facts only: title, instrumentation, year and page URL. The programme notes on the site are the composer's own writing and are not stored.",
  "counts": {
@@ -661,7 +661,7 @@
    "title": "Concerto for Wind Ensemble “Games”",
    "year": 2022,
    "genre": "Wind ensemble",
-   "scoring": "three trumpets (1 doubling piccolo trumpet), flugelhorn",
+   "scoring": "three trumpets (1st doubling piccolo trumpet), flugelhorn",
    "counts": {
     "trumpet": 3,
     "flugelhorn": 1
@@ -2424,7 +2424,7 @@
    "title": "Symphony for Brass",
    "year": 2014,
    "genre": "Wind ensemble",
-   "scoring": "piccolo trumpet, eight trumpets (3 doubling flugelhorn)",
+   "scoring": "piccolo trumpet, eight trumpets (3rd doubling flugelhorn)",
    "counts": {
     "trumpet": 8,
     "piccoloTrumpet": 1
@@ -2507,7 +2507,7 @@
    "title": "Symphony No. 5",
    "year": 2024,
    "genre": "Wind ensemble",
-   "scoring": "five trumpets (1 doubling flugelhorn)",
+   "scoring": "five trumpets (1st doubling flugelhorn)",
    "counts": {
     "trumpet": 5
    },
@@ -2851,11 +2851,11 @@
    "title": "Voyages",
    "year": 2020,
    "genre": "Wind ensemble",
-   "scoring": "piccolo trumpet, three trumpets, four flugelhorns",
+   "scoring": "piccolo trumpet, three trumpets, flugelhorn",
    "counts": {
     "trumpet": 3,
-    "flugelhorn": 4,
-    "piccoloTrumpet": 1
+    "piccoloTrumpet": 1,
+    "flugelhorn": 1
    },
    "req": [
     "piccoloTrumpet",
@@ -2969,13 +2969,14 @@
    "title": "You have reached the city limits for Symphonic Winds",
    "year": 2024,
    "genre": "Wind ensemble",
-   "scoring": "three trumpets (1 doubling piccolo trumpet)",
+   "scoring": "three trumpets (1st doubling cornet, 1st doubling piccolo trumpet)",
    "counts": {
     "trumpet": 3
    },
    "req": [
     "piccoloTrumpet",
-    "trumpet"
+    "trumpet",
+    "cornet"
    ],
    "full": "note: the composer suggests doubling of flutes and clarinets is acceptable., piccolo, 2 flutes, 2 oboes, English horn, 3 B! clarinets, bass clarinet, 2 bassoons, contrabassoon, saxophone 1 (soprano/alto), alto saxophone 2, tenor saxophone, baritone saxophone, 4 French horns, 3 trumpets (trumpet 1 includes B! cornet and B! piccolo trumpet), 2 trombones, bass trombone, euphonium (2 players), tuba (2 players), timpani + 4 percussion, harp, piano (piano includes concert grand piano + optional (preferred) upright piano. Upright piano should be amplified if needed.), 2 basses, (if possible), percussion instruments needed:, percussion 1: Mallets: Marimba, Vibes (shared), Crotales",
    "raw": ", Note: the composer suggests doubling of flutes and clarinets is acceptable., piccolo – 2 flutes – 2 oboes – English horn – 3 B! clarinets – bass clarinet – 2 bassoons – contrabassoon, saxophone 1 (soprano/alto), alto saxophone 2, tenor saxophone, baritone saxophone, 4 French horns – 3 C trumpets (trumpet 1 includes B! cornet and B! piccolo trumpet), 2 trombones – bass trombone – euphonium (2 players) – tuba (2 players), timpani + 4 percussion, harp, piano (piano includes concert grand piano + optional (preferred) upright piano. Upright piano should be amplified if needed.), 2 basses – (if possible), percussion instruments needed:, Perc 1: Mallets: Marimba, Vibes (shared), Crotales",
