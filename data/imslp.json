@@ -1,18 +1,18 @@
 {
- "generated": "2026-09-02T01:17:07.882Z",
+ "generated": "2026-11-01T10:55:51.833Z",
  "source": "IMSLP / Petrucci Music Library (imslp.org)",
  "license": "Work metadata from IMSLP, which publishes catalogue data under CC-BY-SA.",
  "counts": {
-  "works": 10852,
-  "composers": 1970,
-  "apiCalls": 1418
+  "works": 10920,
+  "composers": 1977,
+  "apiCalls": 1429
  },
  "composers": [
   {
    "id": "aagaard-thorvald",
    "name": "Thorvald Aagaard",
    "sort": "Aagaard, Thorvald",
-   "works": 11
+   "works": 12
   },
   {
    "id": "abbatini-antonio-maria",
@@ -378,7 +378,7 @@
    "id": "anonymous",
    "name": "Anonymous",
    "sort": "Anonymous",
-   "works": 530
+   "works": 529
   },
   {
    "id": "antegnati-costanzo",
@@ -510,6 +510,12 @@
    "id": "ascher-joseph",
    "name": "Joseph Ascher",
    "sort": "Ascher, Joseph",
+   "works": 1
+  },
+  {
+   "id": "asola-giammateo",
+   "name": "Giammateo Asola",
+   "sort": "Asola, Giammateo",
    "works": 1
   },
   {
@@ -840,12 +846,12 @@
    "id": "barnekow-christian",
    "name": "Christian Barnekow",
    "sort": "Barnekow, Christian",
-   "works": 20
+   "works": 21
   },
   {
-   "id": "baroni-filippo",
-   "name": "Filippo Baroni",
-   "sort": "Baroni, Filippo",
+   "id": "baroni-giamaglia-filippo",
+   "name": "Filippo Baroni Giamaglia",
+   "sort": "Baroni Giamaglia, Filippo",
    "works": 1
   },
   {
@@ -877,6 +883,12 @@
    "name": "Béla Bartók",
    "sort": "Bartók, Béla",
    "works": 7
+  },
+  {
+   "id": "basili-andrea",
+   "name": "Andrea Basili",
+   "sort": "Basili, Andrea",
+   "works": 1
   },
   {
    "id": "basler-paul",
@@ -1083,6 +1095,12 @@
    "works": 1
   },
   {
+   "id": "berge-irenee",
+   "name": "Irénée Bergé",
+   "sort": "Bergé, Irénée",
+   "works": 1
+  },
+  {
    "id": "berggreen-andreas-peter",
    "name": "Andreas Peter Berggreen",
    "sort": "Berggreen, Andreas Peter",
@@ -1104,7 +1122,7 @@
    "id": "beriot-charles-auguste-de",
    "name": "Charles-Auguste de Bériot",
    "sort": "Bériot, Charles-Auguste de",
-   "works": 1
+   "works": 2
   },
   {
    "id": "berkahn-samuel-james",
@@ -1176,7 +1194,7 @@
    "id": "bertrand-anthoine-de",
    "name": "Anthoine de Bertrand",
    "sort": "Bertrand, Anthoine de",
-   "works": 1
+   "works": 2
   },
   {
    "id": "besozzi-alessandro",
@@ -1884,7 +1902,7 @@
    "id": "buxtehude-dietrich",
    "name": "Dietrich Buxtehude",
    "sort": "Buxtehude, Dietrich",
-   "works": 48
+   "works": 49
   },
   {
    "id": "bykhovsky-leo",
@@ -1896,7 +1914,7 @@
    "id": "byrd-william",
    "name": "William Byrd",
    "sort": "Byrd, William",
-   "works": 7
+   "works": 8
   },
   {
    "id": "cabanilles-juan",
@@ -1944,7 +1962,7 @@
    "id": "caldini-fulvio",
    "name": "Fulvio Caldini",
    "sort": "Caldini, Fulvio",
-   "works": 31
+   "works": 35
   },
   {
    "id": "calegari-francesco-antonio",
@@ -1974,6 +1992,12 @@
    "id": "cam-ebrems-abraham",
    "name": "Ebrems Abraham Cam",
    "sort": "Cam, Ebrems Abraham",
+   "works": 1
+  },
+  {
+   "id": "cambio-perissone",
+   "name": "Perissone Cambio",
+   "sort": "Cambio, Perissone",
    "works": 1
   },
   {
@@ -2166,13 +2190,7 @@
    "id": "catelinet-philip-bramwell",
    "name": "Philip Bramwell Catelinet",
    "sort": "Catelinet, Philip Bramwell",
-   "works": 1
-  },
-  {
-   "id": "catherine-alphonse",
-   "name": "Alphonse Catherine",
-   "sort": "Catherine, Alphonse",
-   "works": 1
+   "works": 5
   },
   {
    "id": "cattaneo-pietro",
@@ -2640,7 +2658,7 @@
    "id": "costeley-guillaume",
    "name": "Guillaume Costeley",
    "sort": "Costeley, Guillaume",
-   "works": 2
+   "works": 3
   },
   {
    "id": "cotto-deme",
@@ -2724,7 +2742,7 @@
    "id": "cruger-johann",
    "name": "Johann Crüger",
    "sort": "Crüger, Johann",
-   "works": 5
+   "works": 6
   },
   {
    "id": "crusell-bernhard-henrik",
@@ -3924,7 +3942,7 @@
    "id": "forghieri-giuliano",
    "name": "Giuliano Forghieri",
    "sort": "Forghieri, Giuliano",
-   "works": 2
+   "works": 4
   },
   {
    "id": "forster-emanuel-aloys",
@@ -4746,7 +4764,7 @@
    "id": "guami-gioseffo",
    "name": "Gioseffo Guami",
    "sort": "Guami, Gioseffo",
-   "works": 6
+   "works": 7
   },
   {
    "id": "guerrero-francisco",
@@ -4788,7 +4806,7 @@
    "id": "gumpelzhaimer-adam",
    "name": "Adam Gumpelzhaimer",
    "sort": "Gumpelzhaimer, Adam",
-   "works": 6
+   "works": 7
   },
   {
    "id": "gussago-cesario",
@@ -5394,7 +5412,7 @@
    "id": "horneman-emil",
    "name": "Emil Horneman",
    "sort": "Horneman, Emil",
-   "works": 35
+   "works": 36
   },
   {
    "id": "horzevski-ivan",
@@ -6186,7 +6204,7 @@
    "id": "kr-yer-hans-ernst",
    "name": "Hans Ernst Krøyer",
    "sort": "Krøyer, Hans Ernst",
-   "works": 5
+   "works": 6
   },
   {
    "id": "kuffner-joseph",
@@ -6360,13 +6378,13 @@
    "id": "lassus-orlande-de",
    "name": "Orlande de Lassus",
    "sort": "Lassus, Orlande de",
-   "works": 21
+   "works": 22
   },
   {
    "id": "laub-thomas-linnemann",
    "name": "Thomas Linnemann Laub",
    "sort": "Laub, Thomas Linnemann",
-   "works": 45
+   "works": 48
   },
   {
    "id": "lavallee-calixa",
@@ -7089,6 +7107,12 @@
    "works": 1
   },
   {
+   "id": "marks-c-f",
+   "name": "C. F. Marks",
+   "sort": "Marks, C. F.",
+   "works": 1
+  },
+  {
    "id": "marschner-adolf-eduard",
    "name": "Adolf Eduard Marschner",
    "sort": "Marschner, Adolf Eduard",
@@ -7110,7 +7134,7 @@
    "id": "martini-giovanni-battista",
    "name": "Giovanni Battista Martini",
    "sort": "Martini, Giovanni Battista",
-   "works": 9
+   "works": 10
   },
   {
    "id": "martini-johannes",
@@ -7986,7 +8010,7 @@
    "id": "nordraak-rikard",
    "name": "Rikard Nordraak",
    "sort": "Nordraak, Rikard",
-   "works": 2
+   "works": 3
   },
   {
    "id": "noyon-joseph",
@@ -8136,6 +8160,12 @@
    "id": "orto-marbrianus-de",
    "name": "Marbrianus de Orto",
    "sort": "Orto, Marbrianus de",
+   "works": 1
+  },
+  {
+   "id": "osborne-nat",
+   "name": "Nat Osborne",
+   "sort": "Osborne, Nat",
    "works": 1
   },
   {
@@ -8473,6 +8503,12 @@
    "name": "Rob Peters",
    "sort": "Peters, Rob",
    "works": 16
+  },
+  {
+   "id": "petersen-fri-rikur",
+   "name": "Friðrikur Petersen",
+   "sort": "Petersen, Friðrikur",
+   "works": 1
   },
   {
    "id": "peterson-berger-wilhelm",
@@ -9270,7 +9306,7 @@
    "id": "rondeau-michel",
    "name": "Michel Rondeau",
    "sort": "Rondeau, Michel",
-   "works": 1977
+   "works": 2005
   },
   {
    "id": "roner-andrew",
@@ -9888,7 +9924,7 @@
    "id": "schutz-heinrich",
    "name": "Heinrich Schütz",
    "sort": "Schütz, Heinrich",
-   "works": 12
+   "works": 14
   },
   {
    "id": "schwencke-johann-friedrich",
@@ -10075,12 +10111,6 @@
    "name": "Wenyo de Oliveira Aragão da Silva",
    "sort": "Silva, Wenyo de Oliveira Aragão da",
    "works": 5
-  },
-  {
-   "id": "silvers-louis",
-   "name": "Louis Silvers",
-   "sort": "Silvers, Louis",
-   "works": 1
   },
   {
    "id": "simon-anton",
@@ -10452,7 +10482,7 @@
    "id": "strauss-richard",
    "name": "Richard Strauss",
    "sort": "Strauss, Richard",
-   "works": 4
+   "works": 5
   },
   {
    "id": "stravinsky-igor",
@@ -10530,7 +10560,7 @@
    "id": "sweelinck-jan-pieterszoon",
    "name": "Jan Pieterszoon Sweelinck",
    "sort": "Sweelinck, Jan Pieterszoon",
-   "works": 21
+   "works": 22
   },
   {
    "id": "sweeney-joel-walker",
@@ -10797,6 +10827,12 @@
    "works": 1
   },
   {
+   "id": "troilo-antonio",
+   "name": "Antonio Troilo",
+   "sort": "Troilo, Antonio",
+   "works": 2
+  },
+  {
    "id": "trovato-angelo-maria",
    "name": "Angelo Maria Trovato",
    "sort": "Trovato, Angelo Maria",
@@ -10848,6 +10884,12 @@
    "id": "unger-david",
    "name": "David Unger",
    "sort": "Unger, David",
+   "works": 1
+  },
+  {
+   "id": "usper-francesco",
+   "name": "Francesco Usper",
+   "sort": "Usper, Francesco",
    "works": 1
   },
   {
@@ -11472,7 +11514,7 @@
    "id": "weyse-christoph-ernst-friedrich",
    "name": "Christoph Ernst Friedrich Weyse",
    "sort": "Weyse, Christoph Ernst Friedrich",
-   "works": 37
+   "works": 38
   },
   {
    "id": "whiddon-w-h",
@@ -11830,6 +11872,24 @@
   }
  ],
  "works": [
+  {
+   "id": "Der_pløjed_en_bonde_på_sønderjyllands_grund_(Aagaard,_Thorvald)",
+   "title": "Der pløjed en bonde på sønderjyllands grund",
+   "catalogue": null,
+   "composer": "Thorvald Aagaard",
+   "composerSort": "Aagaard, Thorvald",
+   "composerId": "aagaard-thorvald",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Der_pl%C3%B8jed_en_bonde_p%C3%A5_s%C3%B8nderjyllands_grund_(Aagaard%2C_Thorvald)"
+  },
   {
    "id": "Habsburg_var_et_jarlesæde_(Aagaard,_Thorvald)",
    "title": "Habsburg var et jarlesæde",
@@ -22698,24 +22758,6 @@
    "url": "https://imslp.org/wiki/The_Hornless_Cow_(Anonymous)"
   },
   {
-   "id": "The_Irish_Washerwoman_(Anonymous)",
-   "title": "The Irish Washerwoman",
-   "catalogue": null,
-   "composer": "Anonymous",
-   "composerSort": "Anonymous",
-   "composerId": "anonymous",
-   "scoring": "trumpet",
-   "counts": {
-    "trumpet": 1
-   },
-   "full": "trumpet",
-   "arrangement": true,
-   "estimated": false,
-   "alternates": [],
-   "source": "imslp-category",
-   "url": "https://imslp.org/wiki/The_Irish_Washerwoman_(Anonymous)"
-  },
-  {
    "id": "The_Jolly_Seven_Reel_(Anonymous)",
    "title": "The Jolly Seven Reel",
    "catalogue": null,
@@ -26130,6 +26172,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Alice%2C_Where_Art_Thou%3F_(Ascher%2C_Joseph)"
+  },
+  {
+   "id": "Adoramus_Te_(Asola,_Giammateo)",
+   "title": "Adoramus Te",
+   "catalogue": null,
+   "composer": "Giammateo Asola",
+   "composerSort": "Asola, Giammateo",
+   "composerId": "asola-giammateo",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Adoramus_Te_(Asola%2C_Giammateo)"
   },
   {
    "id": "A_Hornepype_(Aston,_Hugh)",
@@ -33470,10 +33530,16 @@
    "counts": {
     "trumpet": 4
    },
-   "full": "2 horns, 4 trumpets, 2 tubas",
+   "full": "2 horns, 4 trumpets, 2 trombones",
    "arrangement": true,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "four trumpets",
+     "full": "2 horns, 4 trumpets, 2 tubas",
+     "arrangement": true
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Passacaglia_in_C_minor%2C_BWV_582_(Bach%2C_Johann_Sebastian)"
   },
@@ -37492,6 +37558,24 @@
    "url": "https://imslp.org/wiki/Ak%2C_bed_mig_aldrig_mere_om_denne_ene_sang_(Barnard%2C_Charlotte_Alington)"
   },
   {
+   "id": "Den_ti,_te_do_drow_fra_mæ_(Barnekow,_Christian)",
+   "title": "Den ti, te do drow fra mæ",
+   "catalogue": null,
+   "composer": "Christian Barnekow",
+   "composerSort": "Barnekow, Christian",
+   "composerId": "barnekow-christian",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Den_ti%2C_te_do_drow_fra_m%C3%A6_(Barnekow%2C_Christian)"
+  },
+  {
    "id": "Der_er_en_vej,_som_verden_ikke_kender_(Barnekow,_Christian)",
    "title": "Der er en vej, som verden ikke kender",
    "catalogue": null,
@@ -37852,12 +37936,12 @@
    "url": "https://imslp.org/wiki/Vindene_suse%2C_og_voverne_g%C3%A5_(Barnekow%2C_Christian)"
   },
   {
-   "id": "Canoni_a_due_voci,_Op.1_(Baroni,_Filippo)",
-   "title": "Canoni a due voci",
+   "id": "Canoni_a_2_voci,_Op.1_(Baroni_Giamaglia,_Filippo)",
+   "title": "Canoni a 2 voci",
    "catalogue": "Op.1",
-   "composer": "Filippo Baroni",
-   "composerSort": "Baroni, Filippo",
-   "composerId": "baroni-filippo",
+   "composer": "Filippo Baroni Giamaglia",
+   "composerSort": "Baroni Giamaglia, Filippo",
+   "composerId": "baroni-giamaglia-filippo",
    "scoring": "two trumpets",
    "counts": {
     "trumpet": 2
@@ -37867,7 +37951,7 @@
    "estimated": false,
    "alternates": [],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/Canoni_a_due_voci%2C_Op.1_(Baroni%2C_Filippo)"
+   "url": "https://imslp.org/wiki/Canoni_a_2_voci%2C_Op.1_(Baroni_Giamaglia%2C_Filippo)"
   },
   {
    "id": "Minuet_in_A_major_(Barrett,_John)",
@@ -38120,6 +38204,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Romanian_Folk_Dances%2C_Sz.56_(Bart%C3%B3k%2C_B%C3%A9la)"
+  },
+  {
+   "id": "Christus_factus_est_in_F_major_(Basili,_Andrea)",
+   "title": "Christus factus est in F major",
+   "catalogue": null,
+   "composer": "Andrea Basili",
+   "composerSort": "Basili, Andrea",
+   "composerId": "basili-andrea",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Christus_factus_est_in_F_major_(Basili%2C_Andrea)"
   },
   {
    "id": "Crash,_Bang,_Boom,_Smash_(Basler,_Paul)",
@@ -43419,6 +43521,24 @@
    "url": "https://imslp.org/wiki/Adagio_for_4_Trumpets_(Berga%2C_Victor)"
   },
   {
+   "id": "Appassionato_(Bergé,_Irénée)",
+   "title": "Appassionato",
+   "catalogue": null,
+   "composer": "Irénée Bergé",
+   "composerSort": "Bergé, Irénée",
+   "composerId": "berge-irenee",
+   "scoring": "two cornets",
+   "counts": {
+    "cornet": 2
+   },
+   "full": "flute, clarinet, 2 cornets, timpani, piano, violin and cello",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Appassionato_(Berg%C3%A9%2C_Ir%C3%A9n%C3%A9e)"
+  },
+  {
    "id": "Alt_rejer_vintren_sit_hvide_telt_(Berggreen,_Andreas_Peter)",
    "title": "Alt rejer vintren sit hvide telt",
    "catalogue": null,
@@ -43785,6 +43905,24 @@
    "url": "https://imslp.org/wiki/Sc%C3%A8ne_de_ballet%2C_Op.100_(B%C3%A9riot%2C_Charles-Auguste_de)"
   },
   {
+   "id": "Violin_Concerto_No.2,_Op.32_(Bériot,_Charles-Auguste_de)",
+   "title": "Violin Concerto No.2",
+   "catalogue": "Op.32",
+   "composer": "Charles-Auguste de Bériot",
+   "composerSort": "Bériot, Charles-Auguste de",
+   "composerId": "beriot-charles-auguste-de",
+   "scoring": "two cornets",
+   "counts": {
+    "cornet": 2
+   },
+   "full": "flute, clarinet, cornets, piano, violin, cello",
+   "arrangement": true,
+   "estimated": true,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Violin_Concerto_No.2%2C_Op.32_(B%C3%A9riot%2C_Charles-Auguste_de)"
+  },
+  {
    "id": "Trumpet_Concerto_No.1_(Berkahn,_Samuel_James)",
    "title": "Trumpet Concerto No.1",
    "catalogue": null,
@@ -44119,6 +44257,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Mein_Herz_ist_bereit_(Bertouch%2C_Georg_von)"
+  },
+  {
+   "id": "Amour_archer_d'une_tirade_ront_(Bertrand,_Anthoine_de)",
+   "title": "Amour archer d'une tirade ront",
+   "catalogue": null,
+   "composer": "Anthoine de Bertrand",
+   "composerSort": "Bertrand, Anthoine de",
+   "composerId": "bertrand-anthoine-de",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Amour_archer_d'une_tirade_ront_(Bertrand%2C_Anthoine_de)"
   },
   {
    "id": "Beauté_dont_la_douceur_pourroit_vaincre_les_roys_(Bertrand,_Anthoine_de)",
@@ -45690,7 +45846,7 @@
      "arrangement": false
     },
     {
-     "scoring": "cornet",
+     "scoring": "trumpet",
      "full": "trumpet or cornet",
      "arrangement": false
     }
@@ -50280,6 +50436,24 @@
    "url": "https://imslp.org/wiki/Das_newgebohrne_Kindelein%2C_BuxWV_13_(Buxtehude%2C_Dietrich)"
   },
   {
+   "id": "Ein_feste_Burg_ist_unser_Gott,_BuxWV_184_(Buxtehude,_Dietrich)",
+   "title": "Ein feste Burg ist unser Gott, BuxWV 184",
+   "catalogue": null,
+   "composer": "Dietrich Buxtehude",
+   "composerSort": "Buxtehude, Dietrich",
+   "composerId": "buxtehude-dietrich",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Ein_feste_Burg_ist_unser_Gott%2C_BuxWV_184_(Buxtehude%2C_Dietrich)"
+  },
+  {
    "id": "Eins_bitte_ich_vom_Herrn,_BuxWV_24_(Buxtehude,_Dietrich)",
    "title": "Eins bitte ich vom Herrn, BuxWV 24",
    "catalogue": null,
@@ -51203,6 +51377,24 @@
    "url": "https://imslp.org/wiki/Fortune%2C_T_459_(Byrd%2C_William)"
   },
   {
+   "id": "Haec_dies,_T_55_(Byrd,_William)",
+   "title": "Haec dies, T 55",
+   "catalogue": null,
+   "composer": "William Byrd",
+   "composerSort": "Byrd, William",
+   "composerId": "byrd-william",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "full": "2 horns, 3 trumpets and trombone",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Haec_dies%2C_T_55_(Byrd%2C_William)"
+  },
+  {
    "id": "Miserere_a_4,_FVB_177_(Byrd,_William)",
    "title": "Miserere a 4, FVB 177",
    "catalogue": null,
@@ -52018,6 +52210,24 @@
    "url": "https://imslp.org/wiki/Alleluja%2C_Marginalia_No.76_(Caldini%2C_Fulvio)"
   },
   {
+   "id": "Bagatella,_Marginalia_No.339_(Caldini,_Fulvio)",
+   "title": "Bagatella, Marginalia No.339",
+   "catalogue": null,
+   "composer": "Fulvio Caldini",
+   "composerSort": "Caldini, Fulvio",
+   "composerId": "caldini-fulvio",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, trombone",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Bagatella%2C_Marginalia_No.339_(Caldini%2C_Fulvio)"
+  },
+  {
    "id": "Banalità_leggendarie,_Marginalia_No.315_(Caldini,_Fulvio)",
    "title": "Banalità leggendarie, Marginalia No.315",
    "catalogue": null,
@@ -52192,6 +52402,54 @@
    "url": "https://imslp.org/wiki/Lasso_armonico%2C_Marginalia_No.319_(Caldini%2C_Fulvio)"
   },
   {
+   "id": "Meditazione_pastorale,_Marginalia_No.341_(Caldini,_Fulvio)",
+   "title": "Meditazione pastorale, Marginalia No.341",
+   "catalogue": null,
+   "composer": "Fulvio Caldini",
+   "composerSort": "Caldini, Fulvio",
+   "composerId": "caldini-fulvio",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "trumpet, organ",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "trumpet",
+     "full": "trumpet or oboe or alto saxophone or B{{flat",
+     "arrangement": false
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Meditazione_pastorale%2C_Marginalia_No.341_(Caldini%2C_Fulvio)"
+  },
+  {
+   "id": "Pastorale_d'agosto,_Marginalia_No.340_(Caldini,_Fulvio)",
+   "title": "Pastorale d'agosto, Marginalia No.340",
+   "catalogue": null,
+   "composer": "Fulvio Caldini",
+   "composerSort": "Caldini, Fulvio",
+   "composerId": "caldini-fulvio",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "trumpet, organ",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "trumpet",
+     "full": "trumpet or oboe or saxophone or clarinet and organ",
+     "arrangement": false
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Pastorale_d'agosto%2C_Marginalia_No.340_(Caldini%2C_Fulvio)"
+  },
+  {
    "id": "Pastorale_degli_addii,_Marginalia_No.177_(Caldini,_Fulvio)",
    "title": "Pastorale degli addii, Marginalia No.177",
    "catalogue": null,
@@ -52280,6 +52538,30 @@
    ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Pastorale_dell'attesa%2C_Marginalia_No.147_(Caldini%2C_Fulvio)"
+  },
+  {
+   "id": "Pastorale_dolce,_Marginalia_No.335_(Caldini,_Fulvio)",
+   "title": "Pastorale dolce, Marginalia No.335",
+   "catalogue": null,
+   "composer": "Fulvio Caldini",
+   "composerSort": "Caldini, Fulvio",
+   "composerId": "caldini-fulvio",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "trumpet, organ",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "trumpet",
+     "full": "trumpet (or oboe or clarinet or soprano saxophone), organ",
+     "arrangement": false
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Pastorale_dolce%2C_Marginalia_No.335_(Caldini%2C_Fulvio)"
   },
   {
    "id": "Pastorale_Nihonbashi,_Marginalia_No.250_(Caldini,_Fulvio)",
@@ -52644,6 +52926,24 @@
    ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/M%C3%A9thode_de_trompette_(Cam%2C_Ebrems_Abraham)"
+  },
+  {
+   "id": "Zucharo_porti_dentro_(Cambio,_Perissone)",
+   "title": "Zucharo porti dentro",
+   "catalogue": null,
+   "composer": "Perissone Cambio",
+   "composerSort": "Cambio, Perissone",
+   "composerId": "cambio-perissone",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Zucharo_porti_dentro_(Cambio%2C_Perissone)"
   },
   {
    "id": "Celebration,_Chorale_and_Finale_(Cameron,_David)",
@@ -54089,8 +54389,32 @@
    "url": "https://imslp.org/wiki/15_Sonatas_for_Tromba_Marina_(Castro%2C_Lorenzo_de)"
   },
   {
-   "id": "Three_in_Accord_for_Cornet_Trio_and_Brass_Band_(Catelinet,_Philip_Bramwell)",
-   "title": "Three in Accord for Cornet Trio and Brass Band",
+   "id": "Concertino_For_Five_for_Brass_Quintet_and_Concert_Band_(Catelinet,_Philip_Bramwell)",
+   "title": "Concertino For Five for Brass Quintet and Concert Band",
+   "catalogue": null,
+   "composer": "Philip Bramwell Catelinet",
+   "composerSort": "Catelinet, Philip Bramwell",
+   "composerId": "catelinet-philip-bramwell",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "horn, 2 trumpets, trombone, tuba, wind band",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "two trumpets",
+     "full": "2 trumpets, horn, trombone, tuba, wind band",
+     "arrangement": false
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Concertino_For_Five_for_Brass_Quintet_and_Concert_Band_(Catelinet%2C_Philip_Bramwell)"
+  },
+  {
+   "id": "Duo_Caprice_(Catelinet,_Philip_Bramwell)",
+   "title": "Duo Caprice",
    "catalogue": null,
    "composer": "Philip Bramwell Catelinet",
    "composerSort": "Catelinet, Philip Bramwell",
@@ -54099,13 +54423,66 @@
    "counts": {
     "cornet": 1
    },
-   "full": "Cornet Trio, Brass Band",
+   "full": "cornet (or trumpet), euphonium, brass band",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "trumpet",
+     "full": "trumpet, euphonium and orchestra",
+     "arrangement": true
+    }
+   ],
+   "source": "imslp-instrumentation",
+   "url": "https://imslp.org/wiki/Duo_Caprice_(Catelinet%2C_Philip_Bramwell)"
+  },
+  {
+   "id": "Festive_Caprice_(Catelinet,_Philip_Bramwell)",
+   "title": "Festive Caprice",
+   "catalogue": null,
+   "composer": "Philip Bramwell Catelinet",
+   "composerSort": "Catelinet, Philip Bramwell",
+   "composerId": "catelinet-philip-bramwell",
+   "scoring": "cornet",
+   "counts": {
+    "cornet": 1
+   },
+   "full": "cornet, brass band",
    "arrangement": false,
    "estimated": false,
    "alternates": [
     {
      "scoring": "cornet",
-     "full": "cornet trio and piano",
+     "full": "cornet (or trumpet), wind band",
+     "arrangement": false
+    },
+    {
+     "scoring": "cornet",
+     "full": "cornet, piano",
+     "arrangement": true
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Festive_Caprice_(Catelinet%2C_Philip_Bramwell)"
+  },
+  {
+   "id": "Three_in_Accord_for_Cornet_Trio_and_Brass_Band_(Catelinet,_Philip_Bramwell)",
+   "title": "Three in Accord for Cornet Trio and Brass Band",
+   "catalogue": null,
+   "composer": "Philip Bramwell Catelinet",
+   "composerSort": "Catelinet, Philip Bramwell",
+   "composerId": "catelinet-philip-bramwell",
+   "scoring": "three cornets",
+   "counts": {
+    "cornet": 3
+   },
+   "full": "3 cornets, brass band",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "three cornets",
+     "full": "3 cornets and piano",
      "arrangement": true
     }
    ],
@@ -54113,22 +54490,33 @@
    "url": "https://imslp.org/wiki/Three_in_Accord_for_Cornet_Trio_and_Brass_Band_(Catelinet%2C_Philip_Bramwell)"
   },
   {
-   "id": "Arabesque_(Catherine,_Alphonse)",
-   "title": "Arabesque",
+   "id": "Trumpet_Tune_(Catelinet,_Philip_Bramwell)",
+   "title": "Trumpet Tune",
    "catalogue": null,
-   "composer": "Alphonse Catherine",
-   "composerSort": "Catherine, Alphonse",
-   "composerId": "catherine-alphonse",
-   "scoring": "two cornets",
+   "composer": "Philip Bramwell Catelinet",
+   "composerSort": "Catelinet, Philip Bramwell",
+   "composerId": "catelinet-philip-bramwell",
+   "scoring": "cornet",
    "counts": {
-    "cornet": 2
+    "cornet": 1
    },
-   "full": "clarinet, cornets, piano, violin 1, cello",
-   "arrangement": true,
-   "estimated": true,
-   "alternates": [],
+   "full": "cornet, brass band",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "cornet",
+     "full": "cornet (or trumpet), brass band",
+     "arrangement": false
+    },
+    {
+     "scoring": "cornet",
+     "full": "cornet (or trumpet) and piano",
+     "arrangement": true
+    }
+   ],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/Arabesque_(Catherine%2C_Alphonse)"
+   "url": "https://imslp.org/wiki/Trumpet_Tune_(Catelinet%2C_Philip_Bramwell)"
   },
   {
    "id": "Alleluia_modale_(Cattaneo,_Pietro)",
@@ -55613,6 +56001,11 @@
     {
      "scoring": "cornet",
      "full": "flute, cornet, double bass, piano",
+     "arrangement": false
+    },
+    {
+     "scoring": "cornet",
+     "full": "piano (with violin or flute, cornet, double bass ad lib.)",
      "arrangement": false
     }
    ],
@@ -58986,7 +59379,13 @@
    "full": "flute, cornet, violin, double bass, piano",
    "arrangement": false,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "cornet",
+     "full": "piano (with flute, cornet, violin and double bass ad lib.)",
+     "arrangement": false
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Souvenir_d'une_noce_en_Anjou_(Collmann_fils%2C_Auguste)"
   },
@@ -59004,7 +59403,13 @@
    "full": "flute, cornet, violin, double bass, piano",
    "arrangement": false,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "cornet",
+     "full": "piano (with flute, cornet, violin and double bass ad lib.)",
+     "arrangement": false
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Souvenirs_de_la_Bernerie_(Collmann_fils%2C_Auguste)"
   },
@@ -59046,7 +59451,13 @@
    "full": "flute, cornet, violin, double bass, piano",
    "arrangement": false,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "cornet",
+     "full": "piano (with flute, cornet, violin and double bass ad lib.)",
+     "arrangement": false
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/La_Combr%C3%A9enne_(Collmann%2C_Auguste)"
   },
@@ -59064,7 +59475,13 @@
    "full": "flute, cornet, violin, double bass, piano",
    "arrangement": false,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "cornet",
+     "full": "piano (with flute, cornet, violin and double bass ad lib.)",
+     "arrangement": false
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Regrets_et_souvenirs_(Collmann%2C_Auguste)"
   },
@@ -59917,6 +60334,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Allon%2C_gay_bergeres_(Costeley%2C_Guillaume)"
+  },
+  {
+   "id": "Je_t'ayme,_ma_belle,_ta_danse_me_plait_(Costeley,_Guillaume)",
+   "title": "Je t'ayme, ma belle, ta danse me plait",
+   "catalogue": null,
+   "composer": "Guillaume Costeley",
+   "composerSort": "Costeley, Guillaume",
+   "composerId": "costeley-guillaume",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Je_t'ayme%2C_ma_belle%2C_ta_danse_me_plait_(Costeley%2C_Guillaume)"
   },
   {
    "id": "La_Prise_de_Calais_(Costeley,_Guillaume)",
@@ -62194,6 +62629,24 @@
    "url": "https://imslp.org/wiki/Cantate_Domino_canticum_novum_(Cr%C3%BCger%2C_Johann)"
   },
   {
+   "id": "Dronning_over_Danemark_(Crüger,_Johann)",
+   "title": "Dronning over Danemark",
+   "catalogue": null,
+   "composer": "Johann Crüger",
+   "composerSort": "Crüger, Johann",
+   "composerId": "cruger-johann",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Dronning_over_Danemark_(Cr%C3%BCger%2C_Johann)"
+  },
+  {
    "id": "Herr,_ich_habe_mißgehandelt_(Crüger,_Johann)",
    "title": "Herr, ich habe mißgehandelt",
    "catalogue": null,
@@ -64154,7 +64607,7 @@
    "estimated": false,
    "alternates": [
     {
-     "scoring": "trumpet (doubling piccolo trumpet)",
+     "scoring": "trumpet (doubling flugelhorn, doubling piccolo trumpet)",
      "full": "trumpet (also flugelhorn and piccolo trumpet), piano",
      "arrangement": false
     }
@@ -66175,11 +66628,22 @@
    "counts": {
     "trumpet": 2
    },
-   "full": "soprano, alto, tenor, bass, 2 trumpets, tubular bells and organ",
-   "arrangement": true,
+   "full": "first version is for alto, bass, tubular bells, 2 violins, 2 violas, 2 cellos; second version is for alto, bass, tubular bells and organ; third version is for SATB, Tubular Bells, 2 Trumpets in Bb and Organ' fourth version is for SATB, Tubular Bells, 2 Trumpets in Bb, Organ and Strings.",
+   "arrangement": false,
    "estimated": false,
-   "alternates": [],
-   "source": "imslp-category",
+   "alternates": [
+    {
+     "scoring": "two trumpets",
+     "full": "satb, tubular bells, 2 trumpets in bb, organ and strings",
+     "arrangement": true
+    },
+    {
+     "scoring": "two trumpets",
+     "full": "soprano, alto, tenor, bass, 2 trumpets, tubular bells and organ",
+     "arrangement": true
+    }
+   ],
+   "source": "imslp-instrumentation",
    "url": "https://imslp.org/wiki/Evening_Prayer_(Dyson%2C_Peter)"
   },
   {
@@ -67152,7 +67616,7 @@
    "estimated": false,
    "alternates": [
     {
-     "scoring": "cornet",
+     "scoring": "trumpet, cornet",
      "full": "trumpet cornet and brass band",
      "arrangement": true
     }
@@ -74737,6 +75201,54 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Fanfare_for_a_Rising_Star_(Forghieri%2C_Giuliano)"
+  },
+  {
+   "id": "Milonga_Elastica_(Forghieri,_Giuliano)",
+   "title": "Milonga Elastica",
+   "catalogue": null,
+   "composer": "Giuliano Forghieri",
+   "composerSort": "Forghieri, Giuliano",
+   "composerId": "forghieri-giuliano",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "horn, 2 trumpets, trombone, tuba",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "two trumpets",
+     "full": "2 trumpets, horn, trombone, tuba",
+     "arrangement": false
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Milonga_Elastica_(Forghieri%2C_Giuliano)"
+  },
+  {
+   "id": "Pentacolo_(Forghieri,_Giuliano)",
+   "title": "Pentacolo",
+   "catalogue": null,
+   "composer": "Giuliano Forghieri",
+   "composerSort": "Forghieri, Giuliano",
+   "composerId": "forghieri-giuliano",
+   "scoring": "five trumpets",
+   "counts": {
+    "trumpet": 5
+   },
+   "full": "5 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [
+    {
+     "scoring": "trumpet",
+     "full": "Solo Trumpet (or Piccolo Trumpet) and 4 Trumpets",
+     "arrangement": false
+    }
+   ],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Pentacolo_(Forghieri%2C_Giuliano)"
   },
   {
    "id": "Skeleton_Dance_(Forghieri,_Giuliano)",
@@ -83855,6 +84367,24 @@
    "url": "https://imslp.org/wiki/Canzon_'La_Guamina'_(Guami%2C_Gioseffo)"
   },
   {
+   "id": "Canzon_'La_Guamina'_à_2_(Guami,_Gioseffo)",
+   "title": "Canzon 'La Guamina' à 2",
+   "catalogue": null,
+   "composer": "Gioseffo Guami",
+   "composerSort": "Guami, Gioseffo",
+   "composerId": "guami-gioseffo",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Canzon_'La_Guamina'_%C3%A0_2_(Guami%2C_Gioseffo)"
+  },
+  {
    "id": "Canzon_decimanona_(Guami,_Gioseffo)",
    "title": "Canzon decimanona",
    "catalogue": null,
@@ -84405,6 +84935,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Agnus_Dei_(Gumpelzhaimer%2C_Adam)"
+  },
+  {
+   "id": "Ave_Maria_(Gumpelzhaimer,_Adam)",
+   "title": "Ave Maria",
+   "catalogue": null,
+   "composer": "Adam Gumpelzhaimer",
+   "composerSort": "Gumpelzhaimer, Adam",
+   "composerId": "gumpelzhaimer-adam",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Ave_Maria_(Gumpelzhaimer%2C_Adam)"
   },
   {
    "id": "Cantate_Domino_(Gumpelzhaimer,_Adam)",
@@ -95820,6 +96368,24 @@
    "url": "https://imslp.org/wiki/Dejligt_l%C3%A5_det_danske_v%C3%A6nge_(Horneman%2C_Emil)"
   },
   {
+   "id": "Den_gang_jeg_drog_af_sted_(Horneman,_Emil)",
+   "title": "Den gang jeg drog af sted",
+   "catalogue": null,
+   "composer": "Emil Horneman",
+   "composerSort": "Horneman, Emil",
+   "composerId": "horneman-emil",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Den_gang_jeg_drog_af_sted_(Horneman%2C_Emil)"
+  },
+  {
    "id": "Den_tappre_Landsoldat_(Horneman,_Emil)",
    "title": "Den tappre Landsoldat",
    "catalogue": null,
@@ -97886,8 +98452,8 @@
    "url": "https://imslp.org/wiki/Den_lille_Ole_med_Paraplyen_(Jacobsen%2C_Ole)"
   },
   {
-   "id": "Pièces_de_clavecin,_Livre_1_(Jacquet_de_La_Guerre,_Elisabeth)",
-   "title": "Pièces de clavecin, Livre 1",
+   "id": "Harpsichord_Suite_in_G_minor,_EJG.02_(Jacquet_de_La_Guerre,_Elisabeth)",
+   "title": "Harpsichord Suite in G minor, EJG.02",
    "catalogue": null,
    "composer": "Elisabeth Jacquet de La Guerre",
    "composerSort": "Jacquet de La Guerre, Elisabeth",
@@ -97901,7 +98467,7 @@
    "estimated": false,
    "alternates": [],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/Pi%C3%A8ces_de_clavecin%2C_Livre_1_(Jacquet_de_La_Guerre%2C_Elisabeth)"
+   "url": "https://imslp.org/wiki/Harpsichord_Suite_in_G_minor%2C_EJG.02_(Jacquet_de_La_Guerre%2C_Elisabeth)"
   },
   {
    "id": "Pièces_de_clavecin,_Livre_2_(Jacquet_de_La_Guerre,_Elisabeth)",
@@ -99263,7 +99829,7 @@
    "estimated": false,
    "alternates": [
     {
-     "scoring": "flugelhorn",
+     "scoring": "cornet",
      "full": "Cornet or Flugelhorn and Orchestra",
      "arrangement": false
     },
@@ -100589,7 +101155,7 @@
    "counts": {
     "trumpet": 1
    },
-   "full": "piccolo flute, horn, trumpet and euphonium",
+   "full": "piccolo, horn, trumpet and euphonium",
    "arrangement": true,
    "estimated": false,
    "alternates": [],
@@ -102258,6 +102824,24 @@
    "url": "https://imslp.org/wiki/De_f%C3%B8rste_Prygl%2C_vi_i_Skolen_fik_(Kr%C3%B8yer%2C_Hans_Ernst)"
   },
   {
+   "id": "Der_er_et_yndigt_land_(Krøyer,_Hans_Ernst)",
+   "title": "Der er et yndigt land",
+   "catalogue": null,
+   "composer": "Hans Ernst Krøyer",
+   "composerSort": "Krøyer, Hans Ernst",
+   "composerId": "kr-yer-hans-ernst",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Der_er_et_yndigt_land_(Kr%C3%B8yer%2C_Hans_Ernst)"
+  },
+  {
    "id": "I_denne_Vinter_har_vi_ha't_(Krøyer,_Hans_Ernst)",
    "title": "I denne Vinter har vi ha't",
    "catalogue": null,
@@ -103873,6 +104457,24 @@
    "url": "https://imslp.org/wiki/Resonet_in_laudibus%2C_LV_363_(Lassus%2C_Orlande_de)"
   },
   {
+   "id": "Vide_homo,_LV_1025_(Lassus,_Orlande_de)",
+   "title": "Vide homo, LV 1025",
+   "catalogue": null,
+   "composer": "Orlande de Lassus",
+   "composerSort": "Lassus, Orlande de",
+   "composerId": "lassus-orlande-de",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 horns, 2 trumpets and 3 trombones",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Vide_homo%2C_LV_1025_(Lassus%2C_Orlande_de)"
+  },
+  {
    "id": "Alle_mine_kilder_skal_være_hos_dig!_(Laub,_Thomas_Linnemann)",
    "title": "Alle mine kilder skal være hos dig!",
    "catalogue": null,
@@ -104017,6 +104619,24 @@
    "url": "https://imslp.org/wiki/Der_er_en_vej%2C_som_verden_ikke_kender_(Laub%2C_Thomas_Linnemann)"
   },
   {
+   "id": "Der_er_et_yndigt_land_(Laub,_Thomas_Linnemann)",
+   "title": "Der er et yndigt land",
+   "catalogue": null,
+   "composer": "Thomas Linnemann Laub",
+   "composerSort": "Laub, Thomas Linnemann",
+   "composerId": "laub-thomas-linnemann",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Der_er_et_yndigt_land_(Laub%2C_Thomas_Linnemann)"
+  },
+  {
    "id": "Der_går_dans_på_Ribergade_(Laub,_Thomas_Linnemann)",
    "title": "Der går dans på Ribergade",
    "catalogue": null,
@@ -104051,6 +104671,42 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Det_er_hvidt_herude_(Laub%2C_Thomas_Linnemann)"
+  },
+  {
+   "id": "Det_være_skal_vor_største_fryd_(Laub,_Thomas_Linnemann)",
+   "title": "Det være skal vor største fryd",
+   "catalogue": null,
+   "composer": "Thomas Linnemann Laub",
+   "composerSort": "Laub, Thomas Linnemann",
+   "composerId": "laub-thomas-linnemann",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Det_v%C3%A6re_skal_vor_st%C3%B8rste_fryd_(Laub%2C_Thomas_Linnemann)"
+  },
+  {
+   "id": "Dog_så_længe_Sællands_kyst_(Laub,_Thomas_Linnemann)",
+   "title": "Dog så længe Sællands kyst",
+   "catalogue": null,
+   "composer": "Thomas Linnemann Laub",
+   "composerSort": "Laub, Thomas Linnemann",
+   "composerId": "laub-thomas-linnemann",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Dog_s%C3%A5_l%C3%A6nge_S%C3%A6llands_kyst_(Laub%2C_Thomas_Linnemann)"
   },
   {
    "id": "En_sædemand_gik_ud_at_så_(Laub,_Thomas_Linnemann)",
@@ -110216,6 +110872,24 @@
    "url": "https://imslp.org/wiki/Nouvelle_m%C3%A9thode_compl%C3%A8te_de_cornet_%C3%A0_pistons%2C_Op.6_(Mariscotti%2C_Luigi)"
   },
   {
+   "id": "Algiers_(Marks,_C._F.)",
+   "title": "Algiers",
+   "catalogue": null,
+   "composer": "C. F. Marks",
+   "composerSort": "Marks, C. F.",
+   "composerId": "marks-c-f",
+   "scoring": "two cornets",
+   "counts": {
+    "cornet": 2
+   },
+   "full": "flute, oboe, clarinet, bassoon, horns, cornets, sax, trombone, drums, piano, violins, viola, cello, bass",
+   "arrangement": true,
+   "estimated": true,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Algiers_(Marks%2C_C._F.)"
+  },
+  {
    "id": "Naar_ensom_jeg_i_Skoven_gaar_omkring_(Marschner,_Adolf_Eduard)",
    "title": "Naar ensom jeg i Skoven gaar omkring",
    "catalogue": null,
@@ -110333,6 +111007,24 @@
    ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Canons_for_2%2C_3_and_4_Voices_(Martini%2C_Giovanni_Battista)"
+  },
+  {
+   "id": "Christus_factus_est_(Martini,_Giovanni_Battista)",
+   "title": "Christus factus est",
+   "catalogue": null,
+   "composer": "Giovanni Battista Martini",
+   "composerSort": "Martini, Giovanni Battista",
+   "composerId": "martini-giovanni-battista",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Christus_factus_est_(Martini%2C_Giovanni_Battista)"
   },
   {
    "id": "In_monte_oliveti_(Martini,_Giovanni_Battista)",
@@ -127954,10 +128646,15 @@
    "counts": {
     "trumpet": 2
    },
-   "full": "2 trumpets and piano",
+   "full": "2 trumpets",
    "arrangement": true,
    "estimated": false,
    "alternates": [
+    {
+     "scoring": "two trumpets",
+     "full": "2 trumpets and piano",
+     "arrangement": true
+    },
     {
      "scoring": "trumpet",
      "full": "horn, trumpet, euphonium",
@@ -136745,9 +137442,9 @@
    "url": "https://imslp.org/wiki/Psalm_38_Variations_(Noordt%2C_Anthoni_van)"
   },
   {
-   "id": "4_Sonatas,_Op.1_(Noordt,_Sybrandus_van)",
-   "title": "4 Sonatas",
-   "catalogue": "Op.1",
+   "id": "Flute_Sonata_in_F_major,_Op.1_No.1_(Noordt,_Sybrandus_van)",
+   "title": "Flute Sonata in F major",
+   "catalogue": "Op.1 No.1",
    "composer": "Sybrandus van Noordt",
    "composerSort": "Noordt, Sybrandus van",
    "composerId": "noordt-sybrandus-van",
@@ -136760,7 +137457,7 @@
    "estimated": false,
    "alternates": [],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/4_Sonatas%2C_Op.1_(Noordt%2C_Sybrandus_van)"
+   "url": "https://imslp.org/wiki/Flute_Sonata_in_F_major%2C_Op.1_No.1_(Noordt%2C_Sybrandus_van)"
   },
   {
    "id": "Brede_sejl_over_Nordsjø_går_(Nordraak,_Rikard)",
@@ -136779,6 +137476,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Brede_sejl_over_Nordsj%C3%B8_g%C3%A5r_(Nordraak%2C_Rikard)"
+  },
+  {
+   "id": "Der_ligger_et_land_(Nordraak,_Rikard)",
+   "title": "Der ligger et land",
+   "catalogue": null,
+   "composer": "Rikard Nordraak",
+   "composerSort": "Nordraak, Rikard",
+   "composerId": "nordraak-rikard",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Der_ligger_et_land_(Nordraak%2C_Rikard)"
   },
   {
    "id": "Løft_dig_hoved,_du_raske_gut!_(Nordraak,_Rikard)",
@@ -139567,6 +140282,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Se_je_perdu_mon_amy_(Orto%2C_Marbrianus_de)"
+  },
+  {
+   "id": "The_American_Tango_(Osborne,_Nat)",
+   "title": "The American Tango",
+   "catalogue": null,
+   "composer": "Nat Osborne",
+   "composerSort": "Osborne, Nat",
+   "composerId": "osborne-nat",
+   "scoring": "two cornets",
+   "counts": {
+    "cornet": 2
+   },
+   "full": "piccolo, clarinet, cornets, trombone, drums, piano, violins, viola, cello, bass",
+   "arrangement": true,
+   "estimated": true,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/The_American_Tango_(Osborne%2C_Nat)"
   },
   {
    "id": "Pastorale_voor_trompet_en_piano_(Ostijn,_Willy)",
@@ -144845,9 +145578,9 @@
    "url": "https://imslp.org/wiki/Fugue_For_2_Voices_(Perti%2C_Giacomo_Antonio)"
   },
   {
-   "id": "Sacri_Concerti_de_Mottetti,_Op.1_(Peruchona,_Maria_Xaveria)",
-   "title": "Sacri Concerti de Mottetti",
-   "catalogue": "Op.1",
+   "id": "Regina_caeli_(Peruchona,_Maria_Xaveria)",
+   "title": "Regina caeli",
+   "catalogue": null,
    "composer": "Maria Xaveria Peruchona",
    "composerSort": "Peruchona, Maria Xaveria",
    "composerId": "peruchona-maria-xaveria",
@@ -144860,7 +145593,7 @@
    "estimated": false,
    "alternates": [],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/Sacri_Concerti_de_Mottetti%2C_Op.1_(Peruchona%2C_Maria_Xaveria)"
+   "url": "https://imslp.org/wiki/Regina_caeli_(Peruchona%2C_Maria_Xaveria)"
   },
   {
    "id": "Solos_and_Duos_Volume_2_(Petering,_Mark)",
@@ -145250,6 +145983,24 @@
    ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Wachet_Auf!%2C_Op.168_(Peters%2C_Rob)"
+  },
+  {
+   "id": "Eg_oyggjarveit_sum_hava_fjöll_(Petersen,_Friðrikur)",
+   "title": "Eg oyggjarveit sum hava fjöll",
+   "catalogue": null,
+   "composer": "Friðrikur Petersen",
+   "composerSort": "Petersen, Friðrikur",
+   "composerId": "petersen-fri-rikur",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Eg_oyggjarveit_sum_hava_fj%C3%B6ll_(Petersen%2C_Fri%C3%B0rikur)"
   },
   {
    "id": "3_Songs,_Op.3_(Peterson-Berger,_Wilhelm)",
@@ -153232,8 +153983,8 @@
    "url": "https://imslp.org/wiki/10_Sonatas%2C_Op.1_(Quentin%2C_Bertin)"
   },
   {
-   "id": "Udite_lagrimosi_spirti_d'Averno,_udite_(Quinciani,_Lucia)",
-   "title": "Udite lagrimosi spirti d'Averno, udite",
+   "id": "Udite_lagrimosi_spirti_d'Averno_(Quinciani,_Lucia)",
+   "title": "Udite lagrimosi spirti d'Averno",
    "catalogue": null,
    "composer": "Lucia Quinciani",
    "composerSort": "Quinciani, Lucia",
@@ -153247,7 +153998,7 @@
    "estimated": false,
    "alternates": [],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/Udite_lagrimosi_spirti_d'Averno%2C_udite_(Quinciani%2C_Lucia)"
+   "url": "https://imslp.org/wiki/Udite_lagrimosi_spirti_d'Averno_(Quinciani%2C_Lucia)"
   },
   {
    "id": "Atencion_(Quiroz,_Manuel_José_de)",
@@ -154021,8 +154772,8 @@
    "url": "https://imslp.org/wiki/Hodie_Christus_natus_est_(Reager%2C_John)"
   },
   {
-   "id": "Les_Plaisirs_Champêtres_(Rebel,_Jean-Féry)",
-   "title": "Les Plaisirs Champêtres",
+   "id": "Les_plaisirs_champêtres,_JFR.59_(Rebel,_Jean-Féry)",
+   "title": "Les plaisirs champêtres, JFR.59",
    "catalogue": null,
    "composer": "Jean-Féry Rebel",
    "composerSort": "Rebel, Jean-Féry",
@@ -154036,7 +154787,7 @@
    "estimated": false,
    "alternates": [],
    "source": "imslp-category",
-   "url": "https://imslp.org/wiki/Les_Plaisirs_Champ%C3%AAtres_(Rebel%2C_Jean-F%C3%A9ry)"
+   "url": "https://imslp.org/wiki/Les_plaisirs_champ%C3%AAtres%2C_JFR.59_(Rebel%2C_Jean-F%C3%A9ry)"
   },
   {
    "id": "Den_første_kærlighed,_ak_ja!_(Recke-Madsen,_Caroline)",
@@ -158230,6 +158981,24 @@
    "url": "https://imslp.org/wiki/French_Nativity_Suite_(Rondeau%2C_Michel)"
   },
   {
+   "id": "Fröhliche_Weihnacht_überall_(Rondeau,_Michel)",
+   "title": "Fröhliche Weihnacht überall",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-instrumentation",
+   "url": "https://imslp.org/wiki/Fr%C3%B6hliche_Weihnacht_%C3%BCberall_(Rondeau%2C_Michel)"
+  },
+  {
    "id": "Fugue_for_3_Trumpets_in_B-flat_major_(Rondeau,_Michel)",
    "title": "Fugue for 3 Trumpets in B-flat major",
    "catalogue": null,
@@ -160159,7 +160928,7 @@
    "estimated": false,
    "alternates": [
     {
-     "scoring": "two flugelhorns",
+     "scoring": "two trumpets",
      "full": "2 trumpets or 2 flugelhorns, bass trombone, tuba",
      "arrangement": false
     }
@@ -192330,6 +193099,24 @@
    "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1752_(Rondeau%2C_Michel)"
   },
   {
+   "id": "Trumpet_Canon_and_Fugue_No.1753_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1753",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1753_(Rondeau%2C_Michel)"
+  },
+  {
    "id": "Trumpet_Canon_and_Fugue_No.1754_(Rondeau,_Michel)",
    "title": "Trumpet Canon and Fugue No.1754",
    "catalogue": null,
@@ -192384,6 +193171,78 @@
    "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1756_(Rondeau%2C_Michel)"
   },
   {
+   "id": "Trumpet_Canon_and_Fugue_No.1757_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1757",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1757_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1758_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1758",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1758_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1759_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1759",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1759_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1760_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1760",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1760_(Rondeau%2C_Michel)"
+  },
+  {
    "id": "Trumpet_Canon_and_Fugue_No.1761_(Rondeau,_Michel)",
    "title": "Trumpet Canon and Fugue No.1761",
    "catalogue": null,
@@ -192400,6 +193259,402 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1761_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1762_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1762",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1762_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1763_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1763",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1763_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1764_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1764",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1764_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1765_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1765",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1765_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1766_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1766",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1766_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1767_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1767",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1767_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1768_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1768",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1768_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1769_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1769",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1769_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1770_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1770",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1770_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1771_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1771",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1771_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1772_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1772",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1772_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1773_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1773",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1773_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1774_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1774",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1774_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1775_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1775",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1775_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1776_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1776",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1776_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1777_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1777",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1777_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1783_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1783",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1783_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1784_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1784",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1784_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1790_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1790",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1790_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1791_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1791",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1791_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1797_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1797",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1797_(Rondeau%2C_Michel)"
+  },
+  {
+   "id": "Trumpet_Canon_and_Fugue_No.1798_(Rondeau,_Michel)",
+   "title": "Trumpet Canon and Fugue No.1798",
+   "catalogue": null,
+   "composer": "Michel Rondeau",
+   "composerSort": "Rondeau, Michel",
+   "composerId": "rondeau-michel",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 trumpets",
+   "arrangement": false,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Trumpet_Canon_and_Fugue_No.1798_(Rondeau%2C_Michel)"
   },
   {
    "id": "Trumpet_Canons_and_Fugues_(Rondeau,_Michel)",
@@ -195224,7 +196479,13 @@
    "full": "flute, cornet, violin, double bass, piano",
    "arrangement": false,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "cornet",
+     "full": "piano (with flute, cornet, violin and double bass ad lib.)",
+     "arrangement": false
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Quadrille_sur_'Vent_du_soir'_(Salomon%2C_Hector)"
   },
@@ -195902,10 +197163,16 @@
    "counts": {
     "trumpet": 2
    },
-   "full": "horn, 2 trumpets, trombone, tuba",
+   "full": "2 trumpets",
    "arrangement": true,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "two trumpets",
+     "full": "horn, 2 trumpets, trombone, tuba",
+     "arrangement": true
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Gnossiennes_(Satie%2C_Erik)"
   },
@@ -199404,6 +200671,24 @@
    "url": "https://imslp.org/wiki/Cantate_Domino_canticum_novum%2C_SWV_81_(Sch%C3%BCtz%2C_Heinrich)"
   },
   {
+   "id": "Der_Engel_sprach_zu_den_Hirten,_SWV_395_(Schütz,_Heinrich)",
+   "title": "Der Engel sprach zu den Hirten, SWV 395",
+   "catalogue": null,
+   "composer": "Heinrich Schütz",
+   "composerSort": "Schütz, Heinrich",
+   "composerId": "schutz-heinrich",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "full": "2 horns, 2 trumpets and three trombones",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Der_Engel_sprach_zu_den_Hirten%2C_SWV_395_(Sch%C3%BCtz%2C_Heinrich)"
+  },
+  {
    "id": "Die_Himmel_erzählen_die_Ehre_Gottes,_SWV_386_(Schütz,_Heinrich)",
    "title": "Die Himmel erzählen die Ehre Gottes, SWV 386",
    "catalogue": null,
@@ -199599,6 +200884,24 @@
    ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Kleine_geistliche_Konzerte_II%2C_Op.9_(Sch%C3%BCtz%2C_Heinrich)"
+  },
+  {
+   "id": "Saul,_Saul,_was_verfolgst_du_mich?,_SWV_415_(Schütz,_Heinrich)",
+   "title": "Saul, Saul, was verfolgst du mich?, SWV 415",
+   "catalogue": null,
+   "composer": "Heinrich Schütz",
+   "composerSort": "Schütz, Heinrich",
+   "composerId": "schutz-heinrich",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "full": "2 horns, 4 trumpets, 2 trombones, 4 violins, 2 violas, 2 celli",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Saul%2C_Saul%2C_was_verfolgst_du_mich%3F%2C_SWV_415_(Sch%C3%BCtz%2C_Heinrich)"
   },
   {
    "id": "Singet_dem_Herrn_ein_neues_Lied,_SWV_35_(Schütz,_Heinrich)",
@@ -201289,24 +202592,6 @@
    ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Trumpet_Sonatina%2C_PVM_37_(Silva%2C_Wenyo_de_Oliveira_Arag%C3%A3o_da)"
-  },
-  {
-   "id": "April_Showers_(Silvers,_Louis)",
-   "title": "April Showers",
-   "catalogue": null,
-   "composer": "Louis Silvers",
-   "composerSort": "Silvers, Louis",
-   "composerId": "silvers-louis",
-   "scoring": "two cornets",
-   "counts": {
-    "cornet": 2
-   },
-   "full": "flute, clarinet, cornets, alto sax, trombone, drums, piano, violins, viola, cello, bass",
-   "arrangement": true,
-   "estimated": true,
-   "alternates": [],
-   "source": "imslp-category",
-   "url": "https://imslp.org/wiki/April_Showers_(Silvers%2C_Louis)"
   },
   {
    "id": "22_Petits_morceaux_d'ensemble,_Op.26_(Simon,_Anton)",
@@ -204617,6 +205902,24 @@
    "url": "https://imslp.org/wiki/4_Sinfonische_Zwischenspiele_aus_Intermezzo%2C_TrV_246a_(Strauss%2C_Richard)"
   },
   {
+   "id": "8_Gedichte_aus_'Letzte_Blätter',_Op.10_(Strauss,_Richard)",
+   "title": "8 Gedichte aus 'Letzte Blätter'",
+   "catalogue": "Op.10",
+   "composer": "Richard Strauss",
+   "composerSort": "Strauss, Richard",
+   "composerId": "strauss-richard",
+   "scoring": "two cornets",
+   "counts": {
+    "cornet": 2
+   },
+   "full": "flute, clarinet, cornets, tympani, piano, violins, cello",
+   "arrangement": true,
+   "estimated": true,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/8_Gedichte_aus_'Letzte_Bl%C3%A4tter'%2C_Op.10_(Strauss%2C_Richard)"
+  },
+  {
    "id": "Feierlicher_Einzug,_TrV_224_(Strauss,_Richard)",
    "title": "Feierlicher Einzug, TrV 224",
    "catalogue": null,
@@ -205574,6 +206877,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Variations_on_'Ons_is_gheboren_een_kindekijn'%2C_SwWV_315_(Sweelinck%2C_Jan_Pieterszoon)"
+  },
+  {
+   "id": "Variations_on_'Von_der_Fortuna_werd’_ich_getrieben',_SwWV_320_(Sweelinck,_Jan_Pieterszoon)",
+   "title": "Variations on 'Von der Fortuna werd’ ich getrieben', SwWV 320",
+   "catalogue": null,
+   "composer": "Jan Pieterszoon Sweelinck",
+   "composerSort": "Sweelinck, Jan Pieterszoon",
+   "composerId": "sweelinck-jan-pieterszoon",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Variations_on_'Von_der_Fortuna_werd%E2%80%99_ich_getrieben'%2C_SwWV_320_(Sweelinck%2C_Jan_Pieterszoon)"
   },
   {
    "id": "Voicy_du_gay_Printemps_(Sweelinck,_Jan_Pieterszoon)",
@@ -211984,6 +213305,42 @@
    "url": "https://imslp.org/wiki/M%C3%A9thode_pour_le_cornet_%C3%A0_pistons_(Trien%2C_Adolphe_Philippe)"
   },
   {
+   "id": "Canzon_Nona_(Troilo,_Antonio)",
+   "title": "Canzon Nona",
+   "catalogue": null,
+   "composer": "Antonio Troilo",
+   "composerSort": "Troilo, Antonio",
+   "composerId": "troilo-antonio",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Canzon_Nona_(Troilo%2C_Antonio)"
+  },
+  {
+   "id": "Canzon_Prima_(Troilo,_Antonio)",
+   "title": "Canzon Prima",
+   "catalogue": null,
+   "composer": "Antonio Troilo",
+   "composerSort": "Troilo, Antonio",
+   "composerId": "troilo-antonio",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Canzon_Prima_(Troilo%2C_Antonio)"
+  },
+  {
    "id": "Trumpet_Minuet_(Trovato,_Angelo_Maria)",
    "title": "Trumpet Minuet",
    "catalogue": null,
@@ -212185,7 +213542,7 @@
    "estimated": false,
    "alternates": [
     {
-     "scoring": "piccolo trumpet",
+     "scoring": "trumpet",
      "full": "trumpet in D or piccolo trumpet, string orchestra",
      "arrangement": false
     }
@@ -212258,6 +213615,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Piano_Sonatina_in_C_major%2C_Op.31_(Unger%2C_David)"
+  },
+  {
+   "id": "Aria_francese_quarta_(Usper,_Francesco)",
+   "title": "Aria francese quarta",
+   "catalogue": null,
+   "composer": "Francesco Usper",
+   "composerSort": "Usper, Francesco",
+   "composerId": "usper-francesco",
+   "scoring": "two flugelhorns",
+   "counts": {
+    "flugelhorn": 2
+   },
+   "full": "2 flugelhorns, bass trombone, tuba",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Aria_francese_quarta_(Usper%2C_Francesco)"
   },
   {
    "id": "Paduana_(Utrecht,_Heinrich)",
@@ -215939,7 +217314,13 @@
    "full": "5 saxophones, 4 trumpets, 4 trombones, percussion, electric guitar, double bass, piano",
    "arrangement": false,
    "estimated": false,
-   "alternates": [],
+   "alternates": [
+    {
+     "scoring": "four trumpets",
+     "full": "Jazz Big Band (2 alto sax, 2 tenor sax, bari sax, 4 trumpets, 3 trombones, bass trombone, electric guitar, double bass, piano, drums)",
+     "arrangement": false
+    }
+   ],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Fuck._The._System._(Wallace%2C_Dorian)"
   },
@@ -217353,9 +218734,9 @@
    "composer": "Albert John Weidt",
    "composerSort": "Weidt, Albert John",
    "composerId": "weidt-albert-john",
-   "scoring": "two flugelhorns",
+   "scoring": "two trumpets",
    "counts": {
-    "flugelhorn": 2
+    "trumpet": 2
    },
    "full": "horn, 2 trumpets or 2 flugelhorns, trombone, tuba, triangle and snare drum",
    "arrangement": true,
@@ -217699,6 +219080,24 @@
    "alternates": [],
    "source": "imslp-category",
    "url": "https://imslp.org/wiki/Den_signede_Dag_med_fryd_vi_ser_(Weyse%2C_Christoph_Ernst_Friedrich)"
+  },
+  {
+   "id": "Der_er_et_land,_dets_sted_er_højt_mod_Norden_(Weyse,_Christoph_Ernst_Friedrich)",
+   "title": "Der er et land, dets sted er højt mod Norden",
+   "catalogue": null,
+   "composer": "Christoph Ernst Friedrich Weyse",
+   "composerSort": "Weyse, Christoph Ernst Friedrich",
+   "composerId": "weyse-christoph-ernst-friedrich",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "full": "horn, trumpet, euphonium",
+   "arrangement": true,
+   "estimated": false,
+   "alternates": [],
+   "source": "imslp-category",
+   "url": "https://imslp.org/wiki/Der_er_et_land%2C_dets_sted_er_h%C3%B8jt_mod_Norden_(Weyse%2C_Christoph_Ernst_Friedrich)"
   },
   {
    "id": "Der_er_et_Land,_dets_sted_er_højt_mod_Norden_(Weyse,_Christoph_Ernst_Friedrich)",
@@ -218764,7 +220163,7 @@
      "arrangement": false
     },
     {
-     "scoring": "two cornets",
+     "scoring": "four trumpets",
      "full": "4 trumpets or cornets",
      "arrangement": false
     },
