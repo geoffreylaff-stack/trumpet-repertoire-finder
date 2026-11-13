@@ -18309,7 +18309,7 @@
     "trumpet"
    ],
    "full": "trumpet, soprano, strings, continuo",
-   "note": "A famously exposed obbligato part for the soprano's partner.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -18345,7 +18345,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, timpani, 2 oboes, 2 bassoons, strings, continuo",
-   "note": "\"The trumpet shall sound\" is scored for the first trumpet alone.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -18507,7 +18507,7 @@
     "trumpet"
    ],
    "full": "solo trumpet, 2 flutes, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani, strings",
-   "note": "Written for Anton Weidinger's keyed trumpet. The count is the solo part plus the two in the orchestra.",
+   "note": "Written for the keyed trumpet. The count is the solo part plus the two in the orchestra.",
    "arr": false,
    "est": false
   },
@@ -18669,7 +18669,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 3 trombones, 2 basset horns, 2 bassoons, timpani, strings, organ",
-   "note": "The Tuba mirum opens with a solo tenor trombone, not a trumpet.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -18705,7 +18705,7 @@
     "trumpet"
    ],
    "full": "solo trumpet, strings, continuo",
-   "note": "Written for the corno da caccia; now a staple of the piccolo trumpet repertoire.",
+   "note": "Written for the corno da caccia; usually played today on piccolo trumpet.",
    "arr": false,
    "est": false
   },
@@ -18813,7 +18813,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 3 trombones, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings",
-   "note": "One trumpet plays the offstage fanfare twice from behind the stage.",
+   "note": "One trumpet plays offstage.",
    "arr": false,
    "est": false
   },
@@ -18849,7 +18849,7 @@
     "trumpet"
    ],
    "full": "solo trumpet, 2 flutes, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani, strings",
-   "note": "Also written for Weidinger's keyed trumpet, and usually played today in E-flat.",
+   "note": "Written for the keyed trumpet; usually played today in E-flat.",
    "arr": false,
    "est": false
   },
@@ -18905,7 +18905,7 @@
     "cornet"
    ],
    "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, 2 tubas, timpani, percussion, 2 flutes, 2 oboes, english horn, 2 clarinets, 4 bassoons, 2 harps, strings",
-   "note": "Berlioz writes for trumpets and cornets at once, and gives the cornets their own obbligato in the ball scene.",
+   "note": "Scored for trumpets and cornets at once.",
    "arr": false,
    "est": false
   },
@@ -19161,7 +19161,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 4 offstage trumpets, 4 horns, 3 trombones, ophicleide, timpani, woodwind, strings, chorus",
-   "note": "Eight trumpet players: four in the orchestra and four more answering from offstage in the Tuba mirum. Counted together because the offstage four are additional players, not the orchestral four relocated.",
+   "note": "Eight trumpet players: four in the orchestra and four more offstage in the Tuba mirum. Counted together because the offstage four are additional players, not the orchestral four relocated.",
    "arr": false,
    "est": false
   },
@@ -19181,7 +19181,7 @@
     "cornet"
    ],
    "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, harp, woodwind, strings",
-   "note": "A French score of its period: cornets carry much of what a German symphony would give the trumpets.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -19491,7 +19491,7 @@
     "cornet"
    ],
    "full": "2 trumpets, 2 cornets, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings",
-   "note": "Opens with a cavalry fanfare for the cornets.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -19603,7 +19603,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, woodwind, strings",
-   "note": "The fourth movement opens with a trumpet fanfare in thirds.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -19711,7 +19711,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 6 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings",
-   "note": "Opens with an unaccompanied solo trumpet fanfare.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -19767,7 +19767,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 6 horns, 3 trombones, 2 tubas, timpani, organ, 2 harps, woodwind, strings",
-   "note": "The opening sunrise is announced by the trumpets in unison.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -19893,7 +19893,7 @@
     "trumpet"
    ],
    "full": "12 trumpets, 2 bass trumpets, 2 tenor tubas, 4 horns, 3 trombones, tuba, timpani, percussion, harp, woodwind, strings",
-   "note": "A banda of nine trumpets and two bass trumpets plays the opening and closing fanfares alongside the orchestra's three. The bass trumpets fall outside this index.",
+   "note": "A banda of nine trumpets and two bass trumpets plays alongside the orchestra's three. The bass trumpets fall outside this index.",
    "arr": false,
    "est": false
   },
@@ -19913,7 +19913,7 @@
     "flugelhorn"
    ],
    "full": "3 trumpets, flugelhorn, 3 saxophones, 4 horns, 3 trombones, tuba, timpani, percussion, 2 harps, woodwind, strings",
-   "note": "The flugelhorn has a substantial solo role and is not a trumpet doubling.",
+   "note": "The flugelhorn is a separate player, not a trumpet doubling.",
    "arr": false,
    "est": false
   },
@@ -20043,7 +20043,7 @@
     "cornet"
    ],
    "full": "2 cornets, 2 trumpets, 4 horns, 3 trombones, euphonium, basses, woodwind, percussion",
-   "note": "The cornets carry the melodic line and the trumpets the fanfares — the distinction is written into the scoring.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20081,7 +20081,7 @@
     "trumpet"
    ],
    "full": "trumpet, 4 flutes, strings",
-   "note": "The trumpet poses the question seven times against a static string background.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20099,7 +20099,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 4 horns, 3 trombones, tuba, saxophones, celesta, harp, timpani, percussion, woodwind, strings",
-   "note": "One part is written for the trumpet in D; keys are not distinguished here.",
+   "note": "One part is written for trumpet in D.",
    "arr": false,
    "est": false
   },
@@ -20153,7 +20153,7 @@
     "trumpet"
    ],
    "full": "3 trumpets, 4 horns, 3 trombones, tuba, euphonium, alto saxophone, timpani, percussion, 2 harps, celesta, woodwind, strings",
-   "note": "The opening Promenade is a solo trumpet.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20284,7 +20284,7 @@
     "trumpet"
    ],
    "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings",
-   "note": "The complete ballet. Six trumpet players: three in the pit and three more onstage, where they call the princesses back into the palace. Stravinsky later called the orchestra \"wastefully large\".",
+   "note": "The complete ballet. Six trumpet players: three in the pit and three more onstage.",
    "arr": false,
    "est": false
   },
@@ -20302,7 +20302,7 @@
     "trumpet"
    ],
    "full": "2 piccolos, 2 flutes, 3 oboes, english horn, 3 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, 3 onstage trumpets, 2 onstage tenor Wagner tubas, 2 onstage bass Wagner tubas, timpani, percussion, piano, celesta, 3 harps, strings",
-   "note": "The first suite keeps the ballet's orchestra unchanged — it was printed from the same plates, with only the new movement endings newly engraved. Still six trumpet players, three of them onstage.",
+   "note": "The first suite keeps the ballet's orchestra unchanged. Still six trumpet players, three of them onstage.",
    "arr": false,
    "est": false
   },
@@ -20320,7 +20320,7 @@
     "trumpet"
    ],
    "full": "2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling english horn), 2 clarinets, 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion, harp, piano, strings",
-   "note": "The reduction to a standard concert orchestra, and much the most played of the three suites. Wikipedia describes the change only as a smaller orchestra with the winds in pairs; the two trumpets come from the published scoring rather than from the article.",
+   "note": "The reduction to a standard concert orchestra.",
    "arr": false,
    "est": false
   },
@@ -20414,7 +20414,7 @@
     "cornet"
    ],
    "full": "cornet, 2 trumpets, 4 horns, 3 trombones, tuba, tenor saxophone, timpani, percussion, harp, piano, celesta, woodwind, strings",
-   "note": "The solo cornet carries the Kijé theme from the opening bar.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20450,7 +20450,7 @@
     "trumpet"
    ],
    "full": "solo piano, solo trumpet, strings",
-   "note": "A double concerto in all but name — the trumpet is a full partner to the piano.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20576,7 +20576,7 @@
     "trumpet"
    ],
    "full": "trumpet, piano",
-   "note": "Written as a Paris Conservatoire examination piece.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20706,7 +20706,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, horn, trombone, tuba, optional percussion",
-   "note": "For brass quintet, with optional percussion. The composer also offers a version for two brass quintets, which doubles the section to four trumpets. Hand-entered because the catalogue states the scoring inside an unclosed aside that no reading of the text parses correctly.",
+   "note": "For brass quintet, with optional percussion. The composer also offers a version for two brass quintets, which doubles the section to four trumpets.",
    "arr": false,
    "est": false
   },
@@ -20724,7 +20724,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, piano, celesta, harp, 4 flutes, 3 oboes, 3 clarinets, 3 bassoons, strings, chorus",
-   "note": "A three-movement choral symphony setting poems by John Donne and Emily Dickinson; the chorus calls for a minimum of 90 singers. Hand-entered because IMSLP has no record for this living composer.",
+   "note": "The chorus calls for a minimum of 90 singers.",
    "arr": false,
    "est": false
   },
@@ -20760,7 +20760,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 4 horns, 3 trombones, tuba, timpani, percussion, 2 piccolos, 2 flutes, 2 oboes, english horn, clarinets, 3 bassoons, contrabassoon, strings",
-   "note": "Also exists in a concert band transcription by Odom, catalogued separately by the Wind Repertory Project.",
+   "note": "Also exists in a concert band transcription by Odom.",
    "arr": false,
    "est": false
   },
@@ -20868,7 +20868,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 2 trombones, percussion, cimbalom, bass guitar, piano, harp, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings, chorus",
-   "note": "Subtitled a 'Passion oratorio'; billed as an opera in some stagings.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -20886,7 +20886,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 4 horns, 3 trombones, 2 tubas, timpani, percussion, piano, celesta, quarter-tone piano, 2 harps, piccolo, 3 flutes, 3 oboes, 2 clarinets, bass clarinet, contrabass clarinet, 2 bassoons, contrabassoon, strings, chorus, prerecorded tape",
-   "note": "Written to commemorate the September 11 attacks, for the New York Philharmonic; the live performers play alongside a prerecorded tape of voices and city sounds.",
+   "note": "The live performers play alongside a prerecorded tape.",
    "arr": false,
    "est": false
   },
@@ -20904,7 +20904,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 2 trombones, timpani, percussion, harp, piano, celesta, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
-   "note": "The soloist is an amplified string quartet rather than a single instrument; built from fragments of late Beethoven.",
+   "note": "The soloist is an amplified string quartet rather than a single instrument.",
    "arr": false,
    "est": false
   },
@@ -20922,7 +20922,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 3 trombones, percussion, cimbalom, celesta, 2 harps, 2 flutes, 2 oboes, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
-   "note": "Subtitled 'Dramatic Symphony for Violin and Orchestra'.",
+   "note": "Solo part for violin.",
    "arr": false,
    "est": false
   },
@@ -20958,7 +20958,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 2 trombones, tuba, timpani, percussion, piano, harp, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings",
-   "note": "An 'outtake' from Act III of Nixon in China, written as a standalone orchestral foxtrot.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -21030,7 +21030,7 @@
     "trumpet"
    ],
    "full": "3 trumpets, 3 horns, 2 trombones, timpani, percussion, harp, celesta, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, strings",
-   "note": "Piano concerto; the title refers to the mechanical rhythms of player-piano rolls.",
+   "note": "Piano concerto.",
    "arr": false,
    "est": false
   },
@@ -21066,7 +21066,7 @@
     "trumpet"
    ],
    "full": "4 trumpets, 6 horns, 3 trombones, tuba, timpani, percussion, jazz drum set, piano, celesta, 2 harps, piccolo, 3 flutes, 3 oboes, english horn, clarinets, bass clarinet, alto saxophone, 2 bassoons, contrabassoon, strings",
-   "note": "Written for the Los Angeles Philharmonic's 2009 season opener under Gustavo Dudamel; the premiere featured a prominent trumpet solo.",
+   "note": null,
    "arr": false,
    "est": false
   },
@@ -21120,7 +21120,7 @@
     "trumpet"
    ],
    "full": "2 trumpets, 4 horns, 2 trombones, almglocken, bass drum, snare drum, piano, honky-tonk piano, bass guitar, piccolo, 2 flutes, 2 oboes, english horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, strings",
-   "note": "Piano concerto; the title borrows a line from Brecht and Weill.",
+   "note": "Piano concerto.",
    "arr": false,
    "est": false
   },
@@ -21138,7 +21138,7 @@
     "trumpet"
    ],
    "full": "trumpet, 4 horns, trombone, percussion, 2 flutes, 2 oboes, 2 bassoons, 2 bass clarinets",
-   "note": "For wind ensemble, in three movements (Ice Music, Water Music, Steam Music). No B-flat clarinets — the clarinet choir is bass clarinets only. The Wind Repertory Project notes its own percussion listing as incomplete ('percussion detail desired'). Hand-entered because IMSLP has no record for this living composer, and the composer's five other works for winds have no instrumentation catalogued anywhere yet.",
+   "note": "No B-flat clarinets — the clarinet choir is bass clarinets only. The two percussion parts are not further specified.",
    "arr": false,
    "est": false
   },
