@@ -36,3 +36,8 @@ test('returns empty when nothing is instrumentation', () => {
   assert.equal(stripCommentary('a bassoon and clarinet theme played against plucked strings. The musical material comes from a gavotte for piano'), '');
   assert.equal(stripCommentary('The second, "Borghild\'s Dream", is an intermezzo contrasting a sensitive string melody with an agitated section. The third opens with trumpet fanfares before presenting its main subject'), '');
 });
+
+test('keeps a transcription for an instrument of this family', () => {
+  const s = 'piano. It has been transcribed by the composer and others for violin, viola, cornet, clarinet, and tuba';
+  assert.equal(stripCommentary(s), s);
+});
