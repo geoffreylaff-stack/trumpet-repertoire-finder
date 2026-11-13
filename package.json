@@ -11,7 +11,7 @@
     "harvest:composerjim": "node tools/harvest-composerjim.mjs",
     "harvest:composers": "node tools/harvest-composers.mjs",
     "build": "node tools/build.mjs",
-    "test": "node --test tools/test-instrumentation.mjs",
+    "test": "node --test tools/test-instrumentation.mjs tools/test-commentary.mjs",
     "serve": "node --run build && python3 -m http.server 8765"
   },
   "engines": {

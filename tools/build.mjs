@@ -16,6 +16,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { writeIfChanged } from './stable-json.mjs';
+import { stripCommentary } from '../lib/commentary.mjs';
 import {
   parseInstrumentation, formatScoring, requiredInstruments, firstFamilyMentionIndex,
   normalizeStringSection,
@@ -471,10 +472,14 @@ for (const [id, c] of composers) if (!c.n && !c.nArr) composers.delete(id);
 // `src` and `url` drive the merge and the build-time checks below, but they
 // name the upstream catalogues, so they are dropped from the shipped index
 // rather than left for anyone reading the JSON or the network tab.
-const shipped = works.map(({ src, url, ...rest }) => ({
-  ...rest,
-  full: normalizeStringSection(rest.full),
-}));
+// Harvested text often runs on past the instrument list into commentary
+// (movements, duration, premiere, which section has the melody). Curated
+// entries are written by hand and ship as written.
+const shipped = works.map(({ src, url, ...rest }) => {
+  let full = normalizeStringSection(rest.full);
+  if (full && src !== 'curated') full = stripCommentary(full) || null;
+  return { ...rest, full };
+});
 
 // Dated from when the data was harvested, not when the build ran: a rebuild
 // that changes nothing must produce an identical index, or every CI run would
