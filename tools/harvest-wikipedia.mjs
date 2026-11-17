@@ -40,7 +40,10 @@ const OUT = path.resolve(ROOT, flag('--out', 'data/wikipedia.json'));
 const ONLY = flag('--only', null);
 const PAGES = flag('--pages', null);
 const GAP = Number(flag('--gap', '120'));
-const MAX_ARTICLES = Number(flag('--max-articles', '250'));
+// High enough never to bind: the most prolific composer swept, Mozart, has
+// about 450 articles once genre categories two levels down are included. At
+// 250 the cap was a silent truncation waiting for the deeper crawl.
+const MAX_ARTICLES = Number(flag('--max-articles', '1000'));
 
 /**
  * Composers to sweep, most-wanted first: the run saves after every composer and
@@ -285,9 +288,18 @@ function boundToSentence(flat) {
 }
 
 /** "Symphonies by Jean Sibelius" -> "Symphony" */
-function genreFrom(subcat) {
+function genreFrom(subcat, parent = null) {
   if (!subcat) return 'Orchestral';
-  const n = subcat.replace(/^Category:/, '').replace(/\s+by\s+.*$/i, '').trim();
+  // A category two levels down ("Piano concertos by …") names its genre more
+  // narrowly than the map does; its parent ("Concertos by …") still knows it.
+  const mapped = (cat) => {
+    const n = String(cat ?? '').replace(/^Category:/, '').replace(/\s+by\s+.*$/i, '').trim();
+    if (/concertos$/i.test(n)) return 'Concerto';
+    return GENRES[n] ?? null;
+  };
+  return mapped(subcat) ?? mapped(parent) ?? 'Orchestral';
+}
+const GENRES = (() => {
   const map = {
     Symphonies: 'Symphony', Operas: 'Opera', Ballets: 'Ballet', Concertos: 'Concerto',
     'Symphonic poems': 'Tone poem', 'Chamber music': 'Chamber',
@@ -297,28 +309,59 @@ function genreFrom(subcat) {
     'Film scores': 'Film score', Suites: 'Suite', Marches: 'March',
     'Incidental music': 'Incidental music', Cantatas: 'Choral',
   };
-  return map[n] ?? 'Orchestral';
-}
+  return map;
+})();
 
 // ── Harvest ───────────────────────────────────────────────────────────────────
 const records = [];
 const stats = { articles: 0, withSection: 0, withFamily: 0, skipped: 0 };
 
-/** Article titles for one composer, mapped to the subcategory they came from. */
+/**
+ * Article titles for one composer, mapped to { subcat, parent }: the category
+ * each came from and, two levels down, the one above it.
+ *
+ * Two levels, because prolific composers file their works more deeply:
+ * Mozart's piano concertos sit in "Piano concertos by Wolfgang Amadeus Mozart"
+ * inside "Concertos by …", and his serenades and divertimenti inside "Chamber
+ * music by …". The second level is followed only for genre categories, named
+ * "… by <composer>". A work's own category ("The Magic Flute", "Symphony No. 9
+ * (Beethoven)") holds its recordings, arias and spin-offs, not more works.
+ */
 async function articlesOf(composer) {
   const found = new Map();
   const root = await categoryMembers(`Category:Compositions by ${composer}`);
   if (!root.pages.length && !root.subcats.length) return found;
 
-  for (const t of root.pages) if (!SKIP_ARTICLE.test(t)) found.set(t, null);
+  for (const t of root.pages) if (!SKIP_ARTICLE.test(t)) found.set(t, { subcat: null, parent: null });
+
+  const genreCategory = (cat) => {
+    const name = cat.replace(/^Category:/, '');
+    return name.toLowerCase().endsWith(` by ${composer.toLowerCase()}`) && !SKIP_SUBCAT.test(name);
+  };
+  const visited = new Set([`Category:Compositions by ${composer}`]);
+  const read = async (cat, parent) => {
+    visited.add(cat);
+    try {
+      const inner = await categoryMembers(cat);
+      for (const t of inner.pages) {
+        if (!SKIP_ARTICLE.test(t) && !found.has(t)) found.set(t, { subcat: cat, parent });
+      }
+      return inner.subcats;
+    } catch { return []; } // one bad subcategory shouldn't sink the composer
+  };
 
   for (const sub of root.subcats) {
-    if (SKIP_SUBCAT.test(sub.replace(/^Category:/, ''))) continue;
-    try {
-      const inner = await categoryMembers(sub);
-      for (const t of inner.pages) if (!SKIP_ARTICLE.test(t) && !found.has(t)) found.set(t, sub);
-    } catch { /* one bad subcategory shouldn't sink the composer */ }
-    if (found.size >= MAX_ARTICLES) break;
+    if (SKIP_SUBCAT.test(sub.replace(/^Category:/, '')) || visited.has(sub)) continue;
+    const deeper = await read(sub, null);
+    for (const deep of deeper) {
+      if (found.size >= MAX_ARTICLES) break;
+      if (visited.has(deep) || !genreCategory(deep)) continue;
+      await read(deep, sub);
+    }
+    if (found.size >= MAX_ARTICLES) {
+      process.stderr.write(`  !   ${composer}: stopped at the ${MAX_ARTICLES}-article cap\n`);
+      break;
+    }
   }
   return found;
 }
@@ -398,10 +441,14 @@ if (PAGES) {
     try {
       const entries = await articlesOf(composer);
       if (!entries.size) { process.stderr.write(`  —  ${composer}: no category\n`); continue; }
-      for (const [title, subcat] of entries) await readArticle(title, subcat);
+      const parents = new Map();
+      for (const [title, { subcat, parent }] of entries) {
+        await readArticle(title, subcat);
+        if (parent) parents.set(title, parent);
+      }
       for (let i = before; i < records.length; i++) {
         records[i].composer = composer;
-        records[i].genre = genreFrom(records[i].subcat);
+        records[i].genre = genreFrom(records[i].subcat, parents.get(records[i].page));
       }
       process.stderr.write(`  ${String(records.length - before).padStart(3)}  ${composer}  (${entries.size} articles)\n`);
     } catch (err) {
