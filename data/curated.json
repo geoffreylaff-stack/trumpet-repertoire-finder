@@ -2050,6 +2050,128 @@
    "trumpets": "trumpet",
    "full": "trumpet, 4 horns, trombone, percussion, 2 flutes, 2 oboes, 2 bassoons, 2 bass clarinets",
    "note": "No B-flat clarinets — the clarinet choir is bass clarinets only. The two percussion parts are not further specified."
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Scherzo Crypto",
+   "cat": null,
+   "year": 2014,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, 3 percussion, 2 flutes, piccolo, 2 oboes, 2 clarinets, bass clarinet, 2 bassoons, harp, celesta, strings"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "A Whisper of Leaves",
+   "cat": null,
+   "year": 2014,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, timpani, percussion, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, harp, strings"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Remix in D",
+   "cat": null,
+   "year": 2009,
+   "genre": "Orchestral",
+   "trumpets": "trumpet",
+   "full": "trumpet, 2 horns, timpani, percussion, flute, 2 oboes, 2 clarinets, 2 bassoons, harp, strings"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Fireworks",
+   "cat": null,
+   "year": 2004,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, 4 percussion, 3 flutes, 3 oboes, 3 clarinets, 3 bassoons, harp, piano, strings"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Fireworks (reduced orchestration)",
+   "cat": null,
+   "year": 2015,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, timpani, 2 percussion, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, harp, piano, strings",
+   "note": "The 2015 revision of the 2004 score for a smaller orchestra."
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Dream Window",
+   "cat": null,
+   "year": 2002,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, 4 percussion, 3 flutes, 3 oboes, 3 clarinets, 3 bassoons, harp, celesta, strings"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Let Freedom Ring",
+   "cat": null,
+   "year": 1997,
+   "genre": "Orchestral",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani, 2 percussion, 3 flutes, 3 oboes, 3 clarinets, 3 bassoons, harp, piano, strings, narrator",
+   "note": "With narrator."
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Karawitan",
+   "cat": null,
+   "year": 1995,
+   "genre": "Orchestral",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 2 trombones, tuba, timpani, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Madame Bovary",
+   "cat": null,
+   "year": 2013,
+   "genre": "Concerto",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, 4 horns, 3 trombones, tuba, timpani, 4 percussion, 3 flutes, English horn, 3 clarinets, 3 bassoons, harp, celesta, strings, solo cello",
+   "note": "Solo cello."
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Happy Birthday, Bach!",
+   "cat": null,
+   "year": 2016,
+   "genre": "Chamber",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 2 horns, 2 trombones, tuba"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Angelslayer",
+   "cat": null,
+   "year": 2013,
+   "genre": "Chamber",
+   "trumpets": "16 trumpets",
+   "full": "16 trumpets",
+   "note": "For trumpet ensemble alone."
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Fanfare",
+   "cat": null,
+   "year": 1996,
+   "genre": "Chamber",
+   "trumpets": "3 trumpets",
+   "full": "3 trumpets, 4 horns, 3 trombones, tuba, timpani"
+  },
+  {
+   "c": "miller-alexander-lamont",
+   "title": "Dark Mirror",
+   "cat": null,
+   "year": 2016,
+   "genre": "Chamber",
+   "trumpets": "2 trumpets",
+   "full": "2 trumpets, horn, trombone, tuba",
+   "note": "The composer's listing gives only 'brass quintet'; the standard quintet's scoring is assumed."
   }
  ]
 }
