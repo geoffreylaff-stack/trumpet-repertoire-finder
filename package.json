@@ -5,13 +5,14 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "harvest": "node tools/harvest-imslp.mjs && node tools/harvest-wikipedia.mjs && node tools/harvest-composerjim.mjs && node tools/harvest-composers.mjs",
+    "harvest": "node tools/harvest-imslp.mjs && node tools/harvest-wikipedia.mjs && node tools/harvest-composerjim.mjs && node tools/harvest-composers.mjs && node tools/harvest-years.mjs",
     "harvest:imslp": "node tools/harvest-imslp.mjs",
     "harvest:wikipedia": "node tools/harvest-wikipedia.mjs",
     "harvest:composerjim": "node tools/harvest-composerjim.mjs",
     "harvest:composers": "node tools/harvest-composers.mjs",
+    "harvest:years": "node tools/harvest-years.mjs",
     "build": "node tools/build.mjs",
-    "test": "node --test tools/test-instrumentation.mjs tools/test-commentary.mjs",
+    "test": "node --test tools/test-instrumentation.mjs tools/test-commentary.mjs tools/test-chronology.mjs",
     "serve": "node --run build && python3 -m http.server 8765"
   },
   "engines": {

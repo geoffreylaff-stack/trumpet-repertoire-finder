@@ -51,6 +51,12 @@ jobs:
         continue-on-error: true
         run: npm run harvest:composers
 
+      - name: Refresh work years
+        # One pass over pages both harvesters already read. Optional like the
+        # composer dates: the years already on file stay valid if it fails.
+        continue-on-error: true
+        run: npm run harvest:years
+
       - name: Rebuild index
         run: npm run build
 

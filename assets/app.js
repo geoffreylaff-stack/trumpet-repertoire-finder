@@ -206,13 +206,17 @@ function worksFor(composerId) {
   }
 
   const sectionSize = (w) => FAMILY_KEYS.reduce((sum, k) => sum + (w.counts?.[k] ?? 0), 0);
-  const cmpTitle = (a, b) => a.t.localeCompare(b.t);
+  // Numbers compared as numbers, so Symphony No. 2 comes before No. 15.
+  const cmpTitle = (a, b) => a.t.localeCompare(b.t, undefined, { numeric: true, sensitivity: 'base' });
+  // `sy` is the year, or for an undated work its place estimated from a
+  // numbered series or opus sequence; works with neither come last.
+  const cmpDate = (a, b) => (a.sy ?? 9999) - (b.sy ?? 9999);
 
   switch (state.sort) {
     case 'title': list.sort(cmpTitle); break;
-    case 'year': list.sort((a, b) => (a.y ?? 9999) - (b.y ?? 9999) || cmpTitle(a, b)); break;
+    case 'year': list.sort((a, b) => cmpDate(a, b) || cmpTitle(a, b)); break;
     case 'size': list.sort((a, b) => sectionSize(b) - sectionSize(a) || cmpTitle(a, b)); break;
-    default: list.sort((a, b) => a.g.localeCompare(b.g) || (a.y ?? 9999) - (b.y ?? 9999) || cmpTitle(a, b));
+    default: list.sort((a, b) => a.g.localeCompare(b.g) || cmpDate(a, b) || cmpTitle(a, b));
   }
   return list;
 }
@@ -320,13 +324,17 @@ function catalogueMatches() {
   }
 
   const sectionSize = (w) => FAMILY_KEYS.reduce((s, k) => s + (w.counts?.[k] ?? 0), 0);
-  const cmpTitle = (a, b) => a.t.localeCompare(b.t);
+  // Numbers compared as numbers, so Symphony No. 2 comes before No. 15.
+  const cmpTitle = (a, b) => a.t.localeCompare(b.t, undefined, { numeric: true, sensitivity: 'base' });
+  // `sy` is the year, or for an undated work its place estimated from a
+  // numbered series or opus sequence; works with neither come last.
+  const cmpDate = (a, b) => (a.sy ?? 9999) - (b.sy ?? 9999);
   const cmpComposer = (a, b) =>
     String(composerOf(a.c)?.sort ?? '').localeCompare(String(composerOf(b.c)?.sort ?? ''));
 
   switch (state.sort) {
     case 'title': list.sort((a, b) => cmpTitle(a, b) || cmpComposer(a, b)); break;
-    case 'year': list.sort((a, b) => (a.y ?? 9999) - (b.y ?? 9999) || cmpComposer(a, b)); break;
+    case 'year': list.sort((a, b) => cmpDate(a, b) || cmpComposer(a, b) || cmpTitle(a, b)); break;
     case 'size': list.sort((a, b) => sectionSize(b) - sectionSize(a) || cmpComposer(a, b)); break;
     default: list.sort((a, b) => cmpComposer(a, b) || cmpTitle(a, b));
   }
