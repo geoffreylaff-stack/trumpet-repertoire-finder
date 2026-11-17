@@ -7,7 +7,7 @@
   "withSection": 884,
   "withFamily": 801,
   "skipped": 2494,
-  "works": 802,
+  "works": 953,
   "apiCalls": 3811
  },
  "works": [
@@ -172,6 +172,60 @@
    "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Rachmaninoff)",
    "composer": "Sergei Rachmaninoff",
    "genre": "Symphony"
+  },
+  {
+   "page": "Piano Concerto No. 1 (Rachmaninoff)",
+   "subcat": "Category:Piano concertos by Sergei Rachmaninoff",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 french horns, 2 trumpets, 3 trombones, Timpani, Percussions (Triangle and Cymbals), String section, Solo piano",
+   "full": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 french horns, 2 trumpets, 3 trombones, Timpani, Percussions (Triangle and Cymbals), String section, Solo piano",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Rachmaninoff)",
+   "composer": "Sergei Rachmaninoff",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 2 (Rachmaninoff)",
+   "subcat": "Category:Piano concertos by Sergei Rachmaninoff",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The concerto is scored for piano and orchestra:, Woodwinds:, 2 flutes, 2 oboes, 2 clarinets in B (in the first and third movements) and A (in the second and third movements), 2 bassoons, Brass:, 4 horns in F, 2 trumpets in B, 3 trombones (2 tenor, 1 bass), 1 tuba, Percussion:, timpani, bass drum, cymbals, Strings:, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "The concerto is scored for piano and orchestra:, Woodwinds:, 2 flutes, 2 oboes, 2 clarinets in B (in the first and third movements) and A (in the second and third movements), 2 bassoons, Brass:, 4 horns in F, 2 trumpets in B, 3 trombones (2 tenor, 1 bass), 1 tuba, Percussion:, timpani, bass drum, cymbals, Strings:, 1st violins, 2nd violins, violas, cellos, double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Rachmaninoff)",
+   "composer": "Sergei Rachmaninoff",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 3 (Rachmaninoff)",
+   "subcat": "Category:Piano concertos by Sergei Rachmaninoff",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The concerto is scored for piano and orchestra, Woodwinds, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, Brass, 4 horns in F, 2 trumpets, 3 trombones (2 tenor, 1 bass), 1 tuba, Percussion:, timpani, bass drum, snare drum, cymbals, Strings:, 1st violins, 2nd violins, violas, cellos, double basses",
+   "full": "The concerto is scored for piano and orchestra, Woodwinds, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, Brass, 4 horns in F, 2 trumpets, 3 trombones (2 tenor, 1 bass), 1 tuba, Percussion:, timpani, bass drum, snare drum, cymbals, Strings:, 1st violins, 2nd violins, violas, cellos, double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Rachmaninoff)",
+   "composer": "Sergei Rachmaninoff",
+   "genre": "Concerto"
   },
   {
    "page": "Bluebird Pas de Deux",
@@ -700,6 +754,24 @@
    "url": "https://en.wikipedia.org/wiki/Symphony_in_Three_Movements",
    "composer": "Igor Stravinsky",
    "genre": "Symphony"
+  },
+  {
+   "page": "Zvezdoliki",
+   "subcat": "Category:Cantatas by Igor Stravinsky",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "written for an unusually large orchestra — quadruple woodwind, eight horns, three trumpets, three trombones, tuba, timpani, bass drum, tam-tam (the entire percussion section only plays in one measure), two harps, celesta, and heavily divided strings—plus six-part men's chorus — and because it lasts barely five minutes and encompasses just 54 measures, Claude Debussy, to whom the work is dedicated, praised the work in a 1913 letter to the composer; though describing it as \"extraordinary\", he doubted that it would soon find an audience, given its complexities and its short duration",
+   "full": "written for an unusually large orchestra — quadruple woodwind, eight horns, three trumpets, three trombones, tuba, timpani, bass drum, tam-tam (the entire percussion section only plays in one measure), two harps, celesta, and heavily divided strings—plus six-part men's chorus — and because it lasts barely five minutes and encompasses just 54 measures, Claude Debussy, to whom the work is dedicat…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Zvezdoliki",
+   "composer": "Igor Stravinsky",
+   "genre": "Choral"
   },
   {
    "page": "Festive Overture",
@@ -1757,6 +1829,60 @@
    "genre": "Symphony"
   },
   {
+   "page": "Piano Concerto No. 2 (Prokofiev)",
+   "subcat": "Category:Piano concertos by Sergei Prokofiev",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for piano solo, two flutes, two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, bass drum, snare drum, cymbals, tambourine and strings, It consists of four movements lasting some 29 to 37 minutes",
+   "full": "scored for piano solo, two flutes, two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, bass drum, snare drum, cymbals, tambourine and strings, It consists of four movements lasting some 29 to 37 minutes",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Prokofiev)",
+   "composer": "Sergei Prokofiev",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 3 (Prokofiev)",
+   "subcat": "Category:Piano concertos by Sergei Prokofiev",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The concerto is scored for solo piano and orchestra with the following instrumentation, Woodwind:, 2 flutes (2nd doubling Piccolo), 2 oboes, 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, 3 trombones, Percussion:, timpani, bass drum, cymbals, castanets, tambourine, Strings:, violins, violas, cellos, double basses",
+   "full": "The concerto is scored for solo piano and orchestra with the following instrumentation, Woodwind:, 2 flutes (2nd doubling Piccolo), 2 oboes, 2 clarinets, 2 bassoons, Brass:, 4 horns, 2 trumpets, 3 trombones, Percussion:, timpani, bass drum, cymbals, castanets, tambourine, Strings:, violins, violas, cellos, double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Prokofiev)",
+   "composer": "Sergei Prokofiev",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 5 (Prokofiev)",
+   "subcat": "Category:Piano concertos by Sergei Prokofiev",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 2 trombones, tuba, timpani, bass drum, snare drum and strings, The concerto lasts 20–25 minutes, with five movements:, The concerto exudes a particularly boisterous, even blustering atmosphere",
+   "full": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 2 trombones, tuba, timpani, bass drum, snare drum and strings, The concerto lasts 20–25 minutes, with five movements:, The concerto exudes a particularly boisterous, even blustering atmosphere",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Prokofiev)",
+   "composer": "Sergei Prokofiev",
+   "genre": "Concerto"
+  },
+  {
    "page": "Rückert-Lieder",
    "subcat": null,
    "scoring": "two trumpets",
@@ -2441,6 +2567,186 @@
    "genre": "Suite"
   },
   {
+   "page": "An Alpine Symphony",
+   "subcat": "Category:Symphonies by Richard Strauss",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "An Alpine Symphony is scored for a large orchestra consisting of:, Woodwinds, 4 Western concert flute flutes (3rd and 4th doubling piccolos), 3 oboes (3rd doubling English horn), 1 heckelphone, 1 clarinet in E, 2 clarinets in B, 1 bass clarinet (doubling clarinet in C), 4 bassoons (4th doubling contrabassoon), Brass, 8 French horns (horns 5–8 double Wagner tubas), 4 trumpets, 4 trombones, 2 tubas, 12 offstage horns, 2 offstage trumpets, 2 offstage trombones, Percussion, timpani (2 players), snare drum, bass drum, cymbals, triangle, tam-tam, cowbells, wind machine, thunder machine, glockenspiel, Keyboard, celesta, organ, Strings, 2 harps (2 parts), 18 violins I, 16 violins II, 12 violas, 10 cellos, 8 double basses (5- part string section), Strauss further suggested that the harps and some woodwind instruments should be doubled if possible and indicated that the stated number of string players should be regarded as a minimum, The use of \"Samuel's Aerophon\" is suggested in the instrumentation listing. (Strauss probably misunderstood the name – it was originally called the Aerophor.) This long-extinct device, invented by Dutch flautist Bernard Samuels in 1911 to assist wind players in sustaining long notes without interruption, was a foot-pump with an air-hose stretching to the player's mouth. However, modern wind players make use of the technique of circular breathing, whereby it is possible to inhale through the nose while still sustaining the sound by matching the blowing pressure in the mouth, Another oddity with the scoring is that the part written for the heckelphone goes down to F 2 , while the lowest note the heckelphone can play is A 2 . Attempts to address this issue have led to the invention of the lupophone, === Program ===, alt=|thumb|The Heimgarten (mountain)|Heimgarten in Southern Bavaria, where Strauss drew inspiration for the composition, Although performed as one continuous movement, An Alpine Symphony has a distinct program which describes each phase of the Alpine journey in chronological order. The score includes the following section titles (not numbered in the score):, Nacht (Night), Sonnenaufgang (Sunrise), Der Anstieg (The Ascent), Eintritt in den Wald (Entry into the Forest), Wanderung neben dem Bache (Wandering by the Brook), Am Wasserfall (At the Waterfall), Erscheinung (Apparition), Auf blumigen Wiesen (On Flowering Meadows), Auf der Alm (On the Alpine Pasture), Durch Dickicht und Gestrüpp auf Irrwegen (Through Thickets and Undergrowth on the Wrong Path), Auf dem Gletscher (On the Glacier), Gefahrvolle Augenblicke (Dangerous Moments), Auf dem Gipfel (On the Summit), Vision (Vision), Nebel steigen auf (Mists Rise), Die Sonne verdüstert sich allmählich (The Sun Gradually Becomes Obscured), Elegie (Elegy), Stille vor dem Sturm (Calm Before the Storm), Gewitter und Sturm, Abstieg (Thunderstorm and Tempest, Descent), Sonnenuntergang (Sunset), Ausklang (Quiet Settles / Epilogue), Nacht (Night), In terms of formal analysis, attempts have been made to group these sections together to form a \"gigantic Lisztian symphonic form, with elements of an introduction, opening allegro, scherzo, slow movement, finale, and epilogue.\" In general, however, it is believed that comparisons to any kind of traditional symphonic form are secondary to the strong sense of structure created by the piece's musical pictorialism and detailed narrative, === Themes, form, and analysis ===, ==== Introduction ====, Though labelled as a symphony by the composer, An Alpine Symphony is rather a tone poem as it forgoes the conventions of the traditional multi-movement symphony and consists of twenty-two continuous sections of music, Strauss's An Alpine Symphony opens on a unison B in the strings, horns, and lower woodwinds. From this note, a dark B minor scale slowly descends. Each new note is sustained until, eventually, every degree of the scale is heard simultaneously, creating an \"opaque mass\" of tone representing the deep, mysterious night",
+   "full": "An Alpine Symphony is scored for a large orchestra consisting of:, Woodwinds, 4 Western concert flute flutes (3rd and 4th doubling piccolos), 3 oboes (3rd doubling English horn), 1 heckelphone, 1 clarinet in E, 2 clarinets in B, 1 bass clarinet (doubling clarinet in C), 4 bassoons (4th doubling contrabassoon), Brass, 8 French horns (horns 5–8 double Wagner tubas), 4 trumpets, 4 trombones, 2 tub…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/An_Alpine_Symphony",
+   "composer": "Richard Strauss",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphonia Domestica",
+   "subcat": "Category:Symphonies by Richard Strauss",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for piccolo, 3 flutes, 2 oboes, oboe d'amore, English horn, clarinet in D, 3 clarinets (2 in B , 1 in A), bass clarinet in B , 4 bassoons, contrabassoon, 4 saxophones (soprano in C, alto in F, baritone in F, bass in C) that are ad libitum (optional), 8 horns in F, 4 trumpets in F and C, 3 trombones, tuba, timpani, bass drum, triangle, cymbals, glockenspiel, 2 harps, and strings",
+   "full": "scored for piccolo, 3 flutes, 2 oboes, oboe d'amore, English horn, clarinet in D, 3 clarinets (2 in B , 1 in A), bass clarinet in B , 4 bassoons, contrabassoon, 4 saxophones (soprano in C, alto in F, baritone in F, bass in C) that are ad libitum (optional), 8 horns in F, 4 trumpets in F and C, 3 trombones, tuba, timpani, bass drum, triangle, cymbals, glockenspiel, 2 harps, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphonia_Domestica",
+   "composer": "Richard Strauss",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 1 (Strauss)",
+   "subcat": "Category:Symphonies by Richard Strauss",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Although described as being for \"large orchestra\", the orchestral forces are modest for the time, Two flutes, two oboes, two clarinets, two bassoons, Four french horns, two trumpets, three trombones, Timpani, Strings",
+   "full": "Although described as being for \"large orchestra\", the orchestral forces are modest for the time, Two flutes, two oboes, two clarinets, two bassoons, Four french horns, two trumpets, three trombones, Timpani, Strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Strauss)",
+   "composer": "Richard Strauss",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 2 (Strauss)",
+   "subcat": "Category:Symphonies by Richard Strauss",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "written for a standard orchestra consisting of 2 flutes, 2 oboes, 2 clarinets in B , 2 bassoons, 4 horns in F, 2 trumpets in F and C, 3 trombones, tuba, timpani, and strings, The symphony is in the usual four movements, though the scherzo and slow movement are switched from their usual positions, as in Beethoven's Symphony No. 9:, The first movement is a [[sonata",
+   "full": "written for a standard orchestra consisting of 2 flutes, 2 oboes, 2 clarinets in B , 2 bassoons, 4 horns in F, 2 trumpets in F and C, 3 trombones, tuba, timpani, and strings, The symphony is in the usual four movements, though the scherzo and slow movement are switched from their usual positions, as in Beethoven's Symphony No. 9:, The first movement is a [[sonata",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Strauss)",
+   "composer": "Richard Strauss",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Also sprach Zarathustra",
+   "subcat": "Category:Tone poems by Richard Strauss",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is orchestrated for piccolo, 3 flutes (3rd doubling piccolo), 3 oboes, English horn, clarinet in E , 2 clarinets in B , bass clarinet in B , 3 bassoons, contrabassoon, 6 horns in F and E, 4 trumpets in C and E, 3 trombones, 2 tubas, timpani, bass drum, cymbals, triangle, glockenspiel, bell on low E, organ, and strings: 2 harps, violins I, II (16 each), violas (12), cellos (12), and double basses (8) (with low B string)",
+   "full": "The work is orchestrated for piccolo, 3 flutes (3rd doubling piccolo), 3 oboes, English horn, clarinet in E , 2 clarinets in B , bass clarinet in B , 3 bassoons, contrabassoon, 6 horns in F and E, 4 trumpets in C and E, 3 trombones, 2 tubas, timpani, bass drum, cymbals, triangle, glockenspiel, bell on low E, organ, and strings: 2 harps, violins I, II (16 each), violas (12), cellos (12), and dou…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Also_sprach_Zarathustra",
+   "composer": "Richard Strauss",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Aus Italien",
+   "subcat": "Category:Tone poems by Richard Strauss",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Aus Italien is scored for the following orchestra:, Woodwind: piccolo, 2 flutes, 2 oboes (2nd doubling English horn), 2 clarinets in B , 2 bassoons, contrabassoon, Brass: 4 horns in F, 2 trumpets in C, 3 trombones, Percussion: timpani, snare drum, tambourine, cymbals, triangle, Strings: harp, violins I and II, violas, cellos, double basses",
+   "full": "Aus Italien is scored for the following orchestra:, Woodwind: piccolo, 2 flutes, 2 oboes (2nd doubling English horn), 2 clarinets in B , 2 bassoons, contrabassoon, Brass: 4 horns in F, 2 trumpets in C, 3 trombones, Percussion: timpani, snare drum, tambourine, cymbals, triangle, Strings: harp, violins I and II, violas, cellos, double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Aus_Italien",
+   "composer": "Richard Strauss",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Death and Transfiguration",
+   "subcat": "Category:Tone poems by Richard Strauss",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Woodwinds, 3 flutes, 2 oboes, 1 English horn, 2 clarinets in B, 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass, 4 horns in F, 3 trumpets in F and C, 3 trombones, 1 tuba, Percussion, timpani, tam-tam, Strings, violins I, II, violas, celli, double basses, 2 harps",
+   "full": "Woodwinds, 3 flutes, 2 oboes, 1 English horn, 2 clarinets in B, 1 bass clarinet, 2 bassoons, 1 contrabassoon, Brass, 4 horns in F, 3 trumpets in F and C, 3 trombones, 1 tuba, Percussion, timpani, tam-tam, Strings, violins I, II, violas, celli, double basses, 2 harps",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Death_and_Transfiguration",
+   "composer": "Richard Strauss",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Don Juan (Strauss)",
+   "subcat": "Category:Tone poems by Richard Strauss",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Don Juan is scored for an orchestra with the following instruments:, Woodwinds, 3 flutes (3rd doubling piccolo), 2 oboes, 1 English horn, 2 clarinets in A, 2 bassoons, 1 contrabassoon, Brass, 4 horns in E, 3 trumpets in E, 3 trombones, 1 tuba, Percussion, timpani, triangle, cymbals, glockenspiel, Strings, harp, violins I, II, violas, celli, double basses, An orchestral score and a score for piano four hands was published by J. Aibl in Leipzig in 1890",
+   "full": "Don Juan is scored for an orchestra with the following instruments:, Woodwinds, 3 flutes (3rd doubling piccolo), 2 oboes, 1 English horn, 2 clarinets in A, 2 bassoons, 1 contrabassoon, Brass, 4 horns in E, 3 trumpets in E, 3 trombones, 1 tuba, Percussion, timpani, triangle, cymbals, glockenspiel, Strings, harp, violins I, II, violas, celli, double basses, An orchestral score and a score for pia…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Don_Juan_(Strauss)",
+   "composer": "Richard Strauss",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Ein Heldenleben",
+   "subcat": "Category:Tone poems by Richard Strauss",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "thumb|Strauss conducting (circa 1900), The work is scored for a large orchestra consisting of piccolo, three flutes, three oboes, cor anglais (doubling fourth oboe), E clarinet, two soprano clarinets, bass clarinet, three bassoons, contrabassoon, eight horns in F, E and E , three trumpets in B (briefly used offstage) and two trumpets in E , three trombones, tenor tuba in B , tuba, timpani, bass drum, two snare drums, cymbals, tenor drum, tam-tam, triangle, two harps, and strings, including an extensive solo violin part, In one section, the second violins are called on to play a G or F which is a semitone below the normal range of the instrument, and which can only be accomplished by temporarily retuning their lowest string",
+   "full": "thumb|Strauss conducting (circa 1900), The work is scored for a large orchestra consisting of piccolo, three flutes, three oboes, cor anglais (doubling fourth oboe), E clarinet, two soprano clarinets, bass clarinet, three bassoons, contrabassoon, eight horns in F, E and E , three trumpets in B (briefly used offstage) and two trumpets in E , three trombones, tenor tuba in B , tuba, timpani, bass…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Ein_Heldenleben",
+   "composer": "Richard Strauss",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Macbeth (Strauss)",
+   "subcat": "Category:Tone poems by Richard Strauss",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The piece is scored for 3 flutes (3rd doubling piccolo), 2 oboes, English horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, bass trumpet, 3 trombones, tuba, timpani, bass drum, snare drum, cymbals, tam-tam and strings, 450px|page=857",
+   "full": "The piece is scored for 3 flutes (3rd doubling piccolo), 2 oboes, English horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, bass trumpet, 3 trombones, tuba, timpani, bass drum, snare drum, cymbals, tam-tam and strings, 450px|page=857",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Macbeth_(Strauss)",
+   "composer": "Richard Strauss",
+   "genre": "Orchestral"
+  },
+  {
    "page": "Alborada del gracioso",
    "subcat": null,
    "scoring": "two trumpets",
@@ -2655,6 +2961,24 @@
    "url": "https://en.wikipedia.org/wiki/Valses_nobles_et_sentimentales_(Ravel)",
    "composer": "Maurice Ravel",
    "genre": "Suite"
+  },
+  {
+   "page": "Menuet antique",
+   "subcat": "Category:Solo piano compositions by Maurice Ravel",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra consisting of 2 flutes, piccolo, 2 oboes, English horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, harp, and strings",
+   "full": "scored for an orchestra consisting of 2 flutes, piccolo, 2 oboes, English horn, 2 clarinets, bass clarinet, 2 bassoons, contrabassoon, 4 horns, 3 trumpets, 3 trombones, tuba, timpani, harp, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Menuet_antique",
+   "composer": "Maurice Ravel",
+   "genre": "Piano"
   },
   {
    "page": "Jeux",
@@ -3165,6 +3489,420 @@
    "genre": "Suite"
   },
   {
+   "page": "Cantata for the Coronation of Nicholas II",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Coronation Cantata is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 1 flute (doubling on piccolo), 1 oboe, 2 clarinets, and 1 bassoon, 2 horns, 2 trumpets, and 3 trombones, Bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Coronation Cantata is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 1 flute (doubling on piccolo), 1 oboe, 2 clarinets, and 1 bassoon, 2 horns, 2 trumpets, and 3 trombones, Bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Cantata_for_the_Coronation_of_Nicholas_II",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "Cantata for the University Graduation Ceremonies of 1894",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Promotional Cantata of 1894 is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Soprano, baritone, and mixed choir ( ), 2 flutes, 1 oboe, 2 clarinets, and 1 bassoon, 2 horns, 2 trumpets, 3 trombones, and tuba, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Promotional Cantata of 1894 is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Soprano, baritone, and mixed choir ( ), 2 flutes, 1 oboe, 2 clarinets, and 1 bassoon, 2 horns, 2 trumpets, 3 trombones, and tuba, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Cantata_for_the_University_Graduation_Ceremonies_of_1894",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "The Captive Queen",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Captive Queen is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ) or male choir ( ), 2 flutes (one doubling piccolo), 2 oboes, 1 clarinet (in B ), 1 bass clarinet (in B ), and 1 bassoon, 4 horns (in F), 2 trumpets (in F), and 3 trombones, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Captive Queen is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ) or male choir ( ), 2 flutes (one doubling piccolo), 2 oboes, 1 clarinet (in B ), 1 bass clarinet (in B ), and 1 bassoon, 4 horns (in F), 2 trumpets (in F), and 3 trombones, Timpani, bass drum, cymbals, and triangle, Violins (I and II)…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Captive_Queen",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "Hymn of the Earth",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Hymn of the Earth is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "Hymn of the Earth is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Hymn_of_the_Earth",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "My Own Land",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "My Own Land is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani and glockenspiel, Violins (I and II), violas, cellos, and double basses",
+   "full": "My Own Land is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani and glockenspiel, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/My_Own_Land",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "The Origin of Fire",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The revised version of The Origin of Fire is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Baritone and male choir ( ), 2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 2 trumpets, 3 trombones, and tuba, Timpani, glockenspiel, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses, The original version of the piece is scored identically, with the exception that triangle is omitted",
+   "full": "The revised version of The Origin of Fire is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Baritone and male choir ( ), 2 flutes, 2 oboes, 2 clarinets, and 2 bassoons, 4 horns, 2 trumpets, 3 trombones, and tuba, Timpani, glockenspiel, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double b…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Origin_of_Fire",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "Song of the Earth (Sibelius)",
+   "subcat": "Category:Cantatas by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Song of the Earth is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 2 flutes, 4 clarinets (or 2 oboes and 2 clarinets), and 2 bassoons, 3 horns, 2 trumpets, and 2 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "Song of the Earth is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Mixed choir ( ), 2 flutes, 4 clarinets (or 2 oboes and 2 clarinets), and 2 bassoons, 3 horns, 2 trumpets, and 2 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Song_of_the_Earth_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Choral"
+  },
+  {
+   "page": "Symphony No. 1 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The First Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes (each doubling piccolo), 2 oboes, 2 clarinets (in A for Movements I and IV; in B for Movements II–III), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, double basses, and harp",
+   "full": "The First Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes (each doubling piccolo), 2 oboes, 2 clarinets (in A for Movements I and IV; in B for Movements II–III), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, doubl…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 2 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Second Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in A for Movements I–II and IV; in B for Movement III), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Second Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in A for Movements I–II and IV; in B for Movement III), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 3 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Third Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B for Movements I and III; in A for Movement II), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Third Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B for Movements I and III; in A for Movement II), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 4 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Fourth Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in A for Movements I and III–IV; in B for Movement II), and 2 bassoons, 4 horns (in F for Movements I–II; in E for Movements III–IV), 2 trumpets (in F for Movements I–II; in E for Movements III–IV), and 3 trombones, Timpani and glockenspiel (\"glocken\"), Violins (I and II), violas, cellos, and double basses, Some conductors have substituted tubular bells for the glockenspiel part in Movement IV, given that the score says \"glocken\". However, in a 15 May 1942 letter to his publisher, Breitkopf & Härtel, Sibelius specified his intention: \"There are some errors in [the score of] Symphony 4 (e.g., it should be glockenspiel, instead of bells, which is natural because of the tempo)\"",
+   "full": "The Fourth Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in A for Movements I and III–IV; in B for Movement II), and 2 bassoons, 4 horns (in F for Movements I–II; in E for Movements III–IV), 2 trumpets (in F for Movements I–II; in E for Movements III–IV), and 3 trombones, Timpani and glockenspi…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 5 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Fifth Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses, The original version of the symphony included a part for bass clarinet",
+   "full": "The Fifth Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses, The original version of the symphony included a part for bass clarinet",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 6 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Sixth Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, double basses, and harp",
+   "full": "The Sixth Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, double basses, and harp",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 7 (Sibelius)",
+   "subcat": "Category:Symphonies by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Seventh Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes (each doubling piccolo during the central Adagio), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Seventh Symphony is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes (each doubling piccolo during the central Adagio), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Symphony"
+  },
+  {
+   "page": "The Bard (Sibelius)",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "thumb|upright|A 27 March 1913 advertisement from Hufvudstadsbladet promoting the premiere of Sibelius's The Bard, The Bard is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani, bass drum, and tam-tam, Violins (I and II), violas, cellos, double basses, and harp",
+   "full": "thumb|upright|A 27 March 1913 advertisement from Hufvudstadsbladet promoting the premiere of Sibelius's The Bard, The Bard is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani, bass drum, and tam-tam, …",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Bard_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "The Dryad (Sibelius)",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Dryad is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 1 piccolo, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), 3 trombones, and tuba, Bass drum, snare drum, castanets, and tambourine, Violins (I and II), violas, cellos, and double basses",
+   "full": "The Dryad is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 1 piccolo, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in B ), 3 trombones, and tuba, Bass drum, snare drum, castanets, and tambourine, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Dryad_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Finlandia",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Finlandia is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "Finlandia is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani, bass drum, cymbals, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Finlandia",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Luonnotar (Sibelius)",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "fi Luonnotar is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Soprano, 2 flutes (each doubling on piccolo), 2 oboes, 2 clarinets (in A), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani (2 players), Violins (I and II), violas, cellos, double basses, and 2 harps",
+   "full": "fi Luonnotar is scored for the following instruments and voices, organized by family (vocalists, woodwinds, brass, percussion, and strings):, Soprano, 2 flutes (each doubling on piccolo), 2 oboes, 2 clarinets (in A), 1 bass clarinet (in B ), and 2 bassoons, 4 horns (in F), 2 trumpets (in B ), and 3 trombones, Timpani (2 players), Violins (I and II), violas, cellos, double basses, and 2 harps",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Luonnotar_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Nightride and Sunrise",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Nightride and Sunrise is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 1 piccolo, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), 2 bassoons, and 1 contrabassoon, 4 horns (in F), 2 trumpets (in F), 3 trombones, and tuba, Timpani, bass drum, snare drum, suspended cymbal, tambourine, and triangle, Violins (I and II), violas, cellos, and double basses",
+   "full": "Nightride and Sunrise is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 1 piccolo, 2 flutes, 2 oboes, 2 clarinets (in B ), 1 bass clarinet (in B ), 2 bassoons, and 1 contrabassoon, 4 horns (in F), 2 trumpets (in F), 3 trombones, and tuba, Timpani, bass drum, snare drum, suspended cymbal, tambourine, and triangle, Violins (I and II), viola…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Nightride_and_Sunrise",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "The Oceanides",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The revised version of The Oceanides is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 1 piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets (in B ), 1 bass clarinet (in B ), 2 bassoons, and contrabassoon, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani (2 players), triangle, and glockenspiel (\"stahlstäbe\"), Violins (I & II), violas, cellos, double basses, and 2 harps, The original version of the piece called for one fewer trumpet",
+   "full": "The revised version of The Oceanides is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 1 piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets (in B ), 1 bass clarinet (in B ), 2 bassoons, and contrabassoon, 4 horns (in F), 3 trumpets (in B ), and 3 trombones, Timpani (2 players), triangle, and glockenspiel (\"stahlstäbe\"), Violins (I & II)…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Oceanides",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "En saga",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "thumb|Sibelius as the Composer of En saga (1894), by the Finnish painter Akseli Gallen-Kallela, En saga is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Bass drum, cymbals (suspended and clash), and triangle, Violins (I and II), violas, cellos, and double basses, Uncommonly for a Sibelius score, there is no part for timpani, the place of which the bass drum takes; according to the Sibelius writer Cecil Gray, the latter's \"indeterminate pitch\" contributes to the work's \"dark, sinister tone-quality\"",
+   "full": "thumb|Sibelius as the Composer of En saga (1894), by the Finnish painter Akseli Gallen-Kallela, En saga is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes, 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Bass drum, cymbals (suspended and clash), and triangle, Violins (I and I…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/En_saga",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Spring Song (Sibelius)",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Spring Song is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes (each doubling piccolo), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani and tubular bells (\"glocken\"), Violins (I and II), violas, cellos, and double basses, The piece contains an optimism that is relatively rare among Sibelius' works. It is known for its prominent use of tubular bells at the end of the song",
+   "full": "Spring Song is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 2 flutes (each doubling piccolo), 2 oboes, 2 clarinets (in B ), and 2 bassoons, 4 horns (in F), 3 trumpets (in F), 3 trombones, and tuba, Timpani and tubular bells (\"glocken\"), Violins (I and II), violas, cellos, and double basses, The piece contains an optimism that is relativ…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Spring_Song_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Tapiola (Sibelius)",
+   "subcat": "Category:Tone poems by Jean Sibelius",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Tapiola is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 3 flutes (the third doubling on piccolo), 2 oboes, 1 cor anglais, 2 clarinets (in A), 1 bass clarinet (in B ), 2 bassoons, and 1 contrabassoon, 4 horns (in E ), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "full": "Tapiola is scored for the following instruments, organized by family (woodwinds, brass, percussion, and strings):, 3 flutes (the third doubling on piccolo), 2 oboes, 1 cor anglais, 2 clarinets (in A), 1 bass clarinet (in B ), 2 bassoons, and 1 contrabassoon, 4 horns (in E ), 3 trumpets (in B ), and 3 trombones, Timpani, Violins (I and II), violas, cellos, and double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Tapiola_(Sibelius)",
+   "composer": "Jean Sibelius",
+   "genre": "Orchestral"
+  },
+  {
    "page": "Hungarian Pictures",
    "subcat": "Category:Orchestral compositions by Béla Bartók",
    "scoring": "two trumpets",
@@ -3217,6 +3955,150 @@
    "url": "https://en.wikipedia.org/wiki/The_Miraculous_Mandarin",
    "composer": "Béla Bartók",
    "genre": "Suite"
+  },
+  {
+   "page": "Concerto for Orchestra (Bartók)",
+   "subcat": "Category:Concertos by Béla Bartók",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The piece is scored for the following instrumentation, Woodwinds:, 3 flutes (one doubling piccolo), 3 oboes (one doubling cor anglais), 3 clarinets (one doubling bass clarinet), 3 bassoons (one doubling contrabassoon), Brass:, 4 horns, 3 trumpets, 3 trombones, 1 tuba, Percussion:, timpani, side drum, bass drum, cymbals, triangle, tam-tam, Strings:, 2 harps, violins I, II, violas, cellos, double basses",
+   "full": "The piece is scored for the following instrumentation, Woodwinds:, 3 flutes (one doubling piccolo), 3 oboes (one doubling cor anglais), 3 clarinets (one doubling bass clarinet), 3 bassoons (one doubling contrabassoon), Brass:, 4 horns, 3 trumpets, 3 trombones, 1 tuba, Percussion:, timpani, side drum, bass drum, cymbals, triangle, tam-tam, Strings:, 2 harps, violins I, II, violas, cellos, double…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Concerto_for_Orchestra_(Bart%C3%B3k)",
+   "composer": "Béla Bartók",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Viola Concerto (Bartók)",
+   "subcat": "Category:Concertos by Béla Bartók",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Bartók's manuscript only specifies flute, oboe, 2 clarinets, bassoon, horns, 2 trumpets, timpani, strings, Serly's edition is orchestrated for piccolo, 2 flutes, 2 oboes, 2 clarinets in B , 2 bassoons, 3 horns in F, 3 trumpets in B , 2 trombones, tuba, timpani, percussion and strings, Peter Bartók's edition is orchestrated for piccolo, 2 flutes, 2 oboes (2nd doubling cor anglais), 2 clarinets in B , 2 bassoons (2nd doubling contrabassoon), 4 horns in F, 3 trumpets in B , tenor trombone, bass trombone, tuba, timpani, percussion (2), strings",
+   "full": "Bartók's manuscript only specifies flute, oboe, 2 clarinets, bassoon, horns, 2 trumpets, timpani, strings, Serly's edition is orchestrated for piccolo, 2 flutes, 2 oboes, 2 clarinets in B , 2 bassoons, 3 horns in F, 3 trumpets in B , 2 trombones, tuba, timpani, percussion and strings, Peter Bartók's edition is orchestrated for piccolo, 2 flutes, 2 oboes (2nd doubling cor anglais), 2 clarinets i…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Viola_Concerto_(Bart%C3%B3k)",
+   "composer": "Béla Bartók",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Violin Concerto No. 2 (Bartók)",
+   "subcat": "Category:Concertos by Béla Bartók",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets (2nd doubling bass clarinet), 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, timpani, side drum, bass drum, cymbals, triangle, tamtam (gong), celesta, harp, and strings",
+   "full": "scored for 2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets (2nd doubling bass clarinet), 2 bassoons (2nd doubling contrabassoon), 4 horns, 2 trumpets, 3 trombones, timpani, side drum, bass drum, cymbals, triangle, tamtam (gong), celesta, harp, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._2_(Bart%C3%B3k)",
+   "composer": "Béla Bartók",
+   "genre": "Concerto"
+  },
+  {
+   "page": "The Wooden Prince",
+   "subcat": "Category:Ballets by Béla Bartók",
+   "scoring": "six trumpets",
+   "counts": {
+    "trumpet": 6
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "This work contains the largest orchestration which Bartók ever scored for:, Woodwinds: 4 flutes (third doubling on piccolo 2, fourth on piccolo 1), 4 oboes (third on English horn 2, fourth on English horn 1), 4 clarinets (third doubling on E clarinet, fourth on bass clarinet), 4 bassoons (third and fourth doubling on contrabassoons), Alto saxophone in E , tenor saxophone in B (doubling on baritone saxophone in E ), Brass: 4 horns, 6 trumpets (4 trumpets and 2 cornets, all in B ), 3 trombones, tuba, Percussion (timpanist and 5 players): timpani, bass drum, cymbals, snare drum, field drum, triangle, tam-tam, glockenspiel, xylophone, castanets, 2 harps, celesta for 4 hands, Strings: 16 first and 16 second violins, 12 violas, 10 cellos, 8 double basses",
+   "full": "This work contains the largest orchestration which Bartók ever scored for:, Woodwinds: 4 flutes (third doubling on piccolo 2, fourth on piccolo 1), 4 oboes (third on English horn 2, fourth on English horn 1), 4 clarinets (third doubling on E clarinet, fourth on bass clarinet), 4 bassoons (third and fourth doubling on contrabassoons), Alto saxophone in E , tenor saxophone in B (doubling on barit…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Wooden_Prince",
+   "composer": "Béla Bartók",
+   "genre": "Ballet"
+  },
+  {
+   "page": "Piano Concerto No. 1 (Bartók)",
+   "subcat": "Category:Piano concertos by Béla Bartók",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra consisting of a solo piano, two flutes (one doubling on piccolo), two oboes (one doubling on cor anglais), two clarinets (one doubling on bass clarinet), two bassoons, four horns (in F), two trumpets (in C), three trombones, timpani, two snare drums (one with snares and one without), bass drum, four cymbals, triangle, tamtam, and strings, There are three movements: The concerto comes after an increased interest in Baroque music on the part of Bartók, which is demonstrated by such devices as the increased use of counterpoint",
+   "full": "scored for an orchestra consisting of a solo piano, two flutes (one doubling on piccolo), two oboes (one doubling on cor anglais), two clarinets (one doubling on bass clarinet), two bassoons, four horns (in F), two trumpets (in C), three trombones, timpani, two snare drums (one with snares and one without), bass drum, four cymbals, triangle, tamtam, and strings, There are three movements: The c…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Bart%C3%B3k)",
+   "composer": "Béla Bartók",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 2 (Bartók)",
+   "subcat": "Category:Piano concertos by Béla Bartók",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra consisting of a solo piano, two flutes (one doubling on piccolo), two oboes, two clarinets (in B ), two bassoons (one doubling on contrabassoon), four horns (in F), three trumpets (in C), three trombones, tuba, percussion (timpani, snare drum, bass drum, triangle, and cymbals), and strings, The concerto is composed of three movements:, The overall form of the Second Concerto is symmetrical—the tempo structure is fast-slow-fast-slow-fast—in the Bartókian manner that has come to be identified as arch form",
+   "full": "scored for an orchestra consisting of a solo piano, two flutes (one doubling on piccolo), two oboes, two clarinets (in B ), two bassoons (one doubling on contrabassoon), four horns (in F), three trumpets (in C), three trombones, tuba, percussion (timpani, snare drum, bass drum, triangle, and cymbals), and strings, The concerto is composed of three movements:, The overall form of the Second Conc…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Bart%C3%B3k)",
+   "composer": "Béla Bartók",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 3 (Bartók)",
+   "subcat": "Category:Piano concertos by Béla Bartók",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling cor anglais), 2 clarinets in A and B (2nd doubling bass clarinet), 2 bassoons, 4 horns in F, 2 trumpets in C, 3 trombones, tuba, timpani, percussion, strings, and piano",
+   "full": "scored for 2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling cor anglais), 2 clarinets in A and B (2nd doubling bass clarinet), 2 bassoons, 4 horns in F, 2 trumpets in C, 3 trombones, tuba, timpani, percussion, strings, and piano",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Bart%C3%B3k)",
+   "composer": "Béla Bartók",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Fifteen Hungarian Peasant Songs",
+   "subcat": "Category:Solo piano compositions by Béla Bartók",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is scored for the following orchestra:, Woodwinds, 2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets (2nd doubling bass clarinet), 2 bassoons, Brass, 2 horns, 2 trumpets, 2 trombones, 1 tuba, Percussion, timpani, bass drum, Strings, harp, violins I, violins II, violas, cellos, double basses",
+   "full": "The work is scored for the following orchestra:, Woodwinds, 2 flutes (2nd doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets (2nd doubling bass clarinet), 2 bassoons, Brass, 2 horns, 2 trumpets, 2 trombones, 1 tuba, Percussion, timpani, bass drum, Strings, harp, violins I, violins II, violas, cellos, double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Fifteen_Hungarian_Peasant_Songs",
+   "composer": "Béla Bartók",
+   "genre": "Piano"
   },
   {
    "page": "Matinées musicales",
@@ -3379,6 +4261,60 @@
    "url": "https://en.wikipedia.org/wiki/Sinfonia_da_Requiem",
    "composer": "Benjamin Britten",
    "genre": "Symphony"
+  },
+  {
+   "page": "Cantata academica",
+   "subcat": "Category:Cantatas by Benjamin Britten",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for four vocal soloists (soprano, alto or contralto, tenor, and bass), a four-part choir, two flutes (second doubling piccolo), two oboes, two clarinets in B , two bassoons, four horns, two trumpets in C, three trombones, tuba, strings, timpani, four percussionists, two harps, piano, and strings, The work is in two parts and has thirteen total sections, Pars 1, it Corale, it Alla rovescio, Recitative (tenor), Arioso (bass), Duettino (soprano and alto), Recitative (tenor), Scherzo, Pars 2, {{lang|la|Te",
+   "full": "scored for four vocal soloists (soprano, alto or contralto, tenor, and bass), a four-part choir, two flutes (second doubling piccolo), two oboes, two clarinets in B , two bassoons, four horns, two trumpets in C, three trombones, tuba, strings, timpani, four percussionists, two harps, piano, and strings, The work is in two parts and has thirteen total sections, Pars 1, it Corale, it Alla rovesci…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Cantata_academica",
+   "composer": "Benjamin Britten",
+   "genre": "Choral"
+  },
+  {
+   "page": "Piano Concerto (Britten)",
+   "subcat": "Category:Concertos by Benjamin Britten",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes (both doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, 1 tuba, percussion (timpani, glockenspiel, cymbals, whip, bass drum, snare drum, tambourine, and tenor drum), harp, and strings, The concerto is in four movements:, The first movement is the most typically 'bravura' mo",
+   "full": "scored for 2 flutes (both doubling piccolo), 2 oboes (2nd doubling English horn), 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, 1 tuba, percussion (timpani, glockenspiel, cymbals, whip, bass drum, snare drum, tambourine, and tenor drum), harp, and strings, The concerto is in four movements:, The first movement is the most typically 'bravura' mo",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Britten)",
+   "composer": "Benjamin Britten",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Violin Concerto (Britten)",
+   "subcat": "Category:Concertos by Benjamin Britten",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo violin and an orchestra of 3 flutes (2nd and 3rd doubling piccolo), 2 oboes (2nd doubling cor anglais), 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, percussion (timpani, glockenspiel, cymbals, triangle, bass drum, side drum, and tenor drum), harp, and strings, The concerto is written in three movements:, This form, although in three movements, is highly unlike that of concertos from the Classical",
+   "full": "scored for solo violin and an orchestra of 3 flutes (2nd and 3rd doubling piccolo), 2 oboes (2nd doubling cor anglais), 2 clarinets, 2 bassoons, 4 horns, 3 trumpets, 3 trombones, tuba, percussion (timpani, glockenspiel, cymbals, triangle, bass drum, side drum, and tenor drum), harp, and strings, The concerto is written in three movements:, This form, although in three movements, is highly unlik…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Britten)",
+   "composer": "Benjamin Britten",
+   "genre": "Concerto"
   },
   {
    "page": "Fanfare for the Common Man",
@@ -3577,6 +4513,60 @@
    "url": "https://en.wikipedia.org/wiki/Piano_Variations_(Copland)",
    "composer": "Aaron Copland",
    "genre": "Piano"
+  },
+  {
+   "page": "Symphony No. 3 (Copland)",
+   "subcat": "Category:Symphonies by Aaron Copland",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for a large orchestra, comprising piccolo, 3 flutes (3rd doubling 2nd piccolo), 3 oboes (3rd doubling cor anglais), 2 clarinets in B , clarinet in E , bass clarinet, 2 bassoons, contrabassoon, 4 horns in F, 4 trumpets in B , 3 trombones, tuba, timpani, cymbals, bass drum, tenor drum, snare drum, triangle, tamtam, glockenspiel, xylophone, anvil, claves, ratchet, whip, tubular bells, wood block, piano, celesta, 2 harps, and strings",
+   "full": "The symphony is scored for a large orchestra, comprising piccolo, 3 flutes (3rd doubling 2nd piccolo), 3 oboes (3rd doubling cor anglais), 2 clarinets in B , clarinet in E , bass clarinet, 2 bassoons, contrabassoon, 4 horns in F, 4 trumpets in B , 3 trombones, tuba, timpani, cymbals, bass drum, tenor drum, snare drum, triangle, tamtam, glockenspiel, xylophone, anvil, claves, ratchet, whip, tubu…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Copland)",
+   "composer": "Aaron Copland",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Short Symphony",
+   "subcat": "Category:Symphonies by Aaron Copland",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for:, Woodwinds:, piccolo, 2 flutes (flute 1 doubling flute in G), 2 oboes, heckelphone (doubling cor anglais), 2 clarinets, bass clarinet, 2 bassoons, double bassoon, Brass:, 4 horns, 2 trumpets, piano, Strings:, violins I, II, violas, cellos, double bass, The American composer Alan Stout observes that the instrumentation of the Short Symphony is closely similar to that of Chávez's Sinfonía de Antígona, as both works include a heckelphone while omitting trombones. The scoring of woodwinds, brasses, and strings in pairs also resembles the instrumentation found in Classical symphonies by Haydn and Mozart. Though Copland did not include a percussion section, the piano was effectively used as a percussion instrument",
+   "full": "The symphony is scored for:, Woodwinds:, piccolo, 2 flutes (flute 1 doubling flute in G), 2 oboes, heckelphone (doubling cor anglais), 2 clarinets, bass clarinet, 2 bassoons, double bassoon, Brass:, 4 horns, 2 trumpets, piano, Strings:, violins I, II, violas, cellos, double bass, The American composer Alan Stout observes that the instrumentation of the Short Symphony is closely similar to that …",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Short_Symphony",
+   "composer": "Aaron Copland",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony for Organ and Orchestra (Copland)",
+   "subcat": "Category:Symphonies by Aaron Copland",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Symphony for Organ and Orchestra is scored for piccolo, two flutes, two oboes, English horn, two clarinets in B , bass clarinet in B , two bassoons, contrabassoon, four horns, three trumpets in C, 3 trombones, tuba, timpani, percussion, two harps, celesta, strings, and organ, The First Symphony (the non-organ version) is scored for piccolo, two flutes, two oboes, English horn, two clarinets in B , bass clarinet in B , 2 bassoons, contrabassoon, alto saxophone in E , eight horns, five trumpets, three trombones, tuba, timpani, percussion, piano, two harps, and strings",
+   "full": "The Symphony for Organ and Orchestra is scored for piccolo, two flutes, two oboes, English horn, two clarinets in B , bass clarinet in B , two bassoons, contrabassoon, four horns, three trumpets in C, 3 trombones, tuba, timpani, percussion, two harps, celesta, strings, and organ, The First Symphony (the non-organ version) is scored for piccolo, two flutes, two oboes, English horn, two clarinets…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_for_Organ_and_Orchestra_(Copland)",
+   "composer": "Aaron Copland",
+   "genre": "Symphony"
   },
   {
    "page": "Bluebird Pas de Deux",
@@ -4093,6 +5083,192 @@
    "genre": "Piano"
   },
   {
+   "page": "Violin Concerto (Tchaikovsky)",
+   "subcat": "Category:Concertos by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo violin, two flutes, two oboes, two clarinets in A and B , two bassoons, four horns in F, two trumpets in D, optional trombone , timpani, and strings, The piece is in three movements:, The second and third movements are played attacca, with no break between them",
+   "full": "scored for solo violin, two flutes, two oboes, two clarinets in A and B , two bassoons, four horns in F, two trumpets in D, optional trombone , timpani, and strings, The piece is in three movements:, The second and third movements are played attacca, with no break between them",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Concerto"
+  },
+  {
+   "page": "1812 Overture",
+   "subcat": "Category:Overtures by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The 1812 Overture is scored for an orchestra that consists of the following:, Brass band: \"Open\" instrumentation consisting of \"any extra brass instruments\" available. In some indoor performances, the part may be played on an organ. Military or marching bands also play this part. Note: the brass band or its substitute is meant to play during the finale only, Woodwinds: 1 piccolo, 2 flutes, 2 oboes, 1 cor anglais, 2 clarinets in B and 2 bassoons, Brass: 4 horns in F, 2 cornets in B , 2 trumpets in E , 3 trombones (2 tenor, 1 bass) and 1 tuba, Percussion: timpani, orchestral bass drum, snare drum, cymbals, tambourine, triangle, carillon, Strings: violins I & II, violas, cellos and double basses, Artillery: One battery of cannons or ceremonial field artillery, The carillon is sometimes replaced with tubular bells or recordings of carillons, or even church bells. In the sections that contain cannon shots, actual cannons are sometimes replaced by howitzers, tanks, fireworks, recorded cannons, or played on a piece of staging, usually with a large wooden mallet or sledgehammer as used in Mahler's 6th Symphony. The bass drum, and gong/tam-tam are also regularly used as cannon substitutes or adjuncts in indoor performances, In his 1966 Deutsche Grammophon recording, Herbert von Karajan scored the first 02'43\" (or 36 bars) for voices instead of strings at the start and the subsequent dialogue between strings and woodwind, adding the Russian Orthodox plainchant God Preserve Thy People text to the melody and slightly rearranging the texture to suit voices a capella rather than instruments. Two years later, the American conductor Igor Buketoff, son of a Russian Orthodox priest, went a stage further on his RCA Victrola recording with the New Philharmonia Orchestra. Not only did he deploy voices for the opening chant but he also had a children's chorus sing the folk tune \"By the Gates\" and brought the choir back to bolster the chant and the Russian Imperial national anthem God Save the Tsar!",
+   "full": "The 1812 Overture is scored for an orchestra that consists of the following:, Brass band: \"Open\" instrumentation consisting of \"any extra brass instruments\" available. In some indoor performances, the part may be played on an organ. Military or marching bands also play this part. Note: the brass band or its substitute is meant to play during the finale only, Woodwinds: 1 piccolo, 2 flutes, 2 ob…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/1812_Overture",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Overture"
+  },
+  {
+   "page": "Francesca da Rimini (Tchaikovsky)",
+   "subcat": "Category:Symphonic poems by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The music is scored for 3 flutes (third doubling piccolo), 2 oboes, English horn, 2 clarinets in A, 2 bassoons, 4 horns, 2 cornets in A, 2 trumpets in E, 3 trombones, tuba, timpani, bass drum, cymbals, tam tam, harp, and strings",
+   "full": "The music is scored for 3 flutes (third doubling piccolo), 2 oboes, English horn, 2 clarinets in A, 2 bassoons, 4 horns, 2 cornets in A, 2 trumpets in E, 3 trombones, tuba, timpani, bass drum, cymbals, tam tam, harp, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Francesca_da_Rimini_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Tone poem"
+  },
+  {
+   "page": "The Tempest (Tchaikovsky)",
+   "subcat": "Category:Symphonic poems by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (B♭), 2 Bassoons + 4 Horns (F), 2 Trumpets (F), 3 Trombones, Tuba + Timpani, Cymbals, Bass Drum + Violins I, Violins II, Violas, Cellos, Double Basses, 450px|page=960",
+   "full": "Piccolo, 2 Flutes, 2 Oboes, 2 Clarinets (B♭), 2 Bassoons + 4 Horns (F), 2 Trumpets (F), 3 Trombones, Tuba + Timpani, Cymbals, Bass Drum + Violins I, Violins II, Violas, Cellos, Double Basses, 450px|page=960",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Tempest_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Tone poem"
+  },
+  {
+   "page": "Manfred Symphony",
+   "subcat": "Category:Symphonies by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "cornet": 2,
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The symphony is scored for an orchestra with the following instruments, Woodwinds, 3 flutes (3rd doubling piccolo), 2 oboes, 1 cor anglais, 2 clarinets in A, B, bass clarinet, 3 bassoons (3rd doubling contrabassoon in some performances), Brass, 4 horns, 2 cornets, 2 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, cymbals, tam-tam, triangle, tambourine, bells, Keyboards, harmonium (usually played on organ) featured in the climactic coda of the finale, Strings, violins I & II, violas, cellos, double basses, 2 harps",
+   "full": "The symphony is scored for an orchestra with the following instruments, Woodwinds, 3 flutes (3rd doubling piccolo), 2 oboes, 1 cor anglais, 2 clarinets in A, B, bass clarinet, 3 bassoons (3rd doubling contrabassoon in some performances), Brass, 4 horns, 2 cornets, 2 trumpets, 3 trombones, tuba, Percussion, timpani, bass drum, cymbals, tam-tam, triangle, tambourine, bells, Keyboards, harmonium (…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Manfred_Symphony",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 1 (Tchaikovsky)",
+   "subcat": "Category:Symphonies by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for piccolo, two flutes, two oboes, two clarinets (A, B ), two bassoons, four horns (E , F), two trumpets (C, D), three trombones (fourth movement only), tuba (fourth movement only), timpani, cymbals, bass drum and strings",
+   "full": "The symphony is scored for piccolo, two flutes, two oboes, two clarinets (A, B ), two bassoons, four horns (E , F), two trumpets (C, D), three trombones (fourth movement only), tuba (fourth movement only), timpani, cymbals, bass drum and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 2 (Tchaikovsky)",
+   "subcat": "Category:Symphonies by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for piccolo, two flutes, two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, cymbals, bass drum, tam-tam (last movement only), and strings, The symphony has four movements:",
+   "full": "scored for piccolo, two flutes, two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, cymbals, bass drum, tam-tam (last movement only), and strings, The symphony has four movements:",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 3 (Tchaikovsky)",
+   "subcat": "Category:Symphonies by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The Symphony is scored for an orchestra comprising piccolo, 2 flutes, 2 oboes, 2 clarinets (in A, B ), 2 bassoons, 4 horns (in F), 2 trumpets (in F), 3 trombones, tuba, 3 timpani and strings (violins I, violins II, violas, cellos, and double basses), On the symphony's instrumentation, musicologist Francis Maes writes that here, Tchaikovsky's \"feeling for the magic of sound is revealed for the first time\" and likens the music's \"sensual opulence\" to the more varied and finely shaded timbres of the orchestral suites. Wiley adds about this aspect, \"Is the symphony a discourse or the play of sound? It revels in the moment.\"",
+   "full": "The Symphony is scored for an orchestra comprising piccolo, 2 flutes, 2 oboes, 2 clarinets (in A, B ), 2 bassoons, 4 horns (in F), 2 trumpets (in F), 3 trombones, tuba, 3 timpani and strings (violins I, violins II, violas, cellos, and double basses), On the symphony's instrumentation, musicologist Francis Maes writes that here, Tchaikovsky's \"feeling for the magic of sound is revealed for the f…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 4 (Tchaikovsky)",
+   "subcat": "Category:Symphonies by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, bass drum, cymbals, triangle, and strings, The symphony is in four movements:, {{Listen, t",
+   "full": "scored for piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, bass drum, cymbals, triangle, and strings, The symphony is in four movements:, {{Listen, t",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 5 (Tchaikovsky)",
+   "subcat": "Category:Symphonies by Pyotr Ilyich Tchaikovsky",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 3 flutes (3rd doubling piccolo), 2 oboes, 2 clarinets in A, 2 bassoons, 4 horns in F, 2 trumpets in A, 3 trombones, tuba, timpani (3 drums), and strings, The symphony is in four movements:, {{ordered list|list_style_type=upper-roman, Andante – Allegro con anima (E minor) – Molto più tranquillo (D major – E major), Andante cantabile, con alcuna licenza (B minor – D major), Valse",
+   "full": "scored for 3 flutes (3rd doubling piccolo), 2 oboes, 2 clarinets in A, 2 bassoons, 4 horns in F, 2 trumpets in A, 3 trombones, tuba, timpani (3 drums), and strings, The symphony is in four movements:, {{ordered list|list_style_type=upper-roman, Andante – Allegro con anima (E minor) – Molto più tranquillo (D major – E major), Andante cantabile, con alcuna licenza (B minor – D major), Valse",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Tchaikovsky)",
+   "composer": "Pyotr Ilyich Tchaikovsky",
+   "genre": "Symphony"
+  },
+  {
    "page": "Mass in D major (Dvořák)",
    "subcat": "Category:Choral compositions by Antonín Dvořák",
    "scoring": "two trumpets",
@@ -4289,6 +5465,222 @@
    "url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Dvo%C5%99%C3%A1k)",
    "composer": "Antonín Dvořák",
    "genre": "Orchestral"
+  },
+  {
+   "page": "Violin Concerto (Dvořák)",
+   "subcat": "Category:Concertos by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo violin and an orchestra consisting of two flutes, two oboes, two clarinets (in A), two bassoons, four horns, two trumpets, timpani, and strings, The structure of the concerto is the classical three movements,",
+   "full": "scored for solo violin and an orchestra consisting of two flutes, two oboes, two clarinets (in A), two bassoons, four horns, two trumpets, timpani, and strings, The structure of the concerto is the classical three movements,",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Carnival Overture (Dvořák)",
+   "subcat": "Category:Overtures by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes, piccolo, two oboes, English horn, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, triangle, cymbals, tambourine, harp and strings",
+   "full": "scored for two flutes, piccolo, two oboes, English horn, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, triangle, cymbals, tambourine, harp and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Carnival_Overture_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Overture"
+  },
+  {
+   "page": "Hussite Overture",
+   "subcat": "Category:Overtures by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion (bass drum, cymbals, triangle), harp, and strings",
+   "full": "scored for piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, percussion (bass drum, cymbals, triangle), harp, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Hussite_Overture",
+   "composer": "Antonín Dvořák",
+   "genre": "Overture"
+  },
+  {
+   "page": "Othello (Dvořák)",
+   "subcat": "Category:Overtures by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes (Flute I doubling piccolo), two oboes, English horn, two clarinets in A, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, bass drum, cymbals, harp and strings",
+   "full": "scored for two flutes (Flute I doubling piccolo), two oboes, English horn, two clarinets in A, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, bass drum, cymbals, harp and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Othello_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Overture"
+  },
+  {
+   "page": "The Golden Spinning Wheel (Dvořák)",
+   "subcat": "Category:Symphonic poems by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "It is scored for piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets, 2 bassoons, contrabassoon, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, bass drum, cymbals, triangle, harp, and strings",
+   "full": "It is scored for piccolo, 2 flutes, 2 oboes, cor anglais, 2 clarinets, 2 bassoons, contrabassoon, 4 horns, 2 trumpets, 3 trombones, tuba, timpani, bass drum, cymbals, triangle, harp, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Golden_Spinning_Wheel_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Tone poem"
+  },
+  {
+   "page": "The Noon Witch",
+   "subcat": "Category:Symphonic poems by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for piccolo, two flutes, two oboes, two clarinets in A, bass clarinet in A, two bassoons, four horns (in F and E), two trumpets in C, three trombones, tuba, timpani, crash cymbals, bass drum, triangle, tubular bells (in C & A), and strings, Dvořák's music follows the story closely and the orchestration is often used to illustrate characters and events: the oboe and bass clarinet are used to depict the misbehaving child and the witch respectively, whilst twelve strokes of a bell signal the coming of noon",
+   "full": "scored for piccolo, two flutes, two oboes, two clarinets in A, bass clarinet in A, two bassoons, four horns (in F and E), two trumpets in C, three trombones, tuba, timpani, crash cymbals, bass drum, triangle, tubular bells (in C & A), and strings, Dvořák's music follows the story closely and the orchestration is often used to illustrate characters and events: the oboe and bass clarinet are used…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/The_Noon_Witch",
+   "composer": "Antonín Dvořák",
+   "genre": "Tone poem"
+  },
+  {
+   "page": "The Water Goblin",
+   "subcat": "Category:Symphonic poems by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The piece is scored for piccolo, two flutes, two oboes, English horn, two clarinets, bass clarinet, two bassoons, four horns, two trumpets, three trombones (alto, tenor, and bass), tuba, timpani, bass drum, cymbals, triangle, tamtam, and strings",
+   "full": "The piece is scored for piccolo, two flutes, two oboes, English horn, two clarinets, bass clarinet, two bassoons, four horns, two trumpets, three trombones (alto, tenor, and bass), tuba, timpani, bass drum, cymbals, triangle, tamtam, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Water_Goblin",
+   "composer": "Antonín Dvořák",
+   "genre": "Tone poem"
+  },
+  {
+   "page": "Symphony No. 5 (Dvořák)",
+   "subcat": "Category:Symphonies by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is written for an orchestra of two flutes, two oboes, two clarinets in B and A with one doubling on bass clarinet, two bassoons, four horns, two trumpets, three trombones, timpani, triangle, and strings",
+   "full": "The symphony is written for an orchestra of two flutes, two oboes, two clarinets in B and A with one doubling on bass clarinet, two bassoons, four horns, two trumpets, three trombones, timpani, triangle, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 6 (Dvořák)",
+   "subcat": "Category:Symphonies by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is written in four movements:, The score calls for two flutes (2nd doubling piccolo), two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, one tuba, timpani, and strings, The piccolo is only used in the third movement. The trombones and tuba are only used in the first and fourth movements",
+   "full": "The symphony is written in four movements:, The score calls for two flutes (2nd doubling piccolo), two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, one tuba, timpani, and strings, The piccolo is only used in the third movement. The trombones and tuba are only used in the first and fourth movements",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 7 (Dvořák)",
+   "subcat": "Category:Symphonies by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra of two flutes (2nd doubling piccolo in the 3rd movement), two oboes, two clarinets (in A and B ), two bassoons, four horns (in D and F), two trumpets (in C, D, B♭, and F), three trombones, timpani and strings, As with other works of this period, including the Scherzo capriccioso, the third piano trio, the Hussite Overture, and the Ballade in D minor, the symphony is written in a more dramatic, dark and aggressive style that supersedes the carefree folk style of Dvořák's \"Slavonic period\", A common reorchestration for the finale involves doubling the final violin/woodwind line with French horns, usually the principal. {{cite web |",
+   "full": "scored for an orchestra of two flutes (2nd doubling piccolo in the 3rd movement), two oboes, two clarinets (in A and B ), two bassoons, four horns (in D and F), two trumpets (in C, D, B♭, and F), three trombones, timpani and strings, As with other works of this period, including the Scherzo capriccioso, the third piano trio, the Hussite Overture, and the Ballade in D minor, the symphony is writ…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 8 (Dvořák)",
+   "subcat": "Category:Symphonies by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes (2nd doubling piccolo), two oboes (1st doubling cor anglais), two clarinets (in A and B ), two bassoons, four horns, two trumpets, three trombones, tuba, timpani, and strings, The orchestration of piccolo and cor anglais is unusual in this symphony",
+   "full": "scored for two flutes (2nd doubling piccolo), two oboes (1st doubling cor anglais), two clarinets (in A and B ), two bassoons, four horns, two trumpets, three trombones, tuba, timpani, and strings, The orchestration of piccolo and cor anglais is unusual in this symphony",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 9 (Dvořák)",
+   "subcat": "Category:Symphonies by Antonín Dvořák",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "This symphony is scored for the following orchestra:, 2 flutes (one doubling piccolo), 2 oboes (one doubling English horn), 2 clarinets in B & A, 2 bassoons, 4 horns in E, C and F, 2 trumpets in E, 3 trombones: alto, tenor, bass, Tuba (second movement only), Timpani, Triangle (third movement only), Cymbals (fourth movement only), Strings",
+   "full": "This symphony is scored for the following orchestra:, 2 flutes (one doubling piccolo), 2 oboes (one doubling English horn), 2 clarinets in B & A, 2 bassoons, 4 horns in E, C and F, 2 trumpets in E, 3 trombones: alto, tenor, bass, Tuba (second movement only), Timpani, Triangle (third movement only), Cymbals (fourth movement only), Strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Dvo%C5%99%C3%A1k)",
+   "composer": "Antonín Dvořák",
+   "genre": "Symphony"
   },
   {
    "page": "A German Requiem (Brahms)",
@@ -4525,6 +5917,78 @@
    "genre": "Orchestral"
   },
   {
+   "page": "Symphony No. 1 (Brahms)",
+   "subcat": "Category:Symphonies by Johannes Brahms",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for two flutes, two oboes, two clarinets, two bassoons, contrabassoon, four horns, two trumpets, three trombones (fourth movement only), timpani and the string section, Although Brahms commonly specified \"natural\" (valveless) horn tunings in his compositions (e.g., Horn in E in the second movement of this symphony), performances are typically delivered on modern valved horns",
+   "full": "The symphony is scored for two flutes, two oboes, two clarinets, two bassoons, contrabassoon, four horns, two trumpets, three trombones (fourth movement only), timpani and the string section, Although Brahms commonly specified \"natural\" (valveless) horn tunings in his compositions (e.g., Horn in E in the second movement of this symphony), performances are typically delivered on modern valved horns",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Brahms)",
+   "composer": "Johannes Brahms",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 2 (Brahms)",
+   "subcat": "Category:Symphonies by Johannes Brahms",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for two flutes, two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, and strings",
+   "full": "The symphony is scored for two flutes, two oboes, two clarinets, two bassoons, four horns, two trumpets, three trombones, tuba, timpani, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Brahms)",
+   "composer": "Johannes Brahms",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 3 (Brahms)",
+   "subcat": "Category:Symphonies by Johannes Brahms",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for two flutes, two oboes, two clarinets in B and A, two bassoons, a contrabassoon, four horns, two trumpets in F, three trombones, timpani, and strings, The contrabassoon, horns in F, trumpets and timpani are tacet for the 2nd and 3rd movements. The trombones are tacet for the 3rd movement only, Although Brahms commonly specified \"natural\" (valveless) horn tunings in his compositions (e.g., Horn in F), performances typically employ modern valved French horns",
+   "full": "The symphony is scored for two flutes, two oboes, two clarinets in B and A, two bassoons, a contrabassoon, four horns, two trumpets in F, three trombones, timpani, and strings, The contrabassoon, horns in F, trumpets and timpani are tacet for the 2nd and 3rd movements. The trombones are tacet for the 3rd movement only, Although Brahms commonly specified \"natural\" (valveless) horn tunings in his…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Brahms)",
+   "composer": "Johannes Brahms",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 4 (Brahms)",
+   "subcat": "Category:Symphonies by Johannes Brahms",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for two flutes (one doubling on piccolo in the third movement only), two oboes, two clarinets, two bassoons, contrabassoon (third and fourth movements), four horns, two trumpets, three trombones (fourth movement only), timpani (two in first and second movements, three in third and fourth movements), triangle (third movement only), and strings",
+   "full": "The symphony is scored for two flutes (one doubling on piccolo in the third movement only), two oboes, two clarinets, two bassoons, contrabassoon (third and fourth movements), four horns, two trumpets, three trombones (fourth movement only), timpani (two in first and second movements, three in third and fourth movements), triangle (third movement only), and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Brahms)",
+   "composer": "Johannes Brahms",
+   "genre": "Symphony"
+  },
+  {
    "page": "La Damnation de Faust",
    "subcat": "Category:Choral compositions by Hector Berlioz",
    "scoring": "two trumpets, two cornets",
@@ -4663,6 +6127,64 @@
    "url": "https://en.wikipedia.org/wiki/Symphonie_fantastique",
    "composer": "Hector Berlioz",
    "genre": "Symphony"
+  },
+  {
+   "page": "Messe solennelle (Berlioz)",
+   "subcat": "Category:Religious music by Hector Berlioz",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Scored for soprano, tenor, (prominent) bass, mixed chorus, and large orchestra, including, Piccolo (opt.), 2 flutes, 2 oboes, 2 clarinets (C) 2 bassoons, 4 horns, 4 trumpets, 3 trombones (ATB), serpent, buccin (or ophicleide), timpani, cymbals Tamtam, Harps (opt.), and strings, Its movements are:, Kyrie, Gloria, Gratias, Quoniam, Credo, Incarnatus, Crucifixus, Resurrexit, Motet pour l'Offertoire, Sanctus, O salutaris hostia, Agnus Dei, Domine salvum fac",
+   "full": "Scored for soprano, tenor, (prominent) bass, mixed chorus, and large orchestra, including, Piccolo (opt.), 2 flutes, 2 oboes, 2 clarinets (C) 2 bassoons, 4 horns, 4 trumpets, 3 trombones (ATB), serpent, buccin (or ophicleide), timpani, cymbals Tamtam, Harps (opt.), and strings, Its movements are:, Kyrie, Gloria, Gratias, Quoniam, Credo, Incarnatus, Crucifixus, Resurrexit, Motet pour l'Offertoir…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Messe_solennelle_(Berlioz)",
+   "composer": "Hector Berlioz",
+   "genre": "Choral"
+  },
+  {
+   "page": "Requiem (Berlioz)",
+   "subcat": "Category:Religious music by Hector Berlioz",
+   "scoring": "four trumpets, four cornets",
+   "counts": {
+    "cornet": 4,
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The Requiem is scored for a very large orchestra, including four brass choirs at the corners of the stage, and chorus:, Woodwinds, 4 flutes, 2 oboes, 2 cors anglais, 4 clarinets in B, 8 bassoons, Brass:, 12 horns (4 parts + 2 extra in Mvt 2, in D, E, A, and C), 4 cornets in B, 4 tubas, Percussion:, 16 timpani (6 pairs, 4 single), 2 bass drums, 10 pairs of cymbals, 4 tam-tams, 4 brass choirs:, Orchestra 1 to the North, 4 cornets, 4 trombones, 2 tubas, Orchestra 2 to the East, 4 trumpets (in E), 4 trombones, Orchestra 3 to the West, 4 trumpets (in D), 4 trombones, Orchestra 4 to the South, 4 trumpets (in C), 4 trombones, 4 ophicleides (usually substituted by tubas), Voices:, Chorus:, 80 sopranos and altos (exact ratio not specified), 60 tenors, 70 basses, Tenor solo, Strings:, 25 violin I, 25 violin II, 20 violas, 20 violoncellos, 18 double basses, In relation to the number of singers and strings, Berlioz indicates in the score that, \"The number [of performers] indicated is only relative. If space permits, the chorus may be doubled or tripled, and the orchestra be proportionally increased. But in the event of an exceptionally large chorus, say 700 to 800 voices, the entire chorus should only be used for the \"Dies irae\", the \"Tuba mirum\", and the \"Lacrimosa\", the rest of the movements being restricted to 400 voices.\", The work premiered with over four hundred performers",
+   "full": "The Requiem is scored for a very large orchestra, including four brass choirs at the corners of the stage, and chorus:, Woodwinds, 4 flutes, 2 oboes, 2 cors anglais, 4 clarinets in B, 8 bassoons, Brass:, 12 horns (4 parts + 2 extra in Mvt 2, in D, E, A, and C), 4 cornets in B, 4 tubas, Percussion:, 16 timpani (6 pairs, 4 single), 2 bass drums, 10 pairs of cymbals, 4 tam-tams, 4 brass choirs:, O…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Requiem_(Berlioz)",
+   "composer": "Hector Berlioz",
+   "genre": "Choral"
+  },
+  {
+   "page": "Te Deum (Berlioz)",
+   "subcat": "Category:Religious music by Hector Berlioz",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "trumpet": 2,
+    "cornet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The choral movements of the Te Deum are scored for:, Woodwinds, 4 flutes, 4 oboes (one doubling on cor anglais), 4 clarinets (one doubling on bass clarinet), 4 bassoons, Brass, 4 horns, 2 trumpets, 2 cornets, 6 trombones, 2 ophicleides/tubas, Percussion, timpani, 4 tenor drums, bass drum, 5 cymbals, Voice, tenor solo, 2 large 3-part (STB) mixed choirs, 1 large unison children's choir, Keyboards, organ, Strings, 12 harps, violins I, violins II, violas, cellos, double basses, There are differences in the orchestration of the non-choral movements. The Prelude calls for a piccolo and 6 snare drums, while the March requires a Saxhorn and 12 harps",
+   "full": "The choral movements of the Te Deum are scored for:, Woodwinds, 4 flutes, 4 oboes (one doubling on cor anglais), 4 clarinets (one doubling on bass clarinet), 4 bassoons, Brass, 4 horns, 2 trumpets, 2 cornets, 6 trombones, 2 ophicleides/tubas, Percussion, timpani, 4 tenor drums, bass drum, 5 cymbals, Voice, tenor solo, 2 large 3-part (STB) mixed choirs, 1 large unison children's choir, Keyboards…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Te_Deum_(Berlioz)",
+   "composer": "Hector Berlioz",
+   "genre": "Choral"
   },
   {
    "page": "Russian Easter Festival Overture",
@@ -5577,6 +7099,60 @@
    "genre": "Symphony"
   },
   {
+   "page": "Dona nobis pacem (Vaughan Williams)",
+   "subcat": "Category:Cantatas by Ralph Vaughan Williams",
+   "scoring": "four trumpets",
+   "counts": {
+    "trumpet": 4
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for SATB chorus, soprano and baritone soloists, and a large orchestra consisting of 3 flutes (one doubling piccolo), 2 oboes, 2 clarinets, 2 bassoons, contra bassoon, 4 french horns, 4 trumpets (2 optional), 4 tenor trombones (2 optional), bass trombone, tuba, timpani, percussion, harp, organ, and strings",
+   "full": "scored for SATB chorus, soprano and baritone soloists, and a large orchestra consisting of 3 flutes (one doubling piccolo), 2 oboes, 2 clarinets, 2 bassoons, contra bassoon, 4 french horns, 4 trumpets (2 optional), 4 tenor trombones (2 optional), bass trombone, tuba, timpani, percussion, harp, organ, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Dona_nobis_pacem_(Vaughan_Williams)",
+   "composer": "Ralph Vaughan Williams",
+   "genre": "Choral"
+  },
+  {
+   "page": "Hodie",
+   "subcat": "Category:Cantatas by Ralph Vaughan Williams",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Hodie calls for a large orchestra of three flutes (the third doubling piccolo), two oboes, cor anglais, two clarinets in B , two bassoons, contrabassoon; four French horns in F, three trumpets in B , two trombones, bass trombone, tuba; a percussion section that includes timpani, bass drum, snare drum, tenor drum, tubular bells, cymbals, glockenspiel and triangle; celesta, piano, organ; strings; SATB choir and boys' choir; and soprano, tenor and baritone soloists",
+   "full": "Hodie calls for a large orchestra of three flutes (the third doubling piccolo), two oboes, cor anglais, two clarinets in B , two bassoons, contrabassoon; four French horns in F, three trumpets in B , two trombones, bass trombone, tuba; a percussion section that includes timpani, bass drum, snare drum, tenor drum, tubular bells, cymbals, glockenspiel and triangle; celesta, piano, organ; strings;…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Hodie",
+   "composer": "Ralph Vaughan Williams",
+   "genre": "Choral"
+  },
+  {
+   "page": "Tuba Concerto (Vaughan Williams)",
+   "subcat": "Category:Concertos by Ralph Vaughan Williams",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes (2nd doubling on piccolo), oboe, 2 clarinets (in B ), bassoon, 2 horns (in F), 2 trumpets (in B ), 2 trombones, timpani, triangle, snare drum, bass drum, cymbals, and strings, A version exists for euphonium, transposed to B minor by David Childs, with Vaughan Williams's orchestration transposed and rearranged by Rodney Newton",
+   "full": "scored for two flutes (2nd doubling on piccolo), oboe, 2 clarinets (in B ), bassoon, 2 horns (in F), 2 trumpets (in B ), 2 trombones, timpani, triangle, snare drum, bass drum, cymbals, and strings, A version exists for euphonium, transposed to B minor by David Childs, with Vaughan Williams's orchestration transposed and rearranged by Rodney Newton",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Tuba_Concerto_(Vaughan_Williams)",
+   "composer": "Ralph Vaughan Williams",
+   "genre": "Concerto"
+  },
+  {
    "page": "The Dream of Gerontius",
    "subcat": null,
    "scoring": "three trumpets",
@@ -5871,6 +7447,60 @@
    "genre": "Symphony"
   },
   {
+   "page": "The Apostles (Elgar)",
+   "subcat": "Category:Oratorios by Edward Elgar",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Strings, Violins I, II, Violas, Celli, Double basses, Woodwind, 3 Flutes (one doubling piccolo), 3 Oboes (one doubling cor anglais) (In movement I, rehearsal figures 14–24, first oboist and cor anglais briefly play offstage), 2 Clarinets, 1 Bass Clarinet, 2 Bassoons, 1 Contrabassoon, Brass, 4 Horns, 1 Shofar (Offstage), 3 Trumpets, 3 Trombones, 1 Tuba, Percussion, 3 Timpani (32\", 29\", 26\"), Bass Drum, Crash cymbals, Suspended cymbals, Crotales (Pitch C4), Large tam tam, Gong (Pitch Eb2), Tambourine, Snare drum, Triangle, Glockenspiel, Other, 2 Harps (2nd ad lib), Organ, Voices, Soprano solo, Alto solo, Tenor solo, 3 Bass soloists, SATB choir, Elgar specified that the Semi-Chorus, at the fourth bar after rehearsal number 201, should consist of 24 voices (6 to each part) and should sing from the front row of the chorus. The Semi-Chorus could also be a separate body of voices (Boys' voices to produce the most ideal effect) elevated above the chorus. If it is not possible to have a Semi-Chorus without weakening the Chorus, the Semi-Choir should be sung by the front row of the Chorus",
+   "full": "Strings, Violins I, II, Violas, Celli, Double basses, Woodwind, 3 Flutes (one doubling piccolo), 3 Oboes (one doubling cor anglais) (In movement I, rehearsal figures 14–24, first oboist and cor anglais briefly play offstage), 2 Clarinets, 1 Bass Clarinet, 2 Bassoons, 1 Contrabassoon, Brass, 4 Horns, 1 Shofar (Offstage), 3 Trumpets, 3 Trombones, 1 Tuba, Percussion, 3 Timpani (32\", 29\", 26\"), Bas…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/The_Apostles_(Elgar)",
+   "composer": "Edward Elgar",
+   "genre": "Choral"
+  },
+  {
+   "page": "The Kingdom (Elgar)",
+   "subcat": "Category:Oratorios by Edward Elgar",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "written for a large orchestra, of typical late Romantic proportions. The orchestration is for strings (all five sections of which, Elgar stipulates, \"should all be numerously represented\"), 3 flutes (3rd doubling piccolo), 2 oboes, cor anglais, 2 clarinets in B , bass clarinet in B , 2 bassoons, double bassoon, 4 horns in F, 3 trumpets in B and D, 3 trombones, tuba, 3 timpani, bass drum, cymbals, side drum, 2 harps and organ. There is a double chorus with semichorus, and four soloists representing: The Blessed Virgin (soprano), Mary Magdalene ([[alto (voi",
+   "full": "written for a large orchestra, of typical late Romantic proportions. The orchestration is for strings (all five sections of which, Elgar stipulates, \"should all be numerously represented\"), 3 flutes (3rd doubling piccolo), 2 oboes, cor anglais, 2 clarinets in B , bass clarinet in B , 2 bassoons, double bassoon, 4 horns in F, 3 trumpets in B and D, 3 trombones, tuba, 3 timpani, bass drum, cymbal…",
+   "estimated": false,
+   "how": "prose-unbounded",
+   "url": "https://en.wikipedia.org/wiki/The_Kingdom_(Elgar)",
+   "composer": "Edward Elgar",
+   "genre": "Choral"
+  },
+  {
+   "page": "The Light of Life (Elgar)",
+   "subcat": "Category:Oratorios by Edward Elgar",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes (one doubling piccolo), 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, 4 horns, 2 trumpets. 3 trombones, tuba, 2 timpani, cymbals, harp, organ and strings, The four soloists are assigned roles in the narrative: the contralto is the narrator; Jesus is sung by the baritone, the blind man by the tenor and the blind man's mother by the soprano",
+   "full": "scored for 2 flutes (one doubling piccolo), 2 oboes, 2 clarinets, 2 bassoons, contrabassoon, 4 horns, 2 trumpets. 3 trombones, tuba, 2 timpani, cymbals, harp, organ and strings, The four soloists are assigned roles in the narrative: the contralto is the narrator; Jesus is sung by the baritone, the blind man by the tenor and the blind man's mother by the soprano",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/The_Light_of_Life_(Elgar)",
+   "composer": "Edward Elgar",
+   "genre": "Choral"
+  },
+  {
    "page": "Symphony in D minor (Franck)",
    "subcat": null,
    "scoring": "two trumpets, two cornets",
@@ -6093,6 +7723,168 @@
    "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Saint-Sa%C3%ABns)",
    "composer": "Camille Saint-Saëns",
    "genre": "Symphony"
+  },
+  {
+   "page": "Cello Concerto No. 1 (Saint-Saëns)",
+   "subcat": "Category:Concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra consisting of 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani and strings, The work is split into three different movements as follows:, Saint-Saëns very often uses the solo cello here as a declamatory instrument",
+   "full": "scored for an orchestra consisting of 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani and strings, The work is split into three different movements as follows:, Saint-Saëns very often uses the solo cello here as a declamatory instrument",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._1_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Cello Concerto No. 2 (Saint-Saëns)",
+   "subcat": "Category:Concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra consisting of 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, timpani and strings",
+   "full": "scored for an orchestra consisting of 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, timpani and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._2_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Violin Concerto No. 1 (Saint-Saëns)",
+   "subcat": "Category:Concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is scored for solo violin, 2 flutes/piccolo, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani, and strings",
+   "full": "The work is scored for solo violin, 2 flutes/piccolo, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Violin Concerto No. 3 (Saint-Saëns)",
+   "subcat": "Category:Concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo violin, 2 flutes/piccolo, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani, and strings, The work is in three [[Movement (mus",
+   "full": "scored for solo violin, 2 flutes/piccolo, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani, and strings, The work is in three [[Movement (mus",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._3_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 1 (Saint-Saëns)",
+   "subcat": "Category:Piano concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, timpani, and strings",
+   "full": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, timpani, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 2 (Saint-Saëns)",
+   "subcat": "Category:Piano concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani, crash cymbals and strings",
+   "full": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani, crash cymbals and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 3 (Saint-Saëns)",
+   "subcat": "Category:Piano concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani, and strings, The piece follows standard concerto form",
+   "full": "scored for 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani, and strings, The piece follows standard concerto form",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 4 (Saint-Saëns)",
+   "subcat": "Category:Piano concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani and strings, The fourth piano concerto is the composer's most structurally innovative piano concerto",
+   "full": "scored for solo piano, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani and strings, The fourth piano concerto is the composer's most structurally innovative piano concerto",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._4_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 5 (Saint-Saëns)",
+   "subcat": "Category:Piano concertos by Camille Saint-Saëns",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, timpani, tam tam, and strings, The concerto has three movements:",
+   "full": "scored for solo piano, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, timpani, tam tam, and strings, The concerto has three movements:",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Saint-Sa%C3%ABns)",
+   "composer": "Camille Saint-Saëns",
+   "genre": "Concerto"
   },
   {
    "page": "Symphony in C (Bizet)",
@@ -6474,6 +8266,42 @@
    "genre": "Opera"
   },
   {
+   "page": "Concerto in F (Gershwin)",
+   "subcat": "Category:Concertante works by George Gershwin",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "In addition to the solo piano, the work calls for 2 flutes, piccolo, 2 oboes, English horn, 2 clarinets in B , bass clarinet, 2 bassoons, 4 horns in F, 3 trumpets in B , 3 trombones, tuba, timpani, 3 percussionists (first player: bass drum, glockenspiel, xylophone and triangle; second player: snare drum, woodblock, whip; third player: cymbals, (crash & suspended), triangle and gong), and strings",
+   "full": "In addition to the solo piano, the work calls for 2 flutes, piccolo, 2 oboes, English horn, 2 clarinets in B , bass clarinet, 2 bassoons, 4 horns in F, 3 trumpets in B , 3 trombones, tuba, timpani, 3 percussionists (first player: bass drum, glockenspiel, xylophone and triangle; second player: snare drum, woodblock, whip; third player: cymbals, (crash & suspended), triangle and gong), and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Concerto_in_F_(Gershwin)",
+   "composer": "George Gershwin",
+   "genre": "Piano"
+  },
+  {
+   "page": "Rhapsody in Blue",
+   "subcat": "Category:Concertante works by George Gershwin",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "thumb|right|upright=0.8|Ferde Grofé, Whiteman's chief arranger from 1920 to 1932, created the first arrangement of Gershwin's Rhapsody in Blue, As Gershwin did not have sufficient knowledge of orchestration in 1924, Whiteman's pianist and chief arranger Ferde Grofé played a key role in the rhapsody's meteoric success, and scholars have contended that Grofé's arrangements of the Rhapsody secured its place in American culture. Gershwin's biographer, Isaac Goldberg, noted in 1931 that Grofé played a crucial role in the premiere's triumph:, Grofé hastily arranged the famous 1924 score to take full advantage of the Whiteman orchestra's particular strengths. He developed this orchestration for solo piano and Whiteman's 23 musicians. For the reeds section, Ross Gorman (Reed I) played oboe, heckelphone, and B , E , alto, and bass clarinets, as well as sopranino, soprano, and alto saxophones; Donald Clark (Reed II) played soprano, alto, and baritone saxophones, and Hale Byers (Reed III) played soprano, tenor, and baritone saxophones, as well as flute, For the brass section, two trumpets were played by Henry Busse and Frank Siegrist; two French horns were played by Arturo Cerino and Al Corral; two trombones were played by Roy Maxon and James Casseday, and a tuba and a double bass were played by Guss Helleburg and Alus Armer, respectively. The rest of the ensemble included a drum set, timpani, and a glockenspiel played by George Marsh; one piano typically played by either Ferde Grofé or Henry Lange; one tenor banjo played by Michael Pingatore, and a complement of violins, Musicologists largely ignored this original arrangement—with its unique instrumental requirements—until its revival in reconstructions beginning in the mid-1980s, owing to the popularity and serviceability of the later scorings. After the 1924 premiere, Grofé revised the score and made new orchestrations in 1926 and 1942, each time for larger orchestras. He published his arrangement for a theater orchestra in 1926. Grofé orchestrated this adaptation for a more standard \"pit orchestra\", which included one flute, one oboe, two clarinets, one bassoon, three saxophones, two French horns, two trumpets, and two trombones, as well as the same percussion and strings complement as the later 1942 version, thumb|left|thumbtime=123|end=56.5|Paul Whiteman again performed Rhapsody in Blue in the film King of Jazz (1930), arranged by Grofé, Grofé later produced a 1942 arrangement for a full symphony orchestra. It is scored for solo piano and an orchestra consisting of two flutes, two oboes, two clarinets in B and A, one bass clarinet, two bassoons, two alto saxophones in E , one tenor saxophone in B ; three French horns in F, three trumpets in B , three trombones, one tuba; a percussion section that includes timpani, one suspended cymbal, one snare drum, one bass drum, one tam-tam, one triangle, one glockenspiel, and cymbals; one tenor banjo; and strings. Since the mid-20th century, the 1942 arrangement became a staple of the concert repertoire until 1976 when Michael Tilson Thomas recorded the original jazz band version for the first time, employing Gershwin's actual 1925 piano roll with a full jazz orchestra, Grofé's other arrangements of Gershwin's piece include those done for Whiteman's 1930 film, King of Jazz, and the concert band setting (playable without piano) completed by 1938 and published 1942. The prominence of the saxophones in the later orchestrations is somewhat reduced, and the banjo part can be dispensed with, as its mainly rhythmic contribution is provided by the inner strings, Gershwin himself made versions of the piece for solo piano, as well as two pianos. The solo version is notable for omitting several sections of the piece. Gershwin's intent to eventually do an orchestration of his own is documented in 1936–37 correspondence from the publisher Harms",
+   "full": "thumb|right|upright=0.8|Ferde Grofé, Whiteman's chief arranger from 1920 to 1932, created the first arrangement of Gershwin's Rhapsody in Blue, As Gershwin did not have sufficient knowledge of orchestration in 1924, Whiteman's pianist and chief arranger Ferde Grofé played a key role in the rhapsody's meteoric success, and scholars have contended that Grofé's arrangements of the Rhapsody secured…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Rhapsody_in_Blue",
+   "composer": "George Gershwin",
+   "genre": "Piano"
+  },
+  {
    "page": "Konzertmusik für Streichorchester und Blechbläser",
    "subcat": null,
    "scoring": "four trumpets",
@@ -6690,6 +8518,24 @@
    "url": "https://en.wikipedia.org/wiki/La_voix_humaine",
    "composer": "Francis Poulenc",
    "genre": "Opera"
+  },
+  {
+   "page": "Stabat Mater (Poulenc)",
+   "subcat": "Category:Religious music by Francis Poulenc",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "Piccolo, 2 flutes, 2 oboes, English horn, 2 clarinets (B♭), bass clarinet, 3 bassoons, 4 French horns, 3 trumpets (C), 3 trombones, tuba, Timpani, 2 Harps, Strings, Soprano solo, SATBarB Chorus (divisi)",
+   "full": "Piccolo, 2 flutes, 2 oboes, English horn, 2 clarinets (B♭), bass clarinet, 3 bassoons, 4 French horns, 3 trumpets (C), 3 trombones, tuba, Timpani, 2 Harps, Strings, Soprano solo, SATBarB Chorus (divisi)",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Stabat_Mater_(Poulenc)",
+   "composer": "Francis Poulenc",
+   "genre": "Choral"
   },
   {
    "page": "Le Bœuf sur le toit",
@@ -7774,6 +9620,78 @@
    "genre": "Symphony"
   },
   {
+   "page": "Cello Concerto (Schumann)",
+   "subcat": "Category:Concertos by Robert Schumann",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is scored for solo cello, two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings",
+   "full": "The work is scored for solo cello, two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Cello_Concerto_(Schumann)",
+   "composer": "Robert Schumann",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Konzertstück for Four Horns and Orchestra",
+   "subcat": "Category:Concertos by Robert Schumann",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "calls for piccolo, two flutes, two oboes, two clarinets, two bassoons, two horns ad libitum, two trumpets, three trombones, timpani, and strings, The three interconnected movements of the Konzertstück bear the following tempo markings:, The combination of a solo quartet and an orchestra is uncommon for the Romantic era, reminiscent more of forms such as the Baroque concerto grosso and the classical sinfonia concertante",
+   "full": "calls for piccolo, two flutes, two oboes, two clarinets, two bassoons, two horns ad libitum, two trumpets, three trombones, timpani, and strings, The three interconnected movements of the Konzertstück bear the following tempo markings:, The combination of a solo quartet and an orchestra is uncommon for the Romantic era, reminiscent more of forms such as the Baroque concerto grosso and the class…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Konzertst%C3%BCck_for_Four_Horns_and_Orchestra",
+   "composer": "Robert Schumann",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto (Schumann)",
+   "subcat": "Category:Concertos by Robert Schumann",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, strings, and solo piano",
+   "full": "scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, strings, and solo piano",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Schumann)",
+   "composer": "Robert Schumann",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Violin Concerto (Schumann)",
+   "subcat": "Category:Concertos by Robert Schumann",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo violin, two flutes, two oboes, two clarinets in B , two bassoons, two horns in F, two trumpets in B , timpani, and strings, The concerto is in the traditional three-movement quick-slow-quick form",
+   "full": "scored for solo violin, two flutes, two oboes, two clarinets in B , two bassoons, two horns in F, two trumpets in B , timpani, and strings, The concerto is in the traditional three-movement quick-slow-quick form",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Schumann)",
+   "composer": "Robert Schumann",
+   "genre": "Concerto"
+  },
+  {
    "page": "Piano Concerto No. 1 (Mendelssohn)",
    "subcat": "Category:Concertos by Felix Mendelssohn",
    "scoring": "two trumpets",
@@ -7990,6 +9908,42 @@
    "genre": "Symphony"
   },
   {
+   "page": "Elijah (oratorio)",
+   "subcat": "Category:Oratorios by Felix Mendelssohn",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for eight vocal soloists (two each of bass, tenor, alto, soprano), full symphony orchestra including 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, ophicleide, timpani, organ and strings and a large chorus usually singing in four, but occasionally eight parts",
+   "full": "scored for eight vocal soloists (two each of bass, tenor, alto, soprano), full symphony orchestra including 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, ophicleide, timpani, organ and strings and a large chorus usually singing in four, but occasionally eight parts",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Elijah_(oratorio)",
+   "composer": "Felix Mendelssohn",
+   "genre": "Choral"
+  },
+  {
+   "page": "St. Paul (oratorio)",
+   "subcat": "Category:Oratorios by Felix Mendelssohn",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "solo voice: soprano, alto, tenor, 2 basses (SATBB), mixed (SATB) and either children's or women's choruses, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon and serpent (predecessor of the ophicleide now replaced by a tuba), 4 horns, 2 trumpets, 3 trombones (alto, tenor and bass), timpani, strings and organ",
+   "full": "solo voice: soprano, alto, tenor, 2 basses (SATBB), mixed (SATB) and either children's or women's choruses, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, contrabassoon and serpent (predecessor of the ophicleide now replaced by a tuba), 4 horns, 2 trumpets, 3 trombones (alto, tenor and bass), timpani, strings and organ",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/St._Paul_(oratorio)",
+   "composer": "Felix Mendelssohn",
+   "genre": "Choral"
+  },
+  {
    "page": "Rendering (Berio)",
    "subcat": "Category:Arrangements of compositions by Franz Schubert",
    "scoring": "two trumpets",
@@ -8060,6 +10014,132 @@
    "url": "https://en.wikipedia.org/wiki/Fierrabras_(opera)",
    "composer": "Franz Schubert",
    "genre": "Opera"
+  },
+  {
+   "page": "Magnificat (Schubert)",
+   "subcat": "Category:Church music by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for SATB soloists, mixed choir, 2 oboes, 2 bassoons, 2 trumpets, violin I and II, viola, timpani and basso continuo (cello, double bass and organ), The autograph score is dated 25 September 1816, and was likely to have been composed for vespers at the Lichtental Church",
+   "full": "scored for SATB soloists, mixed choir, 2 oboes, 2 bassoons, 2 trumpets, violin I and II, viola, timpani and basso continuo (cello, double bass and organ), The autograph score is dated 25 September 1816, and was likely to have been composed for vespers at the Lichtental Church",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Magnificat_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Choral"
+  },
+  {
+   "page": "Symphony No. 1 (Schubert)",
+   "subcat": "Category:Symphonies by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for flute, two oboes, two clarinets in A, two bassoons, two horns in D, two trumpets in D, timpani and strings",
+   "full": "scored for flute, two oboes, two clarinets in A, two bassoons, two horns in D, two trumpets in D, timpani and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 2 (Schubert)",
+   "subcat": "Category:Symphonies by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings, There are four movements:, The work runs about 31 minutes, In the opening movement, the initial theme of the Allegro vivace is based on the corresponding first theme of Ludwig van Beethoven's overture to The Creatures of Prometheus.<ref name=\"apbrown586-",
+   "full": "scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings, There are four movements:, The work runs about 31 minutes, In the opening movement, the initial theme of the Allegro vivace is based on the corresponding first theme of Ludwig van Beethoven's overture to The Creatures of Prometheus.<ref name=\"apbrown586-",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 3 (Schubert)",
+   "subcat": "Category:Symphonies by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings, It is in four movements:, \\relative c' {, \\tempo \"Adagio maestoso\", \\key d \\major, d1\\ff->\\fermata | r2 d'8.->\\p ( \\times 2/3 {e32 fis g} a8) r | r2 a,8~-> a32 (b64 cis d e fis gis a8) r, }, The symphony opens with a broad introduction in a form which is reminiscent of the [[French",
+   "full": "scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings, It is in four movements:, \\relative c' {, \\tempo \"Adagio maestoso\", \\key d \\major, d1\\ff->\\fermata | r2 d'8.->\\p ( \\times 2/3 {e32 fis g} a8) r | r2 a,8~-> a32 (b64 cis d e fis gis a8) r, }, The symphony opens with a broad introduction in a form which is reminiscent of the [[French",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 5 (Schubert)",
+   "subcat": "Category:Symphonies by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for one flute, two oboes, two bassoons, two horns in B and E , and strings of all his symphonies, this has the smallest orchestration. It is Schubert's only symphony which does not include clarinets, trumpets or timpani",
+   "full": "The symphony is scored for one flute, two oboes, two bassoons, two horns in B and E , and strings of all his symphonies, this has the smallest orchestration. It is Schubert's only symphony which does not include clarinets, trumpets or timpani",
+   "estimated": true,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 6 (Schubert)",
+   "subcat": "Category:Symphonies by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes, two oboes, two clarinets (in C), two bassoons, two horns (in C), two trumpets (in C), timpani (in C and G) and strings, There are four movements:, \\relative c' {, \\tempo \"Adagio\", \\key c \\major, \\time 3/4, c2.->_\\markup{\\center-align \\dynamic {fz p}} | 4-.\\f -. r |",
+   "full": "scored for two flutes, two oboes, two clarinets (in C), two bassoons, two horns (in C), two trumpets (in C), timpani (in C and G) and strings, There are four movements:, \\relative c' {, \\tempo \"Adagio\", \\key c \\major, \\time 3/4, c2.->_\\markup{\\center-align \\dynamic {fz p}} | 4-.\\f -. r |",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 7 (Schubert)",
+   "subcat": "Category:Symphonies by Franz Schubert",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "This symphony is scored for an even larger orchestral force than Schubert's eighth and ninth symphonies. The score calls for double woodwinds, four horns, two trumpets, three trombones, timpani and strings",
+   "full": "This symphony is scored for an even larger orchestral force than Schubert's eighth and ninth symphonies. The score calls for double woodwinds, four horns, two trumpets, three trombones, timpani and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Schubert)",
+   "composer": "Franz Schubert",
+   "genre": "Symphony"
   },
   {
    "page": "Jena Symphony",
@@ -8402,6 +10482,186 @@
    "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Beethoven)",
    "composer": "Ludwig van Beethoven",
    "genre": "Symphony"
+  },
+  {
+   "page": "Der glorreiche Augenblick",
+   "subcat": "Category:Cantatas by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "SATB choir, children's choir (last movement only), 4 soloists (soprano, mezzo-soprano, tenor and bass), piccolo (last movement only), 2 flutes, 2 oboes, 2 clarinets in A, B♭ and C, 2 bassoons, 4 horns in various keys, 2 trumpets in various keys, 3 trombones (alto, tenor and bass), triangle, bass drum and cymbals (last movement only), timpani, 1st violins (the third movement contains an extensive part for solo violin), 2nd violins, violas, cellos, double basses, The soloists are personas: the soprano is the city of Vienna, the mezzo-soprano is the Prophetess, the tenor is the Genius and the bass is the Leader of the People",
+   "full": "SATB choir, children's choir (last movement only), 4 soloists (soprano, mezzo-soprano, tenor and bass), piccolo (last movement only), 2 flutes, 2 oboes, 2 clarinets in A, B♭ and C, 2 bassoons, 4 horns in various keys, 2 trumpets in various keys, 3 trombones (alto, tenor and bass), triangle, bass drum and cymbals (last movement only), timpani, 1st violins (the third movement contains an extensiv…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Der_glorreiche_Augenblick",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Choral"
+  },
+  {
+   "page": "Meeresstille und glückliche Fahrt (Beethoven)",
+   "subcat": "Category:Cantatas by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The cantata is scored for the following orchestra, Woodwinds: 2 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass: 4 horns in D and G, 2 trumpets in D, Percussion: timpani, Strings: violins I & II, violas, cellos, double basses, SATB choir",
+   "full": "The cantata is scored for the following orchestra, Woodwinds: 2 flutes, 2 oboes, 2 clarinets in A, 2 bassoons, Brass: 4 horns in D and G, 2 trumpets in D, Percussion: timpani, Strings: violins I & II, violas, cellos, double basses, SATB choir",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Meeresstille_und_gl%C3%BCckliche_Fahrt_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Choral"
+  },
+  {
+   "page": "Christ on the Mount of Olives (Beethoven)",
+   "subcat": "Category:Religious music by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "SATB choir, 3 soloists (soprano, tenor and bass), 2 flutes, 2 oboes, 2 clarinets in B, 2 bassoons, 2 trumpets in D and E, 2 horns in B , C, D and E, 3 trombones (alto, tenor and bass), timpani, 1st violins, 2nd violins, violas, cellos, double basses, The soloists are personas: the soprano is a Seraph, the tenor is Jesus and the bass is the apostle Peter",
+   "full": "SATB choir, 3 soloists (soprano, tenor and bass), 2 flutes, 2 oboes, 2 clarinets in B, 2 bassoons, 2 trumpets in D and E, 2 horns in B , C, D and E, 3 trombones (alto, tenor and bass), timpani, 1st violins, 2nd violins, violas, cellos, double basses, The soloists are personas: the soprano is a Seraph, the tenor is Jesus and the bass is the apostle Peter",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Christ_on_the_Mount_of_Olives_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Choral"
+  },
+  {
+   "page": "Mass in C major (Beethoven)",
+   "subcat": "Category:Religious music by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for four soloists (soprano, alto, tenor, bass), a four-part choir (SATB), and a symphony orchestra of flutes, oboes, clarinets, bassoons, horns, trumpets, timpani, strings and organ",
+   "full": "scored for four soloists (soprano, alto, tenor, bass), a four-part choir (SATB), and a symphony orchestra of flutes, oboes, clarinets, bassoons, horns, trumpets, timpani, strings and organ",
+   "estimated": true,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Mass_in_C_major_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Choral"
+  },
+  {
+   "page": "Missa solemnis (Beethoven)",
+   "subcat": "Category:Religious music by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The mass is scored for a quartet of vocal soloists, a substantial chorus, and the full orchestra. Each element is used at times in virtuosic, textural, or melodic capacities. The full roster consists of 2 flutes; 2 oboes; 2 clarinets (in A, C, and B ); 2 bassoons; contrabassoon; 4 horns (in D, E , B basso, E, and G); 2 trumpets (D, B , and C); alto, tenor, and bass trombone; timpani; organ; strings (violins I and II, violas, cellos, and basses); soprano, alto, tenor, and bass soloists; and mixed choir",
+   "full": "The mass is scored for a quartet of vocal soloists, a substantial chorus, and the full orchestra. Each element is used at times in virtuosic, textural, or melodic capacities. The full roster consists of 2 flutes; 2 oboes; 2 clarinets (in A, C, and B ); 2 bassoons; contrabassoon; 4 horns (in D, E , B basso, E, and G); 2 trumpets (D, B , and C); alto, tenor, and bass trombone; timpani; organ; str…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Missa_solemnis_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Choral"
+  },
+  {
+   "page": "Piano Concerto No. 1 (Beethoven)",
+   "subcat": "Category:Piano concertos by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano and an orchestra consisting of flute, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani, and strings",
+   "full": "scored for solo piano and an orchestra consisting of flute, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, timpani, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 2 (Beethoven)",
+   "subcat": "Category:Piano concertos by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, flute, two oboes, two bassoons, two horns and strings; it is the only one of Beethoven's seven completed concertos that omits clarinets, trumpets and timpani, The concerto is in three movements:, The first movement begins with a triumphant orchestral opening on the tonic chord, and maintains a playfulness while using chromatic pass",
+   "full": "scored for solo piano, flute, two oboes, two bassoons, two horns and strings; it is the only one of Beethoven's seven completed concertos that omits clarinets, trumpets and timpani, The concerto is in three movements:, The first movement begins with a triumphant orchestral opening on the tonic chord, and maintains a playfulness while using chromatic pass",
+   "estimated": true,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 3 (Beethoven)",
+   "subcat": "Category:Piano concertos by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for 2 flutes, 2 oboes, 2 clarinets in B , 2 bassoons, 2 horns in E , E and C, 2 trumpets in C, timpani, strings, and piano soloist, As is standard for Classical/Romantic-era concertos, the work is in three movements, with a typical performance time of 35 minutes:",
+   "full": "scored for 2 flutes, 2 oboes, 2 clarinets in B , 2 bassoons, 2 horns in E , E and C, 2 trumpets in C, timpani, strings, and piano soloist, As is standard for Classical/Romantic-era concertos, the work is in three movements, with a typical performance time of 35 minutes:",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 4 (Beethoven)",
+   "subcat": "Category:Piano concertos by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "It is scored for solo piano and an orchestra consisting of one flute, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings",
+   "full": "It is scored for solo piano and an orchestra consisting of one flute, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._4_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 5 (Beethoven)",
+   "subcat": "Category:Piano concertos by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two flutes, two oboes, two clarinets in B (clarinet 1 playing in A in movement 2), two bassoons, two horns, two trumpets, timpani in E and B , and strings",
+   "full": "scored for two flutes, two oboes, two clarinets in B (clarinet 1 playing in A in movement 2), two bassoons, two horns, two trumpets, timpani in E and B , and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Concerto"
   },
   {
    "page": "Betulia liberata",
@@ -9158,6 +11418,258 @@
    "url": "https://en.wikipedia.org/wiki/Symphony%2C_K._135%2B61h_(Mozart)",
    "composer": "Wolfgang Amadeus Mozart",
    "genre": "Symphony"
+  },
+  {
+   "page": "Piano Concertos Nos. 1–4 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for pairs of oboes, horns and trumpets (both in D), piano (or harpsichord), and strings",
+   "full": "scored for pairs of oboes, horns and trumpets (both in D), piano (or harpsichord), and strings",
+   "estimated": true,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concertos_Nos._1%E2%80%934_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 5 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is scored for 2 oboes, 2 horns in D, 2 trumpets in D, timpani, and strings and was the only concerto with trumpets and timpani until No. 10, K. 365. The second movement omits the trumpets and timpani",
+   "full": "The work is scored for 2 oboes, 2 horns in D, 2 trumpets in D, timpani, and strings and was the only concerto with trumpets and timpani until No. 10, K. 365. The second movement omits the trumpets and timpani",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 10 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for two fortepianos together with two oboes, two bassoons, two horns in E , and strings. Mozart expanded the score in 1782 with pairs of clarinets, trumpets and timpani. However, the authenticity of the additions is not beyond question; they do not appear in the score, The work is in three movements:, The concerto departs from the usual solo piano concerto with the dialogue between the two pianos as they exchange musical ideas. {{cite web|last=Huscher|first=Phillip|url=http://cso.org/uploadedFiles/1_Tickets_and_Events/Program_Notes/ProgramNotes_Mozart_Ct",
+   "full": "scored for two fortepianos together with two oboes, two bassoons, two horns in E , and strings. Mozart expanded the score in 1782 with pairs of clarinets, trumpets and timpani. However, the authenticity of the additions is not beyond question; they do not appear in the score, The work is in three movements:, The concerto departs from the usual solo piano concerto with the dialogue between the t…",
+   "estimated": true,
+   "how": "prose-unbounded",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._10_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 13 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "composed for his subscription concerts, It consists of three movements:, The average duration of performance of Concerte für das Pianoforte (vol. 2, no.13), is 23 minutes, Instrumentation: solo – piano (or harpsichord); orchestra: 2 oboes, 2 bassoons + 2 French horns, 2 trumpets + timpani + strings, Mozart wrote this and the piano concertos nos. [[Piano Concerto No. 11 (Mozart",
+   "full": "composed for his subscription concerts, It consists of three movements:, The average duration of performance of Concerte für das Pianoforte (vol. 2, no.13), is 23 minutes, Instrumentation: solo – piano (or harpsichord); orchestra: 2 oboes, 2 bassoons + 2 French horns, 2 trumpets + timpani + strings, Mozart wrote this and the piano concertos nos. [[Piano Concerto No. 11 (Mozart",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._13_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 16 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "orchestrated for solo piano, flute, two oboes, two bassoons, two horns, two trumpets, timpani and strings",
+   "full": "orchestrated for solo piano, flute, two oboes, two bassoons, two horns, two trumpets, timpani and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._16_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 19 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "written for Mozart to perform himself: Hutchings calls it \"athletic\", combining grace with vigour. It is scored for flute, two oboes, two bassoons, two horns, and strings. Cliff Eisen notes that Mozart's own catalogue of his works lists the concerto as having trumpet and timpani parts, but these do not survive",
+   "full": "written for Mozart to perform himself: Hutchings calls it \"athletic\", combining grace with vigour. It is scored for flute, two oboes, two bassoons, two horns, and strings. Cliff Eisen notes that Mozart's own catalogue of his works lists the concerto as having trumpet and timpani parts, but these do not survive",
+   "estimated": false,
+   "how": "prose-unbounded",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._19_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 20 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, flute, two oboes, two bassoons, two horns, two trumpets, timpani and strings, As is typical of concertos, it is in three movements:",
+   "full": "scored for solo piano, flute, two oboes, two bassoons, two horns, two trumpets, timpani and strings, As is typical of concertos, it is in three movements:",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._20_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 21 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, flute, two oboes, two bassoons, two horns in C, two trumpets in C, timpani and strings, The concerto has three movements:",
+   "full": "scored for solo piano, flute, two oboes, two bassoons, two horns in C, two trumpets in C, timpani and strings, The concerto has three movements:",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._21_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 22 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, flute, two clarinets (in B ), two bassoons, two horns and two trumpets (silent in Andante) in E , timpani (in E and B , silent in Andante), and strings",
+   "full": "scored for solo piano, flute, two clarinets (in B ), two bassoons, two horns and two trumpets (silent in Andante) in E , timpani (in E and B , silent in Andante), and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._22_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 24 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for strings, woodwinds, horns, trumpets and timpani",
+   "full": "scored for strings, woodwinds, horns, trumpets and timpani",
+   "estimated": true,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._24_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 25 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, flute, two oboes, two bassoons, two horns in C, two trumpets in C, timpani and strings",
+   "full": "scored for solo piano, flute, two oboes, two bassoons, two horns in C, two trumpets in C, timpani and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._25_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 26 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for solo piano, one flute, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani (in D, A), and strings, The autograph manuscript of the concerto is preserved in the Morgan Library & Museum",
+   "full": "scored for solo piano, one flute, 2 oboes, 2 bassoons, 2 horns, 2 trumpets, timpani (in D, A), and strings, The autograph manuscript of the concerto is preserved in the Morgan Library & Museum",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._26_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 27 (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for flute, two oboes, two bassoons, two horns in B , solo piano and strings, which makes it thinner than Mozart's other late concertos, all of which except for No. 23 have trumpet and timpani, It has three movements:, Although all three movements are in a major key, minor keys are suggested, as is evident from the second theme of the first movement (in the dominant minor), as well as the presence of a remote minor key in the early development of that movement and of the tonic minor in the middle of the Larghetto, The principal theme for the finale was also used in Mozart's song \"Seh",
+   "full": "scored for flute, two oboes, two bassoons, two horns in B , solo piano and strings, which makes it thinner than Mozart's other late concertos, all of which except for No. 23 have trumpet and timpani, It has three movements:, Although all three movements are in a major key, minor keys are suggested, as is evident from the second theme of the first movement (in the dominant minor), as well as the…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._27_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Rondo for Piano and Orchestra in D major (Mozart)",
+   "subcat": "Category:Piano concertos by Wolfgang Amadeus Mozart",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "As it is in effect a substitute finale to the Piano Concerto No. 5, the instrumentation for the Rondo is very nearly the same. Other than the solo piano, the Concerto's instrumentation consists of two oboes, two trumpets, two French horns, timpani and strings. The Rondo uses this ensemble too, but adds one flute",
+   "full": "As it is in effect a substitute finale to the Piano Concerto No. 5, the instrumentation for the Rondo is very nearly the same. Other than the solo piano, the Concerto's instrumentation consists of two oboes, two trumpets, two French horns, timpani and strings. The Rondo uses this ensemble too, but adds one flute",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Rondo_for_Piano_and_Orchestra_in_D_major_(Mozart)",
+   "composer": "Wolfgang Amadeus Mozart",
+   "genre": "Concerto"
   },
   {
    "page": "Sinfonia Concertante (Haydn)",
@@ -11012,6 +13524,42 @@
    "genre": "Tone poem"
   },
   {
+   "page": "Piano Concerto No. 1 (Liszt)",
+   "subcat": "Category:Concertos by Franz Liszt",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "This concerto is scored for a relatively small orchestra and calls for the following instruments:, Solo piano, Woodwinds:, piccolo, 2 flutes, 2 oboes, 2 clarinets in B, 2 bassoons, Brass:, 2 horns in F, 2 trumpets in B, 3 trombones (two tenor, one bass), Percussion:, timpani, cymbals, triangle, Strings:, first and second violins, violas, cellos, double basses",
+   "full": "This concerto is scored for a relatively small orchestra and calls for the following instruments:, Solo piano, Woodwinds:, piccolo, 2 flutes, 2 oboes, 2 clarinets in B, 2 bassoons, Brass:, 2 horns in F, 2 trumpets in B, 3 trombones (two tenor, one bass), Percussion:, timpani, cymbals, triangle, Strings:, first and second violins, violas, cellos, double basses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Liszt)",
+   "composer": "Franz Liszt",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Piano Concerto No. 2 (Liszt)",
+   "subcat": "Category:Concertos by Franz Liszt",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The concerto is scored for solo piano, three flutes (one doubling piccolo), two oboes, two clarinets in A, two bassoons, two horns in E, two trumpets in E, three trombones (two tenor, one bass), tuba, timpani in D and A, cymbals and strings",
+   "full": "The concerto is scored for solo piano, three flutes (one doubling piccolo), two oboes, two clarinets in A, two bassoons, two horns in E, two trumpets in E, three trombones (two tenor, one bass), tuba, timpani in D and A, cymbals and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Liszt)",
+   "composer": "Franz Liszt",
+   "genre": "Concerto"
+  },
+  {
    "page": "Masques et bergamasques",
    "subcat": null,
    "scoring": "two trumpets",
@@ -11570,6 +14118,42 @@
    "url": "https://en.wikipedia.org/wiki/Variations_on_a_Theme_by_Hindemith",
    "composer": "William Walton",
    "genre": "Orchestral"
+  },
+  {
+   "page": "Johannesburg Festival Overture",
+   "subcat": "Category:Overtures by William Walton",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for three flutes (third doubling piccolo), two oboes, cor anglais, three clarinets in A, three bassoons (third doubling contrabassoon) – four horns in F, three trumpets in B-flat, three trombones, tuba – timpani, three or four percussion (side drum, cymbals, suspended cymbal, bass drum, xylophone, tambourine, triangle, tenor drum, maracas, rumba sticks, castanets, glockenspiel) – harp – strings, The work is a rondo, fast-paced throughout",
+   "full": "scored for three flutes (third doubling piccolo), two oboes, cor anglais, three clarinets in A, three bassoons (third doubling contrabassoon) – four horns in F, three trumpets in B-flat, three trombones, tuba – timpani, three or four percussion (side drum, cymbals, suspended cymbal, bass drum, xylophone, tambourine, triangle, tenor drum, maracas, rumba sticks, castanets, glockenspiel) – harp – …",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Johannesburg_Festival_Overture",
+   "composer": "William Walton",
+   "genre": "Overture"
+  },
+  {
+   "page": "Scapino (Walton)",
+   "subcat": "Category:Overtures by William Walton",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for three flutes (one doubling piccolo), two oboes, one cor anglais, two clarinets, one bass clarinet, two bassoons, four horns, three trumpets, three trombones, one tuba and one harp, with a percussion section comprising timpani, cymbals, triangle, castanets, Chinese temple blocks, glockenspiel, xylophone, side drum, bass drum, tam-tam and strings, The overture typically takes between eight and nine minutes in performance",
+   "full": "scored for three flutes (one doubling piccolo), two oboes, one cor anglais, two clarinets, one bass clarinet, two bassoons, four horns, three trumpets, three trombones, one tuba and one harp, with a percussion section comprising timpani, cymbals, triangle, castanets, Chinese temple blocks, glockenspiel, xylophone, side drum, bass drum, tam-tam and strings, The overture typically takes between e…",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Scapino_(Walton)",
+   "composer": "William Walton",
+   "genre": "Overture"
   },
   {
    "page": "The Midsummer Marriage",
@@ -13055,6 +15639,24 @@
    "genre": "Symphony"
   },
   {
+   "page": "Violin Concerto No. 1 (Glass)",
+   "subcat": "Category:Violin concertos by Philip Glass",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The concerto is scored for solo violin; two flutes (one doubling piccolo), two oboes, two B clarinets, E♭ clarinet, bass clarinet, two bassoons; four horns, three trumpets, two tenor trombones, bass trombone, tuba; timpani, snare drum, bass drum, wood block, triangle, cymbals, harp and strings",
+   "full": "The concerto is scored for solo violin; two flutes (one doubling piccolo), two oboes, two B clarinets, E♭ clarinet, bass clarinet, two bassoons; four horns, three trumpets, two tenor trombones, bass trombone, tuba; timpani, snare drum, bass drum, wood block, triangle, cymbals, harp and strings",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Glass)",
+   "composer": "Philip Glass",
+   "genre": "Concerto"
+  },
+  {
    "page": "Chantefleurs et Chantefables",
    "subcat": null,
    "scoring": "trumpet",
@@ -14035,6 +16637,42 @@
    "genre": "Symphony"
   },
   {
+   "page": "Cello Concerto No. 1 (Villa-Lobos)",
+   "subcat": "Category:Concertos by Heitor Villa-Lobos",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "scored for an orchestra consisting of piccolo, two flutes, two oboes, two clarinets, two bassoons, four horns, three trumpets, three trombones, tuba, timpani, harp, and strings, The music has been described as \"full of youthful energy\"",
+   "full": "scored for an orchestra consisting of piccolo, two flutes, two oboes, two clarinets, two bassoons, four horns, three trumpets, three trombones, tuba, timpani, harp, and strings, The music has been described as \"full of youthful energy\"",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._1_(Villa-Lobos)",
+   "composer": "Heitor Villa-Lobos",
+   "genre": "Concerto"
+  },
+  {
+   "page": "Cello Concerto No. 2 (Villa-Lobos)",
+   "subcat": "Category:Concertos by Heitor Villa-Lobos",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "calls for piccolo, two flutes, two oboes, cor anglais, two clarinets, bass clarinet, two bassoons, contrabassoon, four horns, two trumpets, three trombones, tuba, timpani, percussion (tam-tam, side drum, tambourine, suspended cymbal), celesta, harp, and strings",
+   "full": "calls for piccolo, two flutes, two oboes, cor anglais, two clarinets, bass clarinet, two bassoons, contrabassoon, four horns, two trumpets, three trombones, tuba, timpani, percussion (tam-tam, side drum, tambourine, suspended cymbal), celesta, harp, and strings",
+   "estimated": false,
+   "how": "prose",
+   "url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._2_(Villa-Lobos)",
+   "composer": "Heitor Villa-Lobos",
+   "genre": "Concerto"
+  },
+  {
    "page": "Carmina Burana (Orff)",
    "subcat": "Category:Cantatas by Carl Orff",
    "scoring": "three trumpets",
@@ -14193,6 +16831,24 @@
    "estimated": false,
    "how": "section",
    "url": "https://en.wikipedia.org/wiki/Admiralit%C3%A4tsmusik",
+   "composer": "Georg Philipp Telemann",
+   "genre": "Orchestral"
+  },
+  {
+   "page": "Siehe, es hat überwunden der Löwe",
+   "subcat": "Category:Church cantatas by Georg Philipp Telemann",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is scored for soprano, alto and bass soloists, four-part choir, two trumpets, two violins, viola and basso continuo, It has five movements:, Chorus: de Siehe, es hat überwunden der Löwe, Aria (bass): de Gott stürzt den Hochmut des wütenden Drachen, Recitative (soprano): de Mensch, willt du nicht dein Heil verscherzen, Aria (alto): de Wenn in meinen letzten Zügen Sünd' und Satan mich, Chorale: de Lass deine Kirch' und unser Land",
+   "full": "The work is scored for soprano, alto and bass soloists, four-part choir, two trumpets, two violins, viola and basso continuo, It has five movements:, Chorus: de Siehe, es hat überwunden der Löwe, Aria (bass): de Gott stürzt den Hochmut des wütenden Drachen, Recitative (soprano): de Mensch, willt du nicht dein Heil verscherzen, Aria (alto): de Wenn in meinen letzten Zügen Sünd' und Satan mich, C…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Siehe%2C_es_hat_%C3%BCberwunden_der_L%C3%B6we",
    "composer": "Georg Philipp Telemann",
    "genre": "Orchestral"
   },
@@ -14557,6 +17213,84 @@
    "url": "https://en.wikipedia.org/wiki/The_Warriors_(Grainger)",
    "composer": "Percy Grainger",
    "genre": "Orchestral"
+  },
+  {
+   "page": "Chamber Symphony (Enescu)",
+   "subcat": "Category:Symphonies by George Enescu",
+   "scoring": "trumpet",
+   "counts": {
+    "trumpet": 1
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The work is scored for twelve instruments: flute, oboe, cor anglais, clarinet, bassoon, horn, trumpet, violin, viola, cello, doublebass, and piano",
+   "full": "The work is scored for twelve instruments: flute, oboe, cor anglais, clarinet, bassoon, horn, trumpet, violin, viola, cello, doublebass, and piano",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Chamber_Symphony_(Enescu)",
+   "composer": "George Enescu",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 1 (Enescu)",
+   "subcat": "Category:Symphonies by George Enescu",
+   "scoring": "two trumpets, two cornets",
+   "counts": {
+    "trumpet": 2,
+    "cornet": 2
+   },
+   "req": [
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The symphony is scored for 3 flutes (third doubling piccolo), 2 oboes, cor anglais, E clarinet, 2 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 2 trumpets, 2 cornets, 3 trombones, tuba, timpani, percussion (triangle, tambourine, cymbals, bass drum), 2 harps, 20 first violins, 18 or 20 second violins, 14 violas, 12 cellos, and 12 contrabasses",
+   "full": "The symphony is scored for 3 flutes (third doubling piccolo), 2 oboes, cor anglais, E clarinet, 2 clarinets, bass clarinet, 3 bassoons, contrabassoon, 4 horns, 2 trumpets, 2 cornets, 3 trombones, tuba, timpani, percussion (triangle, tambourine, cymbals, bass drum), 2 harps, 20 first violins, 18 or 20 second violins, 14 violas, 12 cellos, and 12 contrabasses",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Enescu)",
+   "composer": "George Enescu",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 2 (Enescu)",
+   "subcat": "Category:Symphonies by George Enescu",
+   "scoring": "three trumpets",
+   "counts": {
+    "trumpet": 3
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for 3 flutes (third doubling piccolo), 2 oboes, English horn, 3 clarinets (third doubling bass clarinet and piccolo clarinet in D), 3 bassoons, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, triangle, bass drum, tomtoms, snare drum, cymbals, castanets, tam-tam, tambourine, glockenspiel, celesta, piano and harmonium, harp (or several, ad. lib.), strings (20, 20, 14, 12, 12)",
+   "full": "The symphony is scored for 3 flutes (third doubling piccolo), 2 oboes, English horn, 3 clarinets (third doubling bass clarinet and piccolo clarinet in D), 3 bassoons, 4 horns, 3 trumpets in C, 3 trombones, tuba, timpani, triangle, bass drum, tomtoms, snare drum, cymbals, castanets, tam-tam, tambourine, glockenspiel, celesta, piano and harmonium, harp (or several, ad. lib.), strings (20, 20, 14,…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Enescu)",
+   "composer": "George Enescu",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 3 (Enescu)",
+   "subcat": "Category:Symphonies by George Enescu",
+   "scoring": "piccolo trumpet, three trumpets, two cornets",
+   "counts": {
+    "trumpet": 3,
+    "cornet": 2,
+    "piccoloTrumpet": 1
+   },
+   "req": [
+    "piccoloTrumpet",
+    "trumpet",
+    "cornet"
+   ],
+   "text": "The symphony is scored for 4 flutes (3rd and 4th doubling 1st and 2nd piccolo), 4 oboes (3rd and 4th doubling 1st and 2nd cor anglais), 3 clarinets (3rd doubling E clarinet and bass clarinet), 4 bassoons (4th doubling contrabassoon), 6 horns, piccolo trumpet in D, 3 trumpets in C, 2 cornets in B , valve trombone, 3 tenor trombones, bass trombone, 3 tubas, 2 sets of timpani, 6 percussionists (snare drum, tambourine, triangle, ratchet, hand bell, cymbals, tam-tam, bass drum, castanets, xylophone, bell (F ), thunder sheet, glockenspiel), celesta, piano, organ, wordless chorus, 2 harps, 20 first violins, 20 second violins, 14 violas, 12 cellos and 12 double basses",
+   "full": "The symphony is scored for 4 flutes (3rd and 4th doubling 1st and 2nd piccolo), 4 oboes (3rd and 4th doubling 1st and 2nd cor anglais), 3 clarinets (3rd doubling E clarinet and bass clarinet), 4 bassoons (4th doubling contrabassoon), 6 horns, piccolo trumpet in D, 3 trumpets in C, 2 cornets in B , valve trombone, 3 tenor trombones, bass trombone, 3 tubas, 2 sets of timpani, 6 percussionists (sn…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Enescu)",
+   "composer": "George Enescu",
+   "genre": "Symphony"
   }
  ]
 }
