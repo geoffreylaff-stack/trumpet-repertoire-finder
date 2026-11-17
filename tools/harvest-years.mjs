@@ -91,10 +91,24 @@ export function imslpYear(wikitext) {
   return yearOf(raw);
 }
 
+/** The article's infobox template, braces balanced, or '' when it has none. */
+function infobox(wikitext) {
+  const start = wikitext.search(/\{\{\s*Infobox\b/i);
+  if (start < 0) return '';
+  let depth = 0;
+  for (let i = start; i < wikitext.length - 1; i++) {
+    if (wikitext[i] === '{' && wikitext[i + 1] === '{') { depth++; i++; }
+    else if (wikitext[i] === '}' && wikitext[i + 1] === '}') { depth--; i++; if (depth === 0) return wikitext.slice(start, i + 1); }
+  }
+  return wikitext.slice(start);
+}
+
 export function wikipediaYear(wikitext) {
   // Infobox fields that state when the work was written. Premiere and
   // publication fields are deliberately not among them.
-  const field = /^\s*\|\s*(?:year|years|composed|composition_date|date_composed|written|date)\s*=\s*(.+)$/im.exec(wikitext);
+  // Only inside the infobox: a "| date = 2001" line in a citation further down
+  // dated Beethoven's first two piano concertos by a recording.
+  const field = /^\s*\|\s*(?:year|years|composed|composition_date|date_composed|written|date)\s*=\s*(.+)$/im.exec(infobox(wikitext));
   // Date templates hide a range from the year reader: "{{start date|1795}}–1800"
   // is the range 1795–1800. Unwrap them to their first parameter.
   const value = field?.[1]

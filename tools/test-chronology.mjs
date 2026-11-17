@@ -55,13 +55,14 @@ test('reads composition years from IMSLP and Wikipedia', () => {
   assert.equal(imslpYear('|Opus/Catalogue Number=Op.47\n|Year/Date of Composition=1937 (between April and July)\n|Year of First Publication=1939'), 1937);
   assert.equal(imslpYear('|Year/Date of Composition=\n|Year of First Publication=1939'), null);
   assert.deepEqual(wikipediaYear('{{Infobox musical composition\n| premiere_date = 1928\n| year = 1924–25\n}}'), { year: 1925, how: 'infobox' });
-  assert.deepEqual(wikipediaYear('| composed            = 1946–1951/53'), { year: 1953, how: 'infobox' });
-  assert.deepEqual(wikipediaYear('| composed            = {{start date|1795}}–1800'), { year: 1800, how: 'infobox' });
+  assert.deepEqual(wikipediaYear('{{Infobox musical composition\n| composed            = 1946–1951/53\n}}'), { year: 1953, how: 'infobox' });
+  assert.deepEqual(wikipediaYear('{{Infobox musical composition\n| composed            = {{start date|1795}}–1800\n}}'), { year: 1800, how: 'infobox' });
+  assert.deepEqual(wikipediaYear('{{Infobox musical composition\n| key = C major\n}}\n{{cite AV media\n |date = 2001\n}}\n[[Category:1797 compositions]]'), { year: 1797, how: 'category' });
   assert.equal(wikipediaYear('Lohengrin was written for the court theatre and first performed in 1850.'), null);
   assert.equal(wikipediaYear("Rigoletto is an opera in three acts by Giuseppe Verdi. The Italian libretto was written by Francesco Maria Piave based on the 1832 play Le roi s'amuse by Victor Hugo."), null);
   assert.equal(wikipediaYear('It was premiered in 1928.'), null);
   assert.equal(wikipediaYear("The libretto was written by Piave based on the 1832 play. Composed in 1851."), null); // prose is not read
   assert.deepEqual(wikipediaYear('[[Category:1911 compositions]]\n[[Category:1946 compositions]]\n[[Category:Ballets by Igor Stravinsky]]'), { year: 1911, how: 'category' });
   assert.deepEqual(wikipediaYear('[[Category:1851 operas]]'), { year: 1851, how: 'category' });
-  assert.deepEqual(wikipediaYear('| year = 1924–25\n[[Category:1923 compositions]]'), { year: 1925, how: 'infobox' });
+  assert.deepEqual(wikipediaYear('{{Infobox musical composition\n| year = 1924–25\n}}\n[[Category:1923 compositions]]'), { year: 1925, how: 'infobox' });
 });
