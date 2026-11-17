@@ -56,6 +56,7 @@ test('reads composition years from IMSLP and Wikipedia', () => {
   assert.equal(imslpYear('|Year/Date of Composition=\n|Year of First Publication=1939'), null);
   assert.deepEqual(wikipediaYear('{{Infobox musical composition\n| premiere_date = 1928\n| year = 1924–25\n}}'), { year: 1925, how: 'infobox' });
   assert.deepEqual(wikipediaYear('| composed            = 1946–1951/53'), { year: 1953, how: 'infobox' });
+  assert.deepEqual(wikipediaYear('| composed            = {{start date|1795}}–1800'), { year: 1800, how: 'infobox' });
   assert.equal(wikipediaYear('Lohengrin was written for the court theatre and first performed in 1850.'), null);
   assert.deepEqual(wikipediaYear('It was composed between 1846 and 1848.'), { year: 1846, how: 'lead' });
   assert.deepEqual(wikipediaYear("The '''Symphony No. 7''' was composed in 1941 in Leningrad."), { year: 1941, how: 'lead' });

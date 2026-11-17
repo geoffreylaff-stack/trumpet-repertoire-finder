@@ -21,7 +21,7 @@
  * This file records what the pages say. The build checks each year against
  * the composer's lifetime before using it.
  *
- * Usage: node tools/harvest-years.mjs [--out data/work-years.json] [--gap 400]
+ * Usage: node tools/harvest-years.mjs [--out data/work-years.json] [--gap 400] [--wikipedia-only]
  */
 
 import fs from 'node:fs/promises';
@@ -41,6 +41,8 @@ const flag = (name, dflt) => {
 };
 const OUT = path.resolve(ROOT, flag('--out', 'data/work-years.json'));
 const GAP = Number(flag('--gap', '400'));
+// Re-read only the Wikipedia articles, keeping the IMSLP years already on file.
+const WIKIPEDIA_ONLY = args.includes('--wikipedia-only');
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let calls = 0;
@@ -101,7 +103,12 @@ export function wikipediaYear(wikitext) {
   // Infobox fields that state when the work was written. Premiere and
   // publication fields are deliberately not among them.
   const field = /^\s*\|\s*(?:year|years|composed|composition_date|date_composed|written|date)\s*=\s*(.+)$/im.exec(wikitext);
-  const fromField = field ? yearOf(field[1].replace(/<ref[\s\S]*$/i, '')) : null;
+  // Date templates hide a range from the year reader: "{{start date|1795}}–1800"
+  // is the range 1795–1800. Unwrap them to their first parameter.
+  const value = field?.[1]
+    .replace(/<ref[\s\S]*$/i, '')
+    .replace(/\{\{\s*(?:start[ _]date|end[ _]date|date|circa|c\.|nowrap)\s*\|([^|}]*)[^}]*\}\}/gi, '$1');
+  const fromField = value ? yearOf(value) : null;
   if (fromField) return { year: fromField, how: 'infobox' };
   const lead = prose(wikitext).slice(0, 4000);
   // The wording between the verb and the year must not move on to a
@@ -119,7 +126,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const counts = { imslpPages: 0, imslpYears: 0, wikipediaPages: 0, wikipediaYears: 0 };
 
   // ── IMSLP: page wikitext, 50 titles per request ──
-  const ids = [...new Set((imslp.works ?? []).map((w) => w.id).filter(Boolean))].sort();
+  const prior = JSON.parse(await fs.readFile(OUT, 'utf8').catch(() => 'null'));
+  if (WIKIPEDIA_ONLY) {
+    Object.assign(out.imslp, prior?.works?.imslp ?? {});
+    counts.imslpPages = prior?.counts?.imslpPages ?? 0;
+    counts.imslpYears = Object.keys(out.imslp).length;
+  }
+  const ids = WIKIPEDIA_ONLY ? [] : [...new Set((imslp.works ?? []).map((w) => w.id).filter(Boolean))].sort();
   process.stderr.write(`IMSLP: ${ids.length} pages\n`);
   for (let i = 0; i < ids.length; i += 50) {
     const batch = ids.slice(i, i + 50);

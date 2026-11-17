@@ -177,7 +177,15 @@ export function cleanWikitext(input) {
         // Resolve piped links first, or "[[Western concert flute | flute]]s"
         // splits at its pipe like a parameter.
         const params = body.replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1').split('|').slice(1);
-        return `\n${params.map((v) => v.replace(/^\s*[\w-]+\s*=(?!=)/, '')).join('\n')}\n`;
+        // Their other parameters are settings, not content: "colwidth=20em",
+        // "38%", "auto". Keep only what reads as text.
+        const STYLE_KEY = /^\s*(?:col-?width|colwidth|width|style|gap|rules|cols|class|small|align|valign|indent|liststyle|item_style|item\d*_style|list_style)\s*=/i;
+        const SETTING = /^\s*(?:\d+(?:\.\d+)?\s*(?:em|ex|px|%|rem)?|auto|yes|no|y|n|small|left|right|center|top)\s*$/i;
+        const content = params
+          .filter((v) => !STYLE_KEY.test(v))
+          .map((v) => v.replace(/^\s*[\w-]+\s*=(?!=)/, ''))
+          .filter((v) => !SETTING.test(v));
+        return `\n${content.join('\n')}\n`;
       }
       const named = /(?:^|\|)\s*text\s*=\s*([\s\S]*)$/i.exec(body);
       if (named) return ` ${named[1]} `;
