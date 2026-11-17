@@ -21,7 +21,7 @@
  * This file records what the pages say. The build checks each year against
  * the composer's lifetime before using it.
  *
- * Usage: node tools/harvest-years.mjs [--out data/work-years.json] [--gap 400] [--wikipedia-only]
+ * Usage: node tools/harvest-years.mjs [--out data/work-years.json] [--gap 400] [--wikipedia-only | --imslp-only]
  */
 
 import fs from 'node:fs/promises';
@@ -43,6 +43,8 @@ const OUT = path.resolve(ROOT, flag('--out', 'data/work-years.json'));
 const GAP = Number(flag('--gap', '400'));
 // Re-read only the Wikipedia articles, keeping the IMSLP years already on file.
 const WIKIPEDIA_ONLY = args.includes('--wikipedia-only');
+// Re-read only IMSLP, keeping the Wikipedia years already on file.
+const IMSLP_ONLY = args.includes('--imslp-only');
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let calls = 0;
@@ -166,7 +168,12 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
 
   // ── Wikipedia: raw wikitext per article, following one redirect ──
-  const pages = [...new Set((wikipedia.works ?? []).map((w) => w.page).filter(Boolean))].sort();
+  if (IMSLP_ONLY) {
+    Object.assign(out.wikipedia, prior?.works?.wikipedia ?? {});
+    counts.wikipediaPages = prior?.counts?.wikipediaPages ?? 0;
+    counts.wikipediaYears = Object.keys(out.wikipedia).length;
+  }
+  const pages = IMSLP_ONLY ? [] : [...new Set((wikipedia.works ?? []).map((w) => w.page).filter(Boolean))].sort();
   process.stderr.write(`Wikipedia: ${pages.length} articles\n`);
   const wikiPath = (t) => encodeURIComponent(String(t).replace(/ /g, '_'));
   for (const [n, page] of pages.entries()) {

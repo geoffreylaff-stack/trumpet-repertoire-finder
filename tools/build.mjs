@@ -63,6 +63,63 @@ const formKey = (composerId, title) => {
   return `${composerId}::form::${qualifier}-${m[2]}-${m[3]}`;
 };
 
+/**
+ * Extra keys for the duplicates the three above miss.
+ *
+ * IMSLP leaves a catalogue number in the title when its harvester does not
+ * know the prefix — "Boléro, M.81", "Moscow, TH 69", "Uirapuru, W133" — and
+ * adds genre labels — "The Sleeping Beauty (ballet), Op.66". Against
+ * "Boléro" (curated, M. 81) or Wikipedia's "Moscow" no key above agrees, and
+ * the work was listed twice. So:
+ *
+ *   - a trailing catalogue number is split from the title and keyed like any
+ *     other catalogue number, its alternatives included: "K.161/141a" and
+ *     "K. 161" are one work, as are "K.120/111a" and "K. 111+120";
+ *   - the title left over, with genre labels dropped, is a "bare" key. Only a
+ *     work with no catalogue number at all registers its bare title (most
+ *     Wikipedia articles; never an IMSLP page, IMSLP keeping one page per
+ *     work); any work may match one. Two works that differ only
+ *     by catalogue number — C. P. E. Bach's "Symphony in D major, H.663" and
+ *     "H.664" — therefore never merge.
+ */
+const TRAILING_CATALOGUE = /,\s*((?:[A-Z][A-Za-z]{0,5}\.?\s?){1,3}(?:[IVX]+[:/\s]|\d)[\w.:/+\- ]*)$/;
+const GENRE_LABEL = /\s*\((?:ballet|opera|overture[- ]fantasia|symphonic (?:ballad|poem)|tone poem|oratorio|cantata|symphony no\.?\s*\d+)\)/gi;
+const catalogueKeys = (composerId, catalogue) => {
+  if (!catalogue) return [];
+  const keys = [catKey(composerId, catalogue)];
+  // Only Köchel numbers give alternatives this way ("K.161/141a" is one work
+  // under two editions' numbers). Elsewhere a slash numbers a piece within a
+  // set — "H.5905/4", "StWV 186/1" — and splitting it would merge the set.
+  // The alternatives are the later editions' numbers, which carry a letter
+  // ("/141a", "/73q"), or Wikipedia's combined numbers ("111+120"); an
+  // appendix set ("/Anh.A 47") is shared by several works and is left alone.
+  const parts = String(catalogue).split(/\s*([/+])\s*/);
+  if (parts.length > 1 && /^KV?\.?\s?(?:Anh\.?\s?)?\d+[a-z]?$/i.test(parts[0])) {
+    const prefix = /^[A-Za-z]+\.?\s?/.exec(parts[0])?.[0] ?? '';
+    keys.push(catKey(composerId, parts[0]));
+    for (let i = 2; i < parts.length; i += 2) {
+      const sep = parts[i - 1], part = parts[i];
+      if ((sep === '/' && /^\d+[a-z]+$/i.test(part)) || (sep === '+' && /^\d+[a-z]*$/i.test(part))) keys.push(catKey(composerId, prefix + part));
+    }
+  }
+  return keys.filter(Boolean);
+};
+function extraKeys(composerId, title, catalogue, { bareOk = true } = {}) {
+  const m = TRAILING_CATALOGUE.exec(String(title));
+  const base = m ? String(title).slice(0, m.index) : String(title);
+  // A title with its own number ("Oboe Quartet No.2 in F major, WeiH A22")
+  // carries the set's catalogue number, shared by every piece in it.
+  const numbered = /\bno\.?\s*\d/i.test(base);
+  const cats = [...catalogueKeys(composerId, catalogue), ...(numbered ? [] : catalogueKeys(composerId, m?.[1]))];
+  const bareTitle = fold(base.replace(GENRE_LABEL, '')).replace(/\b(no|op|the|a|in|major|minor|for)\b/g, '').replace(/\s+/g, '');
+  // A title that is only a form and a key ("Symphony A", "Mass in C") says
+  // too little to identify a work by; it gets no bare key.
+  const formOnly = /^(?:symphony|sinfonia|concerto|sonata|quartet|quintet|trio|serenade|suite|overture|ouverture|mass|missa|romance|cantata|divertimento|cassation|partita|march|sinfonie)(?:[a-g](?:flat|sharp)?)?$/.test(bareTitle);
+  const bare = bareTitle && !formOnly ? `${composerId}::bare::${bareTitle}` : null;
+  const register = [...cats, ...(bareOk && !catalogue && (!m || numbered) ? [bare] : [])].filter(Boolean);
+  return { register, query: [...cats, bare].filter(Boolean) };
+}
+
 const curated = await readJson(p('data/curated.json'), { composers: {}, works: [] });
 const composerjim = await readJson(p('data/composerjim.json'), { works: [] });
 const wikipedia = await readJson(p('data/wikipedia.json'), { works: [] });
@@ -149,6 +206,8 @@ for (const w of curated.works ?? []) {
   }
   seen.add(workKey(w.c, w.title));
   for (const k of [catKey(w.c, w.cat), formKey(w.c, w.title)]) if (k) seen.add(k);
+  const curatedExtra = extraKeys(w.c, w.title, w.cat);
+  for (const k of curatedExtra.register) seen.add(k);
   // A work split across two curated rows — one per version — no longer answers
   // to the plain title a harvester files it under, so the harvested copy would
   // survive alongside both. "also" lists the titles those rows stand in for.
@@ -158,7 +217,7 @@ for (const w of curated.works ?? []) {
     const fk = formKey(w.c, alt);
     if (fk) seen.add(fk);
   }
-  const curatedKeys = [workKey(w.c, w.title), catKey(w.c, w.cat), formKey(w.c, w.title),
+  const curatedKeys = [workKey(w.c, w.title), catKey(w.c, w.cat), formKey(w.c, w.title), ...curatedExtra.register,
     ...(w.also ?? []).flatMap((alt) => [workKey(w.c, alt), formKey(w.c, alt)])];
   works.push({
     c: w.c,
@@ -190,9 +249,11 @@ for (const w of composerjim.works ?? []) {
   const c = resolveComposer(w.composer);
   const key = workKey(c.id, w.title);
   const fk = formKey(c.id, w.title);
-  if (seen.has(key) || (fk && seen.has(fk))) continue;
+  const extra = extraKeys(c.id, w.title, null);
+  if (seen.has(key) || (fk && seen.has(fk)) || extra.query.some((k) => seen.has(k))) continue;
   seen.add(key);
   if (fk) seen.add(fk);
+  for (const k of extra.register) seen.add(k);
 
   works.push({
     c: c.id,
@@ -210,7 +271,7 @@ for (const w of composerjim.works ?? []) {
     src: 'composerjim',
     url: w.url,
   });
-  own(works.at(-1), [key, fk]);
+  own(works.at(-1), [key, fk, ...extra.register]);
   if (w.arrangement) c.nArr++; else c.n++;
 }
 
@@ -383,9 +444,11 @@ for (const w of wikipedia.works ?? []) {
   const title = w.page.replace(/\s*\([^()]*\)\s*$/, '').trim() || w.page;
   const key = workKey(c.id, title);
   const fk = formKey(c.id, title);
-  if (seen.has(key) || (fk && seen.has(fk))) continue; // curated already covers it
+  const extra = extraKeys(c.id, title, null);
+  if (seen.has(key) || (fk && seen.has(fk)) || extra.query.some((k) => seen.has(k))) continue; // curated already covers it
   seen.add(key);
   if (fk) seen.add(fk);
+  for (const k of extra.register) seen.add(k);
 
   // Re-parse the stored source text when it is present, so a parser change
   // reaches the index through `npm run build` alone rather than requiring
@@ -435,7 +498,7 @@ for (const w of wikipedia.works ?? []) {
     url: w.url,
   });
   if (wikiYear) harvestedYear.add(works.at(-1));
-  own(works.at(-1), [key, fk]);
+  own(works.at(-1), [key, fk, ...extra.register]);
   c.n++;
 }
 
@@ -454,9 +517,14 @@ for (const w of imslp.works ?? []) {
   const ck = catKey(cid, w.catalogue);
   const fk = formKey(cid, w.title);
   const imslpYear = workYears.works?.imslp?.[w.id] ?? null;
-  if (seen.has(key) || (ck && seen.has(ck)) || (fk && seen.has(fk))) { // a better source already covers it
+  // IMSLP keeps one page per work, so two of its pages are never one work:
+  // its entries look these keys up against the other sources but register
+  // none of their own. (Two IMSLP pages can share a catalogue number by
+  // mistake — Lebrun's C major and F major oboe concertos are both "ILL 8".)
+  const extra = extraKeys(cid, w.title, w.catalogue, { bareOk: false });
+  if (seen.has(key) || (ck && seen.has(ck)) || (fk && seen.has(fk)) || extra.query.some((k) => seen.has(k))) { // a better source already covers it
     // …but may not have known when it was written.
-    const holder = [key, ck, fk].map((k) => k && owner.get(k)).find(Boolean);
+    const holder = [key, ck, fk, ...extra.query].map((k) => k && owner.get(k)).find(Boolean);
     if (imslpYear && holder && !holder.y) { holder.y = imslpYear; harvestedYear.add(holder); }
     continue;
   }
