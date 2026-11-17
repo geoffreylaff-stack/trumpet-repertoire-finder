@@ -12,7 +12,7 @@
  *
  *   IMSLP      |Year/Date of Composition=1937 (between April and July)
  *   Wikipedia  the infobox (| year = 1927, | composed = 1924–25), or failing
- *              that the article's opening, "…composed in 1927…"
+ *              that the year category it is filed in ([[Category:1927 compositions]])
  *
  * Only the composition year is recorded. A publication or premiere year would
  * sort well enough, but the interface shows this number as the date the work
@@ -91,14 +91,6 @@ export function imslpYear(wikitext) {
   return yearOf(raw);
 }
 
-/** Wikitext with templates, references, comments and link markup removed. */
-function prose(wikitext) {
-  let s = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>/gi, '').replace(/<ref[\s\S]*?<\/ref>/gi, '');
-  for (let i = 0; i < 6; i++) s = s.replace(/\{\{[^{}]*\}\}/g, ''); // nested templates, innermost first
-  s = s.replace(/\{\|[\s\S]*?\|\}/g, '');
-  return s.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1').replace(/'''?/g, '');
-}
-
 export function wikipediaYear(wikitext) {
   // Infobox fields that state when the work was written. Premiere and
   // publication fields are deliberately not among them.
@@ -110,20 +102,16 @@ export function wikipediaYear(wikitext) {
     .replace(/\{\{\s*(?:start[ _]date|end[ _]date|date|circa|c\.|nowrap)\s*\|([^|}]*)[^}]*\}\}/gi, '$1');
   const fromField = value ? yearOf(value) : null;
   if (fromField) return { year: fromField, how: 'infobox' };
-  const lead = prose(wikitext).slice(0, 4000);
-  // The year has to be the verb's own, introduced by a time word:
-  // "composed in 1851", "written by Verdi between 1850 and 1851". A looser
-  // reading took whatever year followed the verb, which dated Rigoletto by
-  // the 1832 play its libretto was "written … based on", and others by a
-  // premiere or publication.
-  const VERB = String.raw`\b(?:composed|written|completed|wrote)\b`;
-  const LINK = String.raw`(?:\s+(?!based|after|from\s+the|on\b)[\w'’.-]+){0,5}?\s+(?:in|between|from|during|around|circa|c\.|by)\s+(?:the\s+)?(?:(?:early|late|spring|summer|autumn|fall|winter|[A-Z][a-z]+)\s+(?:of\s+)?)?`;
-  const YEARS = String.raw`(?<!\d)((?:1[0-9]{3}|20[0-9]{2})(?:\s*[–—\-\/]\s*\d{2,4}(?!\d))*)`;
-  const m = new RegExp(VERB + LINK + YEARS, 'i').exec(lead);
-  const between = m && /\bbetween\s+(?:the\s+)?(?:\w+\s+)?\d{4}\s+and\s+(\d{4})/i.exec(lead.slice(m.index, m.index + m[0].length + 20));
-  const fromLead = m && !/premi|perform|publish|staged|produc|based|play|novel|poem|libretto|story/i.test(m[0])
-    ? (between ? yearOf(between[1]) : yearOf(m[1])) : null;
-  return fromLead ? { year: fromLead, how: 'lead' } : null;
+  // Failing that, the year category every work article is filed in:
+  // "[[Category:1876 compositions]]", "[[Category:1853 operas]]". It is
+  // structured where an article's prose is not — reading a year out of the
+  // opening sentences dated Rigoletto by the 1832 play it is based on, and
+  // Petrushka by its 1946 revision. A work revised later sits in more than
+  // one; the earliest is the work's own.
+  const years = [...wikitext.matchAll(/\[\[\s*Category\s*:\s*(1[0-9]{3}|20[0-9]{2})\s+(?:compositions|operas)\s*(?:\|[^\]]*)?\]\]/gi)]
+    .map((m) => Number(m[1]));
+  const fromCategory = years.length ? yearOf(String(Math.min(...years))) : null;
+  return fromCategory ? { year: fromCategory, how: 'category' } : null;
 }
 
 // Run as a script, not when the tests import the parsers above.
