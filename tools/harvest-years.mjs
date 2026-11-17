@@ -111,10 +111,18 @@ export function wikipediaYear(wikitext) {
   const fromField = value ? yearOf(value) : null;
   if (fromField) return { year: fromField, how: 'infobox' };
   const lead = prose(wikitext).slice(0, 4000);
-  // The wording between the verb and the year must not move on to a
-  // premiere or a publication ("composed for…, first performed in 1850").
-  const m = /\b(?:composed|written|completed|wrote)\b([^.\n]{0,80}?)(?<!\d)((?:1[0-9]{3}|20[0-9]{2})(?:\s*[–—\-\/]\s*\d{2,4}(?!\d))*)/i.exec(lead);
-  const fromLead = m && !/premi|perform|publish|staged|produc/i.test(m[1]) ? yearOf(m[2]) : null;
+  // The year has to be the verb's own, introduced by a time word:
+  // "composed in 1851", "written by Verdi between 1850 and 1851". A looser
+  // reading took whatever year followed the verb, which dated Rigoletto by
+  // the 1832 play its libretto was "written … based on", and others by a
+  // premiere or publication.
+  const VERB = String.raw`\b(?:composed|written|completed|wrote)\b`;
+  const LINK = String.raw`(?:\s+(?!based|after|from\s+the|on\b)[\w'’.-]+){0,5}?\s+(?:in|between|from|during|around|circa|c\.|by)\s+(?:the\s+)?(?:(?:early|late|spring|summer|autumn|fall|winter|[A-Z][a-z]+)\s+(?:of\s+)?)?`;
+  const YEARS = String.raw`(?<!\d)((?:1[0-9]{3}|20[0-9]{2})(?:\s*[–—\-\/]\s*\d{2,4}(?!\d))*)`;
+  const m = new RegExp(VERB + LINK + YEARS, 'i').exec(lead);
+  const between = m && /\bbetween\s+(?:the\s+)?(?:\w+\s+)?\d{4}\s+and\s+(\d{4})/i.exec(lead.slice(m.index, m.index + m[0].length + 20));
+  const fromLead = m && !/premi|perform|publish|staged|produc|based|play|novel|poem|libretto|story/i.test(m[0])
+    ? (between ? yearOf(between[1]) : yearOf(m[1])) : null;
   return fromLead ? { year: fromLead, how: 'lead' } : null;
 }
 

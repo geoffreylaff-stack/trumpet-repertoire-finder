@@ -58,7 +58,10 @@ test('reads composition years from IMSLP and Wikipedia', () => {
   assert.deepEqual(wikipediaYear('| composed            = 1946–1951/53'), { year: 1953, how: 'infobox' });
   assert.deepEqual(wikipediaYear('| composed            = {{start date|1795}}–1800'), { year: 1800, how: 'infobox' });
   assert.equal(wikipediaYear('Lohengrin was written for the court theatre and first performed in 1850.'), null);
-  assert.deepEqual(wikipediaYear('It was composed between 1846 and 1848.'), { year: 1846, how: 'lead' });
+  assert.deepEqual(wikipediaYear('It was composed between 1846 and 1848.'), { year: 1848, how: 'lead' });
+  assert.equal(wikipediaYear("Rigoletto is an opera in three acts by Giuseppe Verdi. The Italian libretto was written by Francesco Maria Piave based on the 1832 play Le roi s'amuse by Victor Hugo."), null);
+  assert.deepEqual(wikipediaYear('The symphony was written by Brahms in the summer of 1877.'), { year: 1877, how: 'lead' });
+  assert.deepEqual(wikipediaYear('Il trovatore was composed by Verdi in 1853, after the 1836 play.'), { year: 1853, how: 'lead' });
   assert.deepEqual(wikipediaYear("The '''Symphony No. 7''' was composed in 1941 in Leningrad."), { year: 1941, how: 'lead' });
   assert.equal(wikipediaYear('It was premiered in 1928.'), null);
 });
