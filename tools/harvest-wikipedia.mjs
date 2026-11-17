@@ -164,11 +164,23 @@ export function cleanWikitext(input) {
   // lists "{{Hanging indent |text=3 [[trumpets]] ...}}" — so those are unwrapped
   // rather than deleted.
   const UNWRAP = /^(nowrap|nobr|small|plainlist|hanging indent|lang|nolink)$/i;
+  // Layout templates arrange a list in columns and hold the whole list as
+  // their parameters: Beethoven's First sets its scoring in
+  // "{{col-float |1= …woodwinds and brass… |2= …percussion and strings…}}".
+  // Deleting them as decoration threw the list away and the article with it.
+  // They are unwrapped line by line, parameter names dropped.
+  const LAYOUT = /^(col-float|col-begin|col-break|col-end|col-\d|div col|div col end|columns-list|multicol|multicol-break|multicol-end|flatlist|unbulleted list|ubl|bulleted list|blist|col)$/i;
   for (let i = 0; i < 10 && /\{\{/.test(t); i++) {
     t = t.replace(/\{\{([^{}]*)\}\}/g, (_, body) => {
+      const [name, ...rest] = body.split('|');
+      if (LAYOUT.test(name.trim())) {
+        // Resolve piped links first, or "[[Western concert flute | flute]]s"
+        // splits at its pipe like a parameter.
+        const params = body.replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1').split('|').slice(1);
+        return `\n${params.map((v) => v.replace(/^\s*[\w-]+\s*=(?!=)/, '')).join('\n')}\n`;
+      }
       const named = /(?:^|\|)\s*text\s*=\s*([\s\S]*)$/i.exec(body);
       if (named) return ` ${named[1]} `;
-      const [name, ...rest] = body.split('|');
       if (UNWRAP.test(name.trim())) return ` ${rest.join(' ')} `;
       return ' ';
     });
