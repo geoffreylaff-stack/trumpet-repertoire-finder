@@ -1,7 +1,7 @@
 {
  "generated": "2026-09-02T01:27:47.134Z",
  "stats": {
-  "works": 11661,
+  "works": 11662,
   "composers": 2004
  },
  "composers": [
@@ -1536,7 +1536,7 @@
    "aliases": [
     "beethoven"
    ],
-   "n": 20,
+   "n": 21,
    "nArr": 19
   },
   {
@@ -31997,6 +31997,25 @@
    "arr": false,
    "est": false,
    "sy": 1812
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "t": "Symphony No. 1",
+   "cat": null,
+   "y": null,
+   "g": "Symphony",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes, 2 oboes, 2 clarinets in C, 2 bassoons, Brass:, 2 horns in C, 2 trumpets in C, Percussion:, 2 timpani in C and G, Strings, The clarinet parts are commonly played on B clarinet, as C and D clarinets are no longer widely used",
+   "note": null,
+   "arr": false,
+   "est": false,
+   "sy": 1800.999
   },
   {
    "c": "mozart-wolfgang-amadeus",

@@ -7,7 +7,7 @@
   "withSection": 884,
   "withFamily": 801,
   "skipped": 2494,
-  "works": 801,
+  "works": 802,
   "apiCalls": 3811
  },
  "works": [
@@ -8382,6 +8382,24 @@
    "estimated": false,
    "how": "prose",
    "url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Beethoven)",
+   "composer": "Ludwig van Beethoven",
+   "genre": "Symphony"
+  },
+  {
+   "page": "Symphony No. 1 (Beethoven)",
+   "subcat": "Category:Symphonies by Ludwig van Beethoven",
+   "scoring": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "text": "The symphony is scored for the following instrumentation:, Woodwinds:, 2 flutes, 2 oboes, 2 clarinets in C, 2 bassoons, Brass:, 2 horns in C, 2 trumpets in C, Percussion:, 2 timpani in C and G, Strings:, 1st violins, 2nd violins, violas, cellos, double basses, The clarinet parts are commonly played on B clarinet, as C and D clarinets are no longer widely used. However, there is some controversy over whether they should be played on E instruments instead. The E clarinet's timbre is much closer to that of the C and D clarinets than that of the warmer-sounding B clarinet. The second flute is not used in the second movement",
+   "full": "The symphony is scored for the following instrumentation:, Woodwinds:, 2 flutes, 2 oboes, 2 clarinets in C, 2 bassoons, Brass:, 2 horns in C, 2 trumpets in C, Percussion:, 2 timpani in C and G, Strings:, 1st violins, 2nd violins, violas, cellos, double basses, The clarinet parts are commonly played on B clarinet, as C and D clarinets are no longer widely used. However, there is some controversy…",
+   "estimated": false,
+   "how": "section",
+   "url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Beethoven)",
    "composer": "Ludwig van Beethoven",
    "genre": "Symphony"
   },
