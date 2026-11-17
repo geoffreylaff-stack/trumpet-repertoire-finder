@@ -1,7 +1,7 @@
 {
  "generated": "2026-09-02T01:27:47.134Z",
  "stats": {
-  "works": 11794,
+  "works": 11795,
   "composers": 2004
  },
  "composers": [
@@ -1536,7 +1536,7 @@
    "aliases": [
     "beethoven"
    ],
-   "n": 31,
+   "n": 32,
    "nArr": 19
   },
   {
@@ -18870,6 +18870,25 @@
    "arr": false,
    "est": false,
    "sy": 1810
+  },
+  {
+   "c": "beethoven-ludwig-van",
+   "t": "Leonore Overture No. 2",
+   "cat": "Op. 72a",
+   "y": 1805,
+   "g": "Overture",
+   "s": "two trumpets",
+   "counts": {
+    "trumpet": 2
+   },
+   "req": [
+    "trumpet"
+   ],
+   "full": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, timpani, strings",
+   "note": "One trumpet plays offstage.",
+   "arr": false,
+   "est": false,
+   "sy": 1805
   },
   {
    "c": "hummel-johann-nepomuk",

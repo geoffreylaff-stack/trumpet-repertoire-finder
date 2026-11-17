@@ -863,6 +863,16 @@
    "full": "2 trumpets, 4 horns, timpani, piccolo, 2 flutes, 2 oboes, 2 clarinets, 2 bassoons, strings"
   },
   {
+   "c": "beethoven-ludwig-van",
+   "title": "Leonore Overture No. 2",
+   "cat": "Op. 72a",
+   "year": 1805,
+   "genre": "Overture",
+   "trumpets": "2 trumpets",
+   "full": "2 flutes, 2 oboes, 2 clarinets, 2 bassoons, 4 horns, 2 trumpets, 3 trombones, timpani, strings",
+   "note": "One trumpet plays offstage."
+  },
+  {
    "c": "hummel-johann-nepomuk",
    "title": "Trumpet Concerto in E major",
    "cat": "S. 49",
