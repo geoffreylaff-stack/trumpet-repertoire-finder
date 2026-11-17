@@ -16,6 +16,15 @@
  *   Pass B — the |Instrumentation= field in each page's wikitext, batched 50
  *            titles at a time. Catches works whose category is coarse.
  *
+ *   Pass C — orchestral works. Their category is only "For orchestra" and
+ *            their |Instrumentation= only "orchestra"; the actual scoring is
+ *            in the |InstrDetail= field beside it ("2 flutes, 2 oboes, 2
+ *            clarinets, … timpani, strings"). Neither pass above looked at
+ *            these pages or that field, so Beethoven's Leonore Overture No. 2
+ *            reached the index only as a chamber arrangement. Every page in
+ *            "Scores featuring the orchestra" is read, and its InstrDetail
+ *            used where it names the family.
+ *
  * Usage: node tools/harvest-imslp.mjs [--limit N] [--out data/imslp.json]
  */
 
@@ -155,9 +164,25 @@ async function membersOf(category) {
   return out;
 }
 
-async function passB(titles) {
-  process.stderr.write(`Pass B: reading |Instrumentation= for ${titles.length} pages\n`);
+/** An InstrDetail value as plain text: "{{More}} 2 flutes,<br>4 horns {{MoreEnd}}". */
+export function cleanDetail(raw) {
+  let t = String(raw ?? '');
+  for (let i = 0; i < 4; i++) t = t.replace(/\{\{[^{}]*\}\}/g, ' ');
+  return t
+    .replace(/<br\s*\/?>/gi, ', ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1')
+    .replace(/'''?/g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*,\s*(?:,\s*)+/g, ', ')
+    .replace(/^[\s,;]+|[\s,;]+$/g, '')
+    .trim();
+}
+
+async function passB(titles, label = 'Pass B: reading |Instrumentation=') {
+  process.stderr.write(`${label} for ${titles.length} pages\n`);
   const found = new Map();
+  const details = new Map();
   for (let i = 0; i < titles.length; i += 50) {
     const batch = titles.slice(i, i + 50);
     const d = await api({
@@ -168,18 +193,23 @@ async function passB(titles) {
       const rev = page?.revisions?.[0];
       const text = rev?.slots?.main?.['*'] ?? rev?.['*'];
       if (!text) continue;
+      // The detail field runs to the end of its line; its own templates
+      // ({{More}}) contain no newline.
+      const detail = cleanDetail(/\|\s*InstrDetail\s*=\s*([^\n]*)/i.exec(text)?.[1]);
+      if (detail && mentionsFamily(detail)) details.set(page.title, detail);
       const m = /\|\s*Instrumentation\s*=\s*([^\n|}]*)/i.exec(text);
       if (!m) continue;
       const value = m[1].trim();
       if (value) found.set(page.title, value);
     }
+    if ((i / 50) % 100 === 0 && i) process.stderr.write(`  ${i}/${titles.length}\n`);
   }
-  process.stderr.write(`  ${found.size} instrumentation fields\n`);
-  return found;
+  process.stderr.write(`  ${found.size} instrumentation fields, ${details.size} detail fields naming the family\n`);
+  return { found, details };
 }
 
 // ── Merge ─────────────────────────────────────────────────────────────────────
-function buildRecords(categoryHits, instrumentationByPage) {
+function buildRecords(categoryHits, instrumentationByPage, detailByPage = new Map()) {
   const byPage = new Map();
 
   const ensure = (page) => {
@@ -211,6 +241,17 @@ function buildRecords(categoryHits, instrumentationByPage) {
     if (!parsed.total) continue;
     ensure(page).candidates.push({
       source: 'imslp-instrumentation', raw, arrangement: false, parsed, specificity: 1.5,
+    });
+  }
+
+  // The detail field lists the original scoring player by player, so it ranks
+  // above the one-line Instrumentation field, though below a category name
+  // that IS the exact scoring.
+  for (const [page, raw] of detailByPage) {
+    const parsed = parseInstrumentation(raw);
+    if (!parsed.total) continue;
+    ensure(page).candidates.push({
+      source: 'imslp-instrdetail', raw, arrangement: false, parsed, specificity: 1.6,
     });
   }
 
@@ -272,9 +313,20 @@ for (const hit of categoryHits) featurePages.add(hit.page);
 
 let pageList = [...featurePages];
 if (LIMIT) pageList = pageList.slice(0, LIMIT);
-const instrumentation = await passB(pageList);
+const { found: instrumentation, details } = await passB(pageList);
 
-const works = buildRecords(categoryHits, instrumentation);
+// Pass C: orchestral pages not already read.
+let orchestral = [];
+try {
+  orchestral = (await membersOf('Scores featuring the orchestra')).filter((t) => !featurePages.has(t));
+} catch (err) {
+  process.stderr.write(`  ! skipped orchestral pages: ${err.message}\n`);
+}
+if (LIMIT) orchestral = orchestral.slice(0, LIMIT);
+const passC = await passB(orchestral, 'Pass C: reading |InstrDetail= of orchestral works');
+for (const [page, detail] of passC.details) details.set(page, detail);
+
+const works = buildRecords(categoryHits, instrumentation, details);
 const composers = new Map();
 for (const w of works) {
   if (!w.composerId) continue;
