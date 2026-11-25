@@ -560,6 +560,26 @@ for (const w of imslp.works ?? []) {
 // Drop composers whose every entry is an arrangement or otherwise unshowable.
 for (const [id, c] of composers) if (!c.n && !c.nArr) composers.delete(id);
 
+// ── Symphonies, one list per composer ─────────────────────────────────────────
+// A source files a symphony under whatever category held it: Mahler's Third
+// and Eighth came from "Choral" categories, Dvořák's first four from
+// "Orchestral", most IMSLP symphonies arrive with no genre at all. Each
+// composer's symphonies were then split across groups, and the numbered
+// sequence read out of order. A work whose title names it a symphony is
+// grouped as one, whatever its forces. Excluded are concertos and other forms
+// named after the word (Symphonie espagnole, sinfonia concertante,
+// Symphony-Concerto, symphonic poems), excerpts ("… from Symphony No. 1"),
+// pieces for a symphony orchestra, and arrangements, which keep their group.
+const SYMPHONY_TITLE = /\b(?:symphony|symphonie|sinfonie|symphonia)\b/i;
+const NOT_A_SYMPHONY = /espagnole|concertante|symphonic|symphony[- ]concerto|\bfrom\s+(?:the\s+)?symphon|symphony orchestra|once upon a symphony/i;
+let regrouped = 0;
+for (const w of works) {
+  if (w.arr || w.g === 'Symphony' || !SYMPHONY_TITLE.test(w.t) || NOT_A_SYMPHONY.test(w.t)) continue;
+  w.g = 'Symphony';
+  regrouped++;
+}
+process.stderr.write(`  symphonies: ${regrouped} regrouped under Symphony\n`);
+
 // ── Work years ────────────────────────────────────────────────────────────────
 // A harvested year has to fall inside the composer's working life. Outside it,
 // the page has confused composition with publication, a revision or an
